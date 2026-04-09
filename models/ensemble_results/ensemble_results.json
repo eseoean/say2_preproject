@@ -1,0 +1,500 @@
+{
+  "ensemble_method": "spearman_weighted_average",
+  "n_models": 6,
+  "weights": {
+    "CatBoost": 0.16870728210280367,
+    "LightGBM": 0.16632906205754464,
+    "XGBoost": 0.16651247590432933,
+    "FlatMLP": 0.16730128783671994,
+    "ResidualMLP": 0.16560839396426438,
+    "Cross-Attention": 0.16554149813433802
+  },
+  "ensemble_metrics": {
+    "spearman_mean": 0.8055274741341583,
+    "spearman_std": 0.010089761975918345,
+    "rmse_mean": 1.3007980862198427,
+    "rmse_std": 0.022705700321036363,
+    "pearson": 0.8690359149837936,
+    "r2": 0.7544259565770361,
+    "train_spearman_mean": 0.8059546019665765,
+    "gap_spearman_mean": 0.0004271278324183392
+  },
+  "individual_models": {
+    "CatBoost": {
+      "spearman": 0.8007118655724526,
+      "rmse": 1.3182352191249043,
+      "weight": 0.16870728210280367
+    },
+    "LightGBM": {
+      "spearman": 0.7895150645111287,
+      "rmse": 1.3526797224918488,
+      "weight": 0.16632906205754464
+    },
+    "XGBoost": {
+      "spearman": 0.7900209670414235,
+      "rmse": 1.3457149953553929,
+      "weight": 0.16651247590432933
+    },
+    "FlatMLP": {
+      "spearman": 0.7938569211933411,
+      "rmse": 1.3431506483665407,
+      "weight": 0.16730128783671994
+    },
+    "ResidualMLP": {
+      "spearman": 0.7858483364596495,
+      "rmse": 1.3778818880545944,
+      "weight": 0.16560839396426438
+    },
+    "Cross-Attention": {
+      "spearman": 0.7855970407231077,
+      "rmse": 1.3718241949384558,
+      "weight": 0.16554149813433802
+    }
+  },
+  "fold_metrics": [
+    {
+      "fold": 0,
+      "spearman": 0.8210695673791785,
+      "rmse": 1.264047208550515,
+      "train_spearman": 0.8021506346139439,
+      "gap_spearman": -0.018918932765234597
+    },
+    {
+      "fold": 1,
+      "spearman": 0.80405452135954,
+      "rmse": 1.3195840376510757,
+      "train_spearman": 0.806469484737686,
+      "gap_spearman": 0.002414963378145951
+    },
+    {
+      "fold": 2,
+      "spearman": 0.8063606817494244,
+      "rmse": 1.2938502096693254,
+      "train_spearman": 0.805938788399404,
+      "gap_spearman": -0.00042189335002040806
+    },
+    {
+      "fold": 3,
+      "spearman": 0.8031631807880895,
+      "rmse": 1.313426922643857,
+      "train_spearman": 0.8065928596738244,
+      "gap_spearman": 0.003429678885734977
+    },
+    {
+      "fold": 4,
+      "spearman": 0.7929894193945589,
+      "rmse": 1.3130820525844404,
+      "train_spearman": 0.8086212424080247,
+      "gap_spearman": 0.015631823013465773
+    }
+  ],
+  "top30_drugs": [
+    {
+      "rank": 1,
+      "drug_id": "1191",
+      "mean_pred_ic50": -4.840094566345215,
+      "mean_true_ic50": -5.15924072265625,
+      "sensitivity_rate": 1.0,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "rank": 2,
+      "drug_id": "1817",
+      "mean_pred_ic50": -4.761187553405762,
+      "mean_true_ic50": -5.024497032165527,
+      "sensitivity_rate": 1.0,
+      "n_samples": 26,
+      "category": "Validated"
+    },
+    {
+      "rank": 3,
+      "drug_id": "1941",
+      "mean_pred_ic50": -3.7355499267578125,
+      "mean_true_ic50": -3.8589985370635986,
+      "sensitivity_rate": 1.0,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "rank": 4,
+      "drug_id": "1911",
+      "mean_pred_ic50": -3.226341962814331,
+      "mean_true_ic50": -4.040126800537109,
+      "sensitivity_rate": 1.0,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "rank": 5,
+      "drug_id": "1007",
+      "mean_pred_ic50": -3.1303420066833496,
+      "mean_true_ic50": -4.117664337158203,
+      "sensitivity_rate": 1.0,
+      "n_samples": 29,
+      "category": "Validated"
+    },
+    {
+      "rank": 6,
+      "drug_id": "1819",
+      "mean_pred_ic50": -2.811112880706787,
+      "mean_true_ic50": -1.7648439407348633,
+      "sensitivity_rate": 0.92,
+      "n_samples": 25,
+      "category": "Validated"
+    },
+    {
+      "rank": 7,
+      "drug_id": "1004",
+      "mean_pred_ic50": -2.72235107421875,
+      "mean_true_ic50": -2.735508441925049,
+      "sensitivity_rate": 1.0,
+      "n_samples": 27,
+      "category": "Validated"
+    },
+    {
+      "rank": 8,
+      "drug_id": "1080",
+      "mean_pred_ic50": -2.6713733673095703,
+      "mean_true_ic50": -2.7796781063079834,
+      "sensitivity_rate": 1.0,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "rank": 9,
+      "drug_id": "2048",
+      "mean_pred_ic50": -2.6370813846588135,
+      "mean_true_ic50": -2.7805392742156982,
+      "sensitivity_rate": 1.0,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "rank": 10,
+      "drug_id": "1811",
+      "mean_pred_ic50": -2.5954031944274902,
+      "mean_true_ic50": -1.8154680728912354,
+      "sensitivity_rate": 1.0,
+      "n_samples": 26,
+      "category": "Validated"
+    },
+    {
+      "rank": 11,
+      "drug_id": "1084",
+      "mean_pred_ic50": -2.3894810676574707,
+      "mean_true_ic50": -2.5873634815216064,
+      "sensitivity_rate": 1.0,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "rank": 12,
+      "drug_id": "1034",
+      "mean_pred_ic50": -2.32755970954895,
+      "mean_true_ic50": -2.5313642024993896,
+      "sensitivity_rate": 1.0,
+      "n_samples": 29,
+      "category": "Validated"
+    },
+    {
+      "rank": 13,
+      "drug_id": "1494",
+      "mean_pred_ic50": -2.279100179672241,
+      "mean_true_ic50": -2.6124706268310547,
+      "sensitivity_rate": 1.0,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "rank": 14,
+      "drug_id": "1180",
+      "mean_pred_ic50": -2.19480037689209,
+      "mean_true_ic50": -2.3472707271575928,
+      "sensitivity_rate": 1.0,
+      "n_samples": 27,
+      "category": "Validated"
+    },
+    {
+      "rank": 15,
+      "drug_id": "1559",
+      "mean_pred_ic50": -1.8684957027435303,
+      "mean_true_ic50": -2.119799852371216,
+      "sensitivity_rate": 1.0,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "rank": 16,
+      "drug_id": "1248",
+      "mean_pred_ic50": -1.7338776588439941,
+      "mean_true_ic50": -2.4797933101654053,
+      "sensitivity_rate": 1.0,
+      "n_samples": 15,
+      "category": "Validated"
+    },
+    {
+      "rank": 17,
+      "drug_id": "1057",
+      "mean_pred_ic50": -1.1303850412368774,
+      "mean_true_ic50": -1.4217746257781982,
+      "sensitivity_rate": 1.0,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "rank": 18,
+      "drug_id": "1862",
+      "mean_pred_ic50": -1.094386339187622,
+      "mean_true_ic50": -1.2040300369262695,
+      "sensitivity_rate": 1.0,
+      "n_samples": 29,
+      "category": "Validated"
+    },
+    {
+      "rank": 19,
+      "drug_id": "1003",
+      "mean_pred_ic50": -0.7431299090385437,
+      "mean_true_ic50": -0.8017532229423523,
+      "sensitivity_rate": 1.0,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "rank": 20,
+      "drug_id": "1026",
+      "mean_pred_ic50": -0.15791752934455872,
+      "mean_true_ic50": -0.13994817435741425,
+      "sensitivity_rate": 1.0,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "rank": 21,
+      "drug_id": "1039",
+      "mean_pred_ic50": -0.07851765304803848,
+      "mean_true_ic50": 4.01061487197876,
+      "sensitivity_rate": 0.0,
+      "n_samples": 1,
+      "category": "Recommended"
+    },
+    {
+      "rank": 22,
+      "drug_id": "1849",
+      "mean_pred_ic50": -0.054949801415205,
+      "mean_true_ic50": -0.12460256367921829,
+      "sensitivity_rate": 1.0,
+      "n_samples": 27,
+      "category": "Validated"
+    },
+    {
+      "rank": 23,
+      "drug_id": "1827",
+      "mean_pred_ic50": -0.018686505034565926,
+      "mean_true_ic50": -0.08072968572378159,
+      "sensitivity_rate": 1.0,
+      "n_samples": 26,
+      "category": "Validated"
+    },
+    {
+      "rank": 24,
+      "drug_id": "1825",
+      "mean_pred_ic50": -0.013850569725036621,
+      "mean_true_ic50": -0.1857989877462387,
+      "sensitivity_rate": 0.9230769230769231,
+      "n_samples": 26,
+      "category": "Validated"
+    },
+    {
+      "rank": 25,
+      "drug_id": "1511",
+      "mean_pred_ic50": 0.03737396374344826,
+      "mean_true_ic50": 0.0628277137875557,
+      "sensitivity_rate": 1.0,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "rank": 26,
+      "drug_id": "1059",
+      "mean_pred_ic50": 0.07413215935230255,
+      "mean_true_ic50": -0.14524218440055847,
+      "sensitivity_rate": 1.0,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "rank": 27,
+      "drug_id": "1008",
+      "mean_pred_ic50": 0.3714697062969208,
+      "mean_true_ic50": 0.17289958894252777,
+      "sensitivity_rate": 0.9629629629629629,
+      "n_samples": 27,
+      "category": "Validated"
+    },
+    {
+      "rank": 28,
+      "drug_id": "1086",
+      "mean_pred_ic50": 0.5464524626731873,
+      "mean_true_ic50": 0.4950502812862396,
+      "sensitivity_rate": 0.9583333333333334,
+      "n_samples": 24,
+      "category": "Validated"
+    },
+    {
+      "rank": 29,
+      "drug_id": "1024",
+      "mean_pred_ic50": 0.5859026312828064,
+      "mean_true_ic50": 0.6284864544868469,
+      "sensitivity_rate": 0.9642857142857143,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "rank": 30,
+      "drug_id": "1926",
+      "mean_pred_ic50": 0.6033018827438354,
+      "mean_true_ic50": 0.4689668118953705,
+      "sensitivity_rate": 0.9642857142857143,
+      "n_samples": 28,
+      "category": "Validated"
+    }
+  ],
+  "top15_drugs": [
+    {
+      "final_rank": 1,
+      "drug_id": "1191",
+      "mean_pred_ic50": -4.840094566345215,
+      "mean_true_ic50": -5.15924072265625,
+      "sensitivity_rate": 1.0,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "final_rank": 2,
+      "drug_id": "1817",
+      "mean_pred_ic50": -4.761187553405762,
+      "mean_true_ic50": -5.024497032165527,
+      "sensitivity_rate": 1.0,
+      "n_samples": 26,
+      "category": "Validated"
+    },
+    {
+      "final_rank": 3,
+      "drug_id": "1941",
+      "mean_pred_ic50": -3.7355499267578125,
+      "mean_true_ic50": -3.8589985370635986,
+      "sensitivity_rate": 1.0,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "final_rank": 4,
+      "drug_id": "1911",
+      "mean_pred_ic50": -3.226341962814331,
+      "mean_true_ic50": -4.040126800537109,
+      "sensitivity_rate": 1.0,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "final_rank": 5,
+      "drug_id": "1007",
+      "mean_pred_ic50": -3.1303420066833496,
+      "mean_true_ic50": -4.117664337158203,
+      "sensitivity_rate": 1.0,
+      "n_samples": 29,
+      "category": "Validated"
+    },
+    {
+      "final_rank": 6,
+      "drug_id": "1004",
+      "mean_pred_ic50": -2.72235107421875,
+      "mean_true_ic50": -2.735508441925049,
+      "sensitivity_rate": 1.0,
+      "n_samples": 27,
+      "category": "Validated"
+    },
+    {
+      "final_rank": 7,
+      "drug_id": "1080",
+      "mean_pred_ic50": -2.6713733673095703,
+      "mean_true_ic50": -2.7796781063079834,
+      "sensitivity_rate": 1.0,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "final_rank": 8,
+      "drug_id": "2048",
+      "mean_pred_ic50": -2.6370813846588135,
+      "mean_true_ic50": -2.7805392742156982,
+      "sensitivity_rate": 1.0,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "final_rank": 9,
+      "drug_id": "1811",
+      "mean_pred_ic50": -2.5954031944274902,
+      "mean_true_ic50": -1.8154680728912354,
+      "sensitivity_rate": 1.0,
+      "n_samples": 26,
+      "category": "Validated"
+    },
+    {
+      "final_rank": 10,
+      "drug_id": "1084",
+      "mean_pred_ic50": -2.3894810676574707,
+      "mean_true_ic50": -2.5873634815216064,
+      "sensitivity_rate": 1.0,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "final_rank": 11,
+      "drug_id": "1034",
+      "mean_pred_ic50": -2.32755970954895,
+      "mean_true_ic50": -2.5313642024993896,
+      "sensitivity_rate": 1.0,
+      "n_samples": 29,
+      "category": "Validated"
+    },
+    {
+      "final_rank": 12,
+      "drug_id": "1494",
+      "mean_pred_ic50": -2.279100179672241,
+      "mean_true_ic50": -2.6124706268310547,
+      "sensitivity_rate": 1.0,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "final_rank": 13,
+      "drug_id": "1180",
+      "mean_pred_ic50": -2.19480037689209,
+      "mean_true_ic50": -2.3472707271575928,
+      "sensitivity_rate": 1.0,
+      "n_samples": 27,
+      "category": "Validated"
+    },
+    {
+      "final_rank": 14,
+      "drug_id": "1559",
+      "mean_pred_ic50": -1.8684957027435303,
+      "mean_true_ic50": -2.119799852371216,
+      "sensitivity_rate": 1.0,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "final_rank": 15,
+      "drug_id": "1248",
+      "mean_pred_ic50": -1.7338776588439941,
+      "mean_true_ic50": -2.4797933101654053,
+      "sensitivity_rate": 1.0,
+      "n_samples": 15,
+      "category": "Validated"
+    }
+  ]
+}

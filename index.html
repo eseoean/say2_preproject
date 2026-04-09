@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drug Discovery Pipeline Dashboard</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; background: #0f172a; color: #e2e8f0; min-height: 100vh; }
+  .header { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); padding: 24px 32px; border-bottom: 1px solid #334155; }
+  .header h1 { font-size: 1.5rem; color: #f8fafc; }
+  .header p { font-size: 0.85rem; color: #94a3b8; margin-top: 4px; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 24px; }
+  .progress-bar { background: #1e293b; border-radius: 8px; padding: 16px 20px; margin-bottom: 24px; border: 1px solid #334155; }
+  .progress-bar .bar-bg { background: #334155; border-radius: 4px; height: 8px; overflow: hidden; margin-top: 8px; }
+  .progress-bar .bar-fill { background: linear-gradient(90deg, #3b82f6, #06b6d4); height: 100%; border-radius: 4px; transition: width 0.5s; }
+  .progress-label { display: flex; justify-content: space-between; font-size: 0.85rem; color: #94a3b8; }
+  .steps { display: grid; gap: 16px; }
+  .step { background: #1e293b; border: 1px solid #334155; border-radius: 8px; padding: 16px 20px; transition: all 0.3s; }
+  .step.completed { border-color: #22c55e; }
+  .step.active { border-color: #3b82f6; box-shadow: 0 0 0 1px #3b82f6; }
+  .step.pending { opacity: 0.5; }
+  .step-header { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+  .step-num { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700; flex-shrink: 0; }
+  .completed .step-num { background: #22c55e; color: #052e16; }
+  .active .step-num { background: #3b82f6; color: #fff; }
+  .pending .step-num { background: #334155; color: #64748b; }
+  .step-title { font-weight: 600; font-size: 0.95rem; }
+  .metrics { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+  .metric { background: #0f172a; border: 1px solid #334155; border-radius: 6px; padding: 6px 10px; font-size: 0.75rem; }
+  .metric .label { color: #64748b; }
+  .metric .value { color: #f8fafc; font-weight: 600; margin-left: 4px; }
+  .timestamp { font-size: 0.7rem; color: #475569; margin-top: 8px; }
+  .data-inventory { margin-top: 12px; width: 100%; border-collapse: collapse; font-size: 0.75rem; }
+  .data-inventory th { text-align: left; padding: 6px 8px; background: #0f172a; color: #94a3b8; border-bottom: 1px solid #334155; font-weight: 600; }
+  .data-inventory td { padding: 5px 8px; border-bottom: 1px solid #1e293b; vertical-align: top; }
+  .data-inventory tr:hover { background: rgba(59,130,246,0.05); }
+  .data-inventory .folder { color: #38bdf8; font-weight: 600; font-family: monospace; }
+  .data-inventory .cnt { color: #f8fafc; text-align: center; font-weight: 600; }
+  .data-inventory .desc { color: #cbd5e1; }
+  .data-inventory .src { color: #6ee7b7; font-size: 0.7rem; }
+  .data-inventory .src-gen { color: #fbbf24; font-size: 0.7rem; }
+  .data-inventory .files-detail { color: #64748b; font-size: 0.68rem; line-height: 1.5; margin-top: 2px; }
+  .inv-header { font-size: 0.8rem; color: #94a3b8; margin-top: 12px; margin-bottom: 4px; font-weight: 600; border-bottom: 1px solid #334155; padding-bottom: 4px; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>Drug Discovery Pipeline - Team 4 (biso)</h1>
+  <p>Protocol Execution Dashboard | Started: 2026-04-08</p>
+</div>
+<div class="container">
+  <div class="progress-bar">
+    <div class="progress-label">
+      <span>Overall Progress</span>
+      <span id="progress-pct">2 / 7 Steps</span>
+    </div>
+    <div class="bar-bg"><div class="bar-fill" id="bar-fill" style="width:28.6%"></div></div>
+  </div>
+  <div class="steps">
+    <div class="step completed" id="step-1">
+      <div class="step-header"><div class="step-num">1</div><div class="step-title">Environment Setup</div></div>
+      <div class="metrics" id="metrics-1">
+        <div class="metric"><span class="label">Python:</span><span class="value">3.10.20</span></div>
+        <div class="metric"><span class="label">conda:</span><span class="value">drug4</span></div>
+        <div class="metric"><span class="label">AWS:</span><span class="value">OK (say2-4team)</span></div>
+        <div class="metric"><span class="label">Git:</span><span class="value">cloned</span></div>
+        <div class="metric"><span class="label">LightGBM:</span><span class="value">4.6.0</span></div>
+        <div class="metric"><span class="label">XGBoost:</span><span class="value">3.2.0</span></div>
+        <div class="metric"><span class="label">CatBoost:</span><span class="value">1.2.10</span></div>
+        <div class="metric"><span class="label">PyTorch:</span><span class="value">2.11.0</span></div>
+        <div class="metric"><span class="label">PyG:</span><span class="value">2.7.0</span></div>
+      </div>
+      <div class="timestamp" id="ts-1">Completed: 2026-04-08</div>
+    </div>
+    <div class="step completed" id="step-2">
+      <div class="step-header"><div class="step-num">2</div><div class="step-title">Data Preparation</div></div>
+      <div class="metrics" id="metrics-2">
+        <div class="metric"><span class="label">총 파일 수:</span><span class="value">159 (curated 157 + generated 2)</span></div>
+        <div class="metric"><span class="label">S3:</span><span class="value">s3://say2-4team/20260408_new_pre_project_biso/.../data/</span></div>
+        <div class="metric"><span class="label">binary rule:</span><span class="value">ln_IC50 &lt;= quantile(0.3) = sensitive</span></div>
+        <div class="metric"><span class="label">config:</span><span class="value">data_paths.yaml</span></div>
+      </div>
+      <!-- ── Full Dataset Inventory ── -->
+      <div class="inv-header">Dataset Inventory (11 folders + root)</div>
+      <table class="data-inventory">
+        <thead>
+          <tr><th>Folder</th><th style="text-align:center">Files</th><th>주요 데이터셋</th><th>출처</th></tr>
+        </thead>
+        <tbody>
+          <!-- ADMET -->
+          <tr>
+            <td class="folder">admet/</td>
+            <td class="cnt">48</td>
+            <td class="desc">
+              ADMET 22개 assay (train_val + test split) &mdash; Ames, BBB, Caco-2, CYP2C9/2D6/3A4, DILI, hERG, HIA 등
+              <div class="files-detail">admet_task_inventory, 각 assay별 train_val_basic_clean + test_basic_clean (22 assay &times; 2 = 44), QC json/md 4건</div>
+            </td>
+            <td class="src">curated_date/admet/</td>
+          </tr>
+          <!-- ChEMBL -->
+          <tr>
+            <td class="folder">chembl/</td>
+            <td class="cnt">9</td>
+            <td class="desc">
+              ChEMBL compound/target/activity/assay/mechanism &mdash; 약물-타겟 매핑, SMILES
+              <div class="files-detail">compound_master (2.8M cpds), target_master, activity, assay, drug_mechanism, uniprot_target_mapping, QC 3건</div>
+            </td>
+            <td class="src">curated_date/chembl/</td>
+          </tr>
+          <!-- DepMap -->
+          <tr>
+            <td class="folder">depmap/</td>
+            <td class="cnt">24</td>
+            <td class="desc">
+              DepMap CRISPR gene dependency/effect matrix, cell line model metadata, repurposing screen
+              <div class="files-detail">crispr_gene_dependency + matrix (1,150 &times; 18,444), crispr_gene_effect + matrix, model_basic_clean, model_condition, model_identity, repurposing 6건, QC 4건</div>
+            </td>
+            <td class="src">curated_date/depmap/</td>
+          </tr>
+          <!-- DrugBank -->
+          <tr>
+            <td class="folder">drugbank/</td>
+            <td class="cnt">8</td>
+            <td class="desc">
+              DrugBank drug master (19,842 drugs), 타겟/synonym/group/external_id 테이블
+              <div class="files-detail">drug_master (SMILES, InChI), target_table, synonym_table, group_table, external_identifier_table, QC 3건</div>
+            </td>
+            <td class="src">curated_date/drugbank/</td>
+          </tr>
+          <!-- GDSC -->
+          <tr>
+            <td class="folder">gsdc/</td>
+            <td class="cnt">19</td>
+            <td class="desc">
+              GDSC2 drug response &mdash; basic_clean, annotation (drug/cellline), label table, value maps
+              <div class="files-detail">gdsc2_basic_clean (IC50), annotation_normalized, drug_annotation_master/table, cellline_annotation, label_table, pathway/target value maps, QC 5건</div>
+            </td>
+            <td class="src">curated_date/gsdc/</td>
+          </tr>
+          <!-- LINCS -->
+          <tr>
+            <td class="folder">lincs/</td>
+            <td class="cnt">11</td>
+            <td class="desc">
+              LINCS L1000 metadata &mdash; sig_info, cell_info, gene_info, pert_info, inst_info, metrics
+              <div class="files-detail">sig_info (473K sigs), cell_info, gene_info (12,328 genes), pert_info, pert_metrics, inst_info, sig_metrics, special_file_inventory, QC 3건</div>
+            </td>
+            <td class="src">curated_date/lincs/</td>
+          </tr>
+          <!-- METABRIC -->
+          <tr>
+            <td class="folder">metabric/</td>
+            <td class="cnt">6</td>
+            <td class="desc">
+              METABRIC BRCA expression + clinical (patient/sample) &mdash; 외부 검증용
+              <div class="files-detail">expression_basic_clean, clinical_patient_basic_clean, clinical_sample_basic_clean, QC 3건</div>
+            </td>
+            <td class="src">curated_date/metabric/</td>
+          </tr>
+          <!-- MSigDB -->
+          <tr>
+            <td class="folder">msigdb/</td>
+            <td class="cnt">5</td>
+            <td class="desc">
+              MSigDB gene set (Hallmark 등) &mdash; pathway feature용
+              <div class="files-detail">gene_set_master, gene_set_membership, QC 3건</div>
+            </td>
+            <td class="src">curated_date/msigdb/</td>
+          </tr>
+          <!-- OpenTargets -->
+          <tr>
+            <td class="folder">opentargets/</td>
+            <td class="cnt">7</td>
+            <td class="desc">
+              Open Targets disease-target association (direct/indirect), disease/target master
+              <div class="files-detail">association_overall_direct, association_by_overall_indirect, disease_basic, target_basic, QC 3건</div>
+            </td>
+            <td class="src">curated_date/opentargets/</td>
+          </tr>
+          <!-- STRING -->
+          <tr>
+            <td class="folder">string/</td>
+            <td class="cnt">6</td>
+            <td class="desc">
+              STRING PPI network &mdash; protein links, aliases, info
+              <div class="files-detail">links_basic (PPI edges), protein_aliases, protein_info, QC 3건</div>
+            </td>
+            <td class="src">curated_date/string/</td>
+          </tr>
+          <!-- TCGA -->
+          <tr>
+            <td class="folder">tcga/</td>
+            <td class="cnt">14</td>
+            <td class="desc">
+              TCGA BRCA biospecimen (aliquot/analyte/portion/sample/slide) + clinical + RNA file inventory
+              <div class="files-detail">clinical_clinical, clinical_exposure, clinical_family_history, clinical_follow_up, clinical_pathology_detail, biospecimen 5건, rna_file_inventory, QC 3건</div>
+            </td>
+            <td class="src">curated_date/tcga/</td>
+          </tr>
+          <!-- Root generated -->
+          <tr style="background:rgba(251,191,36,0.06)">
+            <td class="folder">root (generated)</td>
+            <td class="cnt">2</td>
+            <td class="desc">
+              <b>gdsc_ic50.parquet</b> &mdash; GDSC2 only, BRCA 필터링 (13,388 rows, 52 cells, 295 drugs)<br>
+              <b>lincs_mcf7.parquet</b> &mdash; MCF7 Level5 z-score matrix (63,367 sigs &times; 12,328 genes, 4.63GB)
+            </td>
+            <td class="src-gen">
+              gdsc: curated gsdc/gdsc2_basic_clean 기반 생성<br>
+              lincs: curated lincs/sig_info + oringinal_raw Level5 GCTx 기반 생성
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="timestamp" style="font-size:0.65rem; color:#f59e0b; margin-top:8px;">
+        POLICY: gdsc_ic50 = GDSC2만 사용 (295 drugs). 사유: GDSC2가 GDSC1 대비 품질 우수, ADMET 필터링으로 후보군 축소되므로 품질 우선 결정.<br>
+        lincs_mcf7 = curated_date/lincs/ sig_info+cell_info MCF7 필터 &rarr; oringinal_raw Level5 GCTx에서 extract.<br>
+        glue/ 폴더 접근 금지. curated_date/ 원본 read-only.
+      </div>
+      <div class="timestamp" id="ts-2">Updated: 2026-04-08 (full dataset inventory, GDSC2 only, LINCS MCF7 re-extract)</div>
+    </div>
+    <div class="step active" id="step-3">
+      <div class="step-header"><div class="step-num">3</div><div class="step-title">Feature Engineering</div></div>
+      <div class="metrics" id="metrics-3">
+        <div class="metric"><span class="label">Drug SMILES 매칭:</span><span class="value">243/295 (82.4%)</span></div>
+        <div class="metric"><span class="label">매칭 소스:</span><span class="value">ChEMBL 130 + DrugBank 18 + PubChem 95</span></div>
+        <div class="metric"><span class="label">미매칭:</span><span class="value">52 (내부코드, SMILES=NA 처리)</span></div>
+        <div class="metric"><span class="label">DepMap 변환:</span><span class="value">wide→long 완료 (20.4M rows, 1150 cells, 18443 genes)</span></div>
+        <div class="metric"><span class="label">스크립트 리팩토링:</span><span class="value">2/2 완료 (argparse CLI 추가)</span></div>
+        <div class="metric"><span class="label">Nextflow:</span><span class="value">main.nf + nextflow.config + Dockerfile 작성 완료</span></div>
+      </div>
+      <div class="timestamp" id="ts-3">In progress: 2026-04-08</div>
+    </div>
+    <div class="step pending" id="step-4">
+      <div class="step-header"><div class="step-num">4</div><div class="step-title">Model Training (13 Models)</div></div>
+      <div class="metrics" id="metrics-4"></div>
+      <div class="timestamp" id="ts-4"></div>
+    </div>
+    <div class="step pending" id="step-5">
+      <div class="step-header"><div class="step-num">5</div><div class="step-title">Ensemble Track2</div></div>
+      <div class="metrics" id="metrics-5"></div>
+      <div class="timestamp" id="ts-5"></div>
+    </div>
+    <div class="step pending" id="step-6">
+      <div class="step-header"><div class="step-num">6</div><div class="step-title">METABRIC External Validation</div></div>
+      <div class="metrics" id="metrics-6"></div>
+      <div class="timestamp" id="ts-6"></div>
+    </div>
+    <div class="step pending" id="step-7">
+      <div class="step-header"><div class="step-num">7</div><div class="step-title">ADMET Gate</div></div>
+      <div class="metrics" id="metrics-7"></div>
+      <div class="timestamp" id="ts-7"></div>
+    </div>
+  </div>
+</div>
+<script>
+function updateStep(completedSteps, activeStep, metrics) {
+  for (let i = 1; i <= 7; i++) {
+    const el = document.getElementById('step-' + i);
+    el.className = 'step ' + (i <= completedSteps ? 'completed' : i === activeStep ? 'active' : 'pending');
+  }
+  document.getElementById('progress-pct').textContent = completedSteps + ' / 7 Steps';
+  document.getElementById('bar-fill').style.width = (completedSteps / 7 * 100).toFixed(1) + '%';
+  if (metrics && activeStep) {
+    const target = completedSteps; // metrics go on the just-completed step
+    const mc = document.getElementById('metrics-' + target);
+    if (mc) {
+      mc.innerHTML = '';
+      for (const [k, v] of Object.entries(metrics)) {
+        mc.innerHTML += '<div class="metric"><span class="label">' + k + ':</span><span class="value">' + v + '</span></div>';
+      }
+    }
+    document.getElementById('ts-' + target).textContent = 'Completed: ' + new Date().toLocaleString();
+  }
+  // persist
+  localStorage.setItem('pipeline_state', JSON.stringify({completedSteps, activeStep, ts: new Date().toISOString()}));
+}
+// restore
+try {
+  const s = JSON.parse(localStorage.getItem('pipeline_state'));
+  if (s) { for (let i = 1; i <= 7; i++) { const el = document.getElementById('step-'+i); el.className = 'step '+(i<=s.completedSteps?'completed':i===s.activeStep?'active':'pending'); } document.getElementById('progress-pct').textContent = s.completedSteps+' / 7 Steps'; document.getElementById('bar-fill').style.width = (s.completedSteps/7*100).toFixed(1)+'%'; }
+} catch(e) {}
+</script>
+</body>
+</html>

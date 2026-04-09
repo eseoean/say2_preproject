@@ -1,0 +1,16 @@
+drug_id,mean_pred_ic50,mean_true_ic50,sensitivity_rate,n_samples,target_expressed,brca_pathway,drug_name,target,pathway,survival_sig,survival_p,known_brca,validation_score,final_rank
+1191,-4.8400946,-5.1592407,1.0,28,1,1,Bortezomib,Proteasome,Protein stability and degradation,1,0.01,1,9.45,1
+1911,-3.226342,-4.040127,1.0,28,1,0,Dactinomycin,RNA polymerase,Other,1,0.01,1,7.8,2
+1007,-3.130342,-4.1176643,1.0,29,1,1,Docetaxel,Microtubule stabiliser,Mitosis,1,0.01,1,9.25,3
+1819,-2.8111129,-1.764844,0.92,25,1,1,Docetaxel,Microtubule stabiliser,Mitosis,1,0.01,1,9.2,4
+1004,-2.722351,-2.7355084,1.0,27,1,1,Vinblastine,Microtubule destabiliser,Mitosis,1,0.01,1,9.15,5
+1080,-2.6713734,-2.779678,1.0,28,1,1,Paclitaxel,Microtubule stabiliser,Mitosis,1,0.01,1,9.1,6
+2048,-2.6370814,-2.7805393,1.0,28,1,1,Vinorelbine,Microtubule destabiliser,Mitosis,1,0.01,1,9.05,7
+1811,-2.5954032,-1.8154681,1.0,26,1,0,Dactinomycin,RNA polymerase,Other,1,0.01,1,7.5,8
+1084,-2.389481,-2.5873635,1.0,28,1,1,Rapamycin,MTORC1,PI3K/MTOR signaling,1,0.01,1,8.95,9
+1034,-2.3275597,-2.5313642,1.0,29,1,0,Staurosporine,Broad spectrum kinase inhibitor,RTK signaling,1,0.01,1,7.4,10
+1494,-2.2791002,-2.6124706,1.0,28,1,1,SN-38,TOP1,DNA replication,1,6.331006623497154e-05,1,8.85,11
+1180,-2.1948004,-2.3472707,1.0,27,1,1,Dinaciclib,"CDK1, CDK2, CDK5, CDK9",Cell cycle,1,2.2566323399559106e-05,1,8.8,12
+1559,-1.8684957,-2.1197999,1.0,28,1,1,Luminespib,HSP90,Protein stability and degradation,1,0.01,1,8.75,13
+1003,-0.7431299,-0.8017532,1.0,28,1,1,Camptothecin,TOP1,DNA replication,1,6.331006623497154e-05,1,8.55,14
+1511,0.037373964,0.062827714,1.0,28,1,1,Epirubicin,Anthracycline,DNA replication,1,0.01,1,8.25,15

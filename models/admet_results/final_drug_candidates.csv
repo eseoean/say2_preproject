@@ -1,0 +1,16 @@
+final_rank,drug_id,drug_name,target,pathway,pred_ic50,sensitivity_rate,safety_score,category,flags,combined_score,n_assays_tested
+1,1817,Romidepsin,"HDAC1, HDAC2, HDAC3, HDAC8",Chromatin histone acetylation,-4.7611876,1.0,12.0,Approved,[],19.0,2
+2,1941,Sepantronium bromide,BIRC5,Apoptosis regulation,-3.73555,1.0,10.0,Candidate,[],16.5,1
+3,1911,Dactinomycin,RNA polymerase,Other,-3.226342,1.0,7.0,Approved,['DILI (Drug-Induced Liver Injury)(+)'],13.0,5
+4,1034,Staurosporine,Broad spectrum kinase inhibitor,RTK signaling,-2.3275597,1.0,10.0,Candidate,[],13.0,1
+5,1004,Vinblastine,Microtubule destabiliser,Mitosis,-2.722351,1.0,7.83,Approved,[],12.83,12
+6,1191,Bortezomib,Proteasome,Protein stability and degradation,-4.8400946,1.0,5.29,Approved,['DILI (Drug-Induced Liver Injury)(+)'],12.79,7
+7,1494,SN-38,TOP1,DNA replication,-2.2791002,1.0,10.0,Candidate,[],12.5,5
+8,1007,Docetaxel,Microtubule stabiliser,Mitosis,-3.130342,1.0,6.83,Approved,['DILI (Drug-Induced Liver Injury)(+)'],12.33,12
+9,2048,Vinorelbine,Microtubule destabiliser,Mitosis,-2.6370814,1.0,8.0,Approved,[],12.0,10
+10,1180,Dinaciclib,"CDK1, CDK2, CDK5, CDK9",Cell cycle,-2.1948004,1.0,10.0,Candidate,[],12.0,4
+11,1080,Paclitaxel,Microtubule stabiliser,Mitosis,-2.6713734,1.0,6.83,Approved,['DILI (Drug-Induced Liver Injury)(+)'],11.33,12
+12,1084,Rapamycin,MTORC1,PI3K/MTOR signaling,-2.389481,1.0,7.71,Approved,[],11.21,7
+13,1003,Camptothecin,TOP1,DNA replication,-0.7431299,1.0,10.0,Candidate,[],11.0,5
+14,1559,Luminespib,HSP90,Protein stability and degradation,-1.8684957,1.0,5.0,Candidate,[],6.5,0
+15,1511,Epirubicin,Anthracycline,DNA replication,0.037373964,1.0,2.83,Caution,"['Ames Mutagenicity(+)', 'DILI (Drug-Induced Liver Injury)(+)']",3.33,15

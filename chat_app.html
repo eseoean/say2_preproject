@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>약물 재창출 어시스턴트</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:#faf7f2;color:#3d2c1e;height:100vh;display:flex;overflow:hidden}
+
+/* Sidebar */
+.sidebar{width:300px;min-width:300px;background:#f0e6d3;padding:20px;overflow-y:auto;border-right:2px solid #e8d5b8;display:flex;flex-direction:column}
+.sidebar h2{color:#5c3d2e;font-size:1.2rem;margin-bottom:4px}
+.sidebar .subtitle{color:#8b7355;font-size:0.75rem;margin-bottom:16px}
+.sidebar hr{border:none;border-top:1px solid #d4c4ae;margin:12px 0}
+.sidebar h3{color:#5c3d2e;font-size:0.9rem;margin-bottom:10px}
+
+.quick-btn{display:block;width:100%;padding:10px 14px;margin-bottom:6px;border:1px solid #c4956a;border-radius:8px;font-size:0.85rem;font-weight:600;color:#3d2c1e;cursor:pointer;text-align:left;transition:all .15s}
+.quick-btn:hover{color:#fff;transform:translateX(2px)}
+.qb1{background:#e8c4a0}.qb1:hover{background:#c4956a}
+.qb2{background:#c9b8a8}.qb2:hover{background:#9a8a7a}
+.qb3{background:#d4c4ae}.qb3:hover{background:#b0a08a}
+.qb4{background:#b8d4c8}.qb4:hover{background:#7ab09e}
+.qb5{background:#d4b8b8}.qb5:hover{background:#b08888}
+.qb6{background:#b8c4d4}.qb6:hover{background:#8898b0}
+.qb7{background:#c8c4b8}.qb7:hover{background:#a09c90}
+.qb8{background:#c4b8d4}.qb8:hover{background:#9488b0}
+.qb9{background:#d4c8b8}.qb9:hover{background:#b0a488}
+
+.source-item{margin-bottom:8px}
+.source-name{font-weight:600;font-size:0.85rem}
+.source-badge{display:inline-block;padding:1px 7px;border-radius:4px;font-size:0.65rem;font-weight:600;margin-left:4px}
+.badge-ok{background:#d4edda;color:#155724;border:1px solid #c3e6cb}
+.badge-pending{background:#fff3cd;color:#856404;border:1px solid #ffeeba}
+.badge-na{background:#e2d5c1;color:#6b5b4f;border:1px solid #d4c4ae}
+.source-desc{font-size:0.7rem;color:#8b7355;margin-top:2px}
+
+.sidebar-footer{margin-top:auto;padding-top:12px;font-size:0.7rem;color:#8b7355}
+
+/* Main chat area */
+.main{flex:1;display:flex;flex-direction:column;min-width:0}
+.main-header{padding:16px 24px 12px;border-bottom:1px solid #e8d5b8}
+.main-header h1{color:#5c3d2e;font-size:1.4rem}
+
+.chat-container{flex:1;overflow-y:auto;padding:16px 24px}
+.msg{margin-bottom:14px;padding:14px 18px;border-radius:12px;max-width:90%;line-height:1.6;font-size:0.9rem;word-wrap:break-word}
+.msg-user{background:#fff8ef;border:1px solid #e8d5b8;margin-left:auto;text-align:right}
+.msg-assistant{background:#f5ebe0;border:1px solid #e8d5b8}
+.msg-assistant table{width:100%;border-collapse:collapse;margin:8px 0;font-size:0.8rem;text-align:left}
+.msg-assistant th{background:#f0e6d3;color:#5c3d2e;border-bottom:2px solid #d4a574;padding:6px 8px;white-space:nowrap}
+.msg-assistant td{border-bottom:1px solid #e8d5b8;padding:5px 8px}
+.msg-assistant h3,.msg-assistant h4{color:#5c3d2e;margin:10px 0 6px}
+.msg-assistant a{color:#8b5a2b;text-decoration:underline}
+.msg-assistant ul,.msg-assistant ol{margin:6px 0 6px 20px}
+.msg-assistant strong{color:#5c3d2e}
+
+.follow-ups{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px;padding:0 24px}
+.follow-btn{padding:6px 14px;background:#fff8ef;border:1px solid #d4a574;border-radius:20px;font-size:0.8rem;color:#5c3d2e;cursor:pointer;transition:all .15s}
+.follow-btn:hover{background:#d4a574;color:#fff}
+
+.chat-input-area{padding:12px 24px 16px;border-top:1px solid #e8d5b8;display:flex;gap:10px}
+.chat-input{flex:1;padding:12px 16px;border:2px solid #d4a574;border-radius:12px;background:#fff8ef;color:#3d2c1e;font-size:0.9rem;outline:none}
+.chat-input:focus{border-color:#8b5a2b}
+.chat-input::placeholder{color:#b8a088}
+.send-btn{padding:12px 24px;background:#d4a574;color:#3d2c1e;border:1px solid #c4956a;border-radius:8px;font-weight:600;cursor:pointer;font-size:0.9rem;transition:all .15s}
+.send-btn:hover{background:#c4956a;color:#fff}
+
+.typing-indicator{display:none;padding:14px 18px;color:#8b7355;font-style:italic;font-size:0.85rem}
+.typing-indicator.show{display:block}
+
+/* Links in sidebar */
+.dashboard-links{margin:8px 0}
+.dashboard-links a{display:block;padding:5px 10px;margin-bottom:4px;background:#fff8ef;border:1px solid #e8d5b8;border-radius:6px;color:#5c3d2e;text-decoration:none;font-size:0.78rem;transition:background .15s}
+.dashboard-links a:hover{background:#e8d5b8}
+
+/* Responsive */
+@media(max-width:768px){
+  .sidebar{display:none}
+  .main{width:100%}
+}
+
+/* Cat badges for classification */
+.cls-current{background:#d4edda;color:#155724;padding:2px 6px;border-radius:4px;font-size:0.75rem;font-weight:600}
+.cls-trial{background:#cce5ff;color:#004085;padding:2px 6px;border-radius:4px;font-size:0.75rem;font-weight:600}
+.cls-novel{background:#e8d5ff;color:#4a1a8a;padding:2px 6px;border-radius:4px;font-size:0.75rem;font-weight:600}
+</style>
+</head>
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+  <h2>&#x1F48A; &#xC57D;&#xBB3C; &#xC7AC;&#xCC3D;&#xCD9C; &#xC5B4;&#xC2DC;&#xC2A4;&#xD134;&#xD2B8;</h2>
+  <div class="subtitle">BRCA Drug Repurposing Pipeline</div>
+  <hr>
+
+  <h3>&#xBE60;&#xB978; &#xC9C8;&#xBB38;</h3>
+  <button class="quick-btn qb1" onclick="askQuestion('&#xC57D;&#xBB3C; &#xD6C4;&#xBCF4; &#xCD94;&#xCC9C;&#xD574;&#xC918;')">&#xC57D;&#xBB3C; &#xD6C4;&#xBCF4; &#xCD94;&#xCC9C;&#xD574;&#xC918;</button>
+  <button class="quick-btn qb2" onclick="askQuestion('&#xC7AC;&#xCC3D;&#xCD9C; &#xD6C4;&#xBCF4; 9&#xAC74; &#xBCF4;&#xC5EC;&#xC918;')">&#xC7AC;&#xCC3D;&#xCD9C; &#xD6C4;&#xBCF4; 9&#xAC74; &#xBCF4;&#xC5EC;&#xC918;</button>
+  <button class="quick-btn qb3" onclick="askQuestion('&#xBAA8;&#xB378; &#xACB0;&#xACFC; &#xBCF4;&#xC5EC;&#xC918;')">&#xBAA8;&#xB378; &#xACB0;&#xACFC; &#xBCF4;&#xC5EC;&#xC918;</button>
+  <button class="quick-btn qb4" onclick="askQuestion('ADMET &#xACB0;&#xACFC; &#xC54C;&#xB824;&#xC918;')">ADMET &#xACB0;&#xACFC; &#xC54C;&#xB824;&#xC918;</button>
+  <button class="quick-btn qb5" onclick="askQuestion('METABRIC &#xAC80;&#xC99D; &#xACB0;&#xACFC;')">METABRIC &#xAC80;&#xC99D; &#xACB0;&#xACFC;</button>
+  <button class="quick-btn qb6" onclick="askQuestion('&#xCD5C;&#xC2E0; &#xB17C;&#xBB38; &#xAC80;&#xC0C9;&#xD574;&#xC918;')">&#xCD5C;&#xC2E0; &#xB17C;&#xBB38; &#xAC80;&#xC0C9;&#xD574;&#xC918;</button>
+  <button class="quick-btn qb7" onclick="askQuestion('&#xBD80;&#xC791;&#xC6A9; &#xC54C;&#xB824;&#xC918;')">&#xBD80;&#xC791;&#xC6A9; &#xC54C;&#xB824;&#xC918;</button>
+  <button class="quick-btn qb8" onclick="askQuestion('&#xC784;&#xC0C1;&#xC2DC;&#xD5D8; &#xC54C;&#xB824;&#xC918;')">&#xC784;&#xC0C1;&#xC2DC;&#xD5D8; &#xC54C;&#xB824;&#xC918;</button>
+  <button class="quick-btn qb9" onclick="askQuestion('&#xD30C;&#xC774;&#xD504;&#xB77C;&#xC778; &#xD604;&#xD669;')">&#xD30C;&#xC774;&#xD504;&#xB77C;&#xC778; &#xD604;&#xD669;</button>
+  <hr>
+
+  <h3>HTML &#xB300;&#xC2DC;&#xBCF4;&#xB4DC;</h3>
+  <div class="dashboard-links">
+    <a href="dashboard.html" target="_blank">&#xBA54;&#xC778; &#xB300;&#xC2DC;&#xBCF4;&#xB4DC;</a>
+    <a href="repurposing_candidates.html" target="_blank">&#xC7AC;&#xCC3D;&#xCD9C; &#xD6C4;&#xBCF4; 9&#xAC74; &#xC0C1;&#xC138;</a>
+    <a href="step4_detail.html" target="_blank">Step 4 &#xBAA8;&#xB378; &#xD559;&#xC2B5;</a>
+    <a href="step5_detail.html" target="_blank">Step 5 &#xC559;&#xC0C1;&#xBE14;</a>
+    <a href="step6_detail.html" target="_blank">Step 6 METABRIC</a>
+    <a href="step7_detail.html" target="_blank">Step 7 ADMET</a>
+  </div>
+  <hr>
+
+  <h3>&#xB370;&#xC774;&#xD130; &#xC18C;&#xC2A4; &#xD604;&#xD669;</h3>
+  <div class="source-item"><span class="source-name">S3 Pipeline</span> <span class="source-badge badge-ok">&#xC5F0;&#xB3D9; &#xC644;&#xB8CC;</span><div class="source-desc">&#xD30C;&#xC774;&#xD504;&#xB77C;&#xC778; &#xACB0;&#xACFC; (&#xC57D;&#xBB3C; &#xCD94;&#xCC9C;, &#xBAA8;&#xB378;, ADMET)</div></div>
+  <div class="source-item"><span class="source-name">PubMed</span> <span class="source-badge badge-ok">&#xC0AC;&#xC6A9; &#xAC00;&#xB2A5;</span><div class="source-desc">&#xCD5C;&#xC2E0; &#xB17C;&#xBB38; &#xAC80;&#xC0C9; (API &#xD0A4; &#xBD88;&#xD544;&#xC694;)</div></div>
+  <div class="source-item"><span class="source-name">FAERS (FDA)</span> <span class="source-badge badge-ok">&#xC0AC;&#xC6A9; &#xAC00;&#xB2A5;</span><div class="source-desc">&#xBD80;&#xC791;&#xC6A9; &#xB370;&#xC774;&#xD130; (open API)</div></div>
+  <div class="source-item"><span class="source-name">ClinicalTrials.gov</span> <span class="source-badge badge-ok">&#xC0AC;&#xC6A9; &#xAC00;&#xB2A5;</span><div class="source-desc">&#xC784;&#xC0C1;&#xC2DC;&#xD5D8; &#xC815;&#xBCF4; (API v2)</div></div>
+  <div class="source-item"><span class="source-name">ChEMBL</span> <span class="source-badge badge-ok">&#xC0AC;&#xC6A9; &#xAC00;&#xB2A5;</span><div class="source-desc">&#xC2E0;&#xC57D; &#xD6C4;&#xBCF4;&#xBB3C;&#xC9C8; &#xB370;&#xC774;&#xD130;</div></div>
+  <div class="source-item"><span class="source-name">PubChem</span> <span class="source-badge badge-ok">&#xC0AC;&#xC6A9; &#xAC00;&#xB2A5;</span><div class="source-desc">&#xBD84;&#xC790; &#xAD6C;&#xC870;, SMILES</div></div>
+  <div class="source-item"><span class="source-name">HIRA</span> <span class="source-badge badge-na">API &#xD0A4; &#xD544;&#xC694;</span><div class="source-desc">&#xC57D;&#xAC00;/&#xAE09;&#xC5EC;/&#xBE44;&#xAE09;&#xC5EC;</div></div>
+  <hr>
+
+  <div class="sidebar-footer">
+    Bedrock &#xC5F0;&#xB3D9;: &#xBCC4;&#xB3C4; &#xC9C0;&#xC2DC; &#xC608;&#xC815;<br>
+    Version: 2.0.0 | 2026-04-08
+  </div>
+</div>
+
+<!-- Main -->
+<div class="main">
+  <div class="main-header">
+    <h1>&#xC57D;&#xBB3C; &#xC7AC;&#xCC3D;&#xCD9C; &#xD30C;&#xC774;&#xD504;&#xB77C;&#xC778; &#xCC44;&#xD305;</h1>
+  </div>
+  <div class="chat-container" id="chatContainer">
+    <div class="msg msg-assistant">
+      &#xC548;&#xB155;&#xD558;&#xC138;&#xC694;! &#xC57D;&#xBB3C; &#xC7AC;&#xCC3D;&#xCD9C; &#xD30C;&#xC774;&#xD504;&#xB77C;&#xC778; &#xCC44;&#xD305;&#xC5D0; &#xC624;&#xC2E0; &#xAC83;&#xC744; &#xD658;&#xC601;&#xD569;&#xB2C8;&#xB2E4;.<br><br>
+      &#xC67C;&#xCABD; <strong>&#xBE60;&#xB978; &#xC9C8;&#xBB38;</strong> &#xBC84;&#xD2BC;&#xC744; &#xD074;&#xB9AD;&#xD558;&#xAC70;&#xB098; &#xC544;&#xB798; &#xC785;&#xB825;&#xCC3D;&#xC5D0; &#xC9C8;&#xBB38;&#xC744; &#xC785;&#xB825;&#xD574; &#xC8FC;&#xC138;&#xC694;.<br><br>
+      &#xC0AC;&#xC6A9; &#xAC00;&#xB2A5;&#xD55C; &#xC9C8;&#xBB38; &#xC608;&#xC2DC;:<br>
+      &bull; &#xC57D;&#xBB3C; &#xD6C4;&#xBCF4; &#xCD94;&#xCC9C;&#xD574;&#xC918;<br>
+      &bull; &#xC7AC;&#xCC3D;&#xCD9C; &#xD6C4;&#xBCF4; 9&#xAC74; &#xBCF4;&#xC5EC;&#xC918;<br>
+      &bull; METABRIC &#xAC80;&#xC99D; &#xACB0;&#xACFC;<br>
+      &bull; Docetaxel &#xBD80;&#xC791;&#xC6A9; &#xC54C;&#xB824;&#xC918;<br>
+      &bull; breast cancer drug sensitivity &#xB17C;&#xBB38; &#xAC80;&#xC0C9;&#xD574;&#xC918;
+    </div>
+  </div>
+  <div class="follow-ups" id="followUps"></div>
+  <div class="typing-indicator" id="typingIndicator">&#xB370;&#xC774;&#xD130; &#xC870;&#xD68C; &#xC911;...</div>
+  <div class="chat-input-area">
+    <input type="text" class="chat-input" id="chatInput" placeholder="&#xC9C8;&#xBB38;&#xC744; &#xC785;&#xB825;&#xD558;&#xC138;&#xC694; (&#xC608;: &#xC7AC;&#xCC3D;&#xCD9C; &#xD6C4;&#xBCF4; 9&#xAC74; &#xBCF4;&#xC5EC;&#xC918;)" onkeydown="if(event.key==='Enter')sendMessage()">
+    <button class="send-btn" onclick="sendMessage()">&#xC804;&#xC1A1;</button>
+  </div>
+</div>
+
+<script>
+// ══════════════════════════════════════
+// Embedded Pipeline Data
+// ══════════════════════════════════════
+const DRUG_CANDIDATES = [
+  {rank:1,id:1911,name:"Dactinomycin",target:"RNA polymerase",pathway:"Other",ic50:-3.226,safety:7.0,combined:14.0,flags:"DILI",cls:"유방암 미사용",clsColor:"novel",reason:"FDA 승인: 윌름스 종양, 융모성 질환. 유방암 적응증 없음"},
+  {rank:2,id:1007,name:"Docetaxel",target:"Microtubule stabiliser",pathway:"Mitosis",ic50:-3.130,safety:6.83,combined:13.33,flags:"DILI",cls:"유방암 현재 사용",clsColor:"current",reason:"FDA 유방암 적응증 승인 (보조/전이성)"},
+  {rank:3,id:1004,name:"Vinblastine",target:"Microtubule destabiliser",pathway:"Mitosis",ic50:-2.722,safety:7.83,combined:13.33,flags:"-",cls:"유방암 현재 사용",clsColor:"current",reason:"FDA 유방암 적응증 포함"},
+  {rank:4,id:1034,name:"Staurosporine",target:"Broad spectrum kinase inhibitor",pathway:"RTK signaling",ic50:-2.328,safety:10.0,combined:13.0,flags:"-",cls:"유방암 미사용",clsColor:"novel",reason:"연구용 화합물, FDA 미승인"},
+  {rank:5,id:1819,name:"Docetaxel",target:"Microtubule stabiliser",pathway:"Mitosis",ic50:-2.811,safety:6.83,combined:12.83,flags:"DILI",cls:"유방암 현재 사용",clsColor:"current",reason:"FDA 유방암 적응증 승인 (보조/전이성)"},
+  {rank:6,id:1191,name:"Bortezomib",target:"Proteasome",pathway:"Protein stability",ic50:-4.840,safety:5.29,combined:12.79,flags:"DILI",cls:"적응증 확장/연구 중",clsColor:"trial",reason:"유방암 임상시험 진행 (NCT00025246)"},
+  {rank:7,id:2048,name:"Vinorelbine",target:"Microtubule destabiliser",pathway:"Mitosis",ic50:-2.637,safety:8.0,combined:12.5,flags:"-",cls:"유방암 현재 사용",clsColor:"current",reason:"전이성 유방암 표준요법"},
+  {rank:8,id:1494,name:"SN-38",target:"TOP1",pathway:"DNA replication",ic50:-2.279,safety:10.0,combined:12.5,flags:"-",cls:"적응증 확장/연구 중",clsColor:"trial",reason:"Sacituzumab govitecan (SN-38 접합체) FDA TNBC 승인"},
+  {rank:9,id:1180,name:"Dinaciclib",target:"CDK1, CDK2, CDK5, CDK9",pathway:"Cell cycle",ic50:-2.195,safety:10.0,combined:12.0,flags:"-",cls:"적응증 확장/연구 중",clsColor:"trial",reason:"CDK 억제제, 유방암 임상 1/2상"},
+  {rank:10,id:1080,name:"Paclitaxel",target:"Microtubule stabiliser",pathway:"Mitosis",ic50:-2.671,safety:6.83,combined:11.83,flags:"DILI",cls:"유방암 현재 사용",clsColor:"current",reason:"FDA 유방암 적응증 승인"},
+  {rank:11,id:1084,name:"Rapamycin",target:"MTORC1",pathway:"PI3K/MTOR signaling",ic50:-2.389,safety:7.71,combined:11.21,flags:"-",cls:"적응증 확장/연구 중",clsColor:"trial",reason:"유도체 Everolimus FDA HR+/HER2- 유방암 승인"},
+  {rank:12,id:1811,name:"Dactinomycin",target:"RNA polymerase",pathway:"Other",ic50:-2.595,safety:7.0,combined:11.0,flags:"DILI",cls:"유방암 미사용",clsColor:"novel",reason:"FDA 승인: 윌름스 종양, 융모성 질환. 유방암 적응증 없음"},
+  {rank:13,id:1003,name:"Camptothecin",target:"TOP1",pathway:"DNA replication",ic50:-0.743,safety:10.0,combined:11.0,flags:"-",cls:"유방암 미사용",clsColor:"novel",reason:"연구용, Irinotecan/Topotecan 모 화합물"},
+  {rank:14,id:1559,name:"Luminespib",target:"HSP90",pathway:"Protein stability",ic50:-1.868,safety:5.0,combined:6.5,flags:"-",cls:"적응증 확장/연구 중",clsColor:"trial",reason:"HSP90 억제제, 유방암 2상 임상시험"},
+  {rank:15,id:1511,name:"Epirubicin",target:"Anthracycline",pathway:"DNA replication",ic50:0.037,safety:2.83,combined:3.33,flags:"Ames, DILI",cls:"유방암 현재 사용",clsColor:"current",reason:"FDA 유방암 보조요법 승인"}
+];
+
+const MODEL_RESULTS = {
+  ml:[
+    {model:"CatBoost",sp:0.8007,rmse:1.3172,status:"통과"},
+    {model:"LightGBM",sp:0.7913,rmse:1.3438,status:"통과"},
+    {model:"XGBoost",sp:0.7895,rmse:1.3445,status:"통과"},
+    {model:"LightGBM-DART",sp:0.7848,rmse:1.4029,status:"실패 (RMSE)"},
+    {model:"Stacking",sp:0.7981,rmse:1.3213,status:"제외"},
+    {model:"ExtraTrees",sp:0.6468,rmse:1.8704,status:"실패"},
+    {model:"RandomForest",sp:0.6267,rmse:1.9747,status:"실패"},
+    {model:"RSF",sp:0.6142,rmse:0.0,status:"METABRIC 전용"}
+  ],
+  dl:[
+    {model:"FlatMLP",sp:0.7936,rmse:1.3429,status:"통과"},
+    {model:"ResidualMLP",sp:0.7855,rmse:1.3776,status:"통과"},
+    {model:"Cross-Attention",sp:0.7852,rmse:1.3716,status:"통과"},
+    {model:"TabNet",sp:0.7780,rmse:1.3892,status:"실패 (RMSE)"},
+    {model:"FT-Transformer",sp:0.7625,rmse:1.4444,status:"실패 (RMSE)"}
+  ],
+  graph:[
+    {model:"GraphSAGE",sp:0.3852,rmse:2.3189,status:"METABRIC P@20=94%"},
+    {model:"GAT",sp:0.0085,rmse:2.6608,status:"실패"}
+  ],
+  ensemble:{sp:0.8055,rmse:1.3008,method:"Spearman 가중 평균 (6개 모델)"}
+};
+
+const METABRIC = {
+  a:{expressed:29,brca_pathway:22,total:30},
+  b:{significant:28,rsf_c:0.821,rsf_auroc:0.846},
+  c:{p5:{p:0.80,h:4,t:5},p10:{p:0.90,h:9,t:10},p15:{p:0.933,h:14,t:15},p20:{p:0.75,h:15,t:20}}
+};
+
+// ══════════════════════════════════════
+// Query Classification & Processing
+// ══════════════════════════════════════
+function classifyQuery(q){
+  q=q.toLowerCase();
+  if(/재창출|repurposing|후보 9|신약 후보/.test(q)) return "repurposing";
+  if(/약물 후보|추천|drug candidate|top.?15|top.?30/.test(q)) return "drug_candidates";
+  if(/모델 결과|model result|성능|spearman|rmse|앙상블|ensemble/.test(q)) return "model_results";
+  if(/metabric|외부 검증|메타브릭/.test(q)) return "metabric";
+  if(/부작용|adverse|side effect|faers/.test(q)) return "adverse_events";
+  if(/논문|연구|pubmed|paper|research|최신/.test(q)) return "pubmed";
+  if(/약가|보험|급여|hira|가격/.test(q)) return "hira";
+  if(/임상|clinical trial|시험/.test(q)) return "clinical_trials";
+  if(/admet|독성|안전|toxicity|safety/.test(q)) return "admet";
+  if(/신약|후보물질|chembl|화합물/.test(q)) return "chembl";
+  if(/구조|분자|pubchem|smiles|structure/.test(q)) return "pubchem";
+  if(/파이프라인|진행|현황|status|pipeline/.test(q)) return "pipeline_status";
+  return "general";
+}
+
+async function processQuery(query){
+  const cat = classifyQuery(query);
+
+  if(cat==="drug_candidates") return {html:renderDrugCandidates(),cat};
+  if(cat==="repurposing") return {html:renderRepurposing(),cat};
+  if(cat==="model_results") return {html:renderModelResults(),cat};
+  if(cat==="metabric") return {html:renderMetabric(),cat};
+  if(cat==="admet") return {html:renderAdmet(),cat};
+  if(cat==="pipeline_status") return {html:renderPipeline(),cat};
+  if(cat==="hira") return {html:"<strong>HIRA API</strong> 연동에는 <strong>공공데이터포털 API 키</strong>가 필요합니다.<br><br>API 키를 제공해 주시면 연동을 진행하겠습니다.<br>(<a href='https://www.data.go.kr' target='_blank'>https://www.data.go.kr</a>)",cat};
+
+  // External API calls
+  if(cat==="pubmed") return {html:await fetchPubMed(query),cat};
+  if(cat==="adverse_events") return {html:await fetchFAERS(query),cat};
+  if(cat==="clinical_trials") return {html:await fetchClinicalTrials(query),cat};
+  if(cat==="chembl") return {html:await fetchChEMBL(query),cat};
+  if(cat==="pubchem") return {html:await fetchPubChem(query),cat};
+
+  return {html:"질문을 이해했습니다. 현재 Bedrock 연동 전이라 자연어 대화는 제한적입니다.<br><br>왼쪽 <strong>빠른 질문</strong> 버튼을 사용해 보세요.",cat};
+}
+
+// ══════════════════════════════════════
+// Local Data Renderers
+// ══════════════════════════════════════
+function clsBadge(cls,color){
+  const c={current:"cls-current",trial:"cls-trial",novel:"cls-novel"}[color]||"";
+  return `<span class="${c}">${cls}</span>`;
+}
+
+function renderDrugCandidates(){
+  let h=`<h3>최종 약물 후보 15건</h3><p>ADMET 필터링 + 유방암 적응증 분류</p>
+  <table><tr><th>#</th><th>약물</th><th>타겟</th><th>예측 IC50</th><th>안전성</th><th>종합</th><th>유방암 분류</th><th>우려</th></tr>`;
+  DRUG_CANDIDATES.forEach(d=>{
+    h+=`<tr><td>${d.rank}</td><td><strong>${d.name}</strong></td><td>${d.target}</td><td>${d.ic50.toFixed(3)}</td><td>${d.safety.toFixed(1)}</td><td>${d.combined.toFixed(1)}</td><td>${clsBadge(d.cls,d.clsColor)}</td><td>${d.flags}</td></tr>`;
+  });
+  h+=`</table><br>유방암 현재 사용: <strong>6</strong> | 적응증 확장/연구 중: <strong>5</strong> | 유방암 미사용(신약 후보): <strong>4</strong>`;
+  return h;
+}
+
+function renderRepurposing(){
+  const cands = DRUG_CANDIDATES.filter(d=>d.clsColor==="trial"||d.clsColor==="novel");
+  let h=`<h3>약물 재창출 후보 ${cands.length}건</h3>
+  <p>적응증 확장/연구 중: ${cands.filter(d=>d.clsColor==="trial").length}건 | 유방암 미사용: ${cands.filter(d=>d.clsColor==="novel").length}건</p>
+  <table><tr><th>#</th><th>약물</th><th>타겟</th><th>예측 IC50</th><th>안전성</th><th>종합</th><th>유방암 분류</th><th>분류 근거</th></tr>`;
+  cands.forEach(d=>{
+    h+=`<tr><td>${d.rank}</td><td><strong>${d.name}</strong></td><td>${d.target}</td><td>${d.ic50.toFixed(3)}</td><td>${d.safety.toFixed(1)}</td><td>${d.combined.toFixed(1)}</td><td>${clsBadge(d.cls,d.clsColor)}</td><td>${d.reason}</td></tr>`;
+  });
+  h+=`</table><br><a href="repurposing_candidates.html" target="_blank">&#x279C; 재창출 후보 9건 상세 대시보드 보기</a>`;
+  return h;
+}
+
+function renderModelResults(){
+  let h=`<h3>모델 학습 결과 요약</h3>`;
+  function tbl(title,models){
+    h+=`<h4>${title}</h4><table><tr><th>모델</th><th>검증 Spearman</th><th>RMSE</th><th>상태</th></tr>`;
+    models.forEach(m=>{
+      const sc=m.status.includes("통과")?"color:#155724":"";
+      h+=`<tr><td>${m.model}</td><td>${m.sp.toFixed(4)}</td><td>${m.rmse.toFixed(4)}</td><td style="${sc}">${m.status}</td></tr>`;
+    });
+    h+=`</table>`;
+  }
+  tbl("ML 모델 (8개)",MODEL_RESULTS.ml);
+  tbl("DL 모델 (5개)",MODEL_RESULTS.dl);
+  tbl("그래프 모델 (2개)",MODEL_RESULTS.graph);
+  h+=`<h4>앙상블</h4><ul><li>Spearman: <strong>${MODEL_RESULTS.ensemble.sp.toFixed(4)}</strong></li><li>RMSE: <strong>${MODEL_RESULTS.ensemble.rmse.toFixed(4)}</strong></li><li>방법: ${MODEL_RESULTS.ensemble.method}</li></ul>`;
+  return h;
+}
+
+function renderMetabric(){
+  const m=METABRIC;
+  let h=`<h3>METABRIC 외부 검증 결과 (A+B+C)</h3>
+  <ul>
+    <li><strong>방법 A</strong>: ${m.a.expressed}/${m.a.total} 타겟 발현, ${m.a.brca_pathway}/${m.a.total} BRCA 관련 경로</li>
+    <li><strong>방법 B</strong>: ${m.b.significant}/30 생존 유의 (p&lt;0.05), RSF C-index: ${m.b.rsf_c.toFixed(3)}</li>
+    <li><strong>P@5</strong>: ${(m.c.p5.p*100).toFixed(1)}% (${m.c.p5.h}/${m.c.p5.t})</li>
+    <li><strong>P@10</strong>: ${(m.c.p10.p*100).toFixed(1)}% (${m.c.p10.h}/${m.c.p10.t})</li>
+    <li><strong>P@15</strong>: ${(m.c.p15.p*100).toFixed(1)}% (${m.c.p15.h}/${m.c.p15.t})</li>
+    <li><strong>P@20</strong>: ${(m.c.p20.p*100).toFixed(1)}% (${m.c.p20.h}/${m.c.p20.t})</li>
+  </ul>
+  <br>검증 데이터: METABRIC (1,980 환자 &times; 20,603 유전자)`;
+  return h;
+}
+
+function renderAdmet(){
+  let h=`<h3>ADMET 안전성 평가 결과 (22개 분석 항목)</h3>`;
+  const cur=DRUG_CANDIDATES.filter(d=>d.clsColor==="current").length;
+  const tri=DRUG_CANDIDATES.filter(d=>d.clsColor==="trial").length;
+  const nov=DRUG_CANDIDATES.filter(d=>d.clsColor==="novel").length;
+  h+=`<p><strong>유방암 적응증 분류</strong>: 현재 사용 ${cur} | 연구 중 ${tri} | 미사용(신약 후보) ${nov}</p>`;
+  h+=`<table><tr><th>#</th><th>약물</th><th>타겟</th><th>예측 IC50</th><th>안전성</th><th>종합</th><th>유방암 분류</th><th>우려사항</th></tr>`;
+  DRUG_CANDIDATES.forEach(d=>{
+    h+=`<tr><td>${d.rank}</td><td>${d.name}</td><td>${d.target}</td><td>${d.ic50.toFixed(3)}</td><td>${d.safety.toFixed(1)}</td><td>${d.combined.toFixed(1)}</td><td>${clsBadge(d.cls,d.clsColor)}</td><td>${d.flags}</td></tr>`;
+  });
+  h+=`</table><br>출처: TDC ADMET Benchmark (22개 분석) + DrugBank/ClinicalTrials.gov`;
+  return h;
+}
+
+function renderPipeline(){
+  return `<h3>파이프라인 진행 현황 (7/7 완료)</h3>
+  <table>
+    <tr><th>단계</th><th>내용</th><th>상태</th></tr>
+    <tr><td>1</td><td>환경 설정</td><td>&#x2705; 완료</td></tr>
+    <tr><td>2</td><td>데이터 준비</td><td>&#x2705; 완료</td></tr>
+    <tr><td>3</td><td>특성 공학</td><td>&#x2705; 완료</td></tr>
+    <tr><td>4</td><td>모델 학습 (15개)</td><td>&#x2705; 완료</td></tr>
+    <tr><td>5</td><td>앙상블 Track2</td><td>&#x2705; 완료 (Sp=0.8055)</td></tr>
+    <tr><td>6</td><td>METABRIC 외부 검증</td><td>&#x2705; 완료 (P@15=93.3%)</td></tr>
+    <tr><td>7</td><td>ADMET 게이트</td><td>&#x2705; 완료 (15개 최종 후보)</td></tr>
+  </table>
+  <br><strong>7/7 단계 완료 (100%)</strong><br><br>
+  <strong>최종 결과</strong>: 15개 약물 후보 (유방암 현재 사용 6 | 연구 중 5 | 신약 후보 4)`;
+}
+
+// ══════════════════════════════════════
+// External API Fetchers
+// ══════════════════════════════════════
+function extractTerms(query, stopWords){
+  return query.split(/\s+/).filter(w=>w.length>2 && !stopWords.includes(w.toLowerCase()));
+}
+
+async function fetchPubMed(query){
+  try{
+    const terms = extractTerms(query,["최신","논문","검색","연구","알려줘","보여줘","해줘"]);
+    const searchTerm = terms.length ? terms.join(" ") : "breast cancer drug sensitivity GDSC";
+    const searchUrl=`https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=${encodeURIComponent(searchTerm)}&retmax=5&sort=date&retmode=json`;
+    const sr=await(await fetch(searchUrl)).json();
+    const ids=sr.esearchresult?.idlist||[];
+    if(!ids.length) return `'${searchTerm}' 관련 PubMed 검색 결과가 없습니다.`;
+    const fetchUrl=`https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=${ids.join(",")}&retmode=json`;
+    const fr=await(await fetch(fetchUrl)).json();
+    let h=`<h3>PubMed 검색 결과</h3><p>'${searchTerm}'</p>`;
+    ids.forEach((id,i)=>{
+      const a=fr.result?.[id];
+      if(!a) return;
+      const authors=(a.authors||[]).slice(0,3).map(x=>x.name).join(", ")+(a.authors?.length>3?" et al.":"");
+      h+=`<p><strong>${i+1}. ${a.title}</strong><br>저자: ${authors}<br>저널: ${a.source} (${a.pubdate})<br>PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/${id}/" target="_blank">${id}</a></p>`;
+    });
+    h+=`<br>출처: PubMed (NCBI)`;
+    return h;
+  }catch(e){return `PubMed 검색 오류: ${e.message}`}
+}
+
+async function fetchFAERS(query){
+  try{
+    const terms=extractTerms(query,["부작용","알려줘","보여줘","해줘","이것","약물"]);
+    const drug=terms[0]||"docetaxel";
+    const url=`https://api.fda.gov/drug/event.json?search=patient.drug.medicinalproduct:"${encodeURIComponent(drug)}"&count=patient.reaction.reactionmeddrapt.exact&limit=10`;
+    const data=await(await fetch(url)).json();
+    const results=data.results||[];
+    if(!results.length) return `'${drug}'에 대한 부작용 데이터가 없습니다.`;
+    let h=`<h3>FAERS 부작용 보고</h3><p>'${drug}'</p>
+    <table><tr><th>부작용</th><th>보고 건수</th></tr>`;
+    results.forEach(r=>{h+=`<tr><td>${r.term}</td><td>${r.count.toLocaleString()}</td></tr>`});
+    h+=`</table><br>출처: FDA FAERS`;
+    return h;
+  }catch(e){return `부작용 데이터 조회 오류: ${e.message}`}
+}
+
+async function fetchClinicalTrials(query){
+  try{
+    const terms=extractTerms(query,["임상","시험","알려줘","보여줘","현황"]);
+    const searchTerm=terms.length?terms.join(" "):"breast cancer drug sensitivity";
+    const url=`https://clinicaltrials.gov/api/v2/studies?query.term=${encodeURIComponent(searchTerm)}&pageSize=5&sort=LastUpdatePostDate:desc&format=json`;
+    const data=await(await fetch(url)).json();
+    const studies=data.studies||[];
+    if(!studies.length) return `'${searchTerm}' 관련 임상시험이 없습니다.`;
+    let h=`<h3>ClinicalTrials.gov 검색 결과</h3><p>'${searchTerm}'</p>`;
+    studies.forEach((s,i)=>{
+      const proto=s.protocolSection||{};
+      const idMod=proto.identificationModule||{};
+      const stMod=proto.statusModule||{};
+      const dMod=proto.designModule||{};
+      h+=`<p><strong>${i+1}. ${idMod.briefTitle||"N/A"}</strong><br>NCT ID: <a href="https://clinicaltrials.gov/study/${idMod.nctId}" target="_blank">${idMod.nctId||"N/A"}</a><br>상태: ${stMod.overallStatus||"N/A"} | 단계: ${(dMod.phases||["N/A"]).join(", ")}</p>`;
+    });
+    return h;
+  }catch(e){return `임상시험 데이터 조회 오류: ${e.message}`}
+}
+
+async function fetchChEMBL(query){
+  try{
+    const terms=extractTerms(query,["신약","후보","물질","알려줘","보여줘","화합물"]);
+    const searchTerm=terms.length?terms.join(" "):"breast cancer";
+    const url=`https://www.ebi.ac.uk/chembl/api/data/molecule/search.json?q=${encodeURIComponent(searchTerm)}&limit=5`;
+    const data=await(await fetch(url)).json();
+    const mols=data.molecules||[];
+    if(!mols.length) return `'${searchTerm}' 관련 ChEMBL 화합물이 없습니다.`;
+    let h=`<h3>ChEMBL 화합물 검색</h3><p>'${searchTerm}'</p>
+    <table><tr><th>ChEMBL ID</th><th>이름</th><th>유형</th><th>최대 임상 단계</th></tr>`;
+    mols.forEach(m=>{
+      h+=`<tr><td>${m.molecule_chembl_id||"N/A"}</td><td>${m.pref_name||"N/A"}</td><td>${m.molecule_type||"N/A"}</td><td>${m.max_phase||"N/A"}</td></tr>`;
+    });
+    h+=`</table><br>출처: ChEMBL (EBI)`;
+    return h;
+  }catch(e){return `ChEMBL 조회 오류: ${e.message}`}
+}
+
+async function fetchPubChem(query){
+  try{
+    const terms=extractTerms(query,["구조","분자","알려줘","보여줘","smiles"]);
+    const compound=terms[0]||"docetaxel";
+    const url=`https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/${encodeURIComponent(compound)}/JSON`;
+    const data=await(await fetch(url)).json();
+    const comp=(data.PC_Compounds||[])[0];
+    if(!comp) return `'${compound}' PubChem 검색 결과 없음`;
+    const cid=comp.id?.id?.cid||"N/A";
+    const props={};
+    (comp.props||[]).forEach(p=>{
+      const label=p.urn?.label||"";
+      const name=p.urn?.name||"";
+      const val=p.value?.sval||p.value?.fval||p.value?.ival||"";
+      if(label&&val) props[name?`${label} (${name})`:label]=val;
+    });
+    let h=`<h3>PubChem 화합물 정보</h3><p>'${compound}'</p>
+    <ul><li>CID: <a href="https://pubchem.ncbi.nlm.nih.gov/compound/${cid}" target="_blank">${cid}</a></li>`;
+    ["IUPAC Name","Molecular Formula","Molecular Weight","SMILES","InChI"].forEach(k=>{
+      Object.entries(props).forEach(([pk,pv])=>{
+        if(pk.includes(k.split(" ")[0])) h+=`<li>${pk}: <code>${String(pv).substring(0,120)}</code></li>`;
+      });
+    });
+    h+=`</ul><br>출처: PubChem (NCBI)`;
+    return h;
+  }catch(e){return `PubChem 조회 오류: ${e.message}`}
+}
+
+// ══════════════════════════════════════
+// Chat UI
+// ══════════════════════════════════════
+const followUpMap = {
+  drug_candidates:["재창출 후보 9건 보여줘","ADMET 결과 알려줘","관련 임상시험 알려줘"],
+  repurposing:["ADMET 안전성 결과 알려줘","관련 임상시험 검색해줘","관련 최신 논문 검색해줘"],
+  model_results:["앙상블 결과 보여줘","약물 후보 추천해줘","METABRIC 검증 결과 알려줘"],
+  metabric:["약물 후보 추천해줘","ADMET 결과 알려줘","재창출 후보 9건 보여줘"],
+  adverse_events:["재창출 후보 9건 보여줘","관련 논문 검색해줘","ADMET 프로파일 보여줘"],
+  pubmed:["약물 후보 목록 보여줘","임상시험 현황 알려줘","ADMET 결과 알려줘"],
+  clinical_trials:["재창출 후보 9건 보여줘","최신 논문 검색해줘","부작용 데이터 알려줘"],
+  admet:["재창출 후보 9건 보여줘","약물 후보 목록 보여줘","관련 논문 검색해줘"],
+  pipeline_status:["모델 결과 보여줘","재창출 후보 9건 보여줘","ADMET 결과 알려줘"],
+};
+
+function addMessage(role,html){
+  const container=document.getElementById("chatContainer");
+  const div=document.createElement("div");
+  div.className=`msg msg-${role}`;
+  div.innerHTML=html;
+  container.appendChild(div);
+  container.scrollTop=container.scrollHeight;
+}
+
+function showFollowUps(cat){
+  const el=document.getElementById("followUps");
+  const items=followUpMap[cat]||["재창출 후보 9건 보여줘","모델 결과 보여줘","최신 논문 검색해줘"];
+  el.innerHTML=items.map(q=>`<button class="follow-btn" onclick="askQuestion('${q}')">${q}</button>`).join("");
+}
+
+function showTyping(show){
+  document.getElementById("typingIndicator").className=`typing-indicator${show?" show":""}`;
+}
+
+async function askQuestion(q){
+  addMessage("user",q);
+  showTyping(true);
+  document.getElementById("followUps").innerHTML="";
+  const {html,cat}=await processQuery(q);
+  showTyping(false);
+  addMessage("assistant",html);
+  showFollowUps(cat);
+}
+
+function sendMessage(){
+  const input=document.getElementById("chatInput");
+  const q=input.value.trim();
+  if(!q) return;
+  input.value="";
+  askQuestion(q);
+}
+</script>
+</body>
+</html>

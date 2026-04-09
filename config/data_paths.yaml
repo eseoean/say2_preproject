@@ -1,0 +1,76 @@
+# Data path manifest for the eseo workspace.
+# Runtime defaults are read from project_env.sh + nextflow/nextflow.config.
+# Update this file too if the S3 layout itself changes.
+# Source: curated_date/ (read-only) copied to work folder
+# glue/ excluded (other team member's area)
+# Updated: 2026-04-09 — eseo workspace defaults
+
+base_s3: s3://say2-4team/20260409_eseo
+
+# GDSC drug response
+# gdsc_ic50: GDSC2 only (curated_date/gsdc/gdsc2_basic_clean_20260406.parquet)
+#            BRCA+HCC1806 filtered → 13,388 rows, 52 cells, 295 drugs
+#            GDSC2 only 사유: GDSC1 대비 품질 우수, ADMET 후보군 축소로 품질 우선
+gdsc_ic50:     s3://say2-4team/20260409_eseo/data/gdsc_ic50.parquet
+gdsc_basic:    s3://say2-4team/20260409_eseo/data/gsdc/gdsc2_basic_clean_20260406.parquet
+gdsc_labels:   s3://say2-4team/20260409_eseo/data/gsdc/gdsc2_label_table_20260406.parquet
+gdsc_drug_ann: s3://say2-4team/20260409_eseo/data/gsdc/gdsc2_drug_annotation_master_20260406.parquet
+gdsc_cell_ann: s3://say2-4team/20260409_eseo/data/gsdc/gdsc2_cellline_annotation_table_20260406.parquet
+
+# LINCS
+# lincs_mcf7: MCF7 signatures extracted from Level5 GCTx (oringinal_raw/lincs/)
+#             filtered by cell_id=='MCF7' from curated sig_info + cell_info
+#             63,367 sigs x 12,328 genes → z-score expression matrix
+lincs_mcf7:    s3://say2-4team/20260409_eseo/data/lincs_mcf7.parquet
+lincs_sig:     s3://say2-4team/20260409_eseo/data/lincs/lincs_sig_info_basic_20260406.parquet
+lincs_cell:    s3://say2-4team/20260409_eseo/data/lincs/lincs_cell_info_basic_20260406.parquet
+lincs_pert:    s3://say2-4team/20260409_eseo/data/lincs/lincs_pert_info_basic_20260406.parquet
+lincs_gene:    s3://say2-4team/20260409_eseo/data/lincs/lincs_gene_info_basic_20260406.parquet
+
+# METABRIC
+metabric_expr: s3://say2-4team/20260409_eseo/data/metabric/metabric_expression_basic_clean_20260406.parquet
+metabric_clin: s3://say2-4team/20260409_eseo/data/metabric/metabric_clinical_patient_basic_clean_20260406.parquet
+metabric_sample: s3://say2-4team/20260409_eseo/data/metabric/metabric_clinical_sample_basic_clean_20260406.parquet
+
+# ChEMBL
+chembl_activity: s3://say2-4team/20260409_eseo/data/chembl/chembl_activity_basic_20260406.parquet
+chembl_compound: s3://say2-4team/20260409_eseo/data/chembl/chembl_compound_master_basic_20260406.parquet
+chembl_target:   s3://say2-4team/20260409_eseo/data/chembl/chembl_target_master_basic_20260406.parquet
+chembl_mechanism: s3://say2-4team/20260409_eseo/data/chembl/chembl_drug_mechanism_basic_20260406.parquet
+
+# DrugBank
+drugbank_drug:   s3://say2-4team/20260409_eseo/data/drugbank/drugbank_drug_master_basic_20260406.parquet
+drugbank_target: s3://say2-4team/20260409_eseo/data/drugbank/drugbank_target_table_basic_20260406.parquet
+drugbank_extid:  s3://say2-4team/20260409_eseo/data/drugbank/drugbank_external_identifier_table_basic_20260406.parquet
+
+# DepMap
+depmap_crispr:   s3://say2-4team/20260409_eseo/data/depmap/depmap_crispr_gene_effect_basic_clean_20260406.parquet
+depmap_model:    s3://say2-4team/20260409_eseo/data/depmap/depmap_model_basic_clean_20260406.parquet
+depmap_repurposing: s3://say2-4team/20260409_eseo/data/depmap/depmap_repurposing_matrix_basic_clean_20260406.parquet
+
+# MSigDB
+msigdb_sets:     s3://say2-4team/20260409_eseo/data/msigdb/msigdb_gene_set_membership_basic_20260406.parquet
+msigdb_master:   s3://say2-4team/20260409_eseo/data/msigdb/msigdb_gene_set_master_basic_20260406.parquet
+
+# OpenTargets
+opentargets_direct:   s3://say2-4team/20260409_eseo/data/opentargets/opentargets_association_overall_direct_basic_20260406.parquet
+opentargets_indirect: s3://say2-4team/20260409_eseo/data/opentargets/opentargets_association_by_overall_indirect_basic_20260406.parquet
+opentargets_target:   s3://say2-4team/20260409_eseo/data/opentargets/opentargets_target_basic_20260406.parquet
+
+# STRING
+string_links:   s3://say2-4team/20260409_eseo/data/string/string_links_basic_20260406.parquet
+string_aliases: s3://say2-4team/20260409_eseo/data/string/string_protein_aliases_basic_20260406.parquet
+string_info:    s3://say2-4team/20260409_eseo/data/string/string_protein_info_basic_20260406.parquet
+
+# ADMET
+admet_base:     s3://say2-4team/20260409_eseo/data/admet/
+
+# TCGA
+tcga_clinical:  s3://say2-4team/20260409_eseo/data/tcga/tcga_clinical_clinical_basic_clean_20260406.parquet
+tcga_brca_rna:  s3://say2-4team/20260409_eseo/data/tcga/tcga_brca_rna_file_inventory_basic_20260406.parquet
+
+# Binary conversion params (from team4 codebase)
+binary_quantile: 0.3  # IC50 <= quantile(0.3) => sensitive (1)
+
+# FE output
+output_dir: s3://say2-4team/20260409_eseo/fe_output/

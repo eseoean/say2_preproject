@@ -1,0 +1,300 @@
+[
+  {
+    "drug_id": 1817,
+    "drug_name": "Romidepsin",
+    "target": "HDAC1, HDAC2, HDAC3, HDAC8",
+    "pathway": "Chromatin histone acetylation",
+    "mean_pred_ic50": -4.7611876,
+    "sensitivity_rate": 1.0,
+    "n_assays_tested": 2,
+    "n_pass": 2,
+    "n_caution": 0,
+    "n_nodata": 20,
+    "safety_score": 12.0,
+    "flags": [],
+    "known_approved": true,
+    "assay_details": {
+      "caco2_wang": {
+        "value": null,
+        "status": "no_data",
+        "match_type": "no_match",
+        "similarity": 0.14432989690721648
+      },
+      "hia_hou": {
+        "value": null,
+        "status": "no_data",
+        "match_type": "no_match",
+        "similarity": 0.13186813186813187
+      },
+      "pgp_broccatelli": {
+        "value": null,
+        "status": "no_data",
+        "match_type": "no_match",
+        "similarity": 0.15789473684210525
+      },
+      "bioavailability_ma": {
+        "value": null,
+        "status": "no_data",
+        "match_type": "no_match",
+        "similarity": 0.1375
+      },
+      "bbb_martins": {
+        "value": null,
+        "status": "no_data",
+        "match_type": "no_match",
+        "similarity": 0.2571428571428571
+      },
+      "ppbr_az": {
+        "value": null,
+        "status": "no_data",
+        "match_type": "no_match",
+        "similarity": 0.16470588235294117
+      },
+      "vdss_lombardo": {
+        "value": 1.2,
+        "status": "measured",
+        "match_type": "exact",
+        "similarity": 1.0
+      },
+      "cyp2c9_veith": {
+        "value": null,
+        "status": "no_data",
+        "match_type": "no_match",
+        "similarity": 0.20481927710843373
+      },
+      "cyp2d6_veith": {
+        "value": null,
+        "status": "no_data",
+        "match_type": "no_match",
+        "similarity": 0.20481927710843373
+      },
+      "cyp3a4_veith": {
+        "value": null,
+        "status": "no_data",
+        "match_type": "no_match",
+        "similarity": 0.20481927710843373
+      },
+      "cyp2c9_substrate_carbonmangels": {
+        "value": null,
+        "status": "no_data",
+        "match_type": "no_match",
+        "similarity": 0.16216216216216217
+      },
+      "cyp2d6_substrate_carbonmangels": {
+        "value": null,
+        "status": "no_data",
+        "match_type": "no_match",
+        "similarity": 0.16216216216216217
+      },
+      "cyp3a4_substrate_carbonmangels": {
+        "value": null,
+        "status": "no_data",
+        "match_type": "no_match",
+        "similarity": 0.16666666666666666
+      },
+      "clearance_hepatocyte_az": {
+        "value": null,
+        "status": "no_data",
+        "match_type": "no_match",
+        "similarity": 0.16470588235294117
+      },
+      "clearance_microsome_az": {
+        "value": null,
+        "status": "no_data",
+        "match_type": "no_match",
+        "similarity": 0.16470588235294117
+      },
+      "half_life_obach": {
+        "value": 11.0,
+        "status": "measured",
+        "match_type": "exact",
+        "similarity": 1.0
+      },
+      "ames": {
+        "value": null,
+        "status": "no_data",
+        "match_type": "no_match",
+        "similarity": 0.1891891891891892
+      },
+      "dili": {
+        "value": null,
+        "status": "no_data",
+        "match_type": "no_match",
+        "similarity": 0.15037593984962405
+      },
+      "herg": {
+        "value": null,
+        "status": "no_data",
+        "match_type": "no_match",
+        "similarity": 0.14285714285714285
+      },
+      "ld50_zhu": {
+        "value": null,
+        "status": "no_data",
+        "match_type": "no_match",
+        "similarity": 0.2571428571428571
+      },
+      "lipophilicity_astrazeneca": {
+        "value": null,
+        "status": "no_data",
+        "match_type": "no_match",
+        "similarity": 0.18055555555555555
+      },
+      "solubility_aqsoldb": {
+        "value": null,
+        "status": "no_data",
+        "match_type": "no_match",
+        "similarity": 0.26153846153846155
+      }
+    }
+  },
+  {
+    "drug_id": 1941,
+    "drug_name": "Sepantronium bromide",
+    "target": "BIRC5",
+    "pathway": "Apoptosis regulation",
+    "mean_pred_ic50": -3.73555,
+    "sensitivity_rate": 1.0,
+    "n_assays_tested": 1,
+    "n_pass": 1,
+    "n_caution": 0,
+    "n_nodata": 21,
+    "safety_score": 10.0,
+    "flags": [],
+    "known_approved": false,
+    "assay_details": {
+      "caco2_wang": {
+        "value": null,
+        "status": "no_data",
+        "match_type": "no_match",
+        "similarity": 0.20588235294117646
+      },
+      "hia_hou": {
+        "value": null,
+        "status": "no_data",
+        "match_type": "no_match",
+        "similarity": 0.25
+      },
+      "pgp_broccatelli": {
+        "value": null,
+        "status": "no_data",
+        "match_type": "no_match",
+        "similarity": 0.20618556701030927
+      },
+      "bioavailability_ma": {
+        "value": null,
+        "status": "no_data",
+        "match_type": "no_match",
+        "similarity": 0.25
+      },
+      "bbb_martins": {
+        "value": null,
+        "status": "no_data",
+        "match_type": "no_match",
+        "similarity": 0.22950819672131148
+      },
+      "ppbr_az": {
+        "value": null,
+        "status": "no_data",
+        "match_type": "no_match",
+        "similarity": 0.2753623188405797
+      },
+      "vdss_lombardo": {
+        "value": 23.7,
+        "status": "measured",
+        "match_type": "analog",
+        "similarity": 0.711864406779661
+      },
+      "cyp2c9_veith": {
+        "value": null,
+        "status": "no_data",
+        "match_type": "no_match",
+        "similarity": 0.27631578947368424
+      },
+      "cyp2d6_veith": {
+        "value": null,
+        "status": "no_data",
+        "match_type": "no_match",
+        "similarity": 0.30158730158730157
+      },
+      "cyp3a4_veith": {
+        "value": null,
+        "status": "no_data",
+        "match_type": "no_match",
+        "similarity": 0.2857142857142857
+      },
+      "cyp2c9_substrate_carbonmangels": {
+        "value": null,
+        "status": "no_data",
+        "match_type": "no_match",
+        "similarity": 0.26582278481012656
+      },
+      "cyp2d6_substrate_carbonmangels": {
+        "value": null,
+        "status": "no_data",
+        "match_type": "no_match",
+        "similarity": 0.26582278481012656
+      },
+      "cyp3a4_substrate_carbonmangels": {
+        "value": null,
+        "status": "no_data",
+        "match_type": "no_match",
+        "similarity": 0.26582278481012656
+      },
+      "clearance_hepatocyte_az": {
+        "value": null,
+        "status": "no_data",
+        "match_type": "no_match",
+        "similarity": 0.25
+      },
+      "clearance_microsome_az": {
+        "value": null,
+        "status": "no_data",
+        "match_type": "no_match",
+        "similarity": 0.25
+      },
+      "half_life_obach": {
+        "value": null,
+        "status": "no_data",
+        "match_type": "no_match",
+        "similarity": 0.21951219512195122
+      },
+      "ames": {
+        "value": null,
+        "status": "no_data",
+        "match_type": "no_match",
+        "similarity": 0.2727272727272727
+      },
+      "dili": {
+        "value": null,
+        "status": "no_data",
+        "match_type": "no_match",
+        "similarity": 0.21686746987951808
+      },
+      "herg": {
+        "value": null,
+        "status": "no_data",
+        "match_type": "no_match",
+        "similarity": 0.20454545454545456
+      },
+      "ld50_zhu": {
+        "value": null,
+        "status": "no_data",
+        "match_type": "no_match",
+        "similarity": 0.2923076923076923
+      },
+      "lipophilicity_astrazeneca": {
+        "value": null,
+        "status": "no_data",
+        "match_type": "no_match",
+        "similarity": 0.25
+      },
+      "solubility_aqsoldb": {
+        "value": null,
+        "status": "no_data",
+        "match_type": "no_match",
+        "similarity": 0.24285714285714285
+      }
+    }
+  }
+]

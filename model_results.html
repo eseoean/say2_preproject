@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Model Training Results - Step 4</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; background: #0f172a; color: #e2e8f0; min-height: 100vh; }
+  .header { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); padding: 20px 32px; border-bottom: 1px solid #334155; display: flex; justify-content: space-between; align-items: center; }
+  .header h1 { font-size: 1.3rem; color: #f8fafc; }
+  .header a { color: #38bdf8; text-decoration: none; font-size: 0.85rem; }
+  .header a:hover { text-decoration: underline; }
+  .container { max-width: 1300px; margin: 0 auto; padding: 24px; }
+
+  .section { background: #1e293b; border: 1px solid #334155; border-radius: 8px; padding: 20px; margin-bottom: 20px; }
+  .section-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 4px; display: flex; align-items: center; gap: 10px; }
+  .section-sub { font-size: 0.75rem; color: #64748b; margin-bottom: 16px; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; font-weight: 600; }
+  .badge-done { background: #22c55e20; color: #22c55e; border: 1px solid #22c55e40; }
+  .badge-progress { background: #3b82f620; color: #3b82f6; border: 1px solid #3b82f640; }
+  .badge-pending { background: #64748b20; color: #64748b; border: 1px solid #64748b40; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 0.78rem; }
+  th { text-align: left; padding: 8px 10px; background: #0f172a; color: #94a3b8; border-bottom: 2px solid #334155; font-weight: 600; white-space: nowrap; }
+  td { padding: 7px 10px; border-bottom: 1px solid #1e293b80; white-space: nowrap; }
+  tr:hover { background: rgba(59,130,246,0.05); }
+  tr.pass { border-left: 3px solid #22c55e; }
+  tr.fail { border-left: 3px solid #ef4444; opacity: 0.7; }
+  tr.excluded { border-left: 3px solid #f59e0b; opacity: 0.7; }
+  .val-good { color: #4ade80; font-weight: 700; }
+  .val-bad { color: #f87171; }
+  .val-warn { color: #fbbf24; }
+  .val-neutral { color: #e2e8f0; }
+  .val-dim { color: #64748b; font-size: 0.72rem; }
+
+  .ensemble-tag { display: inline-block; padding: 1px 6px; border-radius: 3px; font-size: 0.65rem; font-weight: 700; }
+  .tag-pass { background: #22c55e; color: #052e16; }
+  .tag-fail { background: #ef4444; color: #fff; }
+  .tag-exclude { background: #f59e0b; color: #422006; }
+  .tag-tbd { background: #64748b; color: #fff; }
+
+  .benchmark { background: #0f172a; border: 1px solid #334155; border-radius: 6px; padding: 12px 16px; margin-bottom: 16px; display: flex; gap: 24px; flex-wrap: wrap; }
+  .bench-item { font-size: 0.78rem; }
+  .bench-label { color: #64748b; }
+  .bench-val { color: #fbbf24; font-weight: 700; margin-left: 4px; }
+
+  .legend { display: flex; gap: 16px; margin-top: 12px; font-size: 0.72rem; color: #64748b; flex-wrap: wrap; }
+  .legend-item { display: flex; align-items: center; gap: 4px; }
+  .legend-bar { width: 14px; height: 3px; border-radius: 2px; }
+
+  .rank { font-size: 0.85rem; font-weight: 800; }
+  .rank-1 { color: #fbbf24; }
+  .rank-2 { color: #94a3b8; }
+  .rank-3 { color: #cd7f32; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>Step 4: Model Training Results</h1>
+  <a href="dashboard.html">&larr; Back to Pipeline Dashboard</a>
+</div>
+<div class="container">
+
+  <!-- Benchmarks -->
+  <div class="benchmark">
+    <div class="bench-item"><span class="bench-label">Spearman target:</span><span class="bench-val">&ge; 0.713</span></div>
+    <div class="bench-item"><span class="bench-label">RMSE target:</span><span class="bench-val">&le; 1.385</span></div>
+    <div class="bench-item"><span class="bench-label">Ensemble rule:</span><span class="bench-val">Sp PASS AND RMSE PASS</span></div>
+    <div class="bench-item"><span class="bench-label">CV:</span><span class="bench-val">5-fold (seed=42)</span></div>
+    <div class="bench-item"><span class="bench-label">Features:</span><span class="bench-val">20,384 (CRISPR 18,310 + pair 2,073)</span></div>
+    <div class="bench-item"><span class="bench-label">Samples:</span><span class="bench-val">7,730 pairs</span></div>
+  </div>
+
+  <!-- ═══ ML Section ═══ -->
+  <div class="section">
+    <div class="section-title">
+      ML Models (8)
+      <span class="badge badge-done">COMPLETE</span>
+    </div>
+    <div class="section-sub">LightGBM, LightGBM-DART, XGBoost, CatBoost, RandomForest, ExtraTrees, Stacking(Ridge), RSF</div>
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Model</th>
+          <th>Val Spearman</th>
+          <th>&plusmn; std</th>
+          <th>Train Spearman</th>
+          <th>Gap(Sp)</th>
+          <th>RMSE</th>
+          <th>&plusmn; std</th>
+          <th>Pearson</th>
+          <th>R&sup2;</th>
+          <th>Time</th>
+          <th>Ensemble</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- CatBoost - Rank 1 -->
+        <tr class="pass">
+          <td><span class="rank rank-1">1</span></td>
+          <td><b>CatBoost</b></td>
+          <td class="val-good">0.8007</td>
+          <td class="val-dim">0.0118</td>
+          <td class="val-neutral">0.9012</td>
+          <td class="val-neutral">0.1006</td>
+          <td class="val-good">1.3172</td>
+          <td class="val-dim">0.0229</td>
+          <td class="val-neutral">0.8657</td>
+          <td class="val-neutral">0.7477</td>
+          <td class="val-dim">42m</td>
+          <td><span class="ensemble-tag tag-pass">PASS</span></td>
+        </tr>
+        <!-- LightGBM - Rank 2 -->
+        <tr class="pass">
+          <td><span class="rank rank-2">2</span></td>
+          <td><b>LightGBM</b></td>
+          <td class="val-good">0.7913</td>
+          <td class="val-dim">0.0130</td>
+          <td class="val-neutral">0.8912</td>
+          <td class="val-neutral">0.0999</td>
+          <td class="val-good">1.3438</td>
+          <td class="val-dim">0.0264</td>
+          <td class="val-neutral">0.8592</td>
+          <td class="val-neutral">0.7374</td>
+          <td class="val-dim">8m</td>
+          <td><span class="ensemble-tag tag-pass">PASS</span></td>
+        </tr>
+        <!-- XGBoost - Rank 3 -->
+        <tr class="pass">
+          <td><span class="rank rank-3">3</span></td>
+          <td><b>XGBoost</b></td>
+          <td class="val-good">0.7895</td>
+          <td class="val-dim">0.0114</td>
+          <td class="val-neutral">0.9059</td>
+          <td class="val-warn">0.1164</td>
+          <td class="val-good">1.3445</td>
+          <td class="val-dim">0.0211</td>
+          <td class="val-neutral">0.8590</td>
+          <td class="val-neutral">0.7371</td>
+          <td class="val-dim">12m</td>
+          <td><span class="ensemble-tag tag-pass">PASS</span></td>
+        </tr>
+        <!-- Stacking -->
+        <tr class="excluded">
+          <td class="val-dim">-</td>
+          <td>Stacking (Ridge)</td>
+          <td class="val-warn">0.7981*</td>
+          <td class="val-dim">-</td>
+          <td class="val-neutral">0.9120*</td>
+          <td class="val-neutral">0.1063*</td>
+          <td class="val-warn">1.3213*</td>
+          <td class="val-dim">-</td>
+          <td class="val-dim">-</td>
+          <td class="val-dim">-</td>
+          <td class="val-dim">&gt;50m</td>
+          <td><span class="ensemble-tag tag-exclude">EXCLUDED</span></td>
+        </tr>
+        <!-- LightGBM DART -->
+        <tr class="fail">
+          <td class="val-dim">-</td>
+          <td>LightGBM DART</td>
+          <td class="val-neutral">0.7848</td>
+          <td class="val-dim">0.0134</td>
+          <td class="val-neutral">0.8502</td>
+          <td class="val-good">0.0654</td>
+          <td class="val-bad">1.4029</td>
+          <td class="val-dim">0.0267</td>
+          <td class="val-neutral">0.8557</td>
+          <td class="val-neutral">0.7139</td>
+          <td class="val-dim">10m</td>
+          <td><span class="ensemble-tag tag-fail">FAIL</span></td>
+        </tr>
+        <!-- ExtraTrees -->
+        <tr class="fail">
+          <td class="val-dim">-</td>
+          <td>ExtraTrees</td>
+          <td class="val-bad">0.6468</td>
+          <td class="val-dim">0.0073</td>
+          <td class="val-neutral">0.7758</td>
+          <td class="val-warn">0.1290</td>
+          <td class="val-bad">1.8704</td>
+          <td class="val-dim">0.0283</td>
+          <td class="val-neutral">0.7376</td>
+          <td class="val-neutral">0.4915</td>
+          <td class="val-dim">2m</td>
+          <td><span class="ensemble-tag tag-fail">FAIL</span></td>
+        </tr>
+        <!-- RandomForest -->
+        <tr class="fail">
+          <td class="val-dim">-</td>
+          <td>RandomForest</td>
+          <td class="val-bad">0.6267</td>
+          <td class="val-dim">0.0115</td>
+          <td class="val-neutral">0.7356</td>
+          <td class="val-neutral">0.1089</td>
+          <td class="val-bad">1.9747</td>
+          <td class="val-dim">0.0340</td>
+          <td class="val-neutral">0.7076</td>
+          <td class="val-neutral">0.4333</td>
+          <td class="val-dim">1.5m</td>
+          <td><span class="ensemble-tag tag-fail">FAIL</span></td>
+        </tr>
+        <!-- RSF -->
+        <tr class="excluded">
+          <td class="val-dim">-</td>
+          <td>RSF</td>
+          <td class="val-bad">0.6142</td>
+          <td class="val-dim">0.0180</td>
+          <td class="val-neutral">0.6811</td>
+          <td class="val-good">0.0670</td>
+          <td colspan="2" class="val-dim" style="text-align:center">C-idx: 0.8209 | AUROC: 0.8462</td>
+          <td class="val-neutral">0.6572</td>
+          <td class="val-dim">-</td>
+          <td class="val-dim">3m</td>
+          <td><span class="ensemble-tag tag-exclude">METABRIC</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="legend">
+      <div class="legend-item"><div class="legend-bar" style="background:#22c55e"></div> Ensemble PASS</div>
+      <div class="legend-item"><div class="legend-bar" style="background:#ef4444"></div> Sp or RMSE FAIL</div>
+      <div class="legend-item"><div class="legend-bar" style="background:#f59e0b"></div> Excluded (time/incomplete)</div>
+      <div class="legend-item">* Stacking: 3/5 fold only (reference)</div>
+    </div>
+  </div>
+
+  <!-- ═══ DL Section ═══ -->
+  <div class="section">
+    <div class="section-title">
+      DL Models (5)
+      <span class="badge badge-done">COMPLETE</span>
+    </div>
+    <div class="section-sub">ResidualMLP, FlatMLP, TabNet, FT-Transformer, Cross-Attention | MPS (Apple Metal) GPU | PyTorch</div>
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Model</th>
+          <th>Val Spearman</th>
+          <th>&plusmn; std</th>
+          <th>Train Spearman</th>
+          <th>Gap(Sp)</th>
+          <th>RMSE</th>
+          <th>&plusmn; std</th>
+          <th>Pearson</th>
+          <th>R&sup2;</th>
+          <th>Time</th>
+          <th>Ensemble</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- FlatMLP - DL Rank 1 -->
+        <tr class="pass">
+          <td><span class="rank rank-1">1</span></td>
+          <td><b>FlatMLP</b></td>
+          <td class="val-good">0.7936</td>
+          <td class="val-dim">0.0110</td>
+          <td class="val-neutral">0.8792</td>
+          <td class="val-neutral">0.0856</td>
+          <td class="val-good">1.3429</td>
+          <td class="val-dim">0.0229</td>
+          <td class="val-neutral">0.8593</td>
+          <td class="val-neutral">0.7378</td>
+          <td class="val-dim">7.9m</td>
+          <td><span class="ensemble-tag tag-pass">PASS</span></td>
+        </tr>
+        <!-- ResidualMLP - DL Rank 2 -->
+        <tr class="pass">
+          <td><span class="rank rank-2">2</span></td>
+          <td><b>ResidualMLP</b></td>
+          <td class="val-good">0.7855</td>
+          <td class="val-dim">0.0103</td>
+          <td class="val-neutral">0.8629</td>
+          <td class="val-neutral">0.0773</td>
+          <td class="val-good">1.3776</td>
+          <td class="val-dim">0.0298</td>
+          <td class="val-neutral">0.8520</td>
+          <td class="val-neutral">0.7239</td>
+          <td class="val-dim">3.9m</td>
+          <td><span class="ensemble-tag tag-pass">PASS</span></td>
+        </tr>
+        <!-- Cross-Attention - DL Rank 3 -->
+        <tr class="pass">
+          <td><span class="rank rank-3">3</span></td>
+          <td><b>Cross-Attention</b></td>
+          <td class="val-good">0.7852</td>
+          <td class="val-dim">0.0106</td>
+          <td class="val-neutral">0.8096</td>
+          <td class="val-good">0.0243</td>
+          <td class="val-good">1.3716</td>
+          <td class="val-dim">0.0284</td>
+          <td class="val-neutral">0.8525</td>
+          <td class="val-neutral">0.7263</td>
+          <td class="val-dim">1.7m</td>
+          <td><span class="ensemble-tag tag-pass">PASS</span></td>
+        </tr>
+        <!-- TabNet - FAIL -->
+        <tr class="fail">
+          <td class="val-dim">-</td>
+          <td>TabNet</td>
+          <td class="val-neutral">0.7780</td>
+          <td class="val-dim">0.0108</td>
+          <td class="val-neutral">0.8913</td>
+          <td class="val-warn">0.1133</td>
+          <td class="val-bad">1.3892</td>
+          <td class="val-dim">0.0274</td>
+          <td class="val-neutral">0.8499</td>
+          <td class="val-neutral">0.7194</td>
+          <td class="val-dim">23.4m</td>
+          <td><span class="ensemble-tag tag-fail">FAIL</span></td>
+        </tr>
+        <!-- FT-Transformer - FAIL -->
+        <tr class="fail">
+          <td class="val-dim">-</td>
+          <td>FT-Transformer</td>
+          <td class="val-neutral">0.7625</td>
+          <td class="val-dim">0.0113</td>
+          <td class="val-neutral">0.8454</td>
+          <td class="val-neutral">0.0828</td>
+          <td class="val-bad">1.4444</td>
+          <td class="val-dim">0.0247</td>
+          <td class="val-neutral">0.8378</td>
+          <td class="val-neutral">0.6966</td>
+          <td class="val-dim">19.3m</td>
+          <td><span class="ensemble-tag tag-fail">FAIL</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="legend">
+      <div class="legend-item"><div class="legend-bar" style="background:#22c55e"></div> Ensemble PASS (3/5)</div>
+      <div class="legend-item"><div class="legend-bar" style="background:#ef4444"></div> RMSE FAIL (2/5)</div>
+      <div class="legend-item">Best overfit control: Cross-Attention (Gap=0.024)</div>
+    </div>
+  </div>
+
+  <!-- ═══ Graph Section ═══ -->
+  <div class="section">
+    <div class="section-title">
+      Graph Models (2)
+      <span class="badge badge-done">COMPLETE</span>
+    </div>
+    <div class="section-sub">GraphSAGE, GAT | Drug-Split 5-fold CV (unseen drug generalization) | Bipartite graph: 29 cells + 295 drugs</div>
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Model</th>
+          <th>Val Spearman</th>
+          <th>&plusmn; std</th>
+          <th>Train Spearman</th>
+          <th>Gap(Sp)</th>
+          <th>RMSE</th>
+          <th>P@20</th>
+          <th>AUROC</th>
+          <th>Time</th>
+          <th>Ensemble</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- GraphSAGE - METABRIC P@20 전용 -->
+        <tr class="excluded">
+          <td class="val-dim">-</td>
+          <td>GraphSAGE</td>
+          <td class="val-bad">0.3852</td>
+          <td class="val-dim">0.1156</td>
+          <td class="val-neutral">0.4948</td>
+          <td class="val-neutral">0.1096</td>
+          <td class="val-bad">2.3189</td>
+          <td class="val-good">0.9400</td>
+          <td class="val-neutral">0.7062</td>
+          <td class="val-dim">0.4m</td>
+          <td><span class="ensemble-tag tag-exclude">METABRIC</span></td>
+        </tr>
+        <!-- GAT -->
+        <tr class="fail">
+          <td class="val-dim">-</td>
+          <td>GAT</td>
+          <td class="val-bad">0.0085</td>
+          <td class="val-dim">0.0819</td>
+          <td class="val-neutral">0.0173</td>
+          <td class="val-neutral">0.0089</td>
+          <td class="val-bad">2.6608</td>
+          <td class="val-bad">0.5000</td>
+          <td class="val-bad">0.4962</td>
+          <td class="val-dim">0.4m</td>
+          <td><span class="ensemble-tag tag-fail">FAIL</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="legend">
+      <div class="legend-item"><div class="legend-bar" style="background:#f59e0b"></div> GraphSAGE: 앙상블 제외 / METABRIC P@20 전용 (P@20=0.94)</div>
+      <div class="legend-item"><div class="legend-bar" style="background:#ef4444"></div> GAT: FAIL (Drug-Split)</div>
+      <div class="legend-item">Drug-Split CV: unseen drug 일반화 테스트 (random-split 대비 난이도 높음)</div>
+    </div>
+  </div>
+
+  <!-- ═══ Ensemble Summary ═══ -->
+  <div class="section" style="border-color:#22c55e40;">
+    <div class="section-title" style="color:#4ade80;">
+      Ensemble Candidates (6/15 models passed)
+    </div>
+    <div class="section-sub">Criteria: Spearman &ge; 0.713 AND RMSE &le; 1.385 | Ranked by Val Spearman</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Model</th>
+          <th>Type</th>
+          <th>Val Spearman</th>
+          <th>RMSE</th>
+          <th>Gap(Sp)</th>
+          <th>Pearson</th>
+          <th>R&sup2;</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="pass"><td><span class="rank rank-1">1</span></td><td><b>CatBoost</b></td><td>ML</td><td class="val-good">0.8007</td><td class="val-good">1.3172</td><td class="val-neutral">0.1006</td><td>0.8657</td><td>0.7477</td></tr>
+        <tr class="pass"><td><span class="rank rank-2">2</span></td><td><b>FlatMLP</b></td><td>DL</td><td class="val-good">0.7936</td><td class="val-good">1.3429</td><td class="val-neutral">0.0856</td><td>0.8593</td><td>0.7378</td></tr>
+        <tr class="pass"><td><span class="rank rank-3">3</span></td><td><b>LightGBM</b></td><td>ML</td><td class="val-good">0.7913</td><td class="val-good">1.3438</td><td class="val-neutral">0.0999</td><td>0.8592</td><td>0.7374</td></tr>
+        <tr class="pass"><td>4</td><td><b>XGBoost</b></td><td>ML</td><td class="val-good">0.7895</td><td class="val-good">1.3445</td><td class="val-warn">0.1164</td><td>0.8590</td><td>0.7371</td></tr>
+        <tr class="pass"><td>5</td><td><b>ResidualMLP</b></td><td>DL</td><td class="val-good">0.7855</td><td class="val-good">1.3776</td><td class="val-neutral">0.0773</td><td>0.8520</td><td>0.7239</td></tr>
+        <tr class="pass"><td>6</td><td><b>Cross-Attention</b></td><td>DL</td><td class="val-good">0.7852</td><td class="val-good">1.3716</td><td class="val-good">0.0243</td><td>0.8525</td><td>0.7263</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+</body>
+</html>

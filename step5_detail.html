@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>단계 5: 앙상블 결과</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; background: #0f172a; color: #e2e8f0; min-height: 100vh; }
+  .header { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); padding: 20px 32px; border-bottom: 1px solid #334155; display: flex; justify-content: space-between; align-items: center; }
+  .header h1 { font-size: 1.3rem; color: #f8fafc; }
+  .header a { color: #38bdf8; text-decoration: none; font-size: 0.85rem; }
+  .container { max-width: 1300px; margin: 0 auto; padding: 24px; }
+  .section { background: #1e293b; border: 1px solid #334155; border-radius: 8px; padding: 20px; margin-bottom: 20px; }
+  .section-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 4px; display: flex; align-items: center; gap: 10px; }
+  .section-sub { font-size: 0.75rem; color: #64748b; margin-bottom: 16px; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; font-weight: 600; }
+  .badge-done { background: #22c55e20; color: #22c55e; border: 1px solid #22c55e40; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.78rem; }
+  th { text-align: left; padding: 8px 10px; background: #0f172a; color: #94a3b8; border-bottom: 2px solid #334155; font-weight: 600; white-space: nowrap; }
+  td { padding: 7px 10px; border-bottom: 1px solid #1e293b80; white-space: nowrap; }
+  tr:hover { background: rgba(59,130,246,0.05); }
+  .val-good { color: #4ade80; font-weight: 700; }
+  .val-neutral { color: #e2e8f0; }
+  .val-dim { color: #64748b; font-size: 0.72rem; }
+  .val-gold { color: #fbbf24; font-weight: 700; }
+  .benchmark { background: #0f172a; border: 1px solid #334155; border-radius: 6px; padding: 12px 16px; margin-bottom: 16px; display: flex; gap: 24px; flex-wrap: wrap; }
+  .bench-item { font-size: 0.78rem; }
+  .bench-label { color: #64748b; }
+  .bench-val { color: #fbbf24; font-weight: 700; margin-left: 4px; }
+  .highlight { background: rgba(34,197,94,0.08); border: 1px solid #22c55e40; border-radius: 8px; padding: 16px; margin-bottom: 16px; }
+  .highlight-title { color: #4ade80; font-size: 1rem; font-weight: 700; margin-bottom: 8px; }
+  .metric-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+  .metric-card { background: #0f172a; border: 1px solid #334155; border-radius: 6px; padding: 12px; text-align: center; }
+  .metric-card .value { font-size: 1.4rem; font-weight: 800; color: #4ade80; }
+  .metric-card .label { font-size: 0.72rem; color: #64748b; margin-top: 4px; }
+  tr.top-drug { border-left: 3px solid #fbbf24; }
+  .drug-name { color: #f8fafc; font-weight: 600; }
+  .drug-target { color: #94a3b8; font-size: 0.7rem; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>단계 5: 앙상블 결과 (Track 2)</h1>
+  <a href="dashboard.html">&larr; 파이프라인 대시보드로 돌아가기</a>
+</div>
+<div class="container">
+
+  <!-- 앙상블 성능 요약 -->
+  <div class="highlight">
+    <div class="highlight-title">앙상블 성능 (Spearman 가중 평균, 6개 모델)</div>
+    <div class="metric-grid">
+      <div class="metric-card">
+        <div class="value">0.8055</div>
+        <div class="label">검증 Spearman (&ge; 0.713) 통과</div>
+      </div>
+      <div class="metric-card">
+        <div class="value">1.3008</div>
+        <div class="label">RMSE (&le; 1.385) 통과</div>
+      </div>
+      <div class="metric-card">
+        <div class="value" style="color:#fbbf24">0.0004</div>
+        <div class="label">Gap(Sp) - 과적합 없음</div>
+      </div>
+      <div class="metric-card">
+        <div class="value">0.8690</div>
+        <div class="label">Pearson 상관계수</div>
+      </div>
+      <div class="metric-card">
+        <div class="value">0.7544</div>
+        <div class="label">R&sup2;</div>
+      </div>
+      <div class="metric-card">
+        <div class="value" style="color:#94a3b8">104.1분</div>
+        <div class="label">총 학습 시간</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모델 가중치 -->
+  <div class="section">
+    <div class="section-title">모델 가중치 및 비교 <span class="badge badge-done">완료</span></div>
+    <div class="section-sub">Spearman 비례 가중치 | 앙상블이 모든 개별 모델보다 우수</div>
+    <table>
+      <thead>
+        <tr><th>모델</th><th>유형</th><th>가중치</th><th>OOF Spearman</th><th>OOF RMSE</th><th>소요시간</th></tr>
+      </thead>
+      <tbody>
+        <tr style="background:rgba(34,197,94,0.1); border-left:3px solid #4ade80;">
+          <td><b>앙상블</b></td><td><b>가중 평균</b></td><td class="val-gold">1.0000</td>
+          <td class="val-good">0.8060</td><td class="val-good">1.3010</td><td class="val-dim">104.1분</td>
+        </tr>
+        <tr><td>CatBoost</td><td>ML</td><td>0.1687</td><td>0.8007</td><td>1.3182</td><td class="val-dim">52.9분</td></tr>
+        <tr><td>FlatMLP</td><td>DL</td><td>0.1673</td><td>0.7939</td><td>1.3432</td><td class="val-dim">7.7분</td></tr>
+        <tr><td>XGBoost</td><td>ML</td><td>0.1665</td><td>0.7900</td><td>1.3457</td><td class="val-dim">18.0분</td></tr>
+        <tr><td>LightGBM</td><td>ML</td><td>0.1663</td><td>0.7895</td><td>1.3527</td><td class="val-dim">19.6분</td></tr>
+        <tr><td>ResidualMLP</td><td>DL</td><td>0.1656</td><td>0.7858</td><td>1.3779</td><td class="val-dim">4.0분</td></tr>
+        <tr><td>Cross-Attention</td><td>DL</td><td>0.1655</td><td>0.7856</td><td>1.3718</td><td class="val-dim">1.9분</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Fold 상세 -->
+  <div class="section">
+    <div class="section-title">5-Fold 교차검증 상세</div>
+    <table>
+      <thead><tr><th>Fold</th><th>검증 Spearman</th><th>RMSE</th><th>학습 Sp</th><th>Gap(Sp)</th></tr></thead>
+      <tbody>
+        <tr><td>0</td><td class="val-good">0.8211</td><td>1.2640</td><td>0.8022</td><td class="val-good">-0.0189</td></tr>
+        <tr><td>1</td><td>0.8041</td><td>1.3196</td><td>0.8065</td><td>0.0024</td></tr>
+        <tr><td>2</td><td>0.8064</td><td>1.2939</td><td>0.8059</td><td>-0.0004</td></tr>
+        <tr><td>3</td><td>0.8032</td><td>1.3134</td><td>0.8066</td><td>0.0034</td></tr>
+        <tr><td>4</td><td>0.7930</td><td>1.3131</td><td>0.8086</td><td>0.0156</td></tr>
+        <tr style="background:#0f172a; font-weight:700;">
+          <td>평균 &plusmn; 표준편차</td><td class="val-good">0.8055 &plusmn; 0.0101</td><td class="val-good">1.3008 &plusmn; 0.0227</td>
+          <td>0.8060</td><td class="val-gold">0.0004</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 상위 30개 약물 -->
+  <div class="section" style="border-color:#fbbf2440;">
+    <div class="section-title" style="color:#fbbf24;">상위 30개 선정 약물</div>
+    <div class="section-sub">앙상블 예측 IC50 기준 정렬 (낮을수록 효과적) | 검증됨 = 민감도 &gt; 50% | 추천 = 모델 기반 | <span style="color:#f87171;">빨간 표시 = 동일 약물 중복 (Step 7에서 제거)</span></div>
+    <table>
+      <thead>
+        <tr><th>#</th><th>약물</th><th>타겟 / 경로</th><th>예측 IC50</th><th>실제 IC50</th><th>민감도</th><th>N</th><th>범주</th></tr>
+      </thead>
+      <tbody>
+        <tr class="top-drug"><td>1</td><td><span class="drug-name">Bortezomib</span></td><td class="drug-target">Proteasome / Protein stability</td><td class="val-good">-4.840</td><td>-5.159</td><td>100%</td><td>28</td><td class="val-good">검증됨</td></tr>
+        <tr class="top-drug"><td>2</td><td><span class="drug-name">Romidepsin</span></td><td class="drug-target">HDAC1/2/3/8 / Chromatin histone</td><td class="val-good">-4.761</td><td>-5.024</td><td>100%</td><td>26</td><td class="val-good">검증됨</td></tr>
+        <tr class="top-drug"><td>3</td><td><span class="drug-name">Sepantronium bromide</span></td><td class="drug-target">BIRC5 / Apoptosis regulation</td><td class="val-good">-3.736</td><td>-3.859</td><td>100%</td><td>28</td><td class="val-good">검증됨</td></tr>
+        <tr class="top-drug"><td>4</td><td><span class="drug-name">Dactinomycin</span></td><td class="drug-target">RNA polymerase / Other</td><td class="val-good">-3.226</td><td>-4.040</td><td>100%</td><td>28</td><td class="val-good">검증됨</td></tr>
+        <tr class="top-drug"><td>5</td><td><span class="drug-name">Docetaxel</span></td><td class="drug-target">Microtubule stabiliser / Mitosis</td><td class="val-good">-3.130</td><td>-4.118</td><td>100%</td><td>29</td><td class="val-good">검증됨</td></tr>
+        <tr style="opacity:0.5;"><td>6</td><td><span class="drug-name">Docetaxel</span> <span style="color:#f87171;font-size:0.7rem;">(중복 &rarr; Step 7 제거)</span></td><td class="drug-target">Microtubule stabiliser / Mitosis</td><td class="val-good">-2.811</td><td>-1.765</td><td>92%</td><td>25</td><td style="color:#f87171;">중복</td></tr>
+        <tr class="top-drug"><td>7</td><td><span class="drug-name">Vinblastine</span></td><td class="drug-target">Microtubule destabiliser / Mitosis</td><td class="val-good">-2.722</td><td>-2.736</td><td>100%</td><td>27</td><td class="val-good">검증됨</td></tr>
+        <tr class="top-drug"><td>8</td><td><span class="drug-name">Paclitaxel</span></td><td class="drug-target">Microtubule stabiliser / Mitosis</td><td class="val-good">-2.671</td><td>-2.780</td><td>100%</td><td>28</td><td class="val-good">검증됨</td></tr>
+        <tr class="top-drug"><td>9</td><td><span class="drug-name">Vinorelbine</span></td><td class="drug-target">Microtubule destabiliser / Mitosis</td><td class="val-good">-2.637</td><td>-2.781</td><td>100%</td><td>28</td><td class="val-good">검증됨</td></tr>
+        <tr style="opacity:0.5;"><td>10</td><td><span class="drug-name">Dactinomycin</span> <span style="color:#f87171;font-size:0.7rem;">(중복 &rarr; Step 7 제거)</span></td><td class="drug-target">RNA polymerase / Other</td><td class="val-good">-2.595</td><td>-1.815</td><td>100%</td><td>26</td><td style="color:#f87171;">중복</td></tr>
+        <tr class="top-drug"><td>11</td><td><span class="drug-name">Rapamycin</span></td><td class="drug-target">MTORC1 / PI3K/MTOR signaling</td><td class="val-good">-2.389</td><td>-2.587</td><td>100%</td><td>28</td><td class="val-good">검증됨</td></tr>
+        <tr class="top-drug"><td>12</td><td><span class="drug-name">Staurosporine</span></td><td class="drug-target">Broad kinase / RTK signaling</td><td class="val-good">-2.328</td><td>-2.531</td><td>100%</td><td>29</td><td class="val-good">검증됨</td></tr>
+        <tr class="top-drug"><td>13</td><td><span class="drug-name">SN-38</span></td><td class="drug-target">TOP1 / DNA replication</td><td class="val-good">-2.279</td><td>-2.612</td><td>100%</td><td>28</td><td class="val-good">검증됨</td></tr>
+        <tr class="top-drug"><td>14</td><td><span class="drug-name">Dinaciclib</span></td><td class="drug-target">CDK1/2/5/9 / Cell cycle</td><td class="val-good">-2.195</td><td>-2.347</td><td>100%</td><td>27</td><td class="val-good">검증됨</td></tr>
+        <tr class="top-drug"><td>15</td><td><span class="drug-name">Luminespib</span></td><td class="drug-target">HSP90 / Protein stability</td><td class="val-good">-1.868</td><td>-2.120</td><td>100%</td><td>28</td><td class="val-good">검증됨</td></tr>
+        <tr><td>16</td><td><span class="drug-name">Daporinad</span></td><td class="drug-target">NAMPT / Metabolism</td><td>-1.734</td><td>-2.480</td><td>100%</td><td>15</td><td class="val-good">검증됨</td></tr>
+        <tr><td>17</td><td><span class="drug-name">Dactolisib</span></td><td class="drug-target">PI3K/MTORC1/2 / PI3K signaling</td><td>-1.130</td><td>-1.422</td><td>100%</td><td>28</td><td class="val-good">검증됨</td></tr>
+        <tr><td>18</td><td><span class="drug-name">MG-132</span></td><td class="drug-target">Proteasome/CAPN1 / Protein stability</td><td>-1.094</td><td>-1.204</td><td>100%</td><td>29</td><td class="val-good">검증됨</td></tr>
+        <tr><td>19</td><td><span class="drug-name">Camptothecin</span></td><td class="drug-target">TOP1 / DNA replication</td><td>-0.743</td><td>-0.802</td><td>100%</td><td>28</td><td class="val-good">검증됨</td></tr>
+        <tr><td>20</td><td><span class="drug-name">Tanespimycin</span></td><td class="drug-target">HSP90 / Protein stability</td><td>-0.158</td><td>-0.140</td><td>100%</td><td>28</td><td class="val-good">검증됨</td></tr>
+        <tr><td>21</td><td><span class="drug-name">SL0101</span></td><td class="drug-target">RSK/AURKB/PIM / Other kinases</td><td>-0.079</td><td>4.011</td><td style="color:#f87171">0%</td><td>1</td><td style="color:#fbbf24">추천</td></tr>
+        <tr><td>22</td><td><span class="drug-name">Sabutoclax</span></td><td class="drug-target">BCL2/BCL-XL / Apoptosis</td><td>-0.055</td><td>-0.125</td><td>100%</td><td>27</td><td class="val-good">검증됨</td></tr>
+        <tr><td>23</td><td><span class="drug-name">Dihydrorotenone</span></td><td class="drug-target">N/A / Unclassified</td><td>-0.019</td><td>-0.081</td><td>100%</td><td>26</td><td class="val-good">검증됨</td></tr>
+        <tr><td>24</td><td><span class="drug-name">Podophyllotoxin bromide</span></td><td class="drug-target">N/A / Unclassified</td><td>-0.014</td><td>-0.186</td><td>92%</td><td>26</td><td class="val-good">검증됨</td></tr>
+        <tr><td>25</td><td><span class="drug-name">Epirubicin</span></td><td class="drug-target">Anthracycline / DNA replication</td><td>0.037</td><td>0.063</td><td>100%</td><td>28</td><td class="val-good">검증됨</td></tr>
+        <tr><td>26</td><td><span class="drug-name">AZD8055</span></td><td class="drug-target">MTORC1/2 / PI3K signaling</td><td>0.074</td><td>-0.145</td><td>100%</td><td>28</td><td class="val-good">검증됨</td></tr>
+        <tr><td>27</td><td><span class="drug-name">Methotrexate</span></td><td class="drug-target">Antimetabolite / DNA replication</td><td>0.371</td><td>0.173</td><td>96%</td><td>27</td><td class="val-good">검증됨</td></tr>
+        <tr><td>28</td><td><span class="drug-name">BI-2536</span></td><td class="drug-target">PLK1/2/3 / Cell cycle</td><td>0.546</td><td>0.495</td><td>96%</td><td>24</td><td class="val-good">검증됨</td></tr>
+        <tr><td>29</td><td><span class="drug-name">Lestaurtinib</span></td><td class="drug-target">FLT3/JAK2/NTRK / Other kinases</td><td>0.586</td><td>0.628</td><td>96%</td><td>28</td><td class="val-good">검증됨</td></tr>
+        <tr><td>30</td><td><span class="drug-name">GNE-317</span></td><td class="drug-target">PI3Kalpha / PI3K signaling</td><td>0.603</td><td>0.469</td><td>96%</td><td>28</td><td class="val-good">검증됨</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+</body>
+</html>
