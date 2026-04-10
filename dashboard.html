@@ -1,314 +1,1117 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>약물 재창출 파이프라인 대시보드</title>
-<style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: 'Segoe UI', system-ui, sans-serif; background: #0f172a; color: #e2e8f0; min-height: 100vh; }
-  .header { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); padding: 24px 32px; border-bottom: 1px solid #334155; }
-  .header h1 { font-size: 1.5rem; color: #f8fafc; }
-  .header p { font-size: 0.85rem; color: #94a3b8; margin-top: 4px; }
-  .container { max-width: 1200px; margin: 0 auto; padding: 24px; }
-  .progress-bar { background: #1e293b; border-radius: 8px; padding: 16px 20px; margin-bottom: 24px; border: 1px solid #334155; }
-  .progress-bar .bar-bg { background: #334155; border-radius: 4px; height: 8px; overflow: hidden; margin-top: 8px; }
-  .progress-bar .bar-fill { background: linear-gradient(90deg, #3b82f6, #06b6d4); height: 100%; border-radius: 4px; transition: width 0.5s; }
-  .progress-label { display: flex; justify-content: space-between; font-size: 0.85rem; color: #94a3b8; }
-  .steps { display: grid; gap: 16px; }
-  .step { background: #1e293b; border: 1px solid #334155; border-radius: 8px; padding: 16px 20px; transition: all 0.3s; }
-  .step.completed { border-color: #22c55e; }
-  .step.active { border-color: #3b82f6; box-shadow: 0 0 0 1px #3b82f6; }
-  .step.pending { opacity: 0.5; }
-  .step-header { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
-  .step-num { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700; flex-shrink: 0; }
-  .completed .step-num { background: #22c55e; color: #052e16; }
-  .active .step-num { background: #3b82f6; color: #fff; }
-  .pending .step-num { background: #334155; color: #64748b; }
-  .step-title { font-weight: 600; font-size: 0.95rem; }
-  .metrics { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
-  .metric { background: #0f172a; border: 1px solid #334155; border-radius: 6px; padding: 6px 10px; font-size: 0.75rem; }
-  .metric .label { color: #64748b; }
-  .metric .value { color: #f8fafc; font-weight: 600; margin-left: 4px; }
-  .timestamp { font-size: 0.7rem; color: #475569; margin-top: 8px; }
-  .data-inventory { margin-top: 12px; width: 100%; border-collapse: collapse; font-size: 0.75rem; }
-  .data-inventory th { text-align: left; padding: 6px 8px; background: #0f172a; color: #94a3b8; border-bottom: 1px solid #334155; font-weight: 600; }
-  .data-inventory td { padding: 5px 8px; border-bottom: 1px solid #1e293b; vertical-align: top; }
-  .data-inventory tr:hover { background: rgba(59,130,246,0.05); }
-  .data-inventory .folder { color: #38bdf8; font-weight: 600; font-family: monospace; }
-  .data-inventory .cnt { color: #f8fafc; text-align: center; font-weight: 600; }
-  .data-inventory .desc { color: #cbd5e1; }
-  .data-inventory .src { color: #6ee7b7; font-size: 0.7rem; }
-  .data-inventory .src-gen { color: #fbbf24; font-size: 0.7rem; }
-  .data-inventory .files-detail { color: #64748b; font-size: 0.68rem; line-height: 1.5; margin-top: 2px; }
-  .inv-header { font-size: 0.8rem; color: #94a3b8; margin-top: 12px; margin-bottom: 4px; font-weight: 600; border-bottom: 1px solid #334155; padding-bottom: 4px; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>약물 재창출 파이프라인 - ESEO 재현 대시보드</title>
+  <style>
+    :root {
+      --bg: #09111f;
+      --panel: #111c2f;
+      --panel-2: #17253d;
+      --line: #2d4061;
+      --text: #e5eefb;
+      --muted: #95a7c5;
+      --accent: #53b4ff;
+      --accent-2: #7ef0c5;
+      --good: #37d67a;
+      --warn: #f6b94f;
+      --bad: #ff6d7a;
+      --info: #77b3ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top right, rgba(83,180,255,0.14), transparent 28%),
+        radial-gradient(circle at top left, rgba(126,240,197,0.10), transparent 26%),
+        linear-gradient(180deg, #0b1424 0%, #09111f 100%);
+    }
+    a { color: inherit; }
+    .shell {
+      max-width: 1380px;
+      margin: 0 auto;
+      padding: 28px 24px 56px;
+    }
+    .masthead {
+      display: grid;
+      gap: 18px;
+      grid-template-columns: minmax(0, 1.8fr) minmax(280px, 1fr);
+      align-items: stretch;
+      margin-bottom: 26px;
+    }
+    .hero {
+      background: linear-gradient(135deg, rgba(23,37,61,0.96), rgba(12,21,36,0.96));
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 28px;
+      box-shadow: 0 18px 48px rgba(0,0,0,0.26);
+    }
+    .hero h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+    }
+    .hero p {
+      margin: 0 0 18px;
+      color: var(--muted);
+      line-height: 1.65;
+      max-width: 70ch;
+    }
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .hero-meta .pill {
+      font-size: 0.8rem;
+    }
+    .status-panel {
+      background: linear-gradient(180deg, rgba(17,28,47,0.95), rgba(9,17,31,0.95));
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 24px;
+      display: grid;
+      gap: 14px;
+    }
+    .status-panel h2 {
+      margin: 0;
+      font-size: 1rem;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    .status-big {
+      font-size: 3rem;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+    }
+    .progress {
+      background: rgba(255,255,255,0.05);
+      border-radius: 999px;
+      overflow: hidden;
+      height: 12px;
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+    .progress > span {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-bottom: 22px;
+    }
+    .hero-card {
+      background: rgba(17,28,47,0.92);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 18px;
+    }
+    .eyebrow {
+      color: var(--muted);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 10px;
+    }
+    .hero-value {
+      font-size: 1.3rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+    .hero-card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.55;
+      font-size: 0.92rem;
+    }
+    .mono {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.95rem;
+      word-break: break-all;
+    }
+    .section {
+      background: rgba(17,28,47,0.94);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 22px;
+      margin-bottom: 18px;
+      box-shadow: 0 14px 34px rgba(0,0,0,0.18);
+    }
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: end;
+      margin-bottom: 18px;
+    }
+    .section-head h2 {
+      margin: 0;
+      font-size: 1.2rem;
+      letter-spacing: -0.02em;
+    }
+    .section-head p {
+      margin: 6px 0 0;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+    .step-grid {
+      display: grid;
+      grid-template-columns: repeat(7, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .step-card {
+      padding: 16px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(23,37,61,0.85), rgba(11,18,32,0.96));
+    }
+    .step-card.complete {
+      box-shadow: inset 0 0 0 1px rgba(55,214,122,0.20);
+    }
+    .step-kicker {
+      font-size: 0.74rem;
+      text-transform: uppercase;
+      letter-spacing: 0.10em;
+      color: var(--accent-2);
+      margin-bottom: 10px;
+    }
+    .step-card h3 {
+      margin: 0 0 10px;
+      font-size: 1rem;
+    }
+    .step-card ul {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted);
+      line-height: 1.55;
+      font-size: 0.88rem;
+    }
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 16px;
+    }
+    .compare-card {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(10,18,31,0.55);
+    }
+    .compare-card h3 {
+      margin: 0 0 8px;
+      font-size: 1rem;
+    }
+    .compare-card p {
+      margin: 0 0 14px;
+      color: var(--muted);
+      line-height: 1.5;
+      font-size: 0.9rem;
+    }
+    .weights {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+    .weight-chip {
+      display: inline-flex;
+      gap: 10px;
+      align-items: center;
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.08);
+      font-size: 0.82rem;
+    }
+    .weight-6 {
+      background: rgba(83,180,255,0.10);
+    }
+    .weight-lite {
+      background: rgba(126,240,197,0.10);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+    thead th {
+      text-align: left;
+      color: var(--muted);
+      font-weight: 600;
+      padding: 11px 10px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255,255,255,0.02);
+    }
+    tbody td, tbody th {
+      padding: 10px;
+      border-bottom: 1px solid rgba(45,64,97,0.55);
+      vertical-align: top;
+    }
+    tbody tr:hover {
+      background: rgba(83,180,255,0.04);
+    }
+    .strong {
+      font-weight: 700;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      padding: 4px 10px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      border: 1px solid transparent;
+      white-space: nowrap;
+    }
+    .pill-neutral { background: rgba(255,255,255,0.08); color: var(--text); }
+    .pill-good { background: rgba(55,214,122,0.15); color: var(--good); border-color: rgba(55,214,122,0.24); }
+    .pill-warn { background: rgba(246,185,79,0.14); color: var(--warn); border-color: rgba(246,185,79,0.22); }
+    .pill-bad { background: rgba(255,109,122,0.14); color: var(--bad); border-color: rgba(255,109,122,0.20); }
+    .pill-info { background: rgba(119,179,255,0.14); color: var(--info); border-color: rgba(119,179,255,0.22); }
+    .pill-approved { background: rgba(55,214,122,0.15); color: var(--good); border-color: rgba(55,214,122,0.24); }
+    .pill-candidate { background: rgba(83,180,255,0.14); color: var(--accent); border-color: rgba(83,180,255,0.24); }
+    .pill-caution { background: rgba(246,185,79,0.16); color: var(--warn); border-color: rgba(246,185,79,0.26); }
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      text-decoration: none;
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.05);
+    }
+    .button.primary {
+      background: linear-gradient(90deg, rgba(83,180,255,0.16), rgba(126,240,197,0.16));
+      border-color: rgba(126,240,197,0.22);
+    }
+    .footnote {
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 0.88rem;
+    }
+    .source-list {
+      columns: 2;
+      padding-left: 18px;
+      color: var(--muted);
+      line-height: 1.6;
+      margin: 0;
+    }
+    @media (max-width: 1200px) {
+      .step-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .hero-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 900px) {
+      .masthead, .comparison-grid { grid-template-columns: 1fr; }
+      .step-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .source-list { columns: 1; }
+    }
+    @media (max-width: 640px) {
+      .shell { padding: 18px 14px 40px; }
+      .hero, .status-panel, .section { padding: 18px; border-radius: 18px; }
+      .hero-grid, .step-grid { grid-template-columns: 1fr; }
+      .section-head { flex-direction: column; align-items: start; }
+      table { display: block; overflow-x: auto; white-space: nowrap; }
+    }
+  </style>
 </head>
 <body>
-<div class="header">
-  <h1>약물 재창출 파이프라인 - 팀 4 (biso)</h1>
-  <p>프로토콜 실행 대시보드 | 시작일: 2026-04-08</p>
-</div>
-<div class="container">
-  <div class="progress-bar">
-    <div class="progress-label">
-      <span>전체 진행률</span>
-      <span id="progress-pct">7 / 7 단계</span>
-    </div>
-    <div class="bar-bg"><div class="bar-fill" id="bar-fill" style="width:100%"></div></div>
-  </div>
-  <div class="steps">
-    <div class="step completed" id="step-1">
-      <div class="step-header"><div class="step-num">1</div><div class="step-title">환경 설정</div></div>
-      <div class="metrics" id="metrics-1">
-        <div class="metric"><span class="label">Python:</span><span class="value">3.10.20</span></div>
-        <div class="metric"><span class="label">conda:</span><span class="value">drug4</span></div>
-        <div class="metric"><span class="label">AWS:</span><span class="value">OK (say2-4team)</span></div>
-        <div class="metric"><span class="label">Git:</span><span class="value">복제됨</span></div>
-        <div class="metric"><span class="label">LightGBM:</span><span class="value">4.6.0</span></div>
-        <div class="metric"><span class="label">XGBoost:</span><span class="value">3.2.0</span></div>
-        <div class="metric"><span class="label">CatBoost:</span><span class="value">1.2.10</span></div>
-        <div class="metric"><span class="label">PyTorch:</span><span class="value">2.11.0</span></div>
-        <div class="metric"><span class="label">PyG:</span><span class="value">2.7.0</span></div>
+  <div class="shell">
+    <section class="masthead">
+      <div class="hero">
+        <div class="toolbar" style="margin-bottom:14px;">
+          <span class="pill pill-good">7 / 7 steps complete</span>
+          <span class="pill pill-info">Updated 2026-04-10 13:53 KST</span>
+          <span class="pill pill-neutral">TAG 20260409_eseo</span>
+        </div>
+        <h1>약물 재창출 파이프라인 - ESEO 재현 대시보드</h1>
+        <p>팀원 대시보드 스타일을 기준으로 현재 재현 결과를 반영한 실행 보드</p>
+        <div class="hero-meta">
+          <span class="pill pill-neutral">Started 2026-04-09</span>
+          <span class="pill pill-neutral">FE run 20260409_newfe_v8_eseo</span>
+          <span class="pill pill-warn">Duplicate drug_name removed</span>
+          <span class="pill pill-good">Step 6-7 selected route = lightweight</span>
+        </div>
       </div>
-      <div class="timestamp" id="ts-1">완료: 2026-04-08</div>
-    </div>
-    <div class="step completed" id="step-2">
-      <div class="step-header"><div class="step-num">2</div><div class="step-title">데이터 준비</div></div>
-      <div class="metrics" id="metrics-2">
-        <div class="metric"><span class="label">총 파일 수:</span><span class="value">159 (curated 157 + generated 2)</span></div>
-        <div class="metric"><span class="label">S3:</span><span class="value">s3://say2-4team/20260408_new_pre_project_biso/.../data/</span></div>
-        <div class="metric"><span class="label">이진화 규칙:</span><span class="value">ln_IC50 &lt;= quantile(0.3) = sensitive</span></div>
-        <div class="metric"><span class="label">설정:</span><span class="value">data_paths.yaml</span></div>
+      <aside class="status-panel">
+        <h2>Overall Progress</h2>
+        <div class="status-big">100%</div>
+        <div class="progress"><span></span></div>
+        <div class="footnote">
+          팀원 원본 대시보드 구조를 참고하되, 현재 재현한 산출물과 6-model / lightweight 비교를 같은 화면에서 확인할 수 있게 정리했습니다.
+        </div>
+        <div class="toolbar">
+          <a class="button primary" href="dashboard_reference.html">원본 참고 대시보드</a>
+          <a class="button" href="step7_detail.html">기존 Step 7 상세</a>
+        </div>
+      </aside>
+    </section>
+
+    <section class="hero-grid">
+      
+      <div class="hero-card">
+        <div class="eyebrow">Selected Track</div>
+        <div class="hero-value">Lightweight 3-model</div>
+        <p>Step 6-7은 LightGBM + FlatMLP + Cross-Attention 조합으로 채택했습니다.</p>
       </div>
-      <!-- ── 전체 데이터셋 목록 ── -->
-      <div class="inv-header">데이터셋 목록 (11개 폴더 + 루트)</div>
-      <table class="data-inventory">
+      <div class="hero-card">
+        <div class="eyebrow">Final Winner</div>
+        <div class="hero-value">Romidepsin</div>
+        <p>Combined score 19.00 / category Approved</p>
+      </div>
+      <div class="hero-card">
+        <div class="eyebrow">ADMET Summary</div>
+        <div class="hero-value">8 / 6 / 1</div>
+        <p>Approved / Candidate / Caution 분포입니다.</p>
+      </div>
+      <div class="hero-card">
+        <div class="eyebrow">S3 Base</div>
+        <div class="hero-value mono">s3://say2-4team/20260409_eseo</div>
+        <p>FE, 모델, METABRIC, ADMET 산출물이 이 경로 아래에 정리돼 있습니다.</p>
+      </div>
+    
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <h2>Pipeline Snapshot</h2>
+          <p>현재 재현 흐름의 핵심 상태만 7단계로 압축했습니다.</p>
+        </div>
+      </div>
+      <div class="step-grid">
+        
+            <article class="step-card complete">
+              <div class="step-kicker">Step 1</div>
+              <h3>환경 설정</h3>
+              <ul><li>Python 3.10.20 / conda drug4</li><li>Java 17 / AWS Batch team4-fe-queue-cpu</li><li>NumPy 1.26.4 + RDKit 호환성 정리</li><li>GitHub 원격 + AWS 자격증명 확인 완료</li></ul>
+            </article>
+            
+            <article class="step-card complete">
+              <div class="step-kicker">Step 2</div>
+              <h3>데이터 준비</h3>
+              <ul><li>gdsc_ic50: 13,388 rows / 52 cell lines / 295 drugs</li><li>depmap_crispr_long: 20.44M rows / 18,443 genes</li><li>drug_features_catalog: 243 / 295 matched (82.4%)</li><li>LINCS fast track + reference LINCS parquet 복사 사용</li></ul>
+            </article>
+            
+            <article class="step-card complete">
+              <div class="step-kicker">Step 3</div>
+              <h3>특성 공학</h3>
+              <ul><li>Nextflow on AWS Batch 완료 (8분 7초)</li><li>features.parquet + labels.parquet + pair_features 생성</li><li>7,730 pair 학습셋 기준 FE 산출물 사용</li><li>fe_output/20260409_newfe_v8_eseo 업로드 완료</li></ul>
+            </article>
+            
+            <article class="step-card complete">
+              <div class="step-kicker">Step 4</div>
+              <h3>모델 학습</h3>
+              <ul><li>총 15개 모델 실행, PASS 6개 + META 1개</li><li>최고 ML: CatBoost (0.7997 / 1.3170)</li><li>최고 DL: FlatMLP (0.7966 / 1.3327)</li><li>Graph는 보조 검증용으로만 유지</li></ul>
+            </article>
+            
+            <article class="step-card complete">
+              <div class="step-kicker">Step 5</div>
+              <h3>앙상블</h3>
+              <ul><li>6-model: Sp 0.8055 / RMSE 1.3008</li><li>Lite 3-model: Sp 0.8036 / RMSE 1.3033</li><li>Top15 drug set overlap 15 / 15</li><li>선택 경로: LightGBM + FlatMLP + Cross-Attention</li></ul>
+            </article>
+            
+            <article class="step-card complete">
+              <div class="step-kicker">Step 6</div>
+              <h3>METABRIC 외부 검증</h3>
+              <ul><li>Target expressed 27 / 28</li><li>BRCA pathway 21 / 28</li><li>Survival significant 26 / 28</li><li>P@20 65.0%</li></ul>
+            </article>
+            
+            <article class="step-card complete">
+              <div class="step-kicker">Step 7</div>
+              <h3>ADMET 최종 선정</h3>
+              <ul><li>Approved 8 / Candidate 6 / Caution 1</li><li>Top1 Romidepsin</li><li>최종 후보는 경량형 트랙 기준으로 채택</li><li>drug_name 기준 고유 약물만 유지</li></ul>
+            </article>
+            
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <h2>Step 4 Model Leaderboard</h2>
+          <p>기준선은 Spearman ≥ 0.713 and RMSE ≤ 1.385 입니다. `META`는 base ensemble 후보가 아닌 메타 모델, `METABRIC`은 Step 6 보조용 모델입니다.</p>
+        </div>
+      </div>
+      <table>
         <thead>
-          <tr><th>폴더</th><th style="text-align:center">파일 수</th><th>주요 데이터셋</th><th>출처</th></tr>
+          <tr>
+            <th>Family</th>
+            <th>Model</th>
+            <th>Spearman</th>
+            <th>RMSE</th>
+            <th>Pearson</th>
+            <th>R²</th>
+            <th>Gap</th>
+            <th>Time</th>
+            <th>Status</th>
+            <th>Step 5 Role</th>
+          </tr>
         </thead>
         <tbody>
-          <!-- ADMET -->
-          <tr>
-            <td class="folder">admet/</td>
-            <td class="cnt">48</td>
-            <td class="desc">
-              ADMET 22개 분석 (train_val + test 분할) &mdash; Ames, BBB, Caco-2, CYP2C9/2D6/3A4, DILI, hERG, HIA 등
-              <div class="files-detail">admet_task_inventory, 각 분석별 train_val_basic_clean + test_basic_clean (22개 &times; 2 = 44), QC json/md 4건</div>
-            </td>
-            <td class="src">curated_date/admet/</td>
-          </tr>
-          <!-- ChEMBL -->
-          <tr>
-            <td class="folder">chembl/</td>
-            <td class="cnt">9</td>
-            <td class="desc">
-              ChEMBL 화합물/타겟/활성/분석/기전 &mdash; 약물-타겟 매핑, SMILES
-              <div class="files-detail">compound_master (280만 화합물), target_master, activity, assay, drug_mechanism, uniprot_target_mapping, QC 3건</div>
-            </td>
-            <td class="src">curated_date/chembl/</td>
-          </tr>
-          <!-- DepMap -->
-          <tr>
-            <td class="folder">depmap/</td>
-            <td class="cnt">24</td>
-            <td class="desc">
-              DepMap CRISPR 유전자 의존성/효과 행렬, 세포주 모델 메타데이터, 재창출 스크린
-              <div class="files-detail">crispr_gene_dependency + matrix (1,150 &times; 18,444), crispr_gene_effect + matrix, model_basic_clean, model_condition, model_identity, repurposing 6건, QC 4건</div>
-            </td>
-            <td class="src">curated_date/depmap/</td>
-          </tr>
-          <!-- DrugBank -->
-          <tr>
-            <td class="folder">drugbank/</td>
-            <td class="cnt">8</td>
-            <td class="desc">
-              DrugBank 약물 마스터 (19,842개 약물), 타겟/동의어/그룹/외부ID 테이블
-              <div class="files-detail">drug_master (SMILES, InChI), target_table, synonym_table, group_table, external_identifier_table, QC 3건</div>
-            </td>
-            <td class="src">curated_date/drugbank/</td>
-          </tr>
-          <!-- GDSC -->
-          <tr>
-            <td class="folder">gsdc/</td>
-            <td class="cnt">19</td>
-            <td class="desc">
-              GDSC2 약물 반응 &mdash; basic_clean, 어노테이션 (약물/세포주), 레이블 테이블, 값 매핑
-              <div class="files-detail">gdsc2_basic_clean (IC50), annotation_normalized, drug_annotation_master/table, cellline_annotation, label_table, pathway/target 값 매핑, QC 5건</div>
-            </td>
-            <td class="src">curated_date/gsdc/</td>
-          </tr>
-          <!-- LINCS -->
-          <tr>
-            <td class="folder">lincs/</td>
-            <td class="cnt">11</td>
-            <td class="desc">
-              LINCS L1000 메타데이터 &mdash; sig_info, cell_info, gene_info, pert_info, inst_info, metrics
-              <div class="files-detail">sig_info (47.3만 시그니처), cell_info, gene_info (12,328 유전자), pert_info, pert_metrics, inst_info, sig_metrics, special_file_inventory, QC 3건</div>
-            </td>
-            <td class="src">curated_date/lincs/</td>
-          </tr>
-          <!-- METABRIC -->
-          <tr>
-            <td class="folder">metabric/</td>
-            <td class="cnt">6</td>
-            <td class="desc">
-              METABRIC BRCA 발현 + 임상 (환자/샘플) &mdash; 외부 검증용
-              <div class="files-detail">expression_basic_clean, clinical_patient_basic_clean, clinical_sample_basic_clean, QC 3건</div>
-            </td>
-            <td class="src">curated_date/metabric/</td>
-          </tr>
-          <!-- MSigDB -->
-          <tr>
-            <td class="folder">msigdb/</td>
-            <td class="cnt">5</td>
-            <td class="desc">
-              MSigDB 유전자 세트 (Hallmark 등) &mdash; 경로 특성용
-              <div class="files-detail">gene_set_master, gene_set_membership, QC 3건</div>
-            </td>
-            <td class="src">curated_date/msigdb/</td>
-          </tr>
-          <!-- OpenTargets -->
-          <tr>
-            <td class="folder">opentargets/</td>
-            <td class="cnt">7</td>
-            <td class="desc">
-              Open Targets 질병-타겟 연관성 (직접/간접), 질병/타겟 마스터
-              <div class="files-detail">association_overall_direct, association_by_overall_indirect, disease_basic, target_basic, QC 3건</div>
-            </td>
-            <td class="src">curated_date/opentargets/</td>
-          </tr>
-          <!-- STRING -->
-          <tr>
-            <td class="folder">string/</td>
-            <td class="cnt">6</td>
-            <td class="desc">
-              STRING PPI 네트워크 &mdash; 단백질 상호작용, 별칭, 정보
-              <div class="files-detail">links_basic (PPI 엣지), protein_aliases, protein_info, QC 3건</div>
-            </td>
-            <td class="src">curated_date/string/</td>
-          </tr>
-          <!-- TCGA -->
-          <tr>
-            <td class="folder">tcga/</td>
-            <td class="cnt">14</td>
-            <td class="desc">
-              TCGA BRCA 생체시료 (aliquot/analyte/portion/sample/slide) + 임상 + RNA 파일 목록
-              <div class="files-detail">clinical_clinical, clinical_exposure, clinical_family_history, clinical_follow_up, clinical_pathology_detail, biospecimen 5건, rna_file_inventory, QC 3건</div>
-            </td>
-            <td class="src">curated_date/tcga/</td>
-          </tr>
-          <!-- Root generated -->
-          <tr style="background:rgba(251,191,36,0.06)">
-            <td class="folder">루트 (생성됨)</td>
-            <td class="cnt">2</td>
-            <td class="desc">
-              <b>gdsc_ic50.parquet</b> &mdash; GDSC2만, BRCA 필터링 (13,388행, 52 세포주, 295 약물)<br>
-              <b>lincs_mcf7.parquet</b> &mdash; MCF7 Level5 z-score 행렬 (63,367 시그니처 &times; 12,328 유전자, 4.63GB)
-            </td>
-            <td class="src-gen">
-              gdsc: curated gsdc/gdsc2_basic_clean 기반 생성<br>
-              lincs: curated lincs/sig_info + oringinal_raw Level5 GCTx 기반 생성
-            </td>
-          </tr>
+          
+            <tr>
+              <td>ML</td>
+              <td class="strong">CatBoost</td>
+              <td>0.7997</td>
+              <td>1.3170</td>
+              <td>0.8658</td>
+              <td>0.7478</td>
+              <td>0.0992</td>
+              <td>1h 53.0m</td>
+              <td><span class="pill pill-good">PASS</span></td>
+              <td>6-model</td>
+            </tr>
+            
+            <tr>
+              <td>DL</td>
+              <td class="strong">FlatMLP</td>
+              <td>0.7966</td>
+              <td>1.3327</td>
+              <td>0.8615</td>
+              <td>0.7419</td>
+              <td>0.0822</td>
+              <td>11.6m</td>
+              <td><span class="pill pill-good">PASS</span></td>
+              <td>6-model + lite</td>
+            </tr>
+            
+            <tr>
+              <td>ML</td>
+              <td class="strong">Stacking Ridge</td>
+              <td>0.7942</td>
+              <td>1.3265</td>
+              <td>0.8631</td>
+              <td>0.7441</td>
+              <td>0.1184</td>
+              <td>59.6m</td>
+              <td><span class="pill pill-warn">META</span></td>
+              <td>meta</td>
+            </tr>
+            
+            <tr>
+              <td>ML</td>
+              <td class="strong">LightGBM</td>
+              <td>0.7913</td>
+              <td>1.3404</td>
+              <td>0.8601</td>
+              <td>0.7388</td>
+              <td>0.0937</td>
+              <td>3.6m</td>
+              <td><span class="pill pill-good">PASS</span></td>
+              <td>6-model + lite</td>
+            </tr>
+            
+            <tr>
+              <td>ML</td>
+              <td class="strong">XGBoost</td>
+              <td>0.7889</td>
+              <td>1.3427</td>
+              <td>0.8594</td>
+              <td>0.7378</td>
+              <td>0.1236</td>
+              <td>10.9m</td>
+              <td><span class="pill pill-good">PASS</span></td>
+              <td>6-model</td>
+            </tr>
+            
+            <tr>
+              <td>DL</td>
+              <td class="strong">ResidualMLP</td>
+              <td>0.7875</td>
+              <td>1.3765</td>
+              <td>0.8530</td>
+              <td>0.7246</td>
+              <td>0.0639</td>
+              <td>5.0m</td>
+              <td><span class="pill pill-good">PASS</span></td>
+              <td>6-model</td>
+            </tr>
+            
+            <tr>
+              <td>DL</td>
+              <td class="strong">Cross-Attention</td>
+              <td>0.7854</td>
+              <td>1.3673</td>
+              <td>0.8537</td>
+              <td>0.7281</td>
+              <td>0.0307</td>
+              <td>1.4m</td>
+              <td><span class="pill pill-good">PASS</span></td>
+              <td>6-model + lite</td>
+            </tr>
+            
+            <tr>
+              <td>ML</td>
+              <td class="strong">LightGBM DART</td>
+              <td>0.7846</td>
+              <td>1.3979</td>
+              <td>0.8563</td>
+              <td>0.7160</td>
+              <td>0.0671</td>
+              <td>5.7m</td>
+              <td><span class="pill pill-bad">FAIL</span></td>
+              <td>-</td>
+            </tr>
+            
+            <tr>
+              <td>DL</td>
+              <td class="strong">FT-Transformer</td>
+              <td>0.7812</td>
+              <td>1.3944</td>
+              <td>0.8502</td>
+              <td>0.7170</td>
+              <td>0.0645</td>
+              <td>21.4m</td>
+              <td><span class="pill pill-bad">FAIL</span></td>
+              <td>-</td>
+            </tr>
+            
+            <tr>
+              <td>DL</td>
+              <td class="strong">TabNet</td>
+              <td>0.7791</td>
+              <td>1.3869</td>
+              <td>0.8505</td>
+              <td>0.7204</td>
+              <td>0.1078</td>
+              <td>17.1m</td>
+              <td><span class="pill pill-bad">FAIL</span></td>
+              <td>-</td>
+            </tr>
+            
+            <tr>
+              <td>ML</td>
+              <td class="strong">ExtraTrees</td>
+              <td>0.6456</td>
+              <td>1.8789</td>
+              <td>0.7353</td>
+              <td>0.4868</td>
+              <td>0.1297</td>
+              <td>1.5m</td>
+              <td><span class="pill pill-bad">FAIL</span></td>
+              <td>-</td>
+            </tr>
+            
+            <tr>
+              <td>ML</td>
+              <td class="strong">RandomForest</td>
+              <td>0.6321</td>
+              <td>1.9637</td>
+              <td>0.7134</td>
+              <td>0.4397</td>
+              <td>0.1061</td>
+              <td>1.1m</td>
+              <td><span class="pill pill-bad">FAIL</span></td>
+              <td>-</td>
+            </tr>
+            
+            <tr>
+              <td>ML</td>
+              <td class="strong">RSF</td>
+              <td>0.6127</td>
+              <td>630.3337</td>
+              <td>0.6455</td>
+              <td>-57730.7336</td>
+              <td>0.0647</td>
+              <td>1.6m</td>
+              <td><span class="pill pill-info">METABRIC</span></td>
+              <td>step6</td>
+            </tr>
+            
+            <tr>
+              <td>Graph</td>
+              <td class="strong">GraphSAGE</td>
+              <td>0.4094</td>
+              <td>2.3015</td>
+              <td>0.4572</td>
+              <td>0.2087</td>
+              <td>0.1060</td>
+              <td>16.5s</td>
+              <td><span class="pill pill-info">AUX</span></td>
+              <td>-</td>
+            </tr>
+            
+            <tr>
+              <td>Graph</td>
+              <td class="strong">GAT</td>
+              <td>-0.0002</td>
+              <td>2.6065</td>
+              <td>0.0004</td>
+              <td>-0.0015</td>
+              <td>0.0413</td>
+              <td>7.9s</td>
+              <td><span class="pill pill-info">AUX</span></td>
+              <td>-</td>
+            </tr>
+            
         </tbody>
       </table>
-      <div class="timestamp" style="font-size:0.65rem; color:#f59e0b; margin-top:8px;">
-        정책: gdsc_ic50 = GDSC2만 사용 (295 약물). 사유: GDSC2가 GDSC1 대비 품질 우수, ADMET 필터링으로 후보군 축소되므로 품질 우선 결정.<br>
-        lincs_mcf7 = curated_date/lincs/ sig_info+cell_info MCF7 필터 &rarr; oringinal_raw Level5 GCTx에서 extract.<br>
-        glue/ 폴더 접근 금지. curated_date/ 원본 읽기 전용.
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <h2>Step 5 Ensemble Comparison</h2>
+          <p>6-model 기준 성능과 실제 채택한 lightweight 3-model 트랙을 나란히 비교합니다.</p>
+        </div>
       </div>
-      <div class="timestamp" id="ts-2">업데이트: 2026-04-08 (전체 데이터셋 목록, GDSC2만, LINCS MCF7 재추출)</div>
-    </div>
-    <div class="step completed" id="step-3">
-      <div class="step-header"><div class="step-num">3</div><div class="step-title">특성 공학</div></div>
-      <div class="metrics" id="metrics-3">
-        <div class="metric"><span class="label">파이프라인:</span><span class="value">Nextflow on AWS Batch (4개 프로세스, 5분 31초)</span></div>
-        <div class="metric"><span class="label">특성 행렬:</span><span class="value">7,730 쌍 x 18,316 특성</span></div>
-        <div class="metric"><span class="label">레이블:</span><span class="value">7,730 쌍 (회귀 ln_IC50 + 이진)</span></div>
-        <div class="metric"><span class="label">Drug SMILES:</span><span class="value">243/295 (82.4%) | 52 전체 0</span></div>
-        <div class="metric"><span class="label">LINCS:</span><span class="value">101 약물 매칭 (cosine/pearson/spearman/reverse)</span></div>
-        <div class="metric"><span class="label">약물-타겟:</span><span class="value">295 약물, 235 타겟 (GDSC PUTATIVE_TARGET)</span></div>
-        <div class="metric"><span class="label">쌍 특성 v2:</span><span class="value">pathway + Morgan/descriptor + LINCS + target</span></div>
-        <div class="metric"><span class="label">결측치 처리:</span><span class="value">중앙값 (CRISPR) | 0 채움 (약물 fingerprints)</span></div>
-        <div class="metric"><span class="label">S3 출력:</span><span class="value">fe_output/20260408_fe_v1/ (features/ + pair_features/)</span></div>
+      <table>
+        <thead>
+          <tr>
+            <th>Metric</th>
+            <th>6-model</th>
+            <th>Lightweight</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th>모델 수</th><td>6</td><td>3</td></tr><tr><th>Spearman</th><td>0.8055 ± 0.0101</td><td>0.8036 ± 0.0081</td></tr><tr><th>RMSE</th><td>1.3008 ± 0.0227</td><td>1.3033 ± 0.0158</td></tr><tr><th>Pearson</th><td>0.8690</td><td>0.8683</td></tr><tr><th>R²</th><td>0.7544</td><td>0.7535</td></tr><tr><th>Gap Spearman</th><td>0.0004</td><td>0.0010</td></tr><tr><th>Top15 overlap</th><td>15 / 15</td><td>15 / 15</td></tr>
+        </tbody>
+      </table>
+      <div class="comparison-grid" style="margin-top:18px;">
+        <div class="compare-card">
+          <h3>6-model Weights</h3>
+          <p>CatBoost, LightGBM, XGBoost, FlatMLP, ResidualMLP, Cross-Attention</p>
+          <div class="weights">
+            <div class="weight-chip weight-6"><span>CatBoost</span><strong>16.87%</strong></div><div class="weight-chip weight-6"><span>LightGBM</span><strong>16.63%</strong></div><div class="weight-chip weight-6"><span>XGBoost</span><strong>16.65%</strong></div><div class="weight-chip weight-6"><span>FlatMLP</span><strong>16.73%</strong></div><div class="weight-chip weight-6"><span>ResidualMLP</span><strong>16.56%</strong></div><div class="weight-chip weight-6"><span>Cross-Attention</span><strong>16.55%</strong></div>
+          </div>
+        </div>
+        <div class="compare-card">
+          <h3>Lightweight Weights</h3>
+          <p>LightGBM, FlatMLP, Cross-Attention. 성능 저하는 작고 Top15 세트는 동일합니다.</p>
+          <div class="weights">
+            <div class="weight-chip weight-lite"><span>LightGBM</span><strong>33.27%</strong></div><div class="weight-chip weight-lite"><span>FlatMLP</span><strong>33.60%</strong></div><div class="weight-chip weight-lite"><span>Cross-Attention</span><strong>33.12%</strong></div>
+          </div>
+        </div>
       </div>
-      <div class="timestamp" id="ts-3">완료: 2026-04-08 15:36 KST</div>
-    </div>
-    <div class="step completed" id="step-4">
-      <div class="step-header"><div class="step-num">4</div><div class="step-title">모델 학습 (15개 모델)</div></div>
-      <div class="metrics" id="metrics-4">
-        <div class="metric"><span class="label">ML (8):</span><span class="value" style="color:#4ade80">완료 | 최고: CatBoost(0.801), LightGBM(0.791), XGBoost(0.790)</span></div>
-        <div class="metric"><span class="label">DL (5):</span><span class="value" style="color:#4ade80">완료 | 최고: FlatMLP(0.794), ResidualMLP(0.786), Cross-Attn(0.785)</span></div>
-        <div class="metric"><span class="label">그래프 (2):</span><span class="value" style="color:#f87171">GraphSAGE(P@20=0.94, METABRIC), GAT(실패)</span></div>
-        <div class="metric"><span class="label">앙상블 통과:</span><span class="value" style="color:#4ade80">6/15 모델 (CatBoost, FlatMLP, LightGBM, XGBoost, ResidualMLP, Cross-Attn)</span></div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <h2>Step 6 METABRIC Comparison</h2>
+          <p>중복 제거 이후에는 6-model과 lightweight의 검증 지표가 사실상 동일합니다.</p>
+        </div>
       </div>
-      <a href="step4_detail.html" target="_blank" style="display:inline-block;margin-top:10px;padding:6px 16px;background:#22c55e;color:#fff;border-radius:6px;text-decoration:none;font-size:0.8rem;font-weight:600;">상세 결과 보기 &rarr;</a>
-      <div class="timestamp" id="ts-4">완료: 2026-04-08</div>
-    </div>
-    <div class="step completed" id="step-5">
-      <div class="step-header"><div class="step-num">5</div><div class="step-title">앙상블 Track2 (Spearman 가중 평균)</div></div>
-      <div class="metrics" id="metrics-5">
-        <div class="metric"><span class="label">방법:</span><span class="value">Spearman 가중 평균 (6개 모델)</span></div>
-        <div class="metric"><span class="label">검증 Spearman:</span><span class="value" style="color:#4ade80">0.8055 &plusmn; 0.0101 (통과)</span></div>
-        <div class="metric"><span class="label">RMSE:</span><span class="value" style="color:#4ade80">1.3008 &plusmn; 0.0227 (통과)</span></div>
-        <div class="metric"><span class="label">Gap(Sp):</span><span class="value" style="color:#fbbf24">0.0004 (과적합 없음)</span></div>
-        <div class="metric"><span class="label">최상위 약물:</span><span class="value">Bortezomib (IC50=-4.84)</span></div>
+      <table>
+        <thead>
+          <tr>
+            <th>Metric</th>
+            <th>6-model</th>
+            <th>Lightweight</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th>Target expressed</th><td>27 / 28</td><td>27 / 28</td></tr><tr><th>BRCA pathway</th><td>21 / 28</td><td>21 / 28</td></tr><tr><th>Survival significant</th><td>26 / 28</td><td>26 / 28</td></tr><tr><th>RSF C-index</th><td>0.8209</td><td>0.8209</td></tr><tr><th>RSF AUROC</th><td>0.8462</td><td>0.8462</td></tr><tr><th>P@5</th><td>80.0%</td><td>80.0%</td></tr><tr><th>P@10</th><td>90.0%</td><td>90.0%</td></tr><tr><th>P@15</th><td>80.0%</td><td>80.0%</td></tr><tr><th>P@20</th><td>65.0%</td><td>65.0%</td></tr><tr><th>GraphSAGE P@20</th><td>94.0%</td><td>94.0%</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <h2>Step 7 ADMET Comparison</h2>
+          <p>최종 후보 drug set은 15 / 15 동일하고, 차이는 일부 순위 이동뿐입니다.</p>
+        </div>
       </div>
-      <a href="step5_detail.html" target="_blank" style="display:inline-block;margin-top:10px;padding:6px 16px;background:#22c55e;color:#fff;border-radius:6px;text-decoration:none;font-size:0.8rem;font-weight:600;">상세 결과 보기 &rarr;</a>
-      <div class="timestamp" id="ts-5">완료: 2026-04-08</div>
-    </div>
-    <div class="step completed" id="step-6">
-      <div class="step-header"><div class="step-num">6</div><div class="step-title">METABRIC 외부 검증 (A+B+C)</div></div>
-      <div class="metrics" id="metrics-6">
-        <div class="metric"><span class="label">방법 A:</span><span class="value" style="color:#4ade80">29/30 BRCA 발현 타겟, 22/30 BRCA 관련 경로</span></div>
-        <div class="metric"><span class="label">방법 B:</span><span class="value" style="color:#4ade80">28/30 생존 유의 | RSF C-idx=0.821</span></div>
-        <div class="metric"><span class="label">방법 C:</span><span class="value" style="color:#4ade80">P@15=93.3% | GraphSAGE P@20=0.94</span></div>
-        <div class="metric"><span class="label">선별:</span><span class="value">상위 30 &rarr; 상위 15 고유 약물 (중복 제거 + 차순위 재선별)</span></div>
+      <table style="margin-bottom:18px;">
+        <thead>
+          <tr>
+            <th>Metric</th>
+            <th>6-model</th>
+            <th>Lightweight</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th>Final candidates</th><td>15</td><td>15</td></tr><tr><th>Approved</th><td>8</td><td>8</td></tr><tr><th>Candidate</th><td>6</td><td>6</td></tr><tr><th>Caution</th><td>1</td><td>1</td></tr><tr><th>Top15 overlap</th><td>15 / 15</td><td>15 / 15</td></tr><tr><th>Top5</th><td>Romidepsin, Sepantronium bromide, Dactinomycin, Staurosporine, Vinblastine</td><td>Romidepsin, Sepantronium bromide, Staurosporine, Dactinomycin, SN-38</td></tr>
+        </tbody>
+      </table>
+      <table>
+        <thead>
+          <tr>
+            <th>Drug</th>
+            <th>6-model rank</th>
+            <th>Lite rank</th>
+            <th>Shift</th>
+            <th>6-model score</th>
+            <th>Lite score</th>
+            <th>Category</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+            <tr>
+              <td class="strong">Romidepsin</td>
+              <td>1</td>
+              <td>1</td>
+              <td>-</td>
+              <td>19.00</td>
+              <td>19.00</td>
+              <td><span class="pill pill-approved">Approved</span></td>
+            </tr>
+            
+            <tr>
+              <td class="strong">Sepantronium bromide</td>
+              <td>2</td>
+              <td>2</td>
+              <td>-</td>
+              <td>16.50</td>
+              <td>16.50</td>
+              <td><span class="pill pill-candidate">Candidate</span></td>
+            </tr>
+            
+            <tr>
+              <td class="strong">Staurosporine</td>
+              <td>4</td>
+              <td>3</td>
+              <td>▲ 1</td>
+              <td>13.00</td>
+              <td>13.50</td>
+              <td><span class="pill pill-candidate">Candidate</span></td>
+            </tr>
+            
+            <tr>
+              <td class="strong">Dactinomycin</td>
+              <td>3</td>
+              <td>4</td>
+              <td>▼ 1</td>
+              <td>13.00</td>
+              <td>13.00</td>
+              <td><span class="pill pill-approved">Approved</span></td>
+            </tr>
+            
+            <tr>
+              <td class="strong">SN-38</td>
+              <td>7</td>
+              <td>5</td>
+              <td>▲ 2</td>
+              <td>12.50</td>
+              <td>13.00</td>
+              <td><span class="pill pill-candidate">Candidate</span></td>
+            </tr>
+            
+            <tr>
+              <td class="strong">Vinblastine</td>
+              <td>5</td>
+              <td>6</td>
+              <td>▼ 1</td>
+              <td>12.83</td>
+              <td>12.83</td>
+              <td><span class="pill pill-approved">Approved</span></td>
+            </tr>
+            
+            <tr>
+              <td class="strong">Bortezomib</td>
+              <td>6</td>
+              <td>7</td>
+              <td>▼ 1</td>
+              <td>12.79</td>
+              <td>12.79</td>
+              <td><span class="pill pill-approved">Approved</span></td>
+            </tr>
+            
+            <tr>
+              <td class="strong">Docetaxel</td>
+              <td>8</td>
+              <td>8</td>
+              <td>-</td>
+              <td>12.33</td>
+              <td>12.33</td>
+              <td><span class="pill pill-approved">Approved</span></td>
+            </tr>
+            
+            <tr>
+              <td class="strong">Vinorelbine</td>
+              <td>9</td>
+              <td>9</td>
+              <td>-</td>
+              <td>12.00</td>
+              <td>12.00</td>
+              <td><span class="pill pill-approved">Approved</span></td>
+            </tr>
+            
+            <tr>
+              <td class="strong">Dinaciclib</td>
+              <td>10</td>
+              <td>10</td>
+              <td>-</td>
+              <td>12.00</td>
+              <td>12.00</td>
+              <td><span class="pill pill-candidate">Candidate</span></td>
+            </tr>
+            
+            <tr>
+              <td class="strong">Paclitaxel</td>
+              <td>11</td>
+              <td>11</td>
+              <td>-</td>
+              <td>11.33</td>
+              <td>11.33</td>
+              <td><span class="pill pill-approved">Approved</span></td>
+            </tr>
+            
+            <tr>
+              <td class="strong">Camptothecin</td>
+              <td>13</td>
+              <td>12</td>
+              <td>▲ 1</td>
+              <td>11.00</td>
+              <td>11.00</td>
+              <td><span class="pill pill-candidate">Candidate</span></td>
+            </tr>
+            
+            <tr>
+              <td class="strong">Rapamycin</td>
+              <td>12</td>
+              <td>13</td>
+              <td>▼ 1</td>
+              <td>11.21</td>
+              <td>10.21</td>
+              <td><span class="pill pill-approved">Approved</span></td>
+            </tr>
+            
+            <tr>
+              <td class="strong">Luminespib</td>
+              <td>14</td>
+              <td>14</td>
+              <td>-</td>
+              <td>6.50</td>
+              <td>6.50</td>
+              <td><span class="pill pill-candidate">Candidate</span></td>
+            </tr>
+            
+            <tr>
+              <td class="strong">Epirubicin</td>
+              <td>15</td>
+              <td>15</td>
+              <td>-</td>
+              <td>3.33</td>
+              <td>3.33</td>
+              <td><span class="pill pill-caution">Caution</span></td>
+            </tr>
+            
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <h2>Final Candidates (Selected Lightweight Route)</h2>
+          <p>Step 7 최종 선정 결과입니다. 중복 약물은 제거된 상태이며, flags는 안전성 주의 포인트만 남겼습니다.</p>
+        </div>
       </div>
-      <a href="step6_detail.html" target="_blank" style="display:inline-block;margin-top:10px;padding:6px 16px;background:#22c55e;color:#fff;border-radius:6px;text-decoration:none;font-size:0.8rem;font-weight:600;">상세 결과 보기 &rarr;</a>
-      <div class="timestamp" id="ts-6">완료: 2026-04-08</div>
-    </div>
-    <div class="step completed" id="step-7">
-      <div class="step-header"><div class="step-num">7</div><div class="step-title">ADMET 게이트 - 최종 약물 선정</div></div>
-      <div class="metrics" id="metrics-7">
-        <div class="metric"><span class="label">분석 항목:</span><span class="value">22개 ADMET 필터 (TDC 벤치마크)</span></div>
-        <div class="metric"><span class="label">결과:</span><span class="value" style="color:#4ade80">유방암 현재 사용: 5 | 적응증 확장/연구 중: 6 | 유방암 미사용(신약 후보): 4</span></div>
-        <div class="metric"><span class="label">상위 3개:</span><span class="value">Romidepsin (HDAC), Sepantronium bromide (BIRC5), Dactinomycin</span></div>
-        <div class="metric"><span class="label">산출물:</span><span class="value">ADMET 프로파일 + 유방암 적응증 분류 적용 15개 고유 최종 후보 (동일 약물 중복 제거 + 차순위 재선별)</span></div>
+      <table>
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Drug</th>
+            <th>Target</th>
+            <th>Pathway</th>
+            <th>Pred IC50</th>
+            <th>Combined</th>
+            <th>Category</th>
+            <th>Flags</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+            <tr>
+              <td>1</td>
+              <td class="strong">Romidepsin</td>
+              <td>HDAC1, HDAC2, HDAC3, HDAC8</td>
+              <td>Chromatin histone acetylation</td>
+              <td>-4.7982</td>
+              <td>19.00</td>
+              <td><span class="pill pill-approved">Approved</span></td>
+              <td>-</td>
+            </tr>
+            
+            <tr>
+              <td>2</td>
+              <td class="strong">Sepantronium bromide</td>
+              <td>BIRC5</td>
+              <td>Apoptosis regulation</td>
+              <td>-3.7626</td>
+              <td>16.50</td>
+              <td><span class="pill pill-candidate">Candidate</span></td>
+              <td>-</td>
+            </tr>
+            
+            <tr>
+              <td>3</td>
+              <td class="strong">Staurosporine</td>
+              <td>Broad spectrum kinase inhibitor</td>
+              <td>RTK signaling</td>
+              <td>-2.4185</td>
+              <td>13.50</td>
+              <td><span class="pill pill-candidate">Candidate</span></td>
+              <td>-</td>
+            </tr>
+            
+            <tr>
+              <td>4</td>
+              <td class="strong">Dactinomycin</td>
+              <td>RNA polymerase</td>
+              <td>Other</td>
+              <td>-3.1860</td>
+              <td>13.00</td>
+              <td><span class="pill pill-approved">Approved</span></td>
+              <td>DILI (Drug-Induced Liver Injury)(+)</td>
+            </tr>
+            
+            <tr>
+              <td>5</td>
+              <td class="strong">SN-38</td>
+              <td>TOP1</td>
+              <td>DNA replication</td>
+              <td>-2.4131</td>
+              <td>13.00</td>
+              <td><span class="pill pill-candidate">Candidate</span></td>
+              <td>-</td>
+            </tr>
+            
+            <tr>
+              <td>6</td>
+              <td class="strong">Vinblastine</td>
+              <td>Microtubule destabiliser</td>
+              <td>Mitosis</td>
+              <td>-2.8171</td>
+              <td>12.83</td>
+              <td><span class="pill pill-approved">Approved</span></td>
+              <td>-</td>
+            </tr>
+            
+            <tr>
+              <td>7</td>
+              <td class="strong">Bortezomib</td>
+              <td>Proteasome</td>
+              <td>Protein stability and degradation</td>
+              <td>-4.8402</td>
+              <td>12.79</td>
+              <td><span class="pill pill-approved">Approved</span></td>
+              <td>DILI (Drug-Induced Liver Injury)(+)</td>
+            </tr>
+            
+            <tr>
+              <td>8</td>
+              <td class="strong">Docetaxel</td>
+              <td>Microtubule stabiliser</td>
+              <td>Mitosis</td>
+              <td>-3.0541</td>
+              <td>12.33</td>
+              <td><span class="pill pill-approved">Approved</span></td>
+              <td>DILI (Drug-Induced Liver Injury)(+)</td>
+            </tr>
+            
+            <tr>
+              <td>9</td>
+              <td class="strong">Vinorelbine</td>
+              <td>Microtubule destabiliser</td>
+              <td>Mitosis</td>
+              <td>-2.5985</td>
+              <td>12.00</td>
+              <td><span class="pill pill-approved">Approved</span></td>
+              <td>-</td>
+            </tr>
+            
+            <tr>
+              <td>10</td>
+              <td class="strong">Dinaciclib</td>
+              <td>CDK1, CDK2, CDK5, CDK9</td>
+              <td>Cell cycle</td>
+              <td>-2.2408</td>
+              <td>12.00</td>
+              <td><span class="pill pill-candidate">Candidate</span></td>
+              <td>-</td>
+            </tr>
+            
+            <tr>
+              <td>11</td>
+              <td class="strong">Paclitaxel</td>
+              <td>Microtubule stabiliser</td>
+              <td>Mitosis</td>
+              <td>-2.6741</td>
+              <td>11.33</td>
+              <td><span class="pill pill-approved">Approved</span></td>
+              <td>DILI (Drug-Induced Liver Injury)(+)</td>
+            </tr>
+            
+            <tr>
+              <td>12</td>
+              <td class="strong">Camptothecin</td>
+              <td>TOP1</td>
+              <td>DNA replication</td>
+              <td>-0.8592</td>
+              <td>11.00</td>
+              <td><span class="pill pill-candidate">Candidate</span></td>
+              <td>-</td>
+            </tr>
+            
+            <tr>
+              <td>13</td>
+              <td class="strong">Rapamycin</td>
+              <td>MTORC1</td>
+              <td>PI3K/MTOR signaling</td>
+              <td>-2.3719</td>
+              <td>10.21</td>
+              <td><span class="pill pill-approved">Approved</span></td>
+              <td>-</td>
+            </tr>
+            
+            <tr>
+              <td>14</td>
+              <td class="strong">Luminespib</td>
+              <td>HSP90</td>
+              <td>Protein stability and degradation</td>
+              <td>-1.9329</td>
+              <td>6.50</td>
+              <td><span class="pill pill-candidate">Candidate</span></td>
+              <td>-</td>
+            </tr>
+            
+            <tr>
+              <td>15</td>
+              <td class="strong">Epirubicin</td>
+              <td>Anthracycline</td>
+              <td>DNA replication</td>
+              <td>-0.0409</td>
+              <td>3.33</td>
+              <td><span class="pill pill-caution">Caution</span></td>
+              <td>Ames Mutagenicity(+), DILI (Drug-Induced Liver Injury)(+)</td>
+            </tr>
+            
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <h2>Data Sources</h2>
+          <p>이 대시보드는 아래 산출물을 직접 읽어 생성했습니다.</p>
+        </div>
       </div>
-      <a href="step7_detail.html" target="_blank" style="display:inline-block;margin-top:10px;padding:6px 16px;background:#22c55e;color:#fff;border-radius:6px;text-decoration:none;font-size:0.8rem;font-weight:600;">상세 결과 보기 &rarr;</a>
-      <a href="repurposing_candidates.html" target="_blank" style="display:inline-block;margin-top:10px;margin-left:8px;padding:6px 16px;background:#a855f7;color:#fff;border-radius:6px;text-decoration:none;font-size:0.8rem;font-weight:600;">재창출 후보 10건 상세 &rarr;</a>
-      <a href="chat_app.html" target="_blank" style="display:inline-block;margin-top:10px;margin-left:8px;padding:6px 16px;background:#3b82f6;color:#fff;border-radius:6px;text-decoration:none;font-size:0.8rem;font-weight:600;">&#x1F4AC; 채팅 어시스턴트 &rarr;</a>
-      <div class="timestamp" id="ts-7">완료: 2026-04-08</div>
-    </div>
+      <ul class="source-list">
+        <li><code>models/ml_results/ml_results.json</code></li><li><code>models/dl_results/dl_results.json</code></li><li><code>models/graph_results/graph_results.json</code></li><li><code>models/ensemble_results/ensemble_results.json</code></li><li><code>models/ensemble_results_lightweight/ensemble_results.json</code></li><li><code>models/metabric_results/step6_metabric_results.json</code></li><li><code>models/metabric_results_lightweight/step6_metabric_results.json</code></li><li><code>models/admet_results/step7_admet_results.json</code></li><li><code>models/admet_results_lightweight/step7_admet_results.json</code></li>
+      </ul>
+    </section>
   </div>
-</div>
-<script>
-function updateStep(completedSteps, activeStep, metrics) {
-  for (let i = 1; i <= 7; i++) {
-    const el = document.getElementById('step-' + i);
-    el.className = 'step ' + (i <= completedSteps ? 'completed' : i === activeStep ? 'active' : 'pending');
-  }
-  document.getElementById('progress-pct').textContent = completedSteps + ' / 7 단계';
-  document.getElementById('bar-fill').style.width = (completedSteps / 7 * 100).toFixed(1) + '%';
-  if (metrics && activeStep) {
-    const target = completedSteps;
-    const mc = document.getElementById('metrics-' + target);
-    if (mc) {
-      mc.innerHTML = '';
-      for (const [k, v] of Object.entries(metrics)) {
-        mc.innerHTML += '<div class="metric"><span class="label">' + k + ':</span><span class="value">' + v + '</span></div>';
-      }
-    }
-    document.getElementById('ts-' + target).textContent = '완료: ' + new Date().toLocaleString();
-  }
-  localStorage.setItem('pipeline_state', JSON.stringify({completedSteps, activeStep, ts: new Date().toISOString()}));
-}
-try {
-  const s = JSON.parse(localStorage.getItem('pipeline_state'));
-  if (s) { for (let i = 1; i <= 7; i++) { const el = document.getElementById('step-'+i); el.className = 'step '+(i<=s.completedSteps?'completed':i===s.activeStep?'active':'pending'); } document.getElementById('progress-pct').textContent = s.completedSteps+' / 7 단계'; document.getElementById('bar-fill').style.width = (s.completedSteps/7*100).toFixed(1)+'%'; }
-} catch(e) {}
-</script>
 </body>
 </html>
