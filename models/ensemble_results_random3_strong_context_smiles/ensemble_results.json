@@ -1,0 +1,520 @@
+{
+  "ensemble_method": "spearman_weighted_average",
+  "n_models": 6,
+  "selected_models": [
+    "CatBoost",
+    "XGBoost",
+    "LightGBM",
+    "TabNet",
+    "ResidualMLP",
+    "WideDeep"
+  ],
+  "weights": {
+    "CatBoost": 0.1681598850734617,
+    "XGBoost": 0.16700266960457114,
+    "LightGBM": 0.16682183678601925,
+    "TabNet": 0.1663598120950114,
+    "ResidualMLP": 0.16609069423848674,
+    "WideDeep": 0.16556510220244985
+  },
+  "ensemble_metrics": {
+    "spearman": 0.8720463510218356,
+    "rmse": 1.101568341255188,
+    "mae": 0.8280751705169678,
+    "pearson": 0.9136583209037781,
+    "r2": 0.8342505001847147,
+    "ndcg@20": 0.9567949308820762
+  },
+  "individual_models": {
+    "CatBoost": {
+      "family": "ML",
+      "spearman": 0.8706419037606916,
+      "rmse": 1.1082807705301505,
+      "weight": 0.1681598850734617
+    },
+    "XGBoost": {
+      "family": "ML",
+      "spearman": 0.8646504612804827,
+      "rmse": 1.1346507974591489,
+      "weight": 0.16700266960457114
+    },
+    "LightGBM": {
+      "family": "ML",
+      "spearman": 0.8637142057083665,
+      "rmse": 1.135775354873613,
+      "weight": 0.16682183678601925
+    },
+    "TabNet": {
+      "family": "DL",
+      "spearman": 0.8613220890844299,
+      "rmse": 1.1560277467486437,
+      "weight": 0.1663598120950114
+    },
+    "ResidualMLP": {
+      "family": "DL",
+      "spearman": 0.859928740826382,
+      "rmse": 1.1619858107069823,
+      "weight": 0.16609069423848674
+    },
+    "WideDeep": {
+      "family": "DL",
+      "spearman": 0.8572075065043159,
+      "rmse": 1.1639421131940009,
+      "weight": 0.16556510220244985
+    }
+  },
+  "top30_drugs": [
+    {
+      "rank": 1,
+      "drug_id": "1191",
+      "drug_name": "bortezomib",
+      "mean_pred_ic50": -4.751670837402344,
+      "mean_true_ic50": -5.15924072265625,
+      "sensitivity_rate": 1.0,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "rank": 2,
+      "drug_id": "1817",
+      "drug_name": "romidepsin",
+      "mean_pred_ic50": -4.740944862365723,
+      "mean_true_ic50": -5.024497032165527,
+      "sensitivity_rate": 1.0,
+      "n_samples": 26,
+      "category": "Validated"
+    },
+    {
+      "rank": 3,
+      "drug_id": "1941",
+      "drug_name": "sepantroniumbromide",
+      "mean_pred_ic50": -3.8545093536376953,
+      "mean_true_ic50": -3.8589985370635986,
+      "sensitivity_rate": 1.0,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "rank": 4,
+      "drug_id": "1007",
+      "drug_name": "docetaxel",
+      "mean_pred_ic50": -3.303375005722046,
+      "mean_true_ic50": -4.117664337158203,
+      "sensitivity_rate": 1.0,
+      "n_samples": 29,
+      "category": "Validated"
+    },
+    {
+      "rank": 5,
+      "drug_id": "1911",
+      "drug_name": "dactinomycin",
+      "mean_pred_ic50": -3.017822027206421,
+      "mean_true_ic50": -4.040126800537109,
+      "sensitivity_rate": 1.0,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "rank": 6,
+      "drug_id": "1080",
+      "drug_name": "paclitaxel",
+      "mean_pred_ic50": -2.83744740486145,
+      "mean_true_ic50": -2.7796781063079834,
+      "sensitivity_rate": 1.0,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "rank": 7,
+      "drug_id": "2048",
+      "drug_name": "vinorelbine",
+      "mean_pred_ic50": -2.8301029205322266,
+      "mean_true_ic50": -2.7805392742156982,
+      "sensitivity_rate": 1.0,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "rank": 8,
+      "drug_id": "1004",
+      "drug_name": "vinblastine",
+      "mean_pred_ic50": -2.7405567169189453,
+      "mean_true_ic50": -2.735508441925049,
+      "sensitivity_rate": 1.0,
+      "n_samples": 27,
+      "category": "Validated"
+    },
+    {
+      "rank": 9,
+      "drug_id": "1034",
+      "drug_name": "staurosporine",
+      "mean_pred_ic50": -2.476120948791504,
+      "mean_true_ic50": -2.5313642024993896,
+      "sensitivity_rate": 1.0,
+      "n_samples": 29,
+      "category": "Validated"
+    },
+    {
+      "rank": 10,
+      "drug_id": "1494",
+      "drug_name": "sn38",
+      "mean_pred_ic50": -2.4624266624450684,
+      "mean_true_ic50": -2.6124706268310547,
+      "sensitivity_rate": 1.0,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "rank": 11,
+      "drug_id": "1084",
+      "drug_name": "rapamycin",
+      "mean_pred_ic50": -2.3947393894195557,
+      "mean_true_ic50": -2.5873634815216064,
+      "sensitivity_rate": 1.0,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "rank": 12,
+      "drug_id": "1180",
+      "drug_name": "dinaciclib",
+      "mean_pred_ic50": -2.1907222270965576,
+      "mean_true_ic50": -2.3472707271575928,
+      "sensitivity_rate": 1.0,
+      "n_samples": 27,
+      "category": "Validated"
+    },
+    {
+      "rank": 13,
+      "drug_id": "1248",
+      "drug_name": "daporinad",
+      "mean_pred_ic50": -1.898011565208435,
+      "mean_true_ic50": -2.4797933101654053,
+      "sensitivity_rate": 1.0,
+      "n_samples": 15,
+      "category": "Validated"
+    },
+    {
+      "rank": 14,
+      "drug_id": "1559",
+      "drug_name": "luminespib",
+      "mean_pred_ic50": -1.8342931270599365,
+      "mean_true_ic50": -2.119799852371216,
+      "sensitivity_rate": 1.0,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "rank": 15,
+      "drug_id": "1862",
+      "drug_name": "mg132",
+      "mean_pred_ic50": -1.2201030254364014,
+      "mean_true_ic50": -1.2040300369262695,
+      "sensitivity_rate": 1.0,
+      "n_samples": 29,
+      "category": "Validated"
+    },
+    {
+      "rank": 16,
+      "drug_id": "1057",
+      "drug_name": "dactolisib",
+      "mean_pred_ic50": -1.1576824188232422,
+      "mean_true_ic50": -1.4217746257781982,
+      "sensitivity_rate": 1.0,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "rank": 17,
+      "drug_id": "1003",
+      "drug_name": "camptothecin",
+      "mean_pred_ic50": -0.544150710105896,
+      "mean_true_ic50": -0.8017532229423523,
+      "sensitivity_rate": 1.0,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "rank": 18,
+      "drug_id": "1825",
+      "drug_name": "podophyllotoxinbromide",
+      "mean_pred_ic50": -0.09411248564720154,
+      "mean_true_ic50": -0.1857989877462387,
+      "sensitivity_rate": 0.9230769230769231,
+      "n_samples": 26,
+      "category": "Validated"
+    },
+    {
+      "rank": 19,
+      "drug_id": "1026",
+      "drug_name": "tanespimycin",
+      "mean_pred_ic50": -0.03484782949090004,
+      "mean_true_ic50": -0.13994817435741425,
+      "sensitivity_rate": 1.0,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "rank": 20,
+      "drug_id": "1059",
+      "drug_name": "azd8055",
+      "mean_pred_ic50": -0.03064693883061409,
+      "mean_true_ic50": -0.14524218440055847,
+      "sensitivity_rate": 1.0,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "rank": 21,
+      "drug_id": "1849",
+      "drug_name": "sabutoclax",
+      "mean_pred_ic50": 0.029292486608028412,
+      "mean_true_ic50": -0.12460256367921829,
+      "sensitivity_rate": 1.0,
+      "n_samples": 27,
+      "category": "Validated"
+    },
+    {
+      "rank": 22,
+      "drug_id": "1008",
+      "drug_name": "methotrexate",
+      "mean_pred_ic50": 0.029985489323735237,
+      "mean_true_ic50": 0.17289958894252777,
+      "sensitivity_rate": 0.9629629629629629,
+      "n_samples": 27,
+      "category": "Validated"
+    },
+    {
+      "rank": 23,
+      "drug_id": "1827",
+      "drug_name": "dihydrorotenone",
+      "mean_pred_ic50": 0.040810879319906235,
+      "mean_true_ic50": -0.08072968572378159,
+      "sensitivity_rate": 1.0,
+      "n_samples": 26,
+      "category": "Validated"
+    },
+    {
+      "rank": 24,
+      "drug_id": "1511",
+      "drug_name": "epirubicin",
+      "mean_pred_ic50": 0.09270237386226654,
+      "mean_true_ic50": 0.0628277137875557,
+      "sensitivity_rate": 1.0,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "rank": 25,
+      "drug_id": "1024",
+      "drug_name": "lestaurtinib",
+      "mean_pred_ic50": 0.49838802218437195,
+      "mean_true_ic50": 0.6284864544868469,
+      "sensitivity_rate": 0.9642857142857143,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "rank": 26,
+      "drug_id": "1926",
+      "drug_name": "gne317",
+      "mean_pred_ic50": 0.550649106502533,
+      "mean_true_ic50": 0.4689668118953705,
+      "sensitivity_rate": 0.9642857142857143,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "rank": 27,
+      "drug_id": "1086",
+      "drug_name": "bi2536",
+      "mean_pred_ic50": 0.5889831185340881,
+      "mean_true_ic50": 0.4950502812862396,
+      "sensitivity_rate": 0.9583333333333334,
+      "n_samples": 24,
+      "category": "Validated"
+    },
+    {
+      "rank": 28,
+      "drug_id": "1022",
+      "drug_name": "azd7762",
+      "mean_pred_ic50": 0.6068629622459412,
+      "mean_true_ic50": 0.4498746693134308,
+      "sensitivity_rate": 0.9655172413793104,
+      "n_samples": 29,
+      "category": "Validated"
+    },
+    {
+      "rank": 29,
+      "drug_id": "1808",
+      "drug_name": "topotecan",
+      "mean_pred_ic50": 0.8916013240814209,
+      "mean_true_ic50": 1.131067156791687,
+      "sensitivity_rate": 0.8846153846153846,
+      "n_samples": 26,
+      "category": "Validated"
+    },
+    {
+      "rank": 30,
+      "drug_id": "1039",
+      "drug_name": "sl0101",
+      "mean_pred_ic50": 0.9052280187606812,
+      "mean_true_ic50": 4.01061487197876,
+      "sensitivity_rate": 0.0,
+      "n_samples": 1,
+      "category": "Recommended"
+    }
+  ],
+  "top15_drugs": [
+    {
+      "final_rank": 1,
+      "drug_id": "1191",
+      "drug_name": "bortezomib",
+      "mean_pred_ic50": -4.751670837402344,
+      "mean_true_ic50": -5.15924072265625,
+      "sensitivity_rate": 1.0,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "final_rank": 2,
+      "drug_id": "1817",
+      "drug_name": "romidepsin",
+      "mean_pred_ic50": -4.740944862365723,
+      "mean_true_ic50": -5.024497032165527,
+      "sensitivity_rate": 1.0,
+      "n_samples": 26,
+      "category": "Validated"
+    },
+    {
+      "final_rank": 3,
+      "drug_id": "1941",
+      "drug_name": "sepantroniumbromide",
+      "mean_pred_ic50": -3.8545093536376953,
+      "mean_true_ic50": -3.8589985370635986,
+      "sensitivity_rate": 1.0,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "final_rank": 4,
+      "drug_id": "1007",
+      "drug_name": "docetaxel",
+      "mean_pred_ic50": -3.303375005722046,
+      "mean_true_ic50": -4.117664337158203,
+      "sensitivity_rate": 1.0,
+      "n_samples": 29,
+      "category": "Validated"
+    },
+    {
+      "final_rank": 5,
+      "drug_id": "1911",
+      "drug_name": "dactinomycin",
+      "mean_pred_ic50": -3.017822027206421,
+      "mean_true_ic50": -4.040126800537109,
+      "sensitivity_rate": 1.0,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "final_rank": 6,
+      "drug_id": "1080",
+      "drug_name": "paclitaxel",
+      "mean_pred_ic50": -2.83744740486145,
+      "mean_true_ic50": -2.7796781063079834,
+      "sensitivity_rate": 1.0,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "final_rank": 7,
+      "drug_id": "2048",
+      "drug_name": "vinorelbine",
+      "mean_pred_ic50": -2.8301029205322266,
+      "mean_true_ic50": -2.7805392742156982,
+      "sensitivity_rate": 1.0,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "final_rank": 8,
+      "drug_id": "1004",
+      "drug_name": "vinblastine",
+      "mean_pred_ic50": -2.7405567169189453,
+      "mean_true_ic50": -2.735508441925049,
+      "sensitivity_rate": 1.0,
+      "n_samples": 27,
+      "category": "Validated"
+    },
+    {
+      "final_rank": 9,
+      "drug_id": "1034",
+      "drug_name": "staurosporine",
+      "mean_pred_ic50": -2.476120948791504,
+      "mean_true_ic50": -2.5313642024993896,
+      "sensitivity_rate": 1.0,
+      "n_samples": 29,
+      "category": "Validated"
+    },
+    {
+      "final_rank": 10,
+      "drug_id": "1494",
+      "drug_name": "sn38",
+      "mean_pred_ic50": -2.4624266624450684,
+      "mean_true_ic50": -2.6124706268310547,
+      "sensitivity_rate": 1.0,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "final_rank": 11,
+      "drug_id": "1084",
+      "drug_name": "rapamycin",
+      "mean_pred_ic50": -2.3947393894195557,
+      "mean_true_ic50": -2.5873634815216064,
+      "sensitivity_rate": 1.0,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "final_rank": 12,
+      "drug_id": "1180",
+      "drug_name": "dinaciclib",
+      "mean_pred_ic50": -2.1907222270965576,
+      "mean_true_ic50": -2.3472707271575928,
+      "sensitivity_rate": 1.0,
+      "n_samples": 27,
+      "category": "Validated"
+    },
+    {
+      "final_rank": 13,
+      "drug_id": "1248",
+      "drug_name": "daporinad",
+      "mean_pred_ic50": -1.898011565208435,
+      "mean_true_ic50": -2.4797933101654053,
+      "sensitivity_rate": 1.0,
+      "n_samples": 15,
+      "category": "Validated"
+    },
+    {
+      "final_rank": 14,
+      "drug_id": "1559",
+      "drug_name": "luminespib",
+      "mean_pred_ic50": -1.8342931270599365,
+      "mean_true_ic50": -2.119799852371216,
+      "sensitivity_rate": 1.0,
+      "n_samples": 28,
+      "category": "Validated"
+    },
+    {
+      "final_rank": 15,
+      "drug_id": "1862",
+      "drug_name": "mg132",
+      "mean_pred_ic50": -1.2201030254364014,
+      "mean_true_ic50": -1.2040300369262695,
+      "sensitivity_rate": 1.0,
+      "n_samples": 29,
+      "category": "Validated"
+    }
+  ]
+}

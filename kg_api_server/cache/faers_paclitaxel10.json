@@ -1,0 +1,54 @@
+{
+  "data": [
+    {
+      "event": "DYSPNOEA",
+      "count": 5349,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "NAUSEA",
+      "count": 5020,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "NEUTROPENIA",
+      "count": 4817,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "OFF LABEL USE",
+      "count": 4615,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "DIARRHOEA",
+      "count": 4558,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "ANAEMIA",
+      "count": 4120,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "MALIGNANT NEOPLASM PROGRESSION",
+      "count": 3745,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "FATIGUE",
+      "count": 3539,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "DISEASE PROGRESSION",
+      "count": 3469,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "VOMITING",
+      "count": 3418,
+      "source": "openfda_faers"
+    }
+  ]
+}

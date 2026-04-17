@@ -1,0 +1,88 @@
+{
+  "drug_id": 1494,
+  "drug_name": "SN-38",
+  "category": "Candidate",
+  "combined_score": 13.0,
+  "timestamp": "2026-04-15 22:02:34",
+  "data_collected": {
+    "basic_info": {
+      "ok": true,
+      "data": {
+        "drug_id": 1494,
+        "drug_name": "SN-38",
+        "target": "TOP1",
+        "pathway": "DNA replication",
+        "predicted_ic50": -2.4624267,
+        "sensitivity_rate": 1.0,
+        "validation_score": 9.0,
+        "safety_score": 10.0,
+        "combined_score": 13.0,
+        "final_rank": 4,
+        "category": "Candidate",
+        "clinical_bucket": "적응증 확장/연구 중",
+        "known_brca": true,
+        "target_expressed": true,
+        "brca_pathway": true,
+        "survival_sig": true,
+        "recommendation_note": "유방암으로 확장 가능성이 있고, 추가 translational 검토 가치가 있습니다."
+      }
+    },
+    "side_effects": {
+      "ok": true,
+      "data": [],
+      "source": "local_fallback"
+    },
+    "trials": {
+      "ok": true,
+      "data": [
+        {
+          "title": "SN-38 breast cancer related usage signal",
+          "phase": "Known / related evidence",
+          "status": "Review needed",
+          "source": "local_brca_relevance"
+        }
+      ],
+      "source": "local_fallback"
+    },
+    "targets": {
+      "ok": true,
+      "data": [
+        {
+          "target": "TOP1",
+          "source": "local_frc_step6_7"
+        }
+      ]
+    },
+    "pathways": {
+      "ok": true,
+      "data": [
+        {
+          "pathway": "DNA replication",
+          "source": "local_frc_step6_7"
+        }
+      ]
+    },
+    "pubmed_general": {
+      "ok": true,
+      "query": "SN-38",
+      "data": [
+        {
+          "title": "SN-38 and breast cancer relevance summary",
+          "journal": "Local seed catalog",
+          "year": 2026,
+          "pmid": null,
+          "summary": "유방암으로 확장 가능성이 있고, 추가 translational 검토 가치가 있습니다.",
+          "source": "local_fallback"
+        }
+      ],
+      "source": "local_fallback"
+    },
+    "pubmed_breast_cancer": {
+      "ok": true,
+      "query": "SN-38 breast cancer",
+      "data": [],
+      "source": "local_fallback"
+    }
+  },
+  "errors": []
+}

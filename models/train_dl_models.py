@@ -35,11 +35,23 @@ BENCH_RMSE = 1.385
 OUTPUT_DIR = Path(__file__).parent / "dl_results"
 OUTPUT_DIR.mkdir(exist_ok=True)
 
+CPU_THREADS = int(os.getenv("MODEL_CPU_THREADS", "4"))
+
+for _var in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS", "NUMEXPR_NUM_THREADS"):
+    os.environ.setdefault(_var, str(CPU_THREADS))
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(line_buffering=True)
+
 torch.manual_seed(SEED)
 np.random.seed(SEED)
+torch.set_num_threads(CPU_THREADS)
 
 # Device selection: MPS > CUDA > CPU
-if torch.backends.mps.is_available():
+_requested_device = os.getenv("DL_DEVICE", "").strip().lower()
+if _requested_device:
+    DEVICE = torch.device(_requested_device)
+elif torch.backends.mps.is_available():
     DEVICE = torch.device("mps")
 elif torch.cuda.is_available():
     DEVICE = torch.device("cuda")
@@ -260,6 +272,23 @@ def compute_metrics(y_true, y_pred, y_tr_true=None, y_tr_pred=None):
     return m
 
 
+def _json_default(obj):
+    if isinstance(obj, (np.float32, np.float64)):
+        return float(obj)
+    if isinstance(obj, (np.int32, np.int64)):
+        return int(obj)
+    if isinstance(obj, np.ndarray):
+        return obj.tolist()
+    return obj
+
+
+def save_results_snapshot(results, filename):
+    path = OUTPUT_DIR / filename
+    with open(path, "w") as f:
+        json.dump(results, f, indent=2, default=_json_default)
+    return path
+
+
 def run_dl_cv(name, model_cls, model_kwargs, X, y, epochs=100, lr=1e-3, batch_size=256):
     print(f"\n{'─'*60}")
     print(f"  [{name}] Training with 5-fold CV...")
@@ -356,6 +385,8 @@ def main():
     for name, cls, kwargs, train_kwargs in models_config:
         result = run_dl_cv(name, cls, kwargs, X, y, **train_kwargs)
         all_results.append(result)
+        snapshot_path = save_results_snapshot(all_results, "dl_results.partial.json")
+        print(f"  Snapshot saved to {snapshot_path}")
 
     # Summary table
     if len(all_results) > 1:
@@ -377,16 +408,9 @@ def main():
         print(f"  Benchmark: Spearman >= {BENCH_SP}, RMSE <= {BENCH_RMSE}  (* = meets benchmark)")
 
     # Save
-    def convert(obj):
-        if isinstance(obj, (np.float32, np.float64)):
-            return float(obj)
-        if isinstance(obj, (np.int32, np.int64)):
-            return int(obj)
-        return obj
-
     out_path = OUTPUT_DIR / "dl_results.json"
     with open(out_path, "w") as f:
-        json.dump(all_results, f, indent=2, default=convert)
+        json.dump(all_results, f, indent=2, default=_json_default)
     print(f"\nResults saved to {out_path}")
 
 

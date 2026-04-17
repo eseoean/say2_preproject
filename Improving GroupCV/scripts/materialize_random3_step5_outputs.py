@@ -1,0 +1,140 @@
+#!/usr/bin/env python3
+from __future__ import annotations
+
+import json
+from pathlib import Path
+
+import numpy as np
+import pandas as pd
+
+
+ROOT = Path("/Users/skku_aws2_18/pre_project/say2_preproject")
+WORK_ROOT = ROOT / "Improving GroupCV"
+RESULTS = WORK_ROOT / "results"
+V3_ROOT = WORK_ROOT / "v3_input_reproduction"
+MODELS_DIR = ROOT / "models"
+OUT_DIR = MODELS_DIR / "ensemble_results_random3_strong_context_smiles"
+OUT_DIR.mkdir(exist_ok=True)
+
+
+def dedupe_drug_candidates(drug_summary: pd.DataFrame) -> pd.DataFrame:
+    out = drug_summary.sort_values(["mean_pred_ic50", "drug_id"], ascending=[True, True]).copy()
+    out = out.drop_duplicates(subset=["drug_name"], keep="first").reset_index(drop=True)
+    out["rank"] = range(1, len(out) + 1)
+    return out
+
+
+def main() -> None:
+    ensemble_path = RESULTS / "exact_repo_random3_strong_context_smiles_ensemble_v1.json"
+    obj = json.loads(ensemble_path.read_text())
+
+    keys = pd.read_parquet(RESULTS / "exact_repo_random3_strong_context_smiles_ml_v1_oof" / "keys.parquet")
+    y = np.load(V3_ROOT / "exact_repo_match_context_smiles_bundle" / "y_exact_slim.npy").astype(np.float32)
+
+    oof = np.zeros_like(y, dtype=np.float64)
+    for name, w in obj["weights"].items():
+        pred = np.load(obj["selected_model_meta"][name]["oof_path"]).astype(np.float64)
+        oof += float(w) * pred
+
+    features = pd.read_parquet(
+        V3_ROOT / "exact_repo_match" / "features_slim_exact_repo.parquet",
+        columns=["sample_id", "canonical_drug_id", "drug__drug_name_norm"],
+    )
+    merged = keys.merge(
+        features.drop_duplicates(subset=["sample_id", "canonical_drug_id"]),
+        on=["sample_id", "canonical_drug_id"],
+        how="left",
+    )
+
+    df_pred = pd.DataFrame(
+        {
+            "sample_id": keys["sample_id"].astype(str).values,
+            "drug_id": keys["canonical_drug_id"].astype(str).values,
+            "y_true": y,
+            "y_pred_ensemble": oof.astype(np.float32),
+            "drug_name": merged["drug__drug_name_norm"].astype(str).values,
+        }
+    )
+
+    drug_summary = (
+        df_pred.groupby(["drug_id", "drug_name"])
+        .agg(
+            mean_pred_ic50=("y_pred_ensemble", "mean"),
+            mean_true_ic50=("y_true", "mean"),
+            std_pred_ic50=("y_pred_ensemble", "std"),
+            n_samples=("y_pred_ensemble", "count"),
+            sensitivity_rate=("y_true", lambda x: (x < np.median(y)).mean()),
+        )
+        .reset_index()
+    )
+
+    drug_summary = dedupe_drug_candidates(drug_summary)
+    top30 = drug_summary.head(30).copy()
+    top30["category"] = top30["sensitivity_rate"].apply(
+        lambda x: "Validated" if x > 0.5 else "Recommended"
+    )
+    top30["score"] = (
+        -top30["mean_pred_ic50"].rank()
+        + top30["sensitivity_rate"].rank() * 2
+        + (top30["n_samples"] >= 5).astype(int) * 5
+    )
+    top15 = (
+        top30.sort_values(["score", "mean_pred_ic50"], ascending=[False, True])
+        .drop_duplicates(subset=["drug_name"], keep="first")
+        .head(15)
+        .sort_values("mean_pred_ic50", ascending=True)
+        .reset_index(drop=True)
+    )
+    top15["final_rank"] = range(1, len(top15) + 1)
+
+    results = {
+        "ensemble_method": "spearman_weighted_average",
+        "n_models": len(obj["selected_models"]),
+        "selected_models": obj["selected_models"],
+        "weights": {k: float(v) for k, v in obj["weights"].items()},
+        "ensemble_metrics": obj["weighted_overall_metrics"],
+        "individual_models": {
+            name: {
+                "family": obj["selected_model_meta"][name]["family"],
+                "spearman": float(obj["selected_model_meta"][name]["overall_metrics"]["spearman"]),
+                "rmse": float(obj["selected_model_meta"][name]["overall_metrics"]["rmse"]),
+                "weight": float(obj["weights"][name]),
+            }
+            for name in obj["weights"]
+        },
+        "top30_drugs": top30[
+            [
+                "rank",
+                "drug_id",
+                "drug_name",
+                "mean_pred_ic50",
+                "mean_true_ic50",
+                "sensitivity_rate",
+                "n_samples",
+                "category",
+            ]
+        ].to_dict(orient="records"),
+        "top15_drugs": top15[
+            [
+                "final_rank",
+                "drug_id",
+                "drug_name",
+                "mean_pred_ic50",
+                "mean_true_ic50",
+                "sensitivity_rate",
+                "n_samples",
+                "category",
+            ]
+        ].to_dict(orient="records"),
+    }
+
+    (OUT_DIR / "top30_drugs.csv").write_text(top30.to_csv(index=False))
+    (OUT_DIR / "top15_drugs.csv").write_text(top15.to_csv(index=False))
+    (OUT_DIR / "ensemble_results.json").write_text(json.dumps(results, indent=2))
+    print(OUT_DIR / "ensemble_results.json")
+    print(OUT_DIR / "top30_drugs.csv")
+    print(OUT_DIR / "top15_drugs.csv")
+
+
+if __name__ == "__main__":
+    main()

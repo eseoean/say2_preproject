@@ -1,0 +1,70 @@
+<!doctype html><html><head><meta charset="utf-8"><title>FLE Mixed Ensemble Report</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;max-width:1100px;margin:40px auto;padding:0 20px;line-height:1.6;color:#1f2937}
+h1,h2{color:#111827} table{border-collapse:collapse;width:100%;margin:16px 0 28px 0;font-size:14px}
+th,td{border:1px solid #d1d5db;padding:8px 10px;text-align:left} thead{background:#f3f4f6}
+p code{background:#f3f4f6;padding:2px 6px;border-radius:6px}
+</style></head><body><h1>FLE Mixed Ensemble Report</h1>
+
+<p>입력셋: `exact slim + strong context + SMILES`  </p>
+<p>모델 조합: `FlatMLP + LightGBM_DART + ExtraTrees`</p>
+
+<h2>Base Models</h2>
+
+<table>
+<thead><tr><th>Model</th><th>Spearman</th><th>RMSE</th><th>MAE</th><th>Pearson</th><th>R²</th><th>NDCG@20</th><th>Time</th></tr></thead>
+<tbody>
+<tr><td>FlatMLP</td><td>0.6007</td><td>2.0346</td><td>1.5541</td><td>0.6615</td><td>0.4346</td><td>0.8410</td><td>-m</td></tr>
+<tr><td>LightGBM_DART</td><td>0.5700</td><td>2.1410</td><td>1.6593</td><td>0.6179</td><td>0.3739</td><td>0.8469</td><td>1.3225m</td></tr>
+<tr><td>ExtraTrees</td><td>0.5252</td><td>2.2396</td><td>1.6597</td><td>0.5624</td><td>0.3148</td><td>0.8876</td><td>0.4059m</td></tr>
+</tbody></table>
+
+<h2>Ensemble</h2>
+
+<table>
+<thead><tr><th>Type</th><th>Spearman</th><th>RMSE</th><th>MAE</th><th>Pearson</th><th>R²</th><th>NDCG@20</th></tr></thead>
+<tbody>
+<tr><td>Equal</td><td>0.6121</td><td>2.0659</td><td>1.5736</td><td>0.6515</td><td>0.4170</td><td>0.8426</td></tr>
+<tr><td>Weighted</td><td>0.6132</td><td>2.0606</td><td>1.5707</td><td>0.6536</td><td>0.4200</td><td>0.8422</td></tr>
+</tbody></table>
+
+<h2>Weights</h2>
+
+<table>
+<thead><tr><th>Model</th><th>Weight</th></tr></thead>
+<tbody>
+<tr><td>FlatMLP</td><td>0.3542</td></tr>
+<tr><td>LightGBM_DART</td><td>0.3361</td></tr>
+<tr><td>ExtraTrees</td><td>0.3097</td></tr>
+</tbody></table>
+
+<h2>Diversity</h2>
+
+<table>
+<thead><tr><th>Pair</th><th>Pred Pearson</th><th>Pred Spearman</th><th>Resid Pearson</th><th>Resid Spearman</th><th>Mean Abs Gap</th></tr></thead>
+<tbody>
+<tr><td>FlatMLP vs LightGBM_DART</td><td>0.8457</td><td>0.7798</td><td>0.8799</td><td>0.8550</td><td>0.7951</td></tr>
+<tr><td>FlatMLP vs ExtraTrees</td><td>0.8459</td><td>0.7624</td><td>0.8853</td><td>0.8633</td><td>0.7981</td></tr>
+<tr><td>LightGBM_DART vs ExtraTrees</td><td>0.8695</td><td>0.8060</td><td>0.9381</td><td>0.9271</td><td>0.5865</td></tr>
+</tbody></table>
+
+<h2>Diversity Summary</h2>
+
+<table>
+<thead><tr><th>Metric</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td>Avg prediction Pearson</td><td>0.8537</td></tr>
+<tr><td>Avg prediction Spearman</td><td>0.7827</td></tr>
+<tr><td>Avg residual Pearson</td><td>0.9011</td></tr>
+<tr><td>Avg residual Spearman</td><td>0.8818</td></tr>
+<tr><td>Avg mean abs prediction gap</td><td>0.7266</td></tr>
+</tbody></table>
+
+<h2>Gain Vs Best Base</h2>
+
+<table>
+<thead><tr><th>Metric</th><th>Delta</th></tr></thead>
+<tbody>
+<tr><td>Weighted Spearman gain</td><td>0.0124</td></tr>
+<tr><td>Weighted RMSE gain</td><td>0.0260</td></tr>
+</tbody></table></body></html>

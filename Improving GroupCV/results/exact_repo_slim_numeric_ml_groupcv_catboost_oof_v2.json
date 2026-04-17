@@ -1,0 +1,98 @@
+{
+  "input_X_path": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match/X_train_exact_repo_numeric.npy",
+  "input_y_path": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match/y_train_exact_repo.npy",
+  "input_keys_path": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match/features_slim_exact_repo.parquet",
+  "folds": 3,
+  "rows": 6366,
+  "feature_dim": 5529,
+  "models": [
+    {
+      "model": "CatBoost",
+      "fold_metrics": [
+        {
+          "spearman": 0.5749450153593958,
+          "rmse": 2.24427449498235,
+          "mae": 1.6081615897343358,
+          "pearson": 0.6058326450366069,
+          "r2": 0.35679004940340076,
+          "ndcg@20": 0.8522848848625119,
+          "train_spearman": 0.9597145629846193,
+          "train_rmse": 0.599614083978439,
+          "train_mae": 0.47315590133417557,
+          "gap_spearman": 0.38476954762522353,
+          "gap_rmse": 1.6446604110039111,
+          "gap_mae": 1.1350056884001603,
+          "fold": 0
+        },
+        {
+          "spearman": 0.4896043971362295,
+          "rmse": 2.2483229971261625,
+          "mae": 1.7118543968933606,
+          "pearson": 0.5598693050088238,
+          "r2": 0.3099594840012003,
+          "ndcg@20": 0.8184158389175222,
+          "train_spearman": 0.831559459566887,
+          "train_rmse": 1.3189568724061913,
+          "train_mae": 1.043742938693946,
+          "gap_spearman": 0.34195506243065754,
+          "gap_rmse": 0.9293661247199712,
+          "gap_mae": 0.6681114581994145,
+          "fold": 1
+        },
+        {
+          "spearman": 0.5831548749437808,
+          "rmse": 2.0876662212958137,
+          "mae": 1.5778753647771755,
+          "pearson": 0.5983010399131674,
+          "r2": 0.35312247774959993,
+          "ndcg@20": 0.8109745834671571,
+          "train_spearman": 0.9021761371184478,
+          "train_rmse": 0.9733520086792874,
+          "train_mae": 0.7498338780902563,
+          "gap_spearman": 0.319021262174667,
+          "gap_rmse": 1.1143142126165264,
+          "gap_mae": 0.8280414866869192,
+          "fold": 2
+        }
+      ],
+      "summary": {
+        "spearman_mean": 0.5492347624798021,
+        "spearman_std": 0.051804302927988356,
+        "rmse_mean": 2.193421237801442,
+        "rmse_std": 0.09160889820034632,
+        "mae_mean": 1.6326304504682907,
+        "mae_std": 0.07026122060504428,
+        "pearson_mean": 0.588000996652866,
+        "pearson_std": 0.02465208561157579,
+        "r2_mean": 0.33995733705140035,
+        "r2_std": 0.026043543560256666,
+        "ndcg@20_mean": 0.8272251024157304,
+        "ndcg@20_std": 0.022019027973082944,
+        "train_spearman_mean": 0.8978167198899847,
+        "train_spearman_std": 0.06418867518442237,
+        "train_rmse_mean": 0.9639743216879726,
+        "train_rmse_std": 0.35976307144526914,
+        "train_mae_mean": 0.7555775727061259,
+        "train_mae_std": 0.28533687865684365,
+        "gap_spearman_mean": 0.34858195741018266,
+        "gap_spearman_std": 0.033371335944552896,
+        "gap_rmse_mean": 1.2294469161134696,
+        "gap_rmse_std": 0.37128578421278,
+        "gap_mae_mean": 0.8770528777621647,
+        "gap_mae_std": 0.23727440420330786
+      },
+      "overall_metrics": {
+        "spearman": 0.5481256559662713,
+        "rmse": 2.1947473633478,
+        "mae": 1.6327050924301147,
+        "pearson": 0.5848804116249084,
+        "r2": 0.342041552066803,
+        "ndcg@20": 0.8632787027956791
+      },
+      "elapsed_sec": 1427.565330028534,
+      "oof_path": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/results/exact_repo_slim_numeric_ml_groupcv_catboost_oof_v2_oof/CatBoost.npy"
+    }
+  ],
+  "oof_dir": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/results/exact_repo_slim_numeric_ml_groupcv_catboost_oof_v2_oof",
+  "keys_path": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/results/exact_repo_slim_numeric_ml_groupcv_catboost_oof_v2_oof/keys.parquet"
+}

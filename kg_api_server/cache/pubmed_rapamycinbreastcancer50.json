@@ -1,0 +1,832 @@
+{
+  "data": [
+    {
+      "pmid": "22149876",
+      "title": "Everolimus in postmenopausal hormone-receptor-positive advanced breast cancer.",
+      "journal": "The New England journal of medicine",
+      "year": "2012",
+      "authors": [
+        "Baselga J",
+        "Campone M",
+        "Piccart M",
+        "Burris HA 3rd",
+        "Rugo HS",
+        "Sahmoud T",
+        "Noguchi S",
+        "Gnant M",
+        "Pritchard KI",
+        "Lebrun F",
+        "Beck JT",
+        "Ito Y",
+        "Yardley D",
+        "Deleu I",
+        "Perez A",
+        "Bachelot T",
+        "Vittori L",
+        "Xu Z",
+        "Mukhopadhyay P",
+        "Lebwohl D",
+        "Hortobagyi GN"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "40897974",
+      "title": "Targeting dormant tumor cells to prevent recurrent breast cancer: a randomized phase 2 trial.",
+      "journal": "Nature medicine",
+      "year": "2025",
+      "authors": [
+        "DeMichele A",
+        "Clark AS",
+        "Shea E",
+        "Bayne LJ",
+        "Sterner CJ",
+        "Rohn K",
+        "Dwyer S",
+        "Pan TC",
+        "Nivar I",
+        "Chen Y",
+        "Wileyto P",
+        "Berry LR",
+        "Deluca S",
+        "Savage J",
+        "Makhlin I",
+        "Pant DK",
+        "Martin H",
+        "Egunsola A",
+        "Mears N",
+        "Goodspeed BL",
+        "Chislock EM",
+        "Graves J",
+        "Wang J",
+        "Shih N",
+        "Belka GK",
+        "Berry D",
+        "Nayak A",
+        "Feldman M",
+        "Chodosh LA"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "12864941",
+      "title": "Mammalian target of rapamycin: a new molecular target for breast cancer.",
+      "journal": "Clinical breast cancer",
+      "year": "2003",
+      "authors": [
+        "Mita MM",
+        "Mita A",
+        "Rowinsky EK"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "29664714",
+      "title": "Randomized Phase II Trial of Fulvestrant Plus Everolimus or Placebo in Postmenopausal Women With Hormone Receptor-Positive, Human Epidermal Growth Factor Receptor 2-Negative Metastatic Breast Cancer Resistant to Aromatase Inhibitor Therapy: Results of PrE0102.",
+      "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+      "year": "2018",
+      "authors": [
+        "Kornblum N",
+        "Zhao F",
+        "Manola J",
+        "Klein P",
+        "Ramaswamy B",
+        "Brufsky A",
+        "Stella PJ",
+        "Burnette B",
+        "Telli M",
+        "Makower DF",
+        "Cheema P",
+        "Truica CI",
+        "Wolff AC",
+        "Soori GS",
+        "Haley B",
+        "Wassenaar TR",
+        "Goldstein LJ",
+        "Miller KD",
+        "Sparano JA"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "23838677",
+      "title": "Role of inhibitors of mammalian target of rapamycin in the treatment of luminal breast cancer.",
+      "journal": "Anti-cancer drugs",
+      "year": "2013",
+      "authors": [
+        "Ciruelos E",
+        "Cortes-Funes H",
+        "Ghanem I",
+        "Manso L",
+        "Arteaga C"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "25231953",
+      "title": "Everolimus plus exemestane for hormone-receptor-positive, human epidermal growth factor receptor-2-negative advanced breast cancer: overall survival results from BOLERO-2†.",
+      "journal": "Annals of oncology : official journal of the European Society for Medical Oncology",
+      "year": "2014",
+      "authors": [
+        "Piccart M",
+        "Hortobagyi GN",
+        "Campone M",
+        "Pritchard KI",
+        "Lebrun F",
+        "Ito Y",
+        "Noguchi S",
+        "Perez A",
+        "Rugo HS",
+        "Deleu I",
+        "Burris HA 3rd",
+        "Provencher L",
+        "Neven P",
+        "Gnant M",
+        "Shtivelband M",
+        "Wu C",
+        "Fan J",
+        "Feng W",
+        "Taran T",
+        "Baselga J"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "24964967",
+      "title": "Targeting the mammalian target of rapamycin pathway with everolimus: implications for the management of metastatic breast cancer.",
+      "journal": "Journal of oncology pharmacy practice : official publication of the International Society of Oncology Pharmacy Practitioners",
+      "year": "2015",
+      "authors": [
+        "Ng VC",
+        "Johnson JJ",
+        "Cuellar S"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "15318929",
+      "title": "New targets for therapy in breast cancer: mammalian target of rapamycin (mTOR) antagonists.",
+      "journal": "Breast cancer research : BCR",
+      "year": "2004",
+      "authors": [
+        "Carraway H",
+        "Hidalgo M"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "23267124",
+      "title": "The Mammalian target of rapamycin inhibitors in breast cancer: current evidence and future directions.",
+      "journal": "Anticancer research",
+      "year": "2013",
+      "authors": [
+        "Malaguti P",
+        "Vari S",
+        "Cognetti F",
+        "Fabi A"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "38290972",
+      "title": "ANXA2 (annexin A2) is crucial to ATG7-mediated autophagy, leading to tumor aggressiveness in triple-negative breast cancer cells.",
+      "journal": "Autophagy",
+      "year": "2024",
+      "authors": [
+        "Koh M",
+        "Lim H",
+        "Jin H",
+        "Kim M",
+        "Hong Y",
+        "Hwang YK",
+        "Woo Y",
+        "Kim ES",
+        "Kim SY",
+        "Kim KM",
+        "Lim HK",
+        "Jung J",
+        "Kang S",
+        "Park B",
+        "Lee HB",
+        "Han W",
+        "Lee MS",
+        "Moon A"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "37199266",
+      "title": "Design of rapamycin and resveratrol coloaded liposomal formulation for breast cancer therapy.",
+      "journal": "Nanomedicine (London, England)",
+      "year": "2023",
+      "authors": [
+        "Dos Reis LR",
+        "Luiz MT",
+        "Sábio RM",
+        "Marena GD",
+        "Di Filippo LD",
+        "Duarte JL",
+        "Souza Fernandes L",
+        "Sousa Araújo VH",
+        "Oliveira Silva VA",
+        "Chorilli M"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "30542717",
+      "title": "Rapamycin enhances the sensitivity of ER‑positive breast cancer cells to tamoxifen by upregulating p73 expression.",
+      "journal": "Oncology reports",
+      "year": "2019",
+      "authors": [
+        "Zhu L",
+        "Li XX",
+        "Shi L",
+        "Wu J",
+        "Qian JY",
+        "Xia TS",
+        "Zhou WB",
+        "Sun X",
+        "Zhou XJ",
+        "Wei JF",
+        "Ding Q"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "37254633",
+      "title": "Exosomes derived from rapamycin-treated 4T1 breast cancer cells induced polarization of macrophages to M1 phenotype.",
+      "journal": "Biotechnology and applied biochemistry",
+      "year": "2023",
+      "authors": [
+        "Ghalavand M",
+        "Moradi-Chaleshtori M",
+        "Dorostkar R",
+        "Mohammadi-Yeganeh S",
+        "Hashemi SM"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "24097108",
+      "title": "New strategies to overcome resistance to mammalian target of rapamycin inhibitors in breast cancer.",
+      "journal": "Current opinion in oncology",
+      "year": "2013",
+      "authors": [
+        "Vicier C",
+        "Dieci MV",
+        "Andre F"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "29439772",
+      "title": "Stomatitis associated with mammalian target of rapamycin inhibition: A review of pathogenesis, prevention, treatment, and clinical implications for oral practice in metastatic breast cancer.",
+      "journal": "Journal of the American Dental Association (1939)",
+      "year": "2018",
+      "authors": [
+        "Chambers MS",
+        "Rugo HS",
+        "Litton JK",
+        "Meiller TF"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "32819718",
+      "title": "Rictor promotes tumor progression of rapamycin-insensitive triple-negative breast cancer cells.",
+      "journal": "Biochemical and biophysical research communications",
+      "year": "2020",
+      "authors": [
+        "Watanabe R",
+        "Miyata M",
+        "Oneyama C"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "36152730",
+      "title": "Histone deacetylase inhibitor panobinostat in combination with rapamycin confers enhanced efficacy against triple-negative breast cancer.",
+      "journal": "Experimental cell research",
+      "year": "2022",
+      "authors": [
+        "Wu K",
+        "Zhang H",
+        "Zhou L",
+        "Chen L",
+        "Mo C",
+        "Xu S",
+        "Lin J",
+        "Kong L",
+        "Chen X"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "36063263",
+      "title": "Comparison of dual mTORC1/2 inhibitor AZD8055 and mTORC1 inhibitor rapamycin on the metabolism of breast cancer cells using proton nuclear magnetic resonance spectroscopy metabolomics.",
+      "journal": "Investigational new drugs",
+      "year": "2022",
+      "authors": [
+        "Ni Z",
+        "Xu S",
+        "Yu Z",
+        "Ye Z",
+        "Li R",
+        "Chen C",
+        "Yang J",
+        "Liu H",
+        "Zhou Z",
+        "Zhang X"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "32810332",
+      "title": "MYC-binding lncRNA EPIC1 promotes AKT-mTORC1 signaling and rapamycin resistance in breast and ovarian cancer.",
+      "journal": "Molecular carcinogenesis",
+      "year": "2020",
+      "authors": [
+        "Wang Y",
+        "Zhang M",
+        "Wang Z",
+        "Guo W",
+        "Yang D"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "37225011",
+      "title": "Combination therapy with PD-1 inhibition plus rapamycin and metformin enhances anti-tumor efficacy in triple negative breast cancer.",
+      "journal": "Experimental cell research",
+      "year": "2023",
+      "authors": [
+        "Tan X",
+        "Li Y",
+        "Hou Z",
+        "Zhang M",
+        "Li L",
+        "Wei J"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "33270630",
+      "title": "The effect of a ketogenic diet and synergy with rapamycin in a mouse model of breast cancer.",
+      "journal": "PloS one",
+      "year": "2020",
+      "authors": [
+        "Zou Y",
+        "Fineberg S",
+        "Pearlman A",
+        "Feinman RD",
+        "Fine EJ"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "36453053",
+      "title": "Everolimus for Estrogen Receptor-negative Breast Cancer Prevention: A Journey Begun?",
+      "journal": "Cancer prevention research (Philadelphia, Pa.)",
+      "year": "2022",
+      "authors": [
+        "Nye L",
+        "Khan SA"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "37002630",
+      "title": "MicroRNA-122 Is More Effective than Rapamycin in Inhibition of Epithelial-mesenchymal Transition and mTOR Signaling Pathway in Triple Negative Breast Cancer.",
+      "journal": "Iranian journal of allergy, asthma, and immunology",
+      "year": "2023",
+      "authors": [
+        "Ghalavand M",
+        "Dorostkar R",
+        "Borna H",
+        "Mohammadi-Yeganeh S",
+        "Hashemi SM"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "16277888",
+      "title": "Potential role of mammalian target of rapamycin inhibitors in breast cancer therapy.",
+      "journal": "Clinical breast cancer",
+      "year": "2005",
+      "authors": [
+        "Meric-Bernstam F",
+        "Esteva FJ"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "33719211",
+      "title": "Cytotoxic effect of targeted biodegradable epothilone B and rapamycin co-loaded nanocarriers on breast cancer cells.",
+      "journal": "Journal of biomedical materials research. Part A",
+      "year": "2021",
+      "authors": [
+        "Zajdel A",
+        "Wilczok A",
+        "Jelonek K",
+        "Kaps A",
+        "Musiał-Kulik M",
+        "Kasperczyk J"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "35038970",
+      "title": "PSAT1 gene as a biomarker for targeting triple negative breast cancer in presence of Rapamycin.",
+      "journal": "Nucleosides, nucleotides & nucleic acids",
+      "year": "2022",
+      "authors": [
+        "Roshanian Bakhsh M",
+        "Peymani M",
+        "Rouhi L",
+        "Ghaedi K"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "32335998",
+      "title": "Linc-ROR promotes the progression of breast cancer and decreases the sensitivity to rapamycin through miR-194-3p targeting MECP2.",
+      "journal": "Molecular oncology",
+      "year": "2020",
+      "authors": [
+        "Zhou Q",
+        "Guo J",
+        "Huang W",
+        "Yu X",
+        "Xu C",
+        "Long X"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "14871980",
+      "title": "Determinants of rapamycin sensitivity in breast cancer cells.",
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "year": "2004",
+      "authors": [
+        "Noh WC",
+        "Mondesire WH",
+        "Peng J",
+        "Jian W",
+        "Zhang H",
+        "Dong J",
+        "Mills GB",
+        "Hung MC",
+        "Meric-Bernstam F"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "20876744",
+      "title": "Rapamycin regulates stearoyl CoA desaturase 1 expression in breast cancer.",
+      "journal": "Molecular cancer therapeutics",
+      "year": "2010",
+      "authors": [
+        "Luyimbazi D",
+        "Akcakanat A",
+        "McAuliffe PF",
+        "Zhang L",
+        "Singh G",
+        "Gonzalez-Angulo AM",
+        "Chen H",
+        "Do KA",
+        "Zheng Y",
+        "Hung MC",
+        "Mills GB",
+        "Meric-Bernstam F"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "40742625",
+      "title": "Co-delivery of SN38 and rapamycin albumin bound nanoparticles against breast Cancer.",
+      "journal": "Daru : journal of Faculty of Pharmacy, Tehran University of Medical Sciences",
+      "year": "2025",
+      "authors": [
+        "Jamshidfar S",
+        "Ebrahimi M",
+        "Varshochian R",
+        "Goodarzi N",
+        "Firouzi J",
+        "Rezaei M",
+        "Ostad SN",
+        "Ardakani YH",
+        "Dinarvand R"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "33141044",
+      "title": "Effects of rapamycin and AZD3463 combination on apoptosis, autophagy, and cell cycle for resistance control in breast cancer.",
+      "journal": "Life sciences",
+      "year": "2021",
+      "authors": [
+        "Ozates NP",
+        "Soğutlu F",
+        "Lerminoglu F",
+        "Demir B",
+        "Gunduz C",
+        "Shademan B",
+        "Avci CB"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "15642182",
+      "title": "Determining sensitivity to rapamycin and its analogues in breast cancer patients.",
+      "journal": "Breast cancer research : BCR",
+      "year": "2005",
+      "authors": [
+        "Witton CJ"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "19778445",
+      "title": "The rapamycin-regulated gene expression signature determines prognosis for breast cancer.",
+      "journal": "Molecular cancer",
+      "year": "2009",
+      "authors": [
+        "Akcakanat A",
+        "Zhang L",
+        "Tsavachidis S",
+        "Meric-Bernstam F"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "32861747",
+      "title": "Upregulation of Akt/Raptor signaling is associated with rapamycin resistance of breast cancer cells.",
+      "journal": "Chemico-biological interactions",
+      "year": "2020",
+      "authors": [
+        "Shchegolev Y",
+        "Sorokin D",
+        "Scherbakov A",
+        "Shunaev A",
+        "Andreeva O",
+        "Mikhaevich E",
+        "Gudkova M",
+        "Bure I",
+        "Berstein L",
+        "Nemtsova M",
+        "Krasil'nikov M"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "37787375",
+      "title": "A systems biology approach and in vitro experiment indicated Rapamycin targets key cancer and cell cycle-related genes and miRNAs in triple-negative breast cancer cells.",
+      "journal": "Molecular carcinogenesis",
+      "year": "2023",
+      "authors": [
+        "Tafti A",
+        "Shojaei S",
+        "Zali H",
+        "Karima S",
+        "Mohammadi-Yeganeh S",
+        "Mondanizadeh M"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "12813467",
+      "title": "Phospholipase D confers rapamycin resistance in human breast cancer cells.",
+      "journal": "Oncogene",
+      "year": "2003",
+      "authors": [
+        "Chen Y",
+        "Zheng Y",
+        "Foster DA"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "24637218",
+      "title": "CD44-tropic polymeric nanocarrier for breast cancer targeted rapamycin chemotherapy.",
+      "journal": "Nanomedicine : nanotechnology, biology, and medicine",
+      "year": "2014",
+      "authors": [
+        "Zhao Y",
+        "Zhang T",
+        "Duan S",
+        "Davies NM",
+        "Forrest ML"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "34042422",
+      "title": "Rapamycin as a \"One-Stone-Three-Birds\" Agent for Cooperatively Enhanced Phototherapies Against Metastatic Breast Cancer.",
+      "journal": "ACS applied materials & interfaces",
+      "year": "2021",
+      "authors": [
+        "Liu P",
+        "Peng Y",
+        "Zhou Y",
+        "Shi X",
+        "Li Q",
+        "Ding J",
+        "Gao Y",
+        "Zhou W"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "28257810",
+      "title": "Anti-HER2 immunoliposomes for co-delivery of paclitaxel and rapamycin for breast cancer therapy.",
+      "journal": "European journal of pharmaceutics and biopharmaceutics : official journal of Arbeitsgemeinschaft fur Pharmazeutische Verfahrenstechnik e.V",
+      "year": "2017",
+      "authors": [
+        "Eloy JO",
+        "Petrilli R",
+        "Chesca DL",
+        "Saggioro FP",
+        "Lee RJ",
+        "Marchetti JM"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "31182914",
+      "title": "Feedback Activation of SGK3 and AKT Contributes to Rapamycin Resistance by Reactivating mTORC1/4EBP1 Axis via TSC2 in Breast Cancer.",
+      "journal": "International journal of biological sciences",
+      "year": "2019",
+      "authors": [
+        "Wang H",
+        "Huang F",
+        "Zhang Z",
+        "Wang P",
+        "Luo Y",
+        "Li H",
+        "Li N",
+        "Wang J",
+        "Zhou J",
+        "Wang Y",
+        "Li S"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "32356448",
+      "title": "Investigation of the effects of rapamycin on the mTOR pathway and apoptosis in metastatic and non-metastatic human breast cancer cell lines.",
+      "journal": "Bratislavske lekarske listy",
+      "year": "2020",
+      "authors": [
+        "Ekizceli G",
+        "Uluer ET",
+        "Inan S"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "30154572",
+      "title": "Investigation of Novel Regulation of N-myristoyltransferase by Mammalian Target of Rapamycin in Breast Cancer Cells.",
+      "journal": "Scientific reports",
+      "year": "2018",
+      "authors": [
+        "Jacquier M",
+        "Kuriakose S",
+        "Bhardwaj A",
+        "Zhang Y",
+        "Shrivastav A",
+        "Portet S",
+        "Varma Shrivastav S"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "34360785",
+      "title": "Rapamycin Plus Doxycycline Combination Affects Growth Arrest and Selective Autophagy-Dependent Cell Death in Breast Cancer Cells.",
+      "journal": "International journal of molecular sciences",
+      "year": "2021",
+      "authors": [
+        "Dankó T",
+        "Petővári G",
+        "Sztankovics D",
+        "Moldvai D",
+        "Raffay R",
+        "Lőrincz P",
+        "Visnovitz T",
+        "Zsiros V",
+        "Barna G",
+        "Márk Á",
+        "Krencz I",
+        "Sebestyén A"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "31927993",
+      "title": "Nanotoxicology of an Elastin-like Polypeptide Rapamycin Formulation for Breast Cancer.",
+      "journal": "Biomacromolecules",
+      "year": "2020",
+      "authors": [
+        "Peddi S",
+        "Roberts SK",
+        "MacKay JA"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "21690228",
+      "title": "Combinatorial effects of lapatinib and rapamycin in triple-negative breast cancer cells.",
+      "journal": "Molecular cancer therapeutics",
+      "year": "2011",
+      "authors": [
+        "Liu T",
+        "Yacoub R",
+        "Taliaferro-Smith LD",
+        "Sun SY",
+        "Graham TR",
+        "Dolan R",
+        "Lobo C",
+        "Tighiouart M",
+        "Yang L",
+        "Adams A",
+        "O'Regan RM"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "34813306",
+      "title": "Bisdemethoxycurcumin Promotes Apoptosis and Inhibits the Epithelial-Mesenchymal Transition through the Inhibition of the G-Protein-Coupled Receptor 161/Mammalian Target of Rapamycin Signaling Pathway in Triple Negative Breast Cancer Cells.",
+      "journal": "Journal of agricultural and food chemistry",
+      "year": "2021",
+      "authors": [
+        "Chou CH",
+        "Wang HK",
+        "Lin YC",
+        "Tsai DH",
+        "Lu MT",
+        "Ho CT",
+        "Hseu YC",
+        "Yang HL",
+        "Way TD"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "28639903",
+      "title": "Targeting the mTOR pathway in breast cancer.",
+      "journal": "Tumour biology : the journal of the International Society for Oncodevelopmental Biology and Medicine",
+      "year": "2017",
+      "authors": [
+        "Liu J",
+        "Li HQ",
+        "Zhou FX",
+        "Yu JW",
+        "Sun L",
+        "Han ZH"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "17109887",
+      "title": "Rapamycin inhibits proliferation of estrogen-receptor-positive breast cancer cells.",
+      "journal": "The Journal of surgical research",
+      "year": "2007",
+      "authors": [
+        "Chang SB",
+        "Miron P",
+        "Miron A",
+        "Iglehart JD"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "16985050",
+      "title": "Cyclin D3 is down-regulated by rapamycin in HER-2-overexpressing breast cancer cells.",
+      "journal": "Molecular cancer therapeutics",
+      "year": "2006",
+      "authors": [
+        "García-Morales P",
+        "Hernando E",
+        "Carrasco-García E",
+        "Menéndez-Gutierrez MP",
+        "Saceda M",
+        "Martínez-Lacaci I"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "26036652",
+      "title": "Co-delivery of rapamycin- and piperine-loaded polymeric nanoparticles for breast cancer treatment.",
+      "journal": "Drug delivery",
+      "year": "2016",
+      "authors": [
+        "Katiyar SS",
+        "Muntimadugu E",
+        "Rafeeqi TA",
+        "Domb AJ",
+        "Khan W"
+      ],
+      "source": "ncbi_pubmed"
+    }
+  ]
+}

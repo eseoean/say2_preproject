@@ -1,0 +1,54 @@
+{
+  "data": [
+    {
+      "event": "DEATH",
+      "count": 13,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "OFF LABEL USE",
+      "count": 10,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "ACUTE MYELOID LEUKAEMIA",
+      "count": 6,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "FATIGUE",
+      "count": 6,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "NAUSEA",
+      "count": 6,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "MALIGNANT NEOPLASM PROGRESSION",
+      "count": 5,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "VOMITING",
+      "count": 5,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "CONFUSIONAL STATE",
+      "count": 4,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "DIARRHOEA",
+      "count": 4,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "ARTHRALGIA",
+      "count": 3,
+      "source": "openfda_faers"
+    }
+  ]
+}

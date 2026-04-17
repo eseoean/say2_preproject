@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Input Dataset Metrics Report</title>
+  <style>
+    :root {
+      --bg: #f6f8fc;
+      --panel: #ffffff;
+      --ink: #1e2a39;
+      --muted: #5b6777;
+      --line: #d9e1ec;
+      --head: #eaf2ff;
+      --accent: #2f6fdd;
+      --shadow: 0 10px 30px rgba(31, 45, 61, 0.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 32px;
+      background: linear-gradient(180deg, #f6f8fc 0%, #eef3fb 100%);
+      color: var(--ink);
+      font-family: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+      line-height: 1.55;
+    }
+    .page {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    .hero {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      padding: 28px 32px;
+      margin-bottom: 24px;
+    }
+    h1, h2, h3 {
+      margin: 0;
+      line-height: 1.25;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+    h2 {
+      font-size: 1.45rem;
+      margin-bottom: 16px;
+    }
+    h3 {
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+      color: var(--accent);
+    }
+    p {
+      margin: 8px 0 0;
+      color: var(--muted);
+    }
+    code {
+      background: #edf3ff;
+      color: #204f9e;
+      border-radius: 6px;
+      padding: 0.12rem 0.38rem;
+      font-size: 0.92em;
+    }
+    .dataset-section, .notes {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      padding: 24px;
+      margin-bottom: 20px;
+    }
+    .subsection + .subsection {
+      margin-top: 20px;
+    }
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #fbfdff;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 760px;
+    }
+    th, td {
+      border-bottom: 1px solid var(--line);
+      padding: 12px 14px;
+      text-align: left;
+      vertical-align: top;
+      font-size: 0.95rem;
+    }
+    th {
+      background: var(--head);
+      color: #24406c;
+      font-weight: 700;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+    tbody tr:nth-child(even) td {
+      background: #f8fbff;
+    }
+    tbody tr:hover td {
+      background: #eef5ff;
+    }
+    .plain-note {
+      margin: 0;
+      background: #f8fbff;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 14px 16px;
+      color: var(--muted);
+    }
+    ul {
+      margin: 8px 0 0;
+      padding-left: 20px;
+    }
+    li + li {
+      margin-top: 8px;
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: #eef5ff;
+      color: #24406c;
+      font-weight: 600;
+      font-size: 0.92rem;
+      border: 1px solid #d7e5ff;
+    }
+    @media print {
+      body {
+        padding: 0;
+        background: white;
+      }
+      .hero, .dataset-section, .notes {
+        box-shadow: none;
+        break-inside: avoid;
+      }
+      th {
+        position: static;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <h1>Input Dataset Metrics Report</h1>
+      <p>기준 날짜: 2026-04-15</p>
+      <p>이 문서는 현재 저장된 GroupCV 결과를 입력셋 3종 기준으로 묶은 요약 문서입니다.</p>
+      <div class="meta">
+        <span class="chip">Variant A: exact slim</span>
+        <span class="chip">Variant B: exact slim + SMILES</span>
+        <span class="chip">Variant C: exact slim + strong context + SMILES</span>
+      </div>
+    </section>
+
+    <section class="dataset-section">
+      <h2>Input Variants</h2>
+      <div class="table-wrap"><table><thead><tr><th>Variant</th><th>설명</th><th>ML 입력</th><th>DL 입력</th></tr></thead><tbody><tr><td>A</td><td><code>exact slim (numeric-only)</code></td><td><code>5529</code> numeric features</td><td><code>5529</code> numeric features</td></tr><tr><td>B</td><td><code>exact slim + SMILES</code></td><td><code>5529 numeric + 64 SMILES SVD = 5593</code></td><td><code>5529 numeric + SMILES branch</code></td></tr><tr><td>C</td><td><code>exact slim + strong context + SMILES</code></td><td><code>5529 numeric + 32 context one-hot + 64 SMILES SVD = 5625</code></td><td><code>5529 numeric + 5 categorical context + SMILES branch</code></td></tr></tbody></table></div>
+      <p><code>-</code> 표시는 해당 지표가 저장되지 않았거나 해당 조합이 실행되지 않았음을 뜻합니다.</p>
+    </section>
+
+    <section class="dataset-section"><h2>A. exact slim (numeric-only)</h2><section class="subsection"><h3>DL</h3><div class="table-wrap"><table><thead><tr><th>Model</th><th>Spearman</th><th>RMSE</th><th>MAE</th><th>Pearson</th><th>R²</th><th>NDCG@20</th><th>Time</th></tr></thead><tbody><tr><td>WideDeep</td><td>0.5568</td><td>2.1979</td><td>1.6544</td><td>0.5862</td><td>0.3372</td><td>-</td><td>0.2m</td></tr><tr><td>CrossAttention</td><td>0.5439</td><td>2.2344</td><td>1.6477</td><td>0.5704</td><td>0.3155</td><td>-</td><td>0.5m</td></tr><tr><td>FlatMLP</td><td>0.5393</td><td>2.2695</td><td>1.6890</td><td>0.5685</td><td>0.2935</td><td>-</td><td>0.5m</td></tr><tr><td>TabNet</td><td>0.5332</td><td>2.3152</td><td>1.6811</td><td>0.5640</td><td>0.2643</td><td>-</td><td>0.2m</td></tr><tr><td>FTTransformer</td><td>0.5305</td><td>2.2327</td><td>1.6351</td><td>0.5683</td><td>0.3161</td><td>-</td><td>0.6m</td></tr><tr><td>ResidualMLP</td><td>0.5141</td><td>2.3194</td><td>1.7092</td><td>0.5496</td><td>0.2607</td><td>-</td><td>0.4m</td></tr><tr><td>TabTransformer</td><td>0.4323</td><td>2.3862</td><td>1.8134</td><td>0.4961</td><td>0.2186</td><td>-</td><td>3.8m</td></tr></tbody></table></div></section><section class="subsection"><h3>Ensemble</h3><div class="table-wrap"><table><thead><tr><th>Ensemble</th><th>구성</th><th>Spearman</th><th>RMSE</th><th>MAE</th><th>Pearson</th><th>R²</th><th>NDCG@20</th></tr></thead><tbody><tr><td>Local top3 weighted</td><td>WideDeep + CrossAttention + FlatMLP</td><td>0.5636</td><td>2.1868</td><td>1.6215</td><td>0.5892</td><td>0.3468</td><td>-</td></tr><tr><td>Saved 6-model weighted</td><td>1/2/4/10/12/13 weighted</td><td>0.5483</td><td>2.2171</td><td>1.6641</td><td>0.5784</td><td>0.3286</td><td>-</td></tr></tbody></table></div></section><section class="subsection"><h3>ML</h3><p class="plain-note">현재 워크스페이스에는 <code>exact slim (numeric-only)</code> 조건의 ML full rerun 저장본이 없습니다.</p></section></section><section class="dataset-section"><h2>B. exact slim + SMILES</h2><section class="subsection"><h3>ML</h3><div class="table-wrap"><table><thead><tr><th>Model</th><th>Spearman</th><th>RMSE</th><th>MAE</th><th>Pearson</th><th>R²</th><th>NDCG@20</th><th>Time</th></tr></thead><tbody><tr><td>CatBoost</td><td>0.5683</td><td>2.1573</td><td>1.6209</td><td>0.6047</td><td>0.3643</td><td>0.8501</td><td>22.6m</td></tr><tr><td>LightGBM</td><td>0.5632</td><td>2.1379</td><td>1.6408</td><td>0.6142</td><td>0.3757</td><td>0.8584</td><td>4.9m</td></tr><tr><td>LightGBM_DART</td><td>0.5586</td><td>2.1526</td><td>1.6694</td><td>0.6121</td><td>0.3671</td><td>0.8579</td><td>2.7m</td></tr><tr><td>RandomForest</td><td>0.5573</td><td>2.2168</td><td>1.6640</td><td>0.5859</td><td>0.3288</td><td>0.8755</td><td>1.1m</td></tr><tr><td>XGBoost</td><td>0.5482</td><td>2.1596</td><td>1.6655</td><td>0.6041</td><td>0.3629</td><td>0.8550</td><td>17.4m</td></tr><tr><td>ExtraTrees</td><td>0.5124</td><td>2.2481</td><td>1.6697</td><td>0.5575</td><td>0.3097</td><td>0.8887</td><td>1.3m</td></tr></tbody></table></div></section><section class="subsection"><h3>DL</h3><div class="table-wrap"><table><thead><tr><th>Model</th><th>Spearman</th><th>RMSE</th><th>MAE</th><th>Pearson</th><th>R²</th><th>NDCG@20</th><th>Time</th><th>비고</th></tr></thead><tbody><tr><td>FlatMLP</td><td>0.5941</td><td>2.0441</td><td>1.5845</td><td>0.6604</td><td>0.4252</td><td>0.8147</td><td>9.9m</td><td></td></tr><tr><td>CrossAttention</td><td>0.5795</td><td>2.1378</td><td>1.6123</td><td>0.6146</td><td>0.3723</td><td>0.8029</td><td>11.7m</td><td></td></tr><tr><td>ResidualMLP</td><td>0.5642</td><td>2.1514</td><td>1.6302</td><td>0.6071</td><td>0.3648</td><td>0.8203</td><td>9.7m</td><td></td></tr><tr><td>TabNet</td><td>0.5618</td><td>2.1321</td><td>1.6319</td><td>0.6194</td><td>0.3757</td><td>0.8201</td><td>7.3m</td><td></td></tr><tr><td>FTTransformer</td><td>0.5540</td><td>2.1481</td><td>1.6093</td><td>0.6071</td><td>0.3666</td><td>0.7968</td><td>10.0m</td><td></td></tr><tr><td>WideDeep</td><td>0.5506</td><td>2.1611</td><td>1.6239</td><td>0.6014</td><td>0.3595</td><td>0.7988</td><td>13.0m</td><td></td></tr><tr><td>TabTransformer</td><td>0.4446</td><td>2.3666</td><td>1.7701</td><td>0.5234</td><td>0.2601</td><td>0.8018</td><td>10.6m</td><td>2-fold early stop</td></tr></tbody></table></div></section><section class="subsection"><h3>Ensemble</h3><div class="table-wrap"><table><thead><tr><th>Ensemble</th><th>구성</th><th>Spearman</th><th>RMSE</th><th>MAE</th><th>Pearson</th><th>R²</th><th>NDCG@20</th></tr></thead><tbody><tr><td>FRC weighted</td><td>FlatMLP + ResidualMLP + CrossAttention</td><td>0.6067</td><td>2.0480</td><td>1.5593</td><td>0.6543</td><td>0.4271</td><td>0.8458</td></tr></tbody></table></div></section></section><section class="dataset-section"><h2>C. exact slim + strong context + SMILES</h2><section class="subsection"><h3>ML</h3><div class="table-wrap"><table><thead><tr><th>Model</th><th>Spearman</th><th>RMSE</th><th>MAE</th><th>Pearson</th><th>R²</th><th>NDCG@20</th><th>Time</th></tr></thead><tbody><tr><td>CatBoost</td><td>0.5742</td><td>2.1415</td><td>1.6170</td><td>0.6130</td><td>0.3736</td><td>0.8413</td><td>20.6m</td></tr><tr><td>LightGBM_DART</td><td>0.5700</td><td>2.1410</td><td>1.6593</td><td>0.6179</td><td>0.3739</td><td>0.8469</td><td>2.7m</td></tr><tr><td>RandomForest</td><td>0.5696</td><td>2.2129</td><td>1.6597</td><td>0.5891</td><td>0.3311</td><td>0.8812</td><td>1.5m</td></tr><tr><td>XGBoost</td><td>0.5614</td><td>2.1463</td><td>1.6505</td><td>0.6118</td><td>0.3708</td><td>0.8482</td><td>15.5m</td></tr><tr><td>LightGBM</td><td>0.5585</td><td>2.1555</td><td>1.6457</td><td>0.6067</td><td>0.3654</td><td>0.8515</td><td>5.1m</td></tr><tr><td>ExtraTrees</td><td>0.5207</td><td>2.2431</td><td>1.6634</td><td>0.5605</td><td>0.3127</td><td>0.8848</td><td>1.8m</td></tr></tbody></table></div></section><section class="subsection"><h3>DL</h3><div class="table-wrap"><table><thead><tr><th>Model</th><th>Spearman</th><th>RMSE</th><th>MAE</th><th>Pearson</th><th>R²</th><th>NDCG@20</th><th>Time</th><th>비고</th></tr></thead><tbody><tr><td>FlatMLP</td><td>0.6052</td><td>2.0515</td><td>1.5608</td><td>0.6554</td><td>0.4208</td><td>0.8037</td><td>9.5m</td><td>standalone</td></tr><tr><td>ResidualMLP</td><td>0.6041</td><td>2.1166</td><td>1.5960</td><td>0.6247</td><td>0.3849</td><td>0.7974</td><td>-</td><td>base run from FRC ensemble</td></tr><tr><td>CrossAttention</td><td>0.5931</td><td>2.1455</td><td>1.5895</td><td>0.6132</td><td>0.3680</td><td>0.7836</td><td>8.8m</td><td>standalone</td></tr><tr><td>WideDeep</td><td>0.5707</td><td>2.1674</td><td>1.6246</td><td>0.6025</td><td>0.3551</td><td>0.8252</td><td>10.0m</td><td>standalone</td></tr><tr><td>FTTransformer</td><td>0.5550</td><td>2.1911</td><td>1.6389</td><td>-</td><td>-</td><td>0.8223</td><td>-</td><td>log summary only</td></tr><tr><td>TabNet</td><td>0.5543</td><td>2.1695</td><td>1.6232</td><td>-</td><td>-</td><td>0.8163</td><td>-</td><td>log summary only</td></tr><tr><td>TabTransformer</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>not run / not saved</td></tr></tbody></table></div></section><section class="subsection"><h3>Ensemble</h3><div class="table-wrap"><table><thead><tr><th>Ensemble</th><th>구성</th><th>Spearman</th><th>RMSE</th><th>MAE</th><th>Pearson</th><th>R²</th><th>NDCG@20</th></tr></thead><tbody><tr><td>FRC weighted</td><td>FlatMLP + ResidualMLP + CrossAttention</td><td>0.6280</td><td>2.0220</td><td>1.5296</td><td>0.6646</td><td>0.4415</td><td>0.8282</td></tr><tr><td>Top3 weighted</td><td>FlatMLP + WideDeep + CrossAttention</td><td>0.6179</td><td>2.0568</td><td>1.5430</td><td>0.6506</td><td>0.4221</td><td>0.8356</td></tr></tbody></table></div></section></section>
+
+    <section class="notes">
+      <h2>Notes</h2>
+      <ul><li><code>exact slim + SMILES</code>의 <code>TabTransformer</code>는 사용자 지정 조기 종료 규칙으로 2개 fold만 실행되었습니다.</li><li><code>exact slim + strong context + SMILES</code>의 <code>TabNet</code>, <code>FTTransformer</code>는 이전 실행 로그 요약값만 남아 있어 <code>Pearson</code>, <code>R²</code>, <code>Time</code>은 <code>-</code>로 표시했습니다.</li><li><code>exact slim + strong context + SMILES</code>에서 현재 best ensemble은 <code>FlatMLP + ResidualMLP + CrossAttention</code> weighted 입니다.</li></ul>
+    </section>
+  </main>
+</body>
+</html>

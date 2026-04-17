@@ -1,0 +1,1656 @@
+{
+  "drug_id": 1511,
+  "drug_name": "Epirubicin",
+  "category": "Caution",
+  "combined_score": 5.83,
+  "timestamp": "2026-04-15 19:40:52",
+  "data_collected": {
+    "basic_info": {
+      "ok": true,
+      "data": {
+        "drug_id": 1511,
+        "drug_name": "Epirubicin",
+        "target": "Anthracycline",
+        "pathway": "DNA replication",
+        "predicted_ic50": 0.6785437,
+        "sensitivity_rate": 1.0,
+        "validation_score": 8.85,
+        "safety_score": 2.83,
+        "combined_score": 5.83,
+        "final_rank": 15,
+        "category": "Caution",
+        "clinical_bucket": "Breast cancer current/relevant use",
+        "known_brca": true,
+        "target_expressed": true,
+        "brca_pathway": true,
+        "survival_sig": true,
+        "recommendation_note": "Efficacy signal exists, but safety flags were detected. Keep as a low-priority caution item."
+      }
+    },
+    "side_effects": {
+      "ok": true,
+      "data": [
+        {
+          "event": "NAUSEA",
+          "count": 1605,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "NEUTROPENIA",
+          "count": 1493,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "FEBRILE NEUTROPENIA",
+          "count": 1321,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "VOMITING",
+          "count": 1305,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "DIARRHOEA",
+          "count": 1274,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "PYREXIA",
+          "count": 1239,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "MYELOSUPPRESSION",
+          "count": 1026,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "FATIGUE",
+          "count": 966,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "ASTHENIA",
+          "count": 942,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "WHITE BLOOD CELL COUNT DECREASED",
+          "count": 925,
+          "source": "openfda_faers"
+        }
+      ],
+      "source": "openfda_live"
+    },
+    "trials": {
+      "ok": true,
+      "data": [
+        {
+          "nct_id": "NCT01917578",
+          "title": "Study of Breast Cancer Shrinkage Modes After Neoadjuvant Chemotherapy With Whole-mount Serial Sections and Three-dimensional Pathological and MRI Reconstruction",
+          "phase": "PHASE3",
+          "status": "UNKNOWN",
+          "conditions": [
+            "Breast Cancer"
+          ],
+          "lead_sponsor": "Shandong Cancer Hospital and Institute",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT02838225",
+          "title": "DA Versus DAC as Postoperative Adjuvant Treatment for Early-stage Breast Cancer",
+          "phase": "PHASE2",
+          "status": "COMPLETED",
+          "conditions": [
+            "Breast Cancer"
+          ],
+          "lead_sponsor": "Peking Union Medical College Hospital",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT00548899",
+          "title": "Neoadjuvant Chemotherapy Including Sorafenib in Women With Previously Untreated Primary Breast Cancer",
+          "phase": "PHASE2",
+          "status": "COMPLETED",
+          "conditions": [
+            "Breast Cancer"
+          ],
+          "lead_sponsor": "GBG Forschungs GmbH",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT02532400",
+          "title": "Neoadjuvant Aromatase Inhibitor(AI) With Ovarian Suppression Versus Chemotherapy in Premenopausal Breast Cancer Patients",
+          "phase": "PHASE3",
+          "status": "TERMINATED",
+          "conditions": [
+            "Breast Cancer"
+          ],
+          "lead_sponsor": "Ruijin Hospital",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT01966471",
+          "title": "A Study of Trastuzumab Emtansine (Kadcyla) Plus Pertuzumab (Perjeta) Following Anthracyclines in Comparison With Trastuzumab (Herceptin) Plus Pertuzumab and a Taxane Following Anthracyclines as Adjuvant Therapy in Participants With Operable HER2-Positive Primary Breast Cancer",
+          "phase": "PHASE3",
+          "status": "COMPLETED",
+          "conditions": [
+            "Breast Cancer"
+          ],
+          "lead_sponsor": "Hoffmann-La Roche",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT00516425",
+          "title": "Doxorubicin or Epirubicin and Cyclophosphamide in Treating Older Women With Invasive Breast Cancer",
+          "phase": "PHASE3",
+          "status": "UNKNOWN",
+          "conditions": [
+            "Breast Cancer"
+          ],
+          "lead_sponsor": "Charing Cross Hospital",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT03983538",
+          "title": "Mathematical Modeling to Predict Response to Neoadjuvant Chemotherapy in Breast Cancer",
+          "phase": "",
+          "status": "COMPLETED",
+          "conditions": [
+            "Breast Cancer"
+          ],
+          "lead_sponsor": "New Mexico Cancer Research Alliance",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT05803889",
+          "title": "Characterization and Kinetic of Chemotherapy-induced Cardiovascular Toxicity in Breast Cancer",
+          "phase": "",
+          "status": "TERMINATED",
+          "conditions": [
+            "Breast Cancer"
+          ],
+          "lead_sponsor": "Institut de cancérologie Strasbourg Europe",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT04829890",
+          "title": "Adjuvant Chemotherapy With Epirubicin, CMF, and Weekly Docetaxel or Weekly Paclitaxel in Patients With Resected High-risk Breast Cancer",
+          "phase": "",
+          "status": "COMPLETED",
+          "conditions": [
+            "Breast Cancer",
+            "Adenocarcinoma of Breast"
+          ],
+          "lead_sponsor": "Hellenic Cooperative Oncology Group",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT00008034",
+          "title": "Combination Chemotherapy Before Surgery in Treating Women With Breast Cancer",
+          "phase": "PHASE1",
+          "status": "COMPLETED",
+          "conditions": [
+            "Breast Cancer"
+          ],
+          "lead_sponsor": "European Organisation for Research and Treatment of Cancer - EORTC",
+          "source": "clinicaltrials_gov_v2"
+        }
+      ],
+      "source": "clinicaltrials_live"
+    },
+    "targets": {
+      "ok": true,
+      "data": [
+        {
+          "target": "Anthracycline",
+          "source": "local_frc_step6_7"
+        }
+      ]
+    },
+    "pathways": {
+      "ok": true,
+      "data": [
+        {
+          "pathway": "DNA replication",
+          "source": "local_frc_step6_7"
+        }
+      ]
+    },
+    "pubmed_general": {
+      "ok": true,
+      "query": "Epirubicin",
+      "data": [
+        {
+          "pmid": "7693418",
+          "title": "Epirubicin. Clinical pharmacology and dose-effect relationship.",
+          "journal": "Drugs",
+          "year": "1993",
+          "authors": [
+            "Robert J"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "2404456",
+          "title": "[Epirubicin (4'-epi-adriamycin].",
+          "journal": "Gan to kagaku ryoho. Cancer & chemotherapy",
+          "year": "1990",
+          "authors": [
+            "Tsukagoshi S"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "10582777",
+          "title": "Epirubicin: a review of its intravesical use in superficial bladder cancer.",
+          "journal": "Drugs & aging",
+          "year": "1999",
+          "authors": [
+            "Onrust SV",
+            "Wiseman LR",
+            "Goa KL"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "22260846",
+          "title": "Epirubicin: is it like doxorubicin in breast cancer? A clinical review.",
+          "journal": "Breast (Edinburgh, Scotland)",
+          "year": "2012",
+          "authors": [
+            "Khasraw M",
+            "Bell R",
+            "Dang C"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "8070217",
+          "title": "Clinical pharmacokinetics of epirubicin.",
+          "journal": "Clinical pharmacokinetics",
+          "year": "1994",
+          "authors": [
+            "Robert J"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "11552229",
+          "title": "Epirubicin in combination with the taxanes.",
+          "journal": "Seminars in oncology",
+          "year": "2001",
+          "authors": [
+            "Trudeau M",
+            "Pagani O"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "7686469",
+          "title": "Epirubicin. A review of its pharmacodynamic and pharmacokinetic properties, and therapeutic use in cancer chemotherapy.",
+          "journal": "Drugs",
+          "year": "1993",
+          "authors": [
+            "Plosker GL",
+            "Faulds D"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "12756076",
+          "title": "Epirubicin versus doxorubicin: which is the anthracycline of choice for the treatment of breast cancer?",
+          "journal": "Clinical breast cancer",
+          "year": "2003",
+          "authors": [
+            "Kaklamani VG",
+            "Gradishar WJ"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "11396360",
+          "title": "Epirubicin/taxane combinations in breast cancer: experience from several Italian trials.",
+          "journal": "Oncology (Williston Park, N.Y.)",
+          "year": "2001",
+          "authors": [
+            "Conte P",
+            "Gennari A",
+            "Guarneri V",
+            "Landucci E",
+            "Donati S",
+            "Salvadori B",
+            "Bengala C",
+            "Orlandini C",
+            "Baldini E"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "8334677",
+          "title": "Epirubicin and doxorubicin: a comparison of their characteristics, therapeutic activity and toxicity.",
+          "journal": "Cancer treatment reviews",
+          "year": "1993",
+          "authors": [
+            "Launchbury AP",
+            "Habboubi N"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "11970749",
+          "title": "Role of epirubicin in advanced breast cancer.",
+          "journal": "Clinical breast cancer",
+          "year": "2000",
+          "authors": [
+            "Conte PF",
+            "Gennari A",
+            "Landucci E",
+            "Orlandini C"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "10600046",
+          "title": "Epirubicin: a review of its efficacy as adjuvant therapy and in the treatment of metastatic disease in breast cancer.",
+          "journal": "Drugs & aging",
+          "year": "1999",
+          "authors": [
+            "Ormrod D",
+            "Holm K",
+            "Goa K",
+            "Spencer C"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "8353070",
+          "title": "Drugs ten years later: epirubicin.",
+          "journal": "Annals of oncology : official journal of the European Society for Medical Oncology",
+          "year": "1993",
+          "authors": [
+            "Bonadonna G",
+            "Gianni L",
+            "Santoro A",
+            "Bonfante V",
+            "Bidoli P",
+            "Casali P",
+            "Demicheli R",
+            "Valagussa P"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "11970752",
+          "title": "Epirubicin in breast cancer: present and future.",
+          "journal": "Clinical breast cancer",
+          "year": "2000",
+          "authors": [
+            "Levine M"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "12087624",
+          "title": "Epirubicin hydrochloride.",
+          "journal": "Clinical journal of oncology nursing",
+          "year": "2002",
+          "authors": [
+            "Dolbey C"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "9074845",
+          "title": "Epirubicin. An updated review of its pharmacodynamic and pharmacokinetic properties and therapeutic efficacy in the management of breast cancer.",
+          "journal": "Drugs",
+          "year": "1997",
+          "authors": [
+            "Coukell AJ",
+            "Faulds D"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "2194531",
+          "title": "Current status of epirubicin (Farmorubicin) in the treatment of solid tumours.",
+          "journal": "Acta oncologica (Stockholm, Sweden)",
+          "year": "1990",
+          "authors": [
+            "Mouridsen HT",
+            "Alfthan C",
+            "Bastholt L",
+            "Bergh J",
+            "Dalmark M",
+            "Eksborg S",
+            "Hellsten S",
+            "Kjaer M",
+            "Peterson C",
+            "Skovsgård T"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "31735743",
+          "title": "Melatonin protects against Epirubicin-induced ovarian damage.",
+          "journal": "The Journal of reproduction and development",
+          "year": "2020",
+          "authors": [
+            "Wang N",
+            "Li H",
+            "Zhu Y",
+            "Li N",
+            "Chen ZJ",
+            "Zhang C"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "15056049",
+          "title": "Epirubicin as adjuvant therapy in breast cancer.",
+          "journal": "Expert review of anticancer therapy",
+          "year": "2004",
+          "authors": [
+            "Earl H",
+            "Iddawela M"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "36613786",
+          "title": "Metformin Alleviates Epirubicin-Induced Endothelial Impairment by Restoring Mitochondrial Homeostasis.",
+          "journal": "International journal of molecular sciences",
+          "year": "2022",
+          "authors": [
+            "Sun Q",
+            "Jia H",
+            "Cheng S",
+            "Wang Y",
+            "Wang J"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "31537377",
+          "title": "Gp130 degradation induced by epirubicin contributes to chemotherapy efficacy.",
+          "journal": "Biochemical and biophysical research communications",
+          "year": "2019",
+          "authors": [
+            "Liu F",
+            "Jin H",
+            "Shen J",
+            "Wu D",
+            "Tian Y",
+            "Huang C"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "10093625",
+          "title": "Epirubicin, alone or in combination chemotherapy, for metastatic breast cancer. Provincial Breast Cancer Disease Site Group and the Provincial Systemic Treatment Disease Site Group.",
+          "journal": "Cancer prevention & control : CPC = Prevention & controle en cancerologie : PCC",
+          "year": "1998",
+          "authors": [
+            "Findlay BP",
+            "Walker-Dilks C"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "16314288",
+          "title": "Adjuvant chemotherapy for early breast cancer: optimal use of epirubicin.",
+          "journal": "The oncologist",
+          "year": "2005",
+          "authors": [
+            "Glück S"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "15959941",
+          "title": "Overview of epirubicin-based adjuvant therapy in breast cancer.",
+          "journal": "Clinical breast cancer",
+          "year": "2000",
+          "authors": [
+            "Untch M",
+            "von Koch F",
+            "Kahlert S",
+            "Konecny G"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "40774054",
+          "title": "Lipoic acid-modified epirubicin liposomal system for tumor-targeted drug delivery and cardiotoxicity reduction.",
+          "journal": "Biomaterials advances",
+          "year": "2026",
+          "authors": [
+            "Han Y",
+            "Peng C",
+            "Qiao Z",
+            "Wang X",
+            "Peng J",
+            "Liu J",
+            "Zhao M",
+            "Wang D",
+            "Hu H",
+            "Chen D"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "32357825",
+          "title": "The Apoptosis Mechanism of Epirubicin Combined with BCG on Human Bladder Cancer Cells.",
+          "journal": "Anti-cancer agents in medicinal chemistry",
+          "year": "2020",
+          "authors": [
+            "Luo Y",
+            "Fu X",
+            "Han B",
+            "Zhang F",
+            "Yuan L",
+            "Men H",
+            "Zhang S",
+            "Tian S",
+            "Dong B",
+            "Meng M"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "41176301",
+          "title": "Epirubicin-loaded porous wollastonite nanoparticles for colorectal cancer therapy: synthesis, characterization, and in vivo study.",
+          "journal": "International journal of pharmaceutics",
+          "year": "2025",
+          "authors": [
+            "Mahmoudi A",
+            "Sadi KS",
+            "Charmforoushan A",
+            "Malek S",
+            "Roknabadi MR",
+            "Malaekeh-Nikouei B"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "18765465",
+          "title": "Chemotherapy for breast cancer during pregnancy: is epirubicin safe?",
+          "journal": "Annals of oncology : official journal of the European Society for Medical Oncology",
+          "year": "2008",
+          "authors": [
+            "Mir O",
+            "Berveiller P",
+            "Rouzier R",
+            "Goffinet F",
+            "Goldwasser F",
+            "Treluyer JM"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "38203818",
+          "title": "Nanoparticle-Encapsulated Epirubicin Efficacy in the Inhibition of Growth of Orthotopic Ovarian Patient-Derived Xenograft in Immunocompromised Mice.",
+          "journal": "International journal of molecular sciences",
+          "year": "2024",
+          "authors": [
+            "Kośnik W",
+            "Sikorska H",
+            "Kiciak A",
+            "Ciach T"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "35920783",
+          "title": "Results of NC-6300 (Nanoparticle Epirubicin) in an Expansion Cohort of Patients with Angiosarcoma.",
+          "journal": "The oncologist",
+          "year": "2022",
+          "authors": [
+            "Riedel RF",
+            "Chua V",
+            "Moradkhani A",
+            "Krkyan N",
+            "Ahari A",
+            "Osada A",
+            "Chawla SP"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "37014177",
+          "title": "Targeted delivery of epirubicin to breast cancer cells using poly-aptamer DNA nanocarriers prepared by the RCA method with multiple repeats of aptamers of FOXM1 and AS1411.",
+          "journal": "Drug development and industrial pharmacy",
+          "year": "2023",
+          "authors": [
+            "Moradi E",
+            "Zavvar T",
+            "Alibolandi M",
+            "Ramezani M",
+            "Abnous K",
+            "Taghdisi SM"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "31079495",
+          "title": "Development of R(8) modified epirubicin-dihydroartemisinin liposomes for treatment of non-small-cell lung cancer.",
+          "journal": "Artificial cells, nanomedicine, and biotechnology",
+          "year": "2019",
+          "authors": [
+            "Liu JJ",
+            "Tang W",
+            "Fu M",
+            "Gong XQ",
+            "Kong L",
+            "Yao XM",
+            "Jing M",
+            "Cai FY",
+            "Li XT",
+            "Ju RJ"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "8371131",
+          "title": "Current views on intravesical treatment and chemoprophylaxis of superficial bladder cancer. The present role of epirubicin and doxorubicin.",
+          "journal": "Journal of chemotherapy (Florence, Italy)",
+          "year": "1993",
+          "authors": [
+            "Pavone-Macaluso M",
+            "Tripi M",
+            "Ingargiola GB",
+            "Corselli G",
+            "Pavone C",
+            "Serretta V"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "31433581",
+          "title": "miR-1301/TRIAP1 Axis Participates in Epirubicin-Mediated Anti-Proliferation and Pro-Apoptosis in Osteosarcoma.",
+          "journal": "Yonsei medical journal",
+          "year": "2019",
+          "authors": [
+            "Yu L",
+            "Meng M",
+            "Bao Y",
+            "Zhang C",
+            "Gao B",
+            "Sa R",
+            "Luo W"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "41351409",
+          "title": "Epirubicin Induces Cell Cycle Arrest in Multiple Myeloma Cells by Downregulating CDC20 Expression.",
+          "journal": "Frontiers in bioscience (Landmark edition)",
+          "year": "2025",
+          "authors": [
+            "Nan Z",
+            "Wang X",
+            "Wang Y",
+            "Cui Y",
+            "Fang B"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "28621004",
+          "title": "Epirubicin in the treatment of canine histiocytic sarcoma: sequential, alternating and rescue chemotherapy.",
+          "journal": "Veterinary and comparative oncology",
+          "year": "2018",
+          "authors": [
+            "Mason SL",
+            "Finotello R",
+            "Blackwood L"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "17109937",
+          "title": "Melatonin protects against epirubicin-induced cardiotoxicity.",
+          "journal": "Acta histochemica",
+          "year": "2007",
+          "authors": [
+            "Guven A",
+            "Yavuz O",
+            "Cam M",
+            "Ercan F",
+            "Bukan N",
+            "Comunoglu C"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "39275052",
+          "title": "Exploring Radioiodinated Anastrozole and Epirubicin as AKT1-Targeted Radiopharmaceuticals in Breast Cancer: In Silico Analysis and Potential Therapeutic Effect with Functional Nuclear Imagining Implications.",
+          "journal": "Molecules (Basel, Switzerland)",
+          "year": "2024",
+          "authors": [
+            "Binmujlli MA"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "37559469",
+          "title": "Inhibition of 6-Phosphogluconate Dehydrogenase Reverses Epirubicin Resistance Through Metabolic Reprograming in Triple-Negative Breast Cancer Cells.",
+          "journal": "Technology in cancer research & treatment",
+          "year": "2023",
+          "authors": [
+            "Xu J",
+            "Ren G",
+            "Cheng Q"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "7994797",
+          "title": "Experiences with doxo/epirubicin and medroxyprogesterone acetate (MPA) in prostatic cancer.",
+          "journal": "Cancer chemotherapy and pharmacology",
+          "year": "1994",
+          "authors": [
+            "Anderström C"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "15520498",
+          "title": "Epirubicin HCl toxicity in human-liver derived hepatoma G2 cells.",
+          "journal": "Polish journal of pharmacology",
+          "year": "2004",
+          "authors": [
+            "Ozkan A",
+            "Fişkin K"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "9817267",
+          "title": "Epirubicin cardiotoxicity: an analysis of 469 patients with metastatic breast cancer.",
+          "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+          "year": "1998",
+          "authors": [
+            "Ryberg M",
+            "Nielsen D",
+            "Skovsgaard T",
+            "Hansen J",
+            "Jensen BV",
+            "Dombernowsky P"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "26160072",
+          "title": "Loading, release and stability of epirubicin-loaded drug-eluting beads.",
+          "journal": "Journal of oncology pharmacy practice : official publication of the International Society of Oncology Pharmacy Practitioners",
+          "year": "2016",
+          "authors": [
+            "Spindeldreier KC",
+            "Thiesen J",
+            "Krämer I"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "26300546",
+          "title": "Epirubicin inhibits growth and alters the malignant phenotype of the U‑87 glioma cell line.",
+          "journal": "Molecular medicine reports",
+          "year": "2015",
+          "authors": [
+            "Wang XF",
+            "Zhao ZF",
+            "Chen MH",
+            "Yuan QH",
+            "Li YL",
+            "Jiang CL"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "3062572",
+          "title": "Continuous infusion of low-dose doxorubicin, epirubicin and mitoxantrone in cancer chemotherapy: a review.",
+          "journal": "Pharmaceutisch weekblad. Scientific edition",
+          "year": "1988",
+          "authors": [
+            "Greidanus J",
+            "Willemse PH",
+            "Uges DR",
+            "Oremus ET",
+            "De Langen ZJ",
+            "De Vries EG"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "36440599",
+          "title": "Efficacy of epi-1 modified epirubicin and curcumin encapsulated liposomes targeting-EpCAM in the inhibition of epithelial ovarian cancer cells.",
+          "journal": "Journal of liposome research",
+          "year": "2023",
+          "authors": [
+            "Wang YJ",
+            "Tang L",
+            "Lu XH",
+            "Liu JT",
+            "Wang YY",
+            "Geng HX",
+            "Li XT",
+            "An Q"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "27258243",
+          "title": "A Hydrogel-Based Epirubicin Delivery System for Intravesical Chemotherapy.",
+          "journal": "Molecules (Basel, Switzerland)",
+          "year": "2016",
+          "authors": [
+            "Liu CW",
+            "Wu YT",
+            "Lin KJ",
+            "Yu TJ",
+            "Kuo YL",
+            "Chang LC"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "28791956",
+          "title": "Methotrexate and epirubicin conjugates as potential antitumor drugs.",
+          "journal": "Postepy higieny i medycyny doswiadczalnej (Online)",
+          "year": "2017",
+          "authors": [
+            "Kmiecik SW",
+            "Krzyścik MA",
+            "Filip-Psurska B",
+            "Wietrzyk J",
+            "Boratyński J",
+            "Goszczyński TM"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "30293080",
+          "title": "Epirubicin is More Effective than Miriplatin in Balloon-Occluded Transcatheter Arterial Chemoembolization for Hepatocellular Carcinoma.",
+          "journal": "Oncology",
+          "year": "2019",
+          "authors": [
+            "Shirono T",
+            "Iwamoto H",
+            "Niizeki T",
+            "Shimose S",
+            "Nakano M",
+            "Satani M",
+            "Okamura S",
+            "Noda Y",
+            "Kamachi N",
+            "Kuromatsu R",
+            "Sakai M",
+            "Nomiyama M",
+            "Kuwano T",
+            "Tanaka M",
+            "Koga H",
+            "Torimura T"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "39940738",
+          "title": "Biodistribution of Polyaldehydedextran Nanoparticle-Encapsulated Epirubicin in Ovarian Tumor-Bearing Mice via Optical Imaging.",
+          "journal": "International journal of molecular sciences",
+          "year": "2025",
+          "authors": [
+            "Kośnik W",
+            "Sikorska H",
+            "Kiciak A",
+            "Ciach T"
+          ],
+          "source": "ncbi_pubmed"
+        }
+      ],
+      "source": "pubmed_live"
+    },
+    "pubmed_breast_cancer": {
+      "ok": true,
+      "query": "Epirubicin breast cancer",
+      "data": [
+        {
+          "pmid": "22260846",
+          "title": "Epirubicin: is it like doxorubicin in breast cancer? A clinical review.",
+          "journal": "Breast (Edinburgh, Scotland)",
+          "year": "2012",
+          "authors": [
+            "Khasraw M",
+            "Bell R",
+            "Dang C"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "11970749",
+          "title": "Role of epirubicin in advanced breast cancer.",
+          "journal": "Clinical breast cancer",
+          "year": "2000",
+          "authors": [
+            "Conte PF",
+            "Gennari A",
+            "Landucci E",
+            "Orlandini C"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "11970752",
+          "title": "Epirubicin in breast cancer: present and future.",
+          "journal": "Clinical breast cancer",
+          "year": "2000",
+          "authors": [
+            "Levine M"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "11432615",
+          "title": "Paclitaxel: epirubicin in metastatic breast cancer--a review.",
+          "journal": "Annals of oncology : official journal of the European Society for Medical Oncology",
+          "year": "2001",
+          "authors": [
+            "Razis ED",
+            "Fountzilas G"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "12756076",
+          "title": "Epirubicin versus doxorubicin: which is the anthracycline of choice for the treatment of breast cancer?",
+          "journal": "Clinical breast cancer",
+          "year": "2003",
+          "authors": [
+            "Kaklamani VG",
+            "Gradishar WJ"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "11396361",
+          "title": "New combinations with epirubicin in advanced breast cancer.",
+          "journal": "Oncology (Williston Park, N.Y.)",
+          "year": "2001",
+          "authors": [
+            "Conte P",
+            "Gennari A",
+            "Landucci E",
+            "Guarneri V",
+            "Donati S",
+            "Salvadori B",
+            "Bengala C",
+            "Orlandini C"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "15056049",
+          "title": "Epirubicin as adjuvant therapy in breast cancer.",
+          "journal": "Expert review of anticancer therapy",
+          "year": "2004",
+          "authors": [
+            "Earl H",
+            "Iddawela M"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "15959941",
+          "title": "Overview of epirubicin-based adjuvant therapy in breast cancer.",
+          "journal": "Clinical breast cancer",
+          "year": "2000",
+          "authors": [
+            "Untch M",
+            "von Koch F",
+            "Kahlert S",
+            "Konecny G"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "18765465",
+          "title": "Chemotherapy for breast cancer during pregnancy: is epirubicin safe?",
+          "journal": "Annals of oncology : official journal of the European Society for Medical Oncology",
+          "year": "2008",
+          "authors": [
+            "Mir O",
+            "Berveiller P",
+            "Rouzier R",
+            "Goffinet F",
+            "Goldwasser F",
+            "Treluyer JM"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "16227165",
+          "title": "Adjuvant fluorouracil, epirubicin and cyclophosphamide in early breast cancer: is it cost-effective?",
+          "journal": "Acta oncologica (Stockholm, Sweden)",
+          "year": "2005",
+          "authors": [
+            "Norum J",
+            "Holtmon M"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "10600046",
+          "title": "Epirubicin: a review of its efficacy as adjuvant therapy and in the treatment of metastatic disease in breast cancer.",
+          "journal": "Drugs & aging",
+          "year": "1999",
+          "authors": [
+            "Ormrod D",
+            "Holm K",
+            "Goa K",
+            "Spencer C"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "9074845",
+          "title": "Epirubicin. An updated review of its pharmacodynamic and pharmacokinetic properties and therapeutic efficacy in the management of breast cancer.",
+          "journal": "Drugs",
+          "year": "1997",
+          "authors": [
+            "Coukell AJ",
+            "Faulds D"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "15905306",
+          "title": "Secondary leukemia after epirubicin-based adjuvant chemotherapy in operable breast cancer patients: 16 years experience of the French Adjuvant Study Group.",
+          "journal": "Annals of oncology : official journal of the European Society for Medical Oncology",
+          "year": "2005",
+          "authors": [
+            "Campone M",
+            "Roché H",
+            "Kerbrat P",
+            "Bonneterre J",
+            "Romestaing P",
+            "Fargeot P",
+            "Namer M",
+            "Monnier A",
+            "Montcuquet P",
+            "Goudier MJ",
+            "Fumoleau P"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "37957750",
+          "title": "Differential immunomodulatory effects of epirubicin/cyclophosphamide and docetaxel in breast cancer patients.",
+          "journal": "Journal of experimental & clinical cancer research : CR",
+          "year": "2023",
+          "authors": [
+            "Wimmer K",
+            "Sachet M",
+            "Ramos C",
+            "Frantal S",
+            "Birnleitner H",
+            "Brostjan C",
+            "Exner R",
+            "Filipits M",
+            "Bago-Horvath Z",
+            "Rudas M",
+            "Bartsch R",
+            "Gnant M",
+            "Singer CF",
+            "Balic M",
+            "Egle D",
+            "Oehler R",
+            "Fitzal F"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "11965227",
+          "title": "The expanding role of epirubicin in the treatment of breast cancer.",
+          "journal": "Cancer control : journal of the Moffitt Cancer Center",
+          "year": "2002",
+          "authors": [
+            "Glück S"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "34654351",
+          "title": "Orosomucoid 1 promotes epirubicin resistance in breast cancer by upregulating the expression of matrix metalloproteinases 2 and 9.",
+          "journal": "Bioengineered",
+          "year": "2021",
+          "authors": [
+            "Qiong L",
+            "Yin J"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "37559469",
+          "title": "Inhibition of 6-Phosphogluconate Dehydrogenase Reverses Epirubicin Resistance Through Metabolic Reprograming in Triple-Negative Breast Cancer Cells.",
+          "journal": "Technology in cancer research & treatment",
+          "year": "2023",
+          "authors": [
+            "Xu J",
+            "Ren G",
+            "Cheng Q"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "10442370",
+          "title": "Epirubicin, cyclophosphamide, and UFT plus oral calcium folinate in advanced breast cancer.",
+          "journal": "Oncology (Williston Park, N.Y.)",
+          "year": "1999",
+          "authors": [
+            "Smith IE"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "11970750",
+          "title": "Rationale and design of a phase III trial of adjuvant sequential epirubicin/ cyclophosphamide and taxane versus concurrent epirubicin/taxane in operable node-positive breast cancer.",
+          "journal": "Clinical breast cancer",
+          "year": "2000",
+          "authors": [
+            "Perez EA"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "29758926",
+          "title": "Plasma CCL5 promotes EMT-medicated epirubicin-resistance in locally advanced breast cancer.",
+          "journal": "Cancer biomarkers : section A of Disease markers",
+          "year": "2018",
+          "authors": [
+            "Ma G",
+            "Huang H",
+            "Li M",
+            "Li L",
+            "Kong P",
+            "Zhu Y",
+            "Xia T",
+            "Wang S"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "41204774",
+          "title": "4-Methylumbelliferone Sensitizes Breast Cancer Spheroids to Chemotherapeutic Treatment With Epirubicin: New Perspectives for Pharmacological Repositioning.",
+          "journal": "IUBMB life",
+          "year": "2025",
+          "authors": [
+            "Vitale DL",
+            "Icardi A",
+            "Rosales P",
+            "Morán C",
+            "Sevic I",
+            "Alaniz LD"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "14981994",
+          "title": "Chemotherapy with epirubicin and paclitaxel for breast cancer during pregnancy: case report and review of the literature.",
+          "journal": "Anticancer research",
+          "year": "2003",
+          "authors": [
+            "Gadducci A",
+            "Cosio S",
+            "Fanucchi A",
+            "Nardini V",
+            "Roncella M",
+            "Conte PF",
+            "Genazzani AR"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "34294886",
+          "title": "Cepharanthine sensitizes human triple negative breast cancer cells to chemotherapeutic agent epirubicin via inducing cofilin oxidation-mediated mitochondrial fission and apoptosis.",
+          "journal": "Acta pharmacologica Sinica",
+          "year": "2022",
+          "authors": [
+            "Shen LW",
+            "Jiang XX",
+            "Li ZQ",
+            "Li J",
+            "Wang M",
+            "Jia GF",
+            "Ding X",
+            "Lei L",
+            "Gong QH",
+            "Gao N"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "27560771",
+          "title": "Inhibiting autophagy increases epirubicin's cytotoxicity in breast cancer cells.",
+          "journal": "Cancer science",
+          "year": "2016",
+          "authors": [
+            "Guo W",
+            "Wang Y",
+            "Wang Z",
+            "Wang YP",
+            "Zheng H"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "25055937",
+          "title": "Pharmacogenetics of adjuvant breast cancer treatment with cyclophosphamide, epirubicin and 5-fluorouracil.",
+          "journal": "Cancer chemotherapy and pharmacology",
+          "year": "2014",
+          "authors": [
+            "Jamieson D",
+            "Lee J",
+            "Cresti N",
+            "Jackson R",
+            "Griffin M",
+            "Sludden J",
+            "Verrill M",
+            "Boddy AV"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "31823667",
+          "title": "Identification of differential gene expression related to epirubicin-induced cardiomyopathy in breast cancer patients.",
+          "journal": "Human & experimental toxicology",
+          "year": "2020",
+          "authors": [
+            "Peng J",
+            "Wang Z",
+            "Li Y",
+            "Lv D",
+            "Zhao X",
+            "Gao J",
+            "Teng H"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "37609671",
+          "title": "Efficacy and safety of dose-dense neoadjuvant chemotherapy with nab-paclitaxel followed by epirubicin and cyclophosphamide for operable breast cancer.",
+          "journal": "Japanese journal of clinical oncology",
+          "year": "2023",
+          "authors": [
+            "Matsumoto A",
+            "Jinno H",
+            "Naruse S",
+            "Isono Y",
+            "Maeda Y",
+            "Sato A",
+            "Yamada M",
+            "Ikeda T",
+            "Sasajima Y"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "39275052",
+          "title": "Exploring Radioiodinated Anastrozole and Epirubicin as AKT1-Targeted Radiopharmaceuticals in Breast Cancer: In Silico Analysis and Potential Therapeutic Effect with Functional Nuclear Imagining Implications.",
+          "journal": "Molecules (Basel, Switzerland)",
+          "year": "2024",
+          "authors": [
+            "Binmujlli MA"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "1622639",
+          "title": "FEC (5-fluorouracil-epirubicin-cyclophosphamide) monthly versus FEC weekly in metastatic breast cancer. First results of a randomized trial.",
+          "journal": "Acta oncologica (Stockholm, Sweden)",
+          "year": "1992",
+          "authors": [
+            "Blomqvist C",
+            "Elomaa I",
+            "Rissanen P",
+            "Hietanen P",
+            "Nevasaari K",
+            "Helle L"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "30027574",
+          "title": "Ambra1 modulates the sensitivity of breast cancer cells to epirubicin by regulating autophagy via ATG12.",
+          "journal": "Cancer science",
+          "year": "2018",
+          "authors": [
+            "Sun WL",
+            "Wang L",
+            "Luo J",
+            "Zhu HW",
+            "Cai ZW"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "33753200",
+          "title": "A novel nuclear localization region in SIPA1 determines protein nuclear distribution and epirubicin-sensitivity of breast cancer cells.",
+          "journal": "International journal of biological macromolecules",
+          "year": "2021",
+          "authors": [
+            "Ma Y",
+            "Weng J",
+            "Wang N",
+            "Zhang Y",
+            "Minato N",
+            "Su L"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "3528968",
+          "title": "[Epirubicin--results in breast cancer].",
+          "journal": "Onkologie",
+          "year": "1986",
+          "authors": [
+            "Hartlapp JH"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "33572239",
+          "title": "Initial Identification of UDP-Glucose Dehydrogenase as a Prognostic Marker in Breast Cancer Patients, Which Facilitates Epirubicin Resistance and Regulates Hyaluronan Synthesis in MDA-MB-231 Cells.",
+          "journal": "Biomolecules",
+          "year": "2021",
+          "authors": [
+            "Vitale DL",
+            "Caon I",
+            "Parnigoni A",
+            "Sevic I",
+            "Spinelli FM",
+            "Icardi A",
+            "Passi A",
+            "Vigetti D",
+            "Alaniz L"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "37141665",
+          "title": "Chemotherapy induced phlebitis experienced by women with breast cancer following administration of epirubicin using a volumetric infusion pump: an observational study.",
+          "journal": "European journal of oncology nursing : the official journal of European Oncology Nursing Society",
+          "year": "2023",
+          "authors": [
+            "Williams N",
+            "Williams EM",
+            "Roberts R"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "36869992",
+          "title": "Neoadjuvant pegylated liposomal doxorubicin- and epirubicin-based combination therapy regimens for early breast cancer: a multicenter retrospective case-control study.",
+          "journal": "Breast cancer research and treatment",
+          "year": "2023",
+          "authors": [
+            "Tsai JH",
+            "Li CL",
+            "Yeh DC",
+            "Hung CS",
+            "Hung CC",
+            "Lin CY",
+            "Kuo YL"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "34872507",
+          "title": "Effectiveness and safety of pegylated liposomal doxorubicin versus epirubicin as neoadjuvant or adjuvant chemotherapy for breast cancer: a real-world study.",
+          "journal": "BMC cancer",
+          "year": "2021",
+          "authors": [
+            "Zhang J",
+            "Jiang H",
+            "Zhang J",
+            "Bao G",
+            "Zhang G",
+            "Wang H",
+            "Wang X"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "34579909",
+          "title": "Injectable hydrogel loaded with paclitaxel and epirubicin to prevent postoperative recurrence and metastasis of breast cancer.",
+          "journal": "Materials science & engineering. C, Materials for biological applications",
+          "year": "2021",
+          "authors": [
+            "Leng Q",
+            "Li Y",
+            "Zhou P",
+            "Xiong K",
+            "Lu Y",
+            "Cui Y",
+            "Wang B",
+            "Wu Z",
+            "Zhao L",
+            "Fu S"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "33832852",
+          "title": "Uridine Glucuronosyltransferase 2B7 Polymorphism-Based Pharmacogenetic Dosing of Epirubicin in FEC Chemotherapy for Early-Stage Breast Cancer.",
+          "journal": "Clinical breast cancer",
+          "year": "2021",
+          "authors": [
+            "Joy AA",
+            "Vos LJ",
+            "Pituskin E",
+            "Cook SF",
+            "Bies RR",
+            "Vlahadamis A",
+            "King K",
+            "Basi SK",
+            "Meza-Junco J",
+            "Mackey JR",
+            "Stanislaus A",
+            "Damaraju VL",
+            "Damaraju S",
+            "Sawyer MB"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "33147906",
+          "title": "Do all patients with breast cancer benefit from neoadjuvant chemotherapy?",
+          "journal": "The Korean journal of internal medicine",
+          "year": "2020",
+          "authors": [
+            "Lee KE"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "21789023",
+          "title": "Low-dose epirubicin inhibits ezrin-mediated metastatic behavior of breast cancer cells.",
+          "journal": "Tumori",
+          "year": "2011",
+          "authors": [
+            "Ma L",
+            "Liu YP",
+            "Geng CZ",
+            "Xing LX",
+            "Zhang XH"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "32069523",
+          "title": "Clinical outcome and predictive factors for docetaxel and epirubicin neoadjuvant chemotherapy of locally advanced breast cancer.",
+          "journal": "The Korean journal of internal medicine",
+          "year": "2020",
+          "authors": [
+            "Won HS",
+            "Kim YS",
+            "Kim JS",
+            "Chang ED",
+            "Na SJ",
+            "Whang IY",
+            "Lee DS"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "2605102",
+          "title": "Weekly epirubicin for breast cancer with liver metastases and abnormal liver biochemistry.",
+          "journal": "British journal of cancer",
+          "year": "1989",
+          "authors": [
+            "Twelves CJ",
+            "O'Reilly SM",
+            "Coleman RE",
+            "Richards MA",
+            "Rubens RD"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "34315439",
+          "title": "Neoadjuvant everolimus plus letrozole versus fluorouracil, epirubicin and cyclophosphamide for ER-positive, HER2-negative breast cancer: a randomized pilot trial.",
+          "journal": "BMC cancer",
+          "year": "2021",
+          "authors": [
+            "Wu W",
+            "Chen J",
+            "Deng H",
+            "Jin L",
+            "He Z",
+            "Rao N",
+            "Nie Y",
+            "Yao Y",
+            "Yang Y",
+            "Su F",
+            "Liu J"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "27272157",
+          "title": "Enhanced antitumor activity and attenuated cardiotoxicity of Epirubicin combined with Paeonol against breast cancer.",
+          "journal": "Tumour biology : the journal of the International Society for Oncodevelopmental Biology and Medicine",
+          "year": "2016",
+          "authors": [
+            "Wu J",
+            "Xue X",
+            "Zhang B",
+            "Cao H",
+            "Kong F",
+            "Jiang W",
+            "Li J",
+            "Sun D",
+            "Guo R"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "38308220",
+          "title": "Hypoxia-induced miR-181a-5p up-regulation reduces epirubicin sensitivity in breast cancer cells through inhibiting EPDR1/TRPC1 to activate PI3K/AKT signaling pathway.",
+          "journal": "BMC cancer",
+          "year": "2024",
+          "authors": [
+            "Zhang Y",
+            "Guan Y",
+            "Zheng X",
+            "Li C"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "28615943",
+          "title": "The use of functional epirubicin liposomes to induce programmed death in refractory breast cancer.",
+          "journal": "International journal of nanomedicine",
+          "year": "2017",
+          "authors": [
+            "Liu L",
+            "Mu LM",
+            "Yan Y",
+            "Wu JS",
+            "Hu YJ",
+            "Bu YZ",
+            "Zhang JY",
+            "Liu R",
+            "Li XQ",
+            "Lu WL"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "32686017",
+          "title": "Anticancer and apoptotic activities of parthenolide in combination with epirubicin in mda-mb-468 breast cancer cells.",
+          "journal": "Molecular biology reports",
+          "year": "2020",
+          "authors": [
+            "Ghorbani-Abdi-Saedabad A",
+            "Hanafi-Bojd MY",
+            "Parsamanesh N",
+            "Tayarani-Najaran Z",
+            "Mollaei H",
+            "Hoshyar R"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "2265137",
+          "title": "Epirubicin or epirubicin and vindesine in advanced breast cancer. A phase III study.",
+          "journal": "Annals of oncology : official journal of the European Society for Medical Oncology",
+          "year": "1990",
+          "authors": [
+            "Nielsen D",
+            "Dombernowsky P",
+            "Skovsgaard T",
+            "Jensen J",
+            "Andersen E",
+            "Engelholm SA",
+            "Hansen M"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "1797193",
+          "title": "A phase II study of epirubicin in breast cancer.",
+          "journal": "Anti-cancer drugs",
+          "year": "1991",
+          "authors": [
+            "el Mawla NG",
+            "Hamza MR",
+            "el Khodari A",
+            "Khaled H",
+            "Gaafar R",
+            "el Zawahry H",
+            "abdel Wareth A",
+            "Dardir MD",
+            "Habboubi N"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "1742222",
+          "title": "Epirubicin in breast cancer patients with liver metastases and abnormal liver biochemistry: initial weekly treatment followed by rescheduling and intensification.",
+          "journal": "Annals of oncology : official journal of the European Society for Medical Oncology",
+          "year": "1991",
+          "authors": [
+            "Twelves CJ",
+            "Richards MA",
+            "Smith P",
+            "Rubens RD"
+          ],
+          "source": "ncbi_pubmed"
+        }
+      ],
+      "source": "pubmed_live"
+    }
+  },
+  "errors": []
+}

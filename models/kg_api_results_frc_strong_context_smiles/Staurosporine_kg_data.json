@@ -1,0 +1,1595 @@
+{
+  "drug_id": 1034,
+  "drug_name": "Staurosporine",
+  "category": "Candidate",
+  "combined_score": 14.5,
+  "timestamp": "2026-04-15 19:39:32",
+  "data_collected": {
+    "basic_info": {
+      "ok": true,
+      "data": {
+        "drug_id": 1034,
+        "drug_name": "Staurosporine",
+        "target": "Broad spectrum kinase inhibitor",
+        "pathway": "RTK signaling",
+        "predicted_ic50": -0.2666945,
+        "sensitivity_rate": 1.0,
+        "validation_score": 7.55,
+        "safety_score": 10.0,
+        "combined_score": 14.5,
+        "final_rank": 1,
+        "category": "Candidate",
+        "clinical_bucket": "Breast cancer current/relevant use",
+        "known_brca": true,
+        "target_expressed": true,
+        "brca_pathway": false,
+        "survival_sig": true,
+        "recommendation_note": "Biologically plausible candidate with supportive validation, but additional safety or translational review is needed."
+      }
+    },
+    "side_effects": {
+      "ok": true,
+      "data": [],
+      "source": "local_fallback"
+    },
+    "trials": {
+      "ok": true,
+      "data": [
+        {
+          "nct_id": "NCT00001444",
+          "title": "A Phase I Trial of Continuous Infusion UCN-01 in Patients With Refractory Neoplasms",
+          "phase": "PHASE1",
+          "status": "COMPLETED",
+          "conditions": [
+            "Breast Cancer",
+            "Lymphoma",
+            "Neoplasm",
+            "Prostatic Neoplasm"
+          ],
+          "lead_sponsor": "National Cancer Institute (NCI)",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT03092674",
+          "title": "Azacitidine With or Without Nivolumab or Midostaurin, or Decitabine and Cytarabine Alone in Treating Older Patients With Newly Diagnosed Acute Myeloid Leukemia or High-Risk Myelodysplastic Syndrome",
+          "phase": "PHASE2, PHASE3",
+          "status": "COMPLETED",
+          "conditions": [
+            "Acute Myeloid Leukemia",
+            "Myelodysplastic Syndrome",
+            "Myelodysplastic Syndrome/Acute Myeloid Leukemia"
+          ],
+          "lead_sponsor": "National Cancer Institute (NCI)",
+          "source": "clinicaltrials_gov_v2"
+        }
+      ],
+      "source": "clinicaltrials_live"
+    },
+    "targets": {
+      "ok": true,
+      "data": [
+        {
+          "target": "Broad spectrum kinase inhibitor",
+          "source": "local_frc_step6_7"
+        }
+      ]
+    },
+    "pathways": {
+      "ok": true,
+      "data": [
+        {
+          "pathway": "RTK signaling",
+          "source": "local_frc_step6_7"
+        }
+      ]
+    },
+    "pubmed_general": {
+      "ok": true,
+      "query": "Staurosporine",
+      "data": [
+        {
+          "pmid": "29934602",
+          "title": "Staurosporine: new lease of life for parent compound of today's novel and highly successful anti-cancer drugs.",
+          "journal": "The Journal of antibiotics",
+          "year": "2018",
+          "authors": [
+            "Ōmura S",
+            "Asami Y",
+            "Crump A"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "10799837",
+          "title": "Staurosporine analogues - pharmacological toys or useful antitumour agents?",
+          "journal": "Critical reviews in oncology/hematology",
+          "year": "2000",
+          "authors": [
+            "Gescher A"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "9809468",
+          "title": "Analogs of staurosporine: potential anticancer drugs?",
+          "journal": "General pharmacology",
+          "year": "1998",
+          "authors": [
+            "Gescher A"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "2672462",
+          "title": "Staurosporine, K-252 and UCN-01: potent but nonspecific inhibitors of protein kinases.",
+          "journal": "Trends in pharmacological sciences",
+          "year": "1989",
+          "authors": [
+            "Rüegg UT",
+            "Burgess GM"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "37480372",
+          "title": "High-titer production of staurosporine by heterologous expression and process optimization.",
+          "journal": "Applied microbiology and biotechnology",
+          "year": "2023",
+          "authors": [
+            "Zhang Z",
+            "Yang S",
+            "Li Z",
+            "Wu Y",
+            "Tang J",
+            "Feng M",
+            "Chen S"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "7589326",
+          "title": "Staurosporine-induced neuronal apoptosis.",
+          "journal": "Experimental neurology",
+          "year": "1995",
+          "authors": [
+            "Koh JY",
+            "Wie MB",
+            "Gwag BJ",
+            "Sensi SL",
+            "Canzoniero LM",
+            "Demaro J",
+            "Csernansky C",
+            "Choi DW"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "8726076",
+          "title": "K252a and staurosporine microbial alkaloid toxins as prototype of neurotropic drugs.",
+          "journal": "Advances in experimental medicine and biology",
+          "year": "1996",
+          "authors": [
+            "Lazarovici P",
+            "Rasouly D",
+            "Friedman L",
+            "Tabekman R",
+            "Ovadia H",
+            "Matsuda Y"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "35880373",
+          "title": "Streptomyces sp. BV410: Interspecies cross-talk for staurosporine production.",
+          "journal": "Journal of applied microbiology",
+          "year": "2022",
+          "authors": [
+            "Stevanovic M",
+            "D'Agostino PM",
+            "Mojicevic M",
+            "Gulder TAM",
+            "Nikodinovic-Runic J",
+            "Vojnovic S"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "41100888",
+          "title": "Natural Staurosporine Derivatives with Fluorescence for Cancer Theranostics.",
+          "journal": "ChemMedChem",
+          "year": "2025",
+          "authors": [
+            "Li K",
+            "Liu W",
+            "Wu T",
+            "Wei Y",
+            "Liu Y",
+            "Zhou J",
+            "Chen L",
+            "Zhou J",
+            "Lu Y",
+            "Xu H",
+            "Xie L"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "20336234",
+          "title": "Protein kinase inhibition of clinically important staurosporine analogues.",
+          "journal": "Natural product reports",
+          "year": "2010",
+          "authors": [
+            "Gani OA",
+            "Engh RA"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "30268972",
+          "title": "Bioactive staurosporine derivatives from the Streptomyces sp. NB-A13.",
+          "journal": "Bioorganic chemistry",
+          "year": "2019",
+          "authors": [
+            "Zhou B",
+            "Hu ZJ",
+            "Zhang HJ",
+            "Li JQ",
+            "Ding WJ",
+            "Ma ZJ"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "38031386",
+          "title": "Cytotoxic and Antifungal Staurosporine Derivatives from Marine-Derived Actinomycete Streptomyces sp. ZS-A121.",
+          "journal": "Chemistry & biodiversity",
+          "year": "2024",
+          "authors": [
+            "Xu L",
+            "Liu R",
+            "Fang J",
+            "Zhang N",
+            "Pu F",
+            "Lei Z",
+            "Ding W",
+            "Jiang Y"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "30661061",
+          "title": "NADPH oxidase inhibitor VAS2870 prevents staurosporine-induced cell death in rat astrocytes.",
+          "journal": "Radiology and oncology",
+          "year": "2019",
+          "authors": [
+            "Simenc J",
+            "Juric DM",
+            "Lipnik-Stangelj M"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "30686270",
+          "title": "Staurosporine induces apoptosis in pancreatic carcinoma cells PaTu 8988t and Panc-1 via the intrinsic signaling pathway.",
+          "journal": "European journal of medical research",
+          "year": "2019",
+          "authors": [
+            "Malsy M",
+            "Bitzinger D",
+            "Graf B",
+            "Bundscherer A"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "30106291",
+          "title": "Staurosporine Derivatives Generated by Pathway Engineering in a Heterologous Host and Their Cytotoxic Selectivity.",
+          "journal": "Journal of natural products",
+          "year": "2018",
+          "authors": [
+            "Xiao F",
+            "Li H",
+            "Xu M",
+            "Li T",
+            "Wang J",
+            "Sun C",
+            "Hong K",
+            "Li W"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "2553453",
+          "title": "Staurosporine-induced neurite outgrowth in PC12h cells.",
+          "journal": "Experimental cell research",
+          "year": "1989",
+          "authors": [
+            "Hashimoto S",
+            "Hagino A"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "12445185",
+          "title": "Staurosporine-induced cleavage of alpha-smooth muscle actin during myofibroblast apoptosis.",
+          "journal": "The Journal of investigative dermatology",
+          "year": "2002",
+          "authors": [
+            "Nakazono-Kusaba A",
+            "Takahashi-Yanaga F",
+            "Morimoto S",
+            "Furue M",
+            "Sasaguri T"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "22372834",
+          "title": "Staurosporine induces apoptosis and necroptosis in cultured rat astrocytes.",
+          "journal": "Drug and chemical toxicology",
+          "year": "2012",
+          "authors": [
+            "Šimenc J",
+            "Lipnik-Štangelj M"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "19132059",
+          "title": "Chemical biology of natural indolocarbazole products: 30 years since the discovery of staurosporine.",
+          "journal": "The Journal of antibiotics",
+          "year": "2009",
+          "authors": [
+            "Nakano H",
+            "Omura S"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "1846174",
+          "title": "Staurosporine: an effective inhibitor for Ca2+/calmodulin-dependent protein kinase II.",
+          "journal": "Journal of neurochemistry",
+          "year": "1991",
+          "authors": [
+            "Yanagihara N",
+            "Tachikawa E",
+            "Izumi F",
+            "Yasugawa S",
+            "Yamamoto H",
+            "Miyamoto E"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "34769389",
+          "title": "The Presence of Yin-Yang Effects in the Migration Pattern of Staurosporine-Treated Single versus Collective Breast Carcinoma Cells.",
+          "journal": "International journal of molecular sciences",
+          "year": "2021",
+          "authors": [
+            "Meyer FAH",
+            "Kraus D",
+            "Glassmann A",
+            "Veit N",
+            "Winter J",
+            "Probstmeier R"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "32800439",
+          "title": "Low-concentration staurosporine improves recombinant antibody productivity in Chinese hamster ovary cells without inducing cell death.",
+          "journal": "Journal of bioscience and bioengineering",
+          "year": "2020",
+          "authors": [
+            "Kido M",
+            "Idogaki H",
+            "Nishikawa K",
+            "Omasa T"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "8166239",
+          "title": "Staurosporine, a protein kinase inhibitor, activates K-Cl cotransport in LK sheep erythrocytes.",
+          "journal": "The American journal of physiology",
+          "year": "1994",
+          "authors": [
+            "Bize I",
+            "Dunham PB"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "31526603",
+          "title": "Structure-based rational design of staurosporine-based fluorescent probe with broad-ranging kinase affinity for kinase panel application.",
+          "journal": "Bioorganic & medicinal chemistry letters",
+          "year": "2019",
+          "authors": [
+            "Hirozane Y",
+            "Toyofuku M",
+            "Yogo T",
+            "Tanaka Y",
+            "Sameshima T",
+            "Miyahisa I",
+            "Yoshikawa M"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "8613758",
+          "title": "Staurosporine blocks evoked release of FM1-43 but not acetylcholine from frog motor nerve terminals.",
+          "journal": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+          "year": "1995",
+          "authors": [
+            "Henkel AW",
+            "Betz WJ"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "32285482",
+          "title": "Systematic response of staurosporine scaffold-based inhibitors to drug-resistant cancer kinase mutations.",
+          "journal": "Archiv der Pharmazie",
+          "year": "2020",
+          "authors": [
+            "He Y"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "11313863",
+          "title": "Staurosporine and conventional anticancer drugs induce overlapping, yet distinct pathways of apoptosis and caspase activation.",
+          "journal": "Oncogene",
+          "year": "2001",
+          "authors": [
+            "Stepczynska A",
+            "Lauber K",
+            "Engels IH",
+            "Janssen O",
+            "Kabelitz D",
+            "Wesselborg S",
+            "Schulze-Osthoff K"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "9515027",
+          "title": "Staurosporine-induced apoptosis in cardiomyocytes: A potential role of caspase-3.",
+          "journal": "Journal of molecular and cellular cardiology",
+          "year": "1998",
+          "authors": [
+            "Yue TL",
+            "Wang C",
+            "Romanic AM",
+            "Kikly K",
+            "Keller P",
+            "DeWolf WE Jr",
+            "Hart TK",
+            "Thomas HC",
+            "Storer B",
+            "Gu JL",
+            "Wang X",
+            "Feuerstein GZ"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "34347955",
+          "title": "Neutrophilic Eccrine Hidradenitis.",
+          "journal": "The New England journal of medicine",
+          "year": "2021",
+          "authors": [
+            "Beatty CJ",
+            "Ghareeb ER"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "38248664",
+          "title": "The Inhibition Effect and Mechanism of Staurosporine Isolated from Streptomyces sp. SNC087 Strain on Nasal Polyp.",
+          "journal": "Marine drugs",
+          "year": "2024",
+          "authors": [
+            "Choi G",
+            "Lee EY",
+            "Chung D",
+            "Cho K",
+            "Yu WJ",
+            "Nam SJ",
+            "Park SK",
+            "Choi IW"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "10987998",
+          "title": "Molecular mechanism of staurosporine-induced apoptosis in osteoblasts.",
+          "journal": "Pharmacological research",
+          "year": "2000",
+          "authors": [
+            "Chae HJ",
+            "Kang JS",
+            "Byun JO",
+            "Han KS",
+            "Kim DU",
+            "Oh SM",
+            "Kim HM",
+            "Chae SW",
+            "Kim HR"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "17088059",
+          "title": "Simplified staurosporine analogs as potent JAK3 inhibitors.",
+          "journal": "Bioorganic & medicinal chemistry letters",
+          "year": "2007",
+          "authors": [
+            "Yang SM",
+            "Malaviya R",
+            "Wilson LJ",
+            "Argentieri R",
+            "Chen X",
+            "Yang C",
+            "Wang B",
+            "Cavender D",
+            "Murray WV"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "27769857",
+          "title": "Staurosporine as an agonist for induction of GLUT4 translocation, identified by a pH-sensitive fluorescent IRAP-mOrange2 probe.",
+          "journal": "Biochemical and biophysical research communications",
+          "year": "2016",
+          "authors": [
+            "Li Y",
+            "Zheng L",
+            "Wang D",
+            "Zhang X",
+            "Li J",
+            "Ali S",
+            "Lu J",
+            "Zong H",
+            "Xu X"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "28612232",
+          "title": "Midostaurin: First Global Approval.",
+          "journal": "Drugs",
+          "year": "2017",
+          "authors": [
+            "Kim ES"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "8416807",
+          "title": "Staurosporine stimulates phospholipase D activation in human polymorphonuclear leukocytes.",
+          "journal": "FEBS letters",
+          "year": "1993",
+          "authors": [
+            "Périanin A",
+            "Combadière C",
+            "Pedruzzi E",
+            "Djerdjouri B",
+            "Hakim J"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "31218861",
+          "title": "[Effects of staurosporine on the contraction of self-assembled constructs of goat temporomandibular joint disc cells].",
+          "journal": "Hua xi kou qiang yi xue za zhi = Huaxi kouqiang yixue zazhi = West China journal of stomatology",
+          "year": "2019",
+          "authors": [
+            "Bao SY",
+            "Bao GJ",
+            "Tang YY",
+            "Liu L",
+            "Kang H"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "31554357",
+          "title": "Effect of Pentoxifylline on Staurosporine-Induced Neurite Elongation in PC12 Cells.",
+          "journal": "Asian Pacific journal of cancer prevention : APJCP",
+          "year": "2019",
+          "authors": [
+            "Diojan L",
+            "Zhaleh H",
+            "Azadbakht M",
+            "Bidmeshkipour A",
+            "Khodamoradi E"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "1635552",
+          "title": "Staurosporine-induced neurite outgrowth in PC12 cells is independent of protein kinase C inhibition.",
+          "journal": "Molecular pharmacology",
+          "year": "1992",
+          "authors": [
+            "Rasouly D",
+            "Rahamim E",
+            "Lester D",
+            "Matsuda Y",
+            "Lazarovici P"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "12852832",
+          "title": "Staurosporine induces apoptosis in NG108-15 cells.",
+          "journal": "Acta pharmacologica Sinica",
+          "year": "2003",
+          "authors": [
+            "Zhang BF",
+            "Peng FF",
+            "Zhang JZ",
+            "Wu DC"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "22634011",
+          "title": "Staurosporine induces ganglion cell differentiation in part by stimulating urokinase-type plasminogen activator expression and activation in the developing chick retina.",
+          "journal": "Biochemical and biophysical research communications",
+          "year": "2012",
+          "authors": [
+            "Kim YH",
+            "Chang Y",
+            "Jung JC"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "1575694",
+          "title": "Staurosporine clamps cytosolic free Ca2+ concentrations of human neutrophils.",
+          "journal": "The Biochemical journal",
+          "year": "1992",
+          "authors": [
+            "Wong K",
+            "Kwan-Yeung L",
+            "Turkson J"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "31989798",
+          "title": "Streptomyces sp. BV410 isolate from chamomile rhizosphere soil efficiently produces staurosporine with antifungal and antiangiogenic properties.",
+          "journal": "MicrobiologyOpen",
+          "year": "2020",
+          "authors": [
+            "Mojicevic M",
+            "D'Agostino PM",
+            "Pavic A",
+            "Vojnovic S",
+            "Senthamaraikannan R",
+            "Vasiljevic B",
+            "Gulder TAM",
+            "Nikodinovic-Runic J"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "27008372",
+          "title": "Alkylation of Staurosporine to Derive a Kinase Probe for Fluorescence Applications.",
+          "journal": "ChemMedChem",
+          "year": "2016",
+          "authors": [
+            "Disney AJ",
+            "Kellam B",
+            "Dekker LV"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "26678243",
+          "title": "Suppressing activity of staurosporine from Streptomyces sp. MJM4426 against rice bacterial blight disease.",
+          "journal": "Journal of applied microbiology",
+          "year": "2016",
+          "authors": [
+            "Cheng J",
+            "Park SB",
+            "Kim SH",
+            "Yang SH",
+            "Suh JW",
+            "Lee CH",
+            "Kim JG"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "26427712",
+          "title": "Staurosporine induces chondrogenesis of chick embryo wing bud mesenchyme in monolayer cultures through canonical and non-canonical TGF-β pathways.",
+          "journal": "In vitro cellular & developmental biology. Animal",
+          "year": "2016",
+          "authors": [
+            "Kim H",
+            "Kei K",
+            "Sonn JK"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "20435699",
+          "title": "Rotenone enhances the antifungal properties of staurosporine.",
+          "journal": "Eukaryotic cell",
+          "year": "2010",
+          "authors": [
+            "Castro A",
+            "Lemos C",
+            "Falcão A",
+            "Fernandes AS",
+            "Glass NL",
+            "Videira A"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "26006035",
+          "title": "Anti-tumor activity of staurosporine in the tumor microenvironment of cervical cancer: An in vitro study.",
+          "journal": "Life sciences",
+          "year": "2015",
+          "authors": [
+            "Yadav SS",
+            "Prasad CB",
+            "Prasad SB",
+            "Pandey LK",
+            "Singh S",
+            "Pradhan S",
+            "Narayan G"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "16770740",
+          "title": "Staurosporine-induced growth inhibition of glioma cells is accompanied by altered expression of cyclins, CDKs and CDK inhibitors.",
+          "journal": "Neurochemical research",
+          "year": "2006",
+          "authors": [
+            "Harmalkar MN",
+            "Shirsat NV"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "10072972",
+          "title": "Staurosporine blocked normal cells at G1/S boundary.",
+          "journal": "Zhongguo yao li xue bao = Acta pharmacologica Sinica",
+          "year": "1997",
+          "authors": [
+            "Wang RH",
+            "Xue SB"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "2559721",
+          "title": "Staurosporine inhibits the respiratory burst and induces exocytosis in human neutrophils.",
+          "journal": "The Biochemical journal",
+          "year": "1989",
+          "authors": [
+            "Dewald B",
+            "Thelen M",
+            "Wymann MP",
+            "Baggiolini M"
+          ],
+          "source": "ncbi_pubmed"
+        }
+      ],
+      "source": "pubmed_live"
+    },
+    "pubmed_breast_cancer": {
+      "ok": true,
+      "query": "Staurosporine breast cancer",
+      "data": [
+        {
+          "pmid": "39452867",
+          "title": "Marine Staurosporine Analogues: Activity and Target Identification in Triple-Negative Breast Cancer.",
+          "journal": "Marine drugs",
+          "year": "2024",
+          "authors": [
+            "Chen RY",
+            "Ding LJ",
+            "Liu YJ",
+            "Shi JJ",
+            "Yu J",
+            "Li CY",
+            "Lu JF",
+            "Yang GJ",
+            "Chen J"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "28842317",
+          "title": "Effective treatment of drug resistant recurrent breast tumors harboring cancer stem-like cells by staurosporine/epirubicin co-loaded polymeric micelles.",
+          "journal": "Journal of controlled release : official journal of the Controlled Release Society",
+          "year": "2017",
+          "authors": [
+            "Zhang J",
+            "Kinoh H",
+            "Hespel L",
+            "Liu X",
+            "Quader S",
+            "Martin J",
+            "Chida T",
+            "Cabral H",
+            "Kataoka K"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "21692986",
+          "title": "Profilin1 facilitates staurosporine-triggered apoptosis by stabilizing the integrin β1-actin complex in breast cancer cells.",
+          "journal": "Journal of cellular and molecular medicine",
+          "year": "2012",
+          "authors": [
+            "Yao W",
+            "Yu X",
+            "Fang Z",
+            "Yin P",
+            "Zhao C",
+            "Li N",
+            "Wang L",
+            "Li Z",
+            "Zha X"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "22401168",
+          "title": "γ-Secretase-dependent cleavage of E-cadherin by staurosporine in breast cancer cells.",
+          "journal": "Cell communication & adhesion",
+          "year": "2012",
+          "authors": [
+            "Yoo CB",
+            "Yun SM",
+            "Jo C",
+            "Koh YH"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "14700606",
+          "title": "Cell-cycle targeted therapies.",
+          "journal": "The Lancet. Oncology",
+          "year": "2004",
+          "authors": [
+            "Swanton C"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "15756452",
+          "title": "Role of extracellular matrix in regulation of staurosporine-induced apoptosis in breast cancer cells.",
+          "journal": "Oncology reports",
+          "year": "2005",
+          "authors": [
+            "Vasaturo F",
+            "Malacrino C",
+            "Sallusti E",
+            "Coppotelli G",
+            "Birarelli P",
+            "Giuffrida A",
+            "Albonici L",
+            "Simonelli L",
+            "Modesti A",
+            "Modesti M",
+            "Scarpa S"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "18983973",
+          "title": "E-cadherin decreased human breast cancer cells sensitivity to staurosporine by up-regulating Bcl-2 expression.",
+          "journal": "Archives of biochemistry and biophysics",
+          "year": "2009",
+          "authors": [
+            "Wang L",
+            "Li Z",
+            "Wang C",
+            "Yang Y",
+            "Sun L",
+            "Yao W",
+            "Cai X",
+            "Wu G",
+            "Zhou F",
+            "Zha X"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "34769389",
+          "title": "The Presence of Yin-Yang Effects in the Migration Pattern of Staurosporine-Treated Single versus Collective Breast Carcinoma Cells.",
+          "journal": "International journal of molecular sciences",
+          "year": "2021",
+          "authors": [
+            "Meyer FAH",
+            "Kraus D",
+            "Glassmann A",
+            "Veit N",
+            "Winter J",
+            "Probstmeier R"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "12581734",
+          "title": "Staurosporine-induced death of MCF-7 human breast cancer cells: a distinction between caspase-3-dependent steps of apoptosis and the critical lethal lesions.",
+          "journal": "Experimental cell research",
+          "year": "2003",
+          "authors": [
+            "Xue LY",
+            "Chiu SM",
+            "Oleinick NL"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "24703106",
+          "title": "Silencing RBBP6 (Retinoblastoma Binding Protein 6) sensitises breast cancer cells MCF7 to staurosporine and camptothecin-induced cell death.",
+          "journal": "Immunobiology",
+          "year": "2014",
+          "authors": [
+            "Moela P",
+            "Choene MM",
+            "Motadi LR"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "31085166",
+          "title": "Silibinin-induced apoptosis of breast cancer cells involves mitochondrial impairment.",
+          "journal": "Archives of biochemistry and biophysics",
+          "year": "2019",
+          "authors": [
+            "Si L",
+            "Liu W",
+            "Hayashi T",
+            "Ji Y",
+            "Fu J",
+            "Nie Y",
+            "Mizuno K",
+            "Hattori S",
+            "Onodera S",
+            "Ikejima T"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "37931742",
+          "title": "Targeted inhibition of MASTL kinase activity induces apoptosis in breast cancer.",
+          "journal": "Life sciences",
+          "year": "2023",
+          "authors": [
+            "Misra G",
+            "Rajawat J",
+            "Pal R",
+            "Smith JC",
+            "Kumar A"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "38488019",
+          "title": "Evaluation of novel synthesized thiazole derivatives as potential aromatase inhibitors against breast cancer.",
+          "journal": "Future medicinal chemistry",
+          "year": "2024",
+          "authors": [
+            "Fayad E",
+            "Binjawhar DN",
+            "Ageeli AA",
+            "Alshaya DS",
+            "Elsaid FG",
+            "Mahmoud AY",
+            "Radwan EM",
+            "Elian Sophy MA",
+            "Mahdy AR"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "36526536",
+          "title": "The synthetic molecule stauprimide impairs cell growth and migration in triple-negative breast cancer.",
+          "journal": "Biomedicine & pharmacotherapy = Biomedecine & pharmacotherapie",
+          "year": "2023",
+          "authors": [
+            "Carrillo P",
+            "Bernal M",
+            "Téllez-Quijorna C",
+            "Marrero AD",
+            "Vidal I",
+            "Castilla L",
+            "Caro C",
+            "Domínguez A",
+            "García-Martín ML",
+            "Quesada AR",
+            "Medina MA",
+            "Martínez-Poveda B"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "30106434",
+          "title": "Staurosporine alleviates cisplatin chemoresistance in human cancer cell models by suppressing the induction of SQSTM1/p62.",
+          "journal": "Oncology reports",
+          "year": "2018",
+          "authors": [
+            "Alsamman K",
+            "El-Masry OS"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "38514720",
+          "title": "The immune regulation and therapeutic potential of the SMAD gene family in breast cancer.",
+          "journal": "Scientific reports",
+          "year": "2024",
+          "authors": [
+            "Chen Z",
+            "Wang Y",
+            "Lu X",
+            "Chen H",
+            "Kong Y",
+            "Rong L",
+            "Wang G"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "34939697",
+          "title": "ORAI1 regulates sustained cytosolic free calcium fluctuations during breast cancer cell apoptosis and apoptotic resistance via a STIM1 independent pathway.",
+          "journal": "FASEB journal : official publication of the Federation of American Societies for Experimental Biology",
+          "year": "2022",
+          "authors": [
+            "Bassett JJ",
+            "Robitaille M",
+            "Peters AA",
+            "Bong AHL",
+            "Taing MW",
+            "Wood IA",
+            "Sadras F",
+            "Roberts-Thomson SJ",
+            "Monteith GR"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "19711341",
+          "title": "BEX2 regulates mitochondrial apoptosis and G1 cell cycle in breast cancer.",
+          "journal": "International journal of cancer",
+          "year": "2010",
+          "authors": [
+            "Naderi A",
+            "Liu J",
+            "Bennett IC"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "35956848",
+          "title": "Novel 1,3-Thiazole Analogues with Potent Activity against Breast Cancer: A Design, Synthesis, In Vitro, and In Silico Study.",
+          "journal": "Molecules (Basel, Switzerland)",
+          "year": "2022",
+          "authors": [
+            "Salem MG",
+            "El-Maaty DMA",
+            "El-Deen YIM",
+            "Elesawy BH",
+            "Askary AE",
+            "Saleh A",
+            "Saied EM",
+            "Behery ME"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "41684601",
+          "title": "Investigation of beetroot (Beta Vulgaris) extracts compared to staurosporine in human breast cancer cells: cellular functions in-vitro study.",
+          "journal": "Frontiers in oncology",
+          "year": "2026",
+          "authors": [
+            "Abushal SA",
+            "Sami R",
+            "Alqahtani NK",
+            "Qahl SH",
+            "Harasani AA",
+            "Babteen NA",
+            "Alharbi HF",
+            "Albalawi FE",
+            "Amer F",
+            "Alfarteesh HA",
+            "Alghamdi HA",
+            "Almutairi SM"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "19048252",
+          "title": "Breast cancer cells expressing stem cell markers CD44+ CD24 lo are eliminated by Numb-1 peptide-activated T cells.",
+          "journal": "Cancer immunology, immunotherapy : CII",
+          "year": "2009",
+          "authors": [
+            "Mine T",
+            "Matsueda S",
+            "Li Y",
+            "Tokumitsu H",
+            "Gao H",
+            "Danes C",
+            "Wong KK",
+            "Wang X",
+            "Ferrone S",
+            "Ioannides CG"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "38708686",
+          "title": "Synthesis and antiproliferative evaluation of novel 3,5,8-trisubstituted coumarins against breast cancer.",
+          "journal": "Future medicinal chemistry",
+          "year": "2024",
+          "authors": [
+            "Salem MG",
+            "Alqahtani AM",
+            "Mali SN",
+            "Alshwyeh HA",
+            "Jawarkar RD",
+            "Altamimi AS",
+            "Alshawwa SZ",
+            "Al-Olayan E",
+            "Saied EM",
+            "Youssef MF"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "26872904",
+          "title": "High-density lipoprotein of patients with breast cancer complicated with type 2 diabetes mellitus promotes cancer cells adhesion to vascular endothelium via ICAM-1 and VCAM-1 upregulation.",
+          "journal": "Breast cancer research and treatment",
+          "year": "2016",
+          "authors": [
+            "Huang X",
+            "He D",
+            "Ming J",
+            "He Y",
+            "Zhou C",
+            "Ren H",
+            "He X",
+            "Wang C",
+            "Jin J",
+            "Ji L",
+            "Willard B",
+            "Pan B",
+            "Zheng L"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "17171646",
+          "title": "Proliferation of human breast cancer cells and anti-cancer action of doxorubicin and vinblastine are independent of PKC-alpha.",
+          "journal": "Journal of cellular biochemistry",
+          "year": "2007",
+          "authors": [
+            "Liu DS",
+            "Krebs CE",
+            "Liu SJ"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "34894967",
+          "title": "Synthesis and biological evaluation of halogenated phenoxychalcones and their corresponding pyrazolines as cytotoxic agents in human breast cancer.",
+          "journal": "Journal of enzyme inhibition and medicinal chemistry",
+          "year": "2022",
+          "authors": [
+            "Halim PA",
+            "Hassan RA",
+            "Mohamed KO",
+            "Hassanin SO",
+            "Khalil MG",
+            "Abdou AM",
+            "Osman EO"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "28443245",
+          "title": "Overexpression of the ATPase Inhibitory Factor 1 Favors a Non-metastatic Phenotype in Breast Cancer.",
+          "journal": "Frontiers in oncology",
+          "year": "2017",
+          "authors": [
+            "García-Ledo L",
+            "Nuevo-Tapioles C",
+            "Cuevas-Martín C",
+            "Martínez-Reyes I",
+            "Soldevilla B",
+            "González-Llorente L",
+            "Cuezva JM"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "30542510",
+          "title": "Staurosporine, an inhibitor of hormonally up-regulated neu-associated kinase.",
+          "journal": "Oncotarget",
+          "year": "2018",
+          "authors": [
+            "Zambrano JN",
+            "Williams CJ",
+            "Williams CB",
+            "Hedgepeth L",
+            "Burger P",
+            "Dilday T",
+            "Eblen ST",
+            "Armeson K",
+            "Hill EG",
+            "Yeh ES"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "1655518",
+          "title": "Interleukin-6 enhances motility of breast carcinoma cells.",
+          "journal": "EXS",
+          "year": "1991",
+          "authors": [
+            "Sehgal PB",
+            "Tamm I"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "26366219",
+          "title": "Staurosporine Induced Apoptosis May Activate Cancer Stem-Like Cells (CD44(+)/CD24(-)) in MCF-7 by Upregulating Mucin1 and EpCAM.",
+          "journal": "Journal of Cancer",
+          "year": "2015",
+          "authors": [
+            "Zhou N",
+            "Wang R",
+            "Zhang Y",
+            "Lei Z",
+            "Zhang X",
+            "Hu R",
+            "Li H",
+            "Mao Y",
+            "Wang X",
+            "Irwin DM",
+            "Niu G",
+            "Tan H"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "21209020",
+          "title": "KT5823 differentially modulates sodium iodide symporter expression, activity, and glycosylation between thyroid and breast cancer cells.",
+          "journal": "Endocrinology",
+          "year": "2011",
+          "authors": [
+            "Beyer S",
+            "Lakshmanan A",
+            "Liu YY",
+            "Zhang X",
+            "Wapnir I",
+            "Smolenski A",
+            "Jhiang S"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "39178704",
+          "title": "Novel benzenesulfonamides as dual VEGFR2/FGFR1 inhibitors targeting breast cancer: Design, synthesis, anticancer activity and in silico studies.",
+          "journal": "Bioorganic chemistry",
+          "year": "2024",
+          "authors": [
+            "Hassan RM",
+            "Ali IH",
+            "El Kerdawy AM",
+            "Abo-Elfadl MT",
+            "Ghannam IAY"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "25004807",
+          "title": "Adhesion to type V collagen enhances staurosporine-induced apoptosis of adrenocortical cancer cells.",
+          "journal": "Tumour biology : the journal of the International Society for Oncodevelopmental Biology and Medicine",
+          "year": "2014",
+          "authors": [
+            "Nardo T",
+            "Micalizzi G",
+            "Vicinanza R",
+            "De Iuliis F",
+            "Taglieri L",
+            "Scarpa S"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "37210828",
+          "title": "Design, synthesis and molecular docking study of new pyrimidine-based hydrazones with selective anti-proliferative activity against MCF-7 and MDA-MB-231 human breast cancer cell lines.",
+          "journal": "Bioorganic chemistry",
+          "year": "2023",
+          "authors": [
+            "Badawi WA",
+            "Samir M",
+            "Fathy HM",
+            "Okda TM",
+            "Noureldin MH",
+            "Atwa GMK",
+            "AboulWafa OM"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "12373608",
+          "title": "Apoptotic mechanisms in T47D and MCF-7 human breast cancer cells.",
+          "journal": "British journal of cancer",
+          "year": "2002",
+          "authors": [
+            "Mooney LM",
+            "Al-Sakkaf KA",
+            "Brown BL",
+            "Dobson PR"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "35813469",
+          "title": "Inhibitory role of TRIP-Br1 oncoprotein in anticancer drug-mediated programmed cell death via mitophagy activation.",
+          "journal": "International journal of biological sciences",
+          "year": "2022",
+          "authors": [
+            "Jung S",
+            "Myagmarjav D",
+            "Jo T",
+            "Lee S",
+            "Han S",
+            "Quynh NTN",
+            "Anh NH",
+            "Vu SH",
+            "Choi Y",
+            "Lee MS"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "23840623",
+          "title": "Aberrant regulation of the BST2 (Tetherin) promoter enhances cell proliferation and apoptosis evasion in high grade breast cancer cells.",
+          "journal": "PloS one",
+          "year": "2013",
+          "authors": [
+            "Sayeed A",
+            "Luciani-Torres G",
+            "Meng Z",
+            "Bennington JL",
+            "Moore DH",
+            "Dairkee SH"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "17618736",
+          "title": "Suppression of staurosporine-mediated apoptosis in Hs578T breast cells through inhibition of neutral-sphingomyelinase by caveolin-1.",
+          "journal": "Cancer letters",
+          "year": "2007",
+          "authors": [
+            "Wu P",
+            "Qi B",
+            "Zhu H",
+            "Zheng Y",
+            "Li F",
+            "Chen J"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "9648912",
+          "title": "Staurosporine-induced versus spontaneous squamous metaplasia in pre- and postmenopausal breast tissue.",
+          "journal": "Journal of cellular physiology",
+          "year": "1998",
+          "authors": [
+            "Heffelfinger SC",
+            "Miller MA",
+            "Gear R",
+            "Devoe G"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "26454020",
+          "title": "Knockdown of the small conductance Ca(2+) -activated K(+) channels is potently cytotoxic in breast cancer cell lines.",
+          "journal": "British journal of pharmacology",
+          "year": "2016",
+          "authors": [
+            "Abdulkareem ZA",
+            "Gee JM",
+            "Cox CD",
+            "Wann KT"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "18523888",
+          "title": "Viability analysis and apoptosis induction of breast cancer cells in a microfluidic device: effect of cytostatic drugs.",
+          "journal": "Biomedical microdevices",
+          "year": "2008",
+          "authors": [
+            "Komen J",
+            "Wolbers F",
+            "Franke HR",
+            "Andersson H",
+            "Vermes I",
+            "van den Berg A"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "10571245",
+          "title": "Comparison of the efficacy of 7-hydroxystaurosporine (UCN-01) and other staurosporine analogs to abrogate cisplatin-induced cell cycle arrest in human breast cancer cell lines.",
+          "journal": "Biochemical pharmacology",
+          "year": "1999",
+          "authors": [
+            "Lee SI",
+            "Brown MK",
+            "Eastman A"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "11956583",
+          "title": "Human breast cancer MCF-7 cell line contains inherently drug-resistant subclones with distinct genotypic and phenotypic features.",
+          "journal": "International journal of oncology",
+          "year": "2002",
+          "authors": [
+            "Devarajan E",
+            "Chen J",
+            "Multani AS",
+            "Pathak S",
+            "Sahin AA",
+            "Mehta K"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "31992477",
+          "title": "VEGFR-2 inhibiting effect and molecular modeling of newly synthesized coumarin derivatives as anti-breast cancer agents.",
+          "journal": "Bioorganic & medicinal chemistry",
+          "year": "2020",
+          "authors": [
+            "Ahmed EY",
+            "Abdel Latif NA",
+            "El-Mansy MF",
+            "Elserwy WS",
+            "Abdelhafez OM"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "26934461",
+          "title": "Inhibitor Response to HER2 G776(YVMA) In-frame Insertion in HER2-positive Breast Cancer.",
+          "journal": "Cancer investigation",
+          "year": "2016",
+          "authors": [
+            "Zheng YB",
+            "Yu Y",
+            "Chen B",
+            "Hu JL",
+            "Jing T",
+            "Zhang XP"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "22565810",
+          "title": "Network analysis of icb-1 gene function in human breast cancer cells.",
+          "journal": "Journal of cellular biochemistry",
+          "year": "2012",
+          "authors": [
+            "Treeck O",
+            "Belgutay D",
+            "Häring J",
+            "Schüler S",
+            "Lattrich C",
+            "Ortmann O"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "26314846",
+          "title": "Antitumor activity of the novel multi-kinase inhibitor EC-70124 in triple negative breast cancer.",
+          "journal": "Oncotarget",
+          "year": "2015",
+          "authors": [
+            "Cuenca-López MD",
+            "Serrano-Heras G",
+            "Montero JC",
+            "Corrales-Sánchez V",
+            "Gomez-Juarez M",
+            "Gascón-Escribano MJ",
+            "Morales JC",
+            "Voisin V",
+            "Núñez LE",
+            "Morís F",
+            "Bader GD",
+            "Pandiella A",
+            "Ocaña A"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "12049820",
+          "title": "Staurosporine-induced G(1) arrest in cancer cells depends on an intact pRB but is independent of p16 status.",
+          "journal": "Cancer letters",
+          "year": "2002",
+          "authors": [
+            "Zhou W",
+            "Lin Y",
+            "Wersto R",
+            "Chrest J",
+            "Gabrielson E"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "39521748",
+          "title": "Design, synthesis, and anti-breast cancer activity evaluation of novel 3-cyanopyridine derivatives as PIM-1 inhibitors.",
+          "journal": "Molecular diversity",
+          "year": "2025",
+          "authors": [
+            "Hussein BRM",
+            "Mohammed HH",
+            "Ahmed EA",
+            "Alshazly O",
+            "Mohamed MFA",
+            "Omran OA"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "26439378",
+          "title": "Drug response to HER2 gatekeeper T798M mutation in HER2-positive breast cancer.",
+          "journal": "Amino acids",
+          "year": "2016",
+          "authors": [
+            "Meng X",
+            "Li Y",
+            "Tang H",
+            "Mao W",
+            "Yang H",
+            "Wang X",
+            "Ding X",
+            "Xie S"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "24967918",
+          "title": "Glycerol-3-phosphate acyltranferase-2 behaves as a cancer testis gene and promotes growth and tumorigenicity of the breast cancer MDA-MB-231 cell line.",
+          "journal": "PloS one",
+          "year": "2014",
+          "authors": [
+            "Pellon-Maison M",
+            "Montanaro MA",
+            "Lacunza E",
+            "Garcia-Fabiani MB",
+            "Soler-Gerino MC",
+            "Cattaneo ER",
+            "Quiroga IY",
+            "Abba MC",
+            "Coleman RA",
+            "Gonzalez-Baro MR"
+          ],
+          "source": "ncbi_pubmed"
+        }
+      ],
+      "source": "pubmed_live"
+    }
+  },
+  "errors": []
+}

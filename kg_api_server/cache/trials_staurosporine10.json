@@ -1,0 +1,31 @@
+{
+  "data": [
+    {
+      "nct_id": "NCT00001444",
+      "title": "A Phase I Trial of Continuous Infusion UCN-01 in Patients With Refractory Neoplasms",
+      "phase": "PHASE1",
+      "status": "COMPLETED",
+      "conditions": [
+        "Breast Cancer",
+        "Lymphoma",
+        "Neoplasm",
+        "Prostatic Neoplasm"
+      ],
+      "lead_sponsor": "National Cancer Institute (NCI)",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT03092674",
+      "title": "Azacitidine With or Without Nivolumab or Midostaurin, or Decitabine and Cytarabine Alone in Treating Older Patients With Newly Diagnosed Acute Myeloid Leukemia or High-Risk Myelodysplastic Syndrome",
+      "phase": "PHASE2, PHASE3",
+      "status": "COMPLETED",
+      "conditions": [
+        "Acute Myeloid Leukemia",
+        "Myelodysplastic Syndrome",
+        "Myelodysplastic Syndrome/Acute Myeloid Leukemia"
+      ],
+      "lead_sponsor": "National Cancer Institute (NCI)",
+      "source": "clinicaltrials_gov_v2"
+    }
+  ]
+}

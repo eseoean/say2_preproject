@@ -1,0 +1,54 @@
+{
+  "data": [
+    {
+      "event": "OFF LABEL USE",
+      "count": 278,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "FEBRILE NEUTROPENIA",
+      "count": 191,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "PRODUCT USE IN UNAPPROVED INDICATION",
+      "count": 131,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "NEUTROPENIA",
+      "count": 127,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "DRUG INEFFECTIVE",
+      "count": 115,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "VOMITING",
+      "count": 106,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "THROMBOCYTOPENIA",
+      "count": 102,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "DISEASE PROGRESSION",
+      "count": 87,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "PYREXIA",
+      "count": 86,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "ANAEMIA",
+      "count": 85,
+      "source": "openfda_faers"
+    }
+  ]
+}

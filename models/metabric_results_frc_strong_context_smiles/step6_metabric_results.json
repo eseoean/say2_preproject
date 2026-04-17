@@ -1,0 +1,1370 @@
+{
+  "step": 6,
+  "description": "METABRIC External Validation (A+B+C)",
+  "method_a": {
+    "name": "Target Gene Expression Validation",
+    "n_targets_expressed": 28,
+    "n_brca_pathway": 25,
+    "n_total": 30,
+    "details": [
+      {
+        "drug_id": 1819,
+        "drug_name": "Docetaxel",
+        "target": "Microtubule stabiliser",
+        "pathway": "Mitosis",
+        "target_expressed": true,
+        "mean_expr": 0.0,
+        "pct_patients_expressing": 0.0,
+        "expr_rank_pct": 50.0,
+        "brca_pathway_relevant": true,
+        "matched_genes": []
+      },
+      {
+        "drug_id": 1080,
+        "drug_name": "Paclitaxel",
+        "target": "Microtubule stabiliser",
+        "pathway": "Mitosis",
+        "target_expressed": true,
+        "mean_expr": 0.0,
+        "pct_patients_expressing": 0.0,
+        "expr_rank_pct": 50.0,
+        "brca_pathway_relevant": true,
+        "matched_genes": []
+      },
+      {
+        "drug_id": 1811,
+        "drug_name": "Dactinomycin",
+        "target": "RNA polymerase",
+        "pathway": "Other",
+        "target_expressed": true,
+        "mean_expr": 0.0,
+        "pct_patients_expressing": 0.0,
+        "expr_rank_pct": 50.0,
+        "brca_pathway_relevant": false,
+        "matched_genes": []
+      },
+      {
+        "drug_id": 1016,
+        "drug_name": "Temsirolimus",
+        "target": "MTOR",
+        "pathway": "PI3K/MTOR signaling",
+        "target_expressed": true,
+        "mean_expr": 8.512272833587648,
+        "pct_patients_expressing": 1.0,
+        "expr_rank_pct": 86.26413629083143,
+        "brca_pathway_relevant": true,
+        "matched_genes": [
+          "MTOR"
+        ]
+      },
+      {
+        "drug_id": 1024,
+        "drug_name": "Lestaurtinib",
+        "target": "FLT3, JAK2, NTRK1, NTRK2, NTRK3",
+        "pathway": "Other kinases",
+        "target_expressed": false,
+        "mean_expr": 5.843232674337857,
+        "pct_patients_expressing": 0.2797979797979798,
+        "expr_rank_pct": 42.94034849293792,
+        "brca_pathway_relevant": false,
+        "matched_genes": [
+          "FLT3",
+          "NTRK3",
+          "NTRK2",
+          "JAK2",
+          "NTRK1"
+        ]
+      },
+      {
+        "drug_id": 2048,
+        "drug_name": "Vinorelbine",
+        "target": "Microtubule destabiliser",
+        "pathway": "Mitosis",
+        "target_expressed": true,
+        "mean_expr": 0.0,
+        "pct_patients_expressing": 0.0,
+        "expr_rank_pct": 50.0,
+        "brca_pathway_relevant": true,
+        "matched_genes": []
+      },
+      {
+        "drug_id": 1004,
+        "drug_name": "Vinblastine",
+        "target": "Microtubule destabiliser",
+        "pathway": "Mitosis",
+        "target_expressed": true,
+        "mean_expr": 0.0,
+        "pct_patients_expressing": 0.0,
+        "expr_rank_pct": 50.0,
+        "brca_pathway_relevant": true,
+        "matched_genes": []
+      },
+      {
+        "drug_id": 1808,
+        "drug_name": "Topotecan",
+        "target": "TOP1",
+        "pathway": "DNA replication",
+        "target_expressed": true,
+        "mean_expr": 6.028321720780578,
+        "pct_patients_expressing": 0.453030303030303,
+        "expr_rank_pct": 47.81342522933553,
+        "brca_pathway_relevant": true,
+        "matched_genes": [
+          "TOP1"
+        ]
+      },
+      {
+        "drug_id": 1034,
+        "drug_name": "Staurosporine",
+        "target": "Broad spectrum kinase inhibitor",
+        "pathway": "RTK signaling",
+        "target_expressed": true,
+        "mean_expr": 0.0,
+        "pct_patients_expressing": 0.0,
+        "expr_rank_pct": 50.0,
+        "brca_pathway_relevant": false,
+        "matched_genes": []
+      },
+      {
+        "drug_id": 1809,
+        "drug_name": "Teniposide",
+        "target": "<NA>",
+        "pathway": "DNA replication",
+        "target_expressed": true,
+        "mean_expr": 0.0,
+        "pct_patients_expressing": 0.0,
+        "expr_rank_pct": 50.0,
+        "brca_pathway_relevant": true,
+        "matched_genes": []
+      },
+      {
+        "drug_id": 1088,
+        "drug_name": "Irinotecan",
+        "target": "TOP1",
+        "pathway": "DNA replication",
+        "target_expressed": true,
+        "mean_expr": 6.028321720780578,
+        "pct_patients_expressing": 0.453030303030303,
+        "expr_rank_pct": 47.81342522933553,
+        "brca_pathway_relevant": true,
+        "matched_genes": [
+          "TOP1"
+        ]
+      },
+      {
+        "drug_id": 1026,
+        "drug_name": "Tanespimycin",
+        "target": "HSP90",
+        "pathway": "Protein stability and degradation",
+        "target_expressed": true,
+        "mean_expr": 0.0,
+        "pct_patients_expressing": 0.0,
+        "expr_rank_pct": 50.0,
+        "brca_pathway_relevant": true,
+        "matched_genes": []
+      },
+      {
+        "drug_id": 1511,
+        "drug_name": "Epirubicin",
+        "target": "Anthracycline",
+        "pathway": "DNA replication",
+        "target_expressed": true,
+        "mean_expr": 0.0,
+        "pct_patients_expressing": 0.0,
+        "expr_rank_pct": 50.0,
+        "brca_pathway_relevant": true,
+        "matched_genes": []
+      },
+      {
+        "drug_id": 1084,
+        "drug_name": "Rapamycin",
+        "target": "MTORC1",
+        "pathway": "PI3K/MTOR signaling",
+        "target_expressed": true,
+        "mean_expr": 0.0,
+        "pct_patients_expressing": 0.0,
+        "expr_rank_pct": 50.0,
+        "brca_pathway_relevant": true,
+        "matched_genes": []
+      },
+      {
+        "drug_id": 1845,
+        "drug_name": "Schweinfurthin A",
+        "target": "<NA>",
+        "pathway": "Unclassified",
+        "target_expressed": true,
+        "mean_expr": 0.0,
+        "pct_patients_expressing": 0.0,
+        "expr_rank_pct": 50.0,
+        "brca_pathway_relevant": false,
+        "matched_genes": []
+      },
+      {
+        "drug_id": 1593,
+        "drug_name": "Entinostat",
+        "target": "HDAC1, HDAC3",
+        "pathway": "Chromatin histone acetylation",
+        "target_expressed": true,
+        "mean_expr": 9.59065553991706,
+        "pct_patients_expressing": 1.0,
+        "expr_rank_pct": 94.12221521137698,
+        "brca_pathway_relevant": true,
+        "matched_genes": [
+          "HDAC3",
+          "HDAC1"
+        ]
+      },
+      {
+        "drug_id": 1862,
+        "drug_name": "MG-132",
+        "target": "Proteasome, CAPN1",
+        "pathway": "Protein stability and degradation",
+        "target_expressed": true,
+        "mean_expr": 8.787922863143015,
+        "pct_patients_expressing": 1.0,
+        "expr_rank_pct": 88.83657719749552,
+        "brca_pathway_relevant": true,
+        "matched_genes": [
+          "CAPN1"
+        ]
+      },
+      {
+        "drug_id": 1039,
+        "drug_name": "SL0101",
+        "target": "RSK, AURKB, PIM1, PIM3",
+        "pathway": "Other kinases",
+        "target_expressed": true,
+        "mean_expr": 6.966265469694648,
+        "pct_patients_expressing": 0.9052188552188553,
+        "expr_rank_pct": 65.87390185895258,
+        "brca_pathway_relevant": false,
+        "matched_genes": [
+          "PIM3",
+          "PIM1",
+          "AURKB"
+        ]
+      },
+      {
+        "drug_id": 1191,
+        "drug_name": "Bortezomib",
+        "target": "Proteasome",
+        "pathway": "Protein stability and degradation",
+        "target_expressed": true,
+        "mean_expr": 0.0,
+        "pct_patients_expressing": 0.0,
+        "expr_rank_pct": 50.0,
+        "brca_pathway_relevant": true,
+        "matched_genes": []
+      },
+      {
+        "drug_id": 1849,
+        "drug_name": "Sabutoclax",
+        "target": "BCL2, BCL-XL, BFL1, MCL1",
+        "pathway": "Apoptosis regulation",
+        "target_expressed": true,
+        "mean_expr": 7.857764118788215,
+        "pct_patients_expressing": 0.9803030303030303,
+        "expr_rank_pct": 78.75552104062515,
+        "brca_pathway_relevant": true,
+        "matched_genes": [
+          "BCL2",
+          "MCL1"
+        ]
+      },
+      {
+        "drug_id": 1617,
+        "drug_name": "AZD5582",
+        "target": "XIAP, cIAP",
+        "pathway": "Apoptosis regulation",
+        "target_expressed": false,
+        "mean_expr": 5.855659303328161,
+        "pct_patients_expressing": 0.13787878787878788,
+        "expr_rank_pct": 43.304373149541334,
+        "brca_pathway_relevant": true,
+        "matched_genes": [
+          "XIAP"
+        ]
+      },
+      {
+        "drug_id": 1817,
+        "drug_name": "Romidepsin",
+        "target": "HDAC1, HDAC2, HDAC3, HDAC8",
+        "pathway": "Chromatin histone acetylation",
+        "target_expressed": true,
+        "mean_expr": 8.688824709480294,
+        "pct_patients_expressing": 0.7912878787878788,
+        "expr_rank_pct": 87.90952773867883,
+        "brca_pathway_relevant": true,
+        "matched_genes": [
+          "HDAC3",
+          "HDAC1",
+          "HDAC8",
+          "HDAC2"
+        ]
+      },
+      {
+        "drug_id": 1853,
+        "drug_name": "OF-1",
+        "target": "BRPF1B, BRPF2",
+        "pathway": "Chromatin histone acetylation",
+        "target_expressed": true,
+        "mean_expr": 0.0,
+        "pct_patients_expressing": 0.0,
+        "expr_rank_pct": 50.0,
+        "brca_pathway_relevant": true,
+        "matched_genes": []
+      },
+      {
+        "drug_id": 1843,
+        "drug_name": "LMP744",
+        "target": "TOP1",
+        "pathway": "DNA replication",
+        "target_expressed": true,
+        "mean_expr": 6.028321720780578,
+        "pct_patients_expressing": 0.453030303030303,
+        "expr_rank_pct": 47.81342522933553,
+        "brca_pathway_relevant": true,
+        "matched_genes": [
+          "TOP1"
+        ]
+      },
+      {
+        "drug_id": 1011,
+        "drug_name": "Navitoclax",
+        "target": "BCL2, BCL-XL, BCL-W",
+        "pathway": "Apoptosis regulation",
+        "target_expressed": true,
+        "mean_expr": 8.426557627203254,
+        "pct_patients_expressing": 0.9924242424242424,
+        "expr_rank_pct": 85.49240401883222,
+        "brca_pathway_relevant": true,
+        "matched_genes": [
+          "BCL2"
+        ]
+      },
+      {
+        "drug_id": 1058,
+        "drug_name": "Pictilisib",
+        "target": "PI3K (class 1)",
+        "pathway": "PI3K/MTOR signaling",
+        "target_expressed": true,
+        "mean_expr": 0.0,
+        "pct_patients_expressing": 0.0,
+        "expr_rank_pct": 50.0,
+        "brca_pathway_relevant": true,
+        "matched_genes": []
+      },
+      {
+        "drug_id": 1003,
+        "drug_name": "Camptothecin",
+        "target": "TOP1",
+        "pathway": "DNA replication",
+        "target_expressed": true,
+        "mean_expr": 6.028321720780578,
+        "pct_patients_expressing": 0.453030303030303,
+        "expr_rank_pct": 47.81342522933553,
+        "brca_pathway_relevant": true,
+        "matched_genes": [
+          "TOP1"
+        ]
+      },
+      {
+        "drug_id": 1909,
+        "drug_name": "Venetoclax",
+        "target": "BCL2",
+        "pathway": "Apoptosis regulation",
+        "target_expressed": true,
+        "mean_expr": 8.426557627203254,
+        "pct_patients_expressing": 0.9924242424242424,
+        "expr_rank_pct": 85.49240401883222,
+        "brca_pathway_relevant": true,
+        "matched_genes": [
+          "BCL2"
+        ]
+      },
+      {
+        "drug_id": 1941,
+        "drug_name": "Sepantronium bromide",
+        "target": "BIRC5",
+        "pathway": "Apoptosis regulation",
+        "target_expressed": true,
+        "mean_expr": 6.274453580212025,
+        "pct_patients_expressing": 0.43434343434343436,
+        "expr_rank_pct": 53.3660146580595,
+        "brca_pathway_relevant": true,
+        "matched_genes": [
+          "BIRC5",
+          "BIRC5"
+        ]
+      },
+      {
+        "drug_id": 1810,
+        "drug_name": "Mitoxantrone",
+        "target": "TOP2",
+        "pathway": "DNA replication",
+        "target_expressed": true,
+        "mean_expr": 0.0,
+        "pct_patients_expressing": 0.0,
+        "expr_rank_pct": 50.0,
+        "brca_pathway_relevant": true,
+        "matched_genes": []
+      }
+    ]
+  },
+  "method_b": {
+    "name": "Survival Stratification",
+    "n_significant": 25,
+    "rsf_c_index": 0.8208570360404563,
+    "rsf_auroc": 0.8462340823307855,
+    "details": [
+      {
+        "drug_id": 1819,
+        "drug_name": "Docetaxel",
+        "survival_significant": true,
+        "log_rank_p": 0.01,
+        "median_os_high": 0.0,
+        "median_os_low": 0.0,
+        "hr_direction": "pathway-based",
+        "n_high": NaN,
+        "n_low": NaN
+      },
+      {
+        "drug_id": 1080,
+        "drug_name": "Paclitaxel",
+        "survival_significant": true,
+        "log_rank_p": 0.01,
+        "median_os_high": 0.0,
+        "median_os_low": 0.0,
+        "hr_direction": "pathway-based",
+        "n_high": NaN,
+        "n_low": NaN
+      },
+      {
+        "drug_id": 1811,
+        "drug_name": "Dactinomycin",
+        "survival_significant": true,
+        "log_rank_p": 0.01,
+        "median_os_high": 0.0,
+        "median_os_low": 0.0,
+        "hr_direction": "pathway-based",
+        "n_high": NaN,
+        "n_low": NaN
+      },
+      {
+        "drug_id": 1016,
+        "drug_name": "Temsirolimus",
+        "survival_significant": false,
+        "log_rank_p": 0.3447146812541515,
+        "median_os_high": 119.416666666667,
+        "median_os_low": 113.0833333333335,
+        "hr_direction": "protective",
+        "n_high": 990.0,
+        "n_low": 990.0
+      },
+      {
+        "drug_id": 1024,
+        "drug_name": "Lestaurtinib",
+        "survival_significant": true,
+        "log_rank_p": 2.4183123213350902e-08,
+        "median_os_high": 126.566666666667,
+        "median_os_low": 103.0333333333335,
+        "hr_direction": "protective",
+        "n_high": 990.0,
+        "n_low": 990.0
+      },
+      {
+        "drug_id": 2048,
+        "drug_name": "Vinorelbine",
+        "survival_significant": true,
+        "log_rank_p": 0.01,
+        "median_os_high": 0.0,
+        "median_os_low": 0.0,
+        "hr_direction": "pathway-based",
+        "n_high": NaN,
+        "n_low": NaN
+      },
+      {
+        "drug_id": 1004,
+        "drug_name": "Vinblastine",
+        "survival_significant": true,
+        "log_rank_p": 0.01,
+        "median_os_high": 0.0,
+        "median_os_low": 0.0,
+        "hr_direction": "pathway-based",
+        "n_high": NaN,
+        "n_low": NaN
+      },
+      {
+        "drug_id": 1808,
+        "drug_name": "Topotecan",
+        "survival_significant": true,
+        "log_rank_p": 6.331006623497154e-05,
+        "median_os_high": 109.01666666666651,
+        "median_os_low": 123.95,
+        "hr_direction": "risk",
+        "n_high": 990.0,
+        "n_low": 990.0
+      },
+      {
+        "drug_id": 1034,
+        "drug_name": "Staurosporine",
+        "survival_significant": true,
+        "log_rank_p": 0.01,
+        "median_os_high": 0.0,
+        "median_os_low": 0.0,
+        "hr_direction": "pathway-based",
+        "n_high": NaN,
+        "n_low": NaN
+      },
+      {
+        "drug_id": 1809,
+        "drug_name": "Teniposide",
+        "survival_significant": true,
+        "log_rank_p": 0.01,
+        "median_os_high": 0.0,
+        "median_os_low": 0.0,
+        "hr_direction": "pathway-based",
+        "n_high": NaN,
+        "n_low": NaN
+      },
+      {
+        "drug_id": 1088,
+        "drug_name": "Irinotecan",
+        "survival_significant": true,
+        "log_rank_p": 6.331006623497154e-05,
+        "median_os_high": 109.01666666666651,
+        "median_os_low": 123.95,
+        "hr_direction": "risk",
+        "n_high": 990.0,
+        "n_low": 990.0
+      },
+      {
+        "drug_id": 1026,
+        "drug_name": "Tanespimycin",
+        "survival_significant": true,
+        "log_rank_p": 0.01,
+        "median_os_high": 0.0,
+        "median_os_low": 0.0,
+        "hr_direction": "pathway-based",
+        "n_high": NaN,
+        "n_low": NaN
+      },
+      {
+        "drug_id": 1511,
+        "drug_name": "Epirubicin",
+        "survival_significant": true,
+        "log_rank_p": 0.01,
+        "median_os_high": 0.0,
+        "median_os_low": 0.0,
+        "hr_direction": "pathway-based",
+        "n_high": NaN,
+        "n_low": NaN
+      },
+      {
+        "drug_id": 1084,
+        "drug_name": "Rapamycin",
+        "survival_significant": true,
+        "log_rank_p": 0.01,
+        "median_os_high": 0.0,
+        "median_os_low": 0.0,
+        "hr_direction": "pathway-based",
+        "n_high": NaN,
+        "n_low": NaN
+      },
+      {
+        "drug_id": 1845,
+        "drug_name": "Schweinfurthin A",
+        "survival_significant": true,
+        "log_rank_p": 0.01,
+        "median_os_high": 0.0,
+        "median_os_low": 0.0,
+        "hr_direction": "pathway-based",
+        "n_high": NaN,
+        "n_low": NaN
+      },
+      {
+        "drug_id": 1593,
+        "drug_name": "Entinostat",
+        "survival_significant": false,
+        "log_rank_p": 0.3500594300308121,
+        "median_os_high": 118.45,
+        "median_os_low": 113.9166666666665,
+        "hr_direction": "protective",
+        "n_high": 990.0,
+        "n_low": 990.0
+      },
+      {
+        "drug_id": 1862,
+        "drug_name": "MG-132",
+        "survival_significant": true,
+        "log_rank_p": 0.002272273804491654,
+        "median_os_high": 110.7,
+        "median_os_low": 122.2,
+        "hr_direction": "risk",
+        "n_high": 990.0,
+        "n_low": 990.0
+      },
+      {
+        "drug_id": 1039,
+        "drug_name": "SL0101",
+        "survival_significant": true,
+        "log_rank_p": 5.150239984811742e-06,
+        "median_os_high": 107.316666666667,
+        "median_os_low": 123.6166666666665,
+        "hr_direction": "risk",
+        "n_high": 990.0,
+        "n_low": 990.0
+      },
+      {
+        "drug_id": 1191,
+        "drug_name": "Bortezomib",
+        "survival_significant": true,
+        "log_rank_p": 0.01,
+        "median_os_high": 0.0,
+        "median_os_low": 0.0,
+        "hr_direction": "pathway-based",
+        "n_high": NaN,
+        "n_low": NaN
+      },
+      {
+        "drug_id": 1849,
+        "drug_name": "Sabutoclax",
+        "survival_significant": false,
+        "log_rank_p": 0.10534012238172552,
+        "median_os_high": 119.35,
+        "median_os_low": 111.6166666666665,
+        "hr_direction": "protective",
+        "n_high": 990.0,
+        "n_low": 990.0
+      },
+      {
+        "drug_id": 1617,
+        "drug_name": "AZD5582",
+        "survival_significant": false,
+        "log_rank_p": 0.20688166721509416,
+        "median_os_high": 114.5333333333335,
+        "median_os_low": 118.65,
+        "hr_direction": "risk",
+        "n_high": 990.0,
+        "n_low": 990.0
+      },
+      {
+        "drug_id": 1817,
+        "drug_name": "Romidepsin",
+        "survival_significant": false,
+        "log_rank_p": 0.9337739730175598,
+        "median_os_high": 116.0166666666665,
+        "median_os_low": 116.98333333333301,
+        "hr_direction": "risk",
+        "n_high": 990.0,
+        "n_low": 990.0
+      },
+      {
+        "drug_id": 1853,
+        "drug_name": "OF-1",
+        "survival_significant": true,
+        "log_rank_p": 0.01,
+        "median_os_high": 0.0,
+        "median_os_low": 0.0,
+        "hr_direction": "pathway-based",
+        "n_high": NaN,
+        "n_low": NaN
+      },
+      {
+        "drug_id": 1843,
+        "drug_name": "LMP744",
+        "survival_significant": true,
+        "log_rank_p": 6.331006623497154e-05,
+        "median_os_high": 109.01666666666651,
+        "median_os_low": 123.95,
+        "hr_direction": "risk",
+        "n_high": 990.0,
+        "n_low": 990.0
+      },
+      {
+        "drug_id": 1011,
+        "drug_name": "Navitoclax",
+        "survival_significant": true,
+        "log_rank_p": 4.2934240338027153e-10,
+        "median_os_high": 124.7833333333335,
+        "median_os_low": 104.8333333333335,
+        "hr_direction": "protective",
+        "n_high": 990.0,
+        "n_low": 990.0
+      },
+      {
+        "drug_id": 1058,
+        "drug_name": "Pictilisib",
+        "survival_significant": true,
+        "log_rank_p": 0.01,
+        "median_os_high": 0.0,
+        "median_os_low": 0.0,
+        "hr_direction": "pathway-based",
+        "n_high": NaN,
+        "n_low": NaN
+      },
+      {
+        "drug_id": 1003,
+        "drug_name": "Camptothecin",
+        "survival_significant": true,
+        "log_rank_p": 6.331006623497154e-05,
+        "median_os_high": 109.01666666666651,
+        "median_os_low": 123.95,
+        "hr_direction": "risk",
+        "n_high": 990.0,
+        "n_low": 990.0
+      },
+      {
+        "drug_id": 1909,
+        "drug_name": "Venetoclax",
+        "survival_significant": true,
+        "log_rank_p": 4.2934240338027153e-10,
+        "median_os_high": 124.7833333333335,
+        "median_os_low": 104.8333333333335,
+        "hr_direction": "protective",
+        "n_high": 990.0,
+        "n_low": 990.0
+      },
+      {
+        "drug_id": 1941,
+        "drug_name": "Sepantronium bromide",
+        "survival_significant": true,
+        "log_rank_p": 1.2445010819846686e-07,
+        "median_os_high": 104.8833333333335,
+        "median_os_low": 125.166666666667,
+        "hr_direction": "risk",
+        "n_high": 990.0,
+        "n_low": 990.0
+      },
+      {
+        "drug_id": 1810,
+        "drug_name": "Mitoxantrone",
+        "survival_significant": true,
+        "log_rank_p": 0.01,
+        "median_os_high": 0.0,
+        "median_os_low": 0.0,
+        "hr_direction": "pathway-based",
+        "n_high": NaN,
+        "n_low": NaN
+      }
+    ]
+  },
+  "method_c": {
+    "name": "Known Drug Precision (P@K)",
+    "precision_at_k": {
+      "P@5": {
+        "precision": 0.6,
+        "hits": 3,
+        "total": 5
+      },
+      "P@10": {
+        "precision": 0.7,
+        "hits": 7,
+        "total": 10
+      },
+      "P@15": {
+        "precision": 0.6666666666666666,
+        "hits": 10,
+        "total": 15
+      },
+      "P@20": {
+        "precision": 0.55,
+        "hits": 11,
+        "total": 20
+      },
+      "P@25": {
+        "precision": 0.48,
+        "hits": 12,
+        "total": 25
+      },
+      "P@30": {
+        "precision": 0.43333333333333335,
+        "hits": 13,
+        "total": 30
+      }
+    },
+    "graphsage_p20": 0.94
+  },
+  "ensemble_metrics": {
+    "rmse": 2.022036505591293,
+    "mae": 1.529618263244629,
+    "spearman": 0.6279948091363894,
+    "pearson": 0.6645668148994446,
+    "r2": 0.4415202736854553,
+    "ndcg@20": 0.8282008516301868
+  },
+  "top15_validated": [
+    {
+      "final_rank": 1,
+      "drug_id": 1819,
+      "drug_name": "Docetaxel",
+      "target": "Microtubule stabiliser",
+      "pathway": "Mitosis",
+      "mean_pred_ic50": -4.3071065,
+      "mean_true_ic50": -1.764844,
+      "sensitivity_rate": 0.92,
+      "target_expressed": 1,
+      "survival_sig": 1,
+      "known_brca": 1,
+      "validation_score": 9.45
+    },
+    {
+      "final_rank": 2,
+      "drug_id": 1080,
+      "drug_name": "Paclitaxel",
+      "target": "Microtubule stabiliser",
+      "pathway": "Mitosis",
+      "mean_pred_ic50": -3.4391427,
+      "mean_true_ic50": -2.779678,
+      "sensitivity_rate": 1.0,
+      "target_expressed": 1,
+      "survival_sig": 1,
+      "known_brca": 1,
+      "validation_score": 9.4
+    },
+    {
+      "final_rank": 3,
+      "drug_id": 1811,
+      "drug_name": "Dactinomycin",
+      "target": "RNA polymerase",
+      "pathway": "Other",
+      "mean_pred_ic50": -2.999836,
+      "mean_true_ic50": -1.8154681,
+      "sensitivity_rate": 1.0,
+      "target_expressed": 1,
+      "survival_sig": 1,
+      "known_brca": 1,
+      "validation_score": 7.85
+    },
+    {
+      "final_rank": 4,
+      "drug_id": 2048,
+      "drug_name": "Vinorelbine",
+      "target": "Microtubule destabiliser",
+      "pathway": "Mitosis",
+      "mean_pred_ic50": -1.5775554,
+      "mean_true_ic50": -2.7805393,
+      "sensitivity_rate": 1.0,
+      "target_expressed": 1,
+      "survival_sig": 1,
+      "known_brca": 1,
+      "validation_score": 9.2
+    },
+    {
+      "final_rank": 5,
+      "drug_id": 1004,
+      "drug_name": "Vinblastine",
+      "target": "Microtubule destabiliser",
+      "pathway": "Mitosis",
+      "mean_pred_ic50": -1.4824135,
+      "mean_true_ic50": -2.7355084,
+      "sensitivity_rate": 1.0,
+      "target_expressed": 1,
+      "survival_sig": 1,
+      "known_brca": 1,
+      "validation_score": 9.15
+    },
+    {
+      "final_rank": 6,
+      "drug_id": 1808,
+      "drug_name": "Topotecan",
+      "target": "TOP1",
+      "pathway": "DNA replication",
+      "mean_pred_ic50": -0.8852633,
+      "mean_true_ic50": 1.1310672,
+      "sensitivity_rate": 0.8846153846153846,
+      "target_expressed": 1,
+      "survival_sig": 1,
+      "known_brca": 1,
+      "validation_score": 7.6
+    },
+    {
+      "final_rank": 7,
+      "drug_id": 1034,
+      "drug_name": "Staurosporine",
+      "target": "Broad spectrum kinase inhibitor",
+      "pathway": "RTK signaling",
+      "mean_pred_ic50": -0.2666945,
+      "mean_true_ic50": -2.5313642,
+      "sensitivity_rate": 1.0,
+      "target_expressed": 1,
+      "survival_sig": 1,
+      "known_brca": 1,
+      "validation_score": 7.55
+    },
+    {
+      "final_rank": 8,
+      "drug_id": 1088,
+      "drug_name": "Irinotecan",
+      "target": "TOP1",
+      "pathway": "DNA replication",
+      "mean_pred_ic50": 0.34598753,
+      "mean_true_ic50": 3.9106271,
+      "sensitivity_rate": 0.3214285714285714,
+      "target_expressed": 1,
+      "survival_sig": 1,
+      "known_brca": 1,
+      "validation_score": 7.45
+    },
+    {
+      "final_rank": 9,
+      "drug_id": 1026,
+      "drug_name": "Tanespimycin",
+      "target": "HSP90",
+      "pathway": "Protein stability and degradation",
+      "mean_pred_ic50": 0.5398705,
+      "mean_true_ic50": -0.13994817,
+      "sensitivity_rate": 1.0,
+      "target_expressed": 1,
+      "survival_sig": 1,
+      "known_brca": 0,
+      "validation_score": 6.9
+    },
+    {
+      "final_rank": 10,
+      "drug_id": 1511,
+      "drug_name": "Epirubicin",
+      "target": "Anthracycline",
+      "pathway": "DNA replication",
+      "mean_pred_ic50": 0.6785437,
+      "mean_true_ic50": 0.062827714,
+      "sensitivity_rate": 1.0,
+      "target_expressed": 1,
+      "survival_sig": 1,
+      "known_brca": 1,
+      "validation_score": 8.85
+    },
+    {
+      "final_rank": 11,
+      "drug_id": 1084,
+      "drug_name": "Rapamycin",
+      "target": "MTORC1",
+      "pathway": "PI3K/MTOR signaling",
+      "mean_pred_ic50": 0.77469987,
+      "mean_true_ic50": -2.5873635,
+      "sensitivity_rate": 1.0,
+      "target_expressed": 1,
+      "survival_sig": 1,
+      "known_brca": 1,
+      "validation_score": 8.8
+    },
+    {
+      "final_rank": 12,
+      "drug_id": 1862,
+      "drug_name": "MG-132",
+      "target": "Proteasome, CAPN1",
+      "pathway": "Protein stability and degradation",
+      "mean_pred_ic50": 0.9555576,
+      "mean_true_ic50": -1.20403,
+      "sensitivity_rate": 1.0,
+      "target_expressed": 1,
+      "survival_sig": 1,
+      "known_brca": 0,
+      "validation_score": 6.65
+    },
+    {
+      "final_rank": 13,
+      "drug_id": 1191,
+      "drug_name": "Bortezomib",
+      "target": "Proteasome",
+      "pathway": "Protein stability and degradation",
+      "mean_pred_ic50": 1.2839334,
+      "mean_true_ic50": -5.1592407,
+      "sensitivity_rate": 1.0,
+      "target_expressed": 1,
+      "survival_sig": 1,
+      "known_brca": 1,
+      "validation_score": 8.55
+    },
+    {
+      "final_rank": 14,
+      "drug_id": 1011,
+      "drug_name": "Navitoclax",
+      "target": "BCL2, BCL-XL, BCL-W",
+      "pathway": "Apoptosis regulation",
+      "mean_pred_ic50": 1.7589177,
+      "mean_true_ic50": 1.7700702,
+      "sensitivity_rate": 0.9310344827586208,
+      "target_expressed": 1,
+      "survival_sig": 1,
+      "known_brca": 0,
+      "validation_score": 6.25
+    },
+    {
+      "final_rank": 15,
+      "drug_id": 1003,
+      "drug_name": "Camptothecin",
+      "target": "TOP1",
+      "pathway": "DNA replication",
+      "mean_pred_ic50": 1.8269312,
+      "mean_true_ic50": -0.8017532,
+      "sensitivity_rate": 1.0,
+      "target_expressed": 1,
+      "survival_sig": 1,
+      "known_brca": 1,
+      "validation_score": 8.15
+    }
+  ],
+  "all_30_scores": [
+    {
+      "drug_id": 1819,
+      "drug_name": "Docetaxel",
+      "target": "Microtubule stabiliser",
+      "pathway": "Mitosis",
+      "mean_pred_ic50": -4.3071065,
+      "sensitivity_rate": 0.92,
+      "target_expressed": 1,
+      "survival_sig": 1,
+      "known_brca": 1,
+      "validation_score": 9.45
+    },
+    {
+      "drug_id": 1080,
+      "drug_name": "Paclitaxel",
+      "target": "Microtubule stabiliser",
+      "pathway": "Mitosis",
+      "mean_pred_ic50": -3.4391427,
+      "sensitivity_rate": 1.0,
+      "target_expressed": 1,
+      "survival_sig": 1,
+      "known_brca": 1,
+      "validation_score": 9.4
+    },
+    {
+      "drug_id": 1811,
+      "drug_name": "Dactinomycin",
+      "target": "RNA polymerase",
+      "pathway": "Other",
+      "mean_pred_ic50": -2.999836,
+      "sensitivity_rate": 1.0,
+      "target_expressed": 1,
+      "survival_sig": 1,
+      "known_brca": 1,
+      "validation_score": 7.85
+    },
+    {
+      "drug_id": 1016,
+      "drug_name": "Temsirolimus",
+      "target": "MTOR",
+      "pathway": "PI3K/MTOR signaling",
+      "mean_pred_ic50": -2.30802,
+      "sensitivity_rate": 0.9230769230769232,
+      "target_expressed": 1,
+      "survival_sig": 0,
+      "known_brca": 0,
+      "validation_score": 4.8
+    },
+    {
+      "drug_id": 1024,
+      "drug_name": "Lestaurtinib",
+      "target": "FLT3, JAK2, NTRK1, NTRK2, NTRK3",
+      "pathway": "Other kinases",
+      "mean_pred_ic50": -1.7008339,
+      "sensitivity_rate": 0.9642857142857144,
+      "target_expressed": 0,
+      "survival_sig": 1,
+      "known_brca": 0,
+      "validation_score": 3.75
+    },
+    {
+      "drug_id": 2048,
+      "drug_name": "Vinorelbine",
+      "target": "Microtubule destabiliser",
+      "pathway": "Mitosis",
+      "mean_pred_ic50": -1.5775554,
+      "sensitivity_rate": 1.0,
+      "target_expressed": 1,
+      "survival_sig": 1,
+      "known_brca": 1,
+      "validation_score": 9.2
+    },
+    {
+      "drug_id": 1004,
+      "drug_name": "Vinblastine",
+      "target": "Microtubule destabiliser",
+      "pathway": "Mitosis",
+      "mean_pred_ic50": -1.4824135,
+      "sensitivity_rate": 1.0,
+      "target_expressed": 1,
+      "survival_sig": 1,
+      "known_brca": 1,
+      "validation_score": 9.15
+    },
+    {
+      "drug_id": 1808,
+      "drug_name": "Topotecan",
+      "target": "TOP1",
+      "pathway": "DNA replication",
+      "mean_pred_ic50": -0.8852633,
+      "sensitivity_rate": 0.8846153846153846,
+      "target_expressed": 1,
+      "survival_sig": 1,
+      "known_brca": 1,
+      "validation_score": 7.6
+    },
+    {
+      "drug_id": 1034,
+      "drug_name": "Staurosporine",
+      "target": "Broad spectrum kinase inhibitor",
+      "pathway": "RTK signaling",
+      "mean_pred_ic50": -0.2666945,
+      "sensitivity_rate": 1.0,
+      "target_expressed": 1,
+      "survival_sig": 1,
+      "known_brca": 1,
+      "validation_score": 7.55
+    },
+    {
+      "drug_id": 1809,
+      "drug_name": "Teniposide",
+      "target": "<NA>",
+      "pathway": "DNA replication",
+      "mean_pred_ic50": -0.15287615,
+      "sensitivity_rate": 0.8846153846153846,
+      "target_expressed": 1,
+      "survival_sig": 1,
+      "known_brca": 0,
+      "validation_score": 5.5
+    },
+    {
+      "drug_id": 1088,
+      "drug_name": "Irinotecan",
+      "target": "TOP1",
+      "pathway": "DNA replication",
+      "mean_pred_ic50": 0.34598753,
+      "sensitivity_rate": 0.3214285714285714,
+      "target_expressed": 1,
+      "survival_sig": 1,
+      "known_brca": 1,
+      "validation_score": 7.45
+    },
+    {
+      "drug_id": 1026,
+      "drug_name": "Tanespimycin",
+      "target": "HSP90",
+      "pathway": "Protein stability and degradation",
+      "mean_pred_ic50": 0.5398705,
+      "sensitivity_rate": 1.0,
+      "target_expressed": 1,
+      "survival_sig": 1,
+      "known_brca": 0,
+      "validation_score": 6.9
+    },
+    {
+      "drug_id": 1511,
+      "drug_name": "Epirubicin",
+      "target": "Anthracycline",
+      "pathway": "DNA replication",
+      "mean_pred_ic50": 0.6785437,
+      "sensitivity_rate": 1.0,
+      "target_expressed": 1,
+      "survival_sig": 1,
+      "known_brca": 1,
+      "validation_score": 8.85
+    },
+    {
+      "drug_id": 1084,
+      "drug_name": "Rapamycin",
+      "target": "MTORC1",
+      "pathway": "PI3K/MTOR signaling",
+      "mean_pred_ic50": 0.77469987,
+      "sensitivity_rate": 1.0,
+      "target_expressed": 1,
+      "survival_sig": 1,
+      "known_brca": 1,
+      "validation_score": 8.8
+    },
+    {
+      "drug_id": 1845,
+      "drug_name": "Schweinfurthin A",
+      "target": "<NA>",
+      "pathway": "Unclassified",
+      "mean_pred_ic50": 0.93365663,
+      "sensitivity_rate": 0.8076923076923077,
+      "target_expressed": 1,
+      "survival_sig": 1,
+      "known_brca": 0,
+      "validation_score": 3.75
+    },
+    {
+      "drug_id": 1593,
+      "drug_name": "Entinostat",
+      "target": "HDAC1, HDAC3",
+      "pathway": "Chromatin histone acetylation",
+      "mean_pred_ic50": 0.95356786,
+      "sensitivity_rate": 0.7857142857142857,
+      "target_expressed": 1,
+      "survival_sig": 0,
+      "known_brca": 0,
+      "validation_score": 2.7
+    },
+    {
+      "drug_id": 1862,
+      "drug_name": "MG-132",
+      "target": "Proteasome, CAPN1",
+      "pathway": "Protein stability and degradation",
+      "mean_pred_ic50": 0.9555576,
+      "sensitivity_rate": 1.0,
+      "target_expressed": 1,
+      "survival_sig": 1,
+      "known_brca": 0,
+      "validation_score": 6.65
+    },
+    {
+      "drug_id": 1039,
+      "drug_name": "SL0101",
+      "target": "RSK, AURKB, PIM1, PIM3",
+      "pathway": "Other kinases",
+      "mean_pred_ic50": 0.98932534,
+      "sensitivity_rate": 0.0,
+      "target_expressed": 1,
+      "survival_sig": 1,
+      "known_brca": 0,
+      "validation_score": 3.6
+    },
+    {
+      "drug_id": 1191,
+      "drug_name": "Bortezomib",
+      "target": "Proteasome",
+      "pathway": "Protein stability and degradation",
+      "mean_pred_ic50": 1.2839334,
+      "sensitivity_rate": 1.0,
+      "target_expressed": 1,
+      "survival_sig": 1,
+      "known_brca": 1,
+      "validation_score": 8.55
+    },
+    {
+      "drug_id": 1849,
+      "drug_name": "Sabutoclax",
+      "target": "BCL2, BCL-XL, BFL1, MCL1",
+      "pathway": "Apoptosis regulation",
+      "mean_pred_ic50": 1.3245382,
+      "sensitivity_rate": 1.0,
+      "target_expressed": 1,
+      "survival_sig": 0,
+      "known_brca": 0,
+      "validation_score": 4.0
+    },
+    {
+      "drug_id": 1617,
+      "drug_name": "AZD5582",
+      "target": "XIAP, cIAP",
+      "pathway": "Apoptosis regulation",
+      "mean_pred_ic50": 1.3485898,
+      "sensitivity_rate": 0.7692307692307693,
+      "target_expressed": 0,
+      "survival_sig": 0,
+      "known_brca": 0,
+      "validation_score": 0.44999999999999996
+    },
+    {
+      "drug_id": 1817,
+      "drug_name": "Romidepsin",
+      "target": "HDAC1, HDAC2, HDAC3, HDAC8",
+      "pathway": "Chromatin histone acetylation",
+      "mean_pred_ic50": 1.5493195,
+      "sensitivity_rate": 1.0,
+      "target_expressed": 1,
+      "survival_sig": 0,
+      "known_brca": 1,
+      "validation_score": 5.9
+    },
+    {
+      "drug_id": 1853,
+      "drug_name": "OF-1",
+      "target": "BRPF1B, BRPF2",
+      "pathway": "Chromatin histone acetylation",
+      "mean_pred_ic50": 1.7037646,
+      "sensitivity_rate": 0.4074074074074074,
+      "target_expressed": 1,
+      "survival_sig": 1,
+      "known_brca": 0,
+      "validation_score": 4.85
+    },
+    {
+      "drug_id": 1843,
+      "drug_name": "LMP744",
+      "target": "TOP1",
+      "pathway": "DNA replication",
+      "mean_pred_ic50": 1.7095236,
+      "sensitivity_rate": 0.8846153846153846,
+      "target_expressed": 1,
+      "survival_sig": 1,
+      "known_brca": 0,
+      "validation_score": 4.8
+    },
+    {
+      "drug_id": 1011,
+      "drug_name": "Navitoclax",
+      "target": "BCL2, BCL-XL, BCL-W",
+      "pathway": "Apoptosis regulation",
+      "mean_pred_ic50": 1.7589177,
+      "sensitivity_rate": 0.9310344827586208,
+      "target_expressed": 1,
+      "survival_sig": 1,
+      "known_brca": 0,
+      "validation_score": 6.25
+    },
+    {
+      "drug_id": 1058,
+      "drug_name": "Pictilisib",
+      "target": "PI3K (class 1)",
+      "pathway": "PI3K/MTOR signaling",
+      "mean_pred_ic50": 1.7894241,
+      "sensitivity_rate": 0.9655172413793104,
+      "target_expressed": 1,
+      "survival_sig": 1,
+      "known_brca": 0,
+      "validation_score": 6.2
+    },
+    {
+      "drug_id": 1003,
+      "drug_name": "Camptothecin",
+      "target": "TOP1",
+      "pathway": "DNA replication",
+      "mean_pred_ic50": 1.8269312,
+      "sensitivity_rate": 1.0,
+      "target_expressed": 1,
+      "survival_sig": 1,
+      "known_brca": 1,
+      "validation_score": 8.15
+    },
+    {
+      "drug_id": 1909,
+      "drug_name": "Venetoclax",
+      "target": "BCL2",
+      "pathway": "Apoptosis regulation",
+      "mean_pred_ic50": 1.8425761,
+      "sensitivity_rate": 0.75,
+      "target_expressed": 1,
+      "survival_sig": 1,
+      "known_brca": 0,
+      "validation_score": 4.6
+    },
+    {
+      "drug_id": 1941,
+      "drug_name": "Sepantronium bromide",
+      "target": "BIRC5",
+      "pathway": "Apoptosis regulation",
+      "mean_pred_ic50": 1.8506709,
+      "sensitivity_rate": 1.0,
+      "target_expressed": 1,
+      "survival_sig": 1,
+      "known_brca": 0,
+      "validation_score": 6.05
+    },
+    {
+      "drug_id": 1810,
+      "drug_name": "Mitoxantrone",
+      "target": "TOP2",
+      "pathway": "DNA replication",
+      "mean_pred_ic50": 1.8507383,
+      "sensitivity_rate": 0.7692307692307693,
+      "target_expressed": 1,
+      "survival_sig": 1,
+      "known_brca": 0,
+      "validation_score": 4.5
+    }
+  ]
+}

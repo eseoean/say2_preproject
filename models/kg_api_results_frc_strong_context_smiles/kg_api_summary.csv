@@ -1,0 +1,16 @@
+drug_name,category,combined_score,api_success_count,api_error_count,basic_info,faers_count,trial_count,target_count,pathway_count,pubmed_general_count,pubmed_breast_cancer_count
+Staurosporine,Candidate,14.5,7,0,Yes,0,2,1,1,50,50
+Docetaxel,Approved,14.33,7,0,Yes,10,10,1,1,50,50
+Vinorelbine,Approved,14.0,7,0,Yes,10,10,1,1,50,50
+Topotecan,Candidate,14.0,7,0,Yes,10,10,1,1,50,50
+Paclitaxel,Approved,13.83,7,0,Yes,10,10,1,1,50,50
+Dactinomycin,Approved,13.5,7,0,Yes,10,2,1,1,50,50
+Vinblastine,Approved,13.33,7,0,Yes,10,10,1,1,50,50
+Navitoclax,Candidate,11.0,7,0,Yes,10,1,3,1,50,50
+Camptothecin,Candidate,10.5,7,0,Yes,10,10,1,1,50,50
+Rapamycin,Approved,10.21,7,0,Yes,10,10,1,1,50,50
+Irinotecan,Candidate,9.56,7,0,Yes,10,10,1,1,50,50
+MG-132,Candidate,8.67,7,0,Yes,0,0,2,1,50,50
+Tanespimycin,Candidate,8.5,7,0,Yes,10,5,1,1,50,50
+Bortezomib,Approved,6.79,7,0,Yes,10,10,1,1,50,50
+Epirubicin,Caution,5.83,7,0,Yes,10,10,1,1,50,50

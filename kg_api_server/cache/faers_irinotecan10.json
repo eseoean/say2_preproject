@@ -1,0 +1,54 @@
+{
+  "data": [
+    {
+      "event": "DIARRHOEA",
+      "count": 5765,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "NEUTROPENIA",
+      "count": 3339,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "NAUSEA",
+      "count": 3169,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "DISEASE PROGRESSION",
+      "count": 2865,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "VOMITING",
+      "count": 2758,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "OFF LABEL USE",
+      "count": 2660,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "FATIGUE",
+      "count": 1993,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "FEBRILE NEUTROPENIA",
+      "count": 1834,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "THROMBOCYTOPENIA",
+      "count": 1709,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "DEATH",
+      "count": 1695,
+      "source": "openfda_faers"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+drug_id,mean_pred_ic50,mean_true_ic50,sensitivity_rate,n_samples,target_expressed,brca_pathway,drug_name,target,pathway,survival_sig,survival_p,known_brca,validation_score,final_rank
+1819,-4.3071065,-1.764844,0.92,25,1,1,Docetaxel,Microtubule stabiliser,Mitosis,1,0.01,1,9.45,1
+1080,-3.4391427,-2.779678,1.0,28,1,1,Paclitaxel,Microtubule stabiliser,Mitosis,1,0.01,1,9.4,2
+1811,-2.999836,-1.8154681,1.0,26,1,0,Dactinomycin,RNA polymerase,Other,1,0.01,1,7.85,3
+2048,-1.5775554,-2.7805393,1.0,28,1,1,Vinorelbine,Microtubule destabiliser,Mitosis,1,0.01,1,9.2,4
+1004,-1.4824135,-2.7355084,1.0,27,1,1,Vinblastine,Microtubule destabiliser,Mitosis,1,0.01,1,9.15,5
+1808,-0.8852633,1.1310672,0.8846153846153846,26,1,1,Topotecan,TOP1,DNA replication,1,6.331006623497154e-05,1,7.6,6
+1034,-0.2666945,-2.5313642,1.0,29,1,0,Staurosporine,Broad spectrum kinase inhibitor,RTK signaling,1,0.01,1,7.55,7
+1088,0.34598753,3.9106271,0.3214285714285714,28,1,1,Irinotecan,TOP1,DNA replication,1,6.331006623497154e-05,1,7.45,8
+1026,0.5398705,-0.13994817,1.0,28,1,1,Tanespimycin,HSP90,Protein stability and degradation,1,0.01,0,6.9,9
+1511,0.6785437,0.062827714,1.0,28,1,1,Epirubicin,Anthracycline,DNA replication,1,0.01,1,8.85,10
+1084,0.77469987,-2.5873635,1.0,28,1,1,Rapamycin,MTORC1,PI3K/MTOR signaling,1,0.01,1,8.8,11
+1862,0.9555576,-1.20403,1.0,29,1,1,MG-132,"Proteasome, CAPN1",Protein stability and degradation,1,0.002272273804491654,0,6.65,12
+1191,1.2839334,-5.1592407,1.0,28,1,1,Bortezomib,Proteasome,Protein stability and degradation,1,0.01,1,8.55,13
+1011,1.7589177,1.7700702,0.9310344827586208,29,1,1,Navitoclax,"BCL2, BCL-XL, BCL-W",Apoptosis regulation,1,4.2934240338027153e-10,0,6.25,14
+1003,1.8269312,-0.8017532,1.0,28,1,1,Camptothecin,TOP1,DNA replication,1,6.331006623497154e-05,1,8.15,15

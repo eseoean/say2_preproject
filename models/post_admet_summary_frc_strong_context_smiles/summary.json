@@ -1,0 +1,16 @@
+{
+  "ensemble_name": "FRC (FlatMLP + ResidualMLP + CrossAttention)",
+  "input_bundle": "exact slim + strong context + SMILES",
+  "n_total": 15,
+  "n_approved": 7,
+  "n_candidate": 7,
+  "n_caution": 1,
+  "top5_final": [
+    "Staurosporine",
+    "Docetaxel",
+    "Vinorelbine",
+    "Topotecan",
+    "Paclitaxel"
+  ],
+  "assay_count": 22
+}

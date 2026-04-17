@@ -1,0 +1,37 @@
+{
+  "drug_id": 1941,
+  "drug_name": "Sepantronium bromide",
+  "category": "Candidate",
+  "combined_score": 16.5,
+  "timestamp": "2026-04-15 22:02:33",
+  "data_collected": {
+    "pubmed_general": {
+      "ok": true,
+      "query": "Sepantronium bromide",
+      "data": [
+        {
+          "title": "Sepantronium bromide and breast cancer relevance summary",
+          "journal": "Local seed catalog",
+          "year": 2026,
+          "pmid": null,
+          "summary": "재창출 관점의 exploratory candidate로 적절합니다.",
+          "source": "local_fallback"
+        }
+      ],
+      "source": "local_fallback"
+    },
+    "pubmed_breast_cancer": {
+      "ok": true,
+      "query": "Sepantronium bromide breast cancer",
+      "data": [],
+      "source": "local_fallback"
+    }
+  },
+  "errors": [
+    "basic_info: URL can't contain control characters. '/api/drug/Sepantronium bromide' (found at least ' ')",
+    "side_effects: URL can't contain control characters. '/api/drug/Sepantronium bromide/side_effects' (found at least ' ')",
+    "trials: URL can't contain control characters. '/api/drug/Sepantronium bromide/trials' (found at least ' ')",
+    "targets: URL can't contain control characters. '/api/drug/Sepantronium bromide/targets' (found at least ' ')",
+    "pathways: URL can't contain control characters. '/api/drug/Sepantronium bromide/pathways' (found at least ' ')"
+  ]
+}

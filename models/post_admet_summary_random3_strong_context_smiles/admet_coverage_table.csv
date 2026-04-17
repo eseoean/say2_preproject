@@ -1,0 +1,23 @@
+category,name,type,matched
+Absorption,Caco-2 Permeability,회귀,4/15
+Absorption,HIA (Human Intestinal Absorption),이진,0/15
+Absorption,P-gp Inhibitor,이진,2/15
+Absorption,Oral Bioavailability (F>20%),이진,2/15
+Distribution,BBB Penetration,이진,5/15
+Distribution,Plasma Protein Binding Rate,회귀,3/15
+Distribution,Volume of Distribution,회귀,9/15
+Metabolism,CYP2C9 Inhibitor,이진,4/15
+Metabolism,CYP2D6 Inhibitor,이진,4/15
+Metabolism,CYP3A4 Inhibitor,이진,3/15
+Metabolism,CYP2C9 Substrate,이진,6/15
+Metabolism,CYP2D6 Substrate,이진,6/15
+Metabolism,CYP3A4 Substrate,이진,6/15
+Excretion,Hepatocyte Clearance,회귀,3/15
+Excretion,Microsome Clearance,회귀,2/15
+Excretion,Half-Life,회귀,7/15
+Toxicity,Ames Mutagenicity,이진,1/15
+Toxicity,DILI (Drug-Induced Liver Injury),이진,6/15
+Toxicity,hERG Cardiotoxicity,이진,0/15
+Toxicity,Acute Toxicity (LD50),회귀,3/15
+Properties,Lipophilicity (logD),회귀,2/15
+Properties,Aqueous Solubility,회귀,1/15

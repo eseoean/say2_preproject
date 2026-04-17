@@ -1,0 +1,61 @@
+{
+  "input_features_path": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match/features_slim_exact_repo.parquet",
+  "input_y_path": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match/y_train_exact_repo.npy",
+  "output_X_path": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match_ml_strong_context_smiles/X_ml_exact_slim_strong_context_smiles.npy",
+  "output_y_path": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match_ml_strong_context_smiles/y_ml_exact_slim_strong_context_smiles.npy",
+  "output_keys_path": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match_ml_strong_context_smiles/keys_ml_exact_slim_strong_context_smiles.parquet",
+  "rows": 6366,
+  "feature_dim_total": 5625,
+  "feature_dim_numeric_slim": 5529,
+  "feature_dim_context_onehot": 32,
+  "feature_dim_smiles_svd": 64,
+  "strong_context_columns": [
+    "TCGA_DESC",
+    "PATHWAY_NAME_NORMALIZED",
+    "classification",
+    "drug_bridge_strength",
+    "stage3_resolution_status"
+  ],
+  "context_summary": {
+    "variant": "reconstructed_context_full",
+    "matched_rows": 6366,
+    "unmatched_rows": 0,
+    "match_rate": 1.0,
+    "categorical_columns": [
+      "classification",
+      "drug_bridge_strength",
+      "stage3_resolution_status",
+      "WEBRELEASE",
+      "drugbank_match_rule",
+      "chembl_match_rule",
+      "lincs_match_rule",
+      "admet_match_rule",
+      "cell_bridge_match_rule",
+      "TCGA_DESC",
+      "PATHWAY_NAME_NORMALIZED"
+    ],
+    "column_non_missing_rate": {
+      "classification": 1.0,
+      "drug_bridge_strength": 1.0,
+      "stage3_resolution_status": 1.0,
+      "WEBRELEASE": 1.0,
+      "drugbank_match_rule": 0.07131636820609488,
+      "chembl_match_rule": 0.544454916745209,
+      "lincs_match_rule": 0.4073201382343701,
+      "admet_match_rule": 0.0,
+      "cell_bridge_match_rule": 1.0,
+      "TCGA_DESC": 1.0,
+      "PATHWAY_NAME_NORMALIZED": 1.0
+    },
+    "coverage_note": "Context reconstructed from current pipeline sources: cellline annotation, GDSC drug annotation, drug catalog, target mapping, and current pair feature availability."
+  },
+  "smiles_summary": {
+    "tfidf_shape": [
+      243,
+      3838
+    ],
+    "svd_dim": 64,
+    "explained_variance_sum": 0.6046993089779725,
+    "vectorizer_vocab_size": 3838
+  }
+}

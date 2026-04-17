@@ -3,9 +3,9 @@
   "description": "METABRIC External Validation (A+B+C)",
   "method_a": {
     "name": "Target Gene Expression Validation",
-    "n_targets_expressed": 29,
-    "n_brca_pathway": 22,
-    "n_total": 30,
+    "n_targets_expressed": 27,
+    "n_brca_pathway": 21,
+    "n_total": 28,
     "details": [
       {
         "drug_id": 1191,
@@ -76,18 +76,6 @@
         "matched_genes": []
       },
       {
-        "drug_id": 1819,
-        "drug_name": "Docetaxel",
-        "target": "Microtubule stabiliser",
-        "pathway": "Mitosis",
-        "target_expressed": true,
-        "mean_expr": 0.0,
-        "pct_patients_expressing": 0.0,
-        "expr_rank_pct": 50.0,
-        "brca_pathway_relevant": true,
-        "matched_genes": []
-      },
-      {
         "drug_id": 1004,
         "drug_name": "Vinblastine",
         "target": "Microtubule destabiliser",
@@ -121,18 +109,6 @@
         "pct_patients_expressing": 0.0,
         "expr_rank_pct": 50.0,
         "brca_pathway_relevant": true,
-        "matched_genes": []
-      },
-      {
-        "drug_id": 1811,
-        "drug_name": "Dactinomycin",
-        "target": "RNA polymerase",
-        "pathway": "Other",
-        "target_expressed": true,
-        "mean_expr": 0.0,
-        "pct_patients_expressing": 0.0,
-        "expr_rank_pct": 50.0,
-        "brca_pathway_relevant": false,
         "matched_genes": []
       },
       {
@@ -381,7 +357,7 @@
         "target": "FLT3, JAK2, NTRK1, NTRK2, NTRK3",
         "pathway": "Other kinases",
         "target_expressed": false,
-        "mean_expr": 5.843232674337856,
+        "mean_expr": 5.843232674337857,
         "pct_patients_expressing": 0.2797979797979798,
         "expr_rank_pct": 42.94034849293792,
         "brca_pathway_relevant": false,
@@ -409,7 +385,7 @@
   },
   "method_b": {
     "name": "Survival Stratification",
-    "n_significant": 28,
+    "n_significant": 26,
     "rsf_c_index": 0.8208570360404563,
     "rsf_auroc": 0.8462340823307855,
     "details": [
@@ -469,17 +445,6 @@
         "n_low": NaN
       },
       {
-        "drug_id": 1819,
-        "drug_name": "Docetaxel",
-        "survival_significant": true,
-        "log_rank_p": 0.01,
-        "median_os_high": 0.0,
-        "median_os_low": 0.0,
-        "hr_direction": "pathway-based",
-        "n_high": NaN,
-        "n_low": NaN
-      },
-      {
         "drug_id": 1004,
         "drug_name": "Vinblastine",
         "survival_significant": true,
@@ -504,17 +469,6 @@
       {
         "drug_id": 2048,
         "drug_name": "Vinorelbine",
-        "survival_significant": true,
-        "log_rank_p": 0.01,
-        "median_os_high": 0.0,
-        "median_os_low": 0.0,
-        "hr_direction": "pathway-based",
-        "n_high": NaN,
-        "n_low": NaN
-      },
-      {
-        "drug_id": 1811,
-        "drug_name": "Dactinomycin",
         "survival_significant": true,
         "log_rank_p": 0.01,
         "median_os_high": 0.0,
@@ -759,23 +713,23 @@
         "total": 10
       },
       "P@15": {
-        "precision": 0.9333333333333333,
-        "hits": 14,
+        "precision": 0.8,
+        "hits": 12,
         "total": 15
       },
       "P@20": {
-        "precision": 0.75,
-        "hits": 15,
+        "precision": 0.65,
+        "hits": 13,
         "total": 20
       },
       "P@25": {
-        "precision": 0.64,
-        "hits": 16,
+        "precision": 0.56,
+        "hits": 14,
         "total": 25
       },
       "P@30": {
-        "precision": 0.5333333333333333,
-        "hits": 16,
+        "precision": 0.4666666666666667,
+        "hits": 14,
         "total": 30
       }
     },
@@ -808,6 +762,34 @@
     },
     {
       "final_rank": 2,
+      "drug_id": 1817,
+      "drug_name": "Romidepsin",
+      "target": "HDAC1, HDAC2, HDAC3, HDAC8",
+      "pathway": "Chromatin histone acetylation",
+      "mean_pred_ic50": -4.7611876,
+      "mean_true_ic50": -5.024497,
+      "sensitivity_rate": 1.0,
+      "target_expressed": 1,
+      "survival_sig": 0,
+      "known_brca": 1,
+      "validation_score": 6.9
+    },
+    {
+      "final_rank": 3,
+      "drug_id": 1941,
+      "drug_name": "Sepantronium bromide",
+      "target": "BIRC5",
+      "pathway": "Apoptosis regulation",
+      "mean_pred_ic50": -3.73555,
+      "mean_true_ic50": -3.8589985,
+      "sensitivity_rate": 1.0,
+      "target_expressed": 1,
+      "survival_sig": 1,
+      "known_brca": 0,
+      "validation_score": 7.35
+    },
+    {
+      "final_rank": 4,
       "drug_id": 1911,
       "drug_name": "Dactinomycin",
       "target": "RNA polymerase",
@@ -821,7 +803,7 @@
       "validation_score": 7.8
     },
     {
-      "final_rank": 3,
+      "final_rank": 5,
       "drug_id": 1007,
       "drug_name": "Docetaxel",
       "target": "Microtubule stabiliser",
@@ -835,21 +817,7 @@
       "validation_score": 9.25
     },
     {
-      "final_rank": 4,
-      "drug_id": 1819,
-      "drug_name": "Docetaxel",
-      "target": "Microtubule stabiliser",
-      "pathway": "Mitosis",
-      "mean_pred_ic50": -2.8111129,
-      "mean_true_ic50": -1.764844,
-      "sensitivity_rate": 0.92,
-      "target_expressed": 1,
-      "survival_sig": 1,
-      "known_brca": 1,
-      "validation_score": 9.2
-    },
-    {
-      "final_rank": 5,
+      "final_rank": 6,
       "drug_id": 1004,
       "drug_name": "Vinblastine",
       "target": "Microtubule destabiliser",
@@ -860,10 +828,10 @@
       "target_expressed": 1,
       "survival_sig": 1,
       "known_brca": 1,
-      "validation_score": 9.15
+      "validation_score": 9.2
     },
     {
-      "final_rank": 6,
+      "final_rank": 7,
       "drug_id": 1080,
       "drug_name": "Paclitaxel",
       "target": "Microtubule stabiliser",
@@ -874,10 +842,10 @@
       "target_expressed": 1,
       "survival_sig": 1,
       "known_brca": 1,
-      "validation_score": 9.1
+      "validation_score": 9.15
     },
     {
-      "final_rank": 7,
+      "final_rank": 8,
       "drug_id": 2048,
       "drug_name": "Vinorelbine",
       "target": "Microtubule destabiliser",
@@ -888,21 +856,7 @@
       "target_expressed": 1,
       "survival_sig": 1,
       "known_brca": 1,
-      "validation_score": 9.05
-    },
-    {
-      "final_rank": 8,
-      "drug_id": 1811,
-      "drug_name": "Dactinomycin",
-      "target": "RNA polymerase",
-      "pathway": "Other",
-      "mean_pred_ic50": -2.5954032,
-      "mean_true_ic50": -1.8154681,
-      "sensitivity_rate": 1.0,
-      "target_expressed": 1,
-      "survival_sig": 1,
-      "known_brca": 1,
-      "validation_score": 7.5
+      "validation_score": 9.1
     },
     {
       "final_rank": 9,
@@ -916,7 +870,7 @@
       "target_expressed": 1,
       "survival_sig": 1,
       "known_brca": 1,
-      "validation_score": 8.95
+      "validation_score": 9.05
     },
     {
       "final_rank": 10,
@@ -930,7 +884,7 @@
       "target_expressed": 1,
       "survival_sig": 1,
       "known_brca": 1,
-      "validation_score": 7.4
+      "validation_score": 7.5
     },
     {
       "final_rank": 11,
@@ -944,7 +898,7 @@
       "target_expressed": 1,
       "survival_sig": 1,
       "known_brca": 1,
-      "validation_score": 8.85
+      "validation_score": 8.95
     },
     {
       "final_rank": 12,
@@ -958,7 +912,7 @@
       "target_expressed": 1,
       "survival_sig": 1,
       "known_brca": 1,
-      "validation_score": 8.8
+      "validation_score": 8.9
     },
     {
       "final_rank": 13,
@@ -972,7 +926,7 @@
       "target_expressed": 1,
       "survival_sig": 1,
       "known_brca": 1,
-      "validation_score": 8.75
+      "validation_score": 8.85
     },
     {
       "final_rank": 14,
@@ -986,7 +940,7 @@
       "target_expressed": 1,
       "survival_sig": 1,
       "known_brca": 1,
-      "validation_score": 8.55
+      "validation_score": 8.65
     },
     {
       "final_rank": 15,
@@ -1000,7 +954,7 @@
       "target_expressed": 1,
       "survival_sig": 1,
       "known_brca": 1,
-      "validation_score": 8.25
+      "validation_score": 8.35
     }
   ],
   "all_30_scores": [
@@ -1065,18 +1019,6 @@
       "validation_score": 9.25
     },
     {
-      "drug_id": 1819,
-      "drug_name": "Docetaxel",
-      "target": "Microtubule stabiliser",
-      "pathway": "Mitosis",
-      "mean_pred_ic50": -2.8111129,
-      "sensitivity_rate": 0.92,
-      "target_expressed": 1,
-      "survival_sig": 1,
-      "known_brca": 1,
-      "validation_score": 9.2
-    },
-    {
       "drug_id": 1004,
       "drug_name": "Vinblastine",
       "target": "Microtubule destabiliser",
@@ -1086,7 +1028,7 @@
       "target_expressed": 1,
       "survival_sig": 1,
       "known_brca": 1,
-      "validation_score": 9.15
+      "validation_score": 9.2
     },
     {
       "drug_id": 1080,
@@ -1098,7 +1040,7 @@
       "target_expressed": 1,
       "survival_sig": 1,
       "known_brca": 1,
-      "validation_score": 9.1
+      "validation_score": 9.15
     },
     {
       "drug_id": 2048,
@@ -1110,19 +1052,7 @@
       "target_expressed": 1,
       "survival_sig": 1,
       "known_brca": 1,
-      "validation_score": 9.05
-    },
-    {
-      "drug_id": 1811,
-      "drug_name": "Dactinomycin",
-      "target": "RNA polymerase",
-      "pathway": "Other",
-      "mean_pred_ic50": -2.5954032,
-      "sensitivity_rate": 1.0,
-      "target_expressed": 1,
-      "survival_sig": 1,
-      "known_brca": 1,
-      "validation_score": 7.5
+      "validation_score": 9.1
     },
     {
       "drug_id": 1084,
@@ -1134,7 +1064,7 @@
       "target_expressed": 1,
       "survival_sig": 1,
       "known_brca": 1,
-      "validation_score": 8.95
+      "validation_score": 9.05
     },
     {
       "drug_id": 1034,
@@ -1146,7 +1076,7 @@
       "target_expressed": 1,
       "survival_sig": 1,
       "known_brca": 1,
-      "validation_score": 7.4
+      "validation_score": 7.5
     },
     {
       "drug_id": 1494,
@@ -1158,7 +1088,7 @@
       "target_expressed": 1,
       "survival_sig": 1,
       "known_brca": 1,
-      "validation_score": 8.85
+      "validation_score": 8.95
     },
     {
       "drug_id": 1180,
@@ -1170,7 +1100,7 @@
       "target_expressed": 1,
       "survival_sig": 1,
       "known_brca": 1,
-      "validation_score": 8.8
+      "validation_score": 8.9
     },
     {
       "drug_id": 1559,
@@ -1182,7 +1112,7 @@
       "target_expressed": 1,
       "survival_sig": 1,
       "known_brca": 1,
-      "validation_score": 8.75
+      "validation_score": 8.85
     },
     {
       "drug_id": 1248,
@@ -1194,7 +1124,7 @@
       "target_expressed": 1,
       "survival_sig": 1,
       "known_brca": 0,
-      "validation_score": 5.2
+      "validation_score": 5.3
     },
     {
       "drug_id": 1057,
@@ -1206,7 +1136,7 @@
       "target_expressed": 1,
       "survival_sig": 1,
       "known_brca": 0,
-      "validation_score": 6.65
+      "validation_score": 6.75
     },
     {
       "drug_id": 1862,
@@ -1218,7 +1148,7 @@
       "target_expressed": 1,
       "survival_sig": 1,
       "known_brca": 0,
-      "validation_score": 6.6
+      "validation_score": 6.7
     },
     {
       "drug_id": 1003,
@@ -1230,7 +1160,7 @@
       "target_expressed": 1,
       "survival_sig": 1,
       "known_brca": 1,
-      "validation_score": 8.55
+      "validation_score": 8.65
     },
     {
       "drug_id": 1026,
@@ -1242,7 +1172,7 @@
       "target_expressed": 1,
       "survival_sig": 1,
       "known_brca": 0,
-      "validation_score": 6.5
+      "validation_score": 6.6
     },
     {
       "drug_id": 1039,
@@ -1254,7 +1184,7 @@
       "target_expressed": 1,
       "survival_sig": 1,
       "known_brca": 0,
-      "validation_score": 3.45
+      "validation_score": 3.55
     },
     {
       "drug_id": 1849,
@@ -1266,7 +1196,7 @@
       "target_expressed": 1,
       "survival_sig": 0,
       "known_brca": 0,
-      "validation_score": 3.9
+      "validation_score": 4.0
     },
     {
       "drug_id": 1827,
@@ -1278,7 +1208,7 @@
       "target_expressed": 1,
       "survival_sig": 1,
       "known_brca": 0,
-      "validation_score": 4.85
+      "validation_score": 4.95
     },
     {
       "drug_id": 1825,
@@ -1290,7 +1220,7 @@
       "target_expressed": 1,
       "survival_sig": 1,
       "known_brca": 0,
-      "validation_score": 4.8
+      "validation_score": 4.9
     },
     {
       "drug_id": 1511,
@@ -1302,7 +1232,7 @@
       "target_expressed": 1,
       "survival_sig": 1,
       "known_brca": 1,
-      "validation_score": 8.25
+      "validation_score": 8.35
     },
     {
       "drug_id": 1059,
@@ -1314,7 +1244,7 @@
       "target_expressed": 1,
       "survival_sig": 1,
       "known_brca": 0,
-      "validation_score": 6.2
+      "validation_score": 6.3
     },
     {
       "drug_id": 1008,
@@ -1326,7 +1256,7 @@
       "target_expressed": 1,
       "survival_sig": 1,
       "known_brca": 0,
-      "validation_score": 6.15
+      "validation_score": 6.25
     },
     {
       "drug_id": 1086,
@@ -1338,7 +1268,7 @@
       "target_expressed": 1,
       "survival_sig": 1,
       "known_brca": 0,
-      "validation_score": 6.1
+      "validation_score": 6.2
     },
     {
       "drug_id": 1024,
@@ -1350,7 +1280,7 @@
       "target_expressed": 0,
       "survival_sig": 1,
       "known_brca": 0,
-      "validation_score": 2.55
+      "validation_score": 2.65
     },
     {
       "drug_id": 1926,
@@ -1362,7 +1292,7 @@
       "target_expressed": 1,
       "survival_sig": 1,
       "known_brca": 0,
-      "validation_score": 6.0
+      "validation_score": 6.1
     }
   ]
 }

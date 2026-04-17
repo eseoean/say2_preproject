@@ -1,0 +1,162 @@
+{
+  "data": [
+    {
+      "nct_id": "NCT01552434",
+      "title": "Bevacizumab and Temsirolimus Alone or in Combination With Valproic Acid or Cetuximab in Treating Patients With Advanced or Metastatic Malignancy or Other Benign Disease",
+      "phase": "PHASE1",
+      "status": "ACTIVE_NOT_RECRUITING",
+      "conditions": [
+        "Advanced Malignant Neoplasm",
+        "Castleman Disease",
+        "Digestive System Carcinoma",
+        "Erdheim-Chester Disease",
+        "Lip and Oral Cavity Carcinoma",
+        "Lymphangioleiomyomatosis",
+        "Malignant Endocrine Neoplasm",
+        "Malignant Female Reproductive System Neoplasm",
+        "Malignant Male Reproductive System Neoplasm",
+        "Malignant Neoplasm",
+        "Malignant Respiratory Tract Neoplasm",
+        "Malignant Thoracic Neoplasm",
+        "Malignant Urinary System Neoplasm",
+        "Mesothelial Neoplasm",
+        "Metastatic Malignant Neoplasm",
+        "Metastatic Urothelial Carcinoma",
+        "Neurofibromatosis Type 2",
+        "Recurrent Adult Soft Tissue Sarcoma",
+        "Recurrent Breast Carcinoma",
+        "Recurrent Childhood Soft Tissue Sarcoma",
+        "Recurrent Digestive System Carcinoma",
+        "Recurrent Female Reproductive System Carcinoma",
+        "Recurrent Male Reproductive System Carcinoma",
+        "Recurrent Malignant Neoplasm",
+        "Recurrent Pharyngeal Carcinoma",
+        "Recurrent Thyroid Gland Carcinoma",
+        "Refractory Malignant Neoplasm",
+        "Soft Tissue Neoplasm",
+        "Stage III Breast Cancer AJCC v7",
+        "Stage III Pharyngeal Cancer",
+        "Stage IIIA Breast Cancer AJCC v7",
+        "Stage IIIB Breast Cancer AJCC v7",
+        "Stage IIIC Breast Cancer AJCC v7",
+        "Stage IV Breast Cancer AJCC v6 and v7",
+        "Stage IV Pharyngeal Cancer",
+        "Stage IVA Pharyngeal Cancer",
+        "Stage IVB Pharyngeal Cancer",
+        "Stage IVC Pharyngeal Cancer",
+        "Thyroid Gland Neoplasm"
+      ],
+      "lead_sponsor": "M.D. Anderson Cancer Center",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT04022616",
+      "title": "Myeloid-Derived Suppressor Cell Function in Breast Cancer Patients",
+      "phase": "",
+      "status": "RECRUITING",
+      "conditions": [
+        "Breast Cancer"
+      ],
+      "lead_sponsor": "Ohio State University Comprehensive Cancer Center",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT02313051",
+      "title": "Everolimus trIal for Advanced prememopausaL Breast Cancer Patients",
+      "phase": "PHASE2",
+      "status": "UNKNOWN",
+      "conditions": [
+        "Metastatic Breast Cancer"
+      ],
+      "lead_sponsor": "Chinese Academy of Medical Sciences",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT03176238",
+      "title": "Study in Post-menopausal Women With Hormone Receptor Positive, HER2-negative Advanced Breast Cancer",
+      "phase": "PHASE3",
+      "status": "COMPLETED",
+      "conditions": [
+        "Post Menopausal Breast Cancer"
+      ],
+      "lead_sponsor": "Novartis Pharmaceuticals",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT00337376",
+      "title": "A Study of the mTOR Inhibitor Rapamycin (Rapamune, Sirolimus) in Combination With Abraxane in Advanced Solid Cancers",
+      "phase": "PHASE1",
+      "status": "TERMINATED",
+      "conditions": [
+        "Advanced Solid Cancers"
+      ],
+      "lead_sponsor": "Yale University",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT01783756",
+      "title": "Phase 1b/2 Trial Using Lapatinib, Everolimus and Capecitabine for Treatment of HER-2 Positive Breast Cancer With CNS Metastasis",
+      "phase": "PHASE1, PHASE2",
+      "status": "COMPLETED",
+      "conditions": [
+        "Central Nervous System Metastases",
+        "HER2-positive Breast Cancer",
+        "Male Breast Cancer",
+        "Recurrent Breast Cancer",
+        "Stage IV Breast Cancer"
+      ],
+      "lead_sponsor": "Jonsson Comprehensive Cancer Center",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT00954512",
+      "title": "Study of Robatumumab (SCH 717454, MK-7454) in Combination With Different Treatment Regimens in Participants With Advanced Solid Tumors (P04722, MK-7454-004)",
+      "phase": "PHASE1, PHASE2",
+      "status": "TERMINATED",
+      "conditions": [
+        "Neoplasms"
+      ],
+      "lead_sponsor": "Merck Sharp & Dohme LLC",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT02567435",
+      "title": "Combination Chemotherapy With or Without Temsirolimus in Treating Patients With Intermediate Risk Rhabdomyosarcoma",
+      "phase": "PHASE3",
+      "status": "ACTIVE_NOT_RECRUITING",
+      "conditions": [
+        "Alveolar Rhabdomyosarcoma",
+        "Botryoid-Type Embryonal Rhabdomyosarcoma",
+        "Embryonal Rhabdomyosarcoma",
+        "Rhabdomyosarcoma",
+        "Sclerosing Rhabdomyosarcoma",
+        "Spindle Cell Rhabdomyosarcoma"
+      ],
+      "lead_sponsor": "National Cancer Institute (NCI)",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT01430585",
+      "title": "Pre-Operative Study of PF-4691502 With Letrozole Compared To Letrozole Alone In Patients With Early Breast Cancer",
+      "phase": "PHASE2",
+      "status": "TERMINATED",
+      "conditions": [
+        "Early Breast Cancer (Phase 2)",
+        "Advanced Breast Cancer (Phase 1b)"
+      ],
+      "lead_sponsor": "Pfizer",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT00703170",
+      "title": "Phase I Study of DOXIL and Temsirolimus in Resistant Solid Malignancies",
+      "phase": "PHASE1",
+      "status": "COMPLETED",
+      "conditions": [
+        "Resistant Solid Malignancies"
+      ],
+      "lead_sponsor": "Washington University School of Medicine",
+      "source": "clinicaltrials_gov_v2"
+    }
+  ]
+}

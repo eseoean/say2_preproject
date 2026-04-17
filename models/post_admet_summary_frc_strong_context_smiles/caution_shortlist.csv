@@ -1,0 +1,2 @@
+final_rank,drug_id,drug_name,target,pathway,predicted_ic50,sensitivity_rate,validation_score,safety_score,combined_score,category,clinical_bucket,known_brca,target_expressed,brca_pathway,survival_sig,survival_p,flags,n_assays_tested,recommendation_note
+15,1511,Epirubicin,Anthracycline,DNA replication,0.6785437,1.0,8.85,2.83,5.83,Caution,Breast cancer current/relevant use,1,1,1,1,0.01,"['Ames Mutagenicity(+)', 'DILI (Drug-Induced Liver Injury)(+)']",15,"Efficacy signal exists, but safety flags were detected. Keep as a low-priority caution item."

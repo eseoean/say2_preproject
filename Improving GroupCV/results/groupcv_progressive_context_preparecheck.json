@@ -1,0 +1,30 @@
+{
+  "variant": "context_categorical",
+  "device": "cpu",
+  "n_rows": 7730,
+  "numeric_dim": 20394,
+  "categorical_dim": 11,
+  "sample_dim_detected": 18320,
+  "sample_dim_used": 18311,
+  "context_summary": {
+    "variant": "context_categorical",
+    "matched_rows": 3295,
+    "unmatched_rows": 4435,
+    "match_rate": 0.42626131953428203,
+    "categorical_columns": [
+      "classification",
+      "drug_bridge_strength",
+      "stage3_resolution_status",
+      "WEBRELEASE",
+      "drugbank_match_rule",
+      "chembl_match_rule",
+      "lincs_match_rule",
+      "admet_match_rule",
+      "cell_bridge_match_rule",
+      "TCGA_DESC",
+      "PATHWAY_NAME_NORMALIZED"
+    ],
+    "coverage_note": "Context rows are matched from hybrid sample-aware cache to current common input by (CELL_LINE_NAME/sample_id, DRUG_ID/canonical_drug_id)."
+  },
+  "models": []
+}

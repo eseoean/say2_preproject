@@ -15,6 +15,7 @@ import pandas as pd
 import json
 import time
 import os
+import sys
 from pathlib import Path
 from rdkit import Chem
 from rdkit.Chem import DataStructs, AllChem
@@ -27,12 +28,15 @@ ADMET_BASE = f"{S3_BASE}/data/admet"
 DRUG_ANN = f"{S3_BASE}/data/gsdc/gdsc2_drug_annotation_master_20260406.parquet"
 
 # Step 6 results
-STEP6_DIR = Path(__file__).parent / "metabric_results"
+STEP6_DIR = Path(__file__).parent / os.getenv("STEP6_INPUT_DIRNAME", "metabric_results")
 TOP15_PATH = STEP6_DIR / "top15_validated.csv"
 
 # Output
-OUTPUT_DIR = Path(__file__).parent / "admet_results"
+OUTPUT_DIR = Path(__file__).parent / os.getenv("ADMET_OUTPUT_DIRNAME", "admet_results")
 OUTPUT_DIR.mkdir(exist_ok=True)
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(line_buffering=True)
 
 # 22 ADMET assays with their properties
 ADMET_ASSAYS = {
@@ -406,7 +410,8 @@ def save_results(profiles, final):
 def upload_to_s3():
     """Upload Step 7 results to S3."""
     import subprocess
-    s3_dest = f"{S3_BASE}/models/admet_results/"
+    admet_s3_dirname = os.getenv("ADMET_S3_DIRNAME", "admet_results")
+    s3_dest = f"{S3_BASE}/models/{admet_s3_dirname}/"
     cmd = f"aws s3 sync {OUTPUT_DIR} {s3_dest} --quiet"
     print(f"\n  Uploading to S3: {s3_dest}")
     result = subprocess.run(cmd, shell=True, capture_output=True, text=True)
@@ -416,8 +421,10 @@ def upload_to_s3():
         print(f"  S3 upload warning: {result.stderr[:200]}")
 
     # Also upload ensemble results
-    ens_dest = f"{S3_BASE}/models/ensemble_results/"
-    ens_dir = Path(__file__).parent / "ensemble_results"
+    ens_s3_dirname = os.getenv("ENSEMBLE_S3_DIRNAME", "ensemble_results")
+    ens_input_dirname = os.getenv("ENSEMBLE_INPUT_DIRNAME", "ensemble_results")
+    ens_dest = f"{S3_BASE}/models/{ens_s3_dirname}/"
+    ens_dir = Path(__file__).parent / ens_input_dirname
     subprocess.run(f"aws s3 sync {ens_dir} {ens_dest} --quiet", shell=True,
                    capture_output=True, text=True)
     print(f"  Ensemble results synced to S3")

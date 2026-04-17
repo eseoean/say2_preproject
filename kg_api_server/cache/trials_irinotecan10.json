@@ -1,0 +1,154 @@
+{
+  "data": [
+    {
+      "nct_id": "NCT04640480",
+      "title": "Dose-finding Study to Evaluate the Safety, Tolerability, and Pharmacokinetics of SNB-101(SN-38) in Patients With Tumors",
+      "phase": "PHASE1",
+      "status": "COMPLETED",
+      "conditions": [
+        "Colorectal Cancer",
+        "Breast Cancer",
+        "Pancreas Cancer",
+        "Ovarian Cancer",
+        "Small-cell Lung Cancer",
+        "Gastric Cancer",
+        "Head and Neck Cancer"
+      ],
+      "lead_sponsor": "SN BioScience",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT05453825",
+      "title": "A Study of Navicixizumab Monotherapy or in Combination in Patients With Select Advanced Solid Tumors",
+      "phase": "PHASE2",
+      "status": "UNKNOWN",
+      "conditions": [
+        "Colorectal Cancer",
+        "Triple Negative Breast Cancer",
+        "Gastric Cancer",
+        "Ovarian Cancer"
+      ],
+      "lead_sponsor": "OncXerna Theraputics, Inc.",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT06431633",
+      "title": "Study of Treatment With Sacituzumab and Zimberelimab for Patients With Lung Cancer Confined to the Chest and Previously Operated on Who Were Not Disease-free.",
+      "phase": "PHASE3",
+      "status": "RECRUITING",
+      "conditions": [
+        "Lung Diseases",
+        "Carcinoma, Non-Small-Cell Lung",
+        "Resectable Lung Non-Small Cell Carcinoma"
+      ],
+      "lead_sponsor": "Fundación GECP",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT04209595",
+      "title": "PLX038 (PEGylated SN38) and Rucaparib in Solid Tumors and Small Cell Cancers",
+      "phase": "PHASE1, PHASE2",
+      "status": "COMPLETED",
+      "conditions": [
+        "Small Cell Lung Cancer",
+        "Extra-Pulmonary Small Cell Carcinomas"
+      ],
+      "lead_sponsor": "National Cancer Institute (NCI)",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT01506167",
+      "title": "An Observational Study of Avastin (Bevacizumab) in Patients With Metastatic Colorectal Cancer (ACORN)",
+      "phase": "",
+      "status": "COMPLETED",
+      "conditions": [
+        "Colorectal Cancer"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT05978492",
+      "title": "A Study of TXN10128 in Subjects With Solid Tumors",
+      "phase": "PHASE1",
+      "status": "RECRUITING",
+      "conditions": [
+        "Locally Advanced (Unresectable) or Metastatic Solid Tumors"
+      ],
+      "lead_sponsor": "Txinno Bioscience Inc.",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT01036113",
+      "title": "A Phase 2 Study of EZN-2208 in Patients With Metastatic Breast Cancer",
+      "phase": "PHASE2",
+      "status": "TERMINATED",
+      "conditions": [
+        "Metastatic Breast Cancer"
+      ],
+      "lead_sponsor": "Enzon Pharmaceuticals, Inc.",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT06839547",
+      "title": "A Prospective, Multicenter, Observational Cohort Study to Evaluate the Efficacy and Safety of a Novel Anti-tumor Drug As a Radiosensitizer in Patients with Advanced Breast Cancer Brain Metastasis.",
+      "phase": "",
+      "status": "NOT_YET_RECRUITING",
+      "conditions": [
+        "Advanced Breast Cancer Brain Metastasis"
+      ],
+      "lead_sponsor": "Cancer Institute and Hospital, Chinese Academy of Medical Sciences",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT02419495",
+      "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies",
+      "phase": "PHASE1",
+      "status": "TERMINATED",
+      "conditions": [
+        "Advanced Malignant Solid Neoplasm",
+        "Clinical Stage III Cutaneous Melanoma AJCC v8",
+        "Clinical Stage IV Cutaneous Melanoma AJCC v8",
+        "Fallopian Tube Carcinoma",
+        "Metastatic Lung Non-Small Cell Carcinoma",
+        "Metastatic Malignant Solid Neoplasm",
+        "Metastatic Melanoma",
+        "Metastatic Renal Cell Carcinoma",
+        "Ovarian Carcinoma",
+        "Pathologic Stage III Cutaneous Melanoma AJCC v8",
+        "Pathologic Stage IIIA Cutaneous Melanoma AJCC v8",
+        "Pathologic Stage IIIB Cutaneous Melanoma AJCC v8",
+        "Pathologic Stage IIIC Cutaneous Melanoma AJCC v8",
+        "Pathologic Stage IIID Cutaneous Melanoma AJCC v8",
+        "Pathologic Stage IV Cutaneous Melanoma AJCC v8",
+        "Primary Peritoneal Carcinoma",
+        "Stage III Lung Cancer AJCC v8",
+        "Stage III Renal Cell Cancer AJCC v8",
+        "Stage IIIA Lung Cancer AJCC v8",
+        "Stage IIIB Lung Cancer AJCC v8",
+        "Stage IIIC Lung Cancer AJCC v8",
+        "Stage IV Lung Cancer AJCC v8",
+        "Stage IV Renal Cell Cancer AJCC v8",
+        "Stage IVA Lung Cancer AJCC v8",
+        "Stage IVB Lung Cancer AJCC v8",
+        "Triple-Negative Breast Carcinoma",
+        "Unresectable Lung Non-Small Cell Carcinoma",
+        "Unresectable Melanoma",
+        "Unresectable Renal Cell Carcinoma"
+      ],
+      "lead_sponsor": "M.D. Anderson Cancer Center",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT00954512",
+      "title": "Study of Robatumumab (SCH 717454, MK-7454) in Combination With Different Treatment Regimens in Participants With Advanced Solid Tumors (P04722, MK-7454-004)",
+      "phase": "PHASE1, PHASE2",
+      "status": "TERMINATED",
+      "conditions": [
+        "Neoplasms"
+      ],
+      "lead_sponsor": "Merck Sharp & Dohme LLC",
+      "source": "clinicaltrials_gov_v2"
+    }
+  ]
+}

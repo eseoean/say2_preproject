@@ -1,0 +1,658 @@
+{
+  "data": [
+    {
+      "pmid": "4591566",
+      "title": "Camptothecin.",
+      "journal": "Journal of pharmaceutical sciences",
+      "year": "1974",
+      "authors": [
+        "Shamma M",
+        "St Georgiev V"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "4578778",
+      "title": "Camptothecin.",
+      "journal": "Chemical reviews",
+      "year": "1973",
+      "authors": [
+        "Schultz AG"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "15796188",
+      "title": "Novel camptothecin derivatives.",
+      "journal": "In vivo (Athens, Greece)",
+      "year": "2005",
+      "authors": [
+        "Legarza K",
+        "Yang LX"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "12425455",
+      "title": "Camptothecin delivery methods.",
+      "journal": "Pharmaceutical research",
+      "year": "2002",
+      "authors": [
+        "Hatefi A",
+        "Amsden B"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "8993515",
+      "title": "Camptothecin and its analogs. An overview of their potential in cancer therapeutics.",
+      "journal": "Annals of the New York Academy of Sciences",
+      "year": "1996",
+      "authors": [
+        "Muggia FM",
+        "Dimery I",
+        "Arbuck SG"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "16842195",
+      "title": "Review camptothecin: current perspectives.",
+      "journal": "Current medicinal chemistry",
+      "year": "2006",
+      "authors": [
+        "Li QY",
+        "Zu YG",
+        "Shi RZ",
+        "Yao LP"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "16990856",
+      "title": "Topoisomerase I inhibitors: camptothecins and beyond.",
+      "journal": "Nature reviews. Cancer",
+      "year": "2006",
+      "authors": [
+        "Pommier Y"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "23432590",
+      "title": "Camptothecin resistance in cancer: insights into the molecular mechanisms of a DNA-damaging drug.",
+      "journal": "Current medicinal chemistry",
+      "year": "2013",
+      "authors": [
+        "Beretta GL",
+        "Gatti L",
+        "Perego P",
+        "Zaffaroni N"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "11301839",
+      "title": "Camptothecin schedule and timing of administration with irradiation.",
+      "journal": "Oncology (Williston Park, N.Y.)",
+      "year": "2001",
+      "authors": [
+        "Rich TA",
+        "Kirichenko AV"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "25808858",
+      "title": "Perspectives on biologically active camptothecin derivatives.",
+      "journal": "Medicinal research reviews",
+      "year": "2015",
+      "authors": [
+        "Liu YQ",
+        "Li WQ",
+        "Morris-Natschke SL",
+        "Qian K",
+        "Yang L",
+        "Zhu GX",
+        "Wu XB",
+        "Chen AL",
+        "Zhang SY",
+        "Nan X",
+        "Lee KH"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "35490429",
+      "title": "Total Synthesis, Mechanism of Action, and Antitumor Efficacy of Camptothecin and Some of its Analogues.",
+      "journal": "Anti-cancer agents in medicinal chemistry",
+      "year": "2022",
+      "authors": [
+        "Bacherikov VA"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "11193897",
+      "title": "Pharmacology of camptothecin esters.",
+      "journal": "Annals of the New York Academy of Sciences",
+      "year": "2000",
+      "authors": [
+        "Liehr JG",
+        "Harris NJ",
+        "Mendoza J",
+        "Ahmed AE",
+        "Giovanella BC"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "40368189",
+      "title": "Long-circulating enzyme-activated HSP90-targeted camptothecin derivatives.",
+      "journal": "Journal of controlled release : official journal of the Controlled Release Society",
+      "year": "2025",
+      "authors": [
+        "Ding M",
+        "Shen Q",
+        "Su Y",
+        "Lu Y",
+        "Jin J",
+        "Chen Y",
+        "Lu W",
+        "Fang Y",
+        "Zhu S"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "38823466",
+      "title": "Polymeric micelles paving the Way: Recent breakthroughs in camptothecin delivery for enhanced chemotherapy.",
+      "journal": "International journal of pharmaceutics",
+      "year": "2024",
+      "authors": [
+        "Farhoudi L",
+        "Maryam Hosseinikhah S",
+        "Vahdat-Lasemi F",
+        "Sukhorukov VN",
+        "Kesharwani P",
+        "Sahebkar A"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "16524321",
+      "title": "Camptothecin and podophyllotoxin derivatives: inhibitors of topoisomerase I and II - mechanisms of action, pharmacokinetics and toxicity profile.",
+      "journal": "Drug safety",
+      "year": "2006",
+      "authors": [
+        "Hartmann JT",
+        "Lipp HP"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "40076615",
+      "title": "Novel Camptothecin Derivative 9c with Enhanced Antitumor Activity via NSA2-EGFR-P53 Signaling Pathway.",
+      "journal": "International journal of molecular sciences",
+      "year": "2025",
+      "authors": [
+        "Du F",
+        "Zhang A",
+        "Qi X",
+        "Yin R",
+        "Jiang T",
+        "Li J"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "16370935",
+      "title": "Rubitecan.",
+      "journal": "Expert opinion on investigational drugs",
+      "year": "2006",
+      "authors": [
+        "Clark JW"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "10846537",
+      "title": "[Pharmacology of camptothecin and its derivatives].",
+      "journal": "Bulletin du cancer",
+      "year": "1995",
+      "authors": [
+        "Rivory LP",
+        "Robert J"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "29239010",
+      "title": "Silicon-containing analogs of camptothecin as anticancer agents.",
+      "journal": "Archiv der Pharmazie",
+      "year": "2018",
+      "authors": [
+        "Lazareva NF",
+        "Baryshok VP",
+        "Lazarev IM"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "16101487",
+      "title": "Camptothecin: roles of the D and E rings in binding to the topoisomerase I-DNA covalent binary complex.",
+      "journal": "Current medicinal chemistry. Anti-cancer agents",
+      "year": "2005",
+      "authors": [
+        "Hecht SM"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "35439320",
+      "title": "TOP1-DNA Trapping by Exatecan and Combination Therapy with ATR Inhibitor.",
+      "journal": "Molecular cancer therapeutics",
+      "year": "2022",
+      "authors": [
+        "Jo U",
+        "Murai Y",
+        "Agama KK",
+        "Sun Y",
+        "Saha LK",
+        "Yang X",
+        "Arakawa Y",
+        "Gayle S",
+        "Jones K",
+        "Paralkar V",
+        "Sundaram RK",
+        "Van Doorn J",
+        "Vasquez JC",
+        "Bindra RS",
+        "Choi WS",
+        "Pommier Y"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "11193923",
+      "title": "Camptothecin design and delivery approaches for elevating anti-topoisomerase I activities in vivo.",
+      "journal": "Annals of the New York Academy of Sciences",
+      "year": "2000",
+      "authors": [
+        "Burke TG",
+        "Bom D"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "9762728",
+      "title": "Clinical pharmacokinetics of camptothecin topoisomerase I inhibitors.",
+      "journal": "Pharmacy world & science : PWS",
+      "year": "1998",
+      "authors": [
+        "Herben VM",
+        "Ten Bokkel Huinink WW",
+        "Schellens JH",
+        "Beijnen JH"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "11743213",
+      "title": "The development of camptothecin analogs in childhood cancers.",
+      "journal": "The oncologist",
+      "year": "2001",
+      "authors": [
+        "Bomgaars L",
+        "Berg SL",
+        "Blaney SM"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "12375799",
+      "title": "Camptothecin and taxane regimens for small-cell lung cancer.",
+      "journal": "Oncology (Williston Park, N.Y.)",
+      "year": "2002",
+      "authors": [
+        "Kwong MS",
+        "Bleickardt E",
+        "Murren JR"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "22680917",
+      "title": "Namitecan: a hydrophilic camptothecin with a promising preclinical profile.",
+      "journal": "Current medicinal chemistry",
+      "year": "2012",
+      "authors": [
+        "Beretta GL",
+        "Zuco V",
+        "De Cesare M",
+        "Perego P",
+        "Zaffaroni N"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "31631694",
+      "title": "The biosynthesis of camptothecin derivatives by Camptotheca acuminata seedlings.",
+      "journal": "Natural product research",
+      "year": "2021",
+      "authors": [
+        "Sun Y",
+        "Zhang N",
+        "Wang C",
+        "Bai X",
+        "Wei Y",
+        "Liu J"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "9615866",
+      "title": "Preclinical development of camptothecin derivatives and clinical trials in pediatric oncology.",
+      "journal": "Biochimie",
+      "year": "1998",
+      "authors": [
+        "Vassal G",
+        "Pondarré C",
+        "Boland I",
+        "Cappelli C",
+        "Santos A",
+        "Thomas C",
+        "Lucchi E",
+        "Imadalou K",
+        "Pein F",
+        "Morizet J",
+        "Gouyette A"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "12842380",
+      "title": "The camptothecins.",
+      "journal": "Lancet (London, England)",
+      "year": "2003",
+      "authors": [
+        "Pizzolato JF",
+        "Saltz LB"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "29748210",
+      "title": "Novel Fluoroindenoisoquinoline Non-Camptothecin Topoisomerase I Inhibitors.",
+      "journal": "Molecular cancer therapeutics",
+      "year": "2018",
+      "authors": [
+        "Marzi L",
+        "Agama K",
+        "Murai J",
+        "Difilippantonio S",
+        "James A",
+        "Peer CJ",
+        "Figg WD",
+        "Beck D",
+        "Elsayed MSA",
+        "Cushman M",
+        "Pommier Y"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "31173229",
+      "title": "Development of an enzyme‑linked immunosorbent assay for camptothecin.",
+      "journal": "Molecular medicine reports",
+      "year": "2019",
+      "authors": [
+        "Yan L",
+        "Nan X",
+        "Zhang C",
+        "Wang H",
+        "Huang X",
+        "Hu J",
+        "Liu Y"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "36609265",
+      "title": "Production and bioprocessing of camptothecin from Aspergillus terreus, an endophyte of Cestrum parqui, restoring their biosynthetic potency by Citrus limonum peel extracts.",
+      "journal": "Microbial cell factories",
+      "year": "2023",
+      "authors": [
+        "El-Sayed ASA",
+        "George NM",
+        "Abou-Elnour A",
+        "El-Mekkawy RM",
+        "El-Demerdash MM"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "9726103",
+      "title": "Camptothecin radiation sensitization: mechanisms, schedules, and timing.",
+      "journal": "Oncology (Williston Park, N.Y.)",
+      "year": "1998",
+      "authors": [
+        "Rich TA",
+        "Kirichenko AV"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "14593855",
+      "title": "Clinical studies of camptothecin and derivatives.",
+      "journal": "The Alkaloids. Chemistry and biology",
+      "year": "2003",
+      "authors": [
+        "Soepenberg O",
+        "Sparreboom A",
+        "Verweij J"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "15892685",
+      "title": "Synthesis and pharmacology of new camptothecin drugs.",
+      "journal": "Mini reviews in medicinal chemistry",
+      "year": "2005",
+      "authors": [
+        "Driver RW",
+        "Yang LX"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "20166932",
+      "title": "Tyrosyl-DNA phosphodiesterase 1 targeting for modulation of camptothecin-based treatment.",
+      "journal": "Current medicinal chemistry",
+      "year": "2010",
+      "authors": [
+        "Beretta GL",
+        "Cossa G",
+        "Gatti L",
+        "Zunino F",
+        "Perego P"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "26079886",
+      "title": "Camptothecin and topotecan inhibit adipocyte differentiation by inducing degradation of PPARγ.",
+      "journal": "Biochemical and biophysical research communications",
+      "year": "2015",
+      "authors": [
+        "Kim JH",
+        "Jeong M",
+        "Lee SS",
+        "Song J"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "8869798",
+      "title": "The clinical status of irinotecan (CPT-11), a novel water soluble camptothecin analogue: 1996.",
+      "journal": "Critical reviews in oncology/hematology",
+      "year": "1996",
+      "authors": [
+        "O'Reilly S",
+        "Rowinsky EK"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "37670002",
+      "title": "Genomic and transcriptomic analysis of camptothecin producing novel fungal endophyte: Alternaria burnsii NCIM 1409.",
+      "journal": "Scientific reports",
+      "year": "2023",
+      "authors": [
+        "Natarajan S",
+        "Pucker B",
+        "Srivastava S"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "34045605",
+      "title": "Screening and selection of camptothecin producing endophytes from Nothapodytes nimmoniana.",
+      "journal": "Scientific reports",
+      "year": "2021",
+      "authors": [
+        "Mohinudeen IAHK",
+        "Pandey S",
+        "Kanniyappan H",
+        "Muthuvijayan V",
+        "Srivastava S"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "16472226",
+      "title": "Macromolecular and nanotechnological modification of camptothecin and its analogs to improve the efficacy.",
+      "journal": "Current drug discovery technologies",
+      "year": "2005",
+      "authors": [
+        "Onishi H",
+        "Machida Y"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "27138759",
+      "title": "Strategies Targeting DNA Topoisomerase I in Cancer Chemotherapy: Camptothecins, Nanocarriers for Camptothecins, Organic Non-Camptothecin Compounds and Metal Complexes.",
+      "journal": "Current drug targets",
+      "year": "2016",
+      "authors": [
+        "Gokduman K"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "1727922",
+      "title": "Camptothecins.",
+      "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+      "year": "1992",
+      "authors": [
+        "Chabner BA"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "9932086",
+      "title": "[The other camptothecins: recent advances with camptothecin analogues other than irinotecan and topotecan].",
+      "journal": "Bulletin du cancer",
+      "year": "1998",
+      "authors": [
+        "Lavergne O",
+        "Bigg DC"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "33446714",
+      "title": "Sustainable production of camptothecin from an Alternaria sp. isolated from Nothapodytes nimmoniana.",
+      "journal": "Scientific reports",
+      "year": "2021",
+      "authors": [
+        "Mohinudeen IAHK",
+        "Kanumuri R",
+        "Soujanya KN",
+        "Shaanker RU",
+        "Rayala SK",
+        "Srivastava S"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "22283650",
+      "title": "Delivery methods of camptothecin and its hydrosoluble analogue irinotecan for treatment of colorectal cancer.",
+      "journal": "Current drug delivery",
+      "year": "2012",
+      "authors": [
+        "Mollica A",
+        "Stefanucci A",
+        "Feliciani F",
+        "Cacciatore I",
+        "Cornacchia C",
+        "Pinnen F"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "12756214",
+      "title": "Identification of the metabolites of 9-nitro-20(S)-camptothecin in rats.",
+      "journal": "Drug metabolism and disposition: the biological fate of chemicals",
+      "year": "2003",
+      "authors": [
+        "Li K",
+        "Chen X",
+        "Zhong D",
+        "Li Y"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "38346501",
+      "title": "In vivo activation of FAP-cleavable small molecule-drug conjugates for the targeted delivery of camptothecins and tubulin poisons to the tumor microenvironment.",
+      "journal": "Journal of controlled release : official journal of the Controlled Release Society",
+      "year": "2024",
+      "authors": [
+        "Bocci M",
+        "Zana A",
+        "Principi L",
+        "Lucaroni L",
+        "Prati L",
+        "Gilardoni E",
+        "Neri D",
+        "Cazzamalli S",
+        "Galbiati A"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "36838813",
+      "title": "Interaction of Camptothecin Anticancer Drugs with Ribosomal Proteins L15 and L11: A Molecular Docking Study.",
+      "journal": "Molecules (Basel, Switzerland)",
+      "year": "2023",
+      "authors": [
+        "Bailly C",
+        "Vergoten G"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "8965250",
+      "title": "[Camptothecin and derivatives: a new class of antitumor agents].",
+      "journal": "Journal de pharmacie de Belgique",
+      "year": "1996",
+      "authors": [
+        "Torck M",
+        "Pinkas M"
+      ],
+      "source": "ncbi_pubmed"
+    }
+  ]
+}

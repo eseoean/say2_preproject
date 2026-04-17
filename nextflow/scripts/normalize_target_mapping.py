@@ -51,7 +51,15 @@ def main() -> None:
     out_report = Path(args.out_report)
     out_parquet.parent.mkdir(parents=True, exist_ok=True)
 
-    df_bridge = pd.read_parquet(args.drug_features_uri, columns=["canonical_drug_id", "drug_name_norm"])
+    bridge_preview = pd.read_parquet(args.drug_features_uri)
+    if "canonical_drug_id" in bridge_preview.columns:
+        df_bridge = bridge_preview[["canonical_drug_id", "drug_name_norm"]].copy()
+    elif "DRUG_ID" in bridge_preview.columns:
+        df_bridge = bridge_preview[["DRUG_ID", "drug_name_norm"]].copy()
+        df_bridge = df_bridge.rename(columns={"DRUG_ID": "canonical_drug_id"})
+        df_bridge["canonical_drug_id"] = df_bridge["canonical_drug_id"].astype(str)
+    else:
+        raise ValueError("drug_features input must include canonical_drug_id or DRUG_ID")
     df_db = pd.read_parquet(args.drug_target_uri, columns=["Drug_Name", "UniProt_ID"])
     df_db = df_db.dropna(subset=["Drug_Name", "UniProt_ID"]).copy()
 

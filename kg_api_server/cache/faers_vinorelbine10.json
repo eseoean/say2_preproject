@@ -1,0 +1,54 @@
+{
+  "data": [
+    {
+      "event": "MALIGNANT NEOPLASM PROGRESSION",
+      "count": 904,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "DISEASE PROGRESSION",
+      "count": 880,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "NEUTROPENIA",
+      "count": 872,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "OFF LABEL USE",
+      "count": 794,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "NAUSEA",
+      "count": 695,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "DIARRHOEA",
+      "count": 613,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "DRUG INEFFECTIVE",
+      "count": 563,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "FATIGUE",
+      "count": 559,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "FEBRILE NEUTROPENIA",
+      "count": 524,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "VOMITING",
+      "count": 520,
+      "source": "openfda_faers"
+    }
+  ]
+}

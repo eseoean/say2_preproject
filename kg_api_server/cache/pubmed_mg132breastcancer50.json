@@ -1,0 +1,795 @@
+{
+  "data": [
+    {
+      "pmid": "39592591",
+      "title": "RSK1 dependency in FLT3-ITD acute myeloid leukemia.",
+      "journal": "Blood cancer journal",
+      "year": "2024",
+      "authors": [
+        "Kong T",
+        "Laranjeira ABA",
+        "Letson CT",
+        "Yu L",
+        "He F",
+        "Jayanthan A",
+        "Los G",
+        "Dunn SE",
+        "Challen GA",
+        "Oh ST"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "33396819",
+      "title": "Identifying Personalized Metabolic Signatures in Breast Cancer.",
+      "journal": "Metabolites",
+      "year": "2020",
+      "authors": [
+        "Baloni P",
+        "Dinalankara W",
+        "Earls JC",
+        "Knijnenburg TA",
+        "Geman D",
+        "Marchionni L",
+        "Price ND"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "34645792",
+      "title": "MINDY1 promotes breast cancer cell proliferation by stabilizing estrogen receptor α.",
+      "journal": "Cell death & disease",
+      "year": "2021",
+      "authors": [
+        "Tang J",
+        "Luo Y",
+        "Long G",
+        "Zhou L"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "39300257",
+      "title": "Kindlin-2 regulates the oncogenic activities of integrins and TGF-β in triple-negative breast cancer progression and metastasis.",
+      "journal": "Oncogene",
+      "year": "2024",
+      "authors": [
+        "Yousafzai NA",
+        "El Khalki L",
+        "Wang W",
+        "Szpendyk J",
+        "Sossey-Alaoui K"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "25187114",
+      "title": "RGS2 suppresses breast cancer cell growth via a MCPIP1-dependent pathway.",
+      "journal": "Journal of cellular biochemistry",
+      "year": "2015",
+      "authors": [
+        "Lyu JH",
+        "Park DW",
+        "Huang B",
+        "Kang SH",
+        "Lee SJ",
+        "Lee C",
+        "Bae YS",
+        "Lee JG",
+        "Baek SH"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "32549764",
+      "title": "SETDB2 promoted breast cancer stem cell maintenance by interaction with and stabilization of ΔNp63α protein.",
+      "journal": "International journal of biological sciences",
+      "year": "2020",
+      "authors": [
+        "Ying L",
+        "Fei X",
+        "Jialun L",
+        "Jianpeng X",
+        "Jie W",
+        "Zhaolin M",
+        "Hongjia F",
+        "Huan F",
+        "Sha L",
+        "Qiuju W",
+        "Lin Y",
+        "Cuicui L",
+        "You P",
+        "Weiwei Z",
+        "Lulu W",
+        "Jiemin W",
+        "Jing L",
+        "Jing F"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "37537243",
+      "title": "5,6-Dichloro-1-β-D-ribofuranosylbenzimidazole (DRB) induces apoptosis in breast cancer cells through inhibiting of Mcl-1 expression.",
+      "journal": "Scientific reports",
+      "year": "2023",
+      "authors": [
+        "Kuo YH",
+        "Lai TC",
+        "Chang CH",
+        "Hsieh HC",
+        "Yang FM",
+        "Hu MC"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "14576821",
+      "title": "Breast cancer-specific gene 1 interacts with the mitotic checkpoint kinase BubR1.",
+      "journal": "Oncogene",
+      "year": "2003",
+      "authors": [
+        "Gupta A",
+        "Inaba S",
+        "Wong OK",
+        "Fang G",
+        "Liu J"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "24712725",
+      "title": "Anticancer activity of protocatechualdehyde in human breast cancer cells.",
+      "journal": "Journal of medicinal food",
+      "year": "2014",
+      "authors": [
+        "Choi J",
+        "Jiang X",
+        "Jeong JB",
+        "Lee SH"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "37233863",
+      "title": "Degradation of MYC by the mutant p53 reactivator drug, COTI-2 in breast cancer cells.",
+      "journal": "Investigational new drugs",
+      "year": "2023",
+      "authors": [
+        "Tang M",
+        "Crown J",
+        "Duffy MJ"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "11911275",
+      "title": "Potential of the proteasomal inhibitor MG-132 as an anticancer agent, alone and in combination.",
+      "journal": "Anticancer research",
+      "year": "2001",
+      "authors": [
+        "Banerjee D",
+        "Liefshitz A"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "38791473",
+      "title": "The Synergistic Effect of Reduced Graphene Oxide and Proteasome Inhibitor in the Induction of Apoptosis through Oxidative Stress in Breast Cancer Cell Lines.",
+      "journal": "International journal of molecular sciences",
+      "year": "2024",
+      "authors": [
+        "Krętowski R",
+        "Szynaka B",
+        "Jabłońska-Trypuć A",
+        "Kiełtyka-Dadasiewicz A",
+        "Cechowska-Pasko M"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "19849815",
+      "title": "Notch versus the proteasome: what is the target of gamma-secretase inhibitor-I?",
+      "journal": "Breast cancer research : BCR",
+      "year": "2009",
+      "authors": [
+        "Clementz AG",
+        "Osipo C"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "35985398",
+      "title": "Subtilisin from Bacillus amyloliquefaciens induces apoptosis in breast cancer cells through ubiquitin-proteasome-mediated tubulin degradation.",
+      "journal": "International journal of biological macromolecules",
+      "year": "2022",
+      "authors": [
+        "Singh N",
+        "Tapader R",
+        "Chatterjee S",
+        "Pal A",
+        "Pal A"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "19840189",
+      "title": "Breast cancer cell growth inhibition by phenethyl isothiocyanate is associated with down-regulation of oestrogen receptor-alpha36.",
+      "journal": "Journal of cellular and molecular medicine",
+      "year": "2010",
+      "authors": [
+        "Kang L",
+        "Wang ZY"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "25729327",
+      "title": "Suberoyl bis-hydroxamic acid enhances cytotoxicity induced by proteasome inhibitors in breast cancer cells.",
+      "journal": "Cancer cell international",
+      "year": "2014",
+      "authors": [
+        "Yang X",
+        "Shi Z",
+        "Zhang N",
+        "Ou Z",
+        "Fu S",
+        "Hu X",
+        "Shen Z"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "29968965",
+      "title": "Upregulated IQUB promotes cell proliferation and migration via activating Akt/GSK3β/β-catenin signaling pathway in breast cancer.",
+      "journal": "Cancer medicine",
+      "year": "2018",
+      "authors": [
+        "Li K",
+        "Ma YB",
+        "Zhang Z",
+        "Tian YH",
+        "Xu XL",
+        "He YQ",
+        "Xu L",
+        "Gao Y",
+        "Pan WT",
+        "Song WJ",
+        "He X",
+        "Wei L"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "34376133",
+      "title": "Ubiquitin Mediated Degradation of EGFR by 17 β-estradiol in Triple Negative MDA-MB-231 (TNBC) Breast Cancer Cells Line.",
+      "journal": "Current molecular medicine",
+      "year": "2022",
+      "authors": [
+        "Khode V",
+        "Patil S",
+        "Kaveeshwar V",
+        "Ruikar K",
+        "Bargale A",
+        "E S",
+        "Patil S"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "34055630",
+      "title": "Carnosol Is a Novel Inhibitor of p300 Acetyltransferase in Breast Cancer.",
+      "journal": "Frontiers in oncology",
+      "year": "2021",
+      "authors": [
+        "Alsamri H",
+        "Hasasna HE",
+        "Baby B",
+        "Alneyadi A",
+        "Dhaheri YA",
+        "Ayoub MA",
+        "Eid AH",
+        "Vijayan R",
+        "Iratni R"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "23053665",
+      "title": "Bergapten induces ER depletion in breast cancer cells through SMAD4-mediated ubiquitination.",
+      "journal": "Breast cancer research and treatment",
+      "year": "2012",
+      "authors": [
+        "Panno ML",
+        "Giordano F",
+        "Rizza P",
+        "Pellegrino M",
+        "Zito D",
+        "Giordano C",
+        "Mauro L",
+        "Catalano S",
+        "Aquila S",
+        "Sisci D",
+        "De Amicis F",
+        "Vivacqua A",
+        "Fuqua SW",
+        "Andò S"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "22799288",
+      "title": "Pristimerin inhibits breast cancer cell migration by up- regulating regulator of G protein signaling 4 expression.",
+      "journal": "Asian Pacific journal of cancer prevention : APJCP",
+      "year": "2012",
+      "authors": [
+        "Mu XM",
+        "Shi W",
+        "Sun LX",
+        "Li H",
+        "Wang YR",
+        "Jiang ZZ",
+        "Zhang LY"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "25774547",
+      "title": "Repression of breast cancer cell growth by proteasome inhibitors in vitro: impact of mitogen-activated protein kinase phosphatase 1.",
+      "journal": "Cancer biology & therapy",
+      "year": "2015",
+      "authors": [
+        "Patel BS",
+        "Co WS",
+        "Donat C",
+        "Wang M",
+        "Che W",
+        "Prabhala P",
+        "Schuster F",
+        "Schulz V",
+        "Martin JL",
+        "Ammit AJ"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "26648402",
+      "title": "Induction of autophagy by the MG‑132 proteasome inhibitor is associated with endoplasmic reticulum stress in MCF‑7 cells.",
+      "journal": "Molecular medicine reports",
+      "year": "2016",
+      "authors": [
+        "Bao W",
+        "Gu Y",
+        "Ta L",
+        "Wang K",
+        "Xu Z"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "12700667",
+      "title": "p62 overexpression in breast tumors and regulation by prostate-derived Ets factor in breast cancer cells.",
+      "journal": "Oncogene",
+      "year": "2003",
+      "authors": [
+        "Thompson HG",
+        "Harris JW",
+        "Wold BJ",
+        "Lin F",
+        "Brody JP"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "28067227",
+      "title": "CDK4/6-dependent activation of DUB3 regulates cancer metastasis through SNAIL1.",
+      "journal": "Nature communications",
+      "year": "2017",
+      "authors": [
+        "Liu T",
+        "Yu J",
+        "Deng M",
+        "Yin Y",
+        "Zhang H",
+        "Luo K",
+        "Qin B",
+        "Li Y",
+        "Wu C",
+        "Ren T",
+        "Han Y",
+        "Yin P",
+        "Kim J",
+        "Lee S",
+        "Lin J",
+        "Zhang L",
+        "Zhang J",
+        "Nowsheen S",
+        "Wang L",
+        "Boughey J",
+        "Goetz MP",
+        "Yuan J",
+        "Lou Z"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "33562118",
+      "title": "The Aryl Hydrocarbon Receptor Undergoes Chaperone-Mediated Autophagy in Triple-Negative Breast Cancer Cells.",
+      "journal": "International journal of molecular sciences",
+      "year": "2021",
+      "authors": [
+        "Chen J",
+        "Yang Y",
+        "Russu WA",
+        "Chan WK"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "26722437",
+      "title": "UCH-L1 involved in regulating the degradation of EGFR and promoting malignant properties in drug-resistant breast cancer.",
+      "journal": "International journal of clinical and experimental pathology",
+      "year": "2015",
+      "authors": [
+        "Jin Y",
+        "Zhang W",
+        "Xu J",
+        "Wang H",
+        "Zhang Z",
+        "Chu C",
+        "Liu X",
+        "Zou Q"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "27716745",
+      "title": "The degradation of EZH2 mediated by lncRNA ANCR attenuated the invasion and metastasis of breast cancer.",
+      "journal": "Cell death and differentiation",
+      "year": "2017",
+      "authors": [
+        "Li Z",
+        "Hou P",
+        "Fan D",
+        "Dong M",
+        "Ma M",
+        "Li H",
+        "Yao R",
+        "Li Y",
+        "Wang G",
+        "Geng P",
+        "Mihretab A",
+        "Liu D",
+        "Zhang Y",
+        "Huang B",
+        "Lu J"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "38405979",
+      "title": "Kindlin-2 Regulates the Oncogenic Activities of Integrins and TGF-β In Triple Negative Breast Cancer Progression and Metastasis.",
+      "journal": "Research square",
+      "year": "2024",
+      "authors": [
+        "Yousafzai NA",
+        "El Khalki L",
+        "Wang W",
+        "Szpendyk J",
+        "Sossey-Alaoui K"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "30689267",
+      "title": "Deubiquitinase ubiquitin-specific protease 9X regulates the stability and function of E3 ubiquitin ligase ring finger protein 115 in breast cancer cells.",
+      "journal": "Cancer science",
+      "year": "2019",
+      "authors": [
+        "Lu Q",
+        "Lu D",
+        "Shao ZM",
+        "Li DQ"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "32679125",
+      "title": "α-Linolenic acid inhibits the migration of human triple-negative breast cancer cells by attenuating Twist1 expression and suppressing Twist1-mediated epithelial-mesenchymal transition.",
+      "journal": "Biochemical pharmacology",
+      "year": "2020",
+      "authors": [
+        "Wang SC",
+        "Sun HL",
+        "Hsu YH",
+        "Liu SH",
+        "Lii CK",
+        "Tsai CH",
+        "Liu KL",
+        "Huang CS",
+        "Li CC"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "16108032",
+      "title": "Inefficient proteasomal-degradation pathway stabilizes AP-2alpha and activates HER-2/neu gene in breast cancer.",
+      "journal": "International journal of cancer",
+      "year": "2006",
+      "authors": [
+        "Li M",
+        "Wang Y",
+        "Hung MC",
+        "Kannan P"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "18064564",
+      "title": "Inactivation of NF-kappaB by proteasome inhibition contributes to increased apoptosis induced by histone deacetylase inhibitors in human breast cancer cells.",
+      "journal": "Breast cancer research and treatment",
+      "year": "2008",
+      "authors": [
+        "Domingo-Domènech J",
+        "Pippa R",
+        "Tápia M",
+        "Gascón P",
+        "Bachs O",
+        "Bosch M"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "18655187",
+      "title": "Quercetin-induced ubiquitination and down-regulation of Her-2/neu.",
+      "journal": "Journal of cellular biochemistry",
+      "year": "2008",
+      "authors": [
+        "Jeong JH",
+        "An JY",
+        "Kwon YT",
+        "Li LY",
+        "Lee YJ"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "24765191",
+      "title": "Inhibition of cell growth by BrMC through inactivation of Akt in HER-2/neu-overexpressing breast cancer cells.",
+      "journal": "Oncology letters",
+      "year": "2014",
+      "authors": [
+        "Cao XZ",
+        "Xiang HL",
+        "Quan MF",
+        "He LH"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "28939105",
+      "title": "Protein kinase C-eta regulates Mcl-1 level via ERK1.",
+      "journal": "Cellular signalling",
+      "year": "2017",
+      "authors": [
+        "Pal D",
+        "Basu A"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "35417031",
+      "title": "Dinaciclib inhibits the stemness of two subtypes of human breast cancer cells by targeting the FoxM1 and Hedgehog signaling pathway.",
+      "journal": "Oncology reports",
+      "year": "2022",
+      "authors": [
+        "Tsao AN",
+        "Chuang YS",
+        "Lin YC",
+        "Su Y",
+        "Chao TC"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "29332931",
+      "title": "Proteasome Inhibitor Carbobenzoxy-L-Leucyl-L-Leucyl-L-Leucinal (MG132) Enhances Therapeutic Effect of Paclitaxel on Breast Cancer by Inhibiting Nuclear Factor (NF)-κB Signaling.",
+      "journal": "Medical science monitor : international medical journal of experimental and clinical research",
+      "year": "2018",
+      "authors": [
+        "Zhang Y",
+        "Yang B",
+        "Zhao J",
+        "Li X",
+        "Zhang L",
+        "Zhai Z"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "31456939",
+      "title": "Carnosol, a Natural Polyphenol, Inhibits Migration, Metastasis, and Tumor Growth of Breast Cancer via a ROS-Dependent Proteasome Degradation of STAT3.",
+      "journal": "Frontiers in oncology",
+      "year": "2019",
+      "authors": [
+        "Alsamri H",
+        "El Hasasna H",
+        "Al Dhaheri Y",
+        "Eid AH",
+        "Attoub S",
+        "Iratni R"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "28744156",
+      "title": "Cholesterol biosynthesis inhibitor RO 48-8071 reduces progesterone receptor expression and inhibits progestin-dependent stem cell-like cell growth in hormone-dependent human breast cancer cells.",
+      "journal": "Breast cancer (Dove Medical Press)",
+      "year": "2017",
+      "authors": [
+        "Liang Y",
+        "Goyette S",
+        "Hyder SM"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "23289910",
+      "title": "Treatment of breast and lung cancer cells with a N-7 benzyl guanosine monophosphate tryptamine phosphoramidate pronucleotide (4Ei-1) results in chemosensitization to gemcitabine and induced eIF4E proteasomal degradation.",
+      "journal": "Molecular pharmaceutics",
+      "year": "2013",
+      "authors": [
+        "Li S",
+        "Jia Y",
+        "Jacobson B",
+        "McCauley J",
+        "Kratzke R",
+        "Bitterman PB",
+        "Wagner CR"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "12351689",
+      "title": "Hypoxia induces proteasome-dependent degradation of estrogen receptor alpha in ZR-75 breast cancer cells.",
+      "journal": "Molecular endocrinology (Baltimore, Md.)",
+      "year": "2002",
+      "authors": [
+        "Stoner M",
+        "Saville B",
+        "Wormke M",
+        "Dean D",
+        "Burghardt R",
+        "Safe S"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "27863425",
+      "title": "Identification of an HSP90 modulated multi-step process for ERBB2 degradation in breast cancer cells.",
+      "journal": "Oncotarget",
+      "year": "2016",
+      "authors": [
+        "Castagnola P",
+        "Bellese G",
+        "Birocchi F",
+        "Gagliani MC",
+        "Tacchetti C",
+        "Cortese K"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "27973439",
+      "title": "Down-Regulation of Ca(2+)-Activated K⁺ Channel K(Ca)1.1 in Human Breast Cancer MDA-MB-453 Cells Treated with Vitamin D Receptor Agonists.",
+      "journal": "International journal of molecular sciences",
+      "year": "2016",
+      "authors": [
+        "Khatun A",
+        "Fujimoto M",
+        "Kito H",
+        "Niwa S",
+        "Suzuki T",
+        "Ohya S"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "22315970",
+      "title": "Effects of partner proteins on BCA2 RING ligase activity.",
+      "journal": "BMC cancer",
+      "year": "2012",
+      "authors": [
+        "Bacopulos S",
+        "Amemiya Y",
+        "Yang W",
+        "Zubovits J",
+        "Burger A",
+        "Yaffe M",
+        "Seth AK"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "39138277",
+      "title": "Integrated transcriptomics- and structure-based drug repositioning identifies drugs with proteasome inhibitor properties.",
+      "journal": "Scientific reports",
+      "year": "2024",
+      "authors": [
+        "Larsson P",
+        "De Rosa MC",
+        "Righino B",
+        "Olsson M",
+        "Florea BI",
+        "Forssell-Aronsson E",
+        "Kovács A",
+        "Karlsson P",
+        "Helou K",
+        "Parris TZ"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "17431761",
+      "title": "Diminished feedback regulation of proteasome expression and resistance to proteasome inhibitors in breast cancer cells.",
+      "journal": "Breast cancer research and treatment",
+      "year": "2008",
+      "authors": [
+        "Xu H",
+        "Ju D",
+        "Jarois T",
+        "Xie Y"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "28827665",
+      "title": "Schisandrin B reverses doxorubicin resistance through inhibiting P-glycoprotein and promoting proteasome-mediated degradation of survivin.",
+      "journal": "Scientific reports",
+      "year": "2017",
+      "authors": [
+        "Wang S",
+        "Wang A",
+        "Shao M",
+        "Lin L",
+        "Li P",
+        "Wang Y"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "17786340",
+      "title": "Ascorbate (vitamin C) induces cell death through the apoptosis-inducing factor in human breast cancer cells.",
+      "journal": "Oncology reports",
+      "year": "2007",
+      "authors": [
+        "Hong SW",
+        "Jin DH",
+        "Hahm ES",
+        "Yim SH",
+        "Lim JS",
+        "Kim KI",
+        "Yang Y",
+        "Lee SS",
+        "Kang JS",
+        "Lee WJ",
+        "Lee WK",
+        "Lee MS"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "31068630",
+      "title": "A Bio-inspired Hypoxia Sensor using HIF1a-Oxygen-Dependent Degradation Domain.",
+      "journal": "Scientific reports",
+      "year": "2019",
+      "authors": [
+        "Iglesias P",
+        "Penas C",
+        "Barral-Cagiao L",
+        "Pazos E",
+        "Costoya JA"
+      ],
+      "source": "ncbi_pubmed"
+    }
+  ]
+}

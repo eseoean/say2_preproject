@@ -1,0 +1,817 @@
+{
+  "data": [
+    {
+      "pmid": "35037689",
+      "title": "Identification of potential immunotherapy biomarkers for breast cancer by bioinformatics analysis.",
+      "journal": "Bioscience reports",
+      "year": "2022",
+      "authors": [
+        "Song Y",
+        "Lu M",
+        "Feng L",
+        "Chen Q",
+        "Huang H",
+        "Lin Q"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "37056925",
+      "title": "Timosaponin AIII promotes non-small-cell lung cancer ferroptosis through targeting and facilitating HSP90 mediated GPX4 ubiquitination and degradation.",
+      "journal": "International journal of biological sciences",
+      "year": "2023",
+      "authors": [
+        "Zhou C",
+        "Yu T",
+        "Zhu R",
+        "Lu J",
+        "Ouyang X",
+        "Zhang Z",
+        "Chen Q",
+        "Li J",
+        "Cui J",
+        "Jiang F",
+        "Jin KY",
+        "Sarapultsev A",
+        "Li F",
+        "Zhang G",
+        "Luo S",
+        "Hu D"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "21558407",
+      "title": "HSP90 inhibition is effective in breast cancer: a phase II trial of tanespimycin (17-AAG) plus trastuzumab in patients with HER2-positive metastatic breast cancer progressing on trastuzumab.",
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "year": "2011",
+      "authors": [
+        "Modi S",
+        "Stopeck A",
+        "Linden H",
+        "Solit D",
+        "Chandarlapaty S",
+        "Rosen N",
+        "D'Andrea G",
+        "Dickler M",
+        "Moynahan ME",
+        "Sugarman S",
+        "Ma W",
+        "Patil S",
+        "Norton L",
+        "Hannah AL",
+        "Hudis C"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "36926455",
+      "title": "Ranking Breast Cancer Drugs and Biomarkers Identification Using Machine Learning and Pharmacogenomics.",
+      "journal": "ACS pharmacology & translational science",
+      "year": "2023",
+      "authors": [
+        "Mehmood A",
+        "Nawab S",
+        "Jin Y",
+        "Hassan H",
+        "Kaushik AC",
+        "Wei DQ"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "23870456",
+      "title": "Hsp90 inhibitors in breast cancer: a systematic review.",
+      "journal": "Breast (Edinburgh, Scotland)",
+      "year": "2013",
+      "authors": [
+        "Zagouri F",
+        "Sergentanis TN",
+        "Chrysikos D",
+        "Papadimitriou CA",
+        "Dimopoulos MA",
+        "Psaltopoulou T"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "18048823",
+      "title": "Combination of trastuzumab and tanespimycin (17-AAG, KOS-953) is safe and active in trastuzumab-refractory HER-2 overexpressing breast cancer: a phase I dose-escalation study.",
+      "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+      "year": "2007",
+      "authors": [
+        "Modi S",
+        "Stopeck AT",
+        "Gordon MS",
+        "Mendelson D",
+        "Solit DB",
+        "Bagatell R",
+        "Ma W",
+        "Wheler J",
+        "Rosen N",
+        "Norton L",
+        "Cropp GF",
+        "Johnson RG",
+        "Hannah AL",
+        "Hudis CA"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "37602329",
+      "title": "Machine learning-driven exploration of drug therapies for triple-negative breast cancer treatment.",
+      "journal": "Frontiers in molecular biosciences",
+      "year": "2023",
+      "authors": [
+        "Kaushik AC",
+        "Zhao Z"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "21454186",
+      "title": "Tanespimycin as antitumor therapy.",
+      "journal": "Clinical lymphoma, myeloma & leukemia",
+      "year": "2011",
+      "authors": [
+        "Dimopoulos MA",
+        "Mitsiades CS",
+        "Anderson KC",
+        "Richardson PG"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "32360890",
+      "title": "Nanocarrier-mediated immunogenic chemotherapy for triple negative breast cancer.",
+      "journal": "Journal of controlled release : official journal of the Controlled Release Society",
+      "year": "2020",
+      "authors": [
+        "Liu Y",
+        "Qiu N",
+        "Shen L",
+        "Liu Q",
+        "Zhang J",
+        "Cheng YY",
+        "Lee KH",
+        "Huang L"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "36532861",
+      "title": "Exploring breast cancer exosomes for novel biomarkers of potential diagnostic and prognostic importance.",
+      "journal": "3 Biotech",
+      "year": "2023",
+      "authors": [
+        "Alagundagi DB",
+        "Ghate SD",
+        "Rajendra VKJ",
+        "Gollapalli P",
+        "Shetty VV",
+        "D'Souza C",
+        "Shetty P",
+        "Patil P"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "19466875",
+      "title": "Tanespimycin: the opportunities and challenges of targeting heat shock protein 90.",
+      "journal": "Expert opinion on investigational drugs",
+      "year": "2009",
+      "authors": [
+        "Erlichman C"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "39187325",
+      "title": "17-AAG Induces Endoplasmic Reticulum Stress-mediated Apoptosis in Breast Cancer Cells, Possibly Through PERK/eIF2α Up-regulation.",
+      "journal": "In vivo (Athens, Greece)",
+      "year": "2024",
+      "authors": [
+        "Suwannalert P",
+        "Panpinyaporn P",
+        "Wantanachaisaeng P",
+        "Teeppaibul T",
+        "Worawichitchaikun T",
+        "Koomsang T",
+        "Naktubtim C",
+        "Payuhakrit W"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "40101623",
+      "title": "In-situ injectable hydrogel for near-infrared-regulated hyperthermic perfusion therapy of triple-negative breast cancer.",
+      "journal": "Journal of colloid and interface science",
+      "year": "2025",
+      "authors": [
+        "Zhai L",
+        "Li L",
+        "Liao T",
+        "Zhu Y",
+        "Li C",
+        "Xu Z",
+        "Zheng D",
+        "Yu W"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "22015288",
+      "title": "Beyond trastuzumab: new treatment options for HER2-positive breast cancer.",
+      "journal": "Breast (Edinburgh, Scotland)",
+      "year": "2011",
+      "authors": [
+        "Saini KS",
+        "Azim HA Jr",
+        "Metzger-Filho O",
+        "Loi S",
+        "Sotiriou C",
+        "de Azambuja E",
+        "Piccart M"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "15269596",
+      "title": "Hsp90: an emerging target for breast cancer therapy.",
+      "journal": "Anti-cancer drugs",
+      "year": "2004",
+      "authors": [
+        "Beliakoff J",
+        "Whitesell L"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "38821604",
+      "title": "A Potential Combination of Targeting HSP90 and mTOR in Breast Cancer Cell Growth, Migration, and Invasion Through Inhibiting AKT Phosphorylation and F-actin Organization.",
+      "journal": "Anticancer research",
+      "year": "2024",
+      "authors": [
+        "Suwannalert P",
+        "Panpinyaporn P",
+        "Wantanachaisaeng P",
+        "Teeppaibul T",
+        "Khumsri W",
+        "Koomsang T",
+        "Payuhakrit W",
+        "Naktubtim C"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "19884552",
+      "title": "Understanding the mechanisms behind trastuzumab therapy for human epidermal growth factor receptor 2-positive breast cancer.",
+      "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+      "year": "2009",
+      "authors": [
+        "Spector NL",
+        "Blackwell KL"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "32527460",
+      "title": "Quinazoline Based HSP90 Inhibitors: Synthesis, Modeling Study and ADME Calculations Towards Breast Cancer Targeting.",
+      "journal": "Bioorganic & medicinal chemistry letters",
+      "year": "2020",
+      "authors": [
+        "El-Shafey HW",
+        "Gomaa RM",
+        "El-Messery SM",
+        "Goda FE"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "32184171",
+      "title": "Altered molecular pathways decides the treatment outcome of Hsp90 inhibitors against breast cancer cells.",
+      "journal": "Toxicology in vitro : an international journal published in association with BIBRA",
+      "year": "2020",
+      "authors": [
+        "Vykuntham NG",
+        "Suran S",
+        "Siripini S",
+        "John S",
+        "Kumar P",
+        "Paithankar K",
+        "Amere Subbarao S"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "22560618",
+      "title": "Breast cancer and HSP90 inhibitors: is there a role beyond the HER2-positive subtype?",
+      "journal": "Breast (Edinburgh, Scotland)",
+      "year": "2012",
+      "authors": [
+        "De Mattos-Arruda L",
+        "Cortes J"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "25159299",
+      "title": "Synergetic cytotoxic activity toward breast cancer cells enhanced by the combination of Antp-TPR hybrid peptide targeting Hsp90 and Hsp70-targeted peptide.",
+      "journal": "BMC cancer",
+      "year": "2014",
+      "authors": [
+        "Horibe T",
+        "Torisawa A",
+        "Kohno M",
+        "Kawakami K"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "28205552",
+      "title": "A class of extracellular vesicles from breast cancer cells activates VEGF receptors and tumour angiogenesis.",
+      "journal": "Nature communications",
+      "year": "2017",
+      "authors": [
+        "Feng Q",
+        "Zhang C",
+        "Lum D",
+        "Druso JE",
+        "Blank B",
+        "Wilson KF",
+        "Welm A",
+        "Antonyak MA",
+        "Cerione RA"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "28870832",
+      "title": "Tuning polypeptide-based micellar carrier for efficient combination therapy of ErbB2-positive breast cancer.",
+      "journal": "Journal of controlled release : official journal of the Controlled Release Society",
+      "year": "2017",
+      "authors": [
+        "Soni KS",
+        "Lei F",
+        "Desale SS",
+        "Marky LA",
+        "Cohen SM",
+        "Bronich TK"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "32236631",
+      "title": "17‑AAG synergizes with Belinostat to exhibit a negative effect on the proliferation and invasion of MDA‑MB‑231 breast cancer cells.",
+      "journal": "Oncology reports",
+      "year": "2020",
+      "authors": [
+        "Zuo Y",
+        "Xu H",
+        "Chen Z",
+        "Xiong F",
+        "Zhang B",
+        "Chen K",
+        "Jiang H",
+        "Luo C",
+        "Zhang H"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "22083229",
+      "title": "A phase II study of 17-allylamino-17-demethoxygeldanamycin in metastatic or locally advanced, unresectable breast cancer.",
+      "journal": "Breast cancer research and treatment",
+      "year": "2012",
+      "authors": [
+        "Gartner EM",
+        "Silverman P",
+        "Simon M",
+        "Flaherty L",
+        "Abrams J",
+        "Ivy P",
+        "Lorusso PM"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "29097911",
+      "title": "MicroPET/CT Imaging of AXL Downregulation by HSP90 Inhibition in Triple-Negative Breast Cancer.",
+      "journal": "Contrast media & molecular imaging",
+      "year": "2017",
+      "authors": [
+        "Wang W",
+        "Zhao J",
+        "Wen X",
+        "Lin CC",
+        "Li J",
+        "Huang Q",
+        "Yu Y",
+        "Lin SY",
+        "Li C"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "18769157",
+      "title": "Targeting Hsp90 prevents escape of breast cancer cells from tyrosine kinase inhibition.",
+      "journal": "Cell cycle (Georgetown, Tex.)",
+      "year": "2008",
+      "authors": [
+        "Pashtan I",
+        "Tsutsumi S",
+        "Wang S",
+        "Xu W",
+        "Neckers L"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "32255264",
+      "title": "Novel C-terminal heat shock protein 90 inhibitors target breast cancer stem cells and block migration, self-renewal, and epithelial-mesenchymal transition.",
+      "journal": "Molecular oncology",
+      "year": "2020",
+      "authors": [
+        "Subramanian C",
+        "Grogan PT",
+        "Wang T",
+        "Bazzill J",
+        "Zuo A",
+        "White PT",
+        "Kalidindi A",
+        "Kuszynski D",
+        "Wang G",
+        "Blagg BSJ",
+        "Cohen MS"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "19014541",
+      "title": "Heat shock protein-90-alpha, a prolactin-STAT5 target gene identified in breast cancer cells, is involved in apoptosis regulation.",
+      "journal": "Breast cancer research : BCR",
+      "year": "2008",
+      "authors": [
+        "Perotti C",
+        "Liu R",
+        "Parusel CT",
+        "Böcher N",
+        "Schultz J",
+        "Bork P",
+        "Pfitzner E",
+        "Groner B",
+        "Shemanko CS"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "12709419",
+      "title": "Medulloblastoma sensitivity to 17-allylamino-17-demethoxygeldanamycin requires MEK/ERKM.",
+      "journal": "The Journal of biological chemistry",
+      "year": "2003",
+      "authors": [
+        "Calabrese C",
+        "Frank A",
+        "Maclean K",
+        "Gilbertson R"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "20176546",
+      "title": "[Management of metastatic HER2-positive breast cancer: present and future].",
+      "journal": "Bulletin du cancer",
+      "year": "2010",
+      "authors": [
+        "Guiu S",
+        "Coudert B",
+        "Favier L",
+        "Arnould L",
+        "Fumoleau P"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "32901933",
+      "title": "Combined treatment with silver graphene quantum dot, radiation, and 17-AAG induces anticancer effects in breast cancer cells.",
+      "journal": "Journal of cellular physiology",
+      "year": "2021",
+      "authors": [
+        "Esgandari K",
+        "Mohammadian M",
+        "Zohdiaghdam R",
+        "Rastin SJ",
+        "Alidadi S",
+        "Behrouzkia Z"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "32327714",
+      "title": "The deubiquitylase USP2 maintains ErbB2 abundance via counteracting endocytic degradation and represents a therapeutic target in ErbB2-positive breast cancer.",
+      "journal": "Cell death and differentiation",
+      "year": "2020",
+      "authors": [
+        "Zhang J",
+        "Liu S",
+        "Li Q",
+        "Shi Y",
+        "Wu Y",
+        "Liu F",
+        "Wang S",
+        "Zaky MY",
+        "Yousuf W",
+        "Sun Q",
+        "Guo D",
+        "Wang T",
+        "Zhang Y",
+        "Wang Y",
+        "Li M",
+        "Liu H"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "22215907",
+      "title": "Hsp90 molecular chaperone inhibitors: are we there yet?",
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "year": "2012",
+      "authors": [
+        "Neckers L",
+        "Workman P"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "25660204",
+      "title": "Polypeptide-based nanogels co-encapsulating a synergistic combination of doxorubicin with 17-AAG show potent anti-tumor activity in ErbB2-driven breast cancer models.",
+      "journal": "Journal of controlled release : official journal of the Controlled Release Society",
+      "year": "2015",
+      "authors": [
+        "Desale SS",
+        "Raja SM",
+        "Kim JO",
+        "Mohapatra B",
+        "Soni KS",
+        "Luan H",
+        "Williams SH",
+        "Bielecki TA",
+        "Feng D",
+        "Storck M",
+        "Band V",
+        "Cohen SM",
+        "Band H",
+        "Bronich TK"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "22377218",
+      "title": "Folate receptor targeted 17-allylamino-17-demethoxygeldanamycin (17-AAG) loaded polymeric nanoparticles for breast cancer.",
+      "journal": "Colloids and surfaces. B, Biointerfaces",
+      "year": "2012",
+      "authors": [
+        "Saxena V",
+        "Naguib Y",
+        "Hussain MD"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "11489796",
+      "title": "Modulation of Hsp90 function by ansamycins sensitizes breast cancer cells to chemotherapy-induced apoptosis in an RB- and schedule-dependent manner. See: E. A. Sausville, Combining cytotoxics and 17-allylamino, 17-demethoxygeldanamycin: sequence and tumor biology matters, Clin. Cancer Res., 7: 2155-2158, 2001.",
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "year": "2001",
+      "authors": [
+        "Münster PN",
+        "Basso A",
+        "Solit D",
+        "Norton L",
+        "Rosen N"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "25225290",
+      "title": "A kinase inhibitor screen reveals protein kinase C-dependent endocytic recycling of ErbB2 in breast cancer cells.",
+      "journal": "The Journal of biological chemistry",
+      "year": "2014",
+      "authors": [
+        "Bailey TA",
+        "Luan H",
+        "Tom E",
+        "Bielecki TA",
+        "Mohapatra B",
+        "Ahmad G",
+        "George M",
+        "Kelly DL",
+        "Natarajan A",
+        "Raja SM",
+        "Band V",
+        "Band H"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "21670086",
+      "title": "Why is this effective HSP90 inhibitor not being developed in HER2+ breast cancer?",
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "year": "2011",
+      "authors": [
+        "Arteaga CL"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "22120678",
+      "title": "Hsp90 inhibitors and drug resistance in cancer: the potential benefits of combination therapies of Hsp90 inhibitors and other anti-cancer drugs.",
+      "journal": "Biochemical pharmacology",
+      "year": "2012",
+      "authors": [
+        "Lu X",
+        "Xiao L",
+        "Wang L",
+        "Ruden DM"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "20920318",
+      "title": "Molecular signature of response and potential pathways related to resistance to the HSP90 inhibitor, 17AAG, in breast cancer.",
+      "journal": "BMC medical genomics",
+      "year": "2010",
+      "authors": [
+        "Zajac M",
+        "Gomez G",
+        "Benitez J",
+        "Martínez-Delgado B"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "21383049",
+      "title": "Antitumor activity of the Hsp90 inhibitor IPI-504 in HER2-positive trastuzumab-resistant breast cancer.",
+      "journal": "Molecular cancer therapeutics",
+      "year": "2011",
+      "authors": [
+        "Scaltriti M",
+        "Serra V",
+        "Normant E",
+        "Guzman M",
+        "Rodriguez O",
+        "Lim AR",
+        "Slocum KL",
+        "West KA",
+        "Rodriguez V",
+        "Prudkin L",
+        "Jimenez J",
+        "Aura C",
+        "Baselga J"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "14729636",
+      "title": "Expression of the insulin-like growth factor I receptor and urokinase plasminogen activator in breast cancer is associated with poor survival: potential for intervention with 17-allylamino geldanamycin.",
+      "journal": "Cancer research",
+      "year": "2004",
+      "authors": [
+        "Nielsen TO",
+        "Andrews HN",
+        "Cheang M",
+        "Kucab JE",
+        "Hsu FD",
+        "Ragaz J",
+        "Gilks CB",
+        "Makretsov N",
+        "Bajdik CD",
+        "Brookes C",
+        "Neckers LM",
+        "Evdokimova V",
+        "Huntsman DG",
+        "Dunn SE"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "19642950",
+      "title": "Retaspimycin hydrochloride (IPI-504): a novel heat shock protein inhibitor as an anticancer agent.",
+      "journal": "Expert opinion on investigational drugs",
+      "year": "2009",
+      "authors": [
+        "Hanson BE",
+        "Vesole DH"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "25277067",
+      "title": "Discovery of diamine-linked 17-aroylamido-17-demethoxygeldanamycins as potent Hsp90 inhibitors.",
+      "journal": "European journal of medicinal chemistry",
+      "year": "2014",
+      "authors": [
+        "Li Z",
+        "Jia L",
+        "Wang J",
+        "Wu X",
+        "Hao H",
+        "Wu Y",
+        "Xu H",
+        "Wang Z",
+        "Shi G",
+        "Lu C",
+        "Shen Y"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "15930315",
+      "title": "The heat shock protein 90 inhibitor, 17-allylamino-17-demethoxygeldanamycin, enhances osteoclast formation and potentiates bone metastasis of a human breast cancer cell line.",
+      "journal": "Cancer research",
+      "year": "2005",
+      "authors": [
+        "Price JT",
+        "Quinn JM",
+        "Sims NA",
+        "Vieusseux J",
+        "Waldeck K",
+        "Docherty SE",
+        "Myers D",
+        "Nakamura A",
+        "Waltham MC",
+        "Gillespie MT",
+        "Thompson EW"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "37612326",
+      "title": "Capsaicin binds the N-terminus of Hsp90, induces lysosomal degradation of Hsp70, and enhances the anti-tumor effects of 17-AAG (Tanespimycin).",
+      "journal": "Scientific reports",
+      "year": "2023",
+      "authors": [
+        "Patwardhan CA",
+        "Kommalapati VK",
+        "Llbiyi T",
+        "Singh D",
+        "Alfa E",
+        "Horuzsko A",
+        "Korkaya H",
+        "Panda S",
+        "Reilly CA",
+        "Popik V",
+        "Chadli A"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "40048012",
+      "title": "Consensus nonnegative matrix factorization reveals metastatic gene expression program and identifies E74-like ETS transcription factor 3 confers to the lymph nodes metastasis in papillary thyroid cancer.",
+      "journal": "Endocrine",
+      "year": "2025",
+      "authors": [
+        "Tao M",
+        "Wu S",
+        "Liu Y",
+        "Ruan X",
+        "Zhang W",
+        "Luo W",
+        "Yu J",
+        "Zeng Y",
+        "Ning J",
+        "Zheng X",
+        "Gao M"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "27215381",
+      "title": "Calpain Genetic Disruption and HSP90 Inhibition Combine To Attenuate Mammary Tumorigenesis.",
+      "journal": "Molecular and cellular biology",
+      "year": "2016",
+      "authors": [
+        "Grieve S",
+        "Gao Y",
+        "Hall C",
+        "Hu J",
+        "Greer PA"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "14581371",
+      "title": "Hormone-refractory breast cancer remains sensitive to the antitumor activity of heat shock protein 90 inhibitors.",
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "year": "2003",
+      "authors": [
+        "Beliakoff J",
+        "Bagatell R",
+        "Paine-Murrieta G",
+        "Taylor CW",
+        "Lykkesfeldt AE",
+        "Whitesell L"
+      ],
+      "source": "ncbi_pubmed"
+    }
+  ]
+}

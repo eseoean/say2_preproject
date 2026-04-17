@@ -1,0 +1,1998 @@
+{
+  "drug_id": 1003,
+  "drug_name": "Camptothecin",
+  "category": "Candidate",
+  "combined_score": 11.0,
+  "timestamp": "2026-04-15 22:02:37",
+  "data_collected": {
+    "basic_info": {
+      "ok": true,
+      "data": {
+        "drug_id": 1003,
+        "drug_name": "Camptothecin",
+        "target": "TOP1",
+        "pathway": "DNA replication",
+        "predicted_ic50": -0.5441507,
+        "sensitivity_rate": 1.0,
+        "validation_score": 8.65,
+        "safety_score": 10.0,
+        "combined_score": 11.0,
+        "final_rank": 12,
+        "category": "Candidate",
+        "clinical_bucket": "유방암 미사용",
+        "known_brca": true,
+        "target_expressed": true,
+        "brca_pathway": true,
+        "survival_sig": true,
+        "recommendation_note": "재창출 관점의 exploratory candidate로 적절합니다."
+      }
+    },
+    "side_effects": {
+      "ok": true,
+      "data": [
+        {
+          "event": "DEATH",
+          "count": 13,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "OFF LABEL USE",
+          "count": 10,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "ACUTE MYELOID LEUKAEMIA",
+          "count": 6,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "FATIGUE",
+          "count": 6,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "NAUSEA",
+          "count": 6,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "MALIGNANT NEOPLASM PROGRESSION",
+          "count": 5,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "VOMITING",
+          "count": 5,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "CONFUSIONAL STATE",
+          "count": 4,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "DIARRHOEA",
+          "count": 4,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "ARTHRALGIA",
+          "count": 3,
+          "source": "openfda_faers"
+        }
+      ],
+      "source": "openfda_live"
+    },
+    "trials": {
+      "ok": true,
+      "data": [
+        {
+          "nct_id": "NCT04640480",
+          "title": "Dose-finding Study to Evaluate the Safety, Tolerability, and Pharmacokinetics of SNB-101(SN-38) in Patients With Tumors",
+          "phase": "PHASE1",
+          "status": "COMPLETED",
+          "conditions": [
+            "Colorectal Cancer",
+            "Breast Cancer",
+            "Pancreas Cancer",
+            "Ovarian Cancer",
+            "Small-cell Lung Cancer",
+            "Gastric Cancer",
+            "Head and Neck Cancer"
+          ],
+          "lead_sponsor": "SN BioScience",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT06431633",
+          "title": "Study of Treatment With Sacituzumab and Zimberelimab for Patients With Lung Cancer Confined to the Chest and Previously Operated on Who Were Not Disease-free.",
+          "phase": "PHASE3",
+          "status": "RECRUITING",
+          "conditions": [
+            "Lung Diseases",
+            "Carcinoma, Non-Small-Cell Lung",
+            "Resectable Lung Non-Small Cell Carcinoma"
+          ],
+          "lead_sponsor": "Fundación GECP",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT05978492",
+          "title": "A Study of TXN10128 in Subjects With Solid Tumors",
+          "phase": "PHASE1",
+          "status": "RECRUITING",
+          "conditions": [
+            "Locally Advanced (Unresectable) or Metastatic Solid Tumors"
+          ],
+          "lead_sponsor": "Txinno Bioscience Inc.",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT02419495",
+          "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies",
+          "phase": "PHASE1",
+          "status": "TERMINATED",
+          "conditions": [
+            "Advanced Malignant Solid Neoplasm",
+            "Clinical Stage III Cutaneous Melanoma AJCC v8",
+            "Clinical Stage IV Cutaneous Melanoma AJCC v8",
+            "Fallopian Tube Carcinoma",
+            "Metastatic Lung Non-Small Cell Carcinoma",
+            "Metastatic Malignant Solid Neoplasm",
+            "Metastatic Melanoma",
+            "Metastatic Renal Cell Carcinoma",
+            "Ovarian Carcinoma",
+            "Pathologic Stage III Cutaneous Melanoma AJCC v8",
+            "Pathologic Stage IIIA Cutaneous Melanoma AJCC v8",
+            "Pathologic Stage IIIB Cutaneous Melanoma AJCC v8",
+            "Pathologic Stage IIIC Cutaneous Melanoma AJCC v8",
+            "Pathologic Stage IIID Cutaneous Melanoma AJCC v8",
+            "Pathologic Stage IV Cutaneous Melanoma AJCC v8",
+            "Primary Peritoneal Carcinoma",
+            "Stage III Lung Cancer AJCC v8",
+            "Stage III Renal Cell Cancer AJCC v8",
+            "Stage IIIA Lung Cancer AJCC v8",
+            "Stage IIIB Lung Cancer AJCC v8",
+            "Stage IIIC Lung Cancer AJCC v8",
+            "Stage IV Lung Cancer AJCC v8",
+            "Stage IV Renal Cell Cancer AJCC v8",
+            "Stage IVA Lung Cancer AJCC v8",
+            "Stage IVB Lung Cancer AJCC v8",
+            "Triple-Negative Breast Carcinoma",
+            "Unresectable Lung Non-Small Cell Carcinoma",
+            "Unresectable Melanoma",
+            "Unresectable Renal Cell Carcinoma"
+          ],
+          "lead_sponsor": "M.D. Anderson Cancer Center",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT00954512",
+          "title": "Study of Robatumumab (SCH 717454, MK-7454) in Combination With Different Treatment Regimens in Participants With Advanced Solid Tumors (P04722, MK-7454-004)",
+          "phase": "PHASE1, PHASE2",
+          "status": "TERMINATED",
+          "conditions": [
+            "Neoplasms"
+          ],
+          "lead_sponsor": "Merck Sharp & Dohme LLC",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT02567435",
+          "title": "Combination Chemotherapy With or Without Temsirolimus in Treating Patients With Intermediate Risk Rhabdomyosarcoma",
+          "phase": "PHASE3",
+          "status": "ACTIVE_NOT_RECRUITING",
+          "conditions": [
+            "Alveolar Rhabdomyosarcoma",
+            "Botryoid-Type Embryonal Rhabdomyosarcoma",
+            "Embryonal Rhabdomyosarcoma",
+            "Rhabdomyosarcoma",
+            "Sclerosing Rhabdomyosarcoma",
+            "Spindle Cell Rhabdomyosarcoma"
+          ],
+          "lead_sponsor": "National Cancer Institute (NCI)",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT00828139",
+          "title": "S0802 - Topotecan With or Without Aflibercept in Treating Patients With Extensive-Stage Small Cell Lung Cancer",
+          "phase": "PHASE2",
+          "status": "COMPLETED",
+          "conditions": [
+            "Extensive Stage Small Cell Lung Cancer",
+            "Recurrent Small Cell Lung Cancer"
+          ],
+          "lead_sponsor": "National Cancer Institute (NCI)",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT00275041",
+          "title": "Irinotecan and Cetuximab in Treating Patients With Metastatic Breast Cancer",
+          "phase": "PHASE2",
+          "status": "COMPLETED",
+          "conditions": [
+            "Breast Cancer"
+          ],
+          "lead_sponsor": "Alliance for Clinical Trials in Oncology",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT00532714",
+          "title": "Phase II Study of Irinotecan/Capecitabine in Patients With Antracycline/Taxane Pretreated MBC",
+          "phase": "PHASE2",
+          "status": "COMPLETED",
+          "conditions": [
+            "Breast Cancer Metastatic"
+          ],
+          "lead_sponsor": "National Cancer Center, Korea",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT04094688",
+          "title": "Vitamin D3 With Chemotherapy and Bevacizumab in Treating Patients With Advanced or Metastatic Colorectal Cancer",
+          "phase": "PHASE3",
+          "status": "ACTIVE_NOT_RECRUITING",
+          "conditions": [
+            "Colorectal Adenocarcinoma"
+          ],
+          "lead_sponsor": "Alliance for Clinical Trials in Oncology",
+          "source": "clinicaltrials_gov_v2"
+        }
+      ],
+      "source": "clinicaltrials_live"
+    },
+    "targets": {
+      "ok": true,
+      "data": [
+        {
+          "target": "TOP1",
+          "source": "local_frc_step6_7"
+        }
+      ]
+    },
+    "pathways": {
+      "ok": true,
+      "data": [
+        {
+          "pathway": "DNA replication",
+          "source": "local_frc_step6_7"
+        }
+      ]
+    },
+    "pubmed_general": {
+      "ok": true,
+      "query": "Camptothecin",
+      "data": [
+        {
+          "pmid": "4591566",
+          "title": "Camptothecin.",
+          "journal": "Journal of pharmaceutical sciences",
+          "year": "1974",
+          "authors": [
+            "Shamma M",
+            "St Georgiev V"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "4578778",
+          "title": "Camptothecin.",
+          "journal": "Chemical reviews",
+          "year": "1973",
+          "authors": [
+            "Schultz AG"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "15796188",
+          "title": "Novel camptothecin derivatives.",
+          "journal": "In vivo (Athens, Greece)",
+          "year": "2005",
+          "authors": [
+            "Legarza K",
+            "Yang LX"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "12425455",
+          "title": "Camptothecin delivery methods.",
+          "journal": "Pharmaceutical research",
+          "year": "2002",
+          "authors": [
+            "Hatefi A",
+            "Amsden B"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "8993515",
+          "title": "Camptothecin and its analogs. An overview of their potential in cancer therapeutics.",
+          "journal": "Annals of the New York Academy of Sciences",
+          "year": "1996",
+          "authors": [
+            "Muggia FM",
+            "Dimery I",
+            "Arbuck SG"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "16842195",
+          "title": "Review camptothecin: current perspectives.",
+          "journal": "Current medicinal chemistry",
+          "year": "2006",
+          "authors": [
+            "Li QY",
+            "Zu YG",
+            "Shi RZ",
+            "Yao LP"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "16990856",
+          "title": "Topoisomerase I inhibitors: camptothecins and beyond.",
+          "journal": "Nature reviews. Cancer",
+          "year": "2006",
+          "authors": [
+            "Pommier Y"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "23432590",
+          "title": "Camptothecin resistance in cancer: insights into the molecular mechanisms of a DNA-damaging drug.",
+          "journal": "Current medicinal chemistry",
+          "year": "2013",
+          "authors": [
+            "Beretta GL",
+            "Gatti L",
+            "Perego P",
+            "Zaffaroni N"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "11301839",
+          "title": "Camptothecin schedule and timing of administration with irradiation.",
+          "journal": "Oncology (Williston Park, N.Y.)",
+          "year": "2001",
+          "authors": [
+            "Rich TA",
+            "Kirichenko AV"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "25808858",
+          "title": "Perspectives on biologically active camptothecin derivatives.",
+          "journal": "Medicinal research reviews",
+          "year": "2015",
+          "authors": [
+            "Liu YQ",
+            "Li WQ",
+            "Morris-Natschke SL",
+            "Qian K",
+            "Yang L",
+            "Zhu GX",
+            "Wu XB",
+            "Chen AL",
+            "Zhang SY",
+            "Nan X",
+            "Lee KH"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "35490429",
+          "title": "Total Synthesis, Mechanism of Action, and Antitumor Efficacy of Camptothecin and Some of its Analogues.",
+          "journal": "Anti-cancer agents in medicinal chemistry",
+          "year": "2022",
+          "authors": [
+            "Bacherikov VA"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "11193897",
+          "title": "Pharmacology of camptothecin esters.",
+          "journal": "Annals of the New York Academy of Sciences",
+          "year": "2000",
+          "authors": [
+            "Liehr JG",
+            "Harris NJ",
+            "Mendoza J",
+            "Ahmed AE",
+            "Giovanella BC"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "40368189",
+          "title": "Long-circulating enzyme-activated HSP90-targeted camptothecin derivatives.",
+          "journal": "Journal of controlled release : official journal of the Controlled Release Society",
+          "year": "2025",
+          "authors": [
+            "Ding M",
+            "Shen Q",
+            "Su Y",
+            "Lu Y",
+            "Jin J",
+            "Chen Y",
+            "Lu W",
+            "Fang Y",
+            "Zhu S"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "38823466",
+          "title": "Polymeric micelles paving the Way: Recent breakthroughs in camptothecin delivery for enhanced chemotherapy.",
+          "journal": "International journal of pharmaceutics",
+          "year": "2024",
+          "authors": [
+            "Farhoudi L",
+            "Maryam Hosseinikhah S",
+            "Vahdat-Lasemi F",
+            "Sukhorukov VN",
+            "Kesharwani P",
+            "Sahebkar A"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "16524321",
+          "title": "Camptothecin and podophyllotoxin derivatives: inhibitors of topoisomerase I and II - mechanisms of action, pharmacokinetics and toxicity profile.",
+          "journal": "Drug safety",
+          "year": "2006",
+          "authors": [
+            "Hartmann JT",
+            "Lipp HP"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "40076615",
+          "title": "Novel Camptothecin Derivative 9c with Enhanced Antitumor Activity via NSA2-EGFR-P53 Signaling Pathway.",
+          "journal": "International journal of molecular sciences",
+          "year": "2025",
+          "authors": [
+            "Du F",
+            "Zhang A",
+            "Qi X",
+            "Yin R",
+            "Jiang T",
+            "Li J"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "16370935",
+          "title": "Rubitecan.",
+          "journal": "Expert opinion on investigational drugs",
+          "year": "2006",
+          "authors": [
+            "Clark JW"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "10846537",
+          "title": "[Pharmacology of camptothecin and its derivatives].",
+          "journal": "Bulletin du cancer",
+          "year": "1995",
+          "authors": [
+            "Rivory LP",
+            "Robert J"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "29239010",
+          "title": "Silicon-containing analogs of camptothecin as anticancer agents.",
+          "journal": "Archiv der Pharmazie",
+          "year": "2018",
+          "authors": [
+            "Lazareva NF",
+            "Baryshok VP",
+            "Lazarev IM"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "16101487",
+          "title": "Camptothecin: roles of the D and E rings in binding to the topoisomerase I-DNA covalent binary complex.",
+          "journal": "Current medicinal chemistry. Anti-cancer agents",
+          "year": "2005",
+          "authors": [
+            "Hecht SM"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "35439320",
+          "title": "TOP1-DNA Trapping by Exatecan and Combination Therapy with ATR Inhibitor.",
+          "journal": "Molecular cancer therapeutics",
+          "year": "2022",
+          "authors": [
+            "Jo U",
+            "Murai Y",
+            "Agama KK",
+            "Sun Y",
+            "Saha LK",
+            "Yang X",
+            "Arakawa Y",
+            "Gayle S",
+            "Jones K",
+            "Paralkar V",
+            "Sundaram RK",
+            "Van Doorn J",
+            "Vasquez JC",
+            "Bindra RS",
+            "Choi WS",
+            "Pommier Y"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "11193923",
+          "title": "Camptothecin design and delivery approaches for elevating anti-topoisomerase I activities in vivo.",
+          "journal": "Annals of the New York Academy of Sciences",
+          "year": "2000",
+          "authors": [
+            "Burke TG",
+            "Bom D"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "9762728",
+          "title": "Clinical pharmacokinetics of camptothecin topoisomerase I inhibitors.",
+          "journal": "Pharmacy world & science : PWS",
+          "year": "1998",
+          "authors": [
+            "Herben VM",
+            "Ten Bokkel Huinink WW",
+            "Schellens JH",
+            "Beijnen JH"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "11743213",
+          "title": "The development of camptothecin analogs in childhood cancers.",
+          "journal": "The oncologist",
+          "year": "2001",
+          "authors": [
+            "Bomgaars L",
+            "Berg SL",
+            "Blaney SM"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "12375799",
+          "title": "Camptothecin and taxane regimens for small-cell lung cancer.",
+          "journal": "Oncology (Williston Park, N.Y.)",
+          "year": "2002",
+          "authors": [
+            "Kwong MS",
+            "Bleickardt E",
+            "Murren JR"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "22680917",
+          "title": "Namitecan: a hydrophilic camptothecin with a promising preclinical profile.",
+          "journal": "Current medicinal chemistry",
+          "year": "2012",
+          "authors": [
+            "Beretta GL",
+            "Zuco V",
+            "De Cesare M",
+            "Perego P",
+            "Zaffaroni N"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "31631694",
+          "title": "The biosynthesis of camptothecin derivatives by Camptotheca acuminata seedlings.",
+          "journal": "Natural product research",
+          "year": "2021",
+          "authors": [
+            "Sun Y",
+            "Zhang N",
+            "Wang C",
+            "Bai X",
+            "Wei Y",
+            "Liu J"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "9615866",
+          "title": "Preclinical development of camptothecin derivatives and clinical trials in pediatric oncology.",
+          "journal": "Biochimie",
+          "year": "1998",
+          "authors": [
+            "Vassal G",
+            "Pondarré C",
+            "Boland I",
+            "Cappelli C",
+            "Santos A",
+            "Thomas C",
+            "Lucchi E",
+            "Imadalou K",
+            "Pein F",
+            "Morizet J",
+            "Gouyette A"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "12842380",
+          "title": "The camptothecins.",
+          "journal": "Lancet (London, England)",
+          "year": "2003",
+          "authors": [
+            "Pizzolato JF",
+            "Saltz LB"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "29748210",
+          "title": "Novel Fluoroindenoisoquinoline Non-Camptothecin Topoisomerase I Inhibitors.",
+          "journal": "Molecular cancer therapeutics",
+          "year": "2018",
+          "authors": [
+            "Marzi L",
+            "Agama K",
+            "Murai J",
+            "Difilippantonio S",
+            "James A",
+            "Peer CJ",
+            "Figg WD",
+            "Beck D",
+            "Elsayed MSA",
+            "Cushman M",
+            "Pommier Y"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "31173229",
+          "title": "Development of an enzyme‑linked immunosorbent assay for camptothecin.",
+          "journal": "Molecular medicine reports",
+          "year": "2019",
+          "authors": [
+            "Yan L",
+            "Nan X",
+            "Zhang C",
+            "Wang H",
+            "Huang X",
+            "Hu J",
+            "Liu Y"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "36609265",
+          "title": "Production and bioprocessing of camptothecin from Aspergillus terreus, an endophyte of Cestrum parqui, restoring their biosynthetic potency by Citrus limonum peel extracts.",
+          "journal": "Microbial cell factories",
+          "year": "2023",
+          "authors": [
+            "El-Sayed ASA",
+            "George NM",
+            "Abou-Elnour A",
+            "El-Mekkawy RM",
+            "El-Demerdash MM"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "9726103",
+          "title": "Camptothecin radiation sensitization: mechanisms, schedules, and timing.",
+          "journal": "Oncology (Williston Park, N.Y.)",
+          "year": "1998",
+          "authors": [
+            "Rich TA",
+            "Kirichenko AV"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "14593855",
+          "title": "Clinical studies of camptothecin and derivatives.",
+          "journal": "The Alkaloids. Chemistry and biology",
+          "year": "2003",
+          "authors": [
+            "Soepenberg O",
+            "Sparreboom A",
+            "Verweij J"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "15892685",
+          "title": "Synthesis and pharmacology of new camptothecin drugs.",
+          "journal": "Mini reviews in medicinal chemistry",
+          "year": "2005",
+          "authors": [
+            "Driver RW",
+            "Yang LX"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "20166932",
+          "title": "Tyrosyl-DNA phosphodiesterase 1 targeting for modulation of camptothecin-based treatment.",
+          "journal": "Current medicinal chemistry",
+          "year": "2010",
+          "authors": [
+            "Beretta GL",
+            "Cossa G",
+            "Gatti L",
+            "Zunino F",
+            "Perego P"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "26079886",
+          "title": "Camptothecin and topotecan inhibit adipocyte differentiation by inducing degradation of PPARγ.",
+          "journal": "Biochemical and biophysical research communications",
+          "year": "2015",
+          "authors": [
+            "Kim JH",
+            "Jeong M",
+            "Lee SS",
+            "Song J"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "8869798",
+          "title": "The clinical status of irinotecan (CPT-11), a novel water soluble camptothecin analogue: 1996.",
+          "journal": "Critical reviews in oncology/hematology",
+          "year": "1996",
+          "authors": [
+            "O'Reilly S",
+            "Rowinsky EK"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "37670002",
+          "title": "Genomic and transcriptomic analysis of camptothecin producing novel fungal endophyte: Alternaria burnsii NCIM 1409.",
+          "journal": "Scientific reports",
+          "year": "2023",
+          "authors": [
+            "Natarajan S",
+            "Pucker B",
+            "Srivastava S"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "34045605",
+          "title": "Screening and selection of camptothecin producing endophytes from Nothapodytes nimmoniana.",
+          "journal": "Scientific reports",
+          "year": "2021",
+          "authors": [
+            "Mohinudeen IAHK",
+            "Pandey S",
+            "Kanniyappan H",
+            "Muthuvijayan V",
+            "Srivastava S"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "16472226",
+          "title": "Macromolecular and nanotechnological modification of camptothecin and its analogs to improve the efficacy.",
+          "journal": "Current drug discovery technologies",
+          "year": "2005",
+          "authors": [
+            "Onishi H",
+            "Machida Y"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "27138759",
+          "title": "Strategies Targeting DNA Topoisomerase I in Cancer Chemotherapy: Camptothecins, Nanocarriers for Camptothecins, Organic Non-Camptothecin Compounds and Metal Complexes.",
+          "journal": "Current drug targets",
+          "year": "2016",
+          "authors": [
+            "Gokduman K"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "1727922",
+          "title": "Camptothecins.",
+          "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+          "year": "1992",
+          "authors": [
+            "Chabner BA"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "9932086",
+          "title": "[The other camptothecins: recent advances with camptothecin analogues other than irinotecan and topotecan].",
+          "journal": "Bulletin du cancer",
+          "year": "1998",
+          "authors": [
+            "Lavergne O",
+            "Bigg DC"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "33446714",
+          "title": "Sustainable production of camptothecin from an Alternaria sp. isolated from Nothapodytes nimmoniana.",
+          "journal": "Scientific reports",
+          "year": "2021",
+          "authors": [
+            "Mohinudeen IAHK",
+            "Kanumuri R",
+            "Soujanya KN",
+            "Shaanker RU",
+            "Rayala SK",
+            "Srivastava S"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "22283650",
+          "title": "Delivery methods of camptothecin and its hydrosoluble analogue irinotecan for treatment of colorectal cancer.",
+          "journal": "Current drug delivery",
+          "year": "2012",
+          "authors": [
+            "Mollica A",
+            "Stefanucci A",
+            "Feliciani F",
+            "Cacciatore I",
+            "Cornacchia C",
+            "Pinnen F"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "12756214",
+          "title": "Identification of the metabolites of 9-nitro-20(S)-camptothecin in rats.",
+          "journal": "Drug metabolism and disposition: the biological fate of chemicals",
+          "year": "2003",
+          "authors": [
+            "Li K",
+            "Chen X",
+            "Zhong D",
+            "Li Y"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "38346501",
+          "title": "In vivo activation of FAP-cleavable small molecule-drug conjugates for the targeted delivery of camptothecins and tubulin poisons to the tumor microenvironment.",
+          "journal": "Journal of controlled release : official journal of the Controlled Release Society",
+          "year": "2024",
+          "authors": [
+            "Bocci M",
+            "Zana A",
+            "Principi L",
+            "Lucaroni L",
+            "Prati L",
+            "Gilardoni E",
+            "Neri D",
+            "Cazzamalli S",
+            "Galbiati A"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "36838813",
+          "title": "Interaction of Camptothecin Anticancer Drugs with Ribosomal Proteins L15 and L11: A Molecular Docking Study.",
+          "journal": "Molecules (Basel, Switzerland)",
+          "year": "2023",
+          "authors": [
+            "Bailly C",
+            "Vergoten G"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "8965250",
+          "title": "[Camptothecin and derivatives: a new class of antitumor agents].",
+          "journal": "Journal de pharmacie de Belgique",
+          "year": "1996",
+          "authors": [
+            "Torck M",
+            "Pinkas M"
+          ],
+          "source": "ncbi_pubmed"
+        }
+      ],
+      "source": "pubmed_live"
+    },
+    "pubmed_breast_cancer": {
+      "ok": true,
+      "query": "Camptothecin breast cancer",
+      "data": [
+        {
+          "pmid": "38291745",
+          "title": "HER2-Low Breast Cancer: Now and in the Future.",
+          "journal": "Cancer research and treatment",
+          "year": "2024",
+          "authors": [
+            "Kang S",
+            "Kim SB"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "38621469",
+          "title": "Trastuzumab deruxtecan in breast cancer.",
+          "journal": "Critical reviews in oncology/hematology",
+          "year": "2024",
+          "authors": [
+            "Martín M",
+            "Pandiella A",
+            "Vargas-Castrillón E",
+            "Díaz-Rodríguez E",
+            "Iglesias-Hernangómez T",
+            "Martínez Cano C",
+            "Fernández-Cuesta I",
+            "Winkow E",
+            "Perelló MF"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "32223649",
+          "title": "TROPiCS-02: A Phase III study investigating sacituzumab govitecan in the treatment of HR+/HER2- metastatic breast cancer.",
+          "journal": "Future oncology (London, England)",
+          "year": "2020",
+          "authors": [
+            "Rugo HS",
+            "Bardia A",
+            "Tolaney SM",
+            "Arteaga C",
+            "Cortes J",
+            "Sohn J",
+            "Marmé F",
+            "Hong Q",
+            "Delaney RJ",
+            "Hafeez A",
+            "André F",
+            "Schmid P"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "39164784",
+          "title": "The DNA repair pathway as a therapeutic target to synergize with trastuzumab deruxtecan in HER2-targeted antibody-drug conjugate-resistant HER2-overexpressing breast cancer.",
+          "journal": "Journal of experimental & clinical cancer research : CR",
+          "year": "2024",
+          "authors": [
+            "Lee J",
+            "Kida K",
+            "Koh J",
+            "Liu H",
+            "Manyam GC",
+            "Gi YJ",
+            "Rampa DR",
+            "Multani AS",
+            "Wang J",
+            "Jayachandran G",
+            "Lee DW",
+            "Reuben JM",
+            "Sahin A",
+            "Huo L",
+            "Tripathy D",
+            "Im SA",
+            "Ueno NT"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "39500221",
+          "title": "Unveiling the future of breast cancer therapy: Cutting-edge antibody-drug conjugate strategies and clinical outcomes.",
+          "journal": "Breast (Edinburgh, Scotland)",
+          "year": "2024",
+          "authors": [
+            "Sun L",
+            "Jia X",
+            "Wang K",
+            "Li M"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "40811144",
+          "title": "Outcomes of subsequent treatment regimens after trastuzumab deruxtecan in patients with metastatic breast cancer.",
+          "journal": "Journal of the National Cancer Institute",
+          "year": "2025",
+          "authors": [
+            "Tarantino P",
+            "Lee D",
+            "Foldi J",
+            "Soulos PR",
+            "Gross CP",
+            "O'Meara T",
+            "Grinda T",
+            "Morganti S",
+            "Waks AG",
+            "Winer EP",
+            "Lin NU",
+            "Krop IE",
+            "Tolaney SM",
+            "Sammons S",
+            "Lustberg M"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "37775347",
+          "title": "Efficacy and Safety of Trastuzumab Deruxtecan in Breast Cancer: A Systematic Review and Meta-Analysis.",
+          "journal": "Clinical breast cancer",
+          "year": "2023",
+          "authors": [
+            "Dowling GP",
+            "Daly GR",
+            "Keelan S",
+            "Boland F",
+            "Toomey S",
+            "Hill ADK",
+            "Hennessy BT"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "33118153",
+          "title": "Population Pharmacokinetics of Trastuzumab Deruxtecan in Patients With HER2-Positive Breast Cancer and Other Solid Tumors.",
+          "journal": "Clinical pharmacology and therapeutics",
+          "year": "2021",
+          "authors": [
+            "Yin O",
+            "Xiong Y",
+            "Endo S",
+            "Yoshihara K",
+            "Garimella T",
+            "AbuTarif M",
+            "Wada R",
+            "LaCreta F"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "39555080",
+          "title": "Advances in Trop-2 targeted antibody-drug conjugates for breast cancer: mechanisms, clinical applications, and future directions.",
+          "journal": "Frontiers in immunology",
+          "year": "2024",
+          "authors": [
+            "Tong Y",
+            "Fan X",
+            "Liu H",
+            "Liang T"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "39265579",
+          "title": "The DEBBRAH trial: Trastuzumab deruxtecan in HER2-positive and HER2-low breast cancer patients with leptomeningeal carcinomatosis.",
+          "journal": "Med (New York, N.Y.)",
+          "year": "2025",
+          "authors": [
+            "Vaz Batista M",
+            "Pérez-García JM",
+            "Garrigós L",
+            "García-Sáenz JÁ",
+            "Cortez P",
+            "Racca F",
+            "Blanch S",
+            "Ruiz-Borrego M",
+            "Fernández-Ortega A",
+            "Fernández-Abad M",
+            "Iranzo V",
+            "Gion M",
+            "Martrat G",
+            "Alcalá-López D",
+            "Pérez-Escuredo J",
+            "Sampayo-Cordero M",
+            "Llombart-Cussac A",
+            "Braga S",
+            "Cortés J"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "40579589",
+          "title": "p95HER2, a truncated form of the HER2 oncoprotein, drives an immunosuppressive program in HER2(+) breast cancer that limits trastuzumab deruxtecan efficacy.",
+          "journal": "Nature cancer",
+          "year": "2025",
+          "authors": [
+            "Hu D",
+            "Lyu X",
+            "Li Z",
+            "Ekambaram P",
+            "Dongre A",
+            "Freeman T",
+            "Joy M",
+            "Atkinson JM",
+            "Brown DD",
+            "Cai Z",
+            "Carleton NM",
+            "Crentsil HE",
+            "Little J 4th",
+            "Kemp F",
+            "Klei LR",
+            "Beecher M",
+            "Sperinde J",
+            "Huang W",
+            "Joensuu H",
+            "Srinivasan A",
+            "Pogue-Geile KL",
+            "Wang Y",
+            "Feng H",
+            "Eli LD",
+            "Lalani AS",
+            "Zou J",
+            "Tseng GC",
+            "Bruno TC",
+            "Lee AV",
+            "Oesterreich S",
+            "Wolmark N",
+            "Allegra CJ",
+            "Jacobs SA",
+            "McAllister-Lucas LM",
+            "Lucas PC"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "38502995",
+          "title": "Clinical management, monitoring, and prophylaxis of adverse events of special interest associated with datopotamab deruxtecan.",
+          "journal": "Cancer treatment reviews",
+          "year": "2024",
+          "authors": [
+            "Heist RS",
+            "Sands J",
+            "Bardia A",
+            "Shimizu T",
+            "Lisberg A",
+            "Krop I",
+            "Yamamoto N",
+            "Kogawa T",
+            "Al-Hashimi S",
+            "Fung SSM",
+            "Galor A",
+            "Pisetzky F",
+            "Basak P",
+            "Lau C",
+            "Meric-Bernstam F"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "38922307",
+          "title": "OptimICE-RD: sacituzumab govitecan + pembrolizumab vs pembrolizumab (± capecitabine) for residual triple-negative breast cancer.",
+          "journal": "Future oncology (London, England)",
+          "year": "2024",
+          "authors": [
+            "Tolaney SM",
+            "DeMichele A",
+            "Takano T",
+            "Rugo HS",
+            "Perou C",
+            "Lynce F",
+            "Parsons HA",
+            "Santa-Maria CA",
+            "Rocque GB",
+            "Yao W",
+            "Sun SW",
+            "Mocci S",
+            "Partridge AH",
+            "Carey LA"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "35941372",
+          "title": "Trastuzumab deruxtecan in HER2-positive breast cancer with brain metastases: a single-arm, phase 2 trial.",
+          "journal": "Nature medicine",
+          "year": "2022",
+          "authors": [
+            "Bartsch R",
+            "Berghoff AS",
+            "Furtner J",
+            "Marhold M",
+            "Bergen ES",
+            "Roider-Schur S",
+            "Starzer AM",
+            "Forstner H",
+            "Rottenmanner B",
+            "Dieckmann K",
+            "Bago-Horvath Z",
+            "Haslacher H",
+            "Widhalm G",
+            "Ilhan-Mutlu A",
+            "Minichsdorfer C",
+            "Fuereder T",
+            "Szekeres T",
+            "Oehler L",
+            "Gruenberger B",
+            "Singer CF",
+            "Weltermann A",
+            "Puhr R",
+            "Preusser M"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "33999422",
+          "title": "Exposure-Response Relationships in Patients With HER2-Positive Metastatic Breast Cancer and Other Solid Tumors Treated With Trastuzumab Deruxtecan.",
+          "journal": "Clinical pharmacology and therapeutics",
+          "year": "2021",
+          "authors": [
+            "Yin O",
+            "Iwata H",
+            "Lin CC",
+            "Tamura K",
+            "Watanabe J",
+            "Wada R",
+            "Kastrissios H",
+            "AbuTarif M",
+            "Garimella T",
+            "Lee C",
+            "Zhang L",
+            "Shahidi J",
+            "LaCreta F"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "37951130",
+          "title": "Multidisciplinary clinical guidelines in proactive monitoring, early diagnosis, and effective management of trastuzumab deruxtecan (T-DXd)-induced interstitial lung disease (ILD) in breast cancer patients.",
+          "journal": "ESMO open",
+          "year": "2023",
+          "authors": [
+            "Wekking D",
+            "Porcu M",
+            "Pellegrino B",
+            "Lai E",
+            "Mura G",
+            "Denaro N",
+            "Saba L",
+            "Musolino A",
+            "Scartozzi M",
+            "Solinas C"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "39354196",
+          "title": "Sacituzumab govitecan in HR(+)HER2(-) metastatic breast cancer: the randomized phase 3 EVER-132-002 trial.",
+          "journal": "Nature medicine",
+          "year": "2024",
+          "authors": [
+            "Xu B",
+            "Wang S",
+            "Yan M",
+            "Sohn J",
+            "Li W",
+            "Tang J",
+            "Wang X",
+            "Wang Y",
+            "Im SA",
+            "Jiang D",
+            "Valdez T",
+            "Dasgupta A",
+            "Zhang Y",
+            "Yan Y",
+            "Komatsubara KM",
+            "Chung WP",
+            "Ma F",
+            "Dai MS"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "38979893",
+          "title": "Trastuzumab deruxtecan versus trastuzumab emtansine in Asian patients with HER2-positive metastatic breast cancer.",
+          "journal": "Cancer science",
+          "year": "2024",
+          "authors": [
+            "Iwata H",
+            "Xu B",
+            "Kim SB",
+            "Chung WP",
+            "Park YH",
+            "Kim MH",
+            "Tseng LM",
+            "Chung CF",
+            "Huang CS",
+            "Kim JH",
+            "Chiu JWY",
+            "Yamashita T",
+            "Li W",
+            "Egorov A",
+            "Nishijima S",
+            "Nakatani S",
+            "Nishiyama Y",
+            "Sugihara M",
+            "Cortés J",
+            "Im SA"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "39001628",
+          "title": "Copper-Based Composites Nanoparticles Improve Triple-Negative Breast Cancer Treatment with Induction of Apoptosis-Cuproptosis and Immune Activation.",
+          "journal": "Advanced healthcare materials",
+          "year": "2024",
+          "authors": [
+            "Wang N",
+            "Liu Y",
+            "Peng D",
+            "Zhang Q",
+            "Zhang Z",
+            "Xu L",
+            "Yin L",
+            "Zhao X",
+            "Lu Z",
+            "Peng J"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "40175391",
+          "title": "Effective extracellular payload release and immunomodulatory interactions govern the therapeutic effect of trastuzumab deruxtecan (T-DXd).",
+          "journal": "Nature communications",
+          "year": "2025",
+          "authors": [
+            "Tsao LC",
+            "Wang JS",
+            "Ma X",
+            "Sodhi S",
+            "Ragusa JV",
+            "Liu B",
+            "McBane J",
+            "Wang T",
+            "Wei J",
+            "Liu CX",
+            "Yang X",
+            "Lei G",
+            "Spasojevic I",
+            "Fan P",
+            "Trotter TN",
+            "Morse M",
+            "Lyerly HK",
+            "Hartman ZC"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "39112464",
+          "title": "Sacituzumab Govitecan in patients with breast cancer brain metastases and recurrent glioblastoma: a phase 0 window-of-opportunity trial.",
+          "journal": "Nature communications",
+          "year": "2024",
+          "authors": [
+            "Balinda HU",
+            "Kelly WJ",
+            "Kaklamani VG",
+            "Lathrop KI",
+            "Canola MM",
+            "Ghamasaee P",
+            "Sareddy GR",
+            "Michalek J",
+            "Gilbert AR",
+            "Surapaneni P",
+            "Tiziani S",
+            "Pandey R",
+            "Chiou J",
+            "Lodi A",
+            "Floyd JR 2nd",
+            "Brenner AJ"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "40460510",
+          "title": "Mechanisms of resistance to antibody-drug conjugates in cancers.",
+          "journal": "Respiratory investigation",
+          "year": "2025",
+          "authors": [
+            "Murase Y",
+            "Nanjo S",
+            "Ueda T",
+            "Liu Y",
+            "Nomura S",
+            "Arai S",
+            "Terada N",
+            "Koba H",
+            "Tambo Y",
+            "Yano S"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "26101915",
+          "title": "Trop-2 is a novel target for solid cancer therapy with sacituzumab govitecan (IMMU-132), an antibody-drug conjugate (ADC).",
+          "journal": "Oncotarget",
+          "year": "2015",
+          "authors": [
+            "Goldenberg DM",
+            "Cardillo TM",
+            "Govindan SV",
+            "Rossi EA",
+            "Sharkey RM"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "38884900",
+          "title": "Trastuzumab deruxtecan versus treatment of physician's choice in previously treated Asian patients with HER2-low unresectable/metastatic breast cancer: subgroup analysis of the DESTINY-Breast04 study.",
+          "journal": "Breast cancer (Tokyo, Japan)",
+          "year": "2024",
+          "authors": [
+            "Yamashita T",
+            "Sohn JH",
+            "Tokunaga E",
+            "Niikura N",
+            "Park YH",
+            "Lee KS",
+            "Chae YS",
+            "Xu B",
+            "Wang X",
+            "Im SA",
+            "Li W",
+            "Lu YS",
+            "Aguilar CO",
+            "Nishijima S",
+            "Nishiyama Y",
+            "Sugihara M",
+            "Modi S",
+            "Tsurutani J"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "34969512",
+          "title": "Cancer du sein HER2-low : comment un concept biologique s’immisce-t-il dans la décision thérapeutique ?: HER2-low breast cancer: how does a biological concept interfere in therapeutic decision?",
+          "journal": "Bulletin du cancer",
+          "year": "2021",
+          "authors": [
+            "Mallet A",
+            "Ombline C",
+            "Robert M",
+            "Campone M",
+            "Frenel JS"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "41167529",
+          "title": "International Expert Consensus Recommendations for HER2 Reporting in Breast Cancer: Focus on HER2-Low and Ultralow Categories.",
+          "journal": "Modern pathology : an official journal of the United States and Canadian Academy of Pathology, Inc",
+          "year": "2026",
+          "authors": [
+            "Rakha EA",
+            "Tan PH",
+            "Van Bockstal MR",
+            "Allison KH",
+            "Brogi E",
+            "Callagy G",
+            "Cserni G",
+            "Jaffer S",
+            "Foschini MP",
+            "Gobbi H",
+            "Kulka J",
+            "Li X",
+            "Provenzano E",
+            "Shaaban AM",
+            "Tse GM",
+            "Varga Z",
+            "Vincent-Salomon A",
+            "Yamaguchi R",
+            "Yang W",
+            "ElSheikh S",
+            "Bhargava R",
+            "De Brot M",
+            "Canas-Marques R",
+            "Marchiò C",
+            "Warren MV",
+            "van Deurzen CHM",
+            "Mir Y",
+            "Deb R",
+            "Wen H",
+            "Ellis IO",
+            "Schnitt SJ",
+            "Pinder SE",
+            "Raymond W",
+            "Quinn C",
+            "UK National Coordinating Committee of Breast Pathology, the Association of Breast Pathology, the European Working Group for Breast Screening Pathology and the International Society of Breast Pathology"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "41212147",
+          "title": "Trastuzumab Deruxtecan Resistance via Loss of HER2 Expression and Binding.",
+          "journal": "Cancer discovery",
+          "year": "2026",
+          "authors": [
+            "Chen W",
+            "Gupta A",
+            "Mai N",
+            "Nag S",
+            "Lau JS",
+            "Singh S",
+            "Chodera JD",
+            "Liu B",
+            "de Stanchina E",
+            "Pareja F",
+            "Hashmi AA",
+            "Lieberman MM",
+            "Modi S",
+            "Bromberg J",
+            "Razavi P",
+            "Drago JZ",
+            "Chandarlapaty S"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "32058843",
+          "title": "Antitumor Activity and Safety of Trastuzumab Deruxtecan in Patients With HER2-Low-Expressing Advanced Breast Cancer: Results From a Phase Ib Study.",
+          "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+          "year": "2020",
+          "authors": [
+            "Modi S",
+            "Park H",
+            "Murthy RK",
+            "Iwata H",
+            "Tamura K",
+            "Tsurutani J",
+            "Moreno-Aspitia A",
+            "Doi T",
+            "Sagara Y",
+            "Redfern C",
+            "Krop IE",
+            "Lee C",
+            "Fujisaki Y",
+            "Sugihara M",
+            "Zhang L",
+            "Shahidi J",
+            "Takahashi S"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "34969511",
+          "title": "« HER2-faible », un nouveau concept dans la prise en charge des cancers du sein: HER2-low breast cancer: a new concept in breast cancer treatment strategy.",
+          "journal": "Bulletin du cancer",
+          "year": "2021",
+          "authors": [
+            "Deluche É",
+            "Vincent-Salomon A"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "32109589",
+          "title": "Targeted camptothecin delivery via silicon nanoparticles reduces breast cancer metastasis.",
+          "journal": "Biomaterials",
+          "year": "2020",
+          "authors": [
+            "Landgraf M",
+            "Lahr CA",
+            "Kaur I",
+            "Shafiee A",
+            "Sanchez-Herrero A",
+            "Janowicz PW",
+            "Ravichandran A",
+            "Howard CB",
+            "Cifuentes-Rius A",
+            "McGovern JA",
+            "Voelcker NH",
+            "Hutmacher DW"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "35882754",
+          "title": "Alteration of Trop-2 expression in breast cancer cells by clinically used therapeutic agents and acquired tamoxifen resistance.",
+          "journal": "Breast cancer (Tokyo, Japan)",
+          "year": "2022",
+          "authors": [
+            "Zhu J",
+            "Wu W",
+            "Togashi Y",
+            "Taira Nihira N",
+            "Johmura Y",
+            "Zhu D",
+            "Nakanishi M",
+            "Miyoshi Y",
+            "Ohta T"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "39943891",
+          "title": "Adverse events and impact on quality of life of antibody-drug conjugates in the treatment of metastatic breast cancer: A systematic review and meta-analysis.",
+          "journal": "European journal of clinical investigation",
+          "year": "2025",
+          "authors": [
+            "Perachino M",
+            "Blondeaux E",
+            "Molinelli C",
+            "Ruelle T",
+            "Giannubilo I",
+            "Arecco L",
+            "Nardin S",
+            "Razeti MG",
+            "Borea R",
+            "Favero D",
+            "Lanzavecchia C",
+            "Chiappe E",
+            "Tomasello L",
+            "Mariamidze E",
+            "Jankovic K",
+            "Stana M",
+            "Ottonello S",
+            "Scavone G",
+            "de Moura Leite L",
+            "Spinaci S",
+            "Saura C",
+            "Lambertini M"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "38963808",
+          "title": "Final outcome analysis from the phase II TUXEDO-1 trial of trastuzumab-deruxtecan in HER2-positive breast cancer patients with active brain metastases.",
+          "journal": "Neuro-oncology",
+          "year": "2024",
+          "authors": [
+            "Bartsch R",
+            "Berghoff AS",
+            "Furtner J",
+            "Marhold M",
+            "Bergen ES",
+            "Roider-Schur S",
+            "Mair MJ",
+            "Starzer AM",
+            "Forstner H",
+            "Rottenmanner B",
+            "Aretin MB",
+            "Dieckmann K",
+            "Bago-Horvath Z",
+            "Haslacher H",
+            "Widhalm G",
+            "Ilhan-Mutlu A",
+            "Minichsdorfer C",
+            "Fuereder T",
+            "Szekeres T",
+            "Oehler L",
+            "Gruenberger B",
+            "Pfeiler G",
+            "Singer C",
+            "Weltermann A",
+            "Berchtold L",
+            "Preusser M"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "39585341",
+          "title": "Antitumor Activity and Biomarker Analysis for TROP2 Antibody-Drug Conjugate Datopotamab Deruxtecan in Patient-Derived Breast Cancer Xenograft Models.",
+          "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+          "year": "2025",
+          "authors": [
+            "Meric-Bernstam F",
+            "Yuca E",
+            "Evans KW",
+            "Zhao M",
+            "Maejima T",
+            "Karibe T",
+            "Raso MG",
+            "Tang X",
+            "Zheng X",
+            "Rizvi YQ",
+            "Akcakanat A",
+            "Scott SM",
+            "Wang B",
+            "Byers LA",
+            "Tripathy D",
+            "Okajima D",
+            "Damodaran S"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "39841861",
+          "title": "Human Epidermal Growth Factor Receptor 2 Loss following Treatment with Trastuzumab Deruxtecan in Patients with Metastatic Breast Cancer.",
+          "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+          "year": "2025",
+          "authors": [
+            "Gouda MA",
+            "Gonugunta A",
+            "Dumbrava EE",
+            "Yap TA",
+            "Rodon J",
+            "Piha-Paul SA",
+            "Pohlmann PR",
+            "Damodaran S",
+            "Murthy R",
+            "Valero V",
+            "Mouabbi JA",
+            "Tripathy D",
+            "Sahin AA",
+            "Chen H",
+            "Meric-Bernstam F"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "35728046",
+          "title": "Sacituzumab Govitecan-hziy in Breast Cancer.",
+          "journal": "American journal of clinical oncology",
+          "year": "2022",
+          "authors": [
+            "Kwapisz D"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "40714515",
+          "title": "Effectiveness of post-trastuzumab deruxtecan treatments and incidence of interstitial lung disease in HER2-positive metastatic breast cancer: a real-world, observational cohort study.",
+          "journal": "ESMO open",
+          "year": "2025",
+          "authors": [
+            "Nozawa K",
+            "Iwata H",
+            "Mukohara T",
+            "Taira T",
+            "Yoshimura A",
+            "Nagai SE",
+            "Hashimoto J",
+            "Matsuura K",
+            "Mizuno T",
+            "Shinden Y",
+            "Yamamoto M",
+            "Takano T",
+            "Wakahara M",
+            "Terakawa H",
+            "Yamanaka T",
+            "Kojima Y",
+            "Nakayama T",
+            "Hirakawa Y",
+            "Kuge K",
+            "Tanabe A",
+            "Tsurutani J"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "40532362",
+          "title": "Outcomes with trastuzumab deruxtecan by biomarker status, line of treatment and prior receipt of sacituzumab govitecan in a large real-world database of patients with metastatic breast cancer.",
+          "journal": "ESMO open",
+          "year": "2025",
+          "authors": [
+            "Tarantino P",
+            "Lee D",
+            "Foldi J",
+            "Soulos PR",
+            "Gross CP",
+            "Grinda T",
+            "Winer EP",
+            "Lin NU",
+            "Krop IE",
+            "Tolaney SM",
+            "Lustberg M",
+            "Sammons S"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "31504230",
+          "title": "Synergistic anti-breast cancer effect of pulsatilla saponin D and camptothecin through interrupting autophagic-lysosomal function and promoting p62-mediated ubiquitinated protein aggregation.",
+          "journal": "Carcinogenesis",
+          "year": "2020",
+          "authors": [
+            "Wang K",
+            "Tu Y",
+            "Wan JB",
+            "Chen M",
+            "He C"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "37349024",
+          "title": "Trastuzumab deruxtecan for breast cancer: do patients experience a comprehensive benefit?",
+          "journal": "Annals of oncology : official journal of the European Society for Medical Oncology",
+          "year": "2023",
+          "authors": [
+            "Mosele F",
+            "Di Maio M"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "39413161",
+          "title": "Intraoperative evaluation of tumor margins using a TROP2 near-infrared imaging probe to enable human breast-conserving surgery.",
+          "journal": "Science translational medicine",
+          "year": "2024",
+          "authors": [
+            "Chen W",
+            "Zhang Y",
+            "Zhang L",
+            "Luo X",
+            "Yang X",
+            "Zhu Y",
+            "Wang G",
+            "Huang W",
+            "Zhang D",
+            "Zeng Y",
+            "Li R",
+            "Guo C",
+            "Wang J",
+            "Wu Z",
+            "Liu N",
+            "Zhang G"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "39768216",
+          "title": "Targeting Refractory Triple-Negative Breast Cancer with Sacituzumab Govitecan: A New Era in Precision Medicine.",
+          "journal": "Cells",
+          "year": "2024",
+          "authors": [
+            "Khan S",
+            "Jandrajupalli SB",
+            "Bushara NZA",
+            "Raja RDP",
+            "Mirza S",
+            "Sharma K",
+            "Verma R",
+            "Kumar A",
+            "Lohani M"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "36305867",
+          "title": "Brain Metastasis from HER2-Positive Breast Cancer: An Evolving Landscape.",
+          "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+          "year": "2023",
+          "authors": [
+            "Soffietti R",
+            "Pellerino A"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "31043633",
+          "title": "Chemovirotherapeutic Treatment Using Camptothecin Enhances Oncolytic Measles Virus-Mediated Killing of Breast Cancer Cells.",
+          "journal": "Scientific reports",
+          "year": "2019",
+          "authors": [
+            "Tai CJ",
+            "Liu CH",
+            "Pan YC",
+            "Wong SH",
+            "Tai CJ",
+            "Richardson CD",
+            "Lin LT"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "35704495",
+          "title": "Trastuzumab Deruxtecan for Breast Cancer.",
+          "journal": "The New England journal of medicine",
+          "year": "2022",
+          "authors": [
+            "Zheng F",
+            "Du F",
+            "Yuan P"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "36843543",
+          "title": "Novel disulfide bond bridged 7-ethyl-10-hydroxyl camptothecin-undecanoic acid conjugate/human serum albumin nanoparticles for breast cancer therapy.",
+          "journal": "Journal of materials chemistry. B",
+          "year": "2023",
+          "authors": [
+            "Zhang Y",
+            "Wang J",
+            "Liu C",
+            "Xing H",
+            "Jiang Y",
+            "Li X"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "26959889",
+          "title": "Camptothecin targets WRN protein: mechanism and relevance in clinical breast cancer.",
+          "journal": "Oncotarget",
+          "year": "2016",
+          "authors": [
+            "Shamanna RA",
+            "Lu H",
+            "Croteau DL",
+            "Arora A",
+            "Agarwal D",
+            "Ball G",
+            "Aleskandarany MA",
+            "Ellis IO",
+            "Pommier Y",
+            "Madhusudan S",
+            "Bohr VA"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "39302614",
+          "title": "Preliminary results from ASCENT-J02: a phase 1/2 study of sacituzumab govitecan in Japanese patients with advanced solid tumors.",
+          "journal": "International journal of clinical oncology",
+          "year": "2024",
+          "authors": [
+            "Naito Y",
+            "Nakamura S",
+            "Kawaguchi-Sakita N",
+            "Ishida T",
+            "Nakayama T",
+            "Yamamoto Y",
+            "Masuda N",
+            "Matsumoto K",
+            "Kogawa T",
+            "Sudo K",
+            "Shimomura A",
+            "Lai C",
+            "Zhang D",
+            "Iwahori Y",
+            "Gary D",
+            "Huynh D",
+            "Iwata H"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "36779378",
+          "title": "Camptothecin loaded casein nanosystem for tuning the therapeutic efficacy against highly metastatic triple-negative breast cancer cells.",
+          "journal": "Biomaterials science",
+          "year": "2023",
+          "authors": [
+            "Khatun S",
+            "Pebam M",
+            "Putta CL",
+            "Rengan AK"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "39446012",
+          "title": "L’utilizzo di sacituzumab govitecan in linea avanzata di malattia in paziente anziana con tumore della mammella metastatico divenuto triplo negativo.",
+          "journal": "Recenti progressi in medicina",
+          "year": "2024",
+          "authors": [
+            "Cardalesi C"
+          ],
+          "source": "ncbi_pubmed"
+        }
+      ],
+      "source": "pubmed_live"
+    }
+  },
+  "errors": []
+}

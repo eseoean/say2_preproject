@@ -1,0 +1,16 @@
+final_rank,drug_id,drug_name,target,pathway,pred_ic50,sensitivity_rate,safety_score,category,flags,combined_score,n_assays_tested
+1,1034,Staurosporine,Broad spectrum kinase inhibitor,RTK signaling,-0.2666945,1.0,10.0,Candidate,[],14.5,1
+2,1819,Docetaxel,Microtubule stabiliser,Mitosis,-4.3071065,0.92,6.83,Approved,['DILI (Drug-Induced Liver Injury)(+)'],14.33,12
+3,2048,Vinorelbine,Microtubule destabiliser,Mitosis,-1.5775554,1.0,8.0,Approved,[],14.0,10
+4,1808,Topotecan,TOP1,DNA replication,-0.8852633,0.8846153846153846,9.0,Candidate,[],14.0,10
+5,1080,Paclitaxel,Microtubule stabiliser,Mitosis,-3.4391427,1.0,6.83,Approved,['DILI (Drug-Induced Liver Injury)(+)'],13.83,12
+6,1811,Dactinomycin,RNA polymerase,Other,-2.999836,1.0,7.0,Approved,['DILI (Drug-Induced Liver Injury)(+)'],13.5,5
+7,1004,Vinblastine,Microtubule destabiliser,Mitosis,-1.4824135,1.0,7.83,Approved,[],13.33,12
+8,1011,Navitoclax,"BCL2, BCL-XL, BCL-W",Apoptosis regulation,1.7589177,0.9310344827586208,10.0,Candidate,[],11.0,2
+9,1003,Camptothecin,TOP1,DNA replication,1.8269312,1.0,10.0,Candidate,[],10.5,5
+10,1084,Rapamycin,MTORC1,PI3K/MTOR signaling,0.77469987,1.0,7.71,Approved,[],10.21,7
+11,1088,Irinotecan,TOP1,DNA replication,0.34598753,0.3214285714285714,5.56,Candidate,[],9.559999999999999,9
+12,1862,MG-132,"Proteasome, CAPN1",Protein stability and degradation,0.9555576,1.0,6.67,Candidate,[],8.67,3
+13,1026,Tanespimycin,HSP90,Protein stability and degradation,0.5398705,1.0,5.0,Candidate,[],8.5,2
+14,1191,Bortezomib,Proteasome,Protein stability and degradation,1.2839334,1.0,5.29,Approved,['DILI (Drug-Induced Liver Injury)(+)'],6.79,7
+15,1511,Epirubicin,Anthracycline,DNA replication,0.6785437,1.0,2.83,Caution,"['Ames Mutagenicity(+)', 'DILI (Drug-Induced Liver Injury)(+)']",5.83,15

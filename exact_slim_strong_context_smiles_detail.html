@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>exact slim + strong context + SMILES 상세 결과</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; background: #0f172a; color: #e2e8f0; min-height: 100vh; }
+  .header { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); padding: 20px 32px; border-bottom: 1px solid #334155; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+  .header h1 { font-size: 1.3rem; color: #f8fafc; }
+  .header a { color: #38bdf8; text-decoration: none; font-size: 0.85rem; }
+  .container { max-width: 1380px; margin: 0 auto; padding: 24px; }
+  .section { background: #1e293b; border: 1px solid #334155; border-radius: 8px; padding: 20px; margin-bottom: 20px; }
+  .section-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 4px; display: flex; align-items: center; gap: 10px; }
+  .section-sub { font-size: 0.75rem; color: #64748b; margin-bottom: 16px; line-height: 1.6; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; font-weight: 600; }
+  .badge-done { background: #22c55e20; color: #22c55e; border: 1px solid #22c55e40; }
+  .benchmark { background: #0f172a; border: 1px solid #334155; border-radius: 6px; padding: 12px 16px; margin-bottom: 16px; display: flex; gap: 24px; flex-wrap: wrap; }
+  .bench-item { font-size: 0.78rem; }
+  .bench-label { color: #64748b; }
+  .bench-val { color: #fbbf24; font-weight: 700; margin-left: 4px; }
+  .highlight { background: rgba(56,189,248,0.08); border: 1px solid rgba(56,189,248,0.24); border-radius: 8px; padding: 14px 16px; margin-bottom: 16px; line-height: 1.7; }
+  .metric-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; margin-top: 12px; }
+  .metric-card { background: #0f172a; border: 1px solid #334155; border-radius: 8px; padding: 14px; }
+  .metric-card .value { font-size: 1.35rem; font-weight: 800; }
+  .metric-card .label { font-size: 0.72rem; color: #64748b; margin-top: 6px; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.78rem; }
+  th { text-align: left; padding: 8px 10px; background: #0f172a; color: #94a3b8; border-bottom: 2px solid #334155; font-weight: 600; white-space: nowrap; }
+  td { padding: 7px 10px; border-bottom: 1px solid #1e293b80; white-space: nowrap; vertical-align: top; }
+  tr:hover { background: rgba(59,130,246,0.05); }
+  .val-good { color: #4ade80; font-weight: 700; }
+  .val-warn { color: #fbbf24; font-weight: 700; }
+  .val-neutral { color: #e2e8f0; }
+  .val-dim { color: #64748b; font-size: 0.72rem; }
+  .ensemble-tag { display: inline-block; padding: 1px 6px; border-radius: 3px; font-size: 0.65rem; font-weight: 700; }
+  .tag-pass { background: #22c55e; color: #052e16; }
+  .tag-candidate { background: #60a5fa; color: #082f49; }
+  .tag-fail { background: #ef4444; color: #fff; }
+  .tag-tbd { background: #64748b; color: #fff; }
+  .rank { font-size: 0.85rem; font-weight: 800; }
+  .rank-1 { color: #fbbf24; }
+  .rank-2 { color: #94a3b8; }
+  .rank-3 { color: #cd7f32; }
+  .stack { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .list-card { background: #0f172a; border: 1px solid #334155; border-radius: 8px; padding: 14px; }
+  .list-card h3 { font-size: 0.92rem; margin-bottom: 8px; }
+  .list-card p { color: #cbd5e1; line-height: 1.7; font-size: 0.8rem; }
+  @media (max-width: 960px) {
+    .stack { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 640px) {
+    .container { padding: 14px; }
+    .section { padding: 16px; }
+    table { display: block; overflow-x: auto; white-space: nowrap; }
+  }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>exact slim + strong context + SMILES 상세 결과</h1>
+  <a href="dashboard.html">&larr; 파이프라인 대시보드로 돌아가기</a>
+</div>
+<div class="container">
+
+  <div class="highlight">
+    <b>실험 트랙 요약:</b> 팀원 slim 입력을 exact-column match로 재현한 뒤, strong context 5개와 SMILES 표현을 추가한 GroupCV 트랙입니다.
+    이번 페이지는 <b>모델 성능</b>, <b>앙상블/diversity</b>, <b>METABRIC</b>, <b>ADMET</b>, <b>KG/API</b>까지 현재 저장된 산출물을 한 화면에 모아 정리합니다.
+  </div>
+
+  <div class="benchmark">
+    <div class="bench-item"><span class="bench-label">입력셋:</span><span class="bench-val">exact slim + strong context + SMILES</span></div>
+    <div class="bench-item"><span class="bench-label">분할:</span><span class="bench-val">3-fold drug GroupCV</span></div>
+    <div class="bench-item"><span class="bench-label">rows:</span><span class="bench-val">6,366</span></div>
+    <div class="bench-item"><span class="bench-label">exact slim numeric:</span><span class="bench-val">5,529</span></div>
+    <div class="bench-item"><span class="bench-label">ML feature dim:</span><span class="bench-val">5,625</span></div>
+    <div class="bench-item"><span class="bench-label">strong context:</span><span class="bench-val">5 cols / 100% coverage</span></div>
+    <div class="bench-item"><span class="bench-label">SMILES vocab:</span><span class="bench-val">38</span></div>
+    <div class="bench-item"><span class="bench-label">best ensemble:</span><span class="bench-val">FRC weighted</span></div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">핵심 요약 <span class="badge badge-done">완료</span></div>
+    <div class="section-sub">현재 strongest single model, best ensemble, 그리고 downstream shortlist 상태를 한 번에 보여줍니다.</div>
+    <div class="metric-grid">
+      <div class="metric-card"><div class="value">FlatMLP</div><div class="label">Best Single Model</div></div>
+      <div class="metric-card"><div class="value">0.6052</div><div class="label">Best Single Spearman</div></div>
+      <div class="metric-card"><div class="value">0.6280</div><div class="label">Best Ensemble Spearman</div></div>
+      <div class="metric-card"><div class="value">2.0220</div><div class="label">Best Ensemble RMSE</div></div>
+      <div class="metric-card"><div class="value">7</div><div class="label">Approved</div></div>
+      <div class="metric-card"><div class="value">7</div><div class="label">Candidate</div></div>
+      <div class="metric-card"><div class="value">1</div><div class="label">Caution</div></div>
+      <div class="metric-card"><div class="value">Staurosporine, Docetaxel, Vinorelbine, Topotecan, Paclitaxel</div><div class="label">Top 5 Final Candidates</div></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">ML 모델 (6개) <span class="badge badge-done">완료</span></div>
+    <div class="section-sub">exact slim + strong context + SMILES 공통 숫자 행렬(5,625 dim)로 돌린 ML GroupCV 결과입니다.</div>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th><th>모델</th><th>Spearman</th><th>&plusmn; std</th><th>RMSE</th><th>&plusmn; std</th>
+          <th>MAE</th><th>Pearson</th><th>R&sup2;</th><th>NDCG@20</th><th>Gap(Sp)</th><th>소요시간</th><th>비고</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><span class='rank rank-1'>1</span></td><td><b>CatBoost</b></td><td class='val-warn'>0.5765</td><td class='val-dim'>0.0244</td><td class='val-warn'>2.1402</td><td class='val-dim'>0.0918</td><td>1.6170</td><td>0.6130</td><td>0.3736</td><td>0.8413</td><td>0.3830</td><td class='val-dim'>20.6m</td><td class='val-dim'>GroupCV OOF</td></tr>
+<tr><td><span class='rank rank-2'>2</span></td><td><b>LightGBM_DART</b></td><td class='val-warn'>0.5730</td><td class='val-dim'>0.0187</td><td class='val-warn'>2.1399</td><td class='val-dim'>0.0868</td><td>1.6593</td><td>0.6179</td><td>0.3739</td><td>0.8469</td><td>0.3674</td><td class='val-dim'>2.7m</td><td class='val-dim'>GroupCV OOF</td></tr>
+<tr><td><span class='rank rank-3'>3</span></td><td><b>RandomForest</b></td><td class='val-warn'>0.5722</td><td class='val-dim'>0.0052</td><td class='val-neutral'>2.2107</td><td class='val-dim'>0.1196</td><td>1.6597</td><td>0.5891</td><td>0.3311</td><td>0.8812</td><td>0.3628</td><td class='val-dim'>1.5m</td><td class='val-dim'>GroupCV OOF</td></tr>
+<tr><td><span class='rank '>4</span></td><td><b>XGBoost</b></td><td class='val-warn'>0.5628</td><td class='val-dim'>0.0125</td><td class='val-warn'>2.1423</td><td class='val-dim'>0.1627</td><td>1.6505</td><td>0.6118</td><td>0.3708</td><td>0.8482</td><td>0.4350</td><td class='val-dim'>15.5m</td><td class='val-dim'>GroupCV OOF</td></tr>
+<tr><td><span class='rank '>5</span></td><td><b>LightGBM</b></td><td class='val-warn'>0.5610</td><td class='val-dim'>0.0046</td><td class='val-warn'>2.1532</td><td class='val-dim'>0.1220</td><td>1.6457</td><td>0.6067</td><td>0.3654</td><td>0.8515</td><td>0.4359</td><td class='val-dim'>5.1m</td><td class='val-dim'>GroupCV OOF</td></tr>
+<tr><td><span class='rank '>6</span></td><td><b>ExtraTrees</b></td><td class='val-neutral'>0.5236</td><td class='val-dim'>0.0312</td><td class='val-neutral'>2.2406</td><td class='val-dim'>0.1292</td><td>1.6633</td><td>0.5605</td><td>0.3127</td><td>0.8848</td><td>0.4493</td><td class='val-dim'>1.8m</td><td class='val-dim'>GroupCV OOF</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title">DL 모델 (7개) <span class="badge badge-done">완료</span></div>
+    <div class="section-sub">5529 numeric + strong context 5개 + SMILES branch 조합으로 돌린 DL GroupCV 결과입니다.</div>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th><th>모델</th><th>Spearman</th><th>&plusmn; std</th><th>RMSE</th><th>&plusmn; std</th>
+          <th>MAE</th><th>Pearson</th><th>R&sup2;</th><th>NDCG@20</th><th>Gap(Sp)</th><th>소요시간</th><th>비고</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><span class='rank rank-1'>1</span></td><td><b>FlatMLP</b></td><td class='val-good'>0.6052</td><td class='val-dim'>0.0049</td><td class='val-good'>2.0515</td><td class='val-dim'>0.0115</td><td>1.5608</td><td>0.6554</td><td>0.4208</td><td>0.8037</td><td>0.2826</td><td class='val-dim'>9.5m</td><td class='val-dim'>standalone</td></tr>
+<tr><td><span class='rank rank-2'>2</span></td><td><b>ResidualMLP</b></td><td class='val-good'>0.6030</td><td class='val-dim'>0.0136</td><td class='val-warn'>2.1393</td><td class='val-dim'>0.0444</td><td>1.6134</td><td>0.6138</td><td>0.3747</td><td>0.8419</td><td>0.2589</td><td class='val-dim'>15.6m</td><td class='val-dim'>OOF rerun</td></tr>
+<tr><td><span class='rank rank-3'>3</span></td><td><b>CrossAttention</b></td><td class='val-warn'>0.5931</td><td class='val-dim'>0.0259</td><td class='val-warn'>2.1455</td><td class='val-dim'>0.0807</td><td>1.5895</td><td>0.6132</td><td>0.3680</td><td>0.7836</td><td>0.2288</td><td class='val-dim'>8.8m</td><td class='val-dim'>standalone</td></tr>
+<tr><td><span class='rank '>4</span></td><td><b>WideDeep</b></td><td class='val-warn'>0.5707</td><td class='val-dim'>0.0069</td><td class='val-warn'>2.1674</td><td class='val-dim'>0.0592</td><td>1.6246</td><td>0.6025</td><td>0.3551</td><td>0.8252</td><td>0.2220</td><td class='val-dim'>10.0m</td><td class='val-dim'>standalone</td></tr>
+<tr><td><span class='rank '>5</span></td><td><b>FTTransformer</b></td><td class='val-neutral'>0.5550</td><td class='val-dim'>0.0066</td><td class='val-neutral'>2.1911</td><td class='val-dim'>0.0852</td><td>1.6389</td><td>0.5884</td><td>0.3435</td><td>0.8118</td><td>0.2307</td><td class='val-dim'>12.9m</td><td class='val-dim'>OOF rerun</td></tr>
+<tr><td><span class='rank '>6</span></td><td><b>TabNet</b></td><td class='val-neutral'>0.5543</td><td class='val-dim'>0.0287</td><td class='val-warn'>2.1695</td><td class='val-dim'>0.0377</td><td>1.6232</td><td>0.5977</td><td>0.3569</td><td>0.8465</td><td>0.2945</td><td class='val-dim'>8.3m</td><td class='val-dim'>OOF rerun</td></tr>
+<tr><td><span class='rank '>7</span></td><td><b>TabTransformer</b></td><td class='val-neutral'>0.5171</td><td class='val-dim'>0.0019</td><td class='val-neutral'>2.2360</td><td class='val-dim'>0.0132</td><td>1.7034</td><td>0.3414</td><td>-0.2059</td><td>0.8203</td><td>0.3451</td><td class='val-dim'>15.2m</td><td class='val-dim'>early stop (2 folds)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title">앙상블 비교 <span class="badge badge-done">완료</span></div>
+    <div class="section-sub">FRC는 현재 best route, Top3는 standalone 상위 3개, FLE는 mixed ML+DL 조합입니다.</div>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th><th>앙상블</th><th>구성</th><th>Spearman</th><th>RMSE</th><th>MAE</th><th>Pearson</th><th>R&sup2;</th><th>NDCG@20</th><th>비고</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><span class='rank rank-1'>1</span></td><td><b>FRC weighted</b></td><td>FlatMLP + ResidualMLP + CrossAttention</td><td class='val-good'>0.6280</td><td class='val-good'>2.0220</td><td>1.5296</td><td>0.6646</td><td>0.4415</td><td>0.8282</td><td><span class='ensemble-tag tag-pass'>current best</span></td></tr>
+<tr><td><span class='rank rank-2'>2</span></td><td><b>Top3 weighted</b></td><td>FlatMLP + WideDeep + CrossAttention</td><td class='val-good'>0.6179</td><td class='val-good'>2.0568</td><td>1.5430</td><td>0.6506</td><td>0.4221</td><td>0.8356</td><td><span class='ensemble-tag tag-tbd'>standalone top3</span></td></tr>
+<tr><td><span class='rank rank-3'>3</span></td><td><b>FLE weighted</b></td><td>FlatMLP + LightGBM_DART + ExtraTrees</td><td class='val-good'>0.6132</td><td class='val-good'>2.0606</td><td>1.5707</td><td>0.6536</td><td>0.4200</td><td>0.8422</td><td><span class='ensemble-tag tag-tbd'>mixed ML+DL</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title">앙상블 Diversity 요약</div>
+    <div class="section-sub">prediction/residual 상관과 평균 예측 격차를 비교해 조합이 얼마나 서로 다른 오류를 내는지 요약했습니다.</div>
+    <table>
+      <thead>
+        <tr>
+          <th>앙상블</th><th>Avg Pred Pearson</th><th>Avg Pred Spearman</th><th>Avg Residual Pearson</th><th>Avg Residual Spearman</th><th>Avg |Pred Gap|</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><b>FRC weighted</b></td><td>0.8773</td><td>0.8345</td><td>0.9029</td><td>0.8810</td><td>0.7140</td></tr>
+<tr><td><b>FLE weighted</b></td><td>0.8537</td><td>0.7827</td><td>0.9011</td><td>0.8818</td><td>0.7266</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Downstream 검증 요약</div>
+    <div class="section-sub">best ensemble(FRC weighted) 기준으로 Step 6 METABRIC, Step 7 ADMET, Step 7+ KG/API 흐름을 정리했습니다.</div>
+    <div class="metric-grid">
+      <div class="metric-card"><div class="value">28/30</div><div class="label">Target Expressed</div></div>
+      <div class="metric-card"><div class="value">25/30</div><div class="label">BRCA Pathway Relevant</div></div>
+      <div class="metric-card"><div class="value">25/30</div><div class="label">Survival Significant</div></div>
+      <div class="metric-card"><div class="value">55.0%</div><div class="label">P@20 (11/20)</div></div>
+      <div class="metric-card"><div class="value">22</div><div class="label">ADMET Assays</div></div>
+      <div class="metric-card"><div class="value">15/15</div><div class="label">KG/API Coverage</div></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">최종 Top 15 후보</div>
+    <div class="section-sub">validation score, safety score, combined score, 최종 recommendation note를 한 번에 볼 수 있는 통합표입니다.</div>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th><th>Drug</th><th>Category</th><th>Target</th><th>Pathway</th><th>Pred IC50</th><th>Validation</th><th>Safety</th><th>Combined</th><th>Recommendation</th><th>Flags</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td><b>Staurosporine</b></td><td><span class='ensemble-tag tag-candidate'>Candidate</span></td><td>Broad spectrum kinase inhibitor</td><td>RTK signaling</td><td class='val-good'>-0.267</td><td>7.55</td><td>10.00</td><td class='val-good'>14.50</td><td>Biologically plausible candidate with supportive validation, but additional safety or translational review is needed.</td><td>-</td></tr>
+<tr><td>2</td><td><b>Docetaxel</b></td><td><span class='ensemble-tag tag-pass'>Approved</span></td><td>Microtubule stabiliser</td><td>Mitosis</td><td class='val-good'>-4.307</td><td>9.45</td><td>6.83</td><td class='val-good'>14.33</td><td>Breast-cancer relevant and ADMET-screened. Suitable as a primary shortlist candidate.</td><td>[&#x27;DILI (Drug-Induced Liver Injury)(+)&#x27;]</td></tr>
+<tr><td>3</td><td><b>Vinorelbine</b></td><td><span class='ensemble-tag tag-pass'>Approved</span></td><td>Microtubule destabiliser</td><td>Mitosis</td><td class='val-good'>-1.578</td><td>9.20</td><td>8.00</td><td class='val-good'>14.00</td><td>Breast-cancer relevant and ADMET-screened. Suitable as a primary shortlist candidate.</td><td>-</td></tr>
+<tr><td>4</td><td><b>Topotecan</b></td><td><span class='ensemble-tag tag-candidate'>Candidate</span></td><td>TOP1</td><td>DNA replication</td><td class='val-good'>-0.885</td><td>7.60</td><td>9.00</td><td class='val-good'>14.00</td><td>Biologically plausible candidate with supportive validation, but additional safety or translational review is needed.</td><td>-</td></tr>
+<tr><td>5</td><td><b>Paclitaxel</b></td><td><span class='ensemble-tag tag-pass'>Approved</span></td><td>Microtubule stabiliser</td><td>Mitosis</td><td class='val-good'>-3.439</td><td>9.40</td><td>6.83</td><td class='val-good'>13.83</td><td>Breast-cancer relevant and ADMET-screened. Suitable as a primary shortlist candidate.</td><td>[&#x27;DILI (Drug-Induced Liver Injury)(+)&#x27;]</td></tr>
+<tr><td>6</td><td><b>Dactinomycin</b></td><td><span class='ensemble-tag tag-pass'>Approved</span></td><td>RNA polymerase</td><td>Other</td><td class='val-good'>-3.000</td><td>7.85</td><td>7.00</td><td class='val-good'>13.50</td><td>Breast-cancer relevant and ADMET-screened. Suitable as a primary shortlist candidate.</td><td>[&#x27;DILI (Drug-Induced Liver Injury)(+)&#x27;]</td></tr>
+<tr><td>7</td><td><b>Vinblastine</b></td><td><span class='ensemble-tag tag-pass'>Approved</span></td><td>Microtubule destabiliser</td><td>Mitosis</td><td class='val-good'>-1.482</td><td>9.15</td><td>7.83</td><td class='val-good'>13.33</td><td>Breast-cancer relevant and ADMET-screened. Suitable as a primary shortlist candidate.</td><td>-</td></tr>
+<tr><td>8</td><td><b>Navitoclax</b></td><td><span class='ensemble-tag tag-candidate'>Candidate</span></td><td>BCL2, BCL-XL, BCL-W</td><td>Apoptosis regulation</td><td class='val-good'>1.759</td><td>6.25</td><td>10.00</td><td class='val-good'>11.00</td><td>Biologically plausible candidate with supportive validation, but additional safety or translational review is needed.</td><td>-</td></tr>
+<tr><td>9</td><td><b>Camptothecin</b></td><td><span class='ensemble-tag tag-candidate'>Candidate</span></td><td>TOP1</td><td>DNA replication</td><td class='val-good'>1.827</td><td>8.15</td><td>10.00</td><td class='val-good'>10.50</td><td>Biologically plausible candidate with supportive validation, but additional safety or translational review is needed.</td><td>-</td></tr>
+<tr><td>10</td><td><b>Rapamycin</b></td><td><span class='ensemble-tag tag-pass'>Approved</span></td><td>MTORC1</td><td>PI3K/MTOR signaling</td><td class='val-good'>0.775</td><td>8.80</td><td>7.71</td><td class='val-good'>10.21</td><td>Breast-cancer relevant and ADMET-screened. Suitable as a primary shortlist candidate.</td><td>-</td></tr>
+<tr><td>11</td><td><b>Irinotecan</b></td><td><span class='ensemble-tag tag-candidate'>Candidate</span></td><td>TOP1</td><td>DNA replication</td><td class='val-good'>0.346</td><td>7.45</td><td>5.56</td><td class='val-good'>9.56</td><td>Biologically plausible candidate with supportive validation, but additional safety or translational review is needed.</td><td>-</td></tr>
+<tr><td>12</td><td><b>MG-132</b></td><td><span class='ensemble-tag tag-candidate'>Candidate</span></td><td>Proteasome, CAPN1</td><td>Protein stability and degradation</td><td class='val-good'>0.956</td><td>6.65</td><td>6.67</td><td class='val-good'>8.67</td><td>Biologically plausible candidate with supportive validation, but additional safety or translational review is needed.</td><td>-</td></tr>
+<tr><td>13</td><td><b>Tanespimycin</b></td><td><span class='ensemble-tag tag-candidate'>Candidate</span></td><td>HSP90</td><td>Protein stability and degradation</td><td class='val-good'>0.540</td><td>6.90</td><td>5.00</td><td class='val-good'>8.50</td><td>Biologically plausible candidate with supportive validation, but additional safety or translational review is needed.</td><td>-</td></tr>
+<tr><td>14</td><td><b>Bortezomib</b></td><td><span class='ensemble-tag tag-pass'>Approved</span></td><td>Proteasome</td><td>Protein stability and degradation</td><td class='val-good'>1.284</td><td>8.55</td><td>5.29</td><td class='val-good'>6.79</td><td>Breast-cancer relevant and ADMET-screened. Suitable as a primary shortlist candidate.</td><td>[&#x27;DILI (Drug-Induced Liver Injury)(+)&#x27;]</td></tr>
+<tr><td>15</td><td><b>Epirubicin</b></td><td><span class='ensemble-tag tag-fail'>Caution</span></td><td>Anthracycline</td><td>DNA replication</td><td class='val-good'>0.679</td><td>8.85</td><td>2.83</td><td class='val-good'>5.83</td><td>Efficacy signal exists, but safety flags were detected. Keep as a low-priority caution item.</td><td>[&#x27;Ames Mutagenicity(+)&#x27;, &#x27;DILI (Drug-Induced Liver Injury)(+)&#x27;]</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title">KG/API 수집 요약</div>
+    <div class="section-sub">FAERS, ClinicalTrials, target/pathway, PubMed 근거 집계를 최종 후보별로 붙였습니다.</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Drug</th><th>Category</th><th>Combined</th><th>API Success</th><th>FAERS</th><th>Trials</th><th>Targets</th><th>Pathways</th><th>PubMed</th><th>PubMed BRCA</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><b>Staurosporine</b></td><td><span class='ensemble-tag tag-candidate'>Candidate</span></td><td>14.50</td><td class='val-good'>7</td><td>0</td><td>2</td><td>1</td><td>1</td><td>50</td><td>50</td></tr>
+<tr><td><b>Docetaxel</b></td><td><span class='ensemble-tag tag-pass'>Approved</span></td><td>14.33</td><td class='val-good'>7</td><td>10</td><td>10</td><td>1</td><td>1</td><td>50</td><td>50</td></tr>
+<tr><td><b>Vinorelbine</b></td><td><span class='ensemble-tag tag-pass'>Approved</span></td><td>14.00</td><td class='val-good'>7</td><td>10</td><td>10</td><td>1</td><td>1</td><td>50</td><td>50</td></tr>
+<tr><td><b>Topotecan</b></td><td><span class='ensemble-tag tag-candidate'>Candidate</span></td><td>14.00</td><td class='val-good'>7</td><td>10</td><td>10</td><td>1</td><td>1</td><td>50</td><td>50</td></tr>
+<tr><td><b>Paclitaxel</b></td><td><span class='ensemble-tag tag-pass'>Approved</span></td><td>13.83</td><td class='val-good'>7</td><td>10</td><td>10</td><td>1</td><td>1</td><td>50</td><td>50</td></tr>
+<tr><td><b>Dactinomycin</b></td><td><span class='ensemble-tag tag-pass'>Approved</span></td><td>13.50</td><td class='val-good'>7</td><td>10</td><td>2</td><td>1</td><td>1</td><td>50</td><td>50</td></tr>
+<tr><td><b>Vinblastine</b></td><td><span class='ensemble-tag tag-pass'>Approved</span></td><td>13.33</td><td class='val-good'>7</td><td>10</td><td>10</td><td>1</td><td>1</td><td>50</td><td>50</td></tr>
+<tr><td><b>Navitoclax</b></td><td><span class='ensemble-tag tag-candidate'>Candidate</span></td><td>11.00</td><td class='val-good'>7</td><td>10</td><td>1</td><td>3</td><td>1</td><td>50</td><td>50</td></tr>
+<tr><td><b>Camptothecin</b></td><td><span class='ensemble-tag tag-candidate'>Candidate</span></td><td>10.50</td><td class='val-good'>7</td><td>10</td><td>10</td><td>1</td><td>1</td><td>50</td><td>50</td></tr>
+<tr><td><b>Rapamycin</b></td><td><span class='ensemble-tag tag-pass'>Approved</span></td><td>10.21</td><td class='val-good'>7</td><td>10</td><td>10</td><td>1</td><td>1</td><td>50</td><td>50</td></tr>
+<tr><td><b>Irinotecan</b></td><td><span class='ensemble-tag tag-candidate'>Candidate</span></td><td>9.56</td><td class='val-good'>7</td><td>10</td><td>10</td><td>1</td><td>1</td><td>50</td><td>50</td></tr>
+<tr><td><b>MG-132</b></td><td><span class='ensemble-tag tag-candidate'>Candidate</span></td><td>8.67</td><td class='val-good'>7</td><td>0</td><td>0</td><td>2</td><td>1</td><td>50</td><td>50</td></tr>
+<tr><td><b>Tanespimycin</b></td><td><span class='ensemble-tag tag-candidate'>Candidate</span></td><td>8.50</td><td class='val-good'>7</td><td>10</td><td>5</td><td>1</td><td>1</td><td>50</td><td>50</td></tr>
+<tr><td><b>Bortezomib</b></td><td><span class='ensemble-tag tag-pass'>Approved</span></td><td>6.79</td><td class='val-good'>7</td><td>10</td><td>10</td><td>1</td><td>1</td><td>50</td><td>50</td></tr>
+<tr><td><b>Epirubicin</b></td><td><span class='ensemble-tag tag-fail'>Caution</span></td><td>5.83</td><td class='val-good'>7</td><td>10</td><td>10</td><td>1</td><td>1</td><td>50</td><td>50</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+</body>
+</html>

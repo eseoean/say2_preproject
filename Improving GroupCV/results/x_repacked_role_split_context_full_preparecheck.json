@@ -1,0 +1,48 @@
+{
+  "variant": "x_repacked_role_split_context_full",
+  "device": "cpu",
+  "n_rows": 7730,
+  "numeric_dim": 20394,
+  "categorical_dim": 3,
+  "auxiliary_dim": 8,
+  "sample_dim_detected": 18320,
+  "sample_dim_used": 18311,
+  "context_summary": {
+    "variant": "x_repacked_role_split_context_full",
+    "matched_rows": 7730,
+    "unmatched_rows": 0,
+    "match_rate": 1.0,
+    "categorical_columns": [
+      "TCGA_DESC",
+      "PATHWAY_NAME_NORMALIZED",
+      "classification"
+    ],
+    "column_non_missing_rate": {
+      "classification": 1.0,
+      "drug_bridge_strength": 1.0,
+      "stage3_resolution_status": 1.0,
+      "WEBRELEASE": 1.0,
+      "drugbank_match_rule": 0.05873221216041397,
+      "chembl_match_rule": 0.4483829236739974,
+      "lincs_match_rule": 0.3354463130659767,
+      "admet_match_rule": 0.0,
+      "cell_bridge_match_rule": 1.0,
+      "TCGA_DESC": 1.0,
+      "PATHWAY_NAME_NORMALIZED": 1.0
+    },
+    "coverage_note": "Context reconstructed from current pipeline sources: cellline annotation, GDSC drug annotation, drug catalog, target mapping, and current pair feature availability.",
+    "auxiliary_columns": [
+      "drug_bridge_strength",
+      "stage3_resolution_status",
+      "WEBRELEASE",
+      "drugbank_match_rule",
+      "chembl_match_rule",
+      "lincs_match_rule",
+      "admet_match_rule",
+      "cell_bridge_match_rule"
+    ],
+    "role_split_note": "Primary semantic categorical columns are modeled separately from auxiliary context and matching-quality columns.",
+    "numeric_transform_note": "Current numeric X is re-packed by block: sample CRISPR and drug Morgan are compressed with train-fold SVD and row summary statistics; smaller drug/target/LINCS blocks pass through."
+  },
+  "models": []
+}

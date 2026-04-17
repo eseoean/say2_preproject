@@ -1,0 +1,54 @@
+{
+  "data": [
+    {
+      "event": "NAUSEA",
+      "count": 1605,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "NEUTROPENIA",
+      "count": 1493,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "FEBRILE NEUTROPENIA",
+      "count": 1321,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "VOMITING",
+      "count": 1305,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "DIARRHOEA",
+      "count": 1274,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "PYREXIA",
+      "count": 1239,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "MYELOSUPPRESSION",
+      "count": 1026,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "FATIGUE",
+      "count": 966,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "ASTHENIA",
+      "count": 942,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "WHITE BLOOD CELL COUNT DECREASED",
+      "count": 925,
+      "source": "openfda_faers"
+    }
+  ]
+}

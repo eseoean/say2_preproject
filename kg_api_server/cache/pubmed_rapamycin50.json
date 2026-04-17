@@ -1,0 +1,662 @@
+{
+  "data": [
+    {
+      "pmid": "38310895",
+      "title": "Targeting ageing with rapamycin and its derivatives in humans: a systematic review.",
+      "journal": "The lancet. Healthy longevity",
+      "year": "2024",
+      "authors": [
+        "Lee DJW",
+        "Hodzic Kuerec A",
+        "Maier AB"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "33037985",
+      "title": "Effect of rapamycin on aging and age-related diseases-past and future.",
+      "journal": "GeroScience",
+      "year": "2021",
+      "authors": [
+        "Selvarani R",
+        "Mohammed S",
+        "Richardson A"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "37191826",
+      "title": "Evaluation of off-label rapamycin use to promote healthspan in 333 adults.",
+      "journal": "GeroScience",
+      "year": "2023",
+      "authors": [
+        "Kaeberlein TL",
+        "Green AS",
+        "Haddad G",
+        "Hudson J",
+        "Isman A",
+        "Nyquist A",
+        "Rosen BS",
+        "Suh Y",
+        "Zalzala S",
+        "Zhang X",
+        "Blagosklonny MV",
+        "An JY",
+        "Kaeberlein M"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "36617414",
+      "title": "Why Is Rapamycin Not a Rapalog?",
+      "journal": "Gerontology",
+      "year": "2023",
+      "authors": [
+        "Kuerec AH",
+        "Maier AB"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "35358003",
+      "title": "Cell senescence, rapamycin and hyperfunction theory of aging.",
+      "journal": "Cell cycle (Georgetown, Tex.)",
+      "year": "2022",
+      "authors": [
+        "Blagosklonny MV"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "31454792",
+      "title": "Rapamycin protects aging muscle.",
+      "journal": "Aging",
+      "year": "2019",
+      "authors": [
+        "Tang H",
+        "Shrager JB",
+        "Goldman D"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "31406105",
+      "title": "Fasting and rapamycin: diabetes versus benevolent glucose intolerance.",
+      "journal": "Cell death & disease",
+      "year": "2019",
+      "authors": [
+        "Blagosklonny MV"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "32756013",
+      "title": "Rapamycin for aging stem cells.",
+      "journal": "Aging",
+      "year": "2020",
+      "authors": [
+        "Hambright WS",
+        "Philippon MJ",
+        "Huard J"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "40188830",
+      "title": "Influence of rapamycin on safety and healthspan metrics after one year: PEARL trial results.",
+      "journal": "Aging",
+      "year": "2025",
+      "authors": [
+        "Moel M",
+        "Harinath G",
+        "Lee V",
+        "Nyquist A",
+        "Morgan SL",
+        "Isman A",
+        "Zalzala S"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "10572230",
+      "title": "[Rapamycin and CCI-779].",
+      "journal": "Bulletin du cancer",
+      "year": "1999",
+      "authors": [
+        "Alexandre J",
+        "Raymond E",
+        "Armand JP"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "37057884",
+      "title": "Cancer prevention with rapamycin.",
+      "journal": "Oncotarget",
+      "year": "2023",
+      "authors": [
+        "Blagosklonny MV"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "33821748",
+      "title": "Topical rapamycin in the treatment of facial angiofibromas in tuberous sclerosis: a systematic review based on evidence.",
+      "journal": "The Journal of dermatological treatment",
+      "year": "2022",
+      "authors": [
+        "Cortell Fuster C",
+        "Martínez Gómez MA",
+        "Cercós Lleti AC",
+        "Climente Martí M"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "36696023",
+      "title": "Molecular and therapeutic insights of rapamycin: a multi-faceted drug from Streptomyces hygroscopicus.",
+      "journal": "Molecular biology reports",
+      "year": "2023",
+      "authors": [
+        "Ganesh SK",
+        "Subathra Devi C"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "31178328",
+      "title": "Rapamycin activates mammalian microautophagy.",
+      "journal": "Journal of pharmacological sciences",
+      "year": "2019",
+      "authors": [
+        "Sato M",
+        "Seki T",
+        "Konno A",
+        "Hirai H",
+        "Kurauchi Y",
+        "Hisatsune A",
+        "Katsuki H"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "34089901",
+      "title": "The Role of Rapamycin in Healthspan Extension via the Delay of Organ Aging.",
+      "journal": "Ageing research reviews",
+      "year": "2021",
+      "authors": [
+        "Zhang Y",
+        "Zhang J",
+        "Wang S"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "26916116",
+      "title": "The Enigma of Rapamycin Dosage.",
+      "journal": "Molecular cancer therapeutics",
+      "year": "2016",
+      "authors": [
+        "Mukhopadhyay S",
+        "Frias MA",
+        "Chatterjee A",
+        "Yellen P",
+        "Foster DA"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "31732331",
+      "title": "Mechanistic target of rapamycin (mTOR) signaling in status epilepticus.",
+      "journal": "Epilepsy & behavior : E&B",
+      "year": "2019",
+      "authors": [
+        "Crino PB"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "12603583",
+      "title": "Rapamycin in cardiovascular medicine.",
+      "journal": "Internal medicine journal",
+      "year": "2003",
+      "authors": [
+        "Ruygrok PN",
+        "Muller DW",
+        "Serruys PW"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "17728765",
+      "title": "Rapamycin: something old, something new, sometimes borrowed and now renewed.",
+      "journal": "Clinical pharmacology and therapeutics",
+      "year": "2007",
+      "authors": [
+        "Hartford CM",
+        "Ratain MJ"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "32167485",
+      "title": "Transient and late-life rapamycin for healthspan extension.",
+      "journal": "Aging",
+      "year": "2020",
+      "authors": [
+        "Quarles EK",
+        "Rabinovitch PS"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "16039868",
+      "title": "Rapamycin: an anti-cancer immunosuppressant?",
+      "journal": "Critical reviews in oncology/hematology",
+      "year": "2005",
+      "authors": [
+        "Law BK"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "39225061",
+      "title": "Rapamycin's lifespan effect is modulated by mito-nuclear epistasis in Drosophila.",
+      "journal": "Aging cell",
+      "year": "2024",
+      "authors": [
+        "Ibrahim R",
+        "Bahilo Martinez M",
+        "Dobson AJ"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "18713146",
+      "title": "Rapamycin in islet transplantation: friend or foe?",
+      "journal": "Transplant international : official journal of the European Society for Organ Transplantation",
+      "year": "2009",
+      "authors": [
+        "Berney T",
+        "Secchi A"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "29438097",
+      "title": "Rapamycin for lymphangioleiomyomatosis: optimal timing and optimal dosage.",
+      "journal": "Thorax",
+      "year": "2018",
+      "authors": [
+        "Xu KF",
+        "Tian X",
+        "Yang Y",
+        "Zhang H"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "27191225",
+      "title": "Rapamycin slows down gut aging.",
+      "journal": "Aging",
+      "year": "2016",
+      "authors": [
+        "Gaur U",
+        "Fan X",
+        "Yang M"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "40345576",
+      "title": "Rapamycin exerts neuroprotective effects by inhibiting FKBP12 instead of mTORC1 in the mouse model of Parkinson's disease.",
+      "journal": "Neuropharmacology",
+      "year": "2025",
+      "authors": [
+        "Zhang Z",
+        "Shen Z",
+        "Xie S",
+        "Li J",
+        "Zhang Z",
+        "Zhang S",
+        "Peng B",
+        "Huang Q",
+        "Li M",
+        "Ma S",
+        "Huang Q"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "31586989",
+      "title": "Rapamycin for longevity: opinion article.",
+      "journal": "Aging",
+      "year": "2019",
+      "authors": [
+        "Blagosklonny MV"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "27208895",
+      "title": "Rapamycin: An InhibiTOR of Aging Emerges From the Soil of Easter Island.",
+      "journal": "The journals of gerontology. Series A, Biological sciences and medical sciences",
+      "year": "2016",
+      "authors": [
+        "Arriola Apelo SI",
+        "Lamming DW"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "22170152",
+      "title": "Rapamycin activates autophagy in Hutchinson-Gilford progeria syndrome: implications for normal aging and age-dependent neurodegenerative disorders.",
+      "journal": "Autophagy",
+      "year": "2012",
+      "authors": [
+        "Graziotto JJ",
+        "Cao K",
+        "Collins FS",
+        "Krainc D"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "37717734",
+      "title": "Topical rapamycin and microcystic lymphatic malformations.",
+      "journal": "Journal of the American Academy of Dermatology",
+      "year": "2024",
+      "authors": [
+        "Gu Y",
+        "Sebaratnam DF"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "31895693",
+      "title": "Rapamycin for the aging skin.",
+      "journal": "Aging",
+      "year": "2019",
+      "authors": [
+        "Blagosklonny MV"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "37393367",
+      "title": "Rapamycin prevents lung injury related to acute spinal cord injury in rats.",
+      "journal": "Scientific reports",
+      "year": "2023",
+      "authors": [
+        "Chu R",
+        "Wang N",
+        "Bi Y",
+        "Nan G"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "35973640",
+      "title": "Immunologic and dose dependent effects of rapamycin and its evolving role in chemoprevention.",
+      "journal": "Clinical immunology (Orlando, Fla.)",
+      "year": "2022",
+      "authors": [
+        "O'Shea AE",
+        "Valdera FA",
+        "Ensley D",
+        "Smolinsky TR",
+        "Cindass JL",
+        "Kemp Bohan PM",
+        "Hickerson AT",
+        "Carpenter EL",
+        "McCarthy PM",
+        "Adams AM",
+        "Vreeland TJ",
+        "Clifton GT",
+        "Peoples GE"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "15626356",
+      "title": "[Rapamycin: from the laboratory to the treatment of patients' arteries].",
+      "journal": "Revista espanola de cardiologia",
+      "year": "2003",
+      "authors": [
+        "Fuster V"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "27613310",
+      "title": "An overview of rapamycin: from discovery to future perspectives.",
+      "journal": "Journal of industrial microbiology & biotechnology",
+      "year": "2017",
+      "authors": [
+        "Yoo YJ",
+        "Kim H",
+        "Park SR",
+        "Yoon YJ"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "37222020",
+      "title": "Unbiased evaluation of rapamycin's specificity as an mTOR inhibitor.",
+      "journal": "Aging cell",
+      "year": "2023",
+      "authors": [
+        "Artoni F",
+        "Grützmacher N",
+        "Demetriades C"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "20588302",
+      "title": "Biosynthesis of rapamycin and its regulation: past achievements and recent progress.",
+      "journal": "The Journal of antibiotics",
+      "year": "2010",
+      "authors": [
+        "Park SR",
+        "Yoo YJ",
+        "Ban YH",
+        "Yoon YJ"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "21772323",
+      "title": "Fighting neurodegeneration with rapamycin: mechanistic insights.",
+      "journal": "Nature reviews. Neuroscience",
+      "year": "2011",
+      "authors": [
+        "Bové J",
+        "Martínez-Vicente M",
+        "Vila M"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "37432113",
+      "title": "Unmasking the True Identity of Rapamycin's Minor Conformer.",
+      "journal": "Journal of natural products",
+      "year": "2023",
+      "authors": [
+        "Crull EB",
+        "Jain AN",
+        "Hawkins PCD",
+        "Cleves AE",
+        "Graziani EI",
+        "Williamson RT"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "37048066",
+      "title": "Rapamycin Alleviates Protein Aggregates, Reduces Neuroinflammation, and Rescues Demyelination in Globoid Cell Leukodystrophy.",
+      "journal": "Cells",
+      "year": "2023",
+      "authors": [
+        "Lin DS",
+        "Huang YW",
+        "Lee TH",
+        "Chang L",
+        "Huang ZD",
+        "Wu TY",
+        "Wang TJ",
+        "Ho CS"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "38839644",
+      "title": "Evaluation of off-label rapamycin use on oral health.",
+      "journal": "GeroScience",
+      "year": "2024",
+      "authors": [
+        "Hudson J",
+        "Kaeberlein T",
+        "Mahal A",
+        "Wong N",
+        "Ghorbanifarajzadeh M",
+        "Radella F",
+        "Isman A",
+        "Nyquist A",
+        "Zalzala S",
+        "Haddad G",
+        "Kaeberlein M",
+        "An JY"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "8588237",
+      "title": "Rapamune (Sirolimus, rapamycin): an overview and mechanism of action.",
+      "journal": "Therapeutic drug monitoring",
+      "year": "1995",
+      "authors": [
+        "Sehgal SN"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "40778880",
+      "title": "What is the clinical evidence to support off-label rapamycin therapy in healthy adults?",
+      "journal": "Aging",
+      "year": "2025",
+      "authors": [
+        "Hands JM",
+        "Lustgarten MS",
+        "Frame LA",
+        "Rosen B"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "37376966",
+      "title": "Rapamycin improves social and stereotypic behavior abnormalities induced by pre-mitotic neuronal subset specific Pten deletion.",
+      "journal": "Genes, brain, and behavior",
+      "year": "2023",
+      "authors": [
+        "Narvaiz DA",
+        "Nolan SO",
+        "Smith GD",
+        "Holley AJ",
+        "Reynolds CD",
+        "Blandin KJ",
+        "Nguyen PH",
+        "Tran DLK",
+        "Lugo JN"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "40338175",
+      "title": "Rapamycin reduces mineral density and promotes beneficial vascular remodeling in a murine model of severe medial arterial calcification.",
+      "journal": "American journal of physiology. Heart and circulatory physiology",
+      "year": "2025",
+      "authors": [
+        "Behzadi P",
+        "Wendling AA",
+        "Cuevas RA",
+        "Crane A",
+        "Chu CC",
+        "Moorhead WJ 3rd",
+        "Wong R",
+        "Brown M",
+        "Tamakloe J",
+        "Suresh S",
+        "Salehi P",
+        "Jaffe IZ",
+        "Kuipers AL",
+        "Lukashova L",
+        "Verdelis K",
+        "St Hilaire C"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "17583372",
+      "title": "Sirolimus (rapamycin): from the soil of Easter Island to a bright future.",
+      "journal": "Journal of the American Academy of Dermatology",
+      "year": "2007",
+      "authors": [
+        "Paghdal KV",
+        "Schwartz RA"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "11135052",
+      "title": "Rapamycin in transplantation: a review of the evidence.",
+      "journal": "Kidney international",
+      "year": "2001",
+      "authors": [
+        "Saunders RN",
+        "Metcalfe MS",
+        "Nicholson ML"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "26810941",
+      "title": "New perspectives on mTOR inhibitors (rapamycin, rapalogs and TORKinibs) in transplantation.",
+      "journal": "British journal of clinical pharmacology",
+      "year": "2016",
+      "authors": [
+        "Waldner M",
+        "Fantus D",
+        "Solari M",
+        "Thomson AW"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "35428493",
+      "title": "Rapamycin induces autophagy and apoptosis in Kaposiform hemangioendothelioma primary cells in vitro.",
+      "journal": "Journal of pediatric surgery",
+      "year": "2022",
+      "authors": [
+        "Wang Z",
+        "Han Q",
+        "Wang J",
+        "Yao W",
+        "Wang L",
+        "Li K"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "41888005",
+      "title": "The rapamycin sTORy: 50-year journey from Easter Island to the frontiers of biology and medicine.",
+      "journal": "Trends in biochemical sciences",
+      "year": "2026",
+      "authors": [
+        "Xiao X",
+        "Dokudovskaya S"
+      ],
+      "source": "ncbi_pubmed"
+    }
+  ]
+}

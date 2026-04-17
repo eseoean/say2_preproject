@@ -15,6 +15,7 @@ import pandas as pd
 import json
 import time
 import os
+import sys
 from pathlib import Path
 from sklearn.model_selection import KFold
 from sklearn.metrics import mean_squared_error, r2_score, roc_auc_score
@@ -35,6 +36,16 @@ OUTPUT_DIR.mkdir(exist_ok=True)
 # ── Benchmarks (Team 4 reference) ──
 BENCH_SPEARMAN = 0.713
 BENCH_RMSE = 1.385
+
+# Use conservative thread defaults to avoid native-library deadlocks on local reruns.
+CPU_THREADS = int(os.getenv("MODEL_CPU_THREADS", "4"))
+CATBOOST_THREAD_COUNT = int(os.getenv("CATBOOST_THREAD_COUNT", "1"))
+
+for _var in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS", "NUMEXPR_NUM_THREADS"):
+    os.environ.setdefault(_var, str(CPU_THREADS))
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(line_buffering=True)
 
 
 def load_data():
@@ -90,6 +101,23 @@ def compute_metrics(y_true, y_pred, y_train_true=None, y_train_pred=None):
         m["gap_spearman"] = tr_sp - sp
         m["gap_rmse"] = rmse - tr_rmse
     return m
+
+
+def _json_default(obj):
+    if isinstance(obj, (np.float32, np.float64)):
+        return float(obj)
+    if isinstance(obj, (np.int32, np.int64)):
+        return int(obj)
+    if isinstance(obj, np.ndarray):
+        return obj.tolist()
+    return obj
+
+
+def save_results_snapshot(results, filename):
+    path = OUTPUT_DIR / filename
+    with open(path, "w") as f:
+        json.dump(results, f, indent=2, default=_json_default)
+    return path
 
 
 def run_cv(model_name, model_fn, X, y_reg, y_bin, feature_names):
@@ -161,7 +189,7 @@ def lgbm_model(X_tr, y_tr, X_val, y_val, fold_idx, feat_names):
         "num_leaves": 63, "max_depth": 7, "min_child_samples": 20,
         "feature_fraction": 0.7, "bagging_fraction": 0.8, "bagging_freq": 5,
         "reg_alpha": 0.1, "reg_lambda": 1.0,
-        "verbose": -1, "seed": SEED + fold_idx, "n_jobs": -1,
+        "verbose": -1, "seed": SEED + fold_idx, "n_jobs": CPU_THREADS,
     }
     callbacks = [lgb.early_stopping(50, verbose=False), lgb.log_evaluation(0)]
     model = lgb.train(params, dtrain, num_boost_round=1500, valid_sets=[dval], callbacks=callbacks)
@@ -179,7 +207,7 @@ def lgbm_dart_model(X_tr, y_tr, X_val, y_val, fold_idx, feat_names):
         "feature_fraction": 0.7, "bagging_fraction": 0.8, "bagging_freq": 5,
         "drop_rate": 0.1, "skip_drop": 0.5,
         "reg_alpha": 0.1, "reg_lambda": 1.0,
-        "verbose": -1, "seed": SEED + fold_idx, "n_jobs": -1,
+        "verbose": -1, "seed": SEED + fold_idx, "n_jobs": CPU_THREADS,
     }
     # DART: no early stopping, use fixed rounds
     model = lgb.train(params, dtrain, num_boost_round=500, valid_sets=[dval],
@@ -196,7 +224,7 @@ def xgboost_model(X_tr, y_tr, X_val, y_val, fold_idx, feat_names):
         "max_depth": 7, "learning_rate": 0.05,
         "colsample_bytree": 0.7, "subsample": 0.8,
         "reg_alpha": 0.1, "reg_lambda": 1.0, "min_child_weight": 5,
-        "tree_method": "hist", "seed": SEED + fold_idx, "nthread": -1,
+        "tree_method": "hist", "seed": SEED + fold_idx, "nthread": CPU_THREADS,
         "verbosity": 0,
     }
     model = xgb.train(params, dtrain, num_boost_round=1500,
@@ -211,7 +239,7 @@ def catboost_model(X_tr, y_tr, X_val, y_val, fold_idx, feat_names):
         iterations=1500, learning_rate=0.05, depth=7,
         l2_leaf_reg=3.0, rsm=0.7, subsample=0.8,
         early_stopping_rounds=50, random_seed=SEED + fold_idx,
-        verbose=0, thread_count=-1,
+        verbose=0, thread_count=CATBOOST_THREAD_COUNT,
     )
     model.fit(X_tr, y_tr, eval_set=(X_val, y_val), verbose=False)
     return model, model.predict(X_val), model.predict(X_tr)
@@ -221,7 +249,7 @@ def rf_model(X_tr, y_tr, X_val, y_val, fold_idx, feat_names):
     from sklearn.ensemble import RandomForestRegressor
     model = RandomForestRegressor(
         n_estimators=500, max_depth=None, max_features="sqrt",
-        min_samples_leaf=5, n_jobs=-1, random_state=SEED + fold_idx,
+        min_samples_leaf=5, n_jobs=CPU_THREADS, random_state=SEED + fold_idx,
     )
     model.fit(X_tr, y_tr)
     return model, model.predict(X_val), model.predict(X_tr)
@@ -231,7 +259,7 @@ def extratrees_model(X_tr, y_tr, X_val, y_val, fold_idx, feat_names):
     from sklearn.ensemble import ExtraTreesRegressor
     model = ExtraTreesRegressor(
         n_estimators=500, max_depth=None, max_features="sqrt",
-        min_samples_leaf=5, n_jobs=-1, random_state=SEED + fold_idx,
+        min_samples_leaf=5, n_jobs=CPU_THREADS, random_state=SEED + fold_idx,
     )
     model.fit(X_tr, y_tr)
     return model, model.predict(X_val), model.predict(X_tr)
@@ -246,18 +274,18 @@ def stacking_model(X_tr, y_tr, X_val, y_val, fold_idx, feat_names):
     base_lgb = lgb.LGBMRegressor(
         n_estimators=500, learning_rate=0.05, num_leaves=63, max_depth=7,
         colsample_bytree=0.7, subsample=0.8, reg_alpha=0.1, reg_lambda=1.0,
-        n_jobs=-1, verbose=-1, random_state=SEED + fold_idx,
+        n_jobs=CPU_THREADS, verbose=-1, random_state=SEED + fold_idx,
     )
     base_rf = RandomForestRegressor(
         n_estimators=300, max_features="sqrt", min_samples_leaf=5,
-        n_jobs=-1, random_state=SEED + fold_idx,
+        n_jobs=CPU_THREADS, random_state=SEED + fold_idx,
     )
     # Use XGBoost sklearn API for stacking compatibility
     import xgboost as xgb
     base_xgb = xgb.XGBRegressor(
         n_estimators=500, learning_rate=0.05, max_depth=7,
         colsample_bytree=0.7, subsample=0.8, reg_alpha=0.1, reg_lambda=1.0,
-        tree_method="hist", n_jobs=-1, verbosity=0, random_state=SEED + fold_idx,
+        tree_method="hist", n_jobs=CPU_THREADS, verbosity=0, random_state=SEED + fold_idx,
     )
 
     model = StackingRegressor(
@@ -310,7 +338,7 @@ def rsf_model(X_tr, y_tr, X_val, y_val, fold_idx, feat_names):
 
     model = RandomSurvivalForest(
         n_estimators=100, max_depth=None, max_features="sqrt",
-        min_samples_leaf=10, n_jobs=-1, random_state=SEED + fold_idx,
+        min_samples_leaf=10, n_jobs=CPU_THREADS, random_state=SEED + fold_idx,
     )
     model.fit(X_tr_sub, y_surv_tr)
 
@@ -362,6 +390,7 @@ def rsf_extra_metrics(model, X_tr, y_tr, X_val, y_val, fold_idx):
 
 def main():
     X, y_reg, y_bin, feat_names = load_data()
+    print(f"Thread safety mode: MODEL_CPU_THREADS={CPU_THREADS}, CATBOOST_THREAD_COUNT={CATBOOST_THREAD_COUNT}")
 
     all_results = []
     models_config = [
@@ -403,6 +432,8 @@ def main():
             print(f"      AUROC:   {result['auroc_mean']:.4f} +/- {result['auroc_std']:.4f}")
 
         all_results.append(result)
+        snapshot_path = save_results_snapshot(all_results, "ml_results.partial.json")
+        print(f"  Snapshot saved to {snapshot_path}")
 
     total_elapsed = time.time() - total_start
 
@@ -426,20 +457,9 @@ def main():
     print(f"  Benchmark: Spearman >= {BENCH_SPEARMAN}, RMSE <= {BENCH_RMSE}   (* = meets benchmark)")
     print("=" * 90)
 
-    # Save results
-    # Convert numpy types to Python types for JSON serialization
-    def convert(obj):
-        if isinstance(obj, (np.float32, np.float64)):
-            return float(obj)
-        if isinstance(obj, (np.int32, np.int64)):
-            return int(obj)
-        if isinstance(obj, np.ndarray):
-            return obj.tolist()
-        return obj
-
     results_path = OUTPUT_DIR / "ml_results.json"
     with open(results_path, "w") as f:
-        json.dump(all_results, f, indent=2, default=convert)
+        json.dump(all_results, f, indent=2, default=_json_default)
     print(f"\nResults saved to {results_path}")
 
     # Upload to S3

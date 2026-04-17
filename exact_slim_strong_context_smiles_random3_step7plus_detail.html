@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>random3 Step 7+ KG/API 검증 - 최종 후보 근거 요약</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; background: #0f172a; color: #e2e8f0; min-height: 100vh; }
+  .header { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); padding: 20px 32px; border-bottom: 1px solid #334155; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+  .header h1 { font-size: 1.3rem; color: #f8fafc; }
+  .header a { color: #38bdf8; text-decoration: none; font-size: 0.85rem; }
+  .flow-nav { display:flex; gap:10px; flex-wrap:wrap; margin: 0 0 16px; }
+  .flow-btn { text-decoration:none; padding:8px 12px; border-radius:999px; border:1px solid #334155; background:#0f172a; color:#cbd5e1; font-size:0.78rem; font-weight:700; }
+  .flow-btn.active { background:#1d4ed8; color:#eff6ff; border-color:#3b82f6; }
+  .container { max-width: 1380px; margin: 0 auto; padding: 24px; }
+  .section { background: #1e293b; border: 1px solid #334155; border-radius: 10px; padding: 20px; margin-bottom: 20px; }
+  .section-title { font-size: 1.08rem; font-weight: 700; margin-bottom: 4px; display: flex; align-items: center; gap: 10px; }
+  .section-sub { font-size: 0.78rem; color: #64748b; margin-bottom: 16px; line-height: 1.5; }
+  .metric-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+  .metric-card { background: #0f172a; border: 1px solid #334155; border-radius: 8px; padding: 14px; text-align: center; }
+  .metric-card .value { font-size: 1.4rem; font-weight: 800; }
+  .metric-card .label { font-size: 0.72rem; color: #64748b; margin-top: 4px; }
+  .highlight { background: rgba(56,189,248,0.08); border: 1px solid rgba(56,189,248,0.30); border-radius: 10px; padding: 16px; margin-bottom: 16px; }
+  .stack { display: grid; grid-template-columns: 1.3fr 1fr; gap: 16px; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.78rem; }
+  th { text-align: left; padding: 8px 10px; background: #0f172a; color: #94a3b8; border-bottom: 2px solid #334155; font-weight: 600; white-space: nowrap; }
+  td { padding: 7px 10px; border-bottom: 1px solid rgba(51,65,85,0.6); vertical-align: top; }
+  tr:hover { background: rgba(59,130,246,0.05); }
+  .val-good { color: #4ade80; font-weight: 700; }
+  .val-dim { color: #94a3b8; }
+  .cat-approved, .cat-candidate, .cat-caution, .cat-neutral { padding: 2px 8px; border-radius: 999px; font-size: 0.7rem; font-weight: 700; display: inline-block; }
+  .cat-approved { background: #22c55e20; color: #4ade80; }
+  .cat-candidate { background: #3b82f620; color: #60a5fa; }
+  .cat-caution { background: #ef444420; color: #f87171; }
+  .cat-neutral { background: #64748b20; color: #cbd5e1; }
+  .list-card { background: #0f172a; border: 1px solid #334155; border-radius: 8px; padding: 14px; }
+  .list-card h3 { font-size: 0.92rem; margin-bottom: 8px; }
+  .list-card p { color: #cbd5e1; line-height: 1.6; font-size: 0.8rem; }
+  .toolbar { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+  .pill { padding: 6px 10px; border-radius: 999px; font-size: 0.72rem; font-weight: 700; }
+  .pill-blue { background: rgba(56,189,248,0.12); color: #7dd3fc; }
+  .pill-green { background: rgba(34,197,94,0.12); color: #86efac; }
+  .pill-amber { background: rgba(245,158,11,0.12); color: #fcd34d; }
+  @media (max-width: 980px) {
+    .stack { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 640px) {
+    .container { padding: 14px; }
+    .section { padding: 16px; }
+    table { display: block; overflow-x: auto; white-space: nowrap; }
+  }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>random3 Step 7+ KG/API 검증 - 최종 후보 근거 요약</h1>
+  <a href="exact_slim_strong_context_smiles_random3_detail.html">&larr; random3 상세 페이지로 돌아가기</a>
+</div>
+<div class="container">
+
+  <div class="flow-nav">
+    <a class="flow-btn" href="exact_slim_strong_context_smiles_random3_detail.html#step4">Step 4 모델</a>
+    <a class="flow-btn" href="exact_slim_strong_context_smiles_random3_detail.html#step5">Step 5 앙상블</a>
+    <a class="flow-btn" href="exact_slim_strong_context_smiles_random3_step6_detail.html">Step 6 METABRIC</a>
+    <a class="flow-btn" href="exact_slim_strong_context_smiles_random3_step7_detail.html">Step 7 ADMET</a>
+    <a class="flow-btn active" href="exact_slim_strong_context_smiles_random3_step7plus_detail.html">Step 7+ KG/API</a>
+  </div>
+
+  <div class="highlight">
+    <div style="font-size:1rem; font-weight:700; color:#7dd3fc; margin-bottom:8px;">random3 최종 라우트 요약</div>
+    <div style="line-height:1.7; color:#cbd5e1;">
+      <b>random3 weighted ensemble (CatBoost + XGBoost + LightGBM + TabNet + ResidualMLP + WideDeep)</b> 조합과 <b>exact slim + strong context + SMILES</b> 입력을 사용해
+      random sample 3-fold 기준 Step 6 METABRIC, Step 7 ADMET, Step 7+ KG/API 근거 수집까지 팀원 레포 흐름으로 정리했습니다.
+    </div>
+    <div class="toolbar">
+      <span class="pill pill-blue">Step 6: METABRIC</span>
+      <span class="pill pill-green">Step 7: ADMET Gate</span>
+      <span class="pill pill-amber">Step 7+: KG/API Evidence</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">핵심 성능 및 최종 분류</div>
+    <div class="section-sub">random3 weighted ensemble 성능과 Step 6/7 최종 후보 분포를 함께 요약했습니다.</div>
+    <div class="metric-grid">
+      <div class="metric-card"><div class="value">0.872</div><div class="label">Ensemble Spearman</div></div>
+      <div class="metric-card"><div class="value">1.102</div><div class="label">Ensemble RMSE</div></div>
+      <div class="metric-card"><div class="value">0.828</div><div class="label">Ensemble MAE</div></div>
+      <div class="metric-card"><div class="value">8</div><div class="label">Approved</div></div>
+      <div class="metric-card"><div class="value">6</div><div class="label">Candidate</div></div>
+      <div class="metric-card"><div class="value">1</div><div class="label">Caution</div></div>
+      <div class="metric-card"><div class="value">22</div><div class="label">ADMET Assays</div></div>
+      <div class="metric-card"><div class="value">15</div><div class="label">KG/API Drug Count</div></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">추천 요약</div>
+    <div class="section-sub">Top 5와 category별 shortlist를 빠르게 확인할 수 있게 묶었습니다.</div>
+    <div class="stack">
+      <div class="list-card">
+        <h3>Top 5 Final Candidates</h3>
+        <p>Romidepsin, Sepantronium bromide, Staurosporine, SN-38, Docetaxel</p>
+      </div>
+      <div class="list-card">
+        <h3>Approved / Candidate / Caution</h3>
+        <p><b>Approved:</b> Romidepsin, Docetaxel, Bortezomib, Dactinomycin, Vinorelbine, Paclitaxel, Vinblastine, Rapamycin<br><br>
+        <b>Candidate:</b> Sepantronium bromide, Staurosporine, SN-38, Dinaciclib, Camptothecin, Luminespib<br><br>
+        <b>Caution:</b> Epirubicin</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Top 15 종합 후보 표</div>
+    <div class="section-sub">Step 6 검증 지표, Step 7 이후 임상 분류, 최종 recommendation note를 한 번에 확인할 수 있는 통합 표입니다.</div>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th><th>Drug</th><th>임상 분류</th><th>Target</th><th>Pathway</th>
+          <th>Pred IC50</th><th>Validation</th><th>Safety</th><th>Combined</th>
+          <th>Target Expr</th><th>BRCA Pathway</th><th>Survival</th><th>Flags</th><th>Recommendation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td><b>Romidepsin</b></td><td><span class='cat-candidate'>적응증 확장/연구 중</span></td><td>HDAC1, HDAC2, HDAC3, HDAC8</td><td>Chromatin histone acetylation</td><td class='val-good'>-4.741</td><td>6.90</td><td>12.00</td><td class='val-good'>19.00</td><td class='val-good'>1</td><td class='val-good'>1</td><td class='val-dim'>0</td><td>-</td><td>유방암으로 확장 가능성이 있고, 추가 translational 검토 가치가 있습니다.</td></tr>
+<tr><td>2</td><td><b>Sepantronium bromide</b></td><td><span class='cat-caution'>유방암 미사용</span></td><td>BIRC5</td><td>Apoptosis regulation</td><td class='val-good'>-3.855</td><td>7.35</td><td>10.00</td><td class='val-good'>16.50</td><td class='val-good'>1</td><td class='val-good'>1</td><td class='val-good'>1</td><td>-</td><td>재창출 관점의 exploratory candidate로 적절합니다.</td></tr>
+<tr><td>3</td><td><b>Staurosporine</b></td><td><span class='cat-caution'>유방암 미사용</span></td><td>Broad spectrum kinase inhibitor</td><td>RTK signaling</td><td class='val-good'>-2.476</td><td>7.55</td><td>10.00</td><td class='val-good'>13.50</td><td class='val-good'>1</td><td class='val-dim'>0</td><td class='val-good'>1</td><td>-</td><td>재창출 관점의 exploratory candidate로 적절합니다.</td></tr>
+<tr><td>4</td><td><b>SN-38</b></td><td><span class='cat-candidate'>적응증 확장/연구 중</span></td><td>TOP1</td><td>DNA replication</td><td class='val-good'>-2.462</td><td>9.00</td><td>10.00</td><td class='val-good'>13.00</td><td class='val-good'>1</td><td class='val-good'>1</td><td class='val-good'>1</td><td>-</td><td>유방암으로 확장 가능성이 있고, 추가 translational 검토 가치가 있습니다.</td></tr>
+<tr><td>5</td><td><b>Docetaxel</b></td><td><span class='cat-approved'>유방암 현재 사용</span></td><td>Microtubule stabiliser</td><td>Mitosis</td><td class='val-good'>-3.303</td><td>9.30</td><td>6.83</td><td class='val-good'>12.83</td><td class='val-good'>1</td><td class='val-good'>1</td><td class='val-good'>1</td><td>[&#x27;DILI (Drug-Induced Liver Injury)(+)&#x27;]</td><td>임상 현실과 일치하는 재발견 후보로, 우선 shortlist에 두기 좋습니다.</td></tr>
+<tr><td>6</td><td><b>Bortezomib</b></td><td><span class='cat-candidate'>적응증 확장/연구 중</span></td><td>Proteasome</td><td>Protein stability and degradation</td><td class='val-good'>-4.752</td><td>9.45</td><td>5.29</td><td class='val-good'>12.79</td><td class='val-good'>1</td><td class='val-good'>1</td><td class='val-good'>1</td><td>[&#x27;DILI (Drug-Induced Liver Injury)(+)&#x27;]</td><td>유방암으로 확장 가능성이 있고, 추가 translational 검토 가치가 있습니다.</td></tr>
+<tr><td>7</td><td><b>Dactinomycin</b></td><td><span class='cat-caution'>유방암 미사용</span></td><td>RNA polymerase</td><td>Other</td><td class='val-good'>-3.018</td><td>7.75</td><td>7.00</td><td class='val-good'>12.50</td><td class='val-good'>1</td><td class='val-dim'>0</td><td class='val-good'>1</td><td>[&#x27;DILI (Drug-Induced Liver Injury)(+)&#x27;]</td><td>재창출 관점의 exploratory candidate로 적절합니다.</td></tr>
+<tr><td>8</td><td><b>Vinorelbine</b></td><td><span class='cat-approved'>유방암 현재 사용</span></td><td>Microtubule destabiliser</td><td>Mitosis</td><td class='val-good'>-2.830</td><td>9.15</td><td>8.00</td><td class='val-good'>12.50</td><td class='val-good'>1</td><td class='val-good'>1</td><td class='val-good'>1</td><td>-</td><td>임상 현실과 일치하는 재발견 후보로, 우선 shortlist에 두기 좋습니다.</td></tr>
+<tr><td>9</td><td><b>Dinaciclib</b></td><td><span class='cat-candidate'>적응증 확장/연구 중</span></td><td>CDK1, CDK2, CDK5, CDK9</td><td>Cell cycle</td><td class='val-good'>-2.191</td><td>8.90</td><td>10.00</td><td class='val-good'>12.00</td><td class='val-good'>1</td><td class='val-good'>1</td><td class='val-good'>1</td><td>-</td><td>유방암으로 확장 가능성이 있고, 추가 translational 검토 가치가 있습니다.</td></tr>
+<tr><td>10</td><td><b>Paclitaxel</b></td><td><span class='cat-approved'>유방암 현재 사용</span></td><td>Microtubule stabiliser</td><td>Mitosis</td><td class='val-good'>-2.837</td><td>9.20</td><td>6.83</td><td class='val-good'>11.83</td><td class='val-good'>1</td><td class='val-good'>1</td><td class='val-good'>1</td><td>[&#x27;DILI (Drug-Induced Liver Injury)(+)&#x27;]</td><td>임상 현실과 일치하는 재발견 후보로, 우선 shortlist에 두기 좋습니다.</td></tr>
+<tr><td>11</td><td><b>Vinblastine</b></td><td><span class='cat-approved'>유방암 현재 사용</span></td><td>Microtubule destabiliser</td><td>Mitosis</td><td class='val-good'>-2.741</td><td>9.10</td><td>7.83</td><td class='val-good'>11.83</td><td class='val-good'>1</td><td class='val-good'>1</td><td class='val-good'>1</td><td>-</td><td>임상 현실과 일치하는 재발견 후보로, 우선 shortlist에 두기 좋습니다.</td></tr>
+<tr><td>12</td><td><b>Camptothecin</b></td><td><span class='cat-caution'>유방암 미사용</span></td><td>TOP1</td><td>DNA replication</td><td class='val-good'>-0.544</td><td>8.65</td><td>10.00</td><td class='val-good'>11.00</td><td class='val-good'>1</td><td class='val-good'>1</td><td class='val-good'>1</td><td>-</td><td>재창출 관점의 exploratory candidate로 적절합니다.</td></tr>
+<tr><td>13</td><td><b>Rapamycin</b></td><td><span class='cat-candidate'>적응증 확장/연구 중</span></td><td>MTORC1</td><td>PI3K/MTOR signaling</td><td class='val-good'>-2.395</td><td>8.95</td><td>7.71</td><td class='val-good'>10.21</td><td class='val-good'>1</td><td class='val-good'>1</td><td class='val-good'>1</td><td>-</td><td>유방암으로 확장 가능성이 있고, 추가 translational 검토 가치가 있습니다.</td></tr>
+<tr><td>14</td><td><b>Luminespib</b></td><td><span class='cat-candidate'>적응증 확장/연구 중</span></td><td>HSP90</td><td>Protein stability and degradation</td><td class='val-good'>-1.834</td><td>8.80</td><td>5.00</td><td class='val-good'>6.50</td><td class='val-good'>1</td><td class='val-good'>1</td><td class='val-good'>1</td><td>-</td><td>유방암으로 확장 가능성이 있고, 추가 translational 검토 가치가 있습니다.</td></tr>
+<tr><td>15</td><td><b>Epirubicin</b></td><td><span class='cat-approved'>유방암 현재 사용</span></td><td>Anthracycline</td><td>DNA replication</td><td class='val-good'>0.093</td><td>8.30</td><td>2.83</td><td class='val-good'>3.33</td><td class='val-good'>1</td><td class='val-good'>1</td><td class='val-good'>1</td><td>[&#x27;Ames Mutagenicity(+)&#x27;, &#x27;DILI (Drug-Induced Liver Injury)(+)&#x27;]</td><td>임상 현실과 일치하는 재발견 후보로, 우선 shortlist에 두기 좋습니다.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title">KG/API 근거 수집 요약</div>
+    <div class="section-sub">ClinicalTrials, PubMed, FAERS, target/pathway 근거를 최종 15개 후보별로 집계했고, 표의 분류는 post-ADMET 임상 분류를 따릅니다.</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Drug</th><th>임상 분류</th><th>Combined</th><th>API Success</th><th>FAERS</th>
+          <th>Trials</th><th>Targets</th><th>Pathways</th><th>PubMed</th><th>PubMed BRCA</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><b>Romidepsin</b></td><td><span class='cat-candidate'>적응증 확장/연구 중</span></td><td>19.00</td><td class='val-good'>7</td><td>0</td><td>1</td><td>4</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td><b>Sepantronium bromide</b></td><td><span class='cat-caution'>유방암 미사용</span></td><td>16.50</td><td class='val-good'>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td><b>Staurosporine</b></td><td><span class='cat-caution'>유방암 미사용</span></td><td>13.50</td><td class='val-good'>7</td><td>0</td><td>2</td><td>1</td><td>1</td><td>50</td><td>50</td></tr>
+<tr><td><b>SN-38</b></td><td><span class='cat-candidate'>적응증 확장/연구 중</span></td><td>13.00</td><td class='val-good'>7</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td><b>Docetaxel</b></td><td><span class='cat-approved'>유방암 현재 사용</span></td><td>12.83</td><td class='val-good'>7</td><td>10</td><td>10</td><td>1</td><td>1</td><td>50</td><td>50</td></tr>
+<tr><td><b>Bortezomib</b></td><td><span class='cat-candidate'>적응증 확장/연구 중</span></td><td>12.79</td><td class='val-good'>7</td><td>10</td><td>10</td><td>1</td><td>1</td><td>50</td><td>50</td></tr>
+<tr><td><b>Dactinomycin</b></td><td><span class='cat-caution'>유방암 미사용</span></td><td>12.50</td><td class='val-good'>7</td><td>10</td><td>2</td><td>1</td><td>1</td><td>50</td><td>50</td></tr>
+<tr><td><b>Vinorelbine</b></td><td><span class='cat-approved'>유방암 현재 사용</span></td><td>12.50</td><td class='val-good'>7</td><td>10</td><td>10</td><td>1</td><td>1</td><td>50</td><td>50</td></tr>
+<tr><td><b>Dinaciclib</b></td><td><span class='cat-candidate'>적응증 확장/연구 중</span></td><td>12.00</td><td class='val-good'>7</td><td>0</td><td>1</td><td>4</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td><b>Paclitaxel</b></td><td><span class='cat-approved'>유방암 현재 사용</span></td><td>11.83</td><td class='val-good'>7</td><td>10</td><td>10</td><td>1</td><td>1</td><td>50</td><td>50</td></tr>
+<tr><td><b>Vinblastine</b></td><td><span class='cat-approved'>유방암 현재 사용</span></td><td>11.83</td><td class='val-good'>7</td><td>10</td><td>10</td><td>1</td><td>1</td><td>50</td><td>50</td></tr>
+<tr><td><b>Camptothecin</b></td><td><span class='cat-caution'>유방암 미사용</span></td><td>11.00</td><td class='val-good'>7</td><td>10</td><td>10</td><td>1</td><td>1</td><td>50</td><td>50</td></tr>
+<tr><td><b>Rapamycin</b></td><td><span class='cat-candidate'>적응증 확장/연구 중</span></td><td>10.21</td><td class='val-good'>7</td><td>10</td><td>10</td><td>1</td><td>1</td><td>50</td><td>50</td></tr>
+<tr><td><b>Luminespib</b></td><td><span class='cat-candidate'>적응증 확장/연구 중</span></td><td>6.50</td><td class='val-good'>7</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td><b>Epirubicin</b></td><td><span class='cat-approved'>유방암 현재 사용</span></td><td>3.33</td><td class='val-good'>7</td><td>10</td><td>10</td><td>1</td><td>1</td><td>50</td><td>50</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+</body>
+</html>

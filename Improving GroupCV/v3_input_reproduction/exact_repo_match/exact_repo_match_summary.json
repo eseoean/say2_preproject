@@ -1,0 +1,162 @@
+{
+  "reference_repo_root": "/tmp/biso_myprotocol_repo/20260414_re_pre_project_v3",
+  "outputs": {
+    "features_slim_exact_repo": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match/features_slim_exact_repo.parquet",
+    "features_cleaned_reference_repo": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match/features_cleaned_reference_repo.parquet",
+    "y_train_exact_repo": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match/y_train_exact_repo.npy",
+    "X_train_exact_repo_numeric": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match/X_train_exact_repo_numeric.npy",
+    "features_slim_columns_txt": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match/features_slim_columns.txt"
+  },
+  "repo_feature_selection_log": {
+    "selection_date": "2026-04-13T20:18:04.129527",
+    "version": "v2_with_pair_features",
+    "input_files": {
+      "features_cleaned": "features_cleaned.parquet (6,366행)",
+      "pair_features": "pair_features_newfe_v2.parquet (S3, 7,730행)"
+    },
+    "output_file": "features_slim.parquet",
+    "merged_rows": 6366,
+    "total_original_columns": 20389,
+    "total_final_columns": 5534,
+    "reduction_count": 14855,
+    "reduction_ratio": 0.729,
+    "gene_features": {
+      "original_count": 18310,
+      "low_variance_removed": 13719,
+      "high_correlation_removed": 176,
+      "final_count": 4415,
+      "reduction_ratio": 0.759
+    },
+    "morgan_fp_features": {
+      "original_count": 2048,
+      "low_variance_removed": 952,
+      "high_correlation_removed": 8,
+      "final_count": 1088,
+      "reduction_ratio": 0.469
+    },
+    "other_features": {
+      "lincs_count": 5,
+      "target_count": 8,
+      "pathway_count": 2,
+      "drug_desc_count": 9,
+      "drug_meta_count": 5,
+      "total_other_count": 29,
+      "selection_applied": false,
+      "note": "모두 유지 (개수 적어 selection 불필요)"
+    },
+    "id_columns": {
+      "count": 2,
+      "columns": [
+        "sample_id",
+        "canonical_drug_id"
+      ]
+    },
+    "selection_parameters": {
+      "variance_threshold": 0.01,
+      "correlation_threshold": 0.95,
+      "tcga_basis_only": true,
+      "importance_based_cut": "not_applied"
+    }
+  },
+  "repo_slim_shape": [
+    6366,
+    5534
+  ],
+  "repo_slim_numeric_shape": [
+    6366,
+    5529
+  ],
+  "repo_cleaned_shape": [
+    6366,
+    18316
+  ],
+  "repo_group_counts": {
+    "sample__crispr": 4415,
+    "drug_morgan": 1088,
+    "lincs": 5,
+    "target": 10,
+    "drug_desc": 9,
+    "drug_meta_like": 5,
+    "id": 2
+  },
+  "current_filtered_shape": [
+    6366,
+    20397
+  ],
+  "current_filtered_numeric_shape": [
+    6366,
+    20395
+  ],
+  "key_overlap": {
+    "repo_rows": 6366,
+    "current_filtered_rows": 6366,
+    "overlap_exact": 6366,
+    "repo_only_keys": 0,
+    "current_only_keys": 0
+  },
+  "schema_overlap_vs_current_filtered": {
+    "repo_slim_cols": 5534,
+    "current_filtered_cols": 20397,
+    "common_cols": 5531,
+    "repo_only_cols": 3,
+    "current_only_cols": 14866,
+    "repo_only_cols_sample": [
+      "drug__canonical_smiles_raw",
+      "drug__drug_name_norm",
+      "drug__smiles"
+    ],
+    "current_only_cols_sample": [
+      "drug_morgan_0000",
+      "drug_morgan_0003",
+      "drug_morgan_0006",
+      "drug_morgan_0015",
+      "drug_morgan_0017",
+      "drug_morgan_0018",
+      "drug_morgan_0019",
+      "drug_morgan_0021",
+      "drug_morgan_0022",
+      "drug_morgan_0024",
+      "drug_morgan_0026",
+      "drug_morgan_0028",
+      "drug_morgan_0030",
+      "drug_morgan_0036",
+      "drug_morgan_0038",
+      "drug_morgan_0040",
+      "drug_morgan_0044",
+      "drug_morgan_0046",
+      "drug_morgan_0047",
+      "drug_morgan_0048",
+      "drug_morgan_0050",
+      "drug_morgan_0051",
+      "drug_morgan_0055",
+      "drug_morgan_0057",
+      "drug_morgan_0060",
+      "drug_morgan_0061",
+      "drug_morgan_0063",
+      "drug_morgan_0064",
+      "drug_morgan_0068",
+      "drug_morgan_0069",
+      "drug_morgan_0070",
+      "drug_morgan_0072",
+      "drug_morgan_0076",
+      "drug_morgan_0077",
+      "drug_morgan_0078",
+      "drug_morgan_0081",
+      "drug_morgan_0082",
+      "drug_morgan_0085",
+      "drug_morgan_0086",
+      "drug_morgan_0087",
+      "drug_morgan_0088",
+      "drug_morgan_0089",
+      "drug_morgan_0091",
+      "drug_morgan_0093",
+      "drug_morgan_0096",
+      "drug_morgan_0098",
+      "drug_morgan_0100",
+      "drug_morgan_0101",
+      "drug_morgan_0103",
+      "drug_morgan_0105"
+    ]
+  },
+  "note": "The exact repo slim is materialized locally for faithful reproduction. This is more accurate than inferring hidden selection steps from the document alone."
+}

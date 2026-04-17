@@ -12,6 +12,7 @@ import pandas as pd
 import json
 import time
 import os
+import sys
 from pathlib import Path
 
 import torch
@@ -30,23 +31,53 @@ FE_RUN_ID = os.getenv("FE_RUN_ID", "20260409_newfe_v8_eseo")
 FEATURES_URI = f"{S3_BASE}/fe_output/{FE_RUN_ID}/features/features.parquet"
 PAIR_FEATURES_URI = f"{S3_BASE}/fe_output/{FE_RUN_ID}/pair_features/pair_features_newfe_v2.parquet"
 LABELS_URI = f"{S3_BASE}/fe_output/{FE_RUN_ID}/features/labels.parquet"
+DRUG_ANN_URI = f"{S3_BASE}/data/gsdc/gdsc2_drug_annotation_master_20260406.parquet"
 SEED = 42
 N_FOLDS = 5
 BENCH_SP = 0.713
 BENCH_RMSE = 1.385
-OUTPUT_DIR = Path(__file__).parent / "ensemble_results"
+CPU_THREADS = int(os.getenv("MODEL_CPU_THREADS", "4"))
+CATBOOST_THREAD_COUNT = int(os.getenv("CATBOOST_THREAD_COUNT", "1"))
+OUTPUT_DIR = Path(__file__).parent / os.getenv("ENSEMBLE_OUTPUT_DIRNAME", "ensemble_results")
 OUTPUT_DIR.mkdir(exist_ok=True)
+
+os.environ.setdefault("OMP_NUM_THREADS", str(CPU_THREADS))
+os.environ.setdefault("OPENBLAS_NUM_THREADS", str(CPU_THREADS))
+os.environ.setdefault("MKL_NUM_THREADS", str(CPU_THREADS))
+os.environ.setdefault("NUMEXPR_NUM_THREADS", str(CPU_THREADS))
 
 torch.manual_seed(SEED)
 np.random.seed(SEED)
+torch.set_num_threads(CPU_THREADS)
 
-if torch.backends.mps.is_available():
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(line_buffering=True)
+
+device_override = os.getenv("ENSEMBLE_DEVICE", "").strip().lower()
+if device_override:
+    DEVICE = torch.device(device_override)
+elif torch.backends.mps.is_available():
     DEVICE = torch.device("mps")
 elif torch.cuda.is_available():
     DEVICE = torch.device("cuda")
 else:
     DEVICE = torch.device("cpu")
 print(f"Using device: {DEVICE}")
+
+
+def dedupe_drug_candidates(drug_summary):
+    drug_ann = pd.read_parquet(DRUG_ANN_URI)[["DRUG_ID", "DRUG_NAME"]].drop_duplicates("DRUG_ID")
+    out = drug_summary.merge(drug_ann, left_on="drug_id", right_on="DRUG_ID", how="left")
+    out["drug_name"] = out["DRUG_NAME"].fillna(out["drug_id"].map(lambda x: f"Drug_{x}"))
+    out = out.drop(columns=["DRUG_ID", "DRUG_NAME"])
+    out = out.sort_values(["mean_pred_ic50", "drug_id"], ascending=[True, True])
+    before = len(out)
+    out = out.drop_duplicates(subset=["drug_name"], keep="first").reset_index(drop=True)
+    removed = before - len(out)
+    if removed:
+        print(f"  Removed {removed} duplicate candidate rows by drug name")
+    out["rank"] = range(1, len(out) + 1)
+    return out
 
 
 # ── Data Loading ──
@@ -187,7 +218,7 @@ def train_catboost(X_tr, y_tr, X_val, y_val):
     model = CatBoostRegressor(
         iterations=2000, learning_rate=0.05, depth=8, l2_leaf_reg=3,
         random_seed=SEED, verbose=0, task_type="CPU",
-        early_stopping_rounds=50,
+        early_stopping_rounds=50, thread_count=CATBOOST_THREAD_COUNT,
     )
     model.fit(X_tr, y_tr, eval_set=(X_val, y_val), verbose=0)
     return model.predict(X_val).astype(np.float32), model.predict(X_tr).astype(np.float32)
@@ -198,7 +229,7 @@ def train_lightgbm(X_tr, y_tr, X_val, y_val):
         "objective": "regression", "metric": "rmse", "boosting_type": "gbdt",
         "num_leaves": 127, "learning_rate": 0.05, "feature_fraction": 0.8,
         "bagging_fraction": 0.8, "bagging_freq": 5, "min_child_samples": 20,
-        "verbose": -1, "seed": SEED, "n_jobs": -1,
+        "verbose": -1, "seed": SEED, "n_jobs": CPU_THREADS,
     }
     dtrain = lgb.Dataset(X_tr, y_tr)
     dval = lgb.Dataset(X_val, y_val, reference=dtrain)
@@ -212,7 +243,7 @@ def train_xgboost(X_tr, y_tr, X_val, y_val):
         "objective": "reg:squarederror", "eval_metric": "rmse",
         "max_depth": 8, "learning_rate": 0.05, "subsample": 0.8,
         "colsample_bytree": 0.8, "min_child_weight": 5,
-        "seed": SEED, "n_jobs": -1, "verbosity": 0,
+        "seed": SEED, "n_jobs": CPU_THREADS, "verbosity": 0,
     }
     dtrain = xgb.DMatrix(X_tr, label=y_tr)
     dval = xgb.DMatrix(X_val, label=y_val)
@@ -229,7 +260,7 @@ def main():
     sample_dim = 18311
 
     # Model configs: (name, type, train_func_or_class)
-    model_configs = [
+    all_model_configs = [
         ("CatBoost", "ml", train_catboost),
         ("LightGBM", "ml", train_lightgbm),
         ("XGBoost", "ml", train_xgboost),
@@ -237,6 +268,16 @@ def main():
         ("ResidualMLP", "dl", ResidualMLP),
         ("Cross-Attention", "dl", CrossAttentionNet),
     ]
+
+    selected_models_env = os.getenv("ENSEMBLE_MODELS", "").strip()
+    if selected_models_env:
+        selected_names = [name.strip() for name in selected_models_env.split(",") if name.strip()]
+        unknown = sorted(set(selected_names) - {name for name, _, _ in all_model_configs})
+        if unknown:
+            raise ValueError(f"Unknown models in ENSEMBLE_MODELS: {unknown}")
+        model_configs = [cfg for cfg in all_model_configs if cfg[0] in selected_names]
+    else:
+        model_configs = all_model_configs
 
     # DL model kwargs
     dl_kwargs = {
@@ -257,7 +298,9 @@ def main():
     model_spearman = {}
 
     print(f"\n{'='*60}")
-    print(f"  Step 5: Ensemble Training (6 models x 5-fold CV)")
+    print(f"  Step 5: Ensemble Training ({len(model_configs)} models x {N_FOLDS}-fold CV)")
+    print(f"  Selected models: {', '.join(name for name, _, _ in model_configs)}")
+    print(f"  Output dir: {OUTPUT_DIR}")
     print(f"{'='*60}")
 
     total_t0 = time.time()
@@ -392,9 +435,8 @@ def main():
         sensitivity_rate=("y_true", lambda x: (x < np.median(y)).mean()),
     ).reset_index()
 
-    # Rank by predicted sensitivity (lower predicted IC50 = more effective)
-    drug_summary = drug_summary.sort_values("mean_pred_ic50", ascending=True)
-    drug_summary["rank"] = range(1, len(drug_summary) + 1)
+    # Rank by predicted sensitivity and keep one row per drug name
+    drug_summary = dedupe_drug_candidates(drug_summary)
 
     # Top 30
     top30 = drug_summary.head(30).copy()
@@ -420,7 +462,9 @@ def main():
         + top30["sensitivity_rate"].rank() * 2  # higher sensitivity = better
         + (top30["n_samples"] >= 5).astype(int) * 5  # bonus for sufficient samples
     )
-    top15 = top30.nlargest(15, "score")
+    top15 = top30.sort_values(["score", "mean_pred_ic50"], ascending=[False, True]) \
+                 .drop_duplicates(subset=["drug_name"], keep="first") \
+                 .head(15)
     top15 = top15.sort_values("mean_pred_ic50", ascending=True)
     top15["final_rank"] = range(1, 16)
 
@@ -445,7 +489,8 @@ def main():
 
     results = {
         "ensemble_method": "spearman_weighted_average",
-        "n_models": 6,
+        "n_models": len(model_configs),
+        "selected_models": [name for name, _, _ in model_configs],
         "weights": {k: float(v) for k, v in weights.items()},
         "ensemble_metrics": {
             "spearman_mean": float(fm_df["spearman"].mean()),
@@ -465,9 +510,9 @@ def main():
             } for name in model_spearman
         },
         "fold_metrics": fold_metrics,
-        "top30_drugs": top30[["rank", "drug_id", "mean_pred_ic50", "mean_true_ic50",
+        "top30_drugs": top30[["rank", "drug_id", "drug_name", "mean_pred_ic50", "mean_true_ic50",
                               "sensitivity_rate", "n_samples", "category"]].to_dict(orient="records"),
-        "top15_drugs": top15[["final_rank", "drug_id", "mean_pred_ic50", "mean_true_ic50",
+        "top15_drugs": top15[["final_rank", "drug_id", "drug_name", "mean_pred_ic50", "mean_true_ic50",
                               "sensitivity_rate", "n_samples", "category"]].to_dict(orient="records"),
     }
 

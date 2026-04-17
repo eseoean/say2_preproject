@@ -1,0 +1,785 @@
+{
+  "data": [
+    {
+      "pmid": "33054438",
+      "title": "Metronomic therapy in advanced breast cancer and NSCLC: vinorelbine as a paradigm of recent progress.",
+      "journal": "Expert review of anticancer therapy",
+      "year": "2021",
+      "authors": [
+        "Xu B",
+        "Sun T",
+        "Wang S",
+        "Lin Y"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "11899783",
+      "title": "A review of vinorelbine in the treatment of breast cancer.",
+      "journal": "Clinical breast cancer",
+      "year": "2001",
+      "authors": [
+        "Domenech GH",
+        "Vogel CL"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "31262849",
+      "title": "A Systematic Review and Meta-analysis of the Combination of Vinorelbine and Lapatinib in Patients With Her2-positive Metastatic Breast Cancer.",
+      "journal": "Anticancer research",
+      "year": "2019",
+      "authors": [
+        "Stravodimou A",
+        "Voutsadakis IA"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "23320984",
+      "title": "A systematic review of vinorelbine for the treatment of breast cancer.",
+      "journal": "The breast journal",
+      "year": "2013",
+      "authors": [
+        "Xu YC",
+        "Wang HX",
+        "Tang L",
+        "Ma Y",
+        "Zhang FC"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "21742438",
+      "title": "Oral vinorelbine in metastatic breast cancer: a review of current clinical trial results.",
+      "journal": "Cancer treatment reviews",
+      "year": "2012",
+      "authors": [
+        "Aapro M",
+        "Finek J"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "7740337",
+      "title": "Oral vinorelbine (Navelbine) in the treatment of advanced breast cancer.",
+      "journal": "Seminars in oncology",
+      "year": "1995",
+      "authors": [
+        "Winer EP",
+        "Chu L",
+        "Spicer DV"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "26584409",
+      "title": "Metronomic oral vinorelbine in advanced breast cancer and non-small-cell lung cancer: current status and future development.",
+      "journal": "Future oncology (London, England)",
+      "year": "2016",
+      "authors": [
+        "Cazzaniga ME",
+        "Camerini A",
+        "Addeo R",
+        "Nolè F",
+        "Munzone E",
+        "Collovà E",
+        "Del Conte A",
+        "Mencoboni M",
+        "Papaldo P",
+        "Pasini F",
+        "Saracchini S",
+        "Bocci G"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "37750392",
+      "title": "Vinorelbine thiotepa in metastatic breast cancer: a large real-life retrospective study.",
+      "journal": "Acta oncologica (Stockholm, Sweden)",
+      "year": "2023",
+      "authors": [
+        "Loison R",
+        "Abbar B",
+        "Drouin L",
+        "Bonnet-Bensimon C",
+        "Cuvier C",
+        "Giacchetti S",
+        "Espie M",
+        "Teixeira L",
+        "De Castelbajac V"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "9364543",
+      "title": "Combination docetaxel/vinorelbine for metastatic breast cancer and non-small-cell lung cancer.",
+      "journal": "Oncology (Williston Park, N.Y.)",
+      "year": "1997",
+      "authors": [
+        "Aapro MS"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "7577376",
+      "title": "Current status of vinorelbine for breast cancer.",
+      "journal": "Oncology (Williston Park, N.Y.)",
+      "year": "1995",
+      "authors": [
+        "Smith GA"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "35840514",
+      "title": "Vinorelbine After Prior Treatment With Eribulin for Advanced Breast Cancer: A Single-Centre Experience Suggesting Cross-Resistance.",
+      "journal": "Clinical breast cancer",
+      "year": "2022",
+      "authors": [
+        "Okines AFC",
+        "Irfan T",
+        "Mohammed K",
+        "Ring A",
+        "Parton M",
+        "Kipps E",
+        "Johnston S",
+        "Turner NC"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "16473470",
+      "title": "Vinorelbine in the management of breast cancer: New perspectives, revived role in the era of targeted therapy.",
+      "journal": "Cancer treatment reviews",
+      "year": "2006",
+      "authors": [
+        "Mano M"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "17385939",
+      "title": "Oral vinorelbine: role in the management of metastatic breast cancer.",
+      "journal": "Drugs",
+      "year": "2007",
+      "authors": [
+        "Aapro MS",
+        "Conte P",
+        "Esteban González E",
+        "Trillet-Lenoir V"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "27282844",
+      "title": "Vinorelbine With Capecitabine, an Evergreen Doublet for Advanced Breast Cancer: A Systematic Literature Review and Pooled-Analysis of Phase II-III Studies.",
+      "journal": "Clinical breast cancer",
+      "year": "2016",
+      "authors": [
+        "Petrelli F",
+        "Di Cosimo S",
+        "Lonati V",
+        "Barni S"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "7749128",
+      "title": "Vinorelbine and the topoisomerase 1 inhibitors: current and potential roles in breast cancer chemotherapy.",
+      "journal": "Breast cancer research and treatment",
+      "year": "1995",
+      "authors": [
+        "O'Reilly S",
+        "Kennedy MJ",
+        "Rowinsky EK",
+        "Donehower RC"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "1283848",
+      "title": "A review of the antitumour activity of vinorelbine in breast cancer.",
+      "journal": "Drugs",
+      "year": "1992",
+      "authors": [
+        "Marty M",
+        "Extra JM",
+        "Dieras V",
+        "Giacchetti S",
+        "Ohana S",
+        "Espié M"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "7740332",
+      "title": "Vinorelbine (Navelbine) in the treatment of breast cancer: the European experience.",
+      "journal": "Seminars in oncology",
+      "year": "1995",
+      "authors": [
+        "Fumoleau P",
+        "Delozier T",
+        "Extra JM",
+        "Canobbio L",
+        "Delgado FM",
+        "Hurteloup P"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "10945030",
+      "title": "[Vinorelbine in the treatment of non-small-cell lung cancer and breast cancer].",
+      "journal": "Gan to kagaku ryoho. Cancer & chemotherapy",
+      "year": "2000",
+      "authors": [
+        "Kubota K"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "11252883",
+      "title": "Treatment of advanced breast cancer with gemcitabine and vinorelbine.",
+      "journal": "Oncology (Williston Park, N.Y.)",
+      "year": "2001",
+      "authors": [
+        "Hortobagyi GN"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "7740333",
+      "title": "Quality of life analyses from vinorelbine (Navelbine) clinical trials of women with metastatic breast cancer.",
+      "journal": "Seminars in oncology",
+      "year": "1995",
+      "authors": [
+        "Bertsch LA",
+        "Donaldson G"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "12057044",
+      "title": "Gemcitabine in combination with vinorelbine for treatment of advanced breast cancer.",
+      "journal": "Clinical breast cancer",
+      "year": "2002",
+      "authors": [
+        "Hortobagyi GN"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "18937621",
+      "title": "Vinorelbine in breast cancer.",
+      "journal": "Expert opinion on pharmacotherapy",
+      "year": "2008",
+      "authors": [
+        "Bonneterre J",
+        "Penel N"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "17264064",
+      "title": "A review of the use of trastuzumab (Herceptin) plus vinorelbine in metastatic breast cancer.",
+      "journal": "Annals of oncology : official journal of the European Society for Medical Oncology",
+      "year": "2007",
+      "authors": [
+        "Chan A"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "38104354",
+      "title": "Pemetrexed plus vinorelbine versus vinorelbine monotherapy in patients with metastatic breast cancer (KCSG-BR15-17): A randomized, open-label, multicenter, phase II trial.",
+      "journal": "European journal of cancer (Oxford, England : 1990)",
+      "year": "2024",
+      "authors": [
+        "Lee DW",
+        "Jung KH",
+        "Lee KH",
+        "Park YH",
+        "Lee KS",
+        "Sohn J",
+        "Ahn HK",
+        "Jeong JH",
+        "Koh SJ",
+        "Kim JH",
+        "Kim HJ",
+        "Lee KE",
+        "Kim HJ",
+        "Yang YW",
+        "Park KH",
+        "Lee J",
+        "Won HS",
+        "Kim TY",
+        "Im SA"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "38659376",
+      "title": "The efficiency and safety of low-dose apatinib combined with oral vinorelbine in pretreated HER2-negative metastatic breast cancer.",
+      "journal": "Cancer medicine",
+      "year": "2024",
+      "authors": [
+        "Huang JY",
+        "Chen XL",
+        "Xie XF",
+        "Song L",
+        "Chen LP",
+        "Lan XF",
+        "Bai X",
+        "Chen X",
+        "Du CW"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "7740335",
+      "title": "Combination chemotherapy with vinorelbine (Navelbine) and mitoxantrone for metastatic breast cancer: a review.",
+      "journal": "Seminars in oncology",
+      "year": "1995",
+      "authors": [
+        "Vogel CL"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "37144559",
+      "title": "Combined chemo-endocrine therapy as a potential new option for HR+/HER2- advanced breast cancer: a prospective study of fulvestrant plus oral vinorelbine.",
+      "journal": "Cancer biology & medicine",
+      "year": "2023",
+      "authors": [
+        "Wang X",
+        "Yue J",
+        "Kang Y",
+        "Dai Z",
+        "Ju J",
+        "Wang J",
+        "Zhang P",
+        "Ma F",
+        "Xu B",
+        "Yuan P"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "12583816",
+      "title": "The clinical effectiveness and cost-effectiveness of vinorelbine for breast cancer: a systematic review and economic evaluation.",
+      "journal": "Health technology assessment (Winchester, England)",
+      "year": "2002",
+      "authors": [
+        "Lewis R",
+        "Bagnall AM",
+        "King S",
+        "Woolacott N",
+        "Forbes C",
+        "Shirran L",
+        "Duffy S",
+        "Kleijnen J",
+        "ter Riet G",
+        "Riemsma R"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "33788715",
+      "title": "The Impact of Insulin on Low-dose Metronomic Vinorelbine and Mafosfamide in Breast Cancer Cells.",
+      "journal": "Anticancer research",
+      "year": "2021",
+      "authors": [
+        "Krajnak S",
+        "Loewe A",
+        "Battista MJ",
+        "Hasenburg A",
+        "Heimes AS",
+        "Schmidt M",
+        "Schwab R",
+        "Brenner W"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "32848091",
+      "title": "BET inhibition increases βIII-tubulin expression and sensitizes metastatic breast cancer in the brain to vinorelbine.",
+      "journal": "Science translational medicine",
+      "year": "2020",
+      "authors": [
+        "Kanojia D",
+        "Panek WK",
+        "Cordero A",
+        "Fares J",
+        "Xiao A",
+        "Savchuk S",
+        "Kumar K",
+        "Xiao T",
+        "Pituch KC",
+        "Miska J",
+        "Zhang P",
+        "Kam KL",
+        "Horbinski C",
+        "Balyasnikova IV",
+        "Ahmed AU",
+        "Lesniak MS"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "37402471",
+      "title": "A phase II study of a doublet metronomic chemotherapy regimen consisting of oral vinorelbine and capecitabine in Chinese women with HER2-negative metastatic breast cancer.",
+      "journal": "Thoracic cancer",
+      "year": "2023",
+      "authors": [
+        "Chai Y",
+        "Liu J",
+        "Jiang M",
+        "He M",
+        "Wang Z",
+        "Ma F",
+        "Wang J",
+        "Yuan P",
+        "Luo Y",
+        "Xu B",
+        "Li Q"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "36602669",
+      "title": "CHEOPS trial: a GINECO group randomized phase II assessing addition of a non-steroidal aromatase inhibitor to oral vinorelbine in pre-treated metastatic breast cancer patients.",
+      "journal": "Breast cancer (Tokyo, Japan)",
+      "year": "2023",
+      "authors": [
+        "Bailleux C",
+        "Arnaud A",
+        "Frenel JS",
+        "Chabaud S",
+        "Bachelot T",
+        "You B",
+        "Stefani L",
+        "Tixidre CG",
+        "Simon H",
+        "Beal-Ardisson D",
+        "Jacquin JP",
+        "Del Piano F",
+        "Lortholary A",
+        "Cornea C",
+        "Greilsamer C",
+        "Largillier R",
+        "Brocard F",
+        "Legouffe E",
+        "Atlassi M",
+        "Hardy-Bessard AC",
+        "Heudel PE"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "9339197",
+      "title": "[A medico-economic evaluation of second line chemotherapy in metastatic breast cancer: comparison between docetaxel, paclitaxel, and vinorelbine].",
+      "journal": "Bulletin du cancer",
+      "year": "1997",
+      "authors": [
+        "Launois RJ",
+        "Reboul-Marty JM",
+        "Bonneterre J"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "40878903",
+      "title": "Vinorelbine With or Without Thiotepa for HER2-Negative Metastatic Breast Cancer: A Propensity Score Analysis.",
+      "journal": "Cancer medicine",
+      "year": "2025",
+      "authors": [
+        "Robert A",
+        "Gougis P",
+        "Dumas E",
+        "Loison R",
+        "De Castelbajac V",
+        "Espie M",
+        "Giacchetti S",
+        "Cuvier C",
+        "Hassani L",
+        "Wassermann J",
+        "Campedel L",
+        "Veyri M",
+        "Vozy A",
+        "Spano JP",
+        "Teixeira L",
+        "Abbar B"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "8547400",
+      "title": "Metastatic breast cancer.",
+      "journal": "Current opinion in oncology",
+      "year": "1995",
+      "authors": [
+        "Rubens RD"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "30039287",
+      "title": "PARP3 inhibitors ME0328 and olaparib potentiate vinorelbine sensitization in breast cancer cell lines.",
+      "journal": "Breast cancer research and treatment",
+      "year": "2018",
+      "authors": [
+        "Sharif-Askari B",
+        "Amrein L",
+        "Aloyz R",
+        "Panasci L"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "35138529",
+      "title": "Afatinib alone and in combination with vinorelbine or paclitaxel, in patients with HER2-positive breast cancer who failed or progressed on prior trastuzumab and/or lapatinib (LUX-Breast 2): an open-label, multicenter, phase II trial.",
+      "journal": "Breast cancer research and treatment",
+      "year": "2022",
+      "authors": [
+        "Hickish T",
+        "Mehta A",
+        "Liu MC",
+        "Huang CS",
+        "Arora RS",
+        "Chang YC",
+        "Yang Y",
+        "Vladimirov V",
+        "Jain M",
+        "Tsang J",
+        "Pemberton K",
+        "Sadrolhefazi B",
+        "Jin X",
+        "Tseng LM"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "32620631",
+      "title": "Real-world Evaluation of Oral Vinorelbine in the Treatment of Metastatic Breast Cancer: An ESME-MBC Study.",
+      "journal": "Anticancer research",
+      "year": "2020",
+      "authors": [
+        "Heudel P",
+        "Delaloge S",
+        "Parent D",
+        "Madranges N",
+        "Levy C",
+        "Dalenc F",
+        "Brain E",
+        "Uwer L",
+        "D'Hondt V",
+        "Augereau P",
+        "Mailliez A",
+        "Perrin C",
+        "Frenel JS",
+        "Sablin MP",
+        "Mouret-Reynier MA",
+        "Vermeulin T",
+        "Eymard JC",
+        "Petit T",
+        "Ferrero JM",
+        "Ilie S",
+        "Goncalves A",
+        "Chenuc G",
+        "Robain M",
+        "Simon G",
+        "Perol D"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "8922202",
+      "title": "Paclitaxel and vinorelbine in anthracycline-pretreated breast cancer: a phase II study.",
+      "journal": "Annals of oncology : official journal of the European Society for Medical Oncology",
+      "year": "1996",
+      "authors": [
+        "Michelotti A",
+        "Gennari A",
+        "Salvadori B",
+        "Tognoni A",
+        "Tibaldi C",
+        "Baldini E",
+        "Conte PF"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "29902087",
+      "title": "Treatment of advanced breast cancer with a metronomic schedule of oral vinorelbine: what is the opinion of Italian oncologists?",
+      "journal": "Expert review of anticancer therapy",
+      "year": "2018",
+      "authors": [
+        "Cazzaniga ME",
+        "Munzone E",
+        "Montagna E",
+        "Pappagallo G"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "7740334",
+      "title": "Combined doxorubicin/vinorelbine (Navelbine) therapy in the treatment of advanced breast cancer.",
+      "journal": "Seminars in oncology",
+      "year": "1995",
+      "authors": [
+        "Hochster HS"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "38616741",
+      "title": "SiRNA-mediated Knockdown of ABCB1 Enhances the Efficacy of Doxorubicin and Vinorelbine in Breast Cancer Cells.",
+      "journal": "Current pharmaceutical biotechnology",
+      "year": "2025",
+      "authors": [
+        "Abbasfard Z",
+        "Behzad-Behbahani A",
+        "Rastegari B",
+        "Naeimi S",
+        "Moghanibashi M",
+        "Safari F"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "27608908",
+      "title": "Treatment of advanced breast cancer with a combination of highly agglutinative staphylococcin and vinorelbine-based chemotherapy.",
+      "journal": "European review for medical and pharmacological sciences",
+      "year": "2016",
+      "authors": [
+        "Yu QT",
+        "Meng ZB"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "21482492",
+      "title": "Trastuzumab and vinorelbine in early stages of HER2-positive breast cancer.",
+      "journal": "Journal of chemotherapy (Florence, Italy)",
+      "year": "2011",
+      "authors": [
+        "Ferrario C",
+        "Wong A",
+        "Gao T",
+        "Bouganim N",
+        "Aloyz R",
+        "Panasci LC"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "31115844",
+      "title": "VicTORia: a randomised phase II study to compare vinorelbine in combination with the mTOR inhibitor everolimus versus vinorelbine monotherapy for second-line chemotherapy in advanced HER2-negative breast cancer.",
+      "journal": "Breast cancer research and treatment",
+      "year": "2019",
+      "authors": [
+        "Decker T",
+        "Marschner N",
+        "Muendlein A",
+        "Welt A",
+        "Hagen V",
+        "Rauh J",
+        "Schröder H",
+        "Jaehnig P",
+        "Potthoff K",
+        "Lerchenmüller C"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "12047474",
+      "title": "Gemcitabine and vinorelbine combination in patients with metastatic breast cancer.",
+      "journal": "The breast journal",
+      "year": "2002",
+      "authors": [
+        "Sanal SM",
+        "Gokmen E",
+        "Karabulut B",
+        "Sezgin C"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "32975708",
+      "title": "Randomized phase II clinical trial and biomarker analysis of paclitaxel plus epirubicin versus vinorelbine plus epirubicin as neoadjuvant chemotherapy in locally advanced HER2-negative breast cancer with TEKT4 variations.",
+      "journal": "Breast cancer research and treatment",
+      "year": "2021",
+      "authors": [
+        "Jiang YZ",
+        "Ge LP",
+        "Jin X",
+        "Fan L",
+        "He M",
+        "Liu Y",
+        "Chen L",
+        "Zuo WJ",
+        "Wu J",
+        "Liu GY",
+        "Di GH",
+        "Wang ZH",
+        "Yu KD",
+        "Shao ZM"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "30900138",
+      "title": "Vinorelbine plus Capecitabine (Vinocap): a retrospective analysis in heavily pretreated HER2 negative metastatic breast cancer patients.",
+      "journal": "Breast cancer research and treatment",
+      "year": "2019",
+      "authors": [
+        "Torres A",
+        "Ramdial JL",
+        "Aguirre LE",
+        "Mahtani R",
+        "Vogel CL"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "32448335",
+      "title": "Combined use of apatinib mesylate and vinorelbine versus vinorelbine alone in recurrent or metastatic triple-negative breast cancer: study protocol for a randomized controlled clinical trial.",
+      "journal": "Trials",
+      "year": "2020",
+      "authors": [
+        "Wu S",
+        "Zhang L",
+        "Li H",
+        "Xu J",
+        "Jiang C",
+        "Sun T"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "33772709",
+      "title": "Taxane versus vinorelbine in combination with trastuzumab and pertuzumab for first-line treatment of metastatic HER2-positive breast cancer: a retrospective two-center study.",
+      "journal": "Breast cancer research and treatment",
+      "year": "2021",
+      "authors": [
+        "Reinhorn D",
+        "Kuchuk I",
+        "Shochat T",
+        "Nisenbaum B",
+        "Sulkes A",
+        "Hendler D",
+        "Rotem O",
+        "Tsoref D",
+        "Olitzky O",
+        "Goldvaser H",
+        "Sarfaty M",
+        "Neiman V",
+        "Prus J",
+        "Gottfried M",
+        "Yust-Katz S",
+        "Yerushalmi R"
+      ],
+      "source": "ncbi_pubmed"
+    }
+  ]
+}

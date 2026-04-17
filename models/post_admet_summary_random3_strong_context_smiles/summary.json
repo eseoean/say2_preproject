@@ -1,0 +1,20 @@
+{
+  "ensemble_name": "random3 weighted ensemble (CatBoost + XGBoost + LightGBM + TabNet + ResidualMLP + WideDeep)",
+  "input_bundle": "exact slim + strong context + SMILES",
+  "split_mode": "random sample 3-fold",
+  "n_total": 15,
+  "n_current_use": 5,
+  "n_expansion": 6,
+  "n_novel": 4,
+  "n_assays": 22,
+  "n_approved_raw": 8,
+  "n_candidate_raw": 6,
+  "n_caution_raw": 1,
+  "top5_final": [
+    "Romidepsin",
+    "Sepantronium bromide",
+    "Staurosporine",
+    "SN-38",
+    "Docetaxel"
+  ]
+}

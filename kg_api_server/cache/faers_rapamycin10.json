@@ -1,0 +1,54 @@
+{
+  "data": [
+    {
+      "event": "OFF LABEL USE",
+      "count": 67,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "DIARRHOEA",
+      "count": 38,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "DRUG INEFFECTIVE",
+      "count": 38,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "DISEASE PROGRESSION",
+      "count": 34,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "PNEUMONIA",
+      "count": 31,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "PYREXIA",
+      "count": 28,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "TRANSPLANT REJECTION",
+      "count": 28,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "ANAEMIA",
+      "count": 26,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "DRUG INTERACTION",
+      "count": 26,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "MULTIPLE ORGAN DYSFUNCTION SYNDROME",
+      "count": 24,
+      "source": "openfda_faers"
+    }
+  ]
+}

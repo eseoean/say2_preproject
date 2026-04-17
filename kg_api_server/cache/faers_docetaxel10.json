@@ -1,0 +1,54 @@
+{
+  "data": [
+    {
+      "event": "ALOPECIA",
+      "count": 17957,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "MADAROSIS",
+      "count": 6852,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "HAIR TEXTURE ABNORMAL",
+      "count": 6130,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "HAIR COLOUR CHANGES",
+      "count": 6011,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "HAIR DISORDER",
+      "count": 5644,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "DIARRHOEA",
+      "count": 5427,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "NAUSEA",
+      "count": 3942,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "EMOTIONAL DISTRESS",
+      "count": 3616,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "NEUTROPENIA",
+      "count": 3521,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "ANXIETY",
+      "count": 3485,
+      "source": "openfda_faers"
+    }
+  ]
+}

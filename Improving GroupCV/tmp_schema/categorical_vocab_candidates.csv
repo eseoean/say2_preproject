@@ -1,0 +1,81 @@
+column_name,category_value
+TCGA_DESC,ACC
+TCGA_DESC,ALL
+TCGA_DESC,BLCA
+TCGA_DESC,BRCA
+TCGA_DESC,CESC
+TCGA_DESC,CLL
+TCGA_DESC,COREAD
+TCGA_DESC,DLBC
+TCGA_DESC,ESCA
+TCGA_DESC,GBM
+TCGA_DESC,HNSC
+TCGA_DESC,KIRC
+TCGA_DESC,LAML
+TCGA_DESC,LCML
+TCGA_DESC,LGG
+TCGA_DESC,LIHC
+TCGA_DESC,LUAD
+TCGA_DESC,LUSC
+TCGA_DESC,MB
+TCGA_DESC,MESO
+TCGA_DESC,MM
+TCGA_DESC,NB
+TCGA_DESC,OTHER
+TCGA_DESC,OV
+TCGA_DESC,PAAD
+TCGA_DESC,PRAD
+TCGA_DESC,SCLC
+TCGA_DESC,SKCM
+TCGA_DESC,STAD
+TCGA_DESC,THCA
+TCGA_DESC,UCEC
+TCGA_DESC,UNCLASSIFIED
+TCGA_DESC,__MISSING__
+PATHWAY_NAME_NORMALIZED,ABL signaling
+PATHWAY_NAME_NORMALIZED,Apoptosis regulation
+PATHWAY_NAME_NORMALIZED,Cell cycle
+PATHWAY_NAME_NORMALIZED,Chromatin histone acetylation
+PATHWAY_NAME_NORMALIZED,Chromatin histone methylation
+PATHWAY_NAME_NORMALIZED,Chromatin other
+PATHWAY_NAME_NORMALIZED,Cytoskeleton
+PATHWAY_NAME_NORMALIZED,DNA replication
+PATHWAY_NAME_NORMALIZED,EGFR signaling
+PATHWAY_NAME_NORMALIZED,ERK MAPK signaling
+PATHWAY_NAME_NORMALIZED,Genome integrity
+PATHWAY_NAME_NORMALIZED,Hormone-related
+PATHWAY_NAME_NORMALIZED,IGF1R signaling
+PATHWAY_NAME_NORMALIZED,JNK and p38 signaling
+PATHWAY_NAME_NORMALIZED,Metabolism
+PATHWAY_NAME_NORMALIZED,Mitosis
+PATHWAY_NAME_NORMALIZED,Other
+PATHWAY_NAME_NORMALIZED,Other kinases
+PATHWAY_NAME_NORMALIZED,P53 pathway
+PATHWAY_NAME_NORMALIZED,PI3K/MTOR signaling
+PATHWAY_NAME_NORMALIZED,Protein stability and degradation
+PATHWAY_NAME_NORMALIZED,RTK signaling
+PATHWAY_NAME_NORMALIZED,WNT signaling
+classification,all_tokens_gene_matched
+classification,mixed_gene_and_ambiguous
+classification,mixed_gene_and_non_gene
+drug_bridge_strength,multi_source
+drug_bridge_strength,single_source
+stage3_resolution_status,__MISSING__
+stage3_resolution_status,partial_gene_resolution_with_family_remaining
+stage3_resolution_status,resolved_or_cleaned
+WEBRELEASE,Y
+drugbank_match_rule,__MISSING__
+drugbank_match_rule,compact_name_key
+drugbank_match_rule,exact_name_key
+chembl_match_rule,__MISSING__
+chembl_match_rule,exact_name_key
+chembl_match_rule,manual_alias_high_confidence
+lincs_match_rule,__MISSING__
+lincs_match_rule,compact_name_key
+lincs_match_rule,exact_name_key
+admet_match_rule,__MISSING__
+admet_match_rule,compact_name_key
+admet_match_rule,exact_name_key
+cell_bridge_match_rule,exact_cell_line_name
+cell_bridge_match_rule,exact_cosmic_id
+cell_bridge_match_rule,exact_sanger_model_id

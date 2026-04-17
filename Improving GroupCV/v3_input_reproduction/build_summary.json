@@ -1,0 +1,46 @@
+{
+  "rows": 6366,
+  "unique_drugs": 243,
+  "cleaned_shape": [
+    6366,
+    20396
+  ],
+  "slim_shape": [
+    6366,
+    5714
+  ],
+  "group_counts_cleaned": {
+    "gene": 18320,
+    "morgan": 2048,
+    "lincs": 5,
+    "target": 8,
+    "pathway": 2,
+    "drug_descriptors": 9,
+    "misc_flags": 2,
+    "id_cols": 2
+  },
+  "group_counts_slim": {
+    "gene": 4600,
+    "morgan": 1088,
+    "lincs": 5,
+    "target": 8,
+    "pathway": 2,
+    "drug_descriptors": 9,
+    "id_cols": 2
+  },
+  "feature_selection": {
+    "gene_low_variance_removed": 13719,
+    "gene_corr_removed": 1,
+    "morgan_low_variance_removed": 952,
+    "morgan_corr_removed": 8,
+    "gene_low_variance_mode": "remove_lowest_variance_by_count",
+    "gene_low_variance_remove_count": 13719,
+    "morgan_low_variance_threshold": 0.01,
+    "corr_threshold": 0.95
+  },
+  "doc_alignment_notes": [
+    "Rows and unique drugs after removing invalid/all-zero Morgan drugs should match the document if the same source cache is used.",
+    "Morgan low-variance stage is expected to align closely with the document at threshold 0.01.",
+    "Gene correlation removal may differ from the document because the exact teammate script and hidden preprocessing order were not shared."
+  ]
+}

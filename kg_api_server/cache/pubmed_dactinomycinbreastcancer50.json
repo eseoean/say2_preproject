@@ -1,0 +1,695 @@
+{
+  "data": [
+    {
+      "pmid": "19620485",
+      "title": "Radiation dose and breast cancer risk in the childhood cancer survivor study.",
+      "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+      "year": "2009",
+      "authors": [
+        "Inskip PD",
+        "Robison LL",
+        "Stovall M",
+        "Smith SA",
+        "Hammond S",
+        "Mertens AC",
+        "Whitton JA",
+        "Diller L",
+        "Kenney L",
+        "Donaldson SS",
+        "Meadows AT",
+        "Neglia JP"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "4181438",
+      "title": "[Cytostatic antibiotics].",
+      "journal": "Ergebnisse der inneren Medizin und Kinderheilkunde",
+      "year": "1963",
+      "authors": [
+        "Schmidt CG"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "35388653",
+      "title": "Genome-wide expression reveals potential biomarkers in breast cancer bone metastasis.",
+      "journal": "Journal of integrative bioinformatics",
+      "year": "2022",
+      "authors": [
+        "Singh Y",
+        "Subbarao N",
+        "Jaimini A",
+        "Hathaway QA",
+        "Kunovac A",
+        "Erickson B",
+        "Swarup V",
+        "Singh HN"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "4910367",
+      "title": "Inhibition of tumorigenesis.",
+      "journal": "Progress in experimental tumor research",
+      "year": "1969",
+      "authors": [
+        "Van Duuren BL",
+        "Melchionne S"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "11687148",
+      "title": "Systemic therapy for treating locoregional recurrence in women with breast cancer.",
+      "journal": "The Cochrane database of systematic reviews",
+      "year": "2001",
+      "authors": [
+        "Rauschecker H",
+        "Clarke M",
+        "Gatzemeier W",
+        "Recht A"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "40032551",
+      "title": "Structural and Functional Insights into Targeting GCCG Sites in the EGFR Promoter by Two DNA Intercalators to Inhibit Breast Cancer Metastasis.",
+      "journal": "Journal of medicinal chemistry",
+      "year": "2025",
+      "authors": [
+        "Chang CC",
+        "Li HJ",
+        "Satange R",
+        "Lin SM",
+        "Chen TL",
+        "Lin CC",
+        "Neidle S",
+        "Hou MH"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "34402683",
+      "title": "circRNA RPPH1 Facilitates the Aggravation of Breast Cancer Development by Regulating miR-542-3p/ARHGAP1 Pathway.",
+      "journal": "Cancer biotherapy & radiopharmaceuticals",
+      "year": "2022",
+      "authors": [
+        "Qi L",
+        "Sun B",
+        "Yang B",
+        "Lu S"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "37997385",
+      "title": "Actinomycin D synergizes with Doxorubicin in triple-negative breast cancer by inducing P53-dependent cell apoptosis.",
+      "journal": "Carcinogenesis",
+      "year": "2024",
+      "authors": [
+        "Yang H",
+        "Li S",
+        "Li W",
+        "Yang Y",
+        "Zhang Y",
+        "Zhang S",
+        "Hao Y",
+        "Cao W",
+        "Xu F",
+        "Wang H",
+        "Du G",
+        "Wang J"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "28373426",
+      "title": "Actinomycin D Down-regulates SOX2 Expression and Induces Death in Breast Cancer Stem Cells.",
+      "journal": "Anticancer research",
+      "year": "2017",
+      "authors": [
+        "Das T",
+        "Nair RR",
+        "Green R",
+        "Padhee S",
+        "Howell M",
+        "Banerjee J",
+        "Mohapatra SS",
+        "Mohapatra S"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "1622637",
+      "title": "Cytotoxic treatment of metastatic breast cancer. Which drugs and drug combinations to use?",
+      "journal": "Acta oncologica (Stockholm, Sweden)",
+      "year": "1992",
+      "authors": [
+        "Pfeiffer P",
+        "Cold S",
+        "Rose C"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "3841627",
+      "title": "[Chemotherapy of metastasizing breast cancer].",
+      "journal": "Wiener medizinische Wochenschrift (1946)",
+      "year": "1985",
+      "authors": [
+        "Wascher H"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "1070004",
+      "title": "Hormone responsive human breast cancer in long-term tissue culture: effect of insulin.",
+      "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+      "year": "1976",
+      "authors": [
+        "Osborne CK",
+        "Bolan G",
+        "Monaco ME",
+        "Lippman ME"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "15481789",
+      "title": "Augmented release of matrix metalloproteinase-9 by PKC activation in organotypic cultures of human breast cancer and adjacent normal breast tissue and fibroadenoma.",
+      "journal": "The Chinese journal of physiology",
+      "year": "2004",
+      "authors": [
+        "Wu TT",
+        "Tsai JH",
+        "Tsai JH",
+        "Kuo SJ",
+        "Yu SY",
+        "Huang CY",
+        "Hsieh HY",
+        "Hsieh YS",
+        "Liu JY"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "6988916",
+      "title": "Studies on mechanisms of estrogen and antiestrogen action in human breast cancer.",
+      "journal": "Recent results in cancer research. Fortschritte der Krebsforschung. Progres dans les recherches sur le cancer",
+      "year": "1980",
+      "authors": [
+        "Horwitz KB",
+        "McGuire WL"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "30925115",
+      "title": "Carbon nanotube-delivered iC9 suicide gene therapy for killing breast cancer cells in vitro.",
+      "journal": "Nanomedicine (London, England)",
+      "year": "2019",
+      "authors": [
+        "Mohseni-Dargah M",
+        "Akbari-Birgani S",
+        "Madadi Z",
+        "Saghatchi F",
+        "Kaboudin B"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "16495219",
+      "title": "Suppression of Wnt signaling by the green tea compound (-)-epigallocatechin 3-gallate (EGCG) in invasive breast cancer cells. Requirement of the transcriptional repressor HBP1.",
+      "journal": "The Journal of biological chemistry",
+      "year": "2006",
+      "authors": [
+        "Kim J",
+        "Zhang X",
+        "Rieger-Christ KM",
+        "Summerhayes IC",
+        "Wazer DE",
+        "Paulson KE",
+        "Yee AS"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "12771030",
+      "title": "Resveratrol activates adenylyl-cyclase in human breast cancer cells: a novel, estrogen receptor-independent cytostatic mechanism.",
+      "journal": "Carcinogenesis",
+      "year": "2003",
+      "authors": [
+        "El-Mowafy AM",
+        "Alkhalaf M"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "24433040",
+      "title": "Prolactin/Stat5 and androgen R1881 coactivate carboxypeptidase-D gene in breast cancer cells.",
+      "journal": "Molecular endocrinology (Baltimore, Md.)",
+      "year": "2014",
+      "authors": [
+        "Koirala S",
+        "Thomas LN",
+        "Too CK"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "14580325",
+      "title": "MnSOD up-regulates maspin tumor suppressor gene expression in human breast and prostate cancer cells.",
+      "journal": "Antioxidants & redox signaling",
+      "year": "2003",
+      "authors": [
+        "Duan H",
+        "Zhang HJ",
+        "Yang JQ",
+        "Oberley LW",
+        "Futscher BW",
+        "Domann FE"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "18448327",
+      "title": "Enzastaurin renders MCF-7 breast cancer cells sensitive to radiation through reversal of radiation-induced activation of protein kinase C.",
+      "journal": "European journal of cancer (Oxford, England : 1990)",
+      "year": "2008",
+      "authors": [
+        "Jasinski P",
+        "Terai K",
+        "Zwolak P",
+        "Dudek AZ"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "23725182",
+      "title": "Immunostimulating effect of a well-known Thai folkloric remedy in breast cancer patients.",
+      "journal": "Asian Pacific journal of cancer prevention : APJCP",
+      "year": "2013",
+      "authors": [
+        "Thisoda P",
+        "Ketsa-Ard K",
+        "Thongprasert S",
+        "Vongsakul M",
+        "Picha P",
+        "Karbwang J",
+        "Na-Bangchang K"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "9307298",
+      "title": "Growth inhibition of human breast cancer cells by 1,25-dihydroxyvitamin D3 is accompanied by induction of apolipoprotein D expression.",
+      "journal": "Cancer research",
+      "year": "1997",
+      "authors": [
+        "López-Boado YS",
+        "Puente XS",
+        "Alvarez S",
+        "Tolivia J",
+        "Binderup L",
+        "López-Otín C"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "3010982",
+      "title": "Mitoxantrone affects topoisomerase activities in human breast cancer cells.",
+      "journal": "Biochemical and biophysical research communications",
+      "year": "1986",
+      "authors": [
+        "Crespi MD",
+        "Ivanier SE",
+        "Genovese J",
+        "Baldi A"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "19749791",
+      "title": "Repression of SHP-1 expression by p53 leads to trkA tyrosine phosphorylation and suppression of breast cancer cell proliferation.",
+      "journal": "Oncogene",
+      "year": "2009",
+      "authors": [
+        "Montano X"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "24231949",
+      "title": "p53-Based cyclotherapy: exploiting the 'guardian of the genome' to protect normal cells from cytotoxic therapy.",
+      "journal": "British journal of cancer",
+      "year": "2013",
+      "authors": [
+        "Rao B",
+        "Lain S",
+        "Thompson AM"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "24321297",
+      "title": "Regulation of PMP22 mRNA by G3BP1 affects cell proliferation in breast cancer cells.",
+      "journal": "Molecular cancer",
+      "year": "2013",
+      "authors": [
+        "Winslow S",
+        "Leandersson K",
+        "Larsson C"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "22647687",
+      "title": "Transforming growth factor-β1 attenuates junctional adhesion molecule-A and contributes to breast cancer cell invasion.",
+      "journal": "European journal of cancer (Oxford, England : 1990)",
+      "year": "2012",
+      "authors": [
+        "Wang Y",
+        "Lui WY"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "10944450",
+      "title": "WISP-2 as a novel estrogen-responsive gene in human breast cancer cells.",
+      "journal": "Biochemical and biophysical research communications",
+      "year": "2000",
+      "authors": [
+        "Inadera H",
+        "Hashimoto S",
+        "Dong HY",
+        "Suzuki T",
+        "Nagai S",
+        "Yamashita T",
+        "Toyoda N",
+        "Matsushima K"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "2036245",
+      "title": "Levamisole in the treatment of advanced breast cancer. A ten-year follow-up of a randomized study.",
+      "journal": "Acta oncologica (Stockholm, Sweden)",
+      "year": "1991",
+      "authors": [
+        "Klefström P",
+        "Nuortio L"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "322847",
+      "title": "Review of local soft tissue recurrence of breast cancer irradiated with and without actinomycin-D.",
+      "journal": "Cancer",
+      "year": "1977",
+      "authors": [
+        "Olson CE",
+        "Ansfield FJ",
+        "Richards MJ",
+        "Ramirez G",
+        "Davis HL"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "8770893",
+      "title": "Bimodal regulation of epidermal growth factor receptor by estrogen in breast cancer cells.",
+      "journal": "Endocrinology",
+      "year": "1996",
+      "authors": [
+        "Yarden RI",
+        "Lauber AH",
+        "El-Ashry D",
+        "Chrysogelos SA"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "19264808",
+      "title": "Estradiol downregulates miR-21 expression and increases miR-21 target gene expression in MCF-7 breast cancer cells.",
+      "journal": "Nucleic acids research",
+      "year": "2009",
+      "authors": [
+        "Wickramasinghe NS",
+        "Manavalan TT",
+        "Dougherty SM",
+        "Riggs KA",
+        "Li Y",
+        "Klinge CM"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "29614107",
+      "title": "Functional disruption of the Golgi apparatus protein ARF1 sensitizes MDA-MB-231 breast cancer cells to the antitumor drugs Actinomycin D and Vinblastine through ERK and AKT signaling.",
+      "journal": "PloS one",
+      "year": "2018",
+      "authors": [
+        "Luchsinger C",
+        "Aguilar M",
+        "Burgos PV",
+        "Ehrenfeld P",
+        "Mardones GA"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "3045126",
+      "title": "Transcriptional regulation of c-myc oncogene expression by estrogen in hormone-responsive human breast cancer cells.",
+      "journal": "The Journal of biological chemistry",
+      "year": "1988",
+      "authors": [
+        "Dubik D",
+        "Shiu RP"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "11193846",
+      "title": "Downregulation of VPAC1R expression in breast cancer cell lines.",
+      "journal": "Annals of the New York Academy of Sciences",
+      "year": "2000",
+      "authors": [
+        "Madsen B",
+        "Georg B",
+        "Madsen MW",
+        "Fahrenkrug J"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "10597248",
+      "title": "Regulation of BRCA1 by protein degradation.",
+      "journal": "Oncogene",
+      "year": "1999",
+      "authors": [
+        "Blagosklonny MV",
+        "An WG",
+        "Melillo G",
+        "Nguyen P",
+        "Trepel JB",
+        "Neckers LM"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "31137656",
+      "title": "Actinomycin V Inhibits Migration and Invasion via Suppressing Snail/Slug-Mediated Epithelial-Mesenchymal Transition Progression in Human Breast Cancer MDA-MB-231 Cells In Vitro.",
+      "journal": "Marine drugs",
+      "year": "2019",
+      "authors": [
+        "Lin S",
+        "Zhang C",
+        "Liu F",
+        "Ma J",
+        "Jia F",
+        "Han Z",
+        "Xie W",
+        "Li X"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "31305144",
+      "title": "p-Terphenyls and actinomycins from a Streptomyces sp. associated with the larva of mud dauber wasp.",
+      "journal": "Natural product research",
+      "year": "2021",
+      "authors": [
+        "Lu DD",
+        "Ren JW",
+        "Du QQ",
+        "Song YJ",
+        "Lin SQ",
+        "Li X",
+        "Li EW",
+        "Xie WD"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "11786386",
+      "title": "Role of Smad1 and Smad4 proteins in the induction of p21WAF1,Cip1 during bone morphogenetic protein-induced growth arrest in human breast cancer cells.",
+      "journal": "The Journal of endocrinology",
+      "year": "2002",
+      "authors": [
+        "Pouliot F",
+        "Labrie C"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "908274",
+      "title": "Insulin stimulation of fatty acid synthesis in human breast cancer in long term tissue culture.",
+      "journal": "Endocrinology",
+      "year": "1977",
+      "authors": [
+        "Monaco ME",
+        "Lippman ME"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "21634028",
+      "title": "Regulation of β-tubulin isotypes by micro-RNA 100 in MCF7 breast cancer cells.",
+      "journal": "Cytoskeleton (Hoboken, N.J.)",
+      "year": "2011",
+      "authors": [
+        "Lobert S",
+        "Jefferson B",
+        "Morris K"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "11668172",
+      "title": "Early de novo gene expression is required for 15-deoxy-Delta 12,14-prostaglandin J2-induced apoptosis in breast cancer cells.",
+      "journal": "The Journal of biological chemistry",
+      "year": "2001",
+      "authors": [
+        "Clay CE",
+        "Atsumi GI",
+        "High KP",
+        "Chilton FH"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "2790032",
+      "title": "Resistance to hydrogen peroxide associated with altered catalase mRNA stability in MCF7 breast cancer cells.",
+      "journal": "Biochimica et biophysica acta",
+      "year": "1989",
+      "authors": [
+        "Akman SA",
+        "Forrest G",
+        "Chu FF",
+        "Doroshow JH"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "8425178",
+      "title": "Interleukin 6 stimulates the production of immunoreactive endothelin 1 in human breast cancer cells.",
+      "journal": "Cancer research",
+      "year": "1993",
+      "authors": [
+        "Yamashita J",
+        "Ogawa M",
+        "Nomura K",
+        "Matsuo S",
+        "Inada K",
+        "Yamashita S",
+        "Nakashima Y",
+        "Saishoji T",
+        "Takano S",
+        "Fujita S"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "3841047",
+      "title": "[Cytostatic polychemotherapy in the aged].",
+      "journal": "Deutsche medizinische Wochenschrift (1946)",
+      "year": "1985",
+      "authors": [
+        "Wilmanns W",
+        "Binsack T",
+        "Sauer H"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "3343839",
+      "title": "The effect of prior adjuvant chemotherapy on survival in metastatic breast cancer.",
+      "journal": "Journal of surgical oncology",
+      "year": "1988",
+      "authors": [
+        "Ahmann FR",
+        "Jones SE",
+        "Moon TE"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "12036452",
+      "title": "Evaluation of a gemcitabine-doxorubicin-paclitaxel combination schedule through flow cytometry assessment of apoptosis extent induced in human breast cancer cell lines.",
+      "journal": "Japanese journal of cancer research : Gann",
+      "year": "2002",
+      "authors": [
+        "Serrano MJ",
+        "Sánchez-Rovira P",
+        "Algarra I",
+        "Jaén A",
+        "Lozano A",
+        "Gaforio JJ"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "7397943",
+      "title": "Actinomycin D in the treatment of advanced breast cancer.",
+      "journal": "Cancer chemotherapy and pharmacology",
+      "year": "1980",
+      "authors": [
+        "Grimm RA",
+        "Muss HB",
+        "White DR",
+        "Richards F 2nd",
+        "Cooper MR",
+        "Stuart JJ",
+        "Jackson DV",
+        "Barnes PL",
+        "Spurr CL"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "8483562",
+      "title": "MMM (mitomycin/mitoxantrone/methotrexate): an effective new regimen in the treatment of metastatic breast cancer.",
+      "journal": "Oncology",
+      "year": "1993",
+      "authors": [
+        "Smith IE",
+        "Powles TJ"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "8641545",
+      "title": "Upregulation of cytokeratins 8 and 18 in human breast cancer T47D cells is retinoid-specific and retinoic acid receptor-dependent.",
+      "journal": "Differentiation; research in biological diversity",
+      "year": "1996",
+      "authors": [
+        "Jing Y",
+        "Zhang J",
+        "Waxman S",
+        "Mira-y-Lopez R"
+      ],
+      "source": "ncbi_pubmed"
+    }
+  ]
+}

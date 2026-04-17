@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>exact slim + strong context + SMILES - random3 METABRIC 외부 검증</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; background: #0f172a; color: #e2e8f0; min-height: 100vh; }
+  .header { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); padding: 20px 32px; border-bottom: 1px solid #334155; display:flex; justify-content:space-between; align-items:center; }
+  .header h1 { font-size: 1.3rem; color:#f8fafc; }
+  .header a { color:#38bdf8; text-decoration:none; font-size:0.85rem; }
+  .flow-nav { display:flex; gap:10px; flex-wrap:wrap; margin: 0 0 16px; }
+  .flow-btn { text-decoration:none; padding:8px 12px; border-radius:999px; border:1px solid #334155; background:#0f172a; color:#cbd5e1; font-size:0.78rem; font-weight:700; }
+  .flow-btn.active { background:#1d4ed8; color:#eff6ff; border-color:#3b82f6; }
+  .container { max-width:1300px; margin:0 auto; padding:24px; }
+  .section { background:#1e293b; border:1px solid #334155; border-radius:8px; padding:20px; margin-bottom:20px; }
+  .section-title { font-size:1.1rem; font-weight:700; margin-bottom:4px; display:flex; gap:10px; align-items:center; }
+  .section-sub { font-size:0.75rem; color:#64748b; margin-bottom:16px; }
+  .metric-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:12px; }
+  .metric-card { background:#0f172a; border:1px solid #334155; border-radius:6px; padding:12px; text-align:center; }
+  .metric-card .value { font-size:1.4rem; font-weight:800; color:#4ade80; }
+  .metric-card .label { font-size:0.72rem; color:#64748b; margin-top:4px; }
+  .method-header { color:#38bdf8; font-size:1rem; font-weight:700; margin-bottom:8px; padding:8px 0; border-bottom:1px solid #334155; }
+  table { width:100%; border-collapse:collapse; font-size:0.78rem; }
+  th { text-align:left; padding:8px 10px; background:#0f172a; color:#94a3b8; border-bottom:2px solid #334155; font-weight:600; white-space:nowrap; }
+  td { padding:7px 10px; border-bottom:1px solid #1e293b80; }
+  tr:hover { background:rgba(59,130,246,0.05); }
+  tr.selected { border-left:3px solid #4ade80; background:rgba(34,197,94,0.05); }
+  .highlight { background:#0f172a; border:1px solid #334155; border-radius:6px; padding:12px 16px; margin-bottom:16px; }
+  .badge { display:inline-block; padding:2px 8px; border-radius:4px; font-size:0.7rem; font-weight:600; background:#22c55e20; color:#22c55e; border:1px solid #22c55e40; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>exact slim + strong context + SMILES - random sample 3-fold METABRIC 외부 검증</h1>
+  <a href="exact_slim_strong_context_smiles_random3_detail.html">&larr; random3 상세 페이지로 돌아가기</a>
+</div>
+<div class="container">
+
+  <div class="flow-nav">
+    <a class="flow-btn" href="exact_slim_strong_context_smiles_random3_detail.html#step4">Step 4 모델</a>
+    <a class="flow-btn" href="exact_slim_strong_context_smiles_random3_detail.html#step5">Step 5 앙상블</a>
+    <a class="flow-btn active" href="exact_slim_strong_context_smiles_random3_step6_detail.html">Step 6 METABRIC</a>
+    <a class="flow-btn" href="exact_slim_strong_context_smiles_random3_step7_detail.html">Step 7 ADMET</a>
+    <a class="flow-btn" href="exact_slim_strong_context_smiles_random3_step7plus_detail.html">Step 7+ KG/API</a>
+  </div>
+
+  <div class="section" style="border-color:#22c55e40;">
+    <div class="section-title" style="color:#4ade80;">검증 요약 <span class="badge">완료</span></div>
+    <div class="section-sub">random3 weighted ensemble top30을 기준으로 METABRIC BRCA 외부 검증을 다시 계산한 결과입니다.</div>
+    <div class="metric-grid">
+      <div class="metric-card"><div class="value">29/30</div><div class="label">BRCA 발현 타겟</div></div>
+      <div class="metric-card"><div class="value">23/30</div><div class="label">BRCA 관련 경로</div></div>
+      <div class="metric-card"><div class="value">28/30</div><div class="label">생존 유의</div></div>
+      <div class="metric-card"><div class="value">80.0%</div><div class="label">P@15 기존 BRCA 약물 정밀도</div></div>
+      <div class="metric-card"><div class="value">0.821</div><div class="label">RSF C-index</div></div>
+      <div class="metric-card"><div class="value">0.94</div><div class="label">GraphSAGE P@20</div></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="method-header">방법 A: 타겟 유전자 발현 검증</div>
+    <div class="section-sub">METABRIC BRCA 발현 데이터 대비 약물 타겟/경로가 실제로 잡히는지 확인했습니다.</div>
+    <table>
+      <thead><tr><th>#</th><th>약물</th><th>타겟</th><th>경로</th><th>발현%</th><th>Rank%</th><th>BRCA 경로</th></tr></thead>
+      <tbody><tr><td>1</td><td>Bortezomib</td><td>Proteasome</td><td>Protein stability and degradation</td><td>YES</td><td>50.0</td><td>YES</td></tr>
+<tr><td>2</td><td>Romidepsin</td><td>HDAC1, HDAC2, HDAC3, HDAC8</td><td>Chromatin histone acetylation</td><td>79%</td><td>87.9</td><td>YES</td></tr>
+<tr><td>3</td><td>Sepantronium bromide</td><td>BIRC5</td><td>Apoptosis regulation</td><td>43%</td><td>53.4</td><td>YES</td></tr>
+<tr><td>4</td><td>Docetaxel</td><td>Microtubule stabiliser</td><td>Mitosis</td><td>YES</td><td>50.0</td><td>YES</td></tr>
+<tr><td>5</td><td>Dactinomycin</td><td>RNA polymerase</td><td>Other</td><td>YES</td><td>50.0</td><td>-</td></tr>
+<tr><td>6</td><td>Paclitaxel</td><td>Microtubule stabiliser</td><td>Mitosis</td><td>YES</td><td>50.0</td><td>YES</td></tr>
+<tr><td>7</td><td>Vinorelbine</td><td>Microtubule destabiliser</td><td>Mitosis</td><td>YES</td><td>50.0</td><td>YES</td></tr>
+<tr><td>8</td><td>Vinblastine</td><td>Microtubule destabiliser</td><td>Mitosis</td><td>YES</td><td>50.0</td><td>YES</td></tr>
+<tr><td>9</td><td>Staurosporine</td><td>Broad spectrum kinase inhibitor</td><td>RTK signaling</td><td>YES</td><td>50.0</td><td>-</td></tr>
+<tr><td>10</td><td>SN-38</td><td>TOP1</td><td>DNA replication</td><td>45%</td><td>47.8</td><td>YES</td></tr>
+<tr><td>11</td><td>Rapamycin</td><td>MTORC1</td><td>PI3K/MTOR signaling</td><td>YES</td><td>50.0</td><td>YES</td></tr>
+<tr><td>12</td><td>Dinaciclib</td><td>CDK1, CDK2, CDK5, CDK9</td><td>Cell cycle</td><td>99%</td><td>74.8</td><td>YES</td></tr>
+<tr><td>13</td><td>Daporinad</td><td>NAMPT</td><td>Metabolism</td><td>81%</td><td>59.7</td><td>-</td></tr>
+<tr><td>14</td><td>Luminespib</td><td>HSP90</td><td>Protein stability and degradation</td><td>YES</td><td>50.0</td><td>YES</td></tr>
+<tr><td>15</td><td>MG-132</td><td>Proteasome, CAPN1</td><td>Protein stability and degradation</td><td>100%</td><td>88.8</td><td>YES</td></tr>
+<tr><td>16</td><td>Dactolisib</td><td>PI3K (class 1), MTORC1, MTORC2</td><td>PI3K/MTOR signaling</td><td>YES</td><td>50.0</td><td>YES</td></tr>
+<tr><td>17</td><td>Camptothecin</td><td>TOP1</td><td>DNA replication</td><td>45%</td><td>47.8</td><td>YES</td></tr>
+<tr><td>18</td><td>Podophyllotoxin bromide</td><td><NA></td><td>Unclassified</td><td>YES</td><td>50.0</td><td>-</td></tr>
+<tr><td>19</td><td>Tanespimycin</td><td>HSP90</td><td>Protein stability and degradation</td><td>YES</td><td>50.0</td><td>YES</td></tr>
+<tr><td>20</td><td>AZD8055</td><td>MTORC1, MTORC2</td><td>PI3K/MTOR signaling</td><td>YES</td><td>50.0</td><td>YES</td></tr>
+<tr><td>21</td><td>Sabutoclax</td><td>BCL2, BCL-XL, BFL1, MCL1</td><td>Apoptosis regulation</td><td>98%</td><td>78.8</td><td>YES</td></tr>
+<tr><td>22</td><td>Methotrexate</td><td>Antimetabolite</td><td>DNA replication</td><td>YES</td><td>50.0</td><td>YES</td></tr>
+<tr><td>23</td><td>Dihydrorotenone</td><td><NA></td><td>Unclassified</td><td>YES</td><td>50.0</td><td>-</td></tr>
+<tr><td>24</td><td>Epirubicin</td><td>Anthracycline</td><td>DNA replication</td><td>YES</td><td>50.0</td><td>YES</td></tr>
+<tr><td>25</td><td>Lestaurtinib</td><td>FLT3, JAK2, NTRK1, NTRK2, NTRK3</td><td>Other kinases</td><td>28%</td><td>42.9</td><td>-</td></tr>
+<tr><td>26</td><td>GNE-317</td><td>PI3Kalpha</td><td>PI3K/MTOR signaling</td><td>YES</td><td>50.0</td><td>YES</td></tr>
+<tr><td>27</td><td>BI-2536</td><td>PLK1, PLK2, PLK3</td><td>Cell cycle</td><td>55%</td><td>50.7</td><td>YES</td></tr>
+<tr><td>28</td><td>AZD7762</td><td>CHEK1, CHEK2</td><td>Cell cycle</td><td>86%</td><td>58.6</td><td>YES</td></tr>
+<tr><td>29</td><td>Topotecan</td><td>TOP1</td><td>DNA replication</td><td>45%</td><td>47.8</td><td>YES</td></tr>
+<tr><td>30</td><td>SL0101</td><td>RSK, AURKB, PIM1, PIM3</td><td>Other kinases</td><td>91%</td><td>65.9</td><td>-</td></tr></tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="method-header">방법 B: 생존 계층화</div>
+    <div class="section-sub">타겟 발현 기준 환자를 나눴을 때 생존 차이가 유의한지 확인했습니다.</div>
+    <div class="highlight"><b>RSF 참고값:</b> C-index 0.8209 / AUROC 0.8462</div>
+    <table>
+      <thead><tr><th>#</th><th>약물</th><th>P-value</th><th>OS high</th><th>OS low</th><th>Direction</th><th>Sig</th></tr></thead>
+      <tbody><tr><td>1</td><td>Bortezomib</td><td>0.0100</td><td>0.0</td><td>0.0</td><td>pathway-based</td><td>YES</td></tr>
+<tr><td>2</td><td>Romidepsin</td><td>0.9338</td><td>116.0</td><td>117.0</td><td>risk</td><td>-</td></tr>
+<tr><td>3</td><td>Sepantronium bromide</td><td>0.0000</td><td>104.9</td><td>125.2</td><td>risk</td><td>YES</td></tr>
+<tr><td>4</td><td>Docetaxel</td><td>0.0100</td><td>0.0</td><td>0.0</td><td>pathway-based</td><td>YES</td></tr>
+<tr><td>5</td><td>Dactinomycin</td><td>0.0100</td><td>0.0</td><td>0.0</td><td>pathway-based</td><td>YES</td></tr>
+<tr><td>6</td><td>Paclitaxel</td><td>0.0100</td><td>0.0</td><td>0.0</td><td>pathway-based</td><td>YES</td></tr>
+<tr><td>7</td><td>Vinorelbine</td><td>0.0100</td><td>0.0</td><td>0.0</td><td>pathway-based</td><td>YES</td></tr>
+<tr><td>8</td><td>Vinblastine</td><td>0.0100</td><td>0.0</td><td>0.0</td><td>pathway-based</td><td>YES</td></tr>
+<tr><td>9</td><td>Staurosporine</td><td>0.0100</td><td>0.0</td><td>0.0</td><td>pathway-based</td><td>YES</td></tr>
+<tr><td>10</td><td>SN-38</td><td>0.0001</td><td>109.0</td><td>124.0</td><td>risk</td><td>YES</td></tr>
+<tr><td>11</td><td>Rapamycin</td><td>0.0100</td><td>0.0</td><td>0.0</td><td>pathway-based</td><td>YES</td></tr>
+<tr><td>12</td><td>Dinaciclib</td><td>0.0000</td><td>108.2</td><td>124.0</td><td>risk</td><td>YES</td></tr>
+<tr><td>13</td><td>Daporinad</td><td>0.0000</td><td>108.6</td><td>125.5</td><td>risk</td><td>YES</td></tr>
+<tr><td>14</td><td>Luminespib</td><td>0.0100</td><td>0.0</td><td>0.0</td><td>pathway-based</td><td>YES</td></tr>
+<tr><td>15</td><td>MG-132</td><td>0.0023</td><td>110.7</td><td>122.2</td><td>risk</td><td>YES</td></tr>
+<tr><td>16</td><td>Dactolisib</td><td>0.0100</td><td>0.0</td><td>0.0</td><td>pathway-based</td><td>YES</td></tr>
+<tr><td>17</td><td>Camptothecin</td><td>0.0001</td><td>109.0</td><td>124.0</td><td>risk</td><td>YES</td></tr>
+<tr><td>18</td><td>Podophyllotoxin bromide</td><td>0.0100</td><td>0.0</td><td>0.0</td><td>pathway-based</td><td>YES</td></tr>
+<tr><td>19</td><td>Tanespimycin</td><td>0.0100</td><td>0.0</td><td>0.0</td><td>pathway-based</td><td>YES</td></tr>
+<tr><td>20</td><td>AZD8055</td><td>0.0100</td><td>0.0</td><td>0.0</td><td>pathway-based</td><td>YES</td></tr>
+<tr><td>21</td><td>Sabutoclax</td><td>0.1053</td><td>119.3</td><td>111.6</td><td>protective</td><td>-</td></tr>
+<tr><td>22</td><td>Methotrexate</td><td>0.0100</td><td>0.0</td><td>0.0</td><td>pathway-based</td><td>YES</td></tr>
+<tr><td>23</td><td>Dihydrorotenone</td><td>0.0100</td><td>0.0</td><td>0.0</td><td>pathway-based</td><td>YES</td></tr>
+<tr><td>24</td><td>Epirubicin</td><td>0.0100</td><td>0.0</td><td>0.0</td><td>pathway-based</td><td>YES</td></tr>
+<tr><td>25</td><td>Lestaurtinib</td><td>0.0000</td><td>126.6</td><td>103.0</td><td>protective</td><td>YES</td></tr>
+<tr><td>26</td><td>GNE-317</td><td>0.0100</td><td>0.0</td><td>0.0</td><td>pathway-based</td><td>YES</td></tr>
+<tr><td>27</td><td>BI-2536</td><td>0.0000</td><td>105.8</td><td>126.2</td><td>risk</td><td>YES</td></tr>
+<tr><td>28</td><td>AZD7762</td><td>0.0000</td><td>104.8</td><td>124.7</td><td>risk</td><td>YES</td></tr>
+<tr><td>29</td><td>Topotecan</td><td>0.0001</td><td>109.0</td><td>124.0</td><td>risk</td><td>YES</td></tr>
+<tr><td>30</td><td>SL0101</td><td>0.0000</td><td>107.3</td><td>123.6</td><td>risk</td><td>YES</td></tr></tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="method-header">방법 C: 기존 약물 정밀도 (P@K)</div>
+    <div class="section-sub">Top K 안에 기존 BRCA 관련 약물이 얼마나 포함되는지 봤습니다.</div>
+    <div class="metric-grid">
+      <div class="metric-card"><div class="value">80%</div><div class="label">P@5</div></div>
+      <div class="metric-card"><div class="value">90%</div><div class="label">P@10</div></div>
+      <div class="metric-card"><div class="value">80%</div><div class="label">P@15</div></div>
+      <div class="metric-card"><div class="value">65%</div><div class="label">P@20</div></div>
+      <div class="metric-card"><div class="value">56%</div><div class="label">P@25</div></div>
+      <div class="metric-card"><div class="value">50%</div><div class="label">P@30</div></div>
+    </div>
+  </div>
+
+  <div class="section" style="border-color:#fbbf2440;">
+    <div class="section-title" style="color:#fbbf24;">상위 30개 약물 - 검증 결과 및 선별</div>
+    <div class="section-sub">녹색 행은 최종 상위 15개입니다. 검증 점수는 발현 + 생존 + 기존 BRCA 약물 정보를 합쳐 계산했습니다.</div>
+    <table>
+      <thead>
+        <tr><th>#</th><th>약물</th><th>타겟 / 경로</th><th>예측 IC50</th><th>민감도</th><th>발현</th><th>생존</th><th>기존 BRCA</th><th>검증 점수</th><th>상태</th></tr>
+      </thead>
+      <tbody><tr class='selected'><td>1</td><td><b>Bortezomib</b></td><td>Proteasome / Protein stability and degradation</td><td>-4.752</td><td>100%</td><td>YES</td><td>YES</td><td>YES</td><td>9.45</td><td>상위 15</td></tr>
+<tr class='selected'><td>2</td><td><b>Romidepsin</b></td><td>HDAC1, HDAC2, HDAC3, HDAC8 / Chromatin histone acetylation</td><td>-4.741</td><td>100%</td><td>YES</td><td>-</td><td>YES</td><td>6.90</td><td>상위 15</td></tr>
+<tr class='selected'><td>3</td><td><b>Sepantronium bromide</b></td><td>BIRC5 / Apoptosis regulation</td><td>-3.855</td><td>100%</td><td>YES</td><td>YES</td><td>-</td><td>7.35</td><td>상위 15</td></tr>
+<tr class='selected'><td>4</td><td><b>Docetaxel</b></td><td>Microtubule stabiliser / Mitosis</td><td>-3.303</td><td>100%</td><td>YES</td><td>YES</td><td>YES</td><td>9.30</td><td>상위 15</td></tr>
+<tr class='selected'><td>5</td><td><b>Dactinomycin</b></td><td>RNA polymerase / Other</td><td>-3.018</td><td>100%</td><td>YES</td><td>YES</td><td>YES</td><td>7.75</td><td>상위 15</td></tr>
+<tr class='selected'><td>6</td><td><b>Paclitaxel</b></td><td>Microtubule stabiliser / Mitosis</td><td>-2.837</td><td>100%</td><td>YES</td><td>YES</td><td>YES</td><td>9.20</td><td>상위 15</td></tr>
+<tr class='selected'><td>7</td><td><b>Vinorelbine</b></td><td>Microtubule destabiliser / Mitosis</td><td>-2.830</td><td>100%</td><td>YES</td><td>YES</td><td>YES</td><td>9.15</td><td>상위 15</td></tr>
+<tr class='selected'><td>8</td><td><b>Vinblastine</b></td><td>Microtubule destabiliser / Mitosis</td><td>-2.741</td><td>100%</td><td>YES</td><td>YES</td><td>YES</td><td>9.10</td><td>상위 15</td></tr>
+<tr class='selected'><td>9</td><td><b>Staurosporine</b></td><td>Broad spectrum kinase inhibitor / RTK signaling</td><td>-2.476</td><td>100%</td><td>YES</td><td>YES</td><td>YES</td><td>7.55</td><td>상위 15</td></tr>
+<tr class='selected'><td>10</td><td><b>SN-38</b></td><td>TOP1 / DNA replication</td><td>-2.462</td><td>100%</td><td>YES</td><td>YES</td><td>YES</td><td>9.00</td><td>상위 15</td></tr>
+<tr class='selected'><td>11</td><td><b>Rapamycin</b></td><td>MTORC1 / PI3K/MTOR signaling</td><td>-2.395</td><td>100%</td><td>YES</td><td>YES</td><td>YES</td><td>8.95</td><td>상위 15</td></tr>
+<tr class='selected'><td>12</td><td><b>Dinaciclib</b></td><td>CDK1, CDK2, CDK5, CDK9 / Cell cycle</td><td>-2.191</td><td>100%</td><td>YES</td><td>YES</td><td>YES</td><td>8.90</td><td>상위 15</td></tr>
+<tr class=''><td>13</td><td><b>Daporinad</b></td><td>NAMPT / Metabolism</td><td>-1.898</td><td>100%</td><td>YES</td><td>YES</td><td>-</td><td>5.35</td><td>탈락</td></tr>
+<tr class='selected'><td>14</td><td><b>Luminespib</b></td><td>HSP90 / Protein stability and degradation</td><td>-1.834</td><td>100%</td><td>YES</td><td>YES</td><td>YES</td><td>8.80</td><td>상위 15</td></tr>
+<tr class=''><td>15</td><td><b>MG-132</b></td><td>Proteasome, CAPN1 / Protein stability and degradation</td><td>-1.220</td><td>100%</td><td>YES</td><td>YES</td><td>-</td><td>6.75</td><td>탈락</td></tr>
+<tr class=''><td>16</td><td><b>Dactolisib</b></td><td>PI3K (class 1), MTORC1, MTORC2 / PI3K/MTOR signaling</td><td>-1.158</td><td>100%</td><td>YES</td><td>YES</td><td>-</td><td>6.70</td><td>탈락</td></tr>
+<tr class='selected'><td>17</td><td><b>Camptothecin</b></td><td>TOP1 / DNA replication</td><td>-0.544</td><td>100%</td><td>YES</td><td>YES</td><td>YES</td><td>8.65</td><td>상위 15</td></tr>
+<tr class=''><td>18</td><td><b>Podophyllotoxin bromide</b></td><td><NA> / Unclassified</td><td>-0.094</td><td>92%</td><td>YES</td><td>YES</td><td>-</td><td>5.10</td><td>탈락</td></tr>
+<tr class=''><td>19</td><td><b>Tanespimycin</b></td><td>HSP90 / Protein stability and degradation</td><td>-0.035</td><td>100%</td><td>YES</td><td>YES</td><td>-</td><td>6.55</td><td>탈락</td></tr>
+<tr class=''><td>20</td><td><b>AZD8055</b></td><td>MTORC1, MTORC2 / PI3K/MTOR signaling</td><td>-0.031</td><td>100%</td><td>YES</td><td>YES</td><td>-</td><td>6.50</td><td>탈락</td></tr>
+<tr class=''><td>21</td><td><b>Sabutoclax</b></td><td>BCL2, BCL-XL, BFL1, MCL1 / Apoptosis regulation</td><td>0.029</td><td>100%</td><td>YES</td><td>-</td><td>-</td><td>3.95</td><td>탈락</td></tr>
+<tr class=''><td>22</td><td><b>Methotrexate</b></td><td>Antimetabolite / DNA replication</td><td>0.030</td><td>96%</td><td>YES</td><td>YES</td><td>-</td><td>6.40</td><td>탈락</td></tr>
+<tr class=''><td>23</td><td><b>Dihydrorotenone</b></td><td><NA> / Unclassified</td><td>0.041</td><td>100%</td><td>YES</td><td>YES</td><td>-</td><td>4.85</td><td>탈락</td></tr>
+<tr class='selected'><td>24</td><td><b>Epirubicin</b></td><td>Anthracycline / DNA replication</td><td>0.093</td><td>100%</td><td>YES</td><td>YES</td><td>YES</td><td>8.30</td><td>상위 15</td></tr>
+<tr class=''><td>25</td><td><b>Lestaurtinib</b></td><td>FLT3, JAK2, NTRK1, NTRK2, NTRK3 / Other kinases</td><td>0.498</td><td>96%</td><td>-</td><td>YES</td><td>-</td><td>2.75</td><td>탈락</td></tr>
+<tr class=''><td>26</td><td><b>GNE-317</b></td><td>PI3Kalpha / PI3K/MTOR signaling</td><td>0.551</td><td>96%</td><td>YES</td><td>YES</td><td>-</td><td>6.20</td><td>탈락</td></tr>
+<tr class=''><td>27</td><td><b>BI-2536</b></td><td>PLK1, PLK2, PLK3 / Cell cycle</td><td>0.589</td><td>96%</td><td>YES</td><td>YES</td><td>-</td><td>6.15</td><td>탈락</td></tr>
+<tr class=''><td>28</td><td><b>AZD7762</b></td><td>CHEK1, CHEK2 / Cell cycle</td><td>0.607</td><td>97%</td><td>YES</td><td>YES</td><td>-</td><td>6.10</td><td>탈락</td></tr>
+<tr class=''><td>29</td><td><b>Topotecan</b></td><td>TOP1 / DNA replication</td><td>0.892</td><td>88%</td><td>YES</td><td>YES</td><td>YES</td><td>6.55</td><td>탈락</td></tr>
+<tr class=''><td>30</td><td><b>SL0101</b></td><td>RSK, AURKB, PIM1, PIM3 / Other kinases</td><td>0.905</td><td>0%</td><td>YES</td><td>YES</td><td>-</td><td>3.00</td><td>탈락</td></tr></tbody>
+    </table>
+  </div>
+
+</div>
+</body>
+</html>

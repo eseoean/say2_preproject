@@ -1,0 +1,222 @@
+{
+  "input_features_path": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match/features_slim_exact_repo.parquet",
+  "input_X_path": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match/X_train_exact_repo_numeric.npy",
+  "input_y_path": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match/y_train_exact_repo.npy",
+  "device": "cpu",
+  "models": [
+    "WideDeep",
+    "CrossAttention",
+    "FlatMLP"
+  ],
+  "folds": 3,
+  "n_rows": 6366,
+  "x_shape": [
+    6366,
+    5529
+  ],
+  "n_unique_drugs": 243,
+  "ensemble_types": [
+    "equal_weight_mean",
+    "spearman_weighted"
+  ],
+  "equal_fold_metrics": [
+    {
+      "spearman": 0.5579270871009061,
+      "pearson": 0.5900216102600098,
+      "rmse": 2.2660017013549805,
+      "mae": 1.6414663791656494,
+      "r2": 0.3442757560614709,
+      "fold": 0
+    },
+    {
+      "spearman": 0.577784384256458,
+      "pearson": 0.5938374400138855,
+      "rmse": 2.182023525238037,
+      "mae": 1.6139018535614014,
+      "r2": 0.35005583537731255,
+      "fold": 1
+    },
+    {
+      "spearman": 0.5601853685837325,
+      "pearson": 0.5880612730979919,
+      "rmse": 2.110783576965332,
+      "mae": 1.60893714427948,
+      "r2": 0.3387170702724437,
+      "fold": 2
+    }
+  ],
+  "base_model_metrics": {
+    "WideDeep": {
+      "spearman_mean": 0.5567959764501034,
+      "spearman_std": 0.004408810078198631,
+      "rmse_mean": 2.197883129119873,
+      "rmse_std": 0.06662782162844569,
+      "mae_mean": 1.6544087330500286,
+      "mae_std": 0.04912488428791887,
+      "pearson_mean": 0.5861500898996989,
+      "r2_mean": 0.3371647906123332,
+      "fold_metrics": [
+        {
+          "spearman": 0.5561984820976926,
+          "pearson": 0.5930150747299194,
+          "rmse": 2.255014181137085,
+          "mae": 1.6974784135818481,
+          "r2": 0.3506193383324996,
+          "fold": 0
+        },
+        {
+          "spearman": 0.5614730631151736,
+          "pearson": 0.5857857465744019,
+          "rmse": 2.2139415740966797,
+          "mae": 1.6648427248001099,
+          "r2": 0.33090239696629253,
+          "fold": 1
+        },
+        {
+          "spearman": 0.5527163841374438,
+          "pearson": 0.5796494483947754,
+          "rmse": 2.1246936321258545,
+          "mae": 1.6009050607681274,
+          "r2": 0.3299726365382074,
+          "fold": 2
+        }
+      ],
+      "oof_path": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/results/exact_repo_slim_top3_ensemble_weighted_oof_v2_oof/WideDeep.npy"
+    },
+    "CrossAttention": {
+      "spearman_mean": 0.5438893697246104,
+      "spearman_std": 0.014802057994024053,
+      "rmse_mean": 2.234421491622925,
+      "rmse_std": 0.10694685445969726,
+      "mae_mean": 1.6477296749750774,
+      "mae_std": 0.04667403655924656,
+      "pearson_mean": 0.5703851580619812,
+      "r2_mean": 0.31548312430914116,
+      "fold_metrics": [
+        {
+          "spearman": 0.5293030010475489,
+          "pearson": 0.5590301752090454,
+          "rmse": 2.3486485481262207,
+          "mae": 1.7000060081481934,
+          "r2": 0.2955716118683891,
+          "fold": 0
+        },
+        {
+          "spearman": 0.5588980778607249,
+          "pearson": 0.5828481316566467,
+          "rmse": 2.217949867248535,
+          "mae": 1.6329429149627686,
+          "r2": 0.32847746518168774,
+          "fold": 1
+        },
+        {
+          "spearman": 0.5434670302655574,
+          "pearson": 0.5692771673202515,
+          "rmse": 2.1366660594940186,
+          "mae": 1.61024010181427,
+          "r2": 0.32240029587734664,
+          "fold": 2
+        }
+      ],
+      "oof_path": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/results/exact_repo_slim_top3_ensemble_weighted_oof_v2_oof/CrossAttention.npy"
+    },
+    "FlatMLP": {
+      "spearman_mean": 0.5392907767521441,
+      "spearman_std": 0.012928308502895175,
+      "rmse_mean": 2.269543727238973,
+      "rmse_std": 0.08470178326496076,
+      "mae_mean": 1.6890441576639812,
+      "mae_std": 0.013043123444440714,
+      "pearson_mean": 0.5685251553853353,
+      "r2_mean": 0.29345202048763924,
+      "fold_metrics": [
+        {
+          "spearman": 0.5249685047689328,
+          "pearson": 0.567420482635498,
+          "rmse": 2.334974527359009,
+          "mae": 1.6762443780899048,
+          "r2": 0.3037501110312325,
+          "fold": 0
+        },
+        {
+          "spearman": 0.5428056057523925,
+          "pearson": 0.5499422550201416,
+          "rmse": 2.2997846603393555,
+          "mae": 1.702317714691162,
+          "r2": 0.27800945586121495,
+          "fold": 1
+        },
+        {
+          "spearman": 0.5500982197351071,
+          "pearson": 0.5882127285003662,
+          "rmse": 2.1738719940185547,
+          "mae": 1.6885703802108765,
+          "r2": 0.2985964945704703,
+          "fold": 2
+        }
+      ],
+      "oof_path": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/results/exact_repo_slim_top3_ensemble_weighted_oof_v2_oof/FlatMLP.npy"
+    }
+  },
+  "oof_dir": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/results/exact_repo_slim_top3_ensemble_weighted_oof_v2_oof",
+  "keys_path": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/results/exact_repo_slim_top3_ensemble_weighted_oof_v2_oof/keys.parquet",
+  "weights": {
+    "WideDeep": 0.34427035736202466,
+    "CrossAttention": 0.33117784419654794,
+    "FlatMLP": 0.32455179844142734
+  },
+  "diversity": {
+    "pairwise": [
+      {
+        "pair": "WideDeep vs CrossAttention",
+        "prediction_pearson": 0.9251636266708374,
+        "prediction_spearman": 0.9076042107320044,
+        "residual_pearson": 0.9614871144294739,
+        "residual_spearman": 0.9428958869835304,
+        "mean_abs_prediction_gap": 0.47615206241607666
+      },
+      {
+        "pair": "WideDeep vs FlatMLP",
+        "prediction_pearson": 0.9097110033035278,
+        "prediction_spearman": 0.8584497833787719,
+        "residual_pearson": 0.9396748542785645,
+        "residual_spearman": 0.9150515451812443,
+        "mean_abs_prediction_gap": 0.6234766840934753
+      },
+      {
+        "pair": "CrossAttention vs FlatMLP",
+        "prediction_pearson": 0.8665790557861328,
+        "prediction_spearman": 0.826222326017588,
+        "residual_pearson": 0.9128119349479675,
+        "residual_spearman": 0.8811650774926731,
+        "mean_abs_prediction_gap": 0.6816449165344238
+      }
+    ],
+    "summary": {
+      "avg_prediction_pearson": 0.900484561920166,
+      "avg_prediction_spearman": 0.8640921067094548,
+      "avg_residual_pearson": 0.9379913012186686,
+      "avg_residual_spearman": 0.9130375032191494,
+      "avg_mean_abs_prediction_gap": 0.5937578876813253
+    }
+  },
+  "ensemble_gain_vs_best_base": {
+    "weighted_spearman_gain": 0.00682331079915921,
+    "weighted_rmse_gain": 0.011037111282348633
+  },
+  "equal_overall_metrics": {
+    "spearman": 0.5633905100807949,
+    "pearson": 0.5890135169029236,
+    "rmse": 2.187185049057007,
+    "mae": 1.6214278936386108,
+    "r2": 0.34656804101757177,
+    "elapsed_sec": 185.35019397735596
+  },
+  "weighted_overall_metrics": {
+    "spearman": 0.5636192872492626,
+    "pearson": 0.5891912579536438,
+    "rmse": 2.1868460178375244,
+    "mae": 1.6215107440948486,
+    "r2": 0.34677050425916445
+  }
+}

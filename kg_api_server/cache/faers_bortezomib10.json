@@ -1,0 +1,54 @@
+{
+  "data": [
+    {
+      "event": "PLASMA CELL MYELOMA",
+      "count": 5151,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "OFF LABEL USE",
+      "count": 3019,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "DRUG INEFFECTIVE",
+      "count": 2189,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "NEUROPATHY PERIPHERAL",
+      "count": 1792,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "THROMBOCYTOPENIA",
+      "count": 1733,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "PNEUMONIA",
+      "count": 1579,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "DEATH",
+      "count": 1526,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "DIARRHOEA",
+      "count": 1402,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "NEUTROPENIA",
+      "count": 1385,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "FATIGUE",
+      "count": 1169,
+      "source": "openfda_faers"
+    }
+  ]
+}

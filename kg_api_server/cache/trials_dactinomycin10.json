@@ -1,0 +1,35 @@
+{
+  "data": [
+    {
+      "nct_id": "NCT02567435",
+      "title": "Combination Chemotherapy With or Without Temsirolimus in Treating Patients With Intermediate Risk Rhabdomyosarcoma",
+      "phase": "PHASE3",
+      "status": "ACTIVE_NOT_RECRUITING",
+      "conditions": [
+        "Alveolar Rhabdomyosarcoma",
+        "Botryoid-Type Embryonal Rhabdomyosarcoma",
+        "Embryonal Rhabdomyosarcoma",
+        "Rhabdomyosarcoma",
+        "Sclerosing Rhabdomyosarcoma",
+        "Spindle Cell Rhabdomyosarcoma"
+      ],
+      "lead_sponsor": "National Cancer Institute (NCI)",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT01535053",
+      "title": "Dactinomycin or Methotrexate in Treating Patients With Low-Risk Gestational Trophoblastic Neoplasia",
+      "phase": "PHASE3",
+      "status": "COMPLETED",
+      "conditions": [
+        "Choriocarcinoma",
+        "FIGO Stage I Gestational Trophoblastic Tumor",
+        "FIGO Stage II Gestational Trophoblastic Tumor",
+        "FIGO Stage III Gestational Trophoblastic Tumor",
+        "Hydatidiform Mole"
+      ],
+      "lead_sponsor": "GOG Foundation",
+      "source": "clinicaltrials_gov_v2"
+    }
+  ]
+}

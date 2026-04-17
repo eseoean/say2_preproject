@@ -1,0 +1,313 @@
+{
+  "input_features_path": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match/features_slim_exact_repo.parquet",
+  "input_X_path": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match/X_train_exact_repo_numeric.npy",
+  "input_y_path": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match/y_train_exact_repo.npy",
+  "device": "cpu",
+  "folds": 3,
+  "context_mode": "strong",
+  "models": [
+    "FlatMLP",
+    "ResidualMLP",
+    "CrossAttention"
+  ],
+  "n_rows": 6366,
+  "x_shape": [
+    6366,
+    5529
+  ],
+  "sample_dim_detected": 4415,
+  "strong_context_columns": [
+    "TCGA_DESC",
+    "PATHWAY_NAME_NORMALIZED",
+    "classification",
+    "drug_bridge_strength",
+    "stage3_resolution_status"
+  ],
+  "smiles_vocab_size": 38,
+  "smiles_observed_max_len": 244,
+  "context_summary": {
+    "match_rate": 1.0,
+    "column_non_missing_rate": {
+      "TCGA_DESC": 1.0,
+      "PATHWAY_NAME_NORMALIZED": 1.0,
+      "classification": 1.0,
+      "drug_bridge_strength": 1.0,
+      "stage3_resolution_status": 1.0
+    }
+  },
+  "ensemble_types": [
+    "equal_weight_mean",
+    "spearman_weighted"
+  ],
+  "base_model_metrics": {
+    "FlatMLP": {
+      "spearman_mean": 0.602848370622485,
+      "spearman_std": 0.006620966977774234,
+      "rmse_mean": 2.034275896653282,
+      "rmse_std": 0.03872498693625217,
+      "mae_mean": 1.5540435711542766,
+      "mae_std": 0.02272470486565143,
+      "pearson_mean": 0.6616043647130331,
+      "r2_mean": 0.431366225083669,
+      "ndcg@20_mean": 0.8304081518315777,
+      "fold_metrics": [
+        {
+          "rmse": 2.038430536197719,
+          "mae": 1.5279264450073242,
+          "spearman": 0.6095777117926011,
+          "pearson": 0.6854524612426758,
+          "r2": 0.46936899423599243,
+          "ndcg@20": 0.8242203295149164,
+          "train_spearman": 0.9283763880534697,
+          "train_rmse": 0.8279911148958276,
+          "train_mae": 0.6464359760284424,
+          "gap_spearman": 0.31879867626086855,
+          "gap_rmse": 1.2104394213018916,
+          "gap_mae": 0.8814904689788818,
+          "fold": 0
+        },
+        {
+          "rmse": 2.0707560513951537,
+          "mae": 1.5693007707595825,
+          "spearman": 0.5963413793531377,
+          "pearson": 0.6449404954910278,
+          "r2": 0.41465067863464355,
+          "ndcg@20": 0.8221790320957275,
+          "train_spearman": 0.9400945718868197,
+          "train_rmse": 0.7509827532965729,
+          "train_mae": 0.5847650766372681,
+          "gap_spearman": 0.343753192533682,
+          "gap_rmse": 1.3197732980985808,
+          "gap_mae": 0.9845356941223145,
+          "fold": 1
+        },
+        {
+          "rmse": 1.9936411023669725,
+          "mae": 1.5649034976959229,
+          "spearman": 0.6026260207217162,
+          "pearson": 0.6544201374053955,
+          "r2": 0.4100790023803711,
+          "ndcg@20": 0.8448250938840892,
+          "train_spearman": 0.9448396671764069,
+          "train_rmse": 0.756752570698319,
+          "train_mae": 0.5894671678543091,
+          "gap_spearman": 0.34221364645469066,
+          "gap_rmse": 1.2368885316686535,
+          "gap_mae": 0.9754363298416138,
+          "fold": 2
+        }
+      ],
+      "oof_path": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/results/exact_repo_slim_strong_context_smiles_frc_ensemble_oof_v2_oof/FlatMLP.npy"
+    },
+    "ResidualMLP": {
+      "spearman_mean": 0.6041018407733602,
+      "spearman_std": 0.009937001739279815,
+      "rmse_mean": 2.116637622724674,
+      "rmse_std": 0.049195491687716995,
+      "mae_mean": 1.5959696769714355,
+      "mae_std": 0.047058799544161554,
+      "pearson_mean": 0.6247323751449585,
+      "r2_mean": 0.3849225838979085,
+      "ndcg@20_mean": 0.7973854796408396,
+      "fold_metrics": [
+        {
+          "rmse": 2.1507752063360077,
+          "mae": 1.632917881011963,
+          "spearman": 0.61531945881444,
+          "pearson": 0.6422955989837646,
+          "r2": 0.40926748514175415,
+          "ndcg@20": 0.8325096605057725,
+          "train_spearman": 0.8649118664675876,
+          "train_rmse": 1.2128061950095086,
+          "train_mae": 0.9377204775810242,
+          "gap_spearman": 0.2495924076531476,
+          "gap_rmse": 0.9379690113264991,
+          "gap_mae": 0.6951974034309387,
+          "fold": 0
+        },
+        {
+          "rmse": 2.1388901411881296,
+          "mae": 1.6120014190673828,
+          "spearman": 0.5964031064719116,
+          "pearson": 0.6176540851593018,
+          "r2": 0.37549757957458496,
+          "ndcg@20": 0.8067349563225824,
+          "train_spearman": 0.8558552958854286,
+          "train_rmse": 1.1714800868603006,
+          "train_mae": 0.8725246787071228,
+          "gap_spearman": 0.259452189413517,
+          "gap_rmse": 0.967410054327829,
+          "gap_mae": 0.73947674036026,
+          "fold": 1
+        },
+        {
+          "rmse": 2.060247520649884,
+          "mae": 1.542989730834961,
+          "spearman": 0.6005829570337289,
+          "pearson": 0.6142474412918091,
+          "r2": 0.3700026869773865,
+          "ndcg@20": 0.7529118220941642,
+          "train_spearman": 0.8784803630419931,
+          "train_rmse": 1.1044870607508392,
+          "train_mae": 0.821460485458374,
+          "gap_spearman": 0.2778974060082642,
+          "gap_rmse": 0.9557604598990448,
+          "gap_mae": 0.7215292453765869,
+          "fold": 2
+        }
+      ],
+      "oof_path": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/results/exact_repo_slim_strong_context_smiles_frc_ensemble_oof_v2_oof/ResidualMLP.npy"
+    },
+    "CrossAttention": {
+      "spearman_mean": 0.6001784526967507,
+      "spearman_std": 0.02483399054262955,
+      "rmse_mean": 2.126623834447125,
+      "rmse_std": 0.07669779101210976,
+      "mae_mean": 1.6018336216608684,
+      "mae_std": 0.033570433131296575,
+      "pearson_mean": 0.628404974937439,
+      "r2_mean": 0.3793601195017497,
+      "ndcg@20_mean": 0.7760932596042588,
+      "fold_metrics": [
+        {
+          "rmse": 2.164984771639719,
+          "mae": 1.6328541040420532,
+          "spearman": 0.5717424959438043,
+          "pearson": 0.6342624425888062,
+          "r2": 0.4014361500740051,
+          "ndcg@20": 0.8101759975180761,
+          "train_spearman": 0.8574445616619556,
+          "train_rmse": 1.2521082265773282,
+          "train_mae": 0.9548657536506653,
+          "gap_spearman": 0.28570206571815127,
+          "gap_rmse": 0.9128765450623906,
+          "gap_mae": 0.6779883503913879,
+          "fold": 0
+        },
+        {
+          "rmse": 2.1765728097905614,
+          "mae": 1.6064547300338745,
+          "spearman": 0.6111910669862858,
+          "pearson": 0.6254217624664307,
+          "r2": 0.3532989025115967,
+          "ndcg@20": 0.8222530843638308,
+          "train_spearman": 0.7125928584256939,
+          "train_rmse": 1.947252462910789,
+          "train_mae": 1.4690440893173218,
+          "gap_spearman": 0.10140179143940808,
+          "gap_rmse": 0.22932034687977243,
+          "gap_mae": 0.13741064071655273,
+          "fold": 1
+        },
+        {
+          "rmse": 2.0383139219110955,
+          "mae": 1.5661920309066772,
+          "spearman": 0.6176017951601622,
+          "pearson": 0.6255307197570801,
+          "r2": 0.3833453059196472,
+          "ndcg@20": 0.6958506969308694,
+          "train_spearman": 0.8611764837271194,
+          "train_rmse": 1.179470774972134,
+          "train_mae": 0.8895561695098877,
+          "gap_spearman": 0.2435746885669572,
+          "gap_rmse": 0.8588431469389615,
+          "gap_mae": 0.6766358613967896,
+          "fold": 2
+        }
+      ],
+      "oof_path": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/results/exact_repo_slim_strong_context_smiles_frc_ensemble_oof_v2_oof/CrossAttention.npy"
+    }
+  },
+  "equal_fold_metrics": [
+    {
+      "rmse": 2.0653238328001438,
+      "mae": 1.5578299760818481,
+      "spearman": 0.6241520071460189,
+      "pearson": 0.6755034327507019,
+      "r2": 0.455275297164917,
+      "ndcg@20": 0.8110360344167623,
+      "fold": 0
+    },
+    {
+      "rmse": 2.027157460733001,
+      "mae": 1.5096125602722168,
+      "spearman": 0.6410838832784553,
+      "pearson": 0.667299747467041,
+      "r2": 0.4390396475791931,
+      "ndcg@20": 0.8228344306947627,
+      "fold": 1
+    },
+    {
+      "rmse": 1.9732279034214326,
+      "mae": 1.5217642784118652,
+      "spearman": 0.6316361210794584,
+      "pearson": 0.6517307758331299,
+      "r2": 0.42209768295288086,
+      "ndcg@20": 0.7949480127917038,
+      "fold": 2
+    }
+  ],
+  "oof_dir": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/results/exact_repo_slim_strong_context_smiles_frc_ensemble_oof_v2_oof",
+  "keys_path": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/results/exact_repo_slim_strong_context_smiles_frc_ensemble_oof_v2_oof/keys.parquet",
+  "weights": {
+    "FlatMLP": 0.33576538241307186,
+    "ResidualMLP": 0.33521796999734327,
+    "CrossAttention": 0.3290166475895848
+  },
+  "diversity": {
+    "pairwise": [
+      {
+        "pair": "FlatMLP vs ResidualMLP",
+        "prediction_pearson": 0.8856394290924072,
+        "prediction_spearman": 0.8320343892918853,
+        "residual_pearson": 0.9065459966659546,
+        "residual_spearman": 0.8843173704693007,
+        "mean_abs_prediction_gap": 0.6934431195259094
+      },
+      {
+        "pair": "FlatMLP vs CrossAttention",
+        "prediction_pearson": 0.8519302606582642,
+        "prediction_spearman": 0.804545046851749,
+        "residual_pearson": 0.8805118203163147,
+        "residual_spearman": 0.8548092383861433,
+        "mean_abs_prediction_gap": 0.810015857219696
+      },
+      {
+        "pair": "ResidualMLP vs CrossAttention",
+        "prediction_pearson": 0.8942025899887085,
+        "prediction_spearman": 0.8668741594166218,
+        "residual_pearson": 0.9217402338981628,
+        "residual_spearman": 0.9038075005988156,
+        "mean_abs_prediction_gap": 0.6383960843086243
+      }
+    ],
+    "summary": {
+      "avg_prediction_pearson": 0.8772574265797933,
+      "avg_prediction_spearman": 0.8344845318534188,
+      "avg_residual_pearson": 0.9029326836268107,
+      "avg_residual_spearman": 0.8809780364847533,
+      "avg_mean_abs_prediction_gap": 0.7139516870180765
+    }
+  },
+  "ensemble_gain_vs_best_base": {
+    "weighted_spearman_gain": 0.023892968363029232,
+    "weighted_rmse_gain": 0.01223939106198868
+  },
+  "equal_overall_metrics": {
+    "rmse": 2.02226064031855,
+    "mae": 1.5297166109085083,
+    "spearman": 0.627953684104675,
+    "pearson": 0.6644781827926636,
+    "r2": 0.4413965344429016,
+    "ndcg@20": 0.8281062805681049,
+    "elapsed_sec": 1542.8293759822845
+  },
+  "weighted_overall_metrics": {
+    "rmse": 2.022036505591293,
+    "mae": 1.529618263244629,
+    "spearman": 0.6279948091363894,
+    "pearson": 0.6645668148994446,
+    "r2": 0.4415202736854553,
+    "ndcg@20": 0.8282008516301868
+  }
+}

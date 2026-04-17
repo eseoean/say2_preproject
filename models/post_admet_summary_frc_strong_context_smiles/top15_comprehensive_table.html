@@ -1,0 +1,804 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>FRC Post-ADMET Summary</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; padding: 24px; line-height: 1.5; }
+    h1, h2 { margin-bottom: 8px; }
+    .meta { background: #f6f8fa; border: 1px solid #d0d7de; padding: 12px 16px; border-radius: 8px; margin-bottom: 20px; }
+    table { border-collapse: collapse; width: 100%; margin: 14px 0 28px; }
+    th, td { border: 1px solid #d0d7de; padding: 8px 10px; text-align: left; vertical-align: top; }
+    th { background: #f6f8fa; }
+    tr:nth-child(even) { background: #fcfcfd; }
+  </style>
+</head>
+<body>
+  <h1>FRC Ensemble Post-ADMET Summary</h1>
+  <div class="meta">
+    <div><strong>Ensemble</strong>: FRC (FlatMLP + ResidualMLP + CrossAttention)</div>
+    <div><strong>Input</strong>: exact slim + strong context + SMILES</div>
+    <div><strong>Approved / Candidate / Caution</strong>: 7 / 7 / 1</div>
+    <div><strong>Top 5</strong>: Staurosporine, Docetaxel, Vinorelbine, Topotecan, Paclitaxel</div>
+  </div>
+
+  <h2>Top 15 Comprehensive Table</h2>
+  <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>final_rank</th>
+      <th>drug_id</th>
+      <th>drug_name</th>
+      <th>target</th>
+      <th>pathway</th>
+      <th>predicted_ic50</th>
+      <th>sensitivity_rate</th>
+      <th>validation_score</th>
+      <th>safety_score</th>
+      <th>combined_score</th>
+      <th>category</th>
+      <th>clinical_bucket</th>
+      <th>known_brca</th>
+      <th>target_expressed</th>
+      <th>brca_pathway</th>
+      <th>survival_sig</th>
+      <th>survival_p</th>
+      <th>flags</th>
+      <th>n_assays_tested</th>
+      <th>recommendation_note</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>1034</td>
+      <td>Staurosporine</td>
+      <td>Broad spectrum kinase inhibitor</td>
+      <td>RTK signaling</td>
+      <td>-0.266695</td>
+      <td>1.000000</td>
+      <td>7.55</td>
+      <td>10.00</td>
+      <td>14.50</td>
+      <td>Candidate</td>
+      <td>Breast cancer current/relevant use</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1.000000e-02</td>
+      <td>[]</td>
+      <td>1</td>
+      <td>Biologically plausible candidate with supportive validation, but additional safety or translational review is needed.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>1819</td>
+      <td>Docetaxel</td>
+      <td>Microtubule stabiliser</td>
+      <td>Mitosis</td>
+      <td>-4.307106</td>
+      <td>0.920000</td>
+      <td>9.45</td>
+      <td>6.83</td>
+      <td>14.33</td>
+      <td>Approved</td>
+      <td>Breast cancer current/relevant use</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1.000000e-02</td>
+      <td>['DILI (Drug-Induced Liver Injury)(+)']</td>
+      <td>12</td>
+      <td>Breast-cancer relevant and ADMET-screened. Suitable as a primary shortlist candidate.</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2048</td>
+      <td>Vinorelbine</td>
+      <td>Microtubule destabiliser</td>
+      <td>Mitosis</td>
+      <td>-1.577555</td>
+      <td>1.000000</td>
+      <td>9.20</td>
+      <td>8.00</td>
+      <td>14.00</td>
+      <td>Approved</td>
+      <td>Breast cancer current/relevant use</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1.000000e-02</td>
+      <td>[]</td>
+      <td>10</td>
+      <td>Breast-cancer relevant and ADMET-screened. Suitable as a primary shortlist candidate.</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>1808</td>
+      <td>Topotecan</td>
+      <td>TOP1</td>
+      <td>DNA replication</td>
+      <td>-0.885263</td>
+      <td>0.884615</td>
+      <td>7.60</td>
+      <td>9.00</td>
+      <td>14.00</td>
+      <td>Candidate</td>
+      <td>Breast cancer current/relevant use</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>6.331007e-05</td>
+      <td>[]</td>
+      <td>10</td>
+      <td>Biologically plausible candidate with supportive validation, but additional safety or translational review is needed.</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>1080</td>
+      <td>Paclitaxel</td>
+      <td>Microtubule stabiliser</td>
+      <td>Mitosis</td>
+      <td>-3.439143</td>
+      <td>1.000000</td>
+      <td>9.40</td>
+      <td>6.83</td>
+      <td>13.83</td>
+      <td>Approved</td>
+      <td>Breast cancer current/relevant use</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1.000000e-02</td>
+      <td>['DILI (Drug-Induced Liver Injury)(+)']</td>
+      <td>12</td>
+      <td>Breast-cancer relevant and ADMET-screened. Suitable as a primary shortlist candidate.</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>1811</td>
+      <td>Dactinomycin</td>
+      <td>RNA polymerase</td>
+      <td>Other</td>
+      <td>-2.999836</td>
+      <td>1.000000</td>
+      <td>7.85</td>
+      <td>7.00</td>
+      <td>13.50</td>
+      <td>Approved</td>
+      <td>Breast cancer current/relevant use</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1.000000e-02</td>
+      <td>['DILI (Drug-Induced Liver Injury)(+)']</td>
+      <td>5</td>
+      <td>Breast-cancer relevant and ADMET-screened. Suitable as a primary shortlist candidate.</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>1004</td>
+      <td>Vinblastine</td>
+      <td>Microtubule destabiliser</td>
+      <td>Mitosis</td>
+      <td>-1.482414</td>
+      <td>1.000000</td>
+      <td>9.15</td>
+      <td>7.83</td>
+      <td>13.33</td>
+      <td>Approved</td>
+      <td>Breast cancer current/relevant use</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1.000000e-02</td>
+      <td>[]</td>
+      <td>12</td>
+      <td>Breast-cancer relevant and ADMET-screened. Suitable as a primary shortlist candidate.</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>1011</td>
+      <td>Navitoclax</td>
+      <td>BCL2, BCL-XL, BCL-W</td>
+      <td>Apoptosis regulation</td>
+      <td>1.758918</td>
+      <td>0.931034</td>
+      <td>6.25</td>
+      <td>10.00</td>
+      <td>11.00</td>
+      <td>Candidate</td>
+      <td>Breast cancer exploratory candidate</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>4.293424e-10</td>
+      <td>[]</td>
+      <td>2</td>
+      <td>Biologically plausible candidate with supportive validation, but additional safety or translational review is needed.</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>1003</td>
+      <td>Camptothecin</td>
+      <td>TOP1</td>
+      <td>DNA replication</td>
+      <td>1.826931</td>
+      <td>1.000000</td>
+      <td>8.15</td>
+      <td>10.00</td>
+      <td>10.50</td>
+      <td>Candidate</td>
+      <td>Breast cancer current/relevant use</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>6.331007e-05</td>
+      <td>[]</td>
+      <td>5</td>
+      <td>Biologically plausible candidate with supportive validation, but additional safety or translational review is needed.</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>1084</td>
+      <td>Rapamycin</td>
+      <td>MTORC1</td>
+      <td>PI3K/MTOR signaling</td>
+      <td>0.774700</td>
+      <td>1.000000</td>
+      <td>8.80</td>
+      <td>7.71</td>
+      <td>10.21</td>
+      <td>Approved</td>
+      <td>Breast cancer current/relevant use</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1.000000e-02</td>
+      <td>[]</td>
+      <td>7</td>
+      <td>Breast-cancer relevant and ADMET-screened. Suitable as a primary shortlist candidate.</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>1088</td>
+      <td>Irinotecan</td>
+      <td>TOP1</td>
+      <td>DNA replication</td>
+      <td>0.345988</td>
+      <td>0.321429</td>
+      <td>7.45</td>
+      <td>5.56</td>
+      <td>9.56</td>
+      <td>Candidate</td>
+      <td>Breast cancer current/relevant use</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>6.331007e-05</td>
+      <td>[]</td>
+      <td>9</td>
+      <td>Biologically plausible candidate with supportive validation, but additional safety or translational review is needed.</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>1862</td>
+      <td>MG-132</td>
+      <td>Proteasome, CAPN1</td>
+      <td>Protein stability and degradation</td>
+      <td>0.955558</td>
+      <td>1.000000</td>
+      <td>6.65</td>
+      <td>6.67</td>
+      <td>8.67</td>
+      <td>Candidate</td>
+      <td>Breast cancer exploratory candidate</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2.272274e-03</td>
+      <td>[]</td>
+      <td>3</td>
+      <td>Biologically plausible candidate with supportive validation, but additional safety or translational review is needed.</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>1026</td>
+      <td>Tanespimycin</td>
+      <td>HSP90</td>
+      <td>Protein stability and degradation</td>
+      <td>0.539871</td>
+      <td>1.000000</td>
+      <td>6.90</td>
+      <td>5.00</td>
+      <td>8.50</td>
+      <td>Candidate</td>
+      <td>Breast cancer exploratory candidate</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1.000000e-02</td>
+      <td>[]</td>
+      <td>2</td>
+      <td>Biologically plausible candidate with supportive validation, but additional safety or translational review is needed.</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>1191</td>
+      <td>Bortezomib</td>
+      <td>Proteasome</td>
+      <td>Protein stability and degradation</td>
+      <td>1.283933</td>
+      <td>1.000000</td>
+      <td>8.55</td>
+      <td>5.29</td>
+      <td>6.79</td>
+      <td>Approved</td>
+      <td>Breast cancer current/relevant use</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1.000000e-02</td>
+      <td>['DILI (Drug-Induced Liver Injury)(+)']</td>
+      <td>7</td>
+      <td>Breast-cancer relevant and ADMET-screened. Suitable as a primary shortlist candidate.</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>1511</td>
+      <td>Epirubicin</td>
+      <td>Anthracycline</td>
+      <td>DNA replication</td>
+      <td>0.678544</td>
+      <td>1.000000</td>
+      <td>8.85</td>
+      <td>2.83</td>
+      <td>5.83</td>
+      <td>Caution</td>
+      <td>Breast cancer current/relevant use</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1.000000e-02</td>
+      <td>['Ames Mutagenicity(+)', 'DILI (Drug-Induced Liver Injury)(+)']</td>
+      <td>15</td>
+      <td>Efficacy signal exists, but safety flags were detected. Keep as a low-priority caution item.</td>
+    </tr>
+  </tbody>
+</table>
+
+  <h2>Approved Shortlist</h2>
+  <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>final_rank</th>
+      <th>drug_id</th>
+      <th>drug_name</th>
+      <th>target</th>
+      <th>pathway</th>
+      <th>predicted_ic50</th>
+      <th>sensitivity_rate</th>
+      <th>validation_score</th>
+      <th>safety_score</th>
+      <th>combined_score</th>
+      <th>category</th>
+      <th>clinical_bucket</th>
+      <th>known_brca</th>
+      <th>target_expressed</th>
+      <th>brca_pathway</th>
+      <th>survival_sig</th>
+      <th>survival_p</th>
+      <th>flags</th>
+      <th>n_assays_tested</th>
+      <th>recommendation_note</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2</td>
+      <td>1819</td>
+      <td>Docetaxel</td>
+      <td>Microtubule stabiliser</td>
+      <td>Mitosis</td>
+      <td>-4.307106</td>
+      <td>0.92</td>
+      <td>9.45</td>
+      <td>6.83</td>
+      <td>14.33</td>
+      <td>Approved</td>
+      <td>Breast cancer current/relevant use</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.01</td>
+      <td>['DILI (Drug-Induced Liver Injury)(+)']</td>
+      <td>12</td>
+      <td>Breast-cancer relevant and ADMET-screened. Suitable as a primary shortlist candidate.</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2048</td>
+      <td>Vinorelbine</td>
+      <td>Microtubule destabiliser</td>
+      <td>Mitosis</td>
+      <td>-1.577555</td>
+      <td>1.00</td>
+      <td>9.20</td>
+      <td>8.00</td>
+      <td>14.00</td>
+      <td>Approved</td>
+      <td>Breast cancer current/relevant use</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.01</td>
+      <td>[]</td>
+      <td>10</td>
+      <td>Breast-cancer relevant and ADMET-screened. Suitable as a primary shortlist candidate.</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>1080</td>
+      <td>Paclitaxel</td>
+      <td>Microtubule stabiliser</td>
+      <td>Mitosis</td>
+      <td>-3.439143</td>
+      <td>1.00</td>
+      <td>9.40</td>
+      <td>6.83</td>
+      <td>13.83</td>
+      <td>Approved</td>
+      <td>Breast cancer current/relevant use</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.01</td>
+      <td>['DILI (Drug-Induced Liver Injury)(+)']</td>
+      <td>12</td>
+      <td>Breast-cancer relevant and ADMET-screened. Suitable as a primary shortlist candidate.</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>1811</td>
+      <td>Dactinomycin</td>
+      <td>RNA polymerase</td>
+      <td>Other</td>
+      <td>-2.999836</td>
+      <td>1.00</td>
+      <td>7.85</td>
+      <td>7.00</td>
+      <td>13.50</td>
+      <td>Approved</td>
+      <td>Breast cancer current/relevant use</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0.01</td>
+      <td>['DILI (Drug-Induced Liver Injury)(+)']</td>
+      <td>5</td>
+      <td>Breast-cancer relevant and ADMET-screened. Suitable as a primary shortlist candidate.</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>1004</td>
+      <td>Vinblastine</td>
+      <td>Microtubule destabiliser</td>
+      <td>Mitosis</td>
+      <td>-1.482414</td>
+      <td>1.00</td>
+      <td>9.15</td>
+      <td>7.83</td>
+      <td>13.33</td>
+      <td>Approved</td>
+      <td>Breast cancer current/relevant use</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.01</td>
+      <td>[]</td>
+      <td>12</td>
+      <td>Breast-cancer relevant and ADMET-screened. Suitable as a primary shortlist candidate.</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>1084</td>
+      <td>Rapamycin</td>
+      <td>MTORC1</td>
+      <td>PI3K/MTOR signaling</td>
+      <td>0.774700</td>
+      <td>1.00</td>
+      <td>8.80</td>
+      <td>7.71</td>
+      <td>10.21</td>
+      <td>Approved</td>
+      <td>Breast cancer current/relevant use</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.01</td>
+      <td>[]</td>
+      <td>7</td>
+      <td>Breast-cancer relevant and ADMET-screened. Suitable as a primary shortlist candidate.</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>1191</td>
+      <td>Bortezomib</td>
+      <td>Proteasome</td>
+      <td>Protein stability and degradation</td>
+      <td>1.283933</td>
+      <td>1.00</td>
+      <td>8.55</td>
+      <td>5.29</td>
+      <td>6.79</td>
+      <td>Approved</td>
+      <td>Breast cancer current/relevant use</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.01</td>
+      <td>['DILI (Drug-Induced Liver Injury)(+)']</td>
+      <td>7</td>
+      <td>Breast-cancer relevant and ADMET-screened. Suitable as a primary shortlist candidate.</td>
+    </tr>
+  </tbody>
+</table>
+
+  <h2>Candidate Shortlist</h2>
+  <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>final_rank</th>
+      <th>drug_id</th>
+      <th>drug_name</th>
+      <th>target</th>
+      <th>pathway</th>
+      <th>predicted_ic50</th>
+      <th>sensitivity_rate</th>
+      <th>validation_score</th>
+      <th>safety_score</th>
+      <th>combined_score</th>
+      <th>category</th>
+      <th>clinical_bucket</th>
+      <th>known_brca</th>
+      <th>target_expressed</th>
+      <th>brca_pathway</th>
+      <th>survival_sig</th>
+      <th>survival_p</th>
+      <th>flags</th>
+      <th>n_assays_tested</th>
+      <th>recommendation_note</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>1034</td>
+      <td>Staurosporine</td>
+      <td>Broad spectrum kinase inhibitor</td>
+      <td>RTK signaling</td>
+      <td>-0.266695</td>
+      <td>1.000000</td>
+      <td>7.55</td>
+      <td>10.00</td>
+      <td>14.50</td>
+      <td>Candidate</td>
+      <td>Breast cancer current/relevant use</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1.000000e-02</td>
+      <td>[]</td>
+      <td>1</td>
+      <td>Biologically plausible candidate with supportive validation, but additional safety or translational review is needed.</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>1808</td>
+      <td>Topotecan</td>
+      <td>TOP1</td>
+      <td>DNA replication</td>
+      <td>-0.885263</td>
+      <td>0.884615</td>
+      <td>7.60</td>
+      <td>9.00</td>
+      <td>14.00</td>
+      <td>Candidate</td>
+      <td>Breast cancer current/relevant use</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>6.331007e-05</td>
+      <td>[]</td>
+      <td>10</td>
+      <td>Biologically plausible candidate with supportive validation, but additional safety or translational review is needed.</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>1011</td>
+      <td>Navitoclax</td>
+      <td>BCL2, BCL-XL, BCL-W</td>
+      <td>Apoptosis regulation</td>
+      <td>1.758918</td>
+      <td>0.931034</td>
+      <td>6.25</td>
+      <td>10.00</td>
+      <td>11.00</td>
+      <td>Candidate</td>
+      <td>Breast cancer exploratory candidate</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>4.293424e-10</td>
+      <td>[]</td>
+      <td>2</td>
+      <td>Biologically plausible candidate with supportive validation, but additional safety or translational review is needed.</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>1003</td>
+      <td>Camptothecin</td>
+      <td>TOP1</td>
+      <td>DNA replication</td>
+      <td>1.826931</td>
+      <td>1.000000</td>
+      <td>8.15</td>
+      <td>10.00</td>
+      <td>10.50</td>
+      <td>Candidate</td>
+      <td>Breast cancer current/relevant use</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>6.331007e-05</td>
+      <td>[]</td>
+      <td>5</td>
+      <td>Biologically plausible candidate with supportive validation, but additional safety or translational review is needed.</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>1088</td>
+      <td>Irinotecan</td>
+      <td>TOP1</td>
+      <td>DNA replication</td>
+      <td>0.345988</td>
+      <td>0.321429</td>
+      <td>7.45</td>
+      <td>5.56</td>
+      <td>9.56</td>
+      <td>Candidate</td>
+      <td>Breast cancer current/relevant use</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>6.331007e-05</td>
+      <td>[]</td>
+      <td>9</td>
+      <td>Biologically plausible candidate with supportive validation, but additional safety or translational review is needed.</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>1862</td>
+      <td>MG-132</td>
+      <td>Proteasome, CAPN1</td>
+      <td>Protein stability and degradation</td>
+      <td>0.955558</td>
+      <td>1.000000</td>
+      <td>6.65</td>
+      <td>6.67</td>
+      <td>8.67</td>
+      <td>Candidate</td>
+      <td>Breast cancer exploratory candidate</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2.272274e-03</td>
+      <td>[]</td>
+      <td>3</td>
+      <td>Biologically plausible candidate with supportive validation, but additional safety or translational review is needed.</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>1026</td>
+      <td>Tanespimycin</td>
+      <td>HSP90</td>
+      <td>Protein stability and degradation</td>
+      <td>0.539871</td>
+      <td>1.000000</td>
+      <td>6.90</td>
+      <td>5.00</td>
+      <td>8.50</td>
+      <td>Candidate</td>
+      <td>Breast cancer exploratory candidate</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1.000000e-02</td>
+      <td>[]</td>
+      <td>2</td>
+      <td>Biologically plausible candidate with supportive validation, but additional safety or translational review is needed.</td>
+    </tr>
+  </tbody>
+</table>
+
+  <h2>Caution Shortlist</h2>
+  <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>final_rank</th>
+      <th>drug_id</th>
+      <th>drug_name</th>
+      <th>target</th>
+      <th>pathway</th>
+      <th>predicted_ic50</th>
+      <th>sensitivity_rate</th>
+      <th>validation_score</th>
+      <th>safety_score</th>
+      <th>combined_score</th>
+      <th>category</th>
+      <th>clinical_bucket</th>
+      <th>known_brca</th>
+      <th>target_expressed</th>
+      <th>brca_pathway</th>
+      <th>survival_sig</th>
+      <th>survival_p</th>
+      <th>flags</th>
+      <th>n_assays_tested</th>
+      <th>recommendation_note</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>15</td>
+      <td>1511</td>
+      <td>Epirubicin</td>
+      <td>Anthracycline</td>
+      <td>DNA replication</td>
+      <td>0.678544</td>
+      <td>1.0</td>
+      <td>8.85</td>
+      <td>2.83</td>
+      <td>5.83</td>
+      <td>Caution</td>
+      <td>Breast cancer current/relevant use</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.01</td>
+      <td>['Ames Mutagenicity(+)', 'DILI (Drug-Induced Liver Injury)(+)']</td>
+      <td>15</td>
+      <td>Efficacy signal exists, but safety flags were detected. Keep as a low-priority caution item.</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,78 @@
+{
+  "input_features_path": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match/features_slim_exact_repo.parquet",
+  "input_X_path": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match/X_train_exact_repo_numeric.npy",
+  "input_y_path": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match/y_train_exact_repo.npy",
+  "device": "cpu",
+  "folds": 3,
+  "context_mode": "none",
+  "n_rows": 6366,
+  "x_shape": [
+    6366,
+    5529
+  ],
+  "sample_dim_detected": 4415,
+  "strong_context_columns": [],
+  "smiles_vocab_size": 38,
+  "smiles_observed_max_len": 244,
+  "models": [
+    {
+      "model": "TabTransformer",
+      "spearman_mean": 0.4446436541333351,
+      "spearman_std": 0.007709683338707016,
+      "rmse_mean": 2.3665997887814583,
+      "rmse_std": 0.0009698798169358083,
+      "mae_mean": 1.7701122164726257,
+      "mae_std": 0.06848095810377382,
+      "pearson_mean": 0.523424506187439,
+      "r2_mean": 0.2600909173488617,
+      "ndcg@20_mean": 0.8018072320079441,
+      "overall_metrics": {
+        "rmse": 3.0379853288649104,
+        "mae": 2.3774302005767822,
+        "spearman": 0.24538959283175396,
+        "pearson": 0.2750793695449829,
+        "r2": -0.26066792011260986,
+        "ndcg@20": 0.834572669972635
+      },
+      "elapsed_sec": 637.7213830947876,
+      "executed_folds": 2,
+      "stopped_early": true,
+      "fold_metrics": [
+        {
+          "rmse": 2.365913980185967,
+          "mae": 1.818535566329956,
+          "spearman": 0.43919208476373445,
+          "pearson": 0.5455119609832764,
+          "r2": 0.28517669439315796,
+          "ndcg@20": 0.8187033319303598,
+          "train_spearman": 0.8656751446256379,
+          "train_rmse": 1.1612310087295596,
+          "train_mae": 0.8742912411689758,
+          "gap_spearman": 0.42648305986190344,
+          "gap_rmse": 1.2046829714564073,
+          "gap_mae": 0.9442443251609802,
+          "fold": 0
+        },
+        {
+          "rmse": 2.3672855973769495,
+          "mae": 1.7216888666152954,
+          "spearman": 0.4500952235029358,
+          "pearson": 0.5013370513916016,
+          "r2": 0.23500514030456543,
+          "ndcg@20": 0.7849111320855285,
+          "train_spearman": 0.5187813014722199,
+          "train_rmse": 2.218294983534013,
+          "train_mae": 1.686153769493103,
+          "gap_spearman": 0.06868607796928411,
+          "gap_rmse": 0.14899061384293644,
+          "gap_mae": 0.03553509712219238,
+          "fold": 1
+        }
+      ]
+    }
+  ],
+  "context_summary": {
+    "match_rate": 0.0,
+    "column_non_missing_rate": {}
+  }
+}

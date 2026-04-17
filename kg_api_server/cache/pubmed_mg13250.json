@@ -1,0 +1,753 @@
+{
+  "data": [
+    {
+      "pmid": "32278272",
+      "title": "MG-132 attenuates cardiac deterioration of viral myocarditis via AMPK pathway.",
+      "journal": "Biomedicine & pharmacotherapy = Biomedecine & pharmacotherapie",
+      "year": "2020",
+      "authors": [
+        "Zhang XM",
+        "Li YC",
+        "Chen P",
+        "Ye S",
+        "Xie SH",
+        "Xia WJ",
+        "Yang JH"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "30176247",
+      "title": "MG-132 treatment promotes TRAIL-mediated apoptosis in SEB-1 sebocytes.",
+      "journal": "Life sciences",
+      "year": "2018",
+      "authors": [
+        "Ji J",
+        "Zhou BR",
+        "Zhang RH",
+        "Li HM",
+        "Guo Q",
+        "Zhu J",
+        "Luo D"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "29042667",
+      "title": "MG-132 reduces virus release in Bovine herpesvirus-1 infection.",
+      "journal": "Scientific reports",
+      "year": "2017",
+      "authors": [
+        "Fiorito F",
+        "Iovane V",
+        "Cantiello A",
+        "Marullo A",
+        "De Martino L",
+        "Iovane G"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "33906007",
+      "title": "MG-132 interferes with iron cellular homeostasis and alters virulence of bovine herpesvirus 1.",
+      "journal": "Research in veterinary science",
+      "year": "2021",
+      "authors": [
+        "Fiorito F",
+        "Irace C",
+        "Nocera FP",
+        "Piccolo M",
+        "Ferraro MG",
+        "Ciampaglia R",
+        "Tenore GC",
+        "Santamaria R",
+        "De Martino L"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "39232759",
+      "title": "MG-132 activates sodium palmitate-induced autophagy in human vascular smooth muscle cells and inhibits senescence via the PI3K/AKT/mTOR axis.",
+      "journal": "Lipids in health and disease",
+      "year": "2024",
+      "authors": [
+        "Shu Z",
+        "Li X",
+        "Zhang W",
+        "Huyan Z",
+        "Cheng D",
+        "Xie S",
+        "Cheng H",
+        "Wang J",
+        "Du B"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "34698442",
+      "title": "Effect of MG-132 on myofibrillogenesis and the ubiquitination of GAPDH in quail myotubes.",
+      "journal": "Cytoskeleton (Hoboken, N.J.)",
+      "year": "2021",
+      "authors": [
+        "Dube DK",
+        "Wang J",
+        "Fan Y",
+        "Dube S",
+        "Abbott L",
+        "Sanger JM",
+        "Channaveerappa D",
+        "Darie CC",
+        "Poiesz BJ",
+        "Sanger JW"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "30695709",
+      "title": "Proteasome inhibition by MG-132 protects against deltamethrin-induced apoptosis in rat hippocampus.",
+      "journal": "Life sciences",
+      "year": "2019",
+      "authors": [
+        "Huang X",
+        "Liang Y",
+        "Qing Y",
+        "Chen D",
+        "Shi N"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "37933299",
+      "title": "IR-820@NBs Combined with MG-132 Enhances the Anti-Hepatocellular Carcinoma Effect of Sonodynamic Therapy.",
+      "journal": "International journal of nanomedicine",
+      "year": "2023",
+      "authors": [
+        "Wang X",
+        "Wang C",
+        "Tian H",
+        "Chen Y",
+        "Wu B",
+        "Cheng W"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "29901180",
+      "title": "MG‑132 reverses multidrug resistance by activating the JNK signaling pathway in FaDu/T cells.",
+      "journal": "Molecular medicine reports",
+      "year": "2018",
+      "authors": [
+        "Ma J",
+        "Lv Z",
+        "Liu X",
+        "Liu X",
+        "Xu W"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "28898250",
+      "title": "Effects of proteasome inhibitor MG-132 on the parasite Schistosoma mansoni.",
+      "journal": "PloS one",
+      "year": "2017",
+      "authors": [
+        "Morais ER",
+        "Oliveira KC",
+        "Paula RG",
+        "Ornelas AMM",
+        "Moreira ÉBC",
+        "Badoco FR",
+        "Magalhães LG",
+        "Verjovski-Almeida S",
+        "Rodrigues V"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "23551903",
+      "title": "Proteasome inhibitor MG-132 induces MCPIP1 expression.",
+      "journal": "The FEBS journal",
+      "year": "2013",
+      "authors": [
+        "Skalniak L",
+        "Koj A",
+        "Jura J"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "19765735",
+      "title": "MG-132 inhibits carcinoid growth and alters the neuroendocrine phenotype.",
+      "journal": "The Journal of surgical research",
+      "year": "2010",
+      "authors": [
+        "Chen JY",
+        "Cook MR",
+        "Pinchot SN",
+        "Kunnimalaiyaan M",
+        "Chen H"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "35388084",
+      "title": "Prolonged treatment with the proteasome inhibitor MG-132 induces apoptosis in PC12 rat pheochromocytoma cells.",
+      "journal": "Scientific reports",
+      "year": "2022",
+      "authors": [
+        "Tarjányi O",
+        "Haerer J",
+        "Vecsernyés M",
+        "Berta G",
+        "Stayer-Harci A",
+        "Balogh B",
+        "Farkas K",
+        "Boldizsár F",
+        "Szeberényi J",
+        "Sétáló G Jr"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "19093261",
+      "title": "MG-132 inhibits telomerase activity, induces apoptosis and G(1) arrest associated with upregulated p27kip1 expression and downregulated survivin expression in gastric carcinoma cells.",
+      "journal": "Cancer investigation",
+      "year": "2008",
+      "authors": [
+        "Zhang W",
+        "Tong Q",
+        "Li S",
+        "Wang X",
+        "Wang Q"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "40243672",
+      "title": "Proteasome Inhibitor MG-132 and PKC-ι-Specific Inhibitor ICA-1S Degrade Mutant p53 and Induce Apoptosis in Ovarian Cancer Cell Lines.",
+      "journal": "International journal of molecular sciences",
+      "year": "2025",
+      "authors": [
+        "Marzan M",
+        "Nowshin Oishee N",
+        "Olatunji AO",
+        "Hasib Shourav A",
+        "Noor RE",
+        "Astalos AJ",
+        "Leahy JW",
+        "Acevedo-Duncan M"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "31366881",
+      "title": "The Protective Effects of Protease Inhibitor MG-132 on Sepsis-Induced Acute Lung Rats and Its Possible Mechanisms.",
+      "journal": "Medical science monitor : international medical journal of experimental and clinical research",
+      "year": "2019",
+      "authors": [
+        "Wu B",
+        "Miao X",
+        "Ye J",
+        "Pu X"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "21775096",
+      "title": "Apoptotic effect of MG-132 on human tongue squamous cell carcinoma.",
+      "journal": "Biomedicine & pharmacotherapy = Biomedecine & pharmacotherapie",
+      "year": "2011",
+      "authors": [
+        "Chen SF",
+        "Chen HY",
+        "Liu XB",
+        "Zhang YX",
+        "Liu W",
+        "Wang WH",
+        "Zhang B",
+        "Wang LX"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "17332355",
+      "title": "MG-132 sensitizes TRAIL-resistant prostate cancer cells by activating c-Fos/c-Jun heterodimers and repressing c-FLIP(L).",
+      "journal": "Cancer research",
+      "year": "2007",
+      "authors": [
+        "Li W",
+        "Zhang X",
+        "Olumi AF"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "18835339",
+      "title": "MG-132 inhibits the TCDD-mediated induction of Cyp1a1 at the catalytic activity but not the mRNA or protein levels in Hepa 1c1c7 cells.",
+      "journal": "Toxicology letters",
+      "year": "2008",
+      "authors": [
+        "Anwar-Mohamed A",
+        "Elbekai RH",
+        "El-Kadi AO"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "36791578",
+      "title": "Molecular mechanism of anti-inflammatory effects of the proteasome inhibitor MG-132 on Con A-induced acute liver injury in mice.",
+      "journal": "Research in veterinary science",
+      "year": "2023",
+      "authors": [
+        "Shan C",
+        "Ou D",
+        "Xiong Y",
+        "Cheng H",
+        "Song C",
+        "Li M",
+        "Fang T",
+        "Cheng Z",
+        "Miao F"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "11911275",
+      "title": "Potential of the proteasomal inhibitor MG-132 as an anticancer agent, alone and in combination.",
+      "journal": "Anticancer research",
+      "year": "2001",
+      "authors": [
+        "Banerjee D",
+        "Liefshitz A"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "33482188",
+      "title": "The inhibitive effects of proteasome inhibitor MG-132 on pterygium fibroblasts in vitro and the potential key regulators involved.",
+      "journal": "Life sciences",
+      "year": "2021",
+      "authors": [
+        "Zhao D",
+        "Zhao H",
+        "He Y",
+        "Yang Y",
+        "Du Y",
+        "Zhang M"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "21203833",
+      "title": "The proteasome inhibitor MG-132 induces AIF nuclear translocation through down-regulation of ERK and Akt/mTOR pathway.",
+      "journal": "Neurochemical research",
+      "year": "2011",
+      "authors": [
+        "Ko JK",
+        "Choi CH",
+        "Kim YK",
+        "Kwon CH"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "37638428",
+      "title": "In vitro simulation of the liver first-pass effect with biotransformation-competent HepG2 cells to study effects of MG-132 on liver and cancer cells.",
+      "journal": "Clinical hemorheology and microcirculation",
+      "year": "2024",
+      "authors": [
+        "Kammerer S",
+        "Nowak E",
+        "Mantke R",
+        "Jung F",
+        "Küpper JH"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "23220333",
+      "title": "Therapeutic effect of MG-132 on diabetic cardiomyopathy is associated with its suppression of proteasomal activities: roles of Nrf2 and NF-κB.",
+      "journal": "American journal of physiology. Heart and circulatory physiology",
+      "year": "2013",
+      "authors": [
+        "Wang Y",
+        "Sun W",
+        "Du B",
+        "Miao X",
+        "Bai Y",
+        "Xin Y",
+        "Tan Y",
+        "Cui W",
+        "Liu B",
+        "Cui T",
+        "Epstein PN",
+        "Fu Y",
+        "Cai L"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "32966974",
+      "title": "HDAC3 Silencing Enhances Acute B Lymphoblastic Leukaemia Cells Sensitivity to MG-132 by Inhibiting the JAK/Signal Transducer and Activator of Transcription 3 Signaling Pathway.",
+      "journal": "Chemotherapy",
+      "year": "2020",
+      "authors": [
+        "Guo Y",
+        "Li X",
+        "He Z",
+        "Ma D",
+        "Zhang Z",
+        "Wang W",
+        "Xiong J",
+        "Kuang X",
+        "Wang J"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "21499287",
+      "title": "Proteasome inhibitor MG-132 induces C6 glioma cell apoptosis via oxidative stress.",
+      "journal": "Acta pharmacologica Sinica",
+      "year": "2011",
+      "authors": [
+        "Fan WH",
+        "Hou Y",
+        "Meng FK",
+        "Wang XF",
+        "Luo YN",
+        "Ge PF"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "18435911",
+      "title": "Proteasome inhibitor MG-132 lowers gastric adenocarcinoma TMK1 cell proliferation via bone morphogenetic protein signaling.",
+      "journal": "Biochemical and biophysical research communications",
+      "year": "2008",
+      "authors": [
+        "Wu WK",
+        "Sung JJ",
+        "Yu L",
+        "Cho CH"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "34769210",
+      "title": "Structural and Biochemical Analysis of the Dual Inhibition of MG-132 against SARS-CoV-2 Main Protease (Mpro/3CLpro) and Human Cathepsin-L.",
+      "journal": "International journal of molecular sciences",
+      "year": "2021",
+      "authors": [
+        "Costanzi E",
+        "Kuzikov M",
+        "Esposito F",
+        "Albani S",
+        "Demitri N",
+        "Giabbai B",
+        "Camasta M",
+        "Tramontano E",
+        "Rossetti G",
+        "Zaliani A",
+        "Storici P"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "19557642",
+      "title": "Proteasome inhibitor MG-132 mediated expression of p27Kip1 via S-phase kinase protein 2 degradation induces cell cycle coupled apoptosis in primary effusion lymphoma cells.",
+      "journal": "Leukemia & lymphoma",
+      "year": "2009",
+      "authors": [
+        "Hussain AR",
+        "Ahmed M",
+        "Ahmed SO",
+        "Al-Thari S",
+        "Khan AS",
+        "Razack S",
+        "Platanias LC",
+        "Al-Kuraya KS",
+        "Uddin S"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "26648402",
+      "title": "Induction of autophagy by the MG‑132 proteasome inhibitor is associated with endoplasmic reticulum stress in MCF‑7 cells.",
+      "journal": "Molecular medicine reports",
+      "year": "2016",
+      "authors": [
+        "Bao W",
+        "Gu Y",
+        "Ta L",
+        "Wang K",
+        "Xu Z"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "24992982",
+      "title": "MCPIP1 contributes to the toxicity of proteasome inhibitor MG-132 in HeLa cells by the inhibition of NF-κB.",
+      "journal": "Molecular and cellular biochemistry",
+      "year": "2014",
+      "authors": [
+        "Skalniak L",
+        "Dziendziel M",
+        "Jura J"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "21114028",
+      "title": "[Protected effects of MG-132 on apoptosis induced by deltamethrin in rat's hippocampus].",
+      "journal": "Zhonghua lao dong wei sheng zhi ye bing za zhi = Zhonghua laodong weisheng zhiyebing zazhi = Chinese journal of industrial hygiene and occupational diseases",
+      "year": "2010",
+      "authors": [
+        "Huang XW",
+        "Qing Y",
+        "Liang YF",
+        "Shi N"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "16870259",
+      "title": "Proteasome inhibitor MG-132 induces dopaminergic degeneration in cell culture and animal models.",
+      "journal": "Neurotoxicology",
+      "year": "2006",
+      "authors": [
+        "Sun F",
+        "Anantharam V",
+        "Zhang D",
+        "Latchoumycandane C",
+        "Kanthasamy A",
+        "Kanthasamy AG"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "22193447",
+      "title": "[MG-132 enhances MSCs survival and IL-10 secretion under hypoxia and serum deprivation condition].",
+      "journal": "Sheng li xue bao : [Acta physiologica Sinica]",
+      "year": "2011",
+      "authors": [
+        "Li ZW",
+        "Fu R",
+        "Zhao YR",
+        "Zhao C",
+        "Li ZY"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "16301819",
+      "title": "Osmotic regulation of MG-132-induced MAP-kinase phosphatase MKP-1 expression in H4IIE rat hepatoma cells.",
+      "journal": "Cellular physiology and biochemistry : international journal of experimental cellular physiology, biochemistry, and pharmacology",
+      "year": "2005",
+      "authors": [
+        "Lornejad-Schafer M",
+        "Schafer C",
+        "Richter L",
+        "Grune T",
+        "Haussinger D",
+        "Schliess F"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "27113178",
+      "title": "[Synergistic anti-tumor effect of obatoclax and MG-132 in esophageal cancer cell line CaES-17].",
+      "journal": "Nan fang yi ke da xue xue bao = Journal of Southern Medical University",
+      "year": "2016",
+      "authors": [
+        "Zhao XY",
+        "Lin QH",
+        "Que FC",
+        "Gu CP",
+        "Yu L",
+        "Liu SW"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "24729342",
+      "title": "Nigrostriatal pathway degeneration in rats after intraperitoneal administration of proteasome inhibitor MG-132.",
+      "journal": "Folia neuropathologica",
+      "year": "2014",
+      "authors": [
+        "Wójcik S",
+        "Spodnik JH",
+        "Spodnik E",
+        "Dziewiątkowski J",
+        "Moryś J"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "20080137",
+      "title": "Decreased replication of human respiratory syncytial virus treated with the proteasome inhibitor MG-132.",
+      "journal": "Virus research",
+      "year": "2010",
+      "authors": [
+        "Lupfer C",
+        "Pastey MK"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "20450628",
+      "title": "[Effect of MG-132 upon the expression of intercellular adhesion molecule-1 in cerulein-induced acute pancreatitis in mice].",
+      "journal": "Zhonghua yi xue za zhi",
+      "year": "2010",
+      "authors": [
+        "Xu CF",
+        "Xia SJ"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "14507673",
+      "title": "Proteasome inhibitor (MG-132) treatment of mdx mice rescues the expression and membrane localization of dystrophin and dystrophin-associated proteins.",
+      "journal": "The American journal of pathology",
+      "year": "2003",
+      "authors": [
+        "Bonuccelli G",
+        "Sotgia F",
+        "Schubert W",
+        "Park DS",
+        "Frank PG",
+        "Woodman SE",
+        "Insabato L",
+        "Cammer M",
+        "Minetti C",
+        "Lisanti MP"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "29407584",
+      "title": "The combination of TRAIL and MG-132 induces apoptosis in both TRAIL-sensitive and TRAIL-resistant human follicular lymphoma cells.",
+      "journal": "Leukemia research",
+      "year": "2018",
+      "authors": [
+        "Adem J",
+        "Eray M",
+        "Eeva J",
+        "Nuutinen U",
+        "Pelkonen J"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "16674919",
+      "title": "Proteasome inhibitor MG-132 enhances whole-body protein turnover in rat.",
+      "journal": "Biochemical and biophysical research communications",
+      "year": "2006",
+      "authors": [
+        "Holecek M",
+        "Muthny T",
+        "Kovarik M",
+        "Sispera L"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "21215737",
+      "title": "Proteasome inhibitors MG-132 and bortezomib induce AKR1C1, AKR1C3, AKR1B1, and AKR1B10 in human colon cancer cell lines SW-480 and HT-29.",
+      "journal": "Chemico-biological interactions",
+      "year": "2011",
+      "authors": [
+        "Ebert B",
+        "Kisiela M",
+        "Wsól V",
+        "Maser E"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "18414391",
+      "title": "Bone morphogenetic protein signalling is required for the anti-mitogenic effect of the proteasome inhibitor MG-132 on colon cancer cells.",
+      "journal": "British journal of pharmacology",
+      "year": "2008",
+      "authors": [
+        "Wu WK",
+        "Sung JJ",
+        "Wu YC",
+        "Li ZJ",
+        "Yu L",
+        "Cho CH"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "16609961",
+      "title": "Proteasome inhibition by MG-132 induces apoptotic cell death and mitochondrial dysfunction in cultured rat brain oligodendrocytes but not in astrocytes.",
+      "journal": "Glia",
+      "year": "2006",
+      "authors": [
+        "Goldbaum O",
+        "Vollmer G",
+        "Richter-Landsberg C"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "22664331",
+      "title": "DJ-1 protein protects dopaminergic neurons against 6-OHDA/MG-132-induced neurotoxicity in rats.",
+      "journal": "Brain research bulletin",
+      "year": "2012",
+      "authors": [
+        "Sun SY",
+        "An CN",
+        "Pu XP"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "12067409",
+      "title": "Proteasome inhibitor MG-132 enhances the expression of interleukin-6 in human umbilical vein endothelial cells: Involvement of MAP/ERK kinase.",
+      "journal": "Immunology and cell biology",
+      "year": "2002",
+      "authors": [
+        "Shibata T",
+        "Imaizumi T",
+        "Tamo W",
+        "Matsumiya T",
+        "Kumagai M",
+        "Cui XF",
+        "Yoshida H",
+        "Takaya S",
+        "Fukuda I",
+        "Satoh K"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "17217621",
+      "title": "The proteasome inhibitor MG-132 protects hypoxic SiHa cervical carcinoma cells after cyclic hypoxia/reoxygenation from ionizing radiation.",
+      "journal": "Neoplasia (New York, N.Y.)",
+      "year": "2006",
+      "authors": [
+        "Pajonk F",
+        "Grumann T",
+        "McBride WH"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "16778216",
+      "title": "Comparative selectivity and specificity of the proteasome inhibitors BzLLLCOCHO, PS-341, and MG-132.",
+      "journal": "Cancer research",
+      "year": "2006",
+      "authors": [
+        "Crawford LJ",
+        "Walker B",
+        "Ovaa H",
+        "Chauhan D",
+        "Anderson KC",
+        "Morris TC",
+        "Irvine AE"
+      ],
+      "source": "ncbi_pubmed"
+    }
+  ]
+}

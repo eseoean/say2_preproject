@@ -1,0 +1,20 @@
+{
+  "input_features_path": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match/features_slim_exact_repo.parquet",
+  "input_y_path": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match/y_train_exact_repo.npy",
+  "output_X_path": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match_ml_smiles/X_ml_exact_slim_smiles.npy",
+  "output_y_path": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match_ml_smiles/y_ml_exact_slim_smiles.npy",
+  "output_keys_path": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match_ml_smiles/keys_ml_exact_slim_smiles.parquet",
+  "rows": 6366,
+  "feature_dim_total": 5593,
+  "feature_dim_numeric_slim": 5529,
+  "feature_dim_smiles_svd": 64,
+  "smiles_summary": {
+    "tfidf_shape": [
+      243,
+      3838
+    ],
+    "svd_dim": 64,
+    "explained_variance_sum": 0.6046993089779725,
+    "vectorizer_vocab_size": 3838
+  }
+}

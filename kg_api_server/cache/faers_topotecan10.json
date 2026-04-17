@@ -1,0 +1,54 @@
+{
+  "data": [
+    {
+      "event": "FEBRILE NEUTROPENIA",
+      "count": 537,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "OFF LABEL USE",
+      "count": 537,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "NEUTROPENIA",
+      "count": 492,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "ANAEMIA",
+      "count": 430,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "DISEASE PROGRESSION",
+      "count": 391,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "PYREXIA",
+      "count": 377,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "VOMITING",
+      "count": 376,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "THROMBOCYTOPENIA",
+      "count": 374,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "PRODUCT USE IN UNAPPROVED INDICATION",
+      "count": 360,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "NAUSEA",
+      "count": 313,
+      "source": "openfda_faers"
+    }
+  ]
+}

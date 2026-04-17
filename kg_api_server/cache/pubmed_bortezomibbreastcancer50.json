@@ -1,0 +1,824 @@
+{
+  "data": [
+    {
+      "pmid": "30793308",
+      "title": "Resistance to bortezomib in breast cancer cells that downregulate Bim through FOXA1 O-GlcNAcylation.",
+      "journal": "Journal of cellular physiology",
+      "year": "2019",
+      "authors": [
+        "Liu Y",
+        "Wang X",
+        "Zhu T",
+        "Zhang N",
+        "Wang L",
+        "Huang T",
+        "Cao Y",
+        "Li W",
+        "Zhang J"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "35114585",
+      "title": "ISRIB plus bortezomib triggers paraptosis in breast cancer cells via enhanced translation and subsequent proteotoxic stress.",
+      "journal": "Biochemical and biophysical research communications",
+      "year": "2022",
+      "authors": [
+        "Lee DM",
+        "Seo MJ",
+        "Lee HJ",
+        "Jin HJ",
+        "Choi KS"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "35352669",
+      "title": "Combination of Second-Generation Proteasome Inhibitor Carfilzomib with Bortezomib in Four Different Breast Cancer Cell Lines.",
+      "journal": "Anti-cancer agents in medicinal chemistry",
+      "year": "2022",
+      "authors": [
+        "Altundag EM",
+        "Yilmaz AM",
+        "Sahin A",
+        "Yilmaz BK"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "37306225",
+      "title": "Bortezomib-loaded mixed micelles realize a \"three-in-one\" effect for enhanced breast cancer treatment.",
+      "journal": "Biomaterials science",
+      "year": "2023",
+      "authors": [
+        "Liu J",
+        "Xu X",
+        "Li Y",
+        "Xu J",
+        "Zhao R",
+        "Liu S",
+        "Wu J",
+        "Zhang L",
+        "Zhang B"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "33904968",
+      "title": "Treating MCF7 breast cancer cell with proteasome inhibitor Bortezomib restores apoptotic factors and sensitizes cell to Docetaxel.",
+      "journal": "Medical oncology (Northwood, London, England)",
+      "year": "2021",
+      "authors": [
+        "Mehdizadeh K",
+        "Ataei F",
+        "Hosseinkhani S"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "16403809",
+      "title": "Bortezomib (VELCADE) in metastatic breast cancer: pharmacodynamics, biological effects, and prediction of clinical benefits.",
+      "journal": "Annals of oncology : official journal of the European Society for Medical Oncology",
+      "year": "2006",
+      "authors": [
+        "Yang CH",
+        "Gonzalez-Angulo AM",
+        "Reuben JM",
+        "Booser DJ",
+        "Pusztai L",
+        "Krishnamurthy S",
+        "Esseltine D",
+        "Stec J",
+        "Broglio KR",
+        "Islam R",
+        "Hortobagyi GN",
+        "Cristofanilli M"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "40609539",
+      "title": "Augment proteasome inhibitor efficacy activates CD8(+) T cell-mediated antitumor immunity in breast cancer.",
+      "journal": "Cell reports. Medicine",
+      "year": "2025",
+      "authors": [
+        "Tang D",
+        "Lin S",
+        "Zhou J",
+        "Lei JH",
+        "Shao F",
+        "Sun H",
+        "Chu X",
+        "Li L",
+        "He L",
+        "Qiao Y",
+        "Xu X",
+        "Deng CX"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "41079933",
+      "title": "Remodeling the Tumor Immune Environment in Breast Cancer via Bortezomib-based Combination Therapy.",
+      "journal": "International journal of biological sciences",
+      "year": "2025",
+      "authors": [
+        "Huang S",
+        "Chen Q"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "25530422",
+      "title": "The proteasome inhibitor Bortezomib (Velcade) as potential inhibitor of estrogen receptor-positive breast cancer.",
+      "journal": "International journal of cancer",
+      "year": "2015",
+      "authors": [
+        "Thaler S",
+        "Thiede G",
+        "Hengstler JG",
+        "Schad A",
+        "Schmidt M",
+        "Sleeman JP"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "38286854",
+      "title": "Repurposing proteasome inhibitors for improved treatment of triple-negative breast cancer.",
+      "journal": "Cell death discovery",
+      "year": "2024",
+      "authors": [
+        "Larsson P",
+        "Pettersson D",
+        "Olsson M",
+        "Sarathchandra S",
+        "Abramsson A",
+        "Zetterberg H",
+        "Ittner E",
+        "Forssell-Aronsson E",
+        "Kovács A",
+        "Karlsson P",
+        "Helou K",
+        "Parris TZ"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "40223780",
+      "title": "Nanoparticle Albumin-Bound Bortezomib: Enhanced Antitumor Efficacy and Tumor Accumulation in Breast Cancer Therapy.",
+      "journal": "Molecular pharmaceutics",
+      "year": "2025",
+      "authors": [
+        "Saremi Poor A",
+        "Davaeil B",
+        "Ramezanpour M",
+        "Shafiee Ardestani M",
+        "Moosavi-Movahedi AA",
+        "Asghari SM"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "22537901",
+      "title": "CIP2A is a target of bortezomib in human triple negative breast cancer cells.",
+      "journal": "Breast cancer research : BCR",
+      "year": "2012",
+      "authors": [
+        "Tseng LM",
+        "Liu CY",
+        "Chang KC",
+        "Chu PY",
+        "Shiau CW",
+        "Chen KF"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "29948483",
+      "title": "A novel and effective inhibitor combination involving bortezomib and OTSSP167 for breast cancer cells in light of label-free proteomic analysis.",
+      "journal": "Cell biology and toxicology",
+      "year": "2019",
+      "authors": [
+        "Okur E",
+        "Yerlikaya A"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "22101248",
+      "title": "Proteasome inhibitor bortezomib (PS-341) enhances RANKL-induced MDA-MB-231 breast cancer cell migration.",
+      "journal": "Molecular medicine reports",
+      "year": "2012",
+      "authors": [
+        "Zhang L",
+        "Teng Y",
+        "Zhang Y",
+        "Liu J",
+        "Xu L",
+        "Qu J",
+        "Hou K",
+        "Liu Y",
+        "Qu X"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "25305590",
+      "title": "A proteomic analysis of p53-independent induction of apoptosis by bortezomib in 4T1 breast cancer cell line.",
+      "journal": "Journal of proteomics",
+      "year": "2015",
+      "authors": [
+        "Yerlikaya A",
+        "Okur E",
+        "Baykal AT",
+        "Acılan C",
+        "Boyacı I",
+        "Ulukaya E"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "25575864",
+      "title": "Delivery of bortezomib with nanoparticles for basal-like triple-negative breast cancer therapy.",
+      "journal": "Journal of controlled release : official journal of the Controlled Release Society",
+      "year": "2015",
+      "authors": [
+        "Shen S",
+        "Du XJ",
+        "Liu J",
+        "Sun R",
+        "Zhu YH",
+        "Wang J"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "40494466",
+      "title": "Gelatin-dopamine-based dual-responsive nanogels for tumor-targeted bortezomib delivery: Minimizing systemic toxicity and enhancing breast cancer therapy.",
+      "journal": "International journal of biological macromolecules",
+      "year": "2025",
+      "authors": [
+        "Zheng Z",
+        "Sun L",
+        "Li Y",
+        "Wang S",
+        "Wang P",
+        "Qiu S",
+        "Tian Y",
+        "Chen H"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "39848459",
+      "title": "The extracts from centaurea species abolished the cytotoxic effects of doxorubicin on breast cancer cell line - MCF-7 and bortezomib on prostate cancer cell line- PC3.",
+      "journal": "Food and chemical toxicology : an international journal published for the British Industrial Biological Research Association",
+      "year": "2025",
+      "authors": [
+        "Józefczyk A",
+        "Adamczuk G",
+        "Humeniuk E",
+        "Iwan M",
+        "Kubik J",
+        "Łubek-Nguyen A",
+        "Porębska K",
+        "Madej-Czerwonka B",
+        "Czerwonka M",
+        "Korga-Plewko A"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "23919744",
+      "title": "Anticancer agent ukrain and bortezomib combination is synergistic in 4T1 breast cancer cells.",
+      "journal": "Anti-cancer agents in medicinal chemistry",
+      "year": "2014",
+      "authors": [
+        "Savran B",
+        "Yerlikaya A",
+        "Erdoğan E",
+        "Genç O"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "20110775",
+      "title": "Bortezomib blocks the catabolic process of autophagy via a cathepsin-dependent mechanism, affects endoplasmic reticulum stress and induces caspase-dependent cell death in antiestrogen-sensitive and resistant ER+ breast cancer cells.",
+      "journal": "Autophagy",
+      "year": "2010",
+      "authors": [
+        "Periyasamy-Thandavan S",
+        "Jackson WH",
+        "Samaddar JS",
+        "Erickson B",
+        "Barrett JR",
+        "Raney L",
+        "Gopal E",
+        "Ganapathy V",
+        "Hill WD",
+        "Bhalla KN",
+        "Schoenlein PV"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "27347145",
+      "title": "A novel combination treatment for breast cancer cells involving BAPTA-AM and proteasome inhibitor bortezomib.",
+      "journal": "Oncology letters",
+      "year": "2016",
+      "authors": [
+        "Yerlikaya A",
+        "Erdoğan E",
+        "Okur E",
+        "Yerlikaya Ş",
+        "Savran B"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "22964432",
+      "title": "Roles of estrogen receptor and p21(Waf1) in bortezomib-induced growth inhibition in human breast cancer cells.",
+      "journal": "Molecular cancer research : MCR",
+      "year": "2012",
+      "authors": [
+        "Maynadier M",
+        "Shi J",
+        "Vaillant O",
+        "Gary-Bobo M",
+        "Basile I",
+        "Gleizes M",
+        "Cathiard AM",
+        "Wah JL",
+        "Sheikh MS",
+        "Garcia M"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "16546981",
+      "title": "Differential cellular and molecular effects of bortezomib, a proteasome inhibitor, in human breast cancer cells.",
+      "journal": "Molecular cancer therapeutics",
+      "year": "2006",
+      "authors": [
+        "Codony-Servat J",
+        "Tapia MA",
+        "Bosch M",
+        "Oliva C",
+        "Domingo-Domenech J",
+        "Mellado B",
+        "Rolfe M",
+        "Ross JS",
+        "Gascon P",
+        "Rovira A",
+        "Albanell J"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "24481412",
+      "title": "IKKβ inhibitor in combination with bortezomib induces cytotoxicity in breast cancer cells.",
+      "journal": "International journal of oncology",
+      "year": "2014",
+      "authors": [
+        "Hideshima H",
+        "Yoshida Y",
+        "Ikeda H",
+        "Hide M",
+        "Iwasaki A",
+        "Anderson KC",
+        "Hideshima T"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "19417138",
+      "title": "The role of ATF4 stabilization and autophagy in resistance of breast cancer cells treated with Bortezomib.",
+      "journal": "Cancer research",
+      "year": "2009",
+      "authors": [
+        "Milani M",
+        "Rzymski T",
+        "Mellor HR",
+        "Pike L",
+        "Bottini A",
+        "Generali D",
+        "Harris AL"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "21147690",
+      "title": "Phase II study of bortezomib and pegylated liposomal doxorubicin in the treatment of metastatic breast cancer.",
+      "journal": "Clinical breast cancer",
+      "year": "2010",
+      "authors": [
+        "Irvin WJ Jr",
+        "Orlowski RZ",
+        "Chiu WK",
+        "Carey LA",
+        "Collichio FA",
+        "Bernard PS",
+        "Stijleman IJ",
+        "Perou C",
+        "Ivanova A",
+        "Dees EC"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "24385108",
+      "title": "Efficient induction of apoptosis by proteasome inhibitor: bortezomib in the human breast cancer cell line MDA-MB-231.",
+      "journal": "Molecular and cellular biochemistry",
+      "year": "2014",
+      "authors": [
+        "Krętowski R",
+        "Borzym-Kluczyk M",
+        "Cechowska-Pasko M"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "22134540",
+      "title": "A phase II study of the combination of endocrine treatment and bortezomib in patients with endocrine-resistant metastatic breast cancer.",
+      "journal": "Oncology reports",
+      "year": "2012",
+      "authors": [
+        "Trinh XB",
+        "Sas L",
+        "Van Laere SJ",
+        "Prové A",
+        "Deleu I",
+        "Rasschaert M",
+        "Van de Velde H",
+        "Vinken P",
+        "Vermeulen PB",
+        "Van Dam PA",
+        "Wojtasik A",
+        "De Mesmaeker P",
+        "Tjalma WA",
+        "Dirix LY"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "25757219",
+      "title": "Role of bone-anabolic agents in the treatment of breast cancer bone metastases.",
+      "journal": "Breast cancer research : BCR",
+      "year": "2014",
+      "authors": [
+        "Suvannasankha A",
+        "Chirgwin JM"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "20701607",
+      "title": "Combined effects of lapatinib and bortezomib in human epidermal receptor 2 (HER2)-overexpressing breast cancer cells and activity of bortezomib against lapatinib-resistant breast cancer cells.",
+      "journal": "Cancer science",
+      "year": "2010",
+      "authors": [
+        "Ma C",
+        "Niu X",
+        "Luo J",
+        "Shao Z",
+        "Shen K"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "22477712",
+      "title": "The p53-independent induction of apoptosis in breast cancer cells in response to proteasome inhibitor bortezomib.",
+      "journal": "Tumour biology : the journal of the International Society for Oncodevelopmental Biology and Medicine",
+      "year": "2012",
+      "authors": [
+        "Yerlikaya A",
+        "Okur E",
+        "Ulukaya E"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "16954476",
+      "title": "Cyclin D1 overexpression and response to bortezomib treatment in a breast cancer model.",
+      "journal": "Journal of the National Cancer Institute",
+      "year": "2006",
+      "authors": [
+        "Ishii Y",
+        "Pirkmaier A",
+        "Alvarez JV",
+        "Frank DA",
+        "Keselman I",
+        "Logothetis D",
+        "Mandeli J",
+        "O'Connell MJ",
+        "Waxman S",
+        "Germain D"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "23792097",
+      "title": "Combined treatment with SAHA, bortezomib, and clarithromycin for concomitant targeting of aggresome formation and intracellular proteolytic pathways enhances ER stress-mediated cell death in breast cancer cells.",
+      "journal": "Biochemical and biophysical research communications",
+      "year": "2013",
+      "authors": [
+        "Komatsu S",
+        "Moriya S",
+        "Che XF",
+        "Yokoyama T",
+        "Kohno N",
+        "Miyazawa K"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "35933456",
+      "title": "ErbB2/Her2-dependent downregulation of a cell death-promoting protein BLNK in breast cancer cells is required for 3D breast tumor growth.",
+      "journal": "Cell death & disease",
+      "year": "2022",
+      "authors": [
+        "Liu X",
+        "Chipurupalli S",
+        "Jiang P",
+        "Tavasoli M",
+        "Yoo BH",
+        "McPhee M",
+        "Mazinani S",
+        "Francia G",
+        "Kerbel RS",
+        "Rosen KV"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "28721390",
+      "title": "Randomized phase II trial of fulvestrant alone or in combination with bortezomib in hormone receptor-positive metastatic breast cancer resistant to aromatase inhibitors: a New York Cancer Consortium trial.",
+      "journal": "NPJ breast cancer",
+      "year": "2016",
+      "authors": [
+        "Adelson K",
+        "Ramaswamy B",
+        "Sparano JA",
+        "Christos PJ",
+        "Wright JJ",
+        "Raptis G",
+        "Han G",
+        "Villalona-Calero M",
+        "Ma CX",
+        "Hershman D",
+        "Baar J",
+        "Klein P",
+        "Cigler T",
+        "Budd GT",
+        "Novik Y",
+        "Tan AR",
+        "Tannenbaum S",
+        "Goel A",
+        "Levine E",
+        "Shapiro CL",
+        "Andreopoulou E",
+        "Naughton M",
+        "Kalinsky K",
+        "Waxman S",
+        "Germain D"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "18454159",
+      "title": "Bortezomib/docetaxel combination therapy in patients with anthracycline-pretreated advanced/metastatic breast cancer: a phase I/II dose-escalation study.",
+      "journal": "British journal of cancer",
+      "year": "2008",
+      "authors": [
+        "Awada A",
+        "Albanell J",
+        "Canney PA",
+        "Dirix LY",
+        "Gil T",
+        "Cardoso F",
+        "Gascon P",
+        "Piccart MJ",
+        "Baselga J"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "33775688",
+      "title": "Nuclear factor-κB signaling inhibitors revert multidrug-resistance in breast cancer cells.",
+      "journal": "Chemico-biological interactions",
+      "year": "2021",
+      "authors": [
+        "Abdin SM",
+        "Tolba MF",
+        "Zaher DM",
+        "Omar HA"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "20843837",
+      "title": "A proteasome inhibitor, bortezomib, inhibits breast cancer growth and reduces osteolysis by downregulating metastatic genes.",
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "year": "2010",
+      "authors": [
+        "Jones MD",
+        "Liu JC",
+        "Barthel TK",
+        "Hussain S",
+        "Lovria E",
+        "Cheng D",
+        "Schoonmaker JA",
+        "Mulay S",
+        "Ayers DC",
+        "Bouxsein ML",
+        "Stein GS",
+        "Mukherjee S",
+        "Lian JB"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "31939174",
+      "title": "Interleukin-8-Induced Invasion Assay in Triple-Negative Breast Cancer Cells.",
+      "journal": "Methods in molecular biology (Clifton, N.J.)",
+      "year": "2020",
+      "authors": [
+        "Uddin MM",
+        "Gaire B",
+        "Deza B",
+        "Vancurova I"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "25375375",
+      "title": "Bortezomib enhances cancer cell death by blocking the autophagic flux through stimulating ERK phosphorylation.",
+      "journal": "Cell death & disease",
+      "year": "2014",
+      "authors": [
+        "Kao C",
+        "Chao A",
+        "Tsai CL",
+        "Chuang WC",
+        "Huang WP",
+        "Chen GC",
+        "Lin CY",
+        "Wang TH",
+        "Wang HS",
+        "Lai CH"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "27486994",
+      "title": "Guideline Adherence Regarding the Use of Expensive Drugs in Daily Practice: The Examples of Trastuzumab in Breast Cancer and Bortezomib in Multiple Myeloma.",
+      "journal": "Oncology research and treatment",
+      "year": "2016",
+      "authors": [
+        "Boons CC",
+        "Wagner C",
+        "Hugtenburg JG"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "17952740",
+      "title": "A phase II study of single agent bortezomib in patients with metastatic breast cancer: a single institution experience.",
+      "journal": "Cancer investigation",
+      "year": "2007",
+      "authors": [
+        "Engel RH",
+        "Brown JA",
+        "Von Roenn JH",
+        "O'Regan RM",
+        "Bergan R",
+        "Badve S",
+        "Rademaker A",
+        "Gradishar WJ"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "15687646",
+      "title": "The proteasome as a novel target for the treatment of breast cancer.",
+      "journal": "Breast disease",
+      "year": "2002",
+      "authors": [
+        "Adams J"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "17148762",
+      "title": "Bortezomib (PS-341, Velcade) increases the efficacy of trastuzumab (Herceptin) in HER-2-positive breast cancer cells in a synergistic manner.",
+      "journal": "Molecular cancer therapeutics",
+      "year": "2006",
+      "authors": [
+        "Cardoso F",
+        "Durbecq V",
+        "Laes JF",
+        "Badran B",
+        "Lagneaux L",
+        "Bex F",
+        "Desmedt C",
+        "Willard-Gallo K",
+        "Ross JS",
+        "Burny A",
+        "Piccart M",
+        "Sotiriou C"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "39962810",
+      "title": "Single Cell Inference of Cancer Drug Response Using Pathway-Based Transformer Network.",
+      "journal": "Small methods",
+      "year": "2025",
+      "authors": [
+        "Yao Y",
+        "Xu Y",
+        "Zhang Y",
+        "Gui Y",
+        "Bai Q",
+        "Zhu Z",
+        "Peng H",
+        "Zhou Y",
+        "Chen ZJ",
+        "Sun J",
+        "Su J"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "25837675",
+      "title": "MAP17 (PDZKIP1) Expression Determines Sensitivity to the Proteasomal Inhibitor Bortezomib by Preventing Cytoprotective Autophagy and NFκB Activation in Breast Cancer.",
+      "journal": "Molecular cancer therapeutics",
+      "year": "2015",
+      "authors": [
+        "Muñoz-Galván S",
+        "Gutierrez G",
+        "Perez M",
+        "Carnero A"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "40734188",
+      "title": "Structure-Driven Mechanisms and Synergistic Approaches of Polyphyllin VII in Breast Cancer Therapy.",
+      "journal": "Archiv der Pharmazie",
+      "year": "2025",
+      "authors": [
+        "Hamouda AO",
+        "Sarg NH",
+        "Ibrahim SI",
+        "Hamdy R",
+        "Soliman SSM",
+        "Omar HA"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "23660746",
+      "title": "Effect of bortezomib in combination with cisplatin and 5‑fluorouracil on 4T1 breast cancer cells.",
+      "journal": "Molecular medicine reports",
+      "year": "2013",
+      "authors": [
+        "Yerlikaya A",
+        "Altıkat S",
+        "Irmak R",
+        "Cavga FZ",
+        "Kocacan SA",
+        "Boyaci I"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "27813130",
+      "title": "P-Glycoprotein Inhibition Sensitizes Human Breast Cancer Cells to Proteasome Inhibitors.",
+      "journal": "Journal of cellular biochemistry",
+      "year": "2017",
+      "authors": [
+        "Deshmukh RR",
+        "Kim S",
+        "Elghoul Y",
+        "Dou QP"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "29080972",
+      "title": "The Proteasome and Myeloma-Associated Bone Disease.",
+      "journal": "Calcified tissue international",
+      "year": "2018",
+      "authors": [
+        "Accardi F",
+        "Toscani D",
+        "Costa F",
+        "Aversa F",
+        "Giuliani N"
+      ],
+      "source": "ncbi_pubmed"
+    }
+  ]
+}

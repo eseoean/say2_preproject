@@ -1,0 +1,671 @@
+{
+  "data": [
+    {
+      "pmid": "32664667",
+      "title": "Irinotecan-Still an Important Player in Cancer Chemotherapy: A Comprehensive Overview.",
+      "journal": "International journal of molecular sciences",
+      "year": "2020",
+      "authors": [
+        "Kciuk M",
+        "Marciniak B",
+        "Kontek R"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "35445479",
+      "title": "Liposomal irinotecan (Onivyde): Exemplifying the benefits of nanotherapeutic drugs.",
+      "journal": "Cancer science",
+      "year": "2022",
+      "authors": [
+        "Milano G",
+        "Innocenti F",
+        "Minami H"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "29520731",
+      "title": "Individualization of Irinotecan Treatment: A Review of Pharmacokinetics, Pharmacodynamics, and Pharmacogenetics.",
+      "journal": "Clinical pharmacokinetics",
+      "year": "2018",
+      "authors": [
+        "de Man FM",
+        "Goey AKL",
+        "van Schaik RHN",
+        "Mathijssen RHJ",
+        "Bins S"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "36184748",
+      "title": "Irinotecan dose schedule for the treatment of Ewing sarcoma.",
+      "journal": "Pediatric blood & cancer",
+      "year": "2023",
+      "authors": [
+        "Slotkin EK",
+        "Meyers PA"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "18660722",
+      "title": "Irinotecan toxicity.",
+      "journal": "Current opinion in supportive and palliative care",
+      "year": "2007",
+      "authors": [
+        "Anthony L"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "9932079",
+      "title": "[Irinotecan pharmacokinetics].",
+      "journal": "Bulletin du cancer",
+      "year": "1998",
+      "authors": [
+        "Chabot GG",
+        "Robert J",
+        "Lokiec F",
+        "Canal P"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "39820839",
+      "title": "Liposomal Irinotecan: A Review as First-Line Therapy in Metastatic Pancreatic Adenocarcinoma.",
+      "journal": "Drugs",
+      "year": "2025",
+      "authors": [
+        "Brown MB",
+        "Blair HA"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "35278766",
+      "title": "Randomized phase 3 study of the anti-disialoganglioside antibody dinutuximab and irinotecan vs irinotecan or topotecan for second-line treatment of small cell lung cancer.",
+      "journal": "Lung cancer (Amsterdam, Netherlands)",
+      "year": "2022",
+      "authors": [
+        "Edelman MJ",
+        "Dvorkin M",
+        "Laktionov K",
+        "Navarro A",
+        "Juan-Vidal O",
+        "Kozlov V",
+        "Golden G",
+        "Jordan O",
+        "Deng CQ",
+        "Bentsion D",
+        "Chouaid C",
+        "Dechev H",
+        "Dowlati A",
+        "Fernández Núñez N",
+        "Ivashchuk O",
+        "Kiladze I",
+        "Kortua T",
+        "Leighl N",
+        "Luft A",
+        "Makharadze T",
+        "Min Y",
+        "Quantin X",
+        "DISTINCT study investigators"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "38677535",
+      "title": "Mechanisms and emerging strategies for irinotecan-induced diarrhea.",
+      "journal": "European journal of pharmacology",
+      "year": "2024",
+      "authors": [
+        "Xu S",
+        "Lan H",
+        "Huang C",
+        "Ge X",
+        "Zhu J"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "30514181",
+      "title": "Irinotecan toxicity during treatment of metastatic colorectal cancer: focus on pharmacogenomics and personalized medicine.",
+      "journal": "Tumori",
+      "year": "2020",
+      "authors": [
+        "Paulík A",
+        "Nekvindová J",
+        "Filip S"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "28401446",
+      "title": "Liposomal Irinotecan: A Review in Metastatic Pancreatic Adenocarcinoma.",
+      "journal": "Drugs",
+      "year": "2017",
+      "authors": [
+        "Lamb YN",
+        "Scott LJ"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "9726099",
+      "title": "Irinotecan in cervical cancer.",
+      "journal": "Oncology (Williston Park, N.Y.)",
+      "year": "1998",
+      "authors": [
+        "Kavanagh JJ",
+        "Verschraegen CF",
+        "Kudelka AP"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "9726089",
+      "title": "Pharmacology of irinotecan.",
+      "journal": "Oncology (Williston Park, N.Y.)",
+      "year": "1998",
+      "authors": [
+        "Kuhn JG"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "8911750",
+      "title": "Irinotecan (CPT-11): a brief overview.",
+      "journal": "Clinical and experimental pharmacology & physiology",
+      "year": "1996",
+      "authors": [
+        "Rivory LP"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "38706404",
+      "title": "Irinotecan dosing and pharmacogenomics: a comprehensive exploration based on UGT1A1 variants and emerging insights.",
+      "journal": "Journal of chemotherapy (Florence, Italy)",
+      "year": "2025",
+      "authors": [
+        "Faisal MS",
+        "Hussain I",
+        "Ikram MA",
+        "Shah SB",
+        "Rehman A",
+        "Iqbal W"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "26604633",
+      "title": "Irinotecan, a key chemotherapeutic drug for metastatic colorectal cancer.",
+      "journal": "World journal of gastroenterology",
+      "year": "2015",
+      "authors": [
+        "Fujita K",
+        "Kubota Y",
+        "Ishida H",
+        "Sasaki Y"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "15469406",
+      "title": "Pharmacogenetics of irinotecan toxicity.",
+      "journal": "Pharmacogenomics",
+      "year": "2004",
+      "authors": [
+        "Marsh S",
+        "McLeod HL"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "14599083",
+      "title": "Irinotecan (Campto) in the treatment of pancreatic cancer.",
+      "journal": "Expert review of anticancer therapy",
+      "year": "2003",
+      "authors": [
+        "Pizzolato JF",
+        "Saltz LB"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "11230497",
+      "title": "Irinotecan in the treatment of colorectal cancer: clinical overview.",
+      "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+      "year": "2001",
+      "authors": [
+        "Vanhoefer U",
+        "Harstrick A",
+        "Achterrath W",
+        "Cao S",
+        "Seeber S",
+        "Rustum YM"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "9342501",
+      "title": "Clinical pharmacokinetics of irinotecan.",
+      "journal": "Clinical pharmacokinetics",
+      "year": "1997",
+      "authors": [
+        "Chabot GG"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "19653336",
+      "title": "Irinotecan therapy and molecular targets in colorectal cancer: a systemic review.",
+      "journal": "World journal of gastroenterology",
+      "year": "2009",
+      "authors": [
+        "Weekes J",
+        "Lam AK",
+        "Sebesan S",
+        "Ho YH"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "29286571",
+      "title": "Irinotecan-induced muscular contractions.",
+      "journal": "Pediatric blood & cancer",
+      "year": "2018",
+      "authors": [
+        "Naviglio S",
+        "Rabusin M"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "18722784",
+      "title": "Irinotecan in the treatment of elderly patients with advanced colorectal cancer.",
+      "journal": "Critical reviews in oncology/hematology",
+      "year": "2008",
+      "authors": [
+        "Sastre J",
+        "Puente J",
+        "García-Saenz JA",
+        "Díaz-Rubio E"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "37470120",
+      "title": "UGT1A1 genotype-guided dosing of irinotecan: time to prioritize patient safety.",
+      "journal": "Pharmacogenomics",
+      "year": "2023",
+      "authors": [
+        "Peeters SL",
+        "Deenen MJ",
+        "Thijs AM",
+        "Hulshof EC",
+        "Mathijssen RH",
+        "Gelderblom H",
+        "Guchelaar HJ",
+        "Swen JJ"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "12109804",
+      "title": "Irinotecan for the treatment of cervical cancer.",
+      "journal": "Oncology (Williston Park, N.Y.)",
+      "year": "2002",
+      "authors": [
+        "Verschraegen CF"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "29609559",
+      "title": "Irinotecan-containing doublet treatment versus irinotecan monotherapy as second-line choice for advanced gastric cancer.",
+      "journal": "BMC gastroenterology",
+      "year": "2018",
+      "authors": [
+        "Yang L",
+        "Jiang X",
+        "Yan H",
+        "Li Y",
+        "Zhen H",
+        "Chang B",
+        "Kariminia S",
+        "Li Q"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "9726096",
+      "title": "Gastrointestinal toxicity or irinotecan.",
+      "journal": "Oncology (Williston Park, N.Y.)",
+      "year": "1998",
+      "authors": [
+        "Hecht JR"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "26469869",
+      "title": "Irinotecan-based regimens for recurrent glioblastoma multiforme: [corrected] a systematic review.",
+      "journal": "Expert review of neurotherapeutics",
+      "year": "2015",
+      "authors": [
+        "Abdel-Rahman O",
+        "Fouad M"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "10630363",
+      "title": "Irinotecan in cancers of the lung and cervix.",
+      "journal": "Anti-cancer drugs",
+      "year": "1999",
+      "authors": [
+        "Sandler A",
+        "van Oosterom AT"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "15864388",
+      "title": "Irinotecan-induced colitis.",
+      "journal": "International journal of surgical pathology",
+      "year": "2005",
+      "authors": [
+        "Sandmeier D",
+        "Chaubert P",
+        "Bouzourene H"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "37337890",
+      "title": "Pharmacokinetic profile of irinotecan in patients with chronic kidney disease: Two cases and literature review.",
+      "journal": "British journal of clinical pharmacology",
+      "year": "2023",
+      "authors": [
+        "Chui CY",
+        "Moes DJAR",
+        "Koolen SLW",
+        "Swen JJ",
+        "Gelderblom H"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "29178025",
+      "title": "Pegylated Liposomal Irinotecan Hydrochloride Trihydrate for Treating Pancreatic Cancer After Gemcitabine: An Evidence Review Group Perspective of a NICE Single Technology Appraisal.",
+      "journal": "PharmacoEconomics",
+      "year": "2018",
+      "authors": [
+        "Fleeman N",
+        "Abdulla A",
+        "Bagust A",
+        "Beale S",
+        "Richardson M",
+        "Stainthorpe A",
+        "Boland A",
+        "Kotas E",
+        "McEntee J",
+        "Palmer D"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "33130913",
+      "title": "Irinotecan-induced intestinal mucositis in mice: a histopathological study.",
+      "journal": "Cancer chemotherapy and pharmacology",
+      "year": "2021",
+      "authors": [
+        "Boeing T",
+        "Gois MB",
+        "de Souza P",
+        "Somensi LB",
+        "Sant Ana DMG",
+        "da Silva LM"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "16257834",
+      "title": "Clinical pharmacogenetics of irinotecan (CPT-11).",
+      "journal": "Drug metabolism reviews",
+      "year": "2005",
+      "authors": [
+        "Ando Y",
+        "Hasegawa Y"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "19852077",
+      "title": "Irinotecan and its active metabolite, SN-38: review of bioanalytical methods and recent update from clinical pharmacology perspectives.",
+      "journal": "Biomedical chromatography : BMC",
+      "year": "2010",
+      "authors": [
+        "Ramesh M",
+        "Ahlawat P",
+        "Srinivas NR"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "38715491",
+      "title": "[Delayed diarrhea induced by irinotecan: from the perspective of gut microbiota].",
+      "journal": "Zhonghua nei ke za zhi",
+      "year": "2024",
+      "authors": [
+        "Zhang ZY",
+        "Duan LP"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "16503750",
+      "title": "Irinotecan in the treatment of small cell lung cancer: a review of patient safety considerations.",
+      "journal": "Expert opinion on drug safety",
+      "year": "2006",
+      "authors": [
+        "Kawahara M"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "33402591",
+      "title": "Optimum patient selection for irinotecan-containing regimens in metastatic colorectal cancer: Literature review and lessons from clinical practice.",
+      "journal": "Indian journal of cancer",
+      "year": "2021",
+      "authors": [
+        "Basade M",
+        "Mane A"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "8891470",
+      "title": "Irinotecan. A review of its pharmacological properties and clinical efficacy in the management of advanced colorectal cancer.",
+      "journal": "Drugs",
+      "year": "1996",
+      "authors": [
+        "Wiseman LR",
+        "Markham A"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "16959432",
+      "title": "Irinotecan in the treatment of colorectal cancer.",
+      "journal": "Cancer treatment reviews",
+      "year": "2006",
+      "authors": [
+        "Fuchs C",
+        "Mitchell EP",
+        "Hoff PM"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "21163137",
+      "title": "Irinotecan or oxaliplatin combined with 5-fluorouracil and leucovorin as first-line therapy for advanced colorectal cancer: a meta-analysis.",
+      "journal": "Chinese medical journal",
+      "year": "2010",
+      "authors": [
+        "Liang XB",
+        "Hou SH",
+        "Li YP",
+        "Wang LC",
+        "Zhang X",
+        "Yang J"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "35108028",
+      "title": "Revisiting UGT1A1 Pharmacogenetic Testing Before Irinotecan-Why Not?",
+      "journal": "JCO oncology practice",
+      "year": "2022",
+      "authors": [
+        "Emery LP",
+        "Brooks GA"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "36254072",
+      "title": "The efficacy of irinotecan supplementation for colorectal cancer: A meta-analysis of randomized controlled studies.",
+      "journal": "Medicine",
+      "year": "2022",
+      "authors": [
+        "Jiang W",
+        "Liu Q",
+        "Yang D",
+        "Yang SB"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "38870978",
+      "title": "Nanoliposomal irinotecan in advanced biliary tract cancers.",
+      "journal": "The lancet. Gastroenterology & hepatology",
+      "year": "2024",
+      "authors": [
+        "Malka D",
+        "Colle R"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "32795876",
+      "title": "A phase I trial of talazoparib and irinotecan with and without temozolomide in children and young adults with recurrent or refractory solid malignancies.",
+      "journal": "European journal of cancer (Oxford, England : 1990)",
+      "year": "2020",
+      "authors": [
+        "Federico SM",
+        "Pappo AS",
+        "Sahr N",
+        "Sykes A",
+        "Campagne O",
+        "Stewart CF",
+        "Clay MR",
+        "Bahrami A",
+        "McCarville MB",
+        "Kaste SC",
+        "Santana VM",
+        "Helmig S",
+        "Gartrell J",
+        "Shelat A",
+        "Brennan RC",
+        "Hawkins D",
+        "Godwin K",
+        "Bishop MW",
+        "Furman WL",
+        "Stewart E"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "18784279",
+      "title": "Experience with irinotecan for the treatment of malignant glioma.",
+      "journal": "Neuro-oncology",
+      "year": "2009",
+      "authors": [
+        "Vredenburgh JJ",
+        "Desjardins A",
+        "Reardon DA",
+        "Friedman HS"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "17090741",
+      "title": "Pharmacogenetics and irinotecan therapy.",
+      "journal": "American journal of health-system pharmacy : AJHP : official journal of the American Society of Health-System Pharmacists",
+      "year": "2006",
+      "authors": [
+        "Hahn KK",
+        "Wolff JJ",
+        "Kolesar JM"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "39575573",
+      "title": "Rifaximin alleviates irinotecan-induced diarrhea in mice model.",
+      "journal": "Annals of medicine",
+      "year": "2024",
+      "authors": [
+        "Huang C",
+        "Lan H",
+        "Bai M",
+        "Chen J",
+        "Xu S",
+        "Sun Q",
+        "Chen Q",
+        "Mao W",
+        "Jiang J",
+        "Zhu J"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "9726095",
+      "title": "Alternative dosing schedules for irinotecan.",
+      "journal": "Oncology (Williston Park, N.Y.)",
+      "year": "1998",
+      "authors": [
+        "Rothenberg ML",
+        "Kuhn JG",
+        "Schaaf LJ",
+        "Drengler RL",
+        "Eckhardt SG",
+        "Villalona-Calero MA",
+        "Hammond L",
+        "Miller LL",
+        "Petit RG",
+        "Rowinsky EK",
+        "Von Hoff DD"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "9726102",
+      "title": "Irinotecan and cisplatin in upper gastrointestinal malignancies.",
+      "journal": "Oncology (Williston Park, N.Y.)",
+      "year": "1998",
+      "authors": [
+        "Enzinger PC",
+        "Ilson DH",
+        "Saltz LB",
+        "O'Reilly EM",
+        "Kelsen DP"
+      ],
+      "source": "ncbi_pubmed"
+    }
+  ]
+}

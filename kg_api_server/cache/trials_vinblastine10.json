@@ -1,0 +1,141 @@
+{
+  "data": [
+    {
+      "nct_id": "NCT03058289",
+      "title": "A Phase 1/2 Safety Study of Intratumorally Dosed INT230-6",
+      "phase": "PHASE1, PHASE2",
+      "status": "COMPLETED",
+      "conditions": [
+        "Breast Cancer",
+        "Head and Neck Cancer",
+        "Squamous Cell Carcinoma",
+        "Lymphoma",
+        "Pancreatic Cancer",
+        "Liver Cancer",
+        "Colon Cancer",
+        "Lung Cancer",
+        "Bile Duct Cancer",
+        "Chordoma of Sacrum",
+        "Sarcoma"
+      ],
+      "lead_sponsor": "Intensity Therapeutics, Inc.",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT02840409",
+      "title": "Vinblastine +/- Bevacizumab in Children With Unresectable or Progressive Low Grade Glioma (LGG)",
+      "phase": "PHASE2",
+      "status": "ACTIVE_NOT_RECRUITING",
+      "conditions": [
+        "Low Grade Glioma"
+      ],
+      "lead_sponsor": "The Hospital for Sick Children",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT02177695",
+      "title": "S1314, Co-expression Extrapolation (COXEN) Program to Predict Chemotherapy Response in Patients With Bladder Cancer",
+      "phase": "PHASE2",
+      "status": "COMPLETED",
+      "conditions": [
+        "Bladder Cancer"
+      ],
+      "lead_sponsor": "SWOG Cancer Research Network",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT04781725",
+      "title": "INVINCIBLE TRIAL: Intratumoral INT230-6 in Breast Cancer",
+      "phase": "PHASE2",
+      "status": "UNKNOWN",
+      "conditions": [
+        "Breast Cancer"
+      ],
+      "lead_sponsor": "Ottawa Hospital Research Institute",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT00001302",
+      "title": "A Phase I Study of Infusional Chemotherapy With the P-Glycoprotein Antagonist PSC 833",
+      "phase": "PHASE1",
+      "status": "COMPLETED",
+      "conditions": [
+        "Breast Cancer",
+        "Kidney Neoplasm",
+        "Lymphoma",
+        "Neoplasm Metastasis",
+        "Ovarian Cancer"
+      ],
+      "lead_sponsor": "National Cancer Institute (NCI)",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT06358573",
+      "title": "Intratumoral INT230-6 Followed by Neoadjuvant Immuno-chemotherapy in Patients With Early TNBC. INVINCIBLE-4-SAKK",
+      "phase": "PHASE2",
+      "status": "RECRUITING",
+      "conditions": [
+        "Triple-negative Breast Cancer",
+        "TNBC - Triple-Negative Breast Cancer"
+      ],
+      "lead_sponsor": "Swiss Cancer Institute",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT00001498",
+      "title": "A Pilot Trial of Sequential Chemotherapy With Antimetabolite Induction, High-Dose Alkylating Agent Consolidation With Peripheral Blood Progenitor Cell Support, and Intensification With Paclitaxel and Doxorubicin for Patients With High-Risk Breast Cancer",
+      "phase": "PHASE2",
+      "status": "COMPLETED",
+      "conditions": [
+        "Breast Cancer",
+        "Breast Neoplasms"
+      ],
+      "lead_sponsor": "National Cancer Institute (NCI)",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT03907488",
+      "title": "Immunotherapy (Nivolumab or Brentuximab Vedotin) Plus Combination Chemotherapy in Treating Patients With Newly Diagnosed Stage III-IV Classic Hodgkin Lymphoma",
+      "phase": "PHASE3",
+      "status": "ACTIVE_NOT_RECRUITING",
+      "conditions": [
+        "Ann Arbor Stage III Hodgkin Lymphoma",
+        "Ann Arbor Stage III Lymphocyte-Depleted Classic Hodgkin Lymphoma",
+        "Ann Arbor Stage III Mixed Cellularity Classic Hodgkin Lymphoma",
+        "Ann Arbor Stage III Nodular Sclerosis Classic Hodgkin Lymphoma",
+        "Ann Arbor Stage IV Hodgkin Lymphoma",
+        "Ann Arbor Stage IV Lymphocyte-Depleted Classic Hodgkin Lymphoma",
+        "Ann Arbor Stage IV Mixed Cellularity Classic Hodgkin Lymphoma",
+        "Ann Arbor Stage IV Nodular Sclerosis Classic Hodgkin Lymphoma",
+        "Classic Hodgkin Lymphoma",
+        "Lymphocyte-Rich Classic Hodgkin Lymphoma"
+      ],
+      "lead_sponsor": "National Cancer Institute (NCI)",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT07120217",
+      "title": "Breast Cancer Risk Investigation in Grown-up Hodgkin Lymphoma Patients Treated With MBVD. Multicenter Retrospective Study on ≥200 Adult Female HL Patients Treated With ≥1 MBVD Cycle (NPLD, Bleomycin, Vinblastine, Dacarbazine). It Investigates Breast Cancer Incidence Post-treatment.",
+      "phase": "",
+      "status": "COMPLETED",
+      "conditions": [
+        "Hodgkin Disease",
+        "Breast Cancer",
+        "Liposomal Doxorubicin"
+      ],
+      "lead_sponsor": "Federico II University",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT02412670",
+      "title": "Chemotherapy Before Surgery in Treating Patients With High Grade Upper Urinary Tract Cancer",
+      "phase": "PHASE2",
+      "status": "COMPLETED",
+      "conditions": [
+        "High Grade Upper Tract Urothelial Carcinoma"
+      ],
+      "lead_sponsor": "ECOG-ACRIN Cancer Research Group",
+      "source": "clinicaltrials_gov_v2"
+    }
+  ]
+}

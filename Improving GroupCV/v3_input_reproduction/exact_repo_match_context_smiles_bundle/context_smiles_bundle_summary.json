@@ -1,0 +1,117 @@
+{
+  "starting_point": {
+    "features_path": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match/features_slim_exact_repo.parquet",
+    "y_path": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match/y_train_exact_repo.npy",
+    "rows": 6366,
+    "numeric_feature_dim": 5529
+  },
+  "strong_context": {
+    "columns": [
+      "TCGA_DESC",
+      "PATHWAY_NAME_NORMALIZED",
+      "classification",
+      "drug_bridge_strength",
+      "stage3_resolution_status"
+    ],
+    "full_categorical_columns": [
+      "classification",
+      "drug_bridge_strength",
+      "stage3_resolution_status",
+      "WEBRELEASE",
+      "drugbank_match_rule",
+      "chembl_match_rule",
+      "lincs_match_rule",
+      "admet_match_rule",
+      "cell_bridge_match_rule",
+      "TCGA_DESC",
+      "PATHWAY_NAME_NORMALIZED"
+    ],
+    "context_summary": {
+      "variant": "reconstructed_context_full",
+      "matched_rows": 6366,
+      "unmatched_rows": 0,
+      "match_rate": 1.0,
+      "categorical_columns": [
+        "classification",
+        "drug_bridge_strength",
+        "stage3_resolution_status",
+        "WEBRELEASE",
+        "drugbank_match_rule",
+        "chembl_match_rule",
+        "lincs_match_rule",
+        "admet_match_rule",
+        "cell_bridge_match_rule",
+        "TCGA_DESC",
+        "PATHWAY_NAME_NORMALIZED"
+      ],
+      "column_non_missing_rate": {
+        "classification": 1.0,
+        "drug_bridge_strength": 1.0,
+        "stage3_resolution_status": 1.0,
+        "WEBRELEASE": 1.0,
+        "drugbank_match_rule": 0.07131636820609488,
+        "chembl_match_rule": 0.544454916745209,
+        "lincs_match_rule": 0.4073201382343701,
+        "admet_match_rule": 0.0,
+        "cell_bridge_match_rule": 1.0,
+        "TCGA_DESC": 1.0,
+        "PATHWAY_NAME_NORMALIZED": 1.0
+      },
+      "coverage_note": "Context reconstructed from current pipeline sources: cellline annotation, GDSC drug annotation, drug catalog, target mapping, and current pair feature availability."
+    },
+    "code_shape": [
+      6366,
+      5
+    ],
+    "onehot_dim_for_ml": 32
+  },
+  "smiles": {
+    "token_ids_shape": [
+      6366,
+      256
+    ],
+    "smiles_vocab_size": 38,
+    "observed_max_len": 244,
+    "svd_dim": 64,
+    "svd_summary": {
+      "tfidf_shape": [
+        243,
+        3838
+      ],
+      "svd_dim": 64,
+      "explained_variance_sum": 0.6046993089779725,
+      "vectorizer_vocab_size": 3838
+    }
+  },
+  "ml_matrices": {
+    "exact_slim_plus_smiles_shape": [
+      6366,
+      5593
+    ],
+    "exact_slim_plus_strong_context_plus_smiles_shape": [
+      6366,
+      5625
+    ]
+  },
+  "outputs": {
+    "keys": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match_context_smiles_bundle/keys_exact_slim.parquet",
+    "y": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match_context_smiles_bundle/y_exact_slim.npy",
+    "numeric_feature_names": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match_context_smiles_bundle/numeric_feature_names.json",
+    "reconstructed_context_full": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match_context_smiles_bundle/reconstructed_context_full.parquet",
+    "strong_context_only": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match_context_smiles_bundle/strong_context_only.parquet",
+    "strong_context_vocab": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match_context_smiles_bundle/strong_context_vocab.json",
+    "strong_context_codes": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match_context_smiles_bundle/strong_context_codes.npy",
+    "smiles_token_ids": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match_context_smiles_bundle/smiles_token_ids.npy",
+    "smiles_vocab": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match_context_smiles_bundle/smiles_vocab.json",
+    "ml_smiles_X": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match_context_smiles_bundle/X_ml_exact_slim_smiles.npy",
+    "ml_smiles_feature_names": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match_context_smiles_bundle/feature_names_ml_exact_slim_smiles.json",
+    "ml_strong_smiles_X": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match_context_smiles_bundle/X_ml_exact_slim_strong_context_smiles.npy",
+    "ml_strong_smiles_feature_names": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match_context_smiles_bundle/feature_names_ml_exact_slim_strong_context_smiles.json",
+    "summary": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match_context_smiles_bundle/context_smiles_bundle_summary.json"
+  },
+  "notes": [
+    "DL runs consume strong_context_codes.npy and smiles_token_ids.npy together with the exact slim numeric matrix.",
+    "ML runs consume the prebuilt shared numeric matrices with either SMILES-only or strong-context-plus-SMILES features concatenated.",
+    "This script reproduces dataset materialization only. Training/evaluation is handled by the run_exact_repo_slim_* scripts."
+  ]
+}

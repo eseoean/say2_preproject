@@ -1,0 +1,974 @@
+{
+  "data": [
+    {
+      "pmid": "33532180",
+      "title": "Recent advances in drug delivery systems for targeting cancer stem cells.",
+      "journal": "Acta pharmaceutica Sinica. B",
+      "year": "2021",
+      "authors": [
+        "Duan H",
+        "Liu Y",
+        "Gao Z",
+        "Huang W"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "32911681",
+      "title": "Multi-Omics Investigation of Innate Navitoclax Resistance in Triple-Negative Breast Cancer Cells.",
+      "journal": "Cancers",
+      "year": "2020",
+      "authors": [
+        "Marczyk M",
+        "Patwardhan GA",
+        "Zhao J",
+        "Qu R",
+        "Li X",
+        "Wali VB",
+        "Gupta AK",
+        "Pillai MM",
+        "Kluger Y",
+        "Yan Q",
+        "Hatzis C",
+        "Pusztai L",
+        "Gunasekharan V"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "36341921",
+      "title": "Co-encapsulation of PI3-Kδ/HDAC6 dual inhibitor and Navitoclax in Quatramer™ nanoparticles for synergistic effect in ER+ breast cancer.",
+      "journal": "International journal of pharmaceutics",
+      "year": "2022",
+      "authors": [
+        "Tiwari S",
+        "Kaur H",
+        "Anees M",
+        "Gupta P",
+        "Dalela M",
+        "Kharbanda S",
+        "Singh H"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "36566002",
+      "title": "Combination of palbociclib with navitoclax based-therapies enhances in vivo antitumoral activity in triple-negative breast cancer.",
+      "journal": "Pharmacological research",
+      "year": "2023",
+      "authors": [
+        "Estepa-Fernández A",
+        "García-Fernández A",
+        "Lérida-Viso A",
+        "Blandez JF",
+        "Galiana I",
+        "Sancenon-Galarza F",
+        "Orzáez M",
+        "Martínez-Máñez R"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "32735063",
+      "title": "MUC1 Aptamer-Capped Mesoporous Silica Nanoparticles for Navitoclax Resistance Overcoming in Triple-Negative Breast Cancer.",
+      "journal": "Chemistry (Weinheim an der Bergstrasse, Germany)",
+      "year": "2020",
+      "authors": [
+        "Vivo-Llorca G",
+        "Candela-Noguera V",
+        "Alfonso M",
+        "García-Fernández A",
+        "Orzáez M",
+        "Sancenón F",
+        "Martínez-Máñez R"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "34913076",
+      "title": "Synergism of a novel MCL‑1 downregulator, acriflavine, with navitoclax (ABT‑263) in triple‑negative breast cancer, lung adenocarcinoma and glioblastoma multiforme.",
+      "journal": "International journal of oncology",
+      "year": "2022",
+      "authors": [
+        "Lee A",
+        "Jin HO",
+        "Masudul Haque M",
+        "Kim HY",
+        "Jung H",
+        "Park JH",
+        "Kim I",
+        "Song JY",
+        "Yoon HK",
+        "Kim HK",
+        "Han J",
+        "Park IC",
+        "Kim KS",
+        "Park SG"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "33256808",
+      "title": "Navitoclax enhances the effectiveness of EGFR-targeted antibody-drug conjugates in PDX models of EGFR-expressing triple-negative breast cancer.",
+      "journal": "Breast cancer research : BCR",
+      "year": "2020",
+      "authors": [
+        "Zoeller JJ",
+        "Vagodny A",
+        "Daniels VW",
+        "Taneja K",
+        "Tan BY",
+        "DeRose YS",
+        "Fujita M",
+        "Welm AL",
+        "Letai A",
+        "Leverson JD",
+        "Blot V",
+        "Bronson RT",
+        "Dillon DA",
+        "Brugge JS"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "36410699",
+      "title": "Polylactic acid based polymeric nanoparticle mediated co-delivery of navitoclax and decitabine for cancer therapy.",
+      "journal": "Nanomedicine : nanotechnology, biology, and medicine",
+      "year": "2023",
+      "authors": [
+        "Mehrotra N",
+        "Anees M",
+        "Tiwari S",
+        "Kharbanda S",
+        "Singh H"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "40436896",
+      "title": "BH3 mimetics targeting BCL-XL have efficacy in solid tumors with RB1 loss and replication stress.",
+      "journal": "Nature communications",
+      "year": "2025",
+      "authors": [
+        "Varkaris A",
+        "Wang K",
+        "Nouri M",
+        "Kozlova N",
+        "Schmidt DR",
+        "Stavridi A",
+        "Arai S",
+        "Ambrosio N",
+        "Poluben L",
+        "Jimenez-Vacas JM",
+        "Westaby D",
+        "Carmichael J",
+        "Xie F",
+        "Figueiredo I",
+        "Buroni L",
+        "Neeb A",
+        "Gurel B",
+        "Chevalier N",
+        "Brown L",
+        "Voznesensky O",
+        "Chen SY",
+        "Russo JW",
+        "Yuan X",
+        "Juric D",
+        "Beltran H",
+        "De Bono JS",
+        "Vander Heiden MG",
+        "Einstein DJ",
+        "Muranen T",
+        "Corey E",
+        "Sharp A",
+        "Balk SP"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "33562504",
+      "title": "Selective Targeting of Cancer-Associated Fibroblasts by Engineered H-Ferritin Nanocages Loaded with Navitoclax.",
+      "journal": "Cells",
+      "year": "2021",
+      "authors": [
+        "Sitia L",
+        "Bonizzi A",
+        "Mazzucchelli S",
+        "Negri S",
+        "Sottani C",
+        "Grignani E",
+        "Rizzuto MA",
+        "Prosperi D",
+        "Sorrentino L",
+        "Morasso C",
+        "Allevi R",
+        "Sevieri M",
+        "Silva F",
+        "Truffi M",
+        "Corsi F"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "38002066",
+      "title": "The Combination of Radiation with PARP Inhibition Enhances Senescence and Sensitivity to the Senolytic, Navitoclax, in Triple Negative Breast Tumor Cells.",
+      "journal": "Biomedicines",
+      "year": "2023",
+      "authors": [
+        "Softah A",
+        "Alotaibi MR",
+        "Alhoshani AR",
+        "Saleh T",
+        "Alhazzani K",
+        "Almutairi MM",
+        "AlRowis R",
+        "Alshehri S",
+        "Albekairy NA",
+        "Harada H",
+        "Boyd R",
+        "Chakraborty E",
+        "Gewirtz DA",
+        "As Sobeai HM"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "28947240",
+      "title": "Human breast cancer cells display different sensitivities to ABT-263 based on the level of survivin.",
+      "journal": "Toxicology in vitro : an international journal published in association with BIBRA",
+      "year": "2018",
+      "authors": [
+        "Lee EY",
+        "Gong EY",
+        "Shin JS",
+        "Moon JH",
+        "Shim HJ",
+        "Kim SM",
+        "Lee S",
+        "Jeong J",
+        "Gong JH",
+        "Kim MJ",
+        "Lee DH",
+        "Park YS",
+        "Shin J",
+        "Hong SW",
+        "Kim YS",
+        "Jin DH"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "41727313",
+      "title": "Differential responses to the combination of navitoclax and venetoclax with doxorubicin in murine models of triple negative breast cancer.",
+      "journal": "Frontiers in cell and developmental biology",
+      "year": "2026",
+      "authors": [
+        "As Sobeai HM",
+        "Alanazi AM",
+        "Alotaibi F",
+        "Alhoshani A",
+        "Alhazzani K",
+        "Almutairi MM",
+        "Almudimeegh S",
+        "Al-Ramadi BK",
+        "Chakraborty E",
+        "Saleh T",
+        "Gewirtz DA",
+        "Harada H",
+        "Alotaibi MR"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "26257067",
+      "title": "Targeting BCL-2 to enhance vulnerability to therapy in estrogen receptor-positive breast cancer.",
+      "journal": "Oncogene",
+      "year": "2016",
+      "authors": [
+        "Merino D",
+        "Lok SW",
+        "Visvader JE",
+        "Lindeman GJ"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "37166625",
+      "title": "Resveratrol exhibits diverse anti-cancer activities through epigenetic regulation of E-cadherin and p21 in triple-negative breast cancer cells.",
+      "journal": "Breast cancer (Tokyo, Japan)",
+      "year": "2023",
+      "authors": [
+        "Sakamoto T",
+        "Tanimoto K",
+        "Eguchi H",
+        "Sasaki S",
+        "Tsuboi K",
+        "Hayashi SI",
+        "Ichihara S"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "36381235",
+      "title": "Bcl-xL inhibition radiosensitizes PIK3CA/PTEN wild-type triple negative breast cancers with low Mcl-1 expression.",
+      "journal": "Cancer research communications",
+      "year": "2022",
+      "authors": [
+        "Pesch AM",
+        "Chandler BC",
+        "Michmerhuizen AR",
+        "Carter HM",
+        "Hirsh NH",
+        "Wilder-Romans K",
+        "Liu M",
+        "Ward T",
+        "Ritter CL",
+        "Nino CA",
+        "Jungles KM",
+        "Pierce LJ",
+        "Rae JM",
+        "Speers CW"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "40159464",
+      "title": "Dual Targeting of Aurora-A and Bcl-xL Synergistically Reshapes the Immune Microenvironment and Induces Apoptosis in Breast Cancer.",
+      "journal": "Cancer science",
+      "year": "2025",
+      "authors": [
+        "Liu M",
+        "Guo J",
+        "Liu W",
+        "Yang Z",
+        "Yu F"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "27613092",
+      "title": "PMCA2 silencing potentiates MDA-MB-231 breast cancer cell death initiated with the Bcl-2 inhibitor ABT-263.",
+      "journal": "Biochemical and biophysical research communications",
+      "year": "2016",
+      "authors": [
+        "Curry M",
+        "Roberts-Thomson SJ",
+        "Monteith GR"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "34761877",
+      "title": "Protective role of cytoplasmic p21Cip1/Waf1 in apoptosis of CDK4/6 inhibitor-induced senescence in breast cancer cells.",
+      "journal": "Cancer medicine",
+      "year": "2021",
+      "authors": [
+        "Kartika ID",
+        "Kotani H",
+        "Iida Y",
+        "Koyanagi A",
+        "Tanino R",
+        "Harada M"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "39312191",
+      "title": "The Innate Immune System and the TRAIL-Bcl-XL Axis Mediate a Sex Bias in Lung Cancer and Confer a Therapeutic Vulnerability in Females.",
+      "journal": "Cancer research",
+      "year": "2024",
+      "authors": [
+        "May L",
+        "Hu B",
+        "Jerajani P",
+        "Jagdeesh A",
+        "Alhawiti O",
+        "Cai L",
+        "Semenova N",
+        "Guo C",
+        "Isbell M",
+        "Deng X",
+        "Faber AC",
+        "Pillappa R",
+        "Bandyopadhyay D",
+        "Wang XY",
+        "Neuwelt A",
+        "Koblinski J",
+        "Bos PD",
+        "Li H",
+        "Martin R",
+        "Landry JW"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "39779635",
+      "title": "Dual targeting of HSP90 and BCL-2 in breast cancer cells using inhibitors BIIB021 and ABT-263.",
+      "journal": "Breast cancer research and treatment",
+      "year": "2025",
+      "authors": [
+        "Gökşen Tosun N",
+        "Kaplan Ö"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "34736967",
+      "title": "Selective therapeutic benefit of X-rays and inhibitors of EGFR, PI3K/mTOR, and Bcl-2 in breast, lung, and cervical cancer cells.",
+      "journal": "European journal of pharmacology",
+      "year": "2021",
+      "authors": [
+        "Hamid MB",
+        "Serafin AM",
+        "Akudugu JM"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "31409615",
+      "title": "BET Inhibition as a Rational Therapeutic Strategy for Invasive Lobular Breast Cancer.",
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "year": "2019",
+      "authors": [
+        "Walsh L",
+        "Haley KE",
+        "Moran B",
+        "Mooney B",
+        "Tarrant F",
+        "Madden SF",
+        "Di Grande A",
+        "Fan Y",
+        "Das S",
+        "Rueda OM",
+        "Dowling CM",
+        "Varešlija D",
+        "Chin SF",
+        "Linn S",
+        "Young LS",
+        "Jirström K",
+        "Crown JP",
+        "Bernards R",
+        "Caldas C",
+        "Gallagher WM",
+        "O'Connor DP",
+        "Ní Chonghaile T"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "32376460",
+      "title": "Preclinical antitumor efficacy of senescence-inducing chemotherapy combined with a nanoSenolytic.",
+      "journal": "Journal of controlled release : official journal of the Controlled Release Society",
+      "year": "2020",
+      "authors": [
+        "Galiana I",
+        "Lozano-Torres B",
+        "Sancho M",
+        "Alfonso M",
+        "Bernardos A",
+        "Bisbal V",
+        "Serrano M",
+        "Martínez-Máñez R",
+        "Orzáez M"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "33239070",
+      "title": "Combined the SMAC mimetic and BCL2 inhibitor sensitizes neoadjuvant chemotherapy by targeting necrosome complexes in tyrosine aminoacyl-tRNA synthase-positive breast cancer.",
+      "journal": "Breast cancer research : BCR",
+      "year": "2020",
+      "authors": [
+        "Lee KM",
+        "Lee H",
+        "Han D",
+        "Moon WK",
+        "Kim K",
+        "Oh HJ",
+        "Choi J",
+        "Hwang EH",
+        "Kang SE",
+        "Im SA",
+        "Lee KH",
+        "Ryu HS"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "32457483",
+      "title": "BH3 mimetics selectively eliminate chemotherapy-induced senescent cells and improve response in TP53 wild-type breast cancer.",
+      "journal": "Cell death and differentiation",
+      "year": "2020",
+      "authors": [
+        "Shahbandi A",
+        "Rao SG",
+        "Anderson AY",
+        "Frey WD",
+        "Olayiwola JO",
+        "Ungerleider NA",
+        "Jackson JG"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "34675185",
+      "title": "Fatty acid synthase (FASN) regulates the mitochondrial priming of cancer cells.",
+      "journal": "Cell death & disease",
+      "year": "2021",
+      "authors": [
+        "Schroeder B",
+        "Vander Steen T",
+        "Espinoza I",
+        "Venkatapoorna CMK",
+        "Hu Z",
+        "Silva FM",
+        "Regan K",
+        "Cuyàs E",
+        "Meng XW",
+        "Verdura S",
+        "Arbusà A",
+        "Schneider PA",
+        "Flatten KS",
+        "Kemble G",
+        "Montero J",
+        "Kaufmann SH",
+        "Menendez JA",
+        "Lupu R"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "28039357",
+      "title": "Key Survival Factor, Mcl-1, Correlates with Sensitivity to Combined Bcl-2/Bcl-xL Blockade.",
+      "journal": "Molecular cancer research : MCR",
+      "year": "2017",
+      "authors": [
+        "Williams MM",
+        "Lee L",
+        "Hicks DJ",
+        "Joly MM",
+        "Elion D",
+        "Rahman B",
+        "McKernan C",
+        "Sanchez V",
+        "Balko JM",
+        "Stricker T",
+        "Estrada MV",
+        "Cook RS"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "30962322",
+      "title": "Neutralization of BCL-2/X(L) Enhances the Cytotoxicity of T-DM1 In Vivo.",
+      "journal": "Molecular cancer therapeutics",
+      "year": "2019",
+      "authors": [
+        "Zoeller JJ",
+        "Vagodny A",
+        "Taneja K",
+        "Tan BY",
+        "O'Brien N",
+        "Slamon DJ",
+        "Sampath D",
+        "Leverson JD",
+        "Bronson RT",
+        "Dillon DA",
+        "Brugge JS"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "30728358",
+      "title": "Pharmacological reactivation of MYC-dependent apoptosis induces susceptibility to anti-PD-1 immunotherapy.",
+      "journal": "Nature communications",
+      "year": "2019",
+      "authors": [
+        "Haikala HM",
+        "Anttila JM",
+        "Marques E",
+        "Raatikainen T",
+        "Ilander M",
+        "Hakanen H",
+        "Ala-Hongisto H",
+        "Savelius M",
+        "Balboa D",
+        "Von Eyss B",
+        "Eskelinen V",
+        "Munne P",
+        "Nieminen AI",
+        "Otonkoski T",
+        "Schüler J",
+        "Laajala TD",
+        "Aittokallio T",
+        "Sihto H",
+        "Mattson J",
+        "Heikkilä P",
+        "Leidenius M",
+        "Joensuu H",
+        "Mustjoki S",
+        "Kovanen P",
+        "Eilers M",
+        "Leverson JD",
+        "Klefström J"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "37200016",
+      "title": "Formation of ssDNA nanotubes from spherical micelles and their use as a delivery vehicle for chemotherapeutics and senolytics to triple negative breast cancer cells.",
+      "journal": "Nanoscale",
+      "year": "2023",
+      "authors": [
+        "Lin L",
+        "Schneiderman Z",
+        "Venkatraman A",
+        "Kokkoli E"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "31494078",
+      "title": "Current overview on the clinical update of Bcl-2 anti-apoptotic inhibitors for cancer therapy.",
+      "journal": "European journal of pharmacology",
+      "year": "2019",
+      "authors": [
+        "Suvarna V",
+        "Singh V",
+        "Murahari M"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "28187446",
+      "title": "Targeting of apoptotic pathways by SMAC or BH3 mimetics distinctly sensitizes paclitaxel-resistant triple negative breast cancer cells.",
+      "journal": "Oncotarget",
+      "year": "2017",
+      "authors": [
+        "Panayotopoulou EG",
+        "Müller AK",
+        "Börries M",
+        "Busch H",
+        "Hu G",
+        "Lev S"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "40666988",
+      "title": "Paclitaxel-induced mitotic arrest results in a convergence of apoptotic dependencies that can be safely exploited by BCL-X(L) degradation to overcome cancer chemoresistance.",
+      "journal": "bioRxiv : the preprint server for biology",
+      "year": "2025",
+      "authors": [
+        "Qin X",
+        "Presser A",
+        "Johnson L",
+        "Matoba Y",
+        "Shay BS",
+        "Xu W",
+        "Choiniere J",
+        "Fraser C",
+        "Garbicz F",
+        "Spetz J",
+        "Yu S",
+        "Florido MHC",
+        "Picucci F",
+        "Yang Y",
+        "Drapkin R",
+        "Carrasco R",
+        "Hill SJ",
+        "Liu J",
+        "Matulonis U",
+        "Brugge J",
+        "Rueda BR",
+        "Zhou D",
+        "Stover EH",
+        "Sarosiek KA"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "23602897",
+      "title": "Mitochondrial calcium uniporter silencing potentiates caspase-independent cell death in MDA-MB-231 breast cancer cells.",
+      "journal": "Biochemical and biophysical research communications",
+      "year": "2013",
+      "authors": [
+        "Curry MC",
+        "Peters AA",
+        "Kenny PA",
+        "Roberts-Thomson SJ",
+        "Monteith GR"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "41806955",
+      "title": "Co-delivery nanoparticle targeting CAF for simultaneous activating T cell plus NKT cell attack in solid tumor.",
+      "journal": "Journal of advanced research",
+      "year": "2026",
+      "authors": [
+        "Xiang Y",
+        "Zhang L",
+        "Ye J",
+        "Chen Y",
+        "Ren Q",
+        "Su B",
+        "Xu X",
+        "Zhang Q"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "26013319",
+      "title": "MCL-1 Is a Key Determinant of Breast Cancer Cell Survival: Validation of MCL-1 Dependency Utilizing a Highly Selective Small Molecule Inhibitor.",
+      "journal": "Molecular cancer therapeutics",
+      "year": "2015",
+      "authors": [
+        "Xiao Y",
+        "Nimmer P",
+        "Sheppard GS",
+        "Bruncko M",
+        "Hessler P",
+        "Lu X",
+        "Roberts-Rapp L",
+        "Pappano WN",
+        "Elmore SW",
+        "Souers AJ",
+        "Leverson JD",
+        "Phillips DC"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "27217294",
+      "title": "MUC1-C Stabilizes MCL-1 in the Oxidative Stress Response of Triple-Negative Breast Cancer Cells to BCL-2 Inhibitors.",
+      "journal": "Scientific reports",
+      "year": "2016",
+      "authors": [
+        "Hiraki M",
+        "Suzuki Y",
+        "Alam M",
+        "Hinohara K",
+        "Hasegawa M",
+        "Jin C",
+        "Kharbanda S",
+        "Kufe D"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "26622578",
+      "title": "S6K1 inhibition enhances the apoptotic cell death of breast cancer cells in response to Bcl-2/Bcl-xL inhibition by the downregulation of survivin.",
+      "journal": "Oncology letters",
+      "year": "2015",
+      "authors": [
+        "Park JA",
+        "Jin HO",
+        "Lee HN",
+        "Kim JH",
+        "Park IC",
+        "Noh WC",
+        "Chang YH",
+        "Hong YJ",
+        "Kim KC",
+        "Lee JK"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "33152391",
+      "title": "Combination of cancer-specific prodrug nanoparticle with Bcl-2 inhibitor to overcome acquired drug resistance.",
+      "journal": "Journal of controlled release : official journal of the Controlled Release Society",
+      "year": "2021",
+      "authors": [
+        "Kim J",
+        "Shim MK",
+        "Yang S",
+        "Moon Y",
+        "Song S",
+        "Choi J",
+        "Kim J",
+        "Kim K"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "27723829",
+      "title": "Intrinsic Resistance to 5-Fluorouracil in a Brain Metastatic Variant of Human Breast Cancer Cell Line, MDA-MB-231BR.",
+      "journal": "PloS one",
+      "year": "2016",
+      "authors": [
+        "Sagara A",
+        "Igarashi K",
+        "Otsuka M",
+        "Karasawa T",
+        "Gotoh N",
+        "Narita M",
+        "Kuzumaki N",
+        "Narita M",
+        "Kato Y"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "28848145",
+      "title": "CyclinG1 Amplification Enhances Aurora Kinase Inhibitor-Induced Polyploid Resistance and Inhibition of Bcl-2 Pathway Reverses the Resistance.",
+      "journal": "Cellular physiology and biochemistry : international journal of experimental cellular physiology, biochemistry, and pharmacology",
+      "year": "2017",
+      "authors": [
+        "Zhang W",
+        "Xu J",
+        "Ji D",
+        "Li Z",
+        "He W",
+        "Yang F",
+        "Lan H",
+        "Wang Y",
+        "Wu Z",
+        "Liu X",
+        "Huang S",
+        "Li L",
+        "Zhou W"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "27737796",
+      "title": "Strong synergism between small molecule inhibitors of HER2, PI3K, mTOR and Bcl-2 in human breast cancer cells.",
+      "journal": "Toxicology in vitro : an international journal published in association with BIBRA",
+      "year": "2017",
+      "authors": [
+        "Hamunyela RH",
+        "Serafin AM",
+        "Akudugu JM"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "25968887",
+      "title": "KRAS Genomic Status Predicts the Sensitivity of Ovarian Cancer Cells to Decitabine.",
+      "journal": "Cancer research",
+      "year": "2015",
+      "authors": [
+        "Stewart ML",
+        "Tamayo P",
+        "Wilson AJ",
+        "Wang S",
+        "Chang YM",
+        "Kim JW",
+        "Khabele D",
+        "Shamji AF",
+        "Schreiber SL"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "29374168",
+      "title": "Downregulation of MCL-1 and upregulation of PUMA using mTOR inhibitors enhance antitumor efficacy of BH3 mimetics in triple-negative breast cancer.",
+      "journal": "Cell death & disease",
+      "year": "2018",
+      "authors": [
+        "Li H",
+        "Liu L",
+        "Chang H",
+        "Zou Z",
+        "Xing D"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "33311449",
+      "title": "Anti-PD1 therapy induces lymphocyte-derived exosomal miRNA-4315 release inhibiting Bim-mediated apoptosis of tumor cells.",
+      "journal": "Cell death & disease",
+      "year": "2020",
+      "authors": [
+        "Guyon N",
+        "Garnier D",
+        "Briand J",
+        "Nadaradjane A",
+        "Bougras-Cartron G",
+        "Raimbourg J",
+        "Campone M",
+        "Heymann D",
+        "Vallette FM",
+        "Frenel JS",
+        "Cartron PF"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "29343814",
+      "title": "Intrinsic apoptotic pathway activation increases response to anti-estrogens in luminal breast cancers.",
+      "journal": "Cell death & disease",
+      "year": "2018",
+      "authors": [
+        "Williams MM",
+        "Lee L",
+        "Werfel T",
+        "Joly MMM",
+        "Hicks DJ",
+        "Rahman B",
+        "Elion D",
+        "McKernan C",
+        "Sanchez V",
+        "Estrada MV",
+        "Massarweh S",
+        "Elledge R",
+        "Duvall C",
+        "Cook RS"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "36158196",
+      "title": "Endogenous TRAIL-R4 critically impacts apoptotic and non-apoptotic TRAIL-induced signaling in cancer cells.",
+      "journal": "Frontiers in cell and developmental biology",
+      "year": "2022",
+      "authors": [
+        "Rambow AC",
+        "Aschenbach I",
+        "Hagelund S",
+        "Tawfik D",
+        "Gundlach JP",
+        "Weiße S",
+        "Maass N",
+        "Trauzold A"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "22505651",
+      "title": "In vivo imaging of drug-induced mitochondrial outer membrane permeabilization at single-cell resolution.",
+      "journal": "Cancer research",
+      "year": "2012",
+      "authors": [
+        "Earley S",
+        "Vinegoni C",
+        "Dunham J",
+        "Gorbatov R",
+        "Feruglio PF",
+        "Weissleder R"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "41533433",
+      "title": "CombiCTx: screening diffusion gradients of anti-cancer drug combinations.",
+      "journal": "Lab on a chip",
+      "year": "2026",
+      "authors": [
+        "Stelzl C",
+        "Lerma-Clavero A",
+        "Camenisch S",
+        "Simon B",
+        "Eriksson O",
+        "Degerstedt O",
+        "Lennernäs H",
+        "Heindryckx F",
+        "Kreuger J",
+        "O'Callaghan P"
+      ],
+      "source": "ncbi_pubmed"
+    }
+  ]
+}

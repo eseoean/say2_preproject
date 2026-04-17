@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OOF Metrics and Diversity Report</title>
+  <style>
+    :root {
+      --bg: #f6f8fc;
+      --panel: #ffffff;
+      --ink: #1e2a39;
+      --muted: #5b6777;
+      --line: #d9e1ec;
+      --head: #eaf2ff;
+      --accent: #2f6fdd;
+      --shadow: 0 10px 30px rgba(31, 45, 61, 0.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 32px;
+      background: linear-gradient(180deg, #f6f8fc 0%, #eef3fb 100%);
+      color: var(--ink);
+      font-family: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+      line-height: 1.55;
+    }
+    .page {
+      max-width: 1480px;
+      margin: 0 auto;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      padding: 32px;
+    }
+    h1, h2, h3 { margin: 0 0 12px; }
+    h1 { font-size: 32px; }
+    h2 { font-size: 24px; padding-top: 8px; }
+    h3 { font-size: 18px; color: var(--accent); }
+    p.lead { color: var(--muted); margin: 0 0 24px; }
+    .dataset-section {
+      margin-top: 28px;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+    }
+    .subsection { margin-top: 20px; }
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: white;
+    }
+    table { width: 100%; border-collapse: collapse; min-width: 900px; }
+    th, td {
+      padding: 11px 14px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+      font-size: 14px;
+    }
+    th {
+      position: sticky;
+      top: 0;
+      background: var(--head);
+      color: #17345f;
+      font-weight: 700;
+    }
+    tr:last-child td { border-bottom: 0; }
+    code {
+      background: #f3f7ff;
+      border: 1px solid #dbe7ff;
+      border-radius: 8px;
+      padding: 1px 6px;
+      font-size: 0.95em;
+    }
+    ul { margin: 0; padding-left: 20px; }
+    .plain-note { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <h1>OOF Metrics and Ensemble Diversity Report</h1>
+    <p class="lead">세 가지 입력셋 기준으로 ML, DL, Ensemble 성능과 ensemble diversity를 같은 형식으로 정리했다. 표는 기본적으로 <code>Spearman</code> 내림차순이다.</p>
+    
+            <section class="dataset-section">
+              <h2>A. exact slim (numeric-only)</h2>
+              <section class="subsection"><h3>ML</h3><div class="table-wrap"><table><thead><tr><th>Model</th><th>Spearman</th><th>RMSE</th><th>MAE</th><th>Pearson</th><th>R²</th><th>NDCG@20</th><th>Time</th><th>Note</th></tr></thead><tbody><tr><td>LightGBM</td><td>0.5586</td><td>2.2100</td><td>1.6465</td><td>0.5891</td><td>0.3329</td><td>0.8312</td><td>3.0m</td><td>OOF</td></tr><tr><td>XGBoost</td><td>0.5546</td><td>2.2153</td><td>1.6473</td><td>0.5829</td><td>0.3297</td><td>0.8376</td><td>6.1m</td><td>OOF</td></tr><tr><td>LightGBM_DART</td><td>0.5495</td><td>2.1984</td><td>1.6653</td><td>0.5892</td><td>0.3398</td><td>0.8548</td><td>2.4m</td><td>OOF</td></tr><tr><td>RandomForest</td><td>0.5494</td><td>2.2265</td><td>1.6545</td><td>0.5744</td><td>0.3229</td><td>0.8852</td><td>0.4m</td><td>OOF</td></tr><tr><td>CatBoost</td><td>0.5481</td><td>2.1947</td><td>1.6327</td><td>0.5849</td><td>0.3420</td><td>0.8633</td><td>23.8m</td><td>OOF</td></tr><tr><td>ExtraTrees</td><td>0.5000</td><td>2.2700</td><td>1.6755</td><td>0.5443</td><td>0.2961</td><td>0.8855</td><td>0.6m</td><td>OOF</td></tr></tbody></table></div></section>
+              <section class="subsection"><h3>DL</h3><div class="table-wrap"><table><thead><tr><th>Model</th><th>Spearman</th><th>RMSE</th><th>MAE</th><th>Pearson</th><th>R²</th><th>NDCG@20</th><th>Time</th><th>Note</th></tr></thead><tbody><tr><td>WideDeep</td><td>0.5568</td><td>2.1979</td><td>1.6544</td><td>0.5862</td><td>0.3372</td><td>-</td><td>0.2m</td><td>legacy fold-mean</td></tr><tr><td>CrossAttention</td><td>0.5439</td><td>2.2344</td><td>1.6477</td><td>0.5704</td><td>0.3155</td><td>-</td><td>0.5m</td><td>legacy fold-mean</td></tr><tr><td>FlatMLP</td><td>0.5393</td><td>2.2695</td><td>1.6890</td><td>0.5685</td><td>0.2935</td><td>-</td><td>0.5m</td><td>legacy fold-mean</td></tr><tr><td>TabNet</td><td>0.5332</td><td>2.3152</td><td>1.6811</td><td>0.5640</td><td>0.2643</td><td>-</td><td>0.2m</td><td>legacy fold-mean</td></tr><tr><td>FTTransformer</td><td>0.5305</td><td>2.2327</td><td>1.6351</td><td>0.5683</td><td>0.3161</td><td>-</td><td>0.6m</td><td>legacy fold-mean</td></tr><tr><td>ResidualMLP</td><td>0.5141</td><td>2.3194</td><td>1.7092</td><td>0.5496</td><td>0.2607</td><td>-</td><td>0.4m</td><td>legacy fold-mean</td></tr><tr><td>TabTransformer</td><td>0.4323</td><td>2.3862</td><td>1.8134</td><td>0.4961</td><td>0.2186</td><td>-</td><td>3.8m</td><td>legacy fold-mean</td></tr></tbody></table></div></section>
+              <section class="subsection"><h3>Ensemble</h3><div class="table-wrap"><table><thead><tr><th>Type</th><th>구성</th><th>Spearman</th><th>RMSE</th><th>MAE</th><th>Pearson</th><th>R²</th><th>NDCG@20</th></tr></thead><tbody><tr><td>Weighted</td><td>WideDeep + CrossAttention + FlatMLP</td><td>0.5636</td><td>2.1868</td><td>1.6215</td><td>0.5892</td><td>0.3468</td><td>-</td></tr><tr><td>Equal</td><td>WideDeep + CrossAttention + FlatMLP</td><td>0.5634</td><td>2.1872</td><td>1.6214</td><td>0.5890</td><td>0.3466</td><td>-</td></tr></tbody></table></div></section>
+              <section class="subsection"><h3>Diversity</h3><div class="table-wrap"><table><thead><tr><th>Pair</th><th>Pred Pearson</th><th>Pred Spearman</th><th>Resid Pearson</th><th>Resid Spearman</th><th>Mean Abs Gap</th></tr></thead><tbody><tr><td>WideDeep vs CrossAttention</td><td>0.9252</td><td>0.9076</td><td>0.9615</td><td>0.9429</td><td>0.4762</td></tr><tr><td>WideDeep vs FlatMLP</td><td>0.9097</td><td>0.8584</td><td>0.9397</td><td>0.9151</td><td>0.6235</td></tr><tr><td>CrossAttention vs FlatMLP</td><td>0.8666</td><td>0.8262</td><td>0.9128</td><td>0.8812</td><td>0.6816</td></tr><tr><td>AVG</td><td>0.9005</td><td>0.8641</td><td>0.9380</td><td>0.9130</td><td>0.5938</td></tr></tbody></table></div></section>
+              <section class="subsection"><h3>Notes</h3><ul><li>ML은 OOF 로컬 재실행 기준입니다. DL은 기존 numeric-only GroupCV 요약본을 사용했습니다.</li><li>Ensemble diversity는 <code>WideDeep + CrossAttention + FlatMLP</code> 기준입니다.</li></ul></section>
+            </section>
+            
+            <section class="dataset-section">
+              <h2>B. exact slim + SMILES</h2>
+              <section class="subsection"><h3>ML</h3><div class="table-wrap"><table><thead><tr><th>Model</th><th>Spearman</th><th>RMSE</th><th>MAE</th><th>Pearson</th><th>R²</th><th>NDCG@20</th><th>Time</th><th>Note</th></tr></thead><tbody><tr><td>CatBoost</td><td>0.5683</td><td>2.1573</td><td>1.6209</td><td>0.6047</td><td>0.3643</td><td>0.8501</td><td>22.6m</td><td>OOF</td></tr><tr><td>LightGBM</td><td>0.5632</td><td>2.1379</td><td>1.6408</td><td>0.6142</td><td>0.3757</td><td>0.8584</td><td>4.9m</td><td>OOF</td></tr><tr><td>LightGBM_DART</td><td>0.5586</td><td>2.1526</td><td>1.6694</td><td>0.6121</td><td>0.3671</td><td>0.8579</td><td>2.7m</td><td>OOF</td></tr><tr><td>RandomForest</td><td>0.5573</td><td>2.2168</td><td>1.6640</td><td>0.5859</td><td>0.3288</td><td>0.8755</td><td>1.1m</td><td>OOF</td></tr><tr><td>XGBoost</td><td>0.5482</td><td>2.1596</td><td>1.6655</td><td>0.6041</td><td>0.3629</td><td>0.8550</td><td>17.4m</td><td>OOF</td></tr><tr><td>ExtraTrees</td><td>0.5124</td><td>2.2481</td><td>1.6697</td><td>0.5575</td><td>0.3097</td><td>0.8887</td><td>1.3m</td><td>OOF</td></tr></tbody></table></div></section>
+              <section class="subsection"><h3>DL</h3><div class="table-wrap"><table><thead><tr><th>Model</th><th>Spearman</th><th>RMSE</th><th>MAE</th><th>Pearson</th><th>R²</th><th>NDCG@20</th><th>Time</th><th>Note</th></tr></thead><tbody><tr><td>FlatMLP</td><td>0.5899</td><td>2.0441</td><td>1.5845</td><td>0.6620</td><td>0.4292</td><td>0.8238</td><td>9.9m</td><td>OOF</td></tr><tr><td>CrossAttention</td><td>0.5767</td><td>2.1395</td><td>1.6123</td><td>0.6125</td><td>0.3748</td><td>0.8236</td><td>11.7m</td><td>OOF</td></tr><tr><td>ResidualMLP</td><td>0.5588</td><td>2.1519</td><td>1.6302</td><td>0.6077</td><td>0.3675</td><td>0.8669</td><td>9.7m</td><td>OOF</td></tr><tr><td>TabNet</td><td>0.5542</td><td>2.1323</td><td>1.6319</td><td>0.6163</td><td>0.3790</td><td>0.8310</td><td>7.3m</td><td>OOF</td></tr><tr><td>FTTransformer</td><td>0.5523</td><td>2.1487</td><td>1.6093</td><td>0.6084</td><td>0.3694</td><td>0.7617</td><td>10.0m</td><td>OOF</td></tr><tr><td>WideDeep</td><td>0.5500</td><td>2.1622</td><td>1.6239</td><td>0.6025</td><td>0.3614</td><td>0.8442</td><td>13.0m</td><td>OOF</td></tr><tr><td>TabTransformer</td><td>0.2454</td><td>3.0380</td><td>2.3774</td><td>0.2751</td><td>-0.2607</td><td>0.8346</td><td>10.6m</td><td>OOF, 2-fold early stop</td></tr></tbody></table></div></section>
+              <section class="subsection"><h3>Ensemble</h3><div class="table-wrap"><table><thead><tr><th>Type</th><th>구성</th><th>Spearman</th><th>RMSE</th><th>MAE</th><th>Pearson</th><th>R²</th><th>NDCG@20</th></tr></thead><tbody><tr><td>Weighted</td><td>FlatMLP + ResidualMLP + CrossAttention</td><td>0.6067</td><td>2.0480</td><td>1.5593</td><td>0.6543</td><td>0.4271</td><td>0.8458</td></tr><tr><td>Equal</td><td>FlatMLP + ResidualMLP + CrossAttention</td><td>0.6059</td><td>2.0505</td><td>1.5608</td><td>0.6532</td><td>0.4257</td><td>0.8495</td></tr></tbody></table></div></section>
+              <section class="subsection"><h3>Diversity</h3><div class="table-wrap"><table><thead><tr><th>Pair</th><th>Pred Pearson</th><th>Pred Spearman</th><th>Resid Pearson</th><th>Resid Spearman</th><th>Mean Abs Gap</th></tr></thead><tbody><tr><td>FlatMLP vs ResidualMLP</td><td>0.8819</td><td>0.8192</td><td>0.9005</td><td>0.8850</td><td>0.7258</td></tr><tr><td>FlatMLP vs CrossAttention</td><td>0.8586</td><td>0.8071</td><td>0.8787</td><td>0.8680</td><td>0.8069</td></tr><tr><td>ResidualMLP vs CrossAttention</td><td>0.8775</td><td>0.8341</td><td>0.9297</td><td>0.9262</td><td>0.6140</td></tr><tr><td>AVG</td><td>0.8727</td><td>0.8202</td><td>0.9029</td><td>0.8931</td><td>0.7156</td></tr></tbody></table></div></section>
+              <section class="subsection"><h3>Notes</h3><ul><li>TabTransformer는 조기 종료 규칙으로 2-fold만 실행되었습니다.</li><li>Ensemble diversity는 <code>FlatMLP + ResidualMLP + CrossAttention</code> 기준입니다.</li></ul></section>
+            </section>
+            
+            <section class="dataset-section">
+              <h2>C. exact slim + strong context + SMILES</h2>
+              <section class="subsection"><h3>ML</h3><div class="table-wrap"><table><thead><tr><th>Model</th><th>Spearman</th><th>RMSE</th><th>MAE</th><th>Pearson</th><th>R²</th><th>NDCG@20</th><th>Time</th><th>Note</th></tr></thead><tbody><tr><td>CatBoost</td><td>0.5742</td><td>2.1415</td><td>1.6170</td><td>0.6130</td><td>0.3736</td><td>0.8413</td><td>20.6m</td><td>OOF</td></tr><tr><td>LightGBM_DART</td><td>0.5700</td><td>2.1410</td><td>1.6593</td><td>0.6179</td><td>0.3739</td><td>0.8469</td><td>2.7m</td><td>OOF</td></tr><tr><td>RandomForest</td><td>0.5696</td><td>2.2129</td><td>1.6597</td><td>0.5891</td><td>0.3311</td><td>0.8812</td><td>1.5m</td><td>OOF</td></tr><tr><td>XGBoost</td><td>0.5614</td><td>2.1463</td><td>1.6505</td><td>0.6118</td><td>0.3708</td><td>0.8482</td><td>15.5m</td><td>OOF</td></tr><tr><td>LightGBM</td><td>0.5585</td><td>2.1555</td><td>1.6457</td><td>0.6067</td><td>0.3654</td><td>0.8515</td><td>5.1m</td><td>OOF</td></tr><tr><td>ExtraTrees</td><td>0.5207</td><td>2.2431</td><td>1.6634</td><td>0.5605</td><td>0.3127</td><td>0.8848</td><td>1.8m</td><td>OOF</td></tr></tbody></table></div></section>
+              <section class="subsection"><h3>DL</h3><div class="table-wrap"><table><thead><tr><th>Model</th><th>Spearman</th><th>RMSE</th><th>MAE</th><th>Pearson</th><th>R²</th><th>NDCG@20</th><th>Time</th><th>Note</th></tr></thead><tbody><tr><td>FlatMLP</td><td>0.6052</td><td>2.0515</td><td>1.5608</td><td>0.6554</td><td>0.4208</td><td>0.8037</td><td>9.5m</td><td>OOF-ish standalone summary</td></tr><tr><td>ResidualMLP</td><td>0.6019</td><td>2.1396</td><td>1.6134</td><td>0.6138</td><td>0.3747</td><td>0.8419</td><td>15.6m</td><td>OOF</td></tr><tr><td>CrossAttention</td><td>0.5931</td><td>2.1455</td><td>1.5895</td><td>0.6132</td><td>0.3680</td><td>0.7836</td><td>8.8m</td><td>OOF-ish standalone summary</td></tr><tr><td>WideDeep</td><td>0.5707</td><td>2.1674</td><td>1.6246</td><td>0.6025</td><td>0.3551</td><td>0.8252</td><td>10.0m</td><td>OOF-ish standalone summary</td></tr><tr><td>TabNet</td><td>0.5535</td><td>2.1697</td><td>1.6231</td><td>0.5977</td><td>0.3569</td><td>0.8465</td><td>8.3m</td><td>OOF</td></tr><tr><td>FTTransformer</td><td>0.5532</td><td>2.1923</td><td>1.6389</td><td>0.5884</td><td>0.3435</td><td>0.8118</td><td>12.9m</td><td>OOF</td></tr><tr><td>TabTransformer</td><td>0.2901</td><td>2.9713</td><td>2.3330</td><td>0.3414</td><td>-0.2059</td><td>0.8203</td><td>15.2m</td><td>OOF</td></tr></tbody></table></div></section>
+              <section class="subsection"><h3>Ensemble</h3><div class="table-wrap"><table><thead><tr><th>Type</th><th>구성</th><th>Spearman</th><th>RMSE</th><th>MAE</th><th>Pearson</th><th>R²</th><th>NDCG@20</th></tr></thead><tbody><tr><td>Equal</td><td>FlatMLP + ResidualMLP + CrossAttention</td><td>0.6280</td><td>2.0223</td><td>1.5297</td><td>0.6645</td><td>0.4414</td><td>0.8281</td></tr><tr><td>Weighted</td><td>FlatMLP + ResidualMLP + CrossAttention</td><td>0.6280</td><td>2.0220</td><td>1.5296</td><td>0.6646</td><td>0.4415</td><td>0.8282</td></tr><tr><td>Weighted</td><td>FlatMLP + WideDeep + CrossAttention</td><td>0.6179</td><td>2.0568</td><td>1.5430</td><td>0.6506</td><td>0.4221</td><td>0.8356</td></tr><tr><td>Equal</td><td>FlatMLP + WideDeep + CrossAttention</td><td>0.6175</td><td>2.0584</td><td>1.5439</td><td>0.6499</td><td>0.4212</td><td>0.8356</td></tr><tr><td>Weighted</td><td>FlatMLP + LightGBM_DART + ExtraTrees</td><td>0.6132</td><td>2.0606</td><td>1.5707</td><td>0.6536</td><td>0.4200</td><td>0.8422</td></tr><tr><td>Equal</td><td>FlatMLP + LightGBM_DART + ExtraTrees</td><td>0.6121</td><td>2.0659</td><td>1.5736</td><td>0.6515</td><td>0.4170</td><td>0.8426</td></tr></tbody></table></div></section>
+              <section class="subsection"><h3>Diversity</h3><div class="table-wrap"><table><thead><tr><th>Pair</th><th>Pred Pearson</th><th>Pred Spearman</th><th>Resid Pearson</th><th>Resid Spearman</th><th>Mean Abs Gap</th></tr></thead><tbody><tr><td>[FRC ensemble] FlatMLP vs ResidualMLP</td><td>0.8856</td><td>0.8320</td><td>0.9065</td><td>0.8843</td><td>0.6934</td></tr><tr><td>FRC ensemble :: FlatMLP vs CrossAttention</td><td>0.8519</td><td>0.8045</td><td>0.8805</td><td>0.8548</td><td>0.8100</td></tr><tr><td>FRC ensemble :: ResidualMLP vs CrossAttention</td><td>0.8942</td><td>0.8669</td><td>0.9217</td><td>0.9038</td><td>0.6384</td></tr><tr><td>[FRC ensemble] AVG</td><td>0.8773</td><td>0.8345</td><td>0.9029</td><td>0.8810</td><td>0.7140</td></tr><tr><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td></tr><tr><td>[FLE mixed ensemble] FlatMLP vs LightGBM_DART</td><td>0.8457</td><td>0.7798</td><td>0.8799</td><td>0.8550</td><td>0.7951</td></tr><tr><td>FLE mixed ensemble :: FlatMLP vs ExtraTrees</td><td>0.8459</td><td>0.7624</td><td>0.8853</td><td>0.8633</td><td>0.7981</td></tr><tr><td>FLE mixed ensemble :: LightGBM_DART vs ExtraTrees</td><td>0.8695</td><td>0.8060</td><td>0.9381</td><td>0.9271</td><td>0.5865</td></tr><tr><td>[FLE mixed ensemble] AVG</td><td>0.8537</td><td>0.7827</td><td>0.9011</td><td>0.8818</td><td>0.7266</td></tr></tbody></table></div></section>
+              <section class="subsection"><h3>Notes</h3><ul><li>DL 추가 OOF 재실행 결과를 반영한 최신본입니다.</li><li>Ensemble에는 <code>FlatMLP + ResidualMLP + CrossAttention</code>와 <code>FlatMLP + LightGBM_DART + ExtraTrees</code>를 함께 반영했습니다.</li><li>Diversity 표는 <code>FRC ensemble</code>과 <code>FLE mixed ensemble</code>을 한 섹션에서 같이 보여줍니다.</li></ul></section>
+            </section>
+            
+  </div>
+</body>
+</html>

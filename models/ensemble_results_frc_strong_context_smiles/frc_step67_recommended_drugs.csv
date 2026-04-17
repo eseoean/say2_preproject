@@ -1,0 +1,13 @@
+recommended_rank,step5_rank,drug_id,drug_name,mean_pred_ic50,sensitivity_rate,validation_score,safety_score,combined_score,final_category,flags
+1,22,1817,romidepsin,1.5493195,1.0,6.9,12.0,19.0,Approved,[]
+2,29,1941,sepantroniumbromide,1.8506709,1.0,7.35,10.0,16.5,Candidate,[]
+3,3,1811,dactinomycin,-2.999836,1.0,7.8,7.0,13.0,Approved,['DILI (Drug-Induced Liver Injury)(+)']
+4,9,1034,staurosporine,-0.2666945,1.0,7.5,10.0,13.0,Candidate,[]
+5,7,1004,vinblastine,-1.4824135,1.0,9.2,7.83,12.83,Approved,[]
+6,19,1191,bortezomib,1.2839334,1.0,9.45,5.29,12.79,Approved,['DILI (Drug-Induced Liver Injury)(+)']
+7,1,1819,docetaxel,-4.3071065,0.92,9.25,6.83,12.33,Approved,['DILI (Drug-Induced Liver Injury)(+)']
+8,6,2048,vinorelbine,-1.5775554,1.0,9.1,8.0,12.0,Approved,[]
+9,2,1080,paclitaxel,-3.4391427,1.0,9.15,6.83,11.33,Approved,['DILI (Drug-Induced Liver Injury)(+)']
+10,14,1084,rapamycin,0.77469987,1.0,9.05,7.71,11.21,Approved,[]
+11,27,1003,camptothecin,1.8269312,1.0,8.65,10.0,11.0,Candidate,[]
+12,13,1511,epirubicin,0.6785437,1.0,8.35,2.83,3.33,Caution,"['Ames Mutagenicity(+)', 'DILI (Drug-Induced Liver Injury)(+)']"

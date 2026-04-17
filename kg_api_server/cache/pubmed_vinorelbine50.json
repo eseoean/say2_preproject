@@ -1,0 +1,690 @@
+{
+  "data": [
+    {
+      "pmid": "32407216",
+      "title": "Randomized Phase III Study of Pemetrexed Plus Cisplatin Versus Vinorelbine Plus Cisplatin for Completely Resected Stage II to IIIA Nonsquamous Non-Small-Cell Lung Cancer.",
+      "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+      "year": "2020",
+      "authors": [
+        "Kenmotsu H",
+        "Yamamoto N",
+        "Yamanaka T",
+        "Yoshiya K",
+        "Takahashi T",
+        "Ueno T",
+        "Goto K",
+        "Daga H",
+        "Ikeda N",
+        "Sugio K",
+        "Seto T",
+        "Toyooka S",
+        "Date H",
+        "Mitsudomi T",
+        "Okamoto I",
+        "Yokoi K",
+        "Saka H",
+        "Okamoto H",
+        "Takiguchi Y",
+        "Tsuboi M"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "22594474",
+      "title": "Vinorelbine in cancer therapy.",
+      "journal": "Current drug targets",
+      "year": "2012",
+      "authors": [
+        "Capasso A"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "7656116",
+      "title": "Vinorelbine: a novel vinca alkaloid.",
+      "journal": "American journal of health-system pharmacy : AJHP : official journal of the American Society of Health-System Pharmacists",
+      "year": "1995",
+      "authors": [
+        "Toso C",
+        "Lindley C"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "30173589",
+      "title": "Oral vinorelbine-based concomitant chemoradiotherapy in unresectable stage III non-small cell lung cancer: a systematic review.",
+      "journal": "Expert review of anticancer therapy",
+      "year": "2018",
+      "authors": [
+        "Lesueur P",
+        "Martel-Laffay I",
+        "Escande A",
+        "Kissel M",
+        "Locher C",
+        "Gervais R",
+        "Schott R",
+        "Vergnenegre A",
+        "Chouaid C"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "30025492",
+      "title": "Vinorelbine's anti-tumor actions may depend on the mitotic apoptosis, autophagy and inflammation: hypotheses with implications for chemo-immunotherapy of advanced cancers and pediatric gliomas.",
+      "journal": "Journal of chemotherapy (Florence, Italy)",
+      "year": "2018",
+      "authors": [
+        "Altinoz MA",
+        "Ozpinar A",
+        "Alturfan EE",
+        "Elmaci I"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "20350282",
+      "title": "Vinorelbine for non-small cell lung cancer.",
+      "journal": "Expert opinion on drug safety",
+      "year": "2010",
+      "authors": [
+        "Piccirillo MC",
+        "Daniele G",
+        "Di Maio M",
+        "Bryce J",
+        "De Feo G",
+        "Del Giudice A",
+        "Perrone F",
+        "Morabito A"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "24972635",
+      "title": "Oral vinorelbine in the treatment of non-small-cell lung cancer.",
+      "journal": "Expert opinion on pharmacotherapy",
+      "year": "2014",
+      "authors": [
+        "Barletta G",
+        "Genova C",
+        "Rijavec E",
+        "Burrafato G",
+        "Biello F",
+        "Sini C",
+        "Dal Bello MG",
+        "Coco S",
+        "Truini A",
+        "Vanni I",
+        "Alama A",
+        "Beltramini S",
+        "Grassi MA",
+        "Boccardo F",
+        "Grossi F"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "1283851",
+      "title": "Vinorelbine. A review of its antitumour activity in lung cancer.",
+      "journal": "Drugs",
+      "year": "1992",
+      "authors": [
+        "Sørensen JB"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "8877249",
+      "title": "Clinical pharmacokinetics of vinorelbine.",
+      "journal": "Clinical pharmacokinetics",
+      "year": "1996",
+      "authors": [
+        "Levêque D",
+        "Jehl F"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "7740337",
+      "title": "Oral vinorelbine (Navelbine) in the treatment of advanced breast cancer.",
+      "journal": "Seminars in oncology",
+      "year": "1995",
+      "authors": [
+        "Winer EP",
+        "Chu L",
+        "Spicer DV"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "7803948",
+      "title": "Vinorelbine. A review of its pharmacological properties and clinical use in cancer chemotherapy.",
+      "journal": "Drugs & aging",
+      "year": "1994",
+      "authors": [
+        "Goa KL",
+        "Faulds D"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "10582139",
+      "title": "Vinorelbine (navelbine) in the treatment of non-small-cell lung cancer: recent developments in combination chemotherapy and radiotherapy.",
+      "journal": "Annals of oncology : official journal of the European Society for Medical Oncology",
+      "year": "1999",
+      "authors": [
+        "Gralla R",
+        "Harper P",
+        "Johnson S",
+        "Delgado FM"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "37114926",
+      "title": "Oral vinorelbine in young patients with desmoid-type fibromatosis.",
+      "journal": "Tumori",
+      "year": "2023",
+      "authors": [
+        "Kornreich L",
+        "Orbach D",
+        "Nicolas N",
+        "Brisse HJ",
+        "Berlanga P",
+        "Defachelles AS",
+        "Mansuy L",
+        "Verite C",
+        "Saumet L",
+        "Karanian M",
+        "Corradini N"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "7749128",
+      "title": "Vinorelbine and the topoisomerase 1 inhibitors: current and potential roles in breast cancer chemotherapy.",
+      "journal": "Breast cancer research and treatment",
+      "year": "1995",
+      "authors": [
+        "O'Reilly S",
+        "Kennedy MJ",
+        "Rowinsky EK",
+        "Donehower RC"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "21742438",
+      "title": "Oral vinorelbine in metastatic breast cancer: a review of current clinical trial results.",
+      "journal": "Cancer treatment reviews",
+      "year": "2012",
+      "authors": [
+        "Aapro M",
+        "Finek J"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "9071921",
+      "title": "Vinorelbine in pregnancy.",
+      "journal": "European journal of cancer (Oxford, England : 1990)",
+      "year": "1997",
+      "authors": [
+        "Cuvier C",
+        "Espie M",
+        "Extra JM",
+        "Marty M"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "19464166",
+      "title": "Capecitabine and vinorelbine in metastatic breast cancer.",
+      "journal": "European journal of cancer (Oxford, England : 1990)",
+      "year": "2009",
+      "authors": [
+        "Chan A",
+        "Verrill M"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "12381238",
+      "title": "Vinorelbine: a review of its use in elderly patients with advanced non-small cell lung cancer.",
+      "journal": "Drugs & aging",
+      "year": "2002",
+      "authors": [
+        "Curran MP",
+        "Plosker GL"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "16473470",
+      "title": "Vinorelbine in the management of breast cancer: New perspectives, revived role in the era of targeted therapy.",
+      "journal": "Cancer treatment reviews",
+      "year": "2006",
+      "authors": [
+        "Mano M"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "17600389",
+      "title": "Oral vinorelbine in the treatment of non-small cell lung cancer: rationale and implications for patient management.",
+      "journal": "Drugs",
+      "year": "2007",
+      "authors": [
+        "Gralla RJ",
+        "Gatzemeier U",
+        "Gebbia V",
+        "Huber R",
+        "O'Brien M",
+        "Puozzo C"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "9923827",
+      "title": "Vinorelbine-related acute cardiopulmonary toxicity.",
+      "journal": "Cancer chemotherapy and pharmacology",
+      "year": "1999",
+      "authors": [
+        "Karminsky N",
+        "Merimsky O",
+        "Kovner F",
+        "Inbar M"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "11899783",
+      "title": "A review of vinorelbine in the treatment of breast cancer.",
+      "journal": "Clinical breast cancer",
+      "year": "2001",
+      "authors": [
+        "Domenech GH",
+        "Vogel CL"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "16111453",
+      "title": "Oral versus intravenous vinorelbine: clinical safety profile.",
+      "journal": "Expert opinion on drug safety",
+      "year": "2005",
+      "authors": [
+        "Gebbia V",
+        "Puozzo C"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "7675666",
+      "title": "Vinorelbine tartrate (Navelbine): drug profile and nursing implications of a new vinca alkaloid.",
+      "journal": "Oncology nursing forum",
+      "year": "1995",
+      "authors": [
+        "Brogden JM",
+        "Nevidjon B"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "10945030",
+      "title": "[Vinorelbine in the treatment of non-small-cell lung cancer and breast cancer].",
+      "journal": "Gan to kagaku ryoho. Cancer & chemotherapy",
+      "year": "2000",
+      "authors": [
+        "Kubota K"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "35840514",
+      "title": "Vinorelbine After Prior Treatment With Eribulin for Advanced Breast Cancer: A Single-Centre Experience Suggesting Cross-Resistance.",
+      "journal": "Clinical breast cancer",
+      "year": "2022",
+      "authors": [
+        "Okines AFC",
+        "Irfan T",
+        "Mohammed K",
+        "Ring A",
+        "Parton M",
+        "Kipps E",
+        "Johnston S",
+        "Turner NC"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "40076874",
+      "title": "Effects of Vinorelbine on M2 Macrophages in Non-Small Cell Lung Cancer.",
+      "journal": "International journal of molecular sciences",
+      "year": "2025",
+      "authors": [
+        "Al-Omar A",
+        "Asadi M",
+        "Mert U",
+        "Muftuoglu C",
+        "Karakus HS",
+        "Goksel T",
+        "Caner A"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "23320984",
+      "title": "A systematic review of vinorelbine for the treatment of breast cancer.",
+      "journal": "The breast journal",
+      "year": "2013",
+      "authors": [
+        "Xu YC",
+        "Wang HX",
+        "Tang L",
+        "Ma Y",
+        "Zhang FC"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "8882953",
+      "title": "Vinorelbine: a new promising drug in Hodgkin's disease.",
+      "journal": "Leukemia & lymphoma",
+      "year": "1996",
+      "authors": [
+        "Devizzi L",
+        "Santoro A",
+        "Bonfante V",
+        "Viviani S",
+        "Bonadonna G"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "37016270",
+      "title": "Alveolar rhabdomyosarcoma has superior response rates to vinorelbine compared to embryonal rhabdomyosarcoma in patients with relapsed/refractory disease: A meta-analysis.",
+      "journal": "Cancer medicine",
+      "year": "2023",
+      "authors": [
+        "Allen-Rhoades W",
+        "Lupo PJ",
+        "Scheurer ME",
+        "Chi YY",
+        "Kuttesch JF",
+        "Venkatramani R",
+        "Meyer WH",
+        "Mascarenhas L"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "2057177",
+      "title": "Vinorelbine (Navelbine). A new semisynthetic vinca alkaloid.",
+      "journal": "Onkologie",
+      "year": "1991",
+      "authors": [
+        "Krikorian A",
+        "Breillout F"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "7663552",
+      "title": "Vinorelbine tartrate.",
+      "journal": "Cancer practice",
+      "year": "1995",
+      "authors": [
+        "Chan BM",
+        "Ignoffo RJ"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "8610232",
+      "title": "Update: vinorelbine (navelbine) in non-small cell lung cancer.",
+      "journal": "Seminars in oncology",
+      "year": "1996",
+      "authors": [
+        "Crawford J"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "16534241",
+      "title": "[Oral vinorelbine: pharmacology and treatment outcome in non-small cell bronchial carcinoma and breast carcinoma].",
+      "journal": "Onkologie",
+      "year": "2006",
+      "authors": [
+        "Bartsch V"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "10585011",
+      "title": "Gemcitabine and vinorelbine combinations in the treatment of non-small cell lung cancer.",
+      "journal": "Seminars in oncology",
+      "year": "1999",
+      "authors": [
+        "Herbst RS",
+        "Lilenbaum R"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "32472208",
+      "title": "The efficacy and toxicity of metronomic oral vinorelbine monotherapy in patients with non-small cell lung cancer: a meta-analysis.",
+      "journal": "International journal of clinical oncology",
+      "year": "2020",
+      "authors": [
+        "Xu K",
+        "Liu T",
+        "Zhang J",
+        "Zhou Y",
+        "Yang F",
+        "Ren T"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "1283849",
+      "title": "The current and future place of vinorelbine in cancer therapy.",
+      "journal": "Drugs",
+      "year": "1992",
+      "authors": [
+        "Cvitkovic E",
+        "Izzo J"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "38851359",
+      "title": "Vinorelbine administration impedes the timely progression of meiotic maturation and induces aneuploidy in mouse oocytes.",
+      "journal": "Reproductive toxicology (Elmsford, N.Y.)",
+      "year": "2024",
+      "authors": [
+        "Cheng SY",
+        "Yi ZY",
+        "Zhang CH",
+        "Sun QY",
+        "Qian WP",
+        "Li J"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "31806078",
+      "title": "Vinorelbine in Non-Small Cell Lung Cancer: Real-World Data From a Single-Institution Experience.",
+      "journal": "Oncology research",
+      "year": "2020",
+      "authors": [
+        "Nobili S",
+        "Lavacchi D",
+        "Perrone G",
+        "Vicini G",
+        "Tassi R",
+        "Landini I",
+        "Grosso A",
+        "Roviello G",
+        "Mazzanti R",
+        "Santomaggio C",
+        "Mini E"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "33054438",
+      "title": "Metronomic therapy in advanced breast cancer and NSCLC: vinorelbine as a paradigm of recent progress.",
+      "journal": "Expert review of anticancer therapy",
+      "year": "2021",
+      "authors": [
+        "Xu B",
+        "Sun T",
+        "Wang S",
+        "Lin Y"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "33795373",
+      "title": "Outcomes of Oral Vinorelbine in Progressive Desmoid Fibromatosis-Letter.",
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "year": "2021",
+      "authors": [
+        "Zheng C",
+        "Min L",
+        "Tu C"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "11966450",
+      "title": "Vinorelbine in the treatment of non-small cell lung cancer.",
+      "journal": "Current medicinal chemistry",
+      "year": "2002",
+      "authors": [
+        "Gridelli C",
+        "De Vivo R"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "9535205",
+      "title": "A review of ifosfamide and vinorelbine in advanced non-small cell carcinoma of the lung.",
+      "journal": "Seminars in oncology",
+      "year": "1998",
+      "authors": [
+        "Masters GA",
+        "Hoffman PC",
+        "Drinkard LC",
+        "Samuels BL",
+        "Golomb HM",
+        "Vokes EE"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "31134323",
+      "title": "Effect of ethnicity on vinorelbine pharmacokinetics: a population pharmacokinetics analysis.",
+      "journal": "Cancer chemotherapy and pharmacology",
+      "year": "2019",
+      "authors": [
+        "Pétain A",
+        "Zhong D",
+        "Chen X",
+        "Li Z",
+        "Zhimin S",
+        "Zefei J",
+        "Zorza G",
+        "Ferré P"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "38338842",
+      "title": "Vinorelbine Improves the Efficacy of Sorafenib against Hepatocellular Carcinoma: A Promising Therapeutic Approach.",
+      "journal": "International journal of molecular sciences",
+      "year": "2024",
+      "authors": [
+        "Ng WH",
+        "Soo KC",
+        "Huynh H"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "10582138",
+      "title": "Vinorelbine (Navelbine) in the treatment of non-small-cell lung cancer: studies with single-agent therapy and in combination with cisplatin.",
+      "journal": "Annals of oncology : official journal of the European Society for Medical Oncology",
+      "year": "1999",
+      "authors": [
+        "Gralla R",
+        "Harper P",
+        "Johnson S",
+        "Delgado FM"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "34414475",
+      "title": "Vinorelbine in bladder-preserving multimodality treatment for muscle-invasive bladder cancer-a valid option for cisplatin-unfit patients?",
+      "journal": "Strahlentherapie und Onkologie : Organ der Deutschen Rontgengesellschaft ... [et al]",
+      "year": "2022",
+      "authors": [
+        "Arnold CR",
+        "Lindner AK",
+        "Schachtner G",
+        "Tulchiner G",
+        "Tulchiner N",
+        "Mangesius J",
+        "Maffei M",
+        "Horninger W",
+        "Kouvaiou O",
+        "Lukas P",
+        "Ganswindt U",
+        "Pichler R",
+        "Skvortsov S"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "8740332",
+      "title": "Vinorelbine: a new antineoplastic drug for the treatment of non-small-cell lung cancer.",
+      "journal": "The Annals of pharmacotherapy",
+      "year": "1996",
+      "authors": [
+        "Jones SF",
+        "Burris HA 3rd"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "33795374",
+      "title": "Outcomes of Oral Vinorelbine in Progressive Desmoid Fibromatosis-Response.",
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "year": "2021",
+      "authors": [
+        "Mir O",
+        "Honoré C",
+        "Chamseddine AN",
+        "Faron M",
+        "Haddag-Miliani L",
+        "Bayle A",
+        "Le Cesne A"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "17385939",
+      "title": "Oral vinorelbine: role in the management of metastatic breast cancer.",
+      "journal": "Drugs",
+      "year": "2007",
+      "authors": [
+        "Aapro MS",
+        "Conte P",
+        "Esteban González E",
+        "Trillet-Lenoir V"
+      ],
+      "source": "ncbi_pubmed"
+    }
+  ]
+}

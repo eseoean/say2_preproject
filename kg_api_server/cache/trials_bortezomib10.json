@@ -1,0 +1,137 @@
+{
+  "data": [
+    {
+      "nct_id": "NCT01668719",
+      "title": "S1211 Bortezomib, Dexamethasone, and Lenalidomide With or Without Elotuzumab in Treating Patients With Newly Diagnosed High-Risk Multiple Myeloma",
+      "phase": "PHASE1, PHASE2",
+      "status": "ACTIVE_NOT_RECRUITING",
+      "conditions": [
+        "DS Stage I Plasma Cell Myeloma",
+        "DS Stage II Plasma Cell Myeloma",
+        "DS Stage III Plasma Cell Myeloma"
+      ],
+      "lead_sponsor": "SWOG Cancer Research Network",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT04566328",
+      "title": "Testing the Use of Combination Therapy in Adult Patients With Newly Diagnosed Multiple Myeloma, the EQUATE Trial",
+      "phase": "PHASE3",
+      "status": "RECRUITING",
+      "conditions": [
+        "Plasma Cell Myeloma",
+        "RISS Stage I Plasma Cell Myeloma",
+        "RISS Stage II Plasma Cell Myeloma"
+      ],
+      "lead_sponsor": "ECOG-ACRIN Cancer Research Group",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT00237627",
+      "title": "Doxorubicin Hydrochloride Liposome and Bortezomib in Treating Patients With Refractory Hematologic Cancer or Malignant Solid Tumor or Metastatic Breast Cancer",
+      "phase": "PHASE1, PHASE2",
+      "status": "COMPLETED",
+      "conditions": [
+        "Breast Cancer",
+        "Leukemia",
+        "Lymphoma",
+        "Multiple Myeloma and Plasma Cell Neoplasm",
+        "Ovarian Cancer",
+        "Unspecified Adult Solid Tumor, Protocol Specific"
+      ],
+      "lead_sponsor": "UNC Lineberger Comprehensive Cancer Center",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT03997981",
+      "title": "Chemotherapy Induced Peripheral Neuropathy Natural History Study (EPIPHANY)",
+      "phase": "",
+      "status": "UNKNOWN",
+      "conditions": [
+        "Chemotherapy-induced Peripheral Neuropathy"
+      ],
+      "lead_sponsor": "Disarm Therapeutics",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT00199212",
+      "title": "PS-341 in Combination With Herceptin in Advanced Breast Cancer That Overexpresses HER-2",
+      "phase": "PHASE1",
+      "status": "COMPLETED",
+      "conditions": [
+        "Carcinoma Breast Stage IV"
+      ],
+      "lead_sponsor": "Jules Bordet Institute",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT07341867",
+      "title": "Systemic Anti-Cancer Therapy Dose Modifications for Individuals With Duffy Null Phenotype",
+      "phase": "PHASE1",
+      "status": "NOT_YET_RECRUITING",
+      "conditions": [
+        "Multiple Myeloma",
+        "Triple Negative Breast Cancer",
+        "Duffy Blood Group, Chemokine Receptor Gene Mutation",
+        "Duffy Blood Group, Chemokine Receptor Gene C.-67T>C"
+      ],
+      "lead_sponsor": "Andrew Hantel, MD",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT01142401",
+      "title": "Fulvestrant With or Without Bortezomib in Patients With Inoperable Locally Advanced or Metastatic Estrogen Receptor Positive Breast Cancer",
+      "phase": "PHASE2",
+      "status": "COMPLETED",
+      "conditions": [
+        "Metastatic Breast Carcinoma",
+        "Stage IIIB Breast Cancer AJCC v7",
+        "Stage IIIC Breast Cancer AJCC v7",
+        "Stage IV Breast Cancer AJCC v6 and v7"
+      ],
+      "lead_sponsor": "National Cancer Institute (NCI)",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT01863550",
+      "title": "Bortezomib or Carfilzomib With Lenalidomide and Dexamethasone in Treating Patients With Newly Diagnosed Multiple Myeloma",
+      "phase": "PHASE3",
+      "status": "ACTIVE_NOT_RECRUITING",
+      "conditions": [
+        "Plasma Cell Myeloma"
+      ],
+      "lead_sponsor": "ECOG-ACRIN Cancer Research Group",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT00025584",
+      "title": "PS-341 in Treating Women With Metastatic Breast Cancer",
+      "phase": "PHASE2",
+      "status": "COMPLETED",
+      "conditions": [
+        "Recurrent Breast Cancer",
+        "Stage IV Breast Cancer"
+      ],
+      "lead_sponsor": "National Cancer Institute (NCI)",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT00622674",
+      "title": "Bortezomib and Cetuximab in Treating Patients With Advanced Solid Tumors",
+      "phase": "PHASE1",
+      "status": "COMPLETED",
+      "conditions": [
+        "Breast Cancer",
+        "Colorectal Cancer",
+        "Head and Neck Cancer",
+        "Kidney Cancer",
+        "Lung Cancer",
+        "Pancreatic Cancer",
+        "Sarcoma",
+        "Unspecified Adult Solid Tumor, Protocol Specific"
+      ],
+      "lead_sponsor": "Masonic Cancer Center, University of Minnesota",
+      "source": "clinicaltrials_gov_v2"
+    }
+  ]
+}

@@ -1,0 +1,698 @@
+{
+  "data": [
+    {
+      "pmid": "2497417",
+      "title": "Mitomycin-C and vinblastine in advanced breast cancer.",
+      "journal": "Oncology",
+      "year": "1989",
+      "authors": [
+        "Navarro M",
+        "Bellmunt J",
+        "Balañá C",
+        "Colomer R",
+        "Jolis L",
+        "del Campo JM"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "8547400",
+      "title": "Metastatic breast cancer.",
+      "journal": "Current opinion in oncology",
+      "year": "1995",
+      "authors": [
+        "Rubens RD"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "39261049",
+      "title": "Paclitaxel and Vinblastine Increase Plasminogen Activator Inhibitor-1 Production in Human Breast Cancer MCF-7 Cells but Not MDA-MB-231 Cells.",
+      "journal": "Biological & pharmaceutical bulletin",
+      "year": "2024",
+      "authors": [
+        "Morimoto-Kamata R",
+        "Ohkura N"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "3133948",
+      "title": "Fatal acute respiratory failure following vinblastine and mitomycin administration for breast cancer.",
+      "journal": "The American journal of the medical sciences",
+      "year": "1988",
+      "authors": [
+        "Ballen KK",
+        "Weiss ST"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "20714803",
+      "title": "Breast cancer during pregnancy.",
+      "journal": "Breast cancer research and treatment",
+      "year": "2010",
+      "authors": [
+        "Sánchez Martínez MC",
+        "Ruiz Simón A"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "27484180",
+      "title": "Vinflunine for the treatment of breast cancer.",
+      "journal": "Expert opinion on pharmacotherapy",
+      "year": "2016",
+      "authors": [
+        "Gourmelon C",
+        "Bourien H",
+        "Augereau P",
+        "Patsouris A",
+        "Frenel JS",
+        "Campone M"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "19626437",
+      "title": "Fulvestrant (ICI 182,780) sensitizes breast cancer cells expressing estrogen receptor alpha to vinblastine and vinorelbine.",
+      "journal": "Breast cancer research and treatment",
+      "year": "2010",
+      "authors": [
+        "Sui M",
+        "Jiang D",
+        "Hinsch C",
+        "Fan W"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "4005794",
+      "title": "Five-day continuous-infusion vinblastine in the treatment of breast cancer.",
+      "journal": "Cancer",
+      "year": "1985",
+      "authors": [
+        "Fraschini G",
+        "Yap HY",
+        "Hortobagyi GN",
+        "Buzdar A",
+        "Blumenschein G"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "12138396",
+      "title": "Trastuzumab/chemotherapy combinations in metastatic breast cancer.",
+      "journal": "Seminars in oncology",
+      "year": "2002",
+      "authors": [
+        "Ligibel JA",
+        "Winer EP"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "11899783",
+      "title": "A review of vinorelbine in the treatment of breast cancer.",
+      "journal": "Clinical breast cancer",
+      "year": "2001",
+      "authors": [
+        "Domenech GH",
+        "Vogel CL"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "8483557",
+      "title": "First-line and salvage therapy of metastatic breast cancer with mitomycin/vinblastine.",
+      "journal": "Oncology",
+      "year": "1993",
+      "authors": [
+        "Sedlacek SM"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "20210229",
+      "title": "Mitomycin C and vinblastine: an active regimen in previously treated breast cancer patients.",
+      "journal": "Tumori",
+      "year": "2009",
+      "authors": [
+        "Ospovat I",
+        "Siegelmann-Danieli N",
+        "Grenader T",
+        "Hubert A",
+        "Hamburger T",
+        "Peretz T"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "9061067",
+      "title": "Hydroxyurea did not enhance the clinical response to vinblastine in patients with anthracycline-resistant metastatic breast cancer.",
+      "journal": "Tumori",
+      "year": "1996",
+      "authors": [
+        "Huan SD",
+        "Yau JC",
+        "Tomiak E",
+        "Goel R",
+        "Cripps C",
+        "Gertler SZ",
+        "Prosser IA",
+        "Stewart DJ"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "14586149",
+      "title": "Ifosfamide in advanced/disseminated breast cancer.",
+      "journal": "Oncology",
+      "year": "2003",
+      "authors": [
+        "Sorio R",
+        "Lombardi D",
+        "Spazzapan S",
+        "La Mura N",
+        "Tabaro G",
+        "Veronesi A"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "26584409",
+      "title": "Metronomic oral vinorelbine in advanced breast cancer and non-small-cell lung cancer: current status and future development.",
+      "journal": "Future oncology (London, England)",
+      "year": "2016",
+      "authors": [
+        "Cazzaniga ME",
+        "Camerini A",
+        "Addeo R",
+        "Nolè F",
+        "Munzone E",
+        "Collovà E",
+        "Del Conte A",
+        "Mencoboni M",
+        "Papaldo P",
+        "Pasini F",
+        "Saracchini S",
+        "Bocci G"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "11989593",
+      "title": "Mitomycin C and vinblastine in anthracycline-resistant metastatic breast cancer: a phase II study.",
+      "journal": "Tumori",
+      "year": "2001",
+      "authors": [
+        "Kalofonos HP",
+        "Onyenadum A",
+        "Kosmas C",
+        "Koutras A",
+        "Petsas T",
+        "Efthimiou V",
+        "Koukouras D",
+        "Tzoracolefterakis E",
+        "Andrikopoulos P",
+        "Androulakis J"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "15946980",
+      "title": "High-dose mitoxantrone-vinblastine-cyclophosphamide and autologous stem cell transplantation for stage III breast cancer: final results of a prospective multicentre study.",
+      "journal": "Annals of oncology : official journal of the European Society for Medical Oncology",
+      "year": "2005",
+      "authors": [
+        "Stewart DA",
+        "Paterson AH",
+        "Ruether JD",
+        "Russell J",
+        "Craighead P",
+        "Smylie M",
+        "Mackey J"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "28425219",
+      "title": "Resistance-modifying Activity in Vinblastine-resistant Human Breast Cancer Cells by Oligosaccharides Obtained from Mucilage of Chia Seeds (Salvia hispanica).",
+      "journal": "Phytotherapy research : PTR",
+      "year": "2017",
+      "authors": [
+        "Rosas-Ramírez DG",
+        "Fragoso-Serrano M",
+        "Escandón-Rivera S",
+        "Vargas-Ramírez AL",
+        "Reyes-Grajeda JP",
+        "Soriano-García M"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "6422004",
+      "title": "Treatment of advanced breast cancer with mitomycin C combined with vinblastine or vindesine.",
+      "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+      "year": "1983",
+      "authors": [
+        "Garewal HS",
+        "Brooks RJ",
+        "Jones SE",
+        "Miller TP"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "29614107",
+      "title": "Functional disruption of the Golgi apparatus protein ARF1 sensitizes MDA-MB-231 breast cancer cells to the antitumor drugs Actinomycin D and Vinblastine through ERK and AKT signaling.",
+      "journal": "PloS one",
+      "year": "2018",
+      "authors": [
+        "Luchsinger C",
+        "Aguilar M",
+        "Burgos PV",
+        "Ehrenfeld P",
+        "Mardones GA"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "19028269",
+      "title": "Breast cancer after treatment of Hodgkin's lymphoma: general review.",
+      "journal": "International journal of radiation oncology, biology, physics",
+      "year": "2008",
+      "authors": [
+        "Alm El-Din MA",
+        "El-Badawy SA",
+        "Taghian AG"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "18398093",
+      "title": "Can early response assessment guide neoadjuvant chemotherapy in early-stage breast cancer?",
+      "journal": "Journal of the National Cancer Institute",
+      "year": "2008",
+      "authors": [
+        "Esteva FJ",
+        "Hortobagyi GN"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "8123940",
+      "title": "Toremifene enhances cell cycle block and growth inhibition by vinblastine in multidrug resistant human breast cancer cells.",
+      "journal": "Oncology research",
+      "year": "1993",
+      "authors": [
+        "Baker WJ",
+        "Maenpaa JU",
+        "Wurz GT",
+        "Koester SK",
+        "Seymour RC",
+        "Emshoff VD",
+        "Wiebe VJ",
+        "DeGregorio MW"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "3677109",
+      "title": "Continuous 5-day infusion of vinblastine for percutaneous hepatic arterial chemotherapy for metastatic breast cancer.",
+      "journal": "Cancer treatment reports",
+      "year": "1987",
+      "authors": [
+        "Fraschini G",
+        "Fleishman G",
+        "Charnsangavej C",
+        "Carrasco CH",
+        "Hortobagyi GN"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "15707703",
+      "title": "Liver metastases from breast cancer: management of patients with significant liver dysfunction.",
+      "journal": "Cancer treatment reviews",
+      "year": "2005",
+      "authors": [
+        "Mano MS",
+        "Cassidy J",
+        "Canney P"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "7577376",
+      "title": "Current status of vinorelbine for breast cancer.",
+      "journal": "Oncology (Williston Park, N.Y.)",
+      "year": "1995",
+      "authors": [
+        "Smith GA"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "10337368",
+      "title": "Monotherapy of metastatic breast cancer: a review of newer agents.",
+      "journal": "The oncologist",
+      "year": "1999",
+      "authors": [
+        "Vogel CL",
+        "Nabholtz JM"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "9080756",
+      "title": "MVP (mitomycin-C, vinblastine, cisplatin) salvage chemotherapy for relapsed and refractory metastatic breast cancer.",
+      "journal": "Journal of the Formosan Medical Association = Taiwan yi zhi",
+      "year": "1997",
+      "authors": [
+        "Hsu C",
+        "Yeh KH",
+        "Hong RL",
+        "Yang CH",
+        "Lin MT",
+        "Chen YC",
+        "Cheng AL"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "7882454",
+      "title": "A pilot study of amiodarone with infusional doxorubicin or vinblastine in refractory breast cancer.",
+      "journal": "Cancer chemotherapy and pharmacology",
+      "year": "1995",
+      "authors": [
+        "Bates SE",
+        "Meadows B",
+        "Goldspiel BR",
+        "Denicoff A",
+        "Le TB",
+        "Tucker E",
+        "Steinberg SM",
+        "Elwood LJ"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "2500762",
+      "title": "Mitomycin C and vinblastine in advanced refractory breast cancer.",
+      "journal": "Tumori",
+      "year": "1989",
+      "authors": [
+        "Brambilla C",
+        "Zambetti M",
+        "Ferrari L",
+        "Bonadonna G"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "6791808",
+      "title": "Mitomycin C and vinblastine chemotherapy for advanced breast cancer.",
+      "journal": "Cancer",
+      "year": "1981",
+      "authors": [
+        "Konits PH",
+        "Aisner J",
+        "van Echo DA",
+        "Lichtenfeld K",
+        "Wiernik PH"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "12756075",
+      "title": "The evolving role of capecitabine in breast cancer.",
+      "journal": "Clinical breast cancer",
+      "year": "2003",
+      "authors": [
+        "O'Shaughnessy JA"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "1382837",
+      "title": "Loss of epithelial markers and acquisition of vimentin expression in adriamycin- and vinblastine-resistant human breast cancer cell lines.",
+      "journal": "Cancer research",
+      "year": "1992",
+      "authors": [
+        "Sommers CL",
+        "Heckford SE",
+        "Skerker JM",
+        "Worland P",
+        "Torri JA",
+        "Thompson EW",
+        "Byers SW",
+        "Gelmann EP"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "23320984",
+      "title": "A systematic review of vinorelbine for the treatment of breast cancer.",
+      "journal": "The breast journal",
+      "year": "2013",
+      "authors": [
+        "Xu YC",
+        "Wang HX",
+        "Tang L",
+        "Ma Y",
+        "Zhang FC"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "18937621",
+      "title": "Vinorelbine in breast cancer.",
+      "journal": "Expert opinion on pharmacotherapy",
+      "year": "2008",
+      "authors": [
+        "Bonneterre J",
+        "Penel N"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "19657108",
+      "title": "International guidelines for management of metastatic breast cancer: combination vs sequential single-agent chemotherapy.",
+      "journal": "Journal of the National Cancer Institute",
+      "year": "2009",
+      "authors": [
+        "Cardoso F",
+        "Bedard PL",
+        "Winer EP",
+        "Pagani O",
+        "Senkus-Konefka E",
+        "Fallowfield LJ",
+        "Kyriakides S",
+        "Costa A",
+        "Cufer T",
+        "Albain KS",
+        "ESO-MBC Task Force"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "37750392",
+      "title": "Vinorelbine thiotepa in metastatic breast cancer: a large real-life retrospective study.",
+      "journal": "Acta oncologica (Stockholm, Sweden)",
+      "year": "2023",
+      "authors": [
+        "Loison R",
+        "Abbar B",
+        "Drouin L",
+        "Bonnet-Bensimon C",
+        "Cuvier C",
+        "Giacchetti S",
+        "Espie M",
+        "Teixeira L",
+        "De Castelbajac V"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "25893588",
+      "title": "A review of systematic reviews of the cost-effectiveness of hormone therapy, chemotherapy, and targeted therapy for breast cancer.",
+      "journal": "Breast cancer research and treatment",
+      "year": "2015",
+      "authors": [
+        "Diaby V",
+        "Tawk R",
+        "Sanogo V",
+        "Xiao H",
+        "Montero AJ"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "9322355",
+      "title": "Mitomycin C and vinblastine in combination with amifostine in metastatic breast cancer. A feasibility study of the EORTC--Investigational Drug Branch for Breast Cancer (IDBBC).",
+      "journal": "Supportive care in cancer : official journal of the Multinational Association of Supportive Care in Cancer",
+      "year": "1997",
+      "authors": [
+        "Kusenda Z",
+        "Kerger J",
+        "Awada A",
+        "Geurs F",
+        "Van Vreckem A",
+        "Habboubi N",
+        "Piccart MJ"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "6540188",
+      "title": "Dibromodulcitol, mitomycin C and vinblastine (DMV) chemotherapy in advanced breast cancer.",
+      "journal": "European journal of cancer & clinical oncology",
+      "year": "1984",
+      "authors": [
+        "Howell A",
+        "Morrison JM",
+        "Bramwell VH",
+        "Harland RN",
+        "Moneypenny IJ"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "16770091",
+      "title": "[Chemotherapy for metastatic breast cancer].",
+      "journal": "Gan to kagaku ryoho. Cancer & chemotherapy",
+      "year": "2006",
+      "authors": [
+        "Ito Y",
+        "Tokudome N"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "7407762",
+      "title": "Vinblastine given as a continuous 5-day infusion in the treatment of refractory advanced breast cancer.",
+      "journal": "Cancer treatment reports",
+      "year": "1980",
+      "authors": [
+        "Yap HY",
+        "Blumenschein GR",
+        "Keating MJ",
+        "Hortobagyi GN",
+        "Tashima CK",
+        "Loo TL"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "11899413",
+      "title": "Platinum compounds in the treatment of advanced breast cancer.",
+      "journal": "Clinical breast cancer",
+      "year": "2001",
+      "authors": [
+        "Martín M"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "688260",
+      "title": "Vinblastine and 6-thioguanine in the treatment of advanced breast cancer.",
+      "journal": "Cancer treatment reports",
+      "year": "1978",
+      "authors": [
+        "Muss HB",
+        "White DR",
+        "Richards F 2nd",
+        "Copper MR",
+        "Stuart JJ",
+        "Spurr CL"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "2126683",
+      "title": "Chemotherapy with mitomycin-C, epidoxorubicin and vinblastine in CMF failing breast cancer patients.",
+      "journal": "Anticancer research",
+      "year": "1990",
+      "authors": [
+        "Pronzato P",
+        "Amoroso D",
+        "Bertelli G",
+        "Queirolo P",
+        "Sertoli MR",
+        "Rosso R"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "8727715",
+      "title": "Recurrent breast cancer treated successfully with mitomycin-C and vinblastine after failure of both doxorubicin-containing regimen and paclitaxel--a case report.",
+      "journal": "The Tohoku journal of experimental medicine",
+      "year": "1996",
+      "authors": [
+        "Sekine I",
+        "Sasaki Y",
+        "Fujii H",
+        "Ohtsu T",
+        "Wakita H",
+        "Igarashi T",
+        "Itoh K",
+        "Abe K"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "11694788",
+      "title": "New combinations with Herceptin in metastatic breast cancer.",
+      "journal": "Oncology",
+      "year": "2001",
+      "authors": [
+        "Winer EP",
+        "Burstein HJ"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "103610",
+      "title": "Vinblastine, adriamycin, thiotepa, and halotestin (VATH): therapy for advanced breast cancer refractory to prior chemotherapy.",
+      "journal": "Cancer",
+      "year": "1978",
+      "authors": [
+        "Perloff M",
+        "Hart RD",
+        "Holland JF"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "1487404",
+      "title": "Phase II study of a combination of elliptinium and vinblastine in metastatic breast cancer.",
+      "journal": "Investigational new drugs",
+      "year": "1992",
+      "authors": [
+        "Kayitalire L",
+        "Thomas F",
+        "Le Chevalier T",
+        "Toussaint C",
+        "Tursz T",
+        "Spielmann M"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "1283848",
+      "title": "A review of the antitumour activity of vinorelbine in breast cancer.",
+      "journal": "Drugs",
+      "year": "1992",
+      "authors": [
+        "Marty M",
+        "Extra JM",
+        "Dieras V",
+        "Giacchetti S",
+        "Ohana S",
+        "Espié M"
+      ],
+      "source": "ncbi_pubmed"
+    }
+  ]
+}

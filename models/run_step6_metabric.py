@@ -15,6 +15,7 @@ import pandas as pd
 import json
 import time
 import os
+import sys
 from pathlib import Path
 from scipy.stats import mannwhitneyu, spearmanr
 
@@ -30,13 +31,16 @@ DRUG_ANN = f"{S3_BASE}/data/gsdc/gdsc2_drug_annotation_master_20260406.parquet"
 RSF_RESULT_PATH = Path(__file__).parent / "ml_results" / "rsf_result.json"
 
 # Ensemble results (Step 5)
-ENSEMBLE_DIR = Path(__file__).parent / "ensemble_results"
+ENSEMBLE_DIR = Path(__file__).parent / os.getenv("ENSEMBLE_INPUT_DIRNAME", "ensemble_results")
 TOP30_PATH = ENSEMBLE_DIR / "top30_drugs.csv"
 ENSEMBLE_JSON = ENSEMBLE_DIR / "ensemble_results.json"
 
 # Output
-OUTPUT_DIR = Path(__file__).parent / "metabric_results"
+OUTPUT_DIR = Path(__file__).parent / os.getenv("METABRIC_OUTPUT_DIRNAME", "metabric_results")
 OUTPUT_DIR.mkdir(exist_ok=True)
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(line_buffering=True)
 
 # Known BRCA-approved/relevant drugs (for P@20 validation)
 KNOWN_BRCA_DRUGS = {
@@ -80,6 +84,20 @@ def load_data():
     print(f"  Drug annotations: {drug_ann.shape[0]} drugs")
     print(f"  Top 30 drugs loaded ({time.time()-t0:.1f}s)")
     return expr, clin, drug_ann, top30, ens_results
+
+
+def dedupe_top30_by_drug_name(top30, drug_ann):
+    name_map = drug_ann[["DRUG_ID", "DRUG_NAME"]].drop_duplicates("DRUG_ID")
+    out = top30.merge(name_map, left_on="drug_id", right_on="DRUG_ID", how="left")
+    out["drug_name"] = out["DRUG_NAME"].fillna(out["drug_id"].map(lambda x: f"Drug_{x}"))
+    out = out.drop(columns=["DRUG_ID", "DRUG_NAME"])
+    out = out.sort_values(["mean_pred_ic50", "drug_id"], ascending=[True, True])
+    before = len(out)
+    out = out.drop_duplicates(subset=["drug_name"], keep="first").reset_index(drop=True)
+    removed = before - len(out)
+    if removed:
+        print(f"  Removed {removed} duplicate Step 5 candidate rows by drug name")
+    return out
 
 
 def method_a_target_expression(expr, drug_ann, top30):
@@ -391,8 +409,11 @@ def select_top15(top30, df_a, df_b, drug_ann):
         - scores["mean_pred_ic50"].rank(ascending=True) * 0.05  # lower IC50 = better
     )
 
-    # Select top 15 by validation score
-    top15 = scores.nlargest(15, "validation_score").copy()
+    # Select top 15 by validation score while keeping unique drug names
+    top15 = scores.sort_values(["validation_score", "mean_pred_ic50"], ascending=[False, True]) \
+                  .drop_duplicates(subset=["drug_name"], keep="first") \
+                  .head(15) \
+                  .copy()
     top15 = top15.sort_values("mean_pred_ic50", ascending=True)
     top15["final_rank"] = range(1, 16)
 
@@ -476,7 +497,8 @@ def save_results(df_a, df_b, p_at_k, graphsage_p20, top15, scores,
 def upload_to_s3():
     """Upload Step 6 results to S3."""
     import subprocess
-    s3_dest = f"{S3_BASE}/models/metabric_results/"
+    s3_dirname = os.getenv("METABRIC_S3_DIRNAME", "metabric_results")
+    s3_dest = f"{S3_BASE}/models/{s3_dirname}/"
     cmd = f"aws s3 sync {OUTPUT_DIR} {s3_dest} --quiet"
     print(f"\n  Uploading to S3: {s3_dest}")
     result = subprocess.run(cmd, shell=True, capture_output=True, text=True)
@@ -493,6 +515,7 @@ def main():
     print(f"{'='*60}")
 
     expr, clin, drug_ann, top30, ens_results = load_data()
+    top30 = dedupe_top30_by_drug_name(top30, drug_ann)
 
     # Method A: Target expression analysis
     df_a = method_a_target_expression(expr, drug_ann, top30)

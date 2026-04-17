@@ -1,0 +1,17 @@
+{
+  "data": [
+    {
+      "nct_id": "NCT05358639",
+      "title": "Combination of Olaparib and Navitoclax in Women with HGSC and TNBC",
+      "phase": "PHASE1",
+      "status": "ACTIVE_NOT_RECRUITING",
+      "conditions": [
+        "High Grade Serous Carcinoma",
+        "Triple Negative Breast Cancer",
+        "Ovarian Cancer"
+      ],
+      "lead_sponsor": "Sunnybrook Health Sciences Centre",
+      "source": "clinicaltrials_gov_v2"
+    }
+  ]
+}

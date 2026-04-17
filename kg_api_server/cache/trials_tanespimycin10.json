@@ -1,0 +1,77 @@
+{
+  "data": [
+    {
+      "nct_id": "NCT00004065",
+      "title": "Chemotherapy in Treating Patients With Refractory Advanced Solid Tumors or Hematologic Cancer",
+      "phase": "PHASE1",
+      "status": "COMPLETED",
+      "conditions": [
+        "Bladder Cancer",
+        "Breast Cancer",
+        "Colorectal Cancer",
+        "Gastric Cancer",
+        "Head and Neck Cancer",
+        "Kidney Cancer",
+        "Leukemia",
+        "Lung Cancer",
+        "Melanoma (Skin)",
+        "Ovarian Cancer",
+        "Prostate Cancer",
+        "Unspecified Adult Solid Tumor, Protocol Specific"
+      ],
+      "lead_sponsor": "Memorial Sloan Kettering Cancer Center",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT00096109",
+      "title": "Tanespimycin in Treating Women With Refractory Locally Advanced or Metastatic Breast Cancer",
+      "phase": "PHASE2",
+      "status": "TERMINATED",
+      "conditions": [
+        "Recurrent Breast Cancer",
+        "Stage IIIB Breast Cancer",
+        "Stage IIIC Breast Cancer",
+        "Stage IV Breast Cancer"
+      ],
+      "lead_sponsor": "National Cancer Institute (NCI)",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT00773344",
+      "title": "Clinical Trial of the Combination of Trastuzumab (Herceptin) and Tanespimycin in Patients With Solid Tumors and Her2 Positive Metastatic Breast Cancer That Have Previously Failed Herceptin",
+      "phase": "PHASE1, PHASE2",
+      "status": "COMPLETED",
+      "conditions": [
+        "Solid Tumors",
+        "Breast Cancer"
+      ],
+      "lead_sponsor": "Bristol-Myers Squibb",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT00817362",
+      "title": "Efficacy and Safety of IPI-504 With Trastuzumab Pretreated, Locally Advanced or Metastatic HER2 Positive Breast Cancer",
+      "phase": "PHASE2",
+      "status": "TERMINATED",
+      "conditions": [
+        "Breast Cancer",
+        "HER2 Positive Breast Cancer",
+        "Metastatic Breast Cancer",
+        "Cancer of the Breast"
+      ],
+      "lead_sponsor": "Infinity Pharmaceuticals, Inc.",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT00627627",
+      "title": "A Study to Evaluate the Antitumor Activity and Safety of IPI-504 in Patients With Advanced Breast Cancer",
+      "phase": "PHASE1, PHASE2",
+      "status": "WITHDRAWN",
+      "conditions": [
+        "Breast Cancer"
+      ],
+      "lead_sponsor": "MedImmune LLC",
+      "source": "clinicaltrials_gov_v2"
+    }
+  ]
+}

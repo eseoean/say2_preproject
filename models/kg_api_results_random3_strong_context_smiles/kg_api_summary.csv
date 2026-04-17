@@ -1,0 +1,16 @@
+drug_name,category,combined_score,api_success_count,api_error_count,basic_info,faers_count,trial_count,target_count,pathway_count,pubmed_general_count,pubmed_breast_cancer_count
+Romidepsin,Approved,19.0,7,0,Yes,0,1,4,1,1,0
+Sepantronium bromide,Candidate,16.5,2,5,No,0,0,0,0,1,0
+Staurosporine,Candidate,13.5,7,0,Yes,0,2,1,1,50,50
+SN-38,Candidate,13.0,7,0,Yes,0,1,1,1,1,0
+Docetaxel,Approved,12.83,7,0,Yes,10,10,1,1,50,50
+Bortezomib,Approved,12.79,7,0,Yes,10,10,1,1,50,50
+Dactinomycin,Approved,12.5,7,0,Yes,10,2,1,1,50,50
+Vinorelbine,Approved,12.5,7,0,Yes,10,10,1,1,50,50
+Dinaciclib,Candidate,12.0,7,0,Yes,0,1,4,1,1,0
+Paclitaxel,Approved,11.83,7,0,Yes,10,10,1,1,50,50
+Vinblastine,Approved,11.83,7,0,Yes,10,10,1,1,50,50
+Camptothecin,Candidate,11.0,7,0,Yes,10,10,1,1,50,50
+Rapamycin,Approved,10.21,7,0,Yes,10,10,1,1,50,50
+Luminespib,Candidate,6.5,7,0,Yes,0,1,1,1,1,0
+Epirubicin,Caution,3.33,7,0,Yes,10,10,1,1,50,50

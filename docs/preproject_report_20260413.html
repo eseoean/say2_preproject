@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>say2-4team 프리프로젝트 결과보고서</title>
+  <style>
+    :root{
+      --bg:#f5f8ff;
+      --paper:#ffffff;
+      --line:#dde5f4;
+      --ink:#1f2937;
+      --muted:#667085;
+      --blue:#5f8eea;
+      --blue-strong:#3f74d4;
+      --blue-soft:#ecf3ff;
+      --navy:#0f1f3a;
+      --green:#16914b;
+      --green-soft:#eefaf2;
+      --amber:#b7791f;
+      --amber-soft:#fff7e7;
+      --red:#d14343;
+      --red-soft:#fff2f2;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      color:var(--ink);
+      background:
+        radial-gradient(circle at top right, rgba(95,142,234,.16), transparent 24%),
+        radial-gradient(circle at top left, rgba(95,142,234,.10), transparent 30%),
+        linear-gradient(180deg, #f7f9fe 0%, #eef4ff 100%);
+      font-family:"Pretendard","Apple SD Gothic Neo","Noto Sans KR",sans-serif;
+      line-height:1.72;
+    }
+    .wrap{max-width:1240px;margin:0 auto;padding:34px 24px 72px}
+    .hero,.card{
+      background:var(--paper);
+      border:1px solid var(--line);
+      border-radius:28px;
+      box-shadow:0 18px 44px rgba(38,63,126,.07);
+    }
+    .hero{padding:34px 38px;margin-bottom:20px;position:relative;overflow:hidden}
+    .hero:before{
+      content:"";
+      position:absolute;
+      width:320px;height:320px;
+      right:-80px;top:-140px;
+      background:linear-gradient(180deg, rgba(95,142,234,.22), rgba(95,142,234,.06));
+      border-radius:50%;
+    }
+    .card{padding:28px 30px;margin-bottom:18px}
+    .eyebrow{
+      display:inline-block;
+      padding:7px 13px;
+      border-radius:999px;
+      background:var(--blue-soft);
+      color:var(--blue-strong);
+      font-weight:900;
+      font-size:13px;
+      margin-bottom:12px;
+    }
+    h1{margin:0 0 10px;font-size:38px;line-height:1.18;position:relative;z-index:1}
+    .sub{margin:0;color:var(--muted);font-size:16px;max-width:900px;position:relative;z-index:1}
+    .meta{
+      display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;position:relative;z-index:1
+    }
+    .meta span{
+      display:inline-flex;align-items:center;justify-content:center;
+      padding:7px 12px;border-radius:999px;border:1px solid var(--line);
+      background:#f9fbff;font-size:13px;font-weight:700;color:#44536b;
+    }
+    .secno{color:var(--blue);font-weight:900;font-size:18px;margin-bottom:4px}
+    h2{margin:0 0 14px;font-size:28px;line-height:1.25}
+    h3{margin:24px 0 10px;font-size:20px}
+    h4{margin:18px 0 10px;font-size:17px}
+    p{margin:0 0 12px}
+    ul,ol{margin:0 0 14px 20px}
+    table{width:100%;border-collapse:collapse;margin:14px 0 10px;font-size:14px}
+    th,td{padding:11px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+    th{background:#f8faff;font-weight:900}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+    .grid-4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+    .mini{
+      border:1px solid var(--line);
+      border-radius:20px;
+      padding:16px 18px;
+      background:#fcfdff;
+    }
+    .mini h4{margin:0 0 8px}
+    .mini p:last-child{margin-bottom:0}
+    .note{
+      background:var(--amber-soft);
+      border:1px solid #f0deab;
+      border-radius:18px;
+      padding:14px 16px;
+      margin:12px 0 16px;
+    }
+    .ok{color:var(--green);font-weight:900}
+    .warn{color:var(--amber);font-weight:900}
+    .bad{color:var(--red);font-weight:900}
+    .badge{
+      display:inline-flex;align-items:center;justify-content:center;
+      padding:4px 9px;border-radius:999px;font-size:12px;font-weight:900;
+      border:1px solid transparent;
+    }
+    .badge-ok{background:var(--green-soft);color:var(--green);border-color:#bfe7cc}
+    .badge-warn{background:var(--amber-soft);color:var(--amber);border-color:#efd79b}
+    .badge-bad{background:var(--red-soft);color:var(--red);border-color:#f2caca}
+    .progress{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:14px 0}
+    .pill{
+      border-radius:20px;padding:16px;border:1px solid var(--line);
+      background:#fcfdff;
+    }
+    .pill .v{font-size:26px;font-weight:900;line-height:1.1}
+    .pill .l{font-size:13px;color:var(--muted);margin-top:4px}
+    code{
+      background:#f3f4f6;border-radius:8px;padding:2px 6px;
+      font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.93em
+    }
+    a{color:var(--blue-strong);text-decoration:none}
+    .footer{margin-top:26px;color:var(--muted);font-size:14px}
+    .toc{
+      display:grid;grid-template-columns:140px 1fr;gap:18px;align-items:start
+    }
+    .toc-mark{
+      font-size:62px;font-weight:200;color:#2f3a4c;line-height:1
+    }
+    .toc-list{display:grid;gap:12px}
+    .toc-item{
+      display:flex;gap:16px;align-items:baseline;padding:8px 0;border-bottom:1px dashed #e6ebf6
+    }
+    .toc-item .n{font-size:40px;font-weight:900;color:#8eb4eb;min-width:88px}
+    .toc-item .t{font-size:22px;font-weight:800;color:#2f3a4c}
+    .source-list li{margin-bottom:6px}
+    @page{size:A4;margin:14mm}
+    @media print{
+      body{background:#fff}
+      .wrap{max-width:none;padding:0}
+      .hero,.card{
+        box-shadow:none;
+        break-inside:avoid;
+        page-break-inside:avoid;
+      }
+      .hero{margin-bottom:12px}
+      a{color:inherit;text-decoration:none}
+    }
+    @media (max-width:980px){
+      .grid,.grid-4,.progress,.toc{grid-template-columns:1fr}
+      .hero,.card{padding:24px 20px}
+      h1{font-size:30px}
+      h2{font-size:24px}
+      .toc-item .n{min-width:72px;font-size:34px}
+      .toc-item .t{font-size:20px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div class="eyebrow">say2-4team · 프리프로젝트 결과보고서 · 2026-04-13</div>
+      <h1>유방암 약물 재창출 파이프라인 재현 및 후보 약물 도출 보고서</h1>
+      <p class="sub">본 문서는 AWS 1기 아카데미 선행 팀들의 결과보고서 형식과 제공된 HTML 초안을 참고하여 작성한 우리 팀 결과보고서 초안이다. 팀원의 프로토콜 레포와 현재 재현 저장소의 산출물을 기준으로 Step 1~7 전체 흐름, 핵심 성능, 외부 검증, ADMET 기반 최종 후보를 하나의 문서로 정리했다.</p>
+      <div class="meta">
+        <span>팀 구성원 수: 4명</span>
+        <span>기준 저장소: eseoean/say2_preproject</span>
+        <span>선택 앙상블: Lightweight 3-model</span>
+        <span>프론트엔드: 진행 중</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="toc">
+        <div class="toc-mark">목차</div>
+        <div class="toc-list">
+          <div class="toc-item"><div class="n">01</div><div class="t">프로젝트 개요</div></div>
+          <div class="toc-item"><div class="n">02</div><div class="t">프로젝트 팀 구성 및 역할</div></div>
+          <div class="toc-item"><div class="n">03</div><div class="t">프로젝트 수행 절차 및 방법</div></div>
+          <div class="toc-item"><div class="n">04</div><div class="t">프로젝트 수행 경과</div></div>
+          <div class="toc-item"><div class="n">05</div><div class="t">자체 평가 의견</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="secno">01</div>
+      <h2>프로젝트 개요</h2>
+      <p>본 프로젝트의 목표는 유방암(<code>BRCA</code>)을 대상으로 약물 재창출(Drug Repurposing) 파이프라인을 재현하고, 다중 바이오데이터와 머신러닝 기반 예측을 이용해 우선 검토할 약물 후보를 도출하는 데 있다. 팀원이 구축한 프로토콜 저장소 <a href="https://github.com/skkuaws0215/20260408_pre_project_biso_myprotocol">20260408_pre_project_biso_myprotocol</a>을 기준으로 동일한 방법론을 재현하고, 우리 팀 환경에서 전체 실행 가능성을 확인했다.</p>
+      <p>분석에는 GDSC, DepMap, LINCS, ChEMBL, DrugBank, METABRIC, Open Targets, STRING, MSigDB, ADMET 등 다양한 공공 바이오데이터가 활용되었다. 이 데이터들은 약물 반응, 세포주 특성, 타깃 유전자, 약물 구조, 외부 검증, 안전성 평가까지 연결되어 하나의 일관된 분석 흐름을 구성한다.</p>
+      <div class="grid-4">
+        <div class="pill"><div class="v ok">7 / 7</div><div class="l">재현 완료 단계</div></div>
+        <div class="pill"><div class="v ok">15</div><div class="l">실행한 모델 수</div></div>
+        <div class="pill"><div class="v ok">15</div><div class="l">최종 후보 약물 수</div></div>
+        <div class="pill"><div class="v ok">4명</div><div class="l">프로젝트 팀 인원</div></div>
+      </div>
+
+      <h3>프로젝트 목표</h3>
+      <ul>
+        <li>팀원 프로토콜을 기준으로 동일한 파이프라인을 우리 팀 환경에서 재현한다.</li>
+        <li>다중 데이터 통합 기반 feature engineering과 모델 비교를 수행한다.</li>
+        <li>앙상블, 외부 검증, ADMET 필터링을 통해 후보 약물을 좁힌다.</li>
+        <li>최종적으로 대시보드와 보고서 형태로 결과를 정리한다.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <div class="secno">02</div>
+      <h2>프로젝트 팀 구성 및 역할</h2>
+      <p>우리 팀은 총 4명으로 구성되어 있으며, 현재 보고서는 역할 중심으로 정리했다. 최종 제출 시에는 실제 이름과 세부 기여도를 반영해 수정할 수 있다.</p>
+      <table>
+        <thead>
+          <tr><th>역할 구분</th><th>주요 담당 내용</th><th>대표 산출물</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>역할 1. 데이터 조사 및 정합성 관리</td><td>데이터 출처 확인, curated data 구조 이해, provenance 문서 검토, 입력 경로 점검</td><td><code>DATA_PROVENANCE.md</code>, dataset inventory 정리</td></tr>
+          <tr><td>역할 2. 입력 데이터 준비 및 실행 환경 구축</td><td>AWS/S3/Nextflow 환경 구성, Step 1~3 실행, 재현용 설정 파일 구성</td><td><code>project_env.sh</code>, <code>run_fe_pipeline.sh</code>, FE 산출물</td></tr>
+          <tr><td>역할 3. 모델링 및 검증 파이프라인 운영</td><td>Step 4~7 실행, 모델 비교, 앙상블, METABRIC 검증, ADMET gate, 결과 해석</td><td><code>ml_results.json</code>, <code>ensemble_results.json</code>, <code>step6_metabric_results.json</code>, <code>step7_admet_results.json</code></td></tr>
+          <tr><td>역할 4. 프론트엔드 및 결과 전달 레이어</td><td>대시보드/리포트 화면, 시각화, 사용자 전달 구조 정리</td><td><code>dashboard.html</code>, 프론트엔드 화면, 발표 자료</td></tr>
+        </tbody>
+      </table>
+      <div class="note">
+        현재 기준으로 파이프라인 재현과 보고서 정리는 완료되었고, 프론트엔드는 팀원이 계속 작업 중이다. 따라서 본 문서는 최종 UI가 완성되기 전 단계의 중간-최종형 보고서 초안으로 볼 수 있다.
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="secno">03</div>
+      <h2>프로젝트 수행 절차 및 방법</h2>
+
+      <h3>3.1 전체 수행 절차</h3>
+      <ol>
+        <li>환경 설정과 실행 경로 구성</li>
+        <li>curated data 기반 입력 데이터 준비</li>
+        <li>Nextflow 기반 Feature Engineering 수행</li>
+        <li>ML, DL, Graph 모델 학습 및 성능 비교</li>
+        <li>앙상블을 통한 예측 안정성 확보</li>
+        <li>METABRIC 외부 검증 수행</li>
+        <li>ADMET 기반 최종 후보 약물 선별</li>
+      </ol>
+
+      <h3>3.2 데이터 준비 원칙</h3>
+      <ul>
+        <li><code>curated_date/</code>는 읽기 전용으로 사용했다.</li>
+        <li><code>curated_date/glue/</code> 경로는 접근하지 않았다.</li>
+        <li>GDSC는 <code>GDSC2</code>만 사용해 품질 우선 원칙을 적용했다.</li>
+        <li>LINCS는 빠른 재현 경로로 reference의 <code>lincs_mcf7.parquet</code>를 사용했다.</li>
+        <li>중복 약물은 최종적으로 <code>drug_name</code> 기준으로 제거했다.</li>
+      </ul>
+
+      <h3>3.3 Step 2 입력 데이터 구성</h3>
+      <table>
+        <thead>
+          <tr><th>항목</th><th>내용</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>GDSC 반응 데이터</td><td><code>gdsc_ic50.parquet</code> = 13,388 rows / 52 cell lines / 295 drugs</td></tr>
+          <tr><td>DepMap long 변환</td><td>20,443,404 rows / 1,150 cell lines / 18,443 genes</td></tr>
+          <tr><td>Drug feature catalog</td><td>243 / 295 matched (82.4%)</td></tr>
+          <tr><td>LINCS</td><td><code>lincs_mcf7.parquet</code> fast track 사용</td></tr>
+          <tr><td>데이터 저장 경로</td><td><code>s3://say2-4team/20260409_eseo/data/</code></td></tr>
+        </tbody>
+      </table>
+
+      <h3>3.4 Feature Engineering 방법</h3>
+      <p>Step 3은 Nextflow + AWS Batch 기반으로 실행했다. pair feature는 CRISPR 기반 세포주 특성, 약물 구조 정보, LINCS signature, drug-target 정보를 통합하는 구조로 생성했다.</p>
+      <div class="grid">
+        <div class="mini">
+          <h4>실행 방식</h4>
+          <p>AWS Batch + Nextflow</p>
+          <p>실행 시간: 약 <span class="ok">8분 7초</span></p>
+        </div>
+        <div class="mini">
+          <h4>주요 산출물</h4>
+          <p><code>features.parquet</code>, <code>labels.parquet</code>, <code>pair_features_newfe.parquet</code></p>
+        </div>
+      </div>
+
+      <h3>3.5 모델 학습 및 평가 기준</h3>
+      <table>
+        <thead>
+          <tr><th>항목</th><th>값</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>평가 방식</td><td><code>5-fold CV</code></td></tr>
+          <tr><td>학습 샘플 수</td><td><code>7,730 pairs</code></td></tr>
+          <tr><td>앙상블 통과 기준 1</td><td><code>Spearman ≥ 0.713</code></td></tr>
+          <tr><td>앙상블 통과 기준 2</td><td><code>RMSE ≤ 1.385</code></td></tr>
+          <tr><td>실행 모델 수</td><td>총 15개 모델</td></tr>
+        </tbody>
+      </table>
+
+      <h3>3.6 선택한 앙상블 전략</h3>
+      <p>처음에는 6개 모델 앙상블을 구성했지만, 경량형 3개 모델 앙상블이 성능 저하가 매우 작고 Top15 약물 세트가 동일해 운영 경로로 선택했다.</p>
+      <ul>
+        <li>6-model: CatBoost, LightGBM, XGBoost, FlatMLP, ResidualMLP, Cross-Attention</li>
+        <li>Lightweight 3-model: LightGBM, FlatMLP, Cross-Attention</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <div class="secno">04</div>
+      <h2>프로젝트 수행 경과</h2>
+
+      <h3>4.1 현재 진행 현황</h3>
+      <div class="progress">
+        <div class="pill"><div class="v ok">1</div><div class="l">환경 설정 완료</div></div>
+        <div class="pill"><div class="v ok">2</div><div class="l">데이터 준비 완료</div></div>
+        <div class="pill"><div class="v ok">3</div><div class="l">FE 완료</div></div>
+        <div class="pill"><div class="v ok">4</div><div class="l">모델 학습 완료</div></div>
+        <div class="pill"><div class="v ok">5</div><div class="l">앙상블 완료</div></div>
+        <div class="pill"><div class="v ok">6</div><div class="l">METABRIC 완료</div></div>
+        <div class="pill"><div class="v ok">7</div><div class="l">ADMET 완료</div></div>
+        <div class="pill"><div class="v warn">진행 중</div><div class="l">프론트엔드 통합</div></div>
+      </div>
+
+      <h3>4.2 Step 4 모델 성능 요약</h3>
+      <p>총 15개 모델을 실행했고, PASS 기준을 충족한 대표 모델은 CatBoost, LightGBM, XGBoost, FlatMLP, ResidualMLP, Cross-Attention이었다. Stacking Ridge는 성능은 높았지만 메타 모델이므로 base ensemble 후보에서는 분리해 해석했다.</p>
+
+      <h4>주요 모델 성능</h4>
+      <table>
+        <thead>
+          <tr><th>모델</th><th>유형</th><th>Spearman</th><th>RMSE</th><th>Pearson</th><th>R²</th><th>경과시간</th><th>상태</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>CatBoost</td><td>ML</td><td class="ok">0.7997</td><td class="ok">1.3170</td><td>0.8658</td><td>0.7478</td><td>113.0분</td><td><span class="badge badge-ok">PASS</span></td></tr>
+          <tr><td>FlatMLP</td><td>DL</td><td class="ok">0.7966</td><td class="ok">1.3327</td><td>0.8615</td><td>0.7419</td><td>11.6분</td><td><span class="badge badge-ok">PASS</span></td></tr>
+          <tr><td>Stacking Ridge</td><td>ML</td><td class="ok">0.7942</td><td class="ok">1.3265</td><td>0.8631</td><td>0.7441</td><td>59.6분</td><td><span class="badge badge-warn">META</span></td></tr>
+          <tr><td>LightGBM</td><td>ML</td><td class="ok">0.7913</td><td class="ok">1.3404</td><td>0.8601</td><td>0.7388</td><td>3.6분</td><td><span class="badge badge-ok">PASS</span></td></tr>
+          <tr><td>XGBoost</td><td>ML</td><td class="ok">0.7889</td><td class="ok">1.3427</td><td>0.8594</td><td>0.7378</td><td>10.9분</td><td><span class="badge badge-ok">PASS</span></td></tr>
+          <tr><td>ResidualMLP</td><td>DL</td><td class="ok">0.7875</td><td class="ok">1.3765</td><td>0.8530</td><td>0.7246</td><td>5.0분</td><td><span class="badge badge-ok">PASS</span></td></tr>
+          <tr><td>Cross-Attention</td><td>DL</td><td class="ok">0.7854</td><td class="ok">1.3673</td><td>0.8537</td><td>0.7281</td><td>1.4분</td><td><span class="badge badge-ok">PASS</span></td></tr>
+          <tr><td>TabNet</td><td>DL</td><td>0.7791</td><td class="bad">1.3869</td><td>0.8505</td><td>0.7204</td><td>17.1분</td><td><span class="badge badge-bad">FAIL</span></td></tr>
+          <tr><td>GraphSAGE</td><td>Graph</td><td class="bad">0.4094</td><td class="bad">2.3015</td><td>0.4572</td><td>0.2087</td><td>0.3분</td><td><span class="badge badge-warn">보조지표용</span></td></tr>
+        </tbody>
+      </table>
+
+      <h3>4.3 Step 5 앙상블 결과</h3>
+      <table>
+        <thead>
+          <tr><th>항목</th><th>6개 모델 앙상블</th><th>경량형 3개 모델</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Spearman</td><td class="ok">0.8055 ± 0.0101</td><td class="ok">0.8036 ± 0.0081</td></tr>
+          <tr><td>RMSE</td><td class="ok">1.3008 ± 0.0227</td><td class="ok">1.3033 ± 0.0158</td></tr>
+          <tr><td>Pearson</td><td>0.8690</td><td>0.8683</td></tr>
+          <tr><td>R²</td><td>0.7544</td><td>0.7535</td></tr>
+          <tr><td>Gap Spearman</td><td class="warn">0.0004</td><td class="warn">0.0010</td></tr>
+          <tr><td>Top15 약물 세트</td><td>기준</td><td class="ok">15 / 15 동일</td></tr>
+        </tbody>
+      </table>
+      <p>경량형 앙상블은 성능 저하가 매우 작았고, 최종 후보 세트가 6개 모델 앙상블과 동일했기 때문에 운영 경로로 선택했다.</p>
+
+      <h3>4.4 Step 6 METABRIC 외부 검증 결과</h3>
+      <table>
+        <thead>
+          <tr><th>검증 항목</th><th>결과</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Target expressed</td><td class="ok">27 / 28</td></tr>
+          <tr><td>BRCA pathway relevant</td><td class="ok">21 / 28</td></tr>
+          <tr><td>Survival significant</td><td class="ok">26 / 28</td></tr>
+          <tr><td>RSF C-index</td><td class="ok">0.8209</td></tr>
+          <tr><td>RSF AUROC</td><td class="ok">0.8462</td></tr>
+          <tr><td>P@5</td><td>80.0%</td></tr>
+          <tr><td>P@10</td><td>90.0%</td></tr>
+          <tr><td>P@15</td><td>80.0%</td></tr>
+          <tr><td>P@20</td><td>65.0%</td></tr>
+          <tr><td>GraphSAGE P@20</td><td class="warn">0.94</td></tr>
+        </tbody>
+      </table>
+      <div class="grid">
+        <div class="mini">
+          <h4>방법 A</h4>
+          <p>METABRIC BRCA 코호트에서 약물 타깃 발현 여부와 BRCA 관련 pathway 연관성을 확인했다.</p>
+        </div>
+        <div class="mini">
+          <h4>방법 B</h4>
+          <p>생존 분석 기반 유의성을 확인하고 RSF의 C-index, AUROC를 보조 지표로 활용했다.</p>
+        </div>
+        <div class="mini">
+          <h4>방법 C</h4>
+          <p>추천 순위와 기존 BRCA 약물 간의 일치도를 P@K 기준으로 검증했다.</p>
+        </div>
+        <div class="mini">
+          <h4>중복 제거</h4>
+          <p>동일 약물은 <code>drug_name</code> 기준으로 한 번만 남기도록 후처리해 최종 후보 해석을 안정화했다.</p>
+        </div>
+      </div>
+
+      <h3>4.5 Step 7 ADMET Gate 결과</h3>
+      <table>
+        <thead>
+          <tr><th>분류</th><th>개수</th><th>설명</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Approved</td><td class="ok">8</td><td>상대적으로 안전성과 근거가 양호한 후보</td></tr>
+          <tr><td>Candidate</td><td class="warn">6</td><td>후속 검토 가치가 높은 후보</td></tr>
+          <tr><td>Caution</td><td class="bad">1</td><td>독성 플래그로 주의가 필요한 후보</td></tr>
+          <tr><td>입력 약물 수</td><td>15</td><td>중복 제거 이후 최종 검토 대상</td></tr>
+          <tr><td>ADMET assay</td><td>22개</td><td>흡수, 분포, 대사, 배설, 독성 기반 평가</td></tr>
+        </tbody>
+      </table>
+
+      <h4>경량형 기준 Top 10 최종 후보</h4>
+      <table>
+        <thead>
+          <tr><th>순위</th><th>약물명</th><th>타깃</th><th>경로</th><th>분류</th><th>Combined score</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Romidepsin</td><td>HDAC1, HDAC2, HDAC3, HDAC8</td><td>Chromatin histone acetylation</td><td><span class="badge badge-ok">Approved</span></td><td>19.0</td></tr>
+          <tr><td>2</td><td>Sepantronium bromide</td><td>BIRC5</td><td>Apoptosis regulation</td><td><span class="badge badge-warn">Candidate</span></td><td>16.5</td></tr>
+          <tr><td>3</td><td>Staurosporine</td><td>Broad spectrum kinase inhibitor</td><td>RTK signaling</td><td><span class="badge badge-warn">Candidate</span></td><td>13.5</td></tr>
+          <tr><td>4</td><td>Dactinomycin</td><td>RNA polymerase</td><td>Other</td><td><span class="badge badge-ok">Approved</span></td><td>13.0</td></tr>
+          <tr><td>5</td><td>SN-38</td><td>TOP1</td><td>DNA replication</td><td><span class="badge badge-warn">Candidate</span></td><td>13.0</td></tr>
+          <tr><td>6</td><td>Vinblastine</td><td>Microtubule destabiliser</td><td>Mitosis</td><td><span class="badge badge-ok">Approved</span></td><td>12.83</td></tr>
+          <tr><td>7</td><td>Bortezomib</td><td>Proteasome</td><td>Protein stability and degradation</td><td><span class="badge badge-ok">Approved</span></td><td>12.79</td></tr>
+          <tr><td>8</td><td>Docetaxel</td><td>Microtubule stabiliser</td><td>Mitosis</td><td><span class="badge badge-ok">Approved</span></td><td>12.33</td></tr>
+          <tr><td>9</td><td>Vinorelbine</td><td>Microtubule destabiliser</td><td>Mitosis</td><td><span class="badge badge-ok">Approved</span></td><td>12.0</td></tr>
+          <tr><td>10</td><td>Dinaciclib</td><td>CDK1, CDK2, CDK5, CDK9</td><td>Cell cycle</td><td><span class="badge badge-warn">Candidate</span></td><td>12.0</td></tr>
+        </tbody>
+      </table>
+      <p><code>Epirubicin</code>은 Ames와 DILI 플래그 때문에 <span class="bad">Caution</span>으로 분류되었다.</p>
+
+      <h3>4.6 결과 시각화 및 산출물 현황</h3>
+      <ul>
+        <li>현재 재현 결과를 기준으로 메인 대시보드 <code>dashboard.html</code>을 정리했다.</li>
+        <li>Step 4~7 상세 산출물은 JSON/CSV와 세부 HTML 페이지로 함께 관리하고 있다.</li>
+        <li>원본 참고 대시보드는 <code>dashboard_reference.html</code>로 별도 보존했다.</li>
+        <li>프론트엔드는 팀원이 추가 작업 중이며, 이후 최종 결과와 통합할 예정이다.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <div class="secno">05</div>
+      <h2>자체 평가 의견</h2>
+
+      <h3>5.1 잘된 점</h3>
+      <ul>
+        <li>Step 1~7 전체 파이프라인을 실제 환경에서 끝까지 재현했다.</li>
+        <li>AWS Batch, Nextflow, ML/DL/Graph, METABRIC, ADMET까지 전체 흐름을 경험적으로 확인했다.</li>
+        <li>6-model과 경량형 앙상블을 모두 비교한 뒤, 성능과 운영 효율을 함께 고려해 합리적인 선택을 했다.</li>
+        <li>대시보드와 보고서까지 연결해 결과 전달 구조를 미리 확보했다.</li>
+      </ul>
+
+      <h3>5.2 아쉬운 점</h3>
+      <ul>
+        <li>프론트엔드가 아직 진행 중이어서 최종 화면 캡처를 완전히 반영하지 못했다.</li>
+        <li>팀원별 실명과 세부 역할 비중은 최종 제출 전에 다시 보정해야 한다.</li>
+        <li>Graph 계열 모델은 이번 재현에서 회귀 예측 성능이 충분히 높지 않았다.</li>
+      </ul>
+
+      <h3>5.3 향후 보완 방향</h3>
+      <ul>
+        <li>프론트엔드가 완료되면 현재 대시보드와 통합해 최종 발표 화면을 정리한다.</li>
+        <li>실제 팀원 이름과 담당 범위를 반영해 02장을 마무리한다.</li>
+        <li>보고서 최종본에는 대시보드 캡처, 비교표, 후보 약물 카드 이미지를 추가한다.</li>
+        <li>발표용 버전은 Step 5 경량형 선택 이유와 Step 6, Step 7 검증 근거를 중심으로 더 압축해 정리한다.</li>
+      </ul>
+
+      <h3>5.4 종합 의견</h3>
+      <p>이번 프로젝트는 팀원 프로토콜을 기반으로 약물 재창출 파이프라인을 실제로 재현하고, 외부 검증과 ADMET 필터링을 거쳐 우선 검토할 후보 약물을 도출했다는 점에서 프리프로젝트 목표를 충실히 달성했다고 판단한다. 특히 재현성과 결과 전달성을 동시에 고려했다는 점에서 다음 단계인 프론트엔드 통합과 발표 자료 제작으로 자연스럽게 이어질 수 있다.</p>
+    </section>
+
+    <section class="card">
+      <div class="secno">참고 자료</div>
+      <h2>문서 근거 및 링크</h2>
+      <ul class="source-list">
+        <li><a href="https://github.com/skkuaws0215/20260408_pre_project_biso_myprotocol">참고 프로토콜 GitHub 저장소</a></li>
+        <li><a href="https://github.com/eseoean/say2_preproject">우리 팀 재현 저장소</a></li>
+        <li><code>protocol_guide.md</code></li>
+        <li><code>DATA_PROVENANCE.md</code></li>
+        <li><code>dashboard.html</code></li>
+        <li><code>model_results.html</code></li>
+        <li><code>step4_detail.html</code></li>
+        <li><code>step5_detail.html</code></li>
+        <li><code>step6_detail.html</code></li>
+        <li><code>step7_detail.html</code></li>
+        <li><code>models/ml_results/ml_results.json</code></li>
+        <li><code>models/dl_results/dl_results.json</code></li>
+        <li><code>models/graph_results/graph_results.json</code></li>
+        <li><code>models/ensemble_results_lightweight/ensemble_results.json</code></li>
+        <li><code>models/metabric_results_lightweight/step6_metabric_results.json</code></li>
+        <li><code>models/admet_results_lightweight/step7_admet_results.json</code></li>
+      </ul>
+      <p class="footer">이 문서는 2026-04-13 기준 초안이다. 브라우저에서 열어 바로 검토할 수 있으며, 최종 제출용 PDF는 브라우저 인쇄 기능으로 변환하면 된다.</p>
+    </section>
+  </div>
+</body>
+</html>

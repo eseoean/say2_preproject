@@ -1,0 +1,114 @@
+{
+  "data": [
+    {
+      "nct_id": "NCT01044485",
+      "title": "Lapatinib in Combination With Docetaxel in Patients With HER-2 Positive Advanced or Metastatic Breast Cancer",
+      "phase": "PHASE1, PHASE2",
+      "status": "COMPLETED",
+      "conditions": [
+        "Metastatic Breast Cancer"
+      ],
+      "lead_sponsor": "Centre Georges Francois Leclerc",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT01539876",
+      "title": "Tumour Necrosis Factor Release in Locally Advanced Breast Cancer Patients Receiving Neoadjuvant Docetaxel",
+      "phase": "PHASE1",
+      "status": "WITHDRAWN",
+      "conditions": [
+        "Breast Cancer"
+      ],
+      "lead_sponsor": "London Health Sciences Centre Research Institute OR Lawson Research Institute of St. Joseph's",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT03264547",
+      "title": "A Study to Compare Eribulin Mesylate + Pertuzumab + Trastuzumab With Paclitaxel or Docetaxel + Pertuzumab + Trastuzumab",
+      "phase": "PHASE3",
+      "status": "COMPLETED",
+      "conditions": [
+        "Breast Cancer"
+      ],
+      "lead_sponsor": "Japan Breast Cancer Research Group",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT00286247",
+      "title": "Study to Determine the Efficacy and Safety of Docetaxel and Doxorubicin With INGN 201 in Locally Advanced Breast Cancer",
+      "phase": "PHASE2",
+      "status": "COMPLETED",
+      "conditions": [
+        "Locally Advanced Breast Cancer (LABC)"
+      ],
+      "lead_sponsor": "Introgen Therapeutics",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT01917578",
+      "title": "Study of Breast Cancer Shrinkage Modes After Neoadjuvant Chemotherapy With Whole-mount Serial Sections and Three-dimensional Pathological and MRI Reconstruction",
+      "phase": "PHASE3",
+      "status": "UNKNOWN",
+      "conditions": [
+        "Breast Cancer"
+      ],
+      "lead_sponsor": "Shandong Cancer Hospital and Institute",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT00217815",
+      "title": "Preliminary Study of Mycograb and Docetaxel in Advanced Breast Cancer",
+      "phase": "PHASE1, PHASE2",
+      "status": "COMPLETED",
+      "conditions": [
+        "Cancer of the Breast"
+      ],
+      "lead_sponsor": "NeuTec Pharma",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT02838225",
+      "title": "DA Versus DAC as Postoperative Adjuvant Treatment for Early-stage Breast Cancer",
+      "phase": "PHASE2",
+      "status": "COMPLETED",
+      "conditions": [
+        "Breast Cancer"
+      ],
+      "lead_sponsor": "Peking Union Medical College Hospital",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT00906061",
+      "title": "Biweekly Gemcitabine and Docetaxel as First Line Therapy for Advanced Non-Small Cell Lung Cancer (NSCLC) Patients",
+      "phase": "PHASE2",
+      "status": "UNKNOWN",
+      "conditions": [
+        "Carcinoma, Non-Small-Cell Lung"
+      ],
+      "lead_sponsor": "Hospital Arnau de Vilanova",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT00129896",
+      "title": "Neoadjuvant Chemotherapy With Myocet/Taxotere/Herceptin for HER2 Positive Breast Cancer Patients",
+      "phase": "PHASE1, PHASE2",
+      "status": "COMPLETED",
+      "conditions": [
+        "Breast Cancer"
+      ],
+      "lead_sponsor": "Spanish Breast Cancer Research Group",
+      "source": "clinicaltrials_gov_v2"
+    },
+    {
+      "nct_id": "NCT02532400",
+      "title": "Neoadjuvant Aromatase Inhibitor(AI) With Ovarian Suppression Versus Chemotherapy in Premenopausal Breast Cancer Patients",
+      "phase": "PHASE3",
+      "status": "TERMINATED",
+      "conditions": [
+        "Breast Cancer"
+      ],
+      "lead_sponsor": "Ruijin Hospital",
+      "source": "clinicaltrials_gov_v2"
+    }
+  ]
+}

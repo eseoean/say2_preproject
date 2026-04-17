@@ -1,0 +1,1878 @@
+{
+  "drug_id": 1088,
+  "drug_name": "Irinotecan",
+  "category": "Candidate",
+  "combined_score": 9.56,
+  "timestamp": "2026-04-15 19:40:30",
+  "data_collected": {
+    "basic_info": {
+      "ok": true,
+      "data": {
+        "drug_id": 1088,
+        "drug_name": "Irinotecan",
+        "target": "TOP1",
+        "pathway": "DNA replication",
+        "predicted_ic50": 0.34598753,
+        "sensitivity_rate": 0.3214285714285714,
+        "validation_score": 7.45,
+        "safety_score": 5.56,
+        "combined_score": 9.56,
+        "final_rank": 11,
+        "category": "Candidate",
+        "clinical_bucket": "Breast cancer current/relevant use",
+        "known_brca": true,
+        "target_expressed": true,
+        "brca_pathway": true,
+        "survival_sig": true,
+        "recommendation_note": "Biologically plausible candidate with supportive validation, but additional safety or translational review is needed."
+      }
+    },
+    "side_effects": {
+      "ok": true,
+      "data": [
+        {
+          "event": "DIARRHOEA",
+          "count": 5765,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "NEUTROPENIA",
+          "count": 3339,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "NAUSEA",
+          "count": 3169,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "DISEASE PROGRESSION",
+          "count": 2865,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "VOMITING",
+          "count": 2758,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "OFF LABEL USE",
+          "count": 2660,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "FATIGUE",
+          "count": 1993,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "FEBRILE NEUTROPENIA",
+          "count": 1834,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "THROMBOCYTOPENIA",
+          "count": 1709,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "DEATH",
+          "count": 1695,
+          "source": "openfda_faers"
+        }
+      ],
+      "source": "openfda_live"
+    },
+    "trials": {
+      "ok": true,
+      "data": [
+        {
+          "nct_id": "NCT04640480",
+          "title": "Dose-finding Study to Evaluate the Safety, Tolerability, and Pharmacokinetics of SNB-101(SN-38) in Patients With Tumors",
+          "phase": "PHASE1",
+          "status": "COMPLETED",
+          "conditions": [
+            "Colorectal Cancer",
+            "Breast Cancer",
+            "Pancreas Cancer",
+            "Ovarian Cancer",
+            "Small-cell Lung Cancer",
+            "Gastric Cancer",
+            "Head and Neck Cancer"
+          ],
+          "lead_sponsor": "SN BioScience",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT05453825",
+          "title": "A Study of Navicixizumab Monotherapy or in Combination in Patients With Select Advanced Solid Tumors",
+          "phase": "PHASE2",
+          "status": "UNKNOWN",
+          "conditions": [
+            "Colorectal Cancer",
+            "Triple Negative Breast Cancer",
+            "Gastric Cancer",
+            "Ovarian Cancer"
+          ],
+          "lead_sponsor": "OncXerna Theraputics, Inc.",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT06431633",
+          "title": "Study of Treatment With Sacituzumab and Zimberelimab for Patients With Lung Cancer Confined to the Chest and Previously Operated on Who Were Not Disease-free.",
+          "phase": "PHASE3",
+          "status": "RECRUITING",
+          "conditions": [
+            "Lung Diseases",
+            "Carcinoma, Non-Small-Cell Lung",
+            "Resectable Lung Non-Small Cell Carcinoma"
+          ],
+          "lead_sponsor": "Fundación GECP",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT04209595",
+          "title": "PLX038 (PEGylated SN38) and Rucaparib in Solid Tumors and Small Cell Cancers",
+          "phase": "PHASE1, PHASE2",
+          "status": "COMPLETED",
+          "conditions": [
+            "Small Cell Lung Cancer",
+            "Extra-Pulmonary Small Cell Carcinomas"
+          ],
+          "lead_sponsor": "National Cancer Institute (NCI)",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT01506167",
+          "title": "An Observational Study of Avastin (Bevacizumab) in Patients With Metastatic Colorectal Cancer (ACORN)",
+          "phase": "",
+          "status": "COMPLETED",
+          "conditions": [
+            "Colorectal Cancer"
+          ],
+          "lead_sponsor": "Hoffmann-La Roche",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT05978492",
+          "title": "A Study of TXN10128 in Subjects With Solid Tumors",
+          "phase": "PHASE1",
+          "status": "RECRUITING",
+          "conditions": [
+            "Locally Advanced (Unresectable) or Metastatic Solid Tumors"
+          ],
+          "lead_sponsor": "Txinno Bioscience Inc.",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT01036113",
+          "title": "A Phase 2 Study of EZN-2208 in Patients With Metastatic Breast Cancer",
+          "phase": "PHASE2",
+          "status": "TERMINATED",
+          "conditions": [
+            "Metastatic Breast Cancer"
+          ],
+          "lead_sponsor": "Enzon Pharmaceuticals, Inc.",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT06839547",
+          "title": "A Prospective, Multicenter, Observational Cohort Study to Evaluate the Efficacy and Safety of a Novel Anti-tumor Drug As a Radiosensitizer in Patients with Advanced Breast Cancer Brain Metastasis.",
+          "phase": "",
+          "status": "NOT_YET_RECRUITING",
+          "conditions": [
+            "Advanced Breast Cancer Brain Metastasis"
+          ],
+          "lead_sponsor": "Cancer Institute and Hospital, Chinese Academy of Medical Sciences",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT02419495",
+          "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies",
+          "phase": "PHASE1",
+          "status": "TERMINATED",
+          "conditions": [
+            "Advanced Malignant Solid Neoplasm",
+            "Clinical Stage III Cutaneous Melanoma AJCC v8",
+            "Clinical Stage IV Cutaneous Melanoma AJCC v8",
+            "Fallopian Tube Carcinoma",
+            "Metastatic Lung Non-Small Cell Carcinoma",
+            "Metastatic Malignant Solid Neoplasm",
+            "Metastatic Melanoma",
+            "Metastatic Renal Cell Carcinoma",
+            "Ovarian Carcinoma",
+            "Pathologic Stage III Cutaneous Melanoma AJCC v8",
+            "Pathologic Stage IIIA Cutaneous Melanoma AJCC v8",
+            "Pathologic Stage IIIB Cutaneous Melanoma AJCC v8",
+            "Pathologic Stage IIIC Cutaneous Melanoma AJCC v8",
+            "Pathologic Stage IIID Cutaneous Melanoma AJCC v8",
+            "Pathologic Stage IV Cutaneous Melanoma AJCC v8",
+            "Primary Peritoneal Carcinoma",
+            "Stage III Lung Cancer AJCC v8",
+            "Stage III Renal Cell Cancer AJCC v8",
+            "Stage IIIA Lung Cancer AJCC v8",
+            "Stage IIIB Lung Cancer AJCC v8",
+            "Stage IIIC Lung Cancer AJCC v8",
+            "Stage IV Lung Cancer AJCC v8",
+            "Stage IV Renal Cell Cancer AJCC v8",
+            "Stage IVA Lung Cancer AJCC v8",
+            "Stage IVB Lung Cancer AJCC v8",
+            "Triple-Negative Breast Carcinoma",
+            "Unresectable Lung Non-Small Cell Carcinoma",
+            "Unresectable Melanoma",
+            "Unresectable Renal Cell Carcinoma"
+          ],
+          "lead_sponsor": "M.D. Anderson Cancer Center",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT00954512",
+          "title": "Study of Robatumumab (SCH 717454, MK-7454) in Combination With Different Treatment Regimens in Participants With Advanced Solid Tumors (P04722, MK-7454-004)",
+          "phase": "PHASE1, PHASE2",
+          "status": "TERMINATED",
+          "conditions": [
+            "Neoplasms"
+          ],
+          "lead_sponsor": "Merck Sharp & Dohme LLC",
+          "source": "clinicaltrials_gov_v2"
+        }
+      ],
+      "source": "clinicaltrials_live"
+    },
+    "targets": {
+      "ok": true,
+      "data": [
+        {
+          "target": "TOP1",
+          "source": "local_frc_step6_7"
+        }
+      ]
+    },
+    "pathways": {
+      "ok": true,
+      "data": [
+        {
+          "pathway": "DNA replication",
+          "source": "local_frc_step6_7"
+        }
+      ]
+    },
+    "pubmed_general": {
+      "ok": true,
+      "query": "Irinotecan",
+      "data": [
+        {
+          "pmid": "32664667",
+          "title": "Irinotecan-Still an Important Player in Cancer Chemotherapy: A Comprehensive Overview.",
+          "journal": "International journal of molecular sciences",
+          "year": "2020",
+          "authors": [
+            "Kciuk M",
+            "Marciniak B",
+            "Kontek R"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "35445479",
+          "title": "Liposomal irinotecan (Onivyde): Exemplifying the benefits of nanotherapeutic drugs.",
+          "journal": "Cancer science",
+          "year": "2022",
+          "authors": [
+            "Milano G",
+            "Innocenti F",
+            "Minami H"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "29520731",
+          "title": "Individualization of Irinotecan Treatment: A Review of Pharmacokinetics, Pharmacodynamics, and Pharmacogenetics.",
+          "journal": "Clinical pharmacokinetics",
+          "year": "2018",
+          "authors": [
+            "de Man FM",
+            "Goey AKL",
+            "van Schaik RHN",
+            "Mathijssen RHJ",
+            "Bins S"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "36184748",
+          "title": "Irinotecan dose schedule for the treatment of Ewing sarcoma.",
+          "journal": "Pediatric blood & cancer",
+          "year": "2023",
+          "authors": [
+            "Slotkin EK",
+            "Meyers PA"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "18660722",
+          "title": "Irinotecan toxicity.",
+          "journal": "Current opinion in supportive and palliative care",
+          "year": "2007",
+          "authors": [
+            "Anthony L"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "9932079",
+          "title": "[Irinotecan pharmacokinetics].",
+          "journal": "Bulletin du cancer",
+          "year": "1998",
+          "authors": [
+            "Chabot GG",
+            "Robert J",
+            "Lokiec F",
+            "Canal P"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "39820839",
+          "title": "Liposomal Irinotecan: A Review as First-Line Therapy in Metastatic Pancreatic Adenocarcinoma.",
+          "journal": "Drugs",
+          "year": "2025",
+          "authors": [
+            "Brown MB",
+            "Blair HA"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "35278766",
+          "title": "Randomized phase 3 study of the anti-disialoganglioside antibody dinutuximab and irinotecan vs irinotecan or topotecan for second-line treatment of small cell lung cancer.",
+          "journal": "Lung cancer (Amsterdam, Netherlands)",
+          "year": "2022",
+          "authors": [
+            "Edelman MJ",
+            "Dvorkin M",
+            "Laktionov K",
+            "Navarro A",
+            "Juan-Vidal O",
+            "Kozlov V",
+            "Golden G",
+            "Jordan O",
+            "Deng CQ",
+            "Bentsion D",
+            "Chouaid C",
+            "Dechev H",
+            "Dowlati A",
+            "Fernández Núñez N",
+            "Ivashchuk O",
+            "Kiladze I",
+            "Kortua T",
+            "Leighl N",
+            "Luft A",
+            "Makharadze T",
+            "Min Y",
+            "Quantin X",
+            "DISTINCT study investigators"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "38677535",
+          "title": "Mechanisms and emerging strategies for irinotecan-induced diarrhea.",
+          "journal": "European journal of pharmacology",
+          "year": "2024",
+          "authors": [
+            "Xu S",
+            "Lan H",
+            "Huang C",
+            "Ge X",
+            "Zhu J"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "30514181",
+          "title": "Irinotecan toxicity during treatment of metastatic colorectal cancer: focus on pharmacogenomics and personalized medicine.",
+          "journal": "Tumori",
+          "year": "2020",
+          "authors": [
+            "Paulík A",
+            "Nekvindová J",
+            "Filip S"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "28401446",
+          "title": "Liposomal Irinotecan: A Review in Metastatic Pancreatic Adenocarcinoma.",
+          "journal": "Drugs",
+          "year": "2017",
+          "authors": [
+            "Lamb YN",
+            "Scott LJ"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "9726099",
+          "title": "Irinotecan in cervical cancer.",
+          "journal": "Oncology (Williston Park, N.Y.)",
+          "year": "1998",
+          "authors": [
+            "Kavanagh JJ",
+            "Verschraegen CF",
+            "Kudelka AP"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "9726089",
+          "title": "Pharmacology of irinotecan.",
+          "journal": "Oncology (Williston Park, N.Y.)",
+          "year": "1998",
+          "authors": [
+            "Kuhn JG"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "8911750",
+          "title": "Irinotecan (CPT-11): a brief overview.",
+          "journal": "Clinical and experimental pharmacology & physiology",
+          "year": "1996",
+          "authors": [
+            "Rivory LP"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "38706404",
+          "title": "Irinotecan dosing and pharmacogenomics: a comprehensive exploration based on UGT1A1 variants and emerging insights.",
+          "journal": "Journal of chemotherapy (Florence, Italy)",
+          "year": "2025",
+          "authors": [
+            "Faisal MS",
+            "Hussain I",
+            "Ikram MA",
+            "Shah SB",
+            "Rehman A",
+            "Iqbal W"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "26604633",
+          "title": "Irinotecan, a key chemotherapeutic drug for metastatic colorectal cancer.",
+          "journal": "World journal of gastroenterology",
+          "year": "2015",
+          "authors": [
+            "Fujita K",
+            "Kubota Y",
+            "Ishida H",
+            "Sasaki Y"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "15469406",
+          "title": "Pharmacogenetics of irinotecan toxicity.",
+          "journal": "Pharmacogenomics",
+          "year": "2004",
+          "authors": [
+            "Marsh S",
+            "McLeod HL"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "14599083",
+          "title": "Irinotecan (Campto) in the treatment of pancreatic cancer.",
+          "journal": "Expert review of anticancer therapy",
+          "year": "2003",
+          "authors": [
+            "Pizzolato JF",
+            "Saltz LB"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "11230497",
+          "title": "Irinotecan in the treatment of colorectal cancer: clinical overview.",
+          "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+          "year": "2001",
+          "authors": [
+            "Vanhoefer U",
+            "Harstrick A",
+            "Achterrath W",
+            "Cao S",
+            "Seeber S",
+            "Rustum YM"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "9342501",
+          "title": "Clinical pharmacokinetics of irinotecan.",
+          "journal": "Clinical pharmacokinetics",
+          "year": "1997",
+          "authors": [
+            "Chabot GG"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "19653336",
+          "title": "Irinotecan therapy and molecular targets in colorectal cancer: a systemic review.",
+          "journal": "World journal of gastroenterology",
+          "year": "2009",
+          "authors": [
+            "Weekes J",
+            "Lam AK",
+            "Sebesan S",
+            "Ho YH"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "29286571",
+          "title": "Irinotecan-induced muscular contractions.",
+          "journal": "Pediatric blood & cancer",
+          "year": "2018",
+          "authors": [
+            "Naviglio S",
+            "Rabusin M"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "18722784",
+          "title": "Irinotecan in the treatment of elderly patients with advanced colorectal cancer.",
+          "journal": "Critical reviews in oncology/hematology",
+          "year": "2008",
+          "authors": [
+            "Sastre J",
+            "Puente J",
+            "García-Saenz JA",
+            "Díaz-Rubio E"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "37470120",
+          "title": "UGT1A1 genotype-guided dosing of irinotecan: time to prioritize patient safety.",
+          "journal": "Pharmacogenomics",
+          "year": "2023",
+          "authors": [
+            "Peeters SL",
+            "Deenen MJ",
+            "Thijs AM",
+            "Hulshof EC",
+            "Mathijssen RH",
+            "Gelderblom H",
+            "Guchelaar HJ",
+            "Swen JJ"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "12109804",
+          "title": "Irinotecan for the treatment of cervical cancer.",
+          "journal": "Oncology (Williston Park, N.Y.)",
+          "year": "2002",
+          "authors": [
+            "Verschraegen CF"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "29609559",
+          "title": "Irinotecan-containing doublet treatment versus irinotecan monotherapy as second-line choice for advanced gastric cancer.",
+          "journal": "BMC gastroenterology",
+          "year": "2018",
+          "authors": [
+            "Yang L",
+            "Jiang X",
+            "Yan H",
+            "Li Y",
+            "Zhen H",
+            "Chang B",
+            "Kariminia S",
+            "Li Q"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "9726096",
+          "title": "Gastrointestinal toxicity or irinotecan.",
+          "journal": "Oncology (Williston Park, N.Y.)",
+          "year": "1998",
+          "authors": [
+            "Hecht JR"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "26469869",
+          "title": "Irinotecan-based regimens for recurrent glioblastoma multiforme: [corrected] a systematic review.",
+          "journal": "Expert review of neurotherapeutics",
+          "year": "2015",
+          "authors": [
+            "Abdel-Rahman O",
+            "Fouad M"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "10630363",
+          "title": "Irinotecan in cancers of the lung and cervix.",
+          "journal": "Anti-cancer drugs",
+          "year": "1999",
+          "authors": [
+            "Sandler A",
+            "van Oosterom AT"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "15864388",
+          "title": "Irinotecan-induced colitis.",
+          "journal": "International journal of surgical pathology",
+          "year": "2005",
+          "authors": [
+            "Sandmeier D",
+            "Chaubert P",
+            "Bouzourene H"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "37337890",
+          "title": "Pharmacokinetic profile of irinotecan in patients with chronic kidney disease: Two cases and literature review.",
+          "journal": "British journal of clinical pharmacology",
+          "year": "2023",
+          "authors": [
+            "Chui CY",
+            "Moes DJAR",
+            "Koolen SLW",
+            "Swen JJ",
+            "Gelderblom H"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "29178025",
+          "title": "Pegylated Liposomal Irinotecan Hydrochloride Trihydrate for Treating Pancreatic Cancer After Gemcitabine: An Evidence Review Group Perspective of a NICE Single Technology Appraisal.",
+          "journal": "PharmacoEconomics",
+          "year": "2018",
+          "authors": [
+            "Fleeman N",
+            "Abdulla A",
+            "Bagust A",
+            "Beale S",
+            "Richardson M",
+            "Stainthorpe A",
+            "Boland A",
+            "Kotas E",
+            "McEntee J",
+            "Palmer D"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "33130913",
+          "title": "Irinotecan-induced intestinal mucositis in mice: a histopathological study.",
+          "journal": "Cancer chemotherapy and pharmacology",
+          "year": "2021",
+          "authors": [
+            "Boeing T",
+            "Gois MB",
+            "de Souza P",
+            "Somensi LB",
+            "Sant Ana DMG",
+            "da Silva LM"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "16257834",
+          "title": "Clinical pharmacogenetics of irinotecan (CPT-11).",
+          "journal": "Drug metabolism reviews",
+          "year": "2005",
+          "authors": [
+            "Ando Y",
+            "Hasegawa Y"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "19852077",
+          "title": "Irinotecan and its active metabolite, SN-38: review of bioanalytical methods and recent update from clinical pharmacology perspectives.",
+          "journal": "Biomedical chromatography : BMC",
+          "year": "2010",
+          "authors": [
+            "Ramesh M",
+            "Ahlawat P",
+            "Srinivas NR"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "38715491",
+          "title": "[Delayed diarrhea induced by irinotecan: from the perspective of gut microbiota].",
+          "journal": "Zhonghua nei ke za zhi",
+          "year": "2024",
+          "authors": [
+            "Zhang ZY",
+            "Duan LP"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "16503750",
+          "title": "Irinotecan in the treatment of small cell lung cancer: a review of patient safety considerations.",
+          "journal": "Expert opinion on drug safety",
+          "year": "2006",
+          "authors": [
+            "Kawahara M"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "33402591",
+          "title": "Optimum patient selection for irinotecan-containing regimens in metastatic colorectal cancer: Literature review and lessons from clinical practice.",
+          "journal": "Indian journal of cancer",
+          "year": "2021",
+          "authors": [
+            "Basade M",
+            "Mane A"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "8891470",
+          "title": "Irinotecan. A review of its pharmacological properties and clinical efficacy in the management of advanced colorectal cancer.",
+          "journal": "Drugs",
+          "year": "1996",
+          "authors": [
+            "Wiseman LR",
+            "Markham A"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "16959432",
+          "title": "Irinotecan in the treatment of colorectal cancer.",
+          "journal": "Cancer treatment reviews",
+          "year": "2006",
+          "authors": [
+            "Fuchs C",
+            "Mitchell EP",
+            "Hoff PM"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "21163137",
+          "title": "Irinotecan or oxaliplatin combined with 5-fluorouracil and leucovorin as first-line therapy for advanced colorectal cancer: a meta-analysis.",
+          "journal": "Chinese medical journal",
+          "year": "2010",
+          "authors": [
+            "Liang XB",
+            "Hou SH",
+            "Li YP",
+            "Wang LC",
+            "Zhang X",
+            "Yang J"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "35108028",
+          "title": "Revisiting UGT1A1 Pharmacogenetic Testing Before Irinotecan-Why Not?",
+          "journal": "JCO oncology practice",
+          "year": "2022",
+          "authors": [
+            "Emery LP",
+            "Brooks GA"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "36254072",
+          "title": "The efficacy of irinotecan supplementation for colorectal cancer: A meta-analysis of randomized controlled studies.",
+          "journal": "Medicine",
+          "year": "2022",
+          "authors": [
+            "Jiang W",
+            "Liu Q",
+            "Yang D",
+            "Yang SB"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "38870978",
+          "title": "Nanoliposomal irinotecan in advanced biliary tract cancers.",
+          "journal": "The lancet. Gastroenterology & hepatology",
+          "year": "2024",
+          "authors": [
+            "Malka D",
+            "Colle R"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "32795876",
+          "title": "A phase I trial of talazoparib and irinotecan with and without temozolomide in children and young adults with recurrent or refractory solid malignancies.",
+          "journal": "European journal of cancer (Oxford, England : 1990)",
+          "year": "2020",
+          "authors": [
+            "Federico SM",
+            "Pappo AS",
+            "Sahr N",
+            "Sykes A",
+            "Campagne O",
+            "Stewart CF",
+            "Clay MR",
+            "Bahrami A",
+            "McCarville MB",
+            "Kaste SC",
+            "Santana VM",
+            "Helmig S",
+            "Gartrell J",
+            "Shelat A",
+            "Brennan RC",
+            "Hawkins D",
+            "Godwin K",
+            "Bishop MW",
+            "Furman WL",
+            "Stewart E"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "18784279",
+          "title": "Experience with irinotecan for the treatment of malignant glioma.",
+          "journal": "Neuro-oncology",
+          "year": "2009",
+          "authors": [
+            "Vredenburgh JJ",
+            "Desjardins A",
+            "Reardon DA",
+            "Friedman HS"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "17090741",
+          "title": "Pharmacogenetics and irinotecan therapy.",
+          "journal": "American journal of health-system pharmacy : AJHP : official journal of the American Society of Health-System Pharmacists",
+          "year": "2006",
+          "authors": [
+            "Hahn KK",
+            "Wolff JJ",
+            "Kolesar JM"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "39575573",
+          "title": "Rifaximin alleviates irinotecan-induced diarrhea in mice model.",
+          "journal": "Annals of medicine",
+          "year": "2024",
+          "authors": [
+            "Huang C",
+            "Lan H",
+            "Bai M",
+            "Chen J",
+            "Xu S",
+            "Sun Q",
+            "Chen Q",
+            "Mao W",
+            "Jiang J",
+            "Zhu J"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "9726095",
+          "title": "Alternative dosing schedules for irinotecan.",
+          "journal": "Oncology (Williston Park, N.Y.)",
+          "year": "1998",
+          "authors": [
+            "Rothenberg ML",
+            "Kuhn JG",
+            "Schaaf LJ",
+            "Drengler RL",
+            "Eckhardt SG",
+            "Villalona-Calero MA",
+            "Hammond L",
+            "Miller LL",
+            "Petit RG",
+            "Rowinsky EK",
+            "Von Hoff DD"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "9726102",
+          "title": "Irinotecan and cisplatin in upper gastrointestinal malignancies.",
+          "journal": "Oncology (Williston Park, N.Y.)",
+          "year": "1998",
+          "authors": [
+            "Enzinger PC",
+            "Ilson DH",
+            "Saltz LB",
+            "O'Reilly EM",
+            "Kelsen DP"
+          ],
+          "source": "ncbi_pubmed"
+        }
+      ],
+      "source": "pubmed_live"
+    },
+    "pubmed_breast_cancer": {
+      "ok": true,
+      "query": "Irinotecan breast cancer",
+      "data": [
+        {
+          "pmid": "36027558",
+          "title": "Sacituzumab Govitecan in Hormone Receptor-Positive/Human Epidermal Growth Factor Receptor 2-Negative Metastatic Breast Cancer.",
+          "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+          "year": "2022",
+          "authors": [
+            "Rugo HS",
+            "Bardia A",
+            "Marmé F",
+            "Cortes J",
+            "Schmid P",
+            "Loirat D",
+            "Trédan O",
+            "Ciruelos E",
+            "Dalenc F",
+            "Pardo PG",
+            "Jhaveri KL",
+            "Delaney R",
+            "Fu O",
+            "Lin L",
+            "Verret W",
+            "Tolaney SM"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "30786188",
+          "title": "Sacituzumab Govitecan-hziy in Refractory Metastatic Triple-Negative Breast Cancer.",
+          "journal": "The New England journal of medicine",
+          "year": "2019",
+          "authors": [
+            "Bardia A",
+            "Mayer IA",
+            "Vahdat LT",
+            "Tolaney SM",
+            "Isakoff SJ",
+            "Diamond JR",
+            "O'Shaughnessy J",
+            "Moroose RL",
+            "Santin AD",
+            "Abramson VG",
+            "Shah NC",
+            "Rugo HS",
+            "Goldenberg DM",
+            "Sweidan AM",
+            "Iannone R",
+            "Washkowitz S",
+            "Sharkey RM",
+            "Wegener WA",
+            "Kalinsky K"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "32223649",
+          "title": "TROPiCS-02: A Phase III study investigating sacituzumab govitecan in the treatment of HR+/HER2- metastatic breast cancer.",
+          "journal": "Future oncology (London, England)",
+          "year": "2020",
+          "authors": [
+            "Rugo HS",
+            "Bardia A",
+            "Tolaney SM",
+            "Arteaga C",
+            "Cortes J",
+            "Sohn J",
+            "Marmé F",
+            "Hong Q",
+            "Delaney RJ",
+            "Hafeez A",
+            "André F",
+            "Schmid P"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "35197630",
+          "title": "Effective drug combinations in breast, colon and pancreatic cancer cells.",
+          "journal": "Nature",
+          "year": "2022",
+          "authors": [
+            "Jaaks P",
+            "Coker EA",
+            "Vis DJ",
+            "Edwards O",
+            "Carpenter EF",
+            "Leto SM",
+            "Dwane L",
+            "Sassi F",
+            "Lightfoot H",
+            "Barthorpe S",
+            "van der Meer D",
+            "Yang W",
+            "Beck A",
+            "Mironenko T",
+            "Hall C",
+            "Hall J",
+            "Mali I",
+            "Richardson L",
+            "Tolley C",
+            "Morris J",
+            "Thomas F",
+            "Lleshi E",
+            "Aben N",
+            "Benes CH",
+            "Bertotti A",
+            "Trusolino L",
+            "Wessels L",
+            "Garnett MJ"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "36302269",
+          "title": "Antibody-drug conjugates targeting TROP-2: Clinical development in metastatic breast cancer.",
+          "journal": "Breast (Edinburgh, Scotland)",
+          "year": "2022",
+          "authors": [
+            "Shastry M",
+            "Jacob S",
+            "Rugo HS",
+            "Hamilton E"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "15763604",
+          "title": "Capecitabine: a review.",
+          "journal": "Clinical therapeutics",
+          "year": "2005",
+          "authors": [
+            "Walko CM",
+            "Lindley C"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "26101915",
+          "title": "Trop-2 is a novel target for solid cancer therapy with sacituzumab govitecan (IMMU-132), an antibody-drug conjugate (ADC).",
+          "journal": "Oncotarget",
+          "year": "2015",
+          "authors": [
+            "Goldenberg DM",
+            "Cardillo TM",
+            "Govindan SV",
+            "Rossi EA",
+            "Sharkey RM"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "12800602",
+          "title": "Rationale for mitomycin and irinotecan use in advanced breast cancer.",
+          "journal": "Oncology (Williston Park, N.Y.)",
+          "year": "2003",
+          "authors": [
+            "Xu Y",
+            "Shapiro CL"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "39746964",
+          "title": "Intravenous liposomal irinotecan in metastatic triple-negative breast cancer after ≥ 2 prior lines of chemotherapy: a phase Ib study.",
+          "journal": "Nature communications",
+          "year": "2025",
+          "authors": [
+            "Fan Y",
+            "Zhang Q",
+            "Yan M",
+            "Qu X",
+            "Yin Y",
+            "Sun T",
+            "Yang J",
+            "Wang Y",
+            "Wang X",
+            "Niu Z",
+            "Wang X",
+            "Sun S",
+            "Zhao W",
+            "Liu Y",
+            "Niu M",
+            "Zhao X",
+            "Xu B"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "35882754",
+          "title": "Alteration of Trop-2 expression in breast cancer cells by clinically used therapeutic agents and acquired tamoxifen resistance.",
+          "journal": "Breast cancer (Tokyo, Japan)",
+          "year": "2022",
+          "authors": [
+            "Zhu J",
+            "Wu W",
+            "Togashi Y",
+            "Taira Nihira N",
+            "Johmura Y",
+            "Zhu D",
+            "Nakanishi M",
+            "Miyoshi Y",
+            "Ohta T"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "38578394",
+          "title": "Population Pharmacokinetics of Sacituzumab Govitecan in Patients with Metastatic Triple-Negative Breast Cancer and Other Solid Tumors.",
+          "journal": "Clinical pharmacokinetics",
+          "year": "2024",
+          "authors": [
+            "Sathe AG",
+            "Singh I",
+            "Singh P",
+            "Diderichsen PM",
+            "Wang X",
+            "Chang P",
+            "Taqui A",
+            "Phan S",
+            "Girish S",
+            "Othman AA"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "35524271",
+          "title": "Toosendanin, a late-stage autophagy inhibitor, sensitizes triple-negative breast cancer to irinotecan chemotherapy.",
+          "journal": "Chinese medicine",
+          "year": "2022",
+          "authors": [
+            "Zhang S",
+            "Dong Y",
+            "Chen X",
+            "Tan CSH",
+            "Li M",
+            "Miao K",
+            "Lu JH"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "31208270",
+          "title": "Antibody-drug conjugates targeting TROP-2 and incorporating SN-38: A case study of anti-TROP-2 sacituzumab govitecan.",
+          "journal": "mAbs",
+          "year": "2019",
+          "authors": [
+            "Goldenberg DM",
+            "Sharkey RM"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "28558150",
+          "title": "Sacituzumab govitecan (IMMU-132), an anti-Trop-2-SN-38 antibody-drug conjugate for the treatment of diverse epithelial cancers: Safety and pharmacokinetics.",
+          "journal": "Cancer",
+          "year": "2017",
+          "authors": [
+            "Ocean AJ",
+            "Starodub AN",
+            "Bardia A",
+            "Vahdat LT",
+            "Isakoff SJ",
+            "Guarino M",
+            "Messersmith WA",
+            "Picozzi VJ",
+            "Mayer IA",
+            "Wegener WA",
+            "Maliakal P",
+            "Govindan SV",
+            "Sharkey RM",
+            "Goldenberg DM"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "28291390",
+          "title": "Efficacy and Safety of Anti-Trop-2 Antibody Drug Conjugate Sacituzumab Govitecan (IMMU-132) in Heavily Pretreated Patients With Metastatic Triple-Negative Breast Cancer.",
+          "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+          "year": "2017",
+          "authors": [
+            "Bardia A",
+            "Mayer IA",
+            "Diamond JR",
+            "Moroose RL",
+            "Isakoff SJ",
+            "Starodub AN",
+            "Shah NC",
+            "O'Shaughnessy J",
+            "Kalinsky K",
+            "Guarino M",
+            "Abramson V",
+            "Juric D",
+            "Tolaney SM",
+            "Berlin J",
+            "Messersmith WA",
+            "Ocean AJ",
+            "Wegener WA",
+            "Maliakal P",
+            "Sharkey RM",
+            "Govindan SV",
+            "Goldenberg DM",
+            "Vahdat LT"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "25915780",
+          "title": "Sacituzumab Govitecan (IMMU-132), an Anti-Trop-2/SN-38 Antibody-Drug Conjugate: Characterization and Efficacy in Pancreatic, Gastric, and Other Cancers.",
+          "journal": "Bioconjugate chemistry",
+          "year": "2015",
+          "authors": [
+            "Cardillo TM",
+            "Govindan SV",
+            "Sharkey RM",
+            "Trisal P",
+            "Arrojo R",
+            "Liu D",
+            "Rossi EA",
+            "Chang CH",
+            "Goldenberg DM"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "36308601",
+          "title": "Pucotenlimab: First Approval.",
+          "journal": "Drugs",
+          "year": "2022",
+          "authors": [
+            "Dhillon S"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "41371050",
+          "title": "Liposomal irinotecan in patients with HER2-negative breast cancer and brain metastases: The PHENOMENAL phase 2 study.",
+          "journal": "European journal of cancer (Oxford, England : 1990)",
+          "year": "2026",
+          "authors": [
+            "Borrego MR",
+            "López-Bravo DP",
+            "Vila MM",
+            "Pérez-García JM",
+            "Fernández M",
+            "Tormo SB",
+            "García-Saenz JÁ",
+            "Lema L",
+            "Garau I",
+            "Cortez P",
+            "Torres AA",
+            "Conejo EA",
+            "Calvo I",
+            "Ferrer N",
+            "Blancas I",
+            "Amillano K",
+            "Santasusagna S",
+            "Benderra MA",
+            "Alcalá-López D",
+            "Antonarelli G",
+            "Sampayo-Cordero M",
+            "Llombart-Cussac A",
+            "Cortés J"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "40634292",
+          "title": "Irinotecan alleviates chemoresistance to anthracyclines through the inhibition of AARS1-mediated BLM lactylation and homologous recombination repair.",
+          "journal": "Signal transduction and targeted therapy",
+          "year": "2025",
+          "authors": [
+            "Li X",
+            "Zhang C",
+            "Mei Y",
+            "Zhong W",
+            "Fan W",
+            "Liu L",
+            "Feng Z",
+            "Bai X",
+            "Liu C",
+            "Xiao M",
+            "He W",
+            "Lin T",
+            "Gou X"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "39768216",
+          "title": "Targeting Refractory Triple-Negative Breast Cancer with Sacituzumab Govitecan: A New Era in Precision Medicine.",
+          "journal": "Cells",
+          "year": "2024",
+          "authors": [
+            "Khan S",
+            "Jandrajupalli SB",
+            "Bushara NZA",
+            "Raja RDP",
+            "Mirza S",
+            "Sharma K",
+            "Verma R",
+            "Kumar A",
+            "Lohani M"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "26801902",
+          "title": "Molecular characterization of irinotecan (SN-38) resistant human breast cancer cell lines.",
+          "journal": "BMC cancer",
+          "year": "2016",
+          "authors": [
+            "Jandu H",
+            "Aluzaite K",
+            "Fogh L",
+            "Thrane SW",
+            "Noer JB",
+            "Proszek J",
+            "Do KN",
+            "Hansen SN",
+            "Damsgaard B",
+            "Nielsen SL",
+            "Stougaard M",
+            "Knudsen BR",
+            "Moreira J",
+            "Hamerlik P",
+            "Gajjar M",
+            "Smid M",
+            "Martens J",
+            "Foekens J",
+            "Pommier Y",
+            "Brünner N",
+            "Schrohl AS",
+            "Stenvang J"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "36734848",
+          "title": "Pretherapy Ferumoxytol-enhanced MRI to Predict Response to Liposomal Irinotecan in Metastatic Breast Cancer.",
+          "journal": "Radiology. Imaging cancer",
+          "year": "2023",
+          "authors": [
+            "Ravi H",
+            "Arias-Lorza AM",
+            "Costello JR",
+            "Han HS",
+            "Jeong DK",
+            "Klinz SG",
+            "Sachdev JC",
+            "Korn RL",
+            "Raghunand N"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "39903492",
+          "title": "The Mode of Action and Clinical Outcomes of Sacituzumab Govitecan in Solid Tumors.",
+          "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+          "year": "2025",
+          "authors": [
+            "Tolaney SM",
+            "Cardillo TM",
+            "Chou CC",
+            "Dornan C",
+            "Faris M"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "29604436",
+          "title": "Investigational chemotherapy and novel pharmacokinetic mechanisms for the treatment of breast cancer brain metastases.",
+          "journal": "Pharmacological research",
+          "year": "2018",
+          "authors": [
+            "Shah N",
+            "Mohammad AS",
+            "Saralkar P",
+            "Sprowls SA",
+            "Vickers SD",
+            "John D",
+            "Tallman RM",
+            "Lucke-Wold BP",
+            "Jarrell KE",
+            "Pinti M",
+            "Nolan RL",
+            "Lockman PR"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "31383812",
+          "title": "A Phase II Study of Irinotecan and Etoposide as Treatment for Refractory Metastatic Breast Cancer.",
+          "journal": "The oncologist",
+          "year": "2019",
+          "authors": [
+            "Segar JM",
+            "Reed D",
+            "Stopeck A",
+            "Livingston RB",
+            "Chalasani P"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "32727805",
+          "title": "Pilot Study of Irinotecan and S-1 (IRIS) for Advanced and Metastatic Breast Cancer.",
+          "journal": "Anticancer research",
+          "year": "2020",
+          "authors": [
+            "Tanaka T",
+            "Tanaka M",
+            "Furusawa H",
+            "Kamada Y",
+            "Sagara Y",
+            "Anan K",
+            "Miyara K",
+            "Kai Y",
+            "Uga T",
+            "Tamura K",
+            "Mitsuyama S",
+            "KBC-SG (Kyushu Breast Cancer-Study Group)"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "31172405",
+          "title": "Phase II study of irinotecan and temozolomide in breast cancer patients with progressing central nervous system disease.",
+          "journal": "Breast cancer research and treatment",
+          "year": "2019",
+          "authors": [
+            "Melisko ME",
+            "Assefa M",
+            "Hwang J",
+            "DeLuca A",
+            "Park JW",
+            "Rugo HS"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "34881172",
+          "title": "A Retrospective Analysis of the Effect of Irinotecan-Based Regimens in Patients With Metastatic Breast Cancer Previously Treated With Anthracyclines and Taxanes.",
+          "journal": "Frontiers in oncology",
+          "year": "2021",
+          "authors": [
+            "Suo J",
+            "Zhong X",
+            "He P",
+            "Zheng H",
+            "Tian T",
+            "Yan X",
+            "Luo T"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "35078817",
+          "title": "ATR Inhibitor AZD6738 (Ceralasertib) Exerts Antitumor Activity as a Monotherapy and in Combination with Chemotherapy and the PARP Inhibitor Olaparib.",
+          "journal": "Cancer research",
+          "year": "2022",
+          "authors": [
+            "Wilson Z",
+            "Odedra R",
+            "Wallez Y",
+            "Wijnhoven PWG",
+            "Hughes AM",
+            "Gerrard J",
+            "Jones GN",
+            "Bargh-Dawson H",
+            "Brown E",
+            "Young LA",
+            "O'Connor MJ",
+            "Lau A"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "33201358",
+          "title": "Phase I study of liposomal irinotecan in patients with metastatic breast cancer: findings from the expansion phase.",
+          "journal": "Breast cancer research and treatment",
+          "year": "2021",
+          "authors": [
+            "Sachdev JC",
+            "Munster P",
+            "Northfelt DW",
+            "Han HS",
+            "Ma C",
+            "Maxwell F",
+            "Wang T",
+            "Belanger B",
+            "Zhang B",
+            "Moore Y",
+            "Thiagalingam A",
+            "Anders C"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "31398063",
+          "title": "Sacituzumab govitecan: breakthrough targeted therapy for triple-negative breast cancer.",
+          "journal": "Expert review of anticancer therapy",
+          "year": "2019",
+          "authors": [
+            "Weiss J",
+            "Glode A",
+            "Messersmith WA",
+            "Diamond J"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "26463521",
+          "title": "NKTR-102 Efficacy versus irinotecan in a mouse model of brain metastases of breast cancer.",
+          "journal": "BMC cancer",
+          "year": "2015",
+          "authors": [
+            "Adkins CE",
+            "Nounou MI",
+            "Hye T",
+            "Mohammad AS",
+            "Terrell-Hall T",
+            "Mohan NK",
+            "Eldon MA",
+            "Hoch U",
+            "Lockman PR"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "34315389",
+          "title": "The Cisplatin, 5-fluorouracil, Irinotecan, and Gemcitabine Treatment in Resistant 2D and 3D Model Triple Negative Breast Cancer Cell Line: ABCG2 Expression Data.",
+          "journal": "Anti-cancer agents in medicinal chemistry",
+          "year": "2022",
+          "authors": [
+            "Ata FK",
+            "Yalcin S"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "39793440",
+          "title": "Repurposing FDA-approved drugs to target G-quadruplexes in breast cancer.",
+          "journal": "European journal of medicinal chemistry",
+          "year": "2025",
+          "authors": [
+            "Moraca F",
+            "Arciuolo V",
+            "Marzano S",
+            "Napolitano F",
+            "Castellano G",
+            "D'Aria F",
+            "Di Porzio A",
+            "Landolfi L",
+            "Catalanotti B",
+            "Randazzo A",
+            "Pagano B",
+            "Malfitano AM",
+            "Amato J"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "11301841",
+          "title": "Irinotecan/gemcitabine combination chemotherapy in pancreatic cancer.",
+          "journal": "Oncology (Williston Park, N.Y.)",
+          "year": "2001",
+          "authors": [
+            "Rocha Lima CM",
+            "Sherman CA",
+            "Brescia FJ",
+            "Brunson CY",
+            "Green MR"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "29458237",
+          "title": "Randomized Open Label Phase III Trial of Irinotecan Plus Capecitabine versus Capecitabine Monotherapy in Patients with Metastatic Breast Cancer Previously Treated with Anthracycline and Taxane: PROCEED Trial (KCSG BR 11-01).",
+          "journal": "Cancer research and treatment",
+          "year": "2019",
+          "authors": [
+            "Park IH",
+            "Im SA",
+            "Jung KH",
+            "Sohn JH",
+            "Park YH",
+            "Lee KS",
+            "Sim SH",
+            "Park KH",
+            "Kim JH",
+            "Nam BH",
+            "Kim HJ",
+            "Kim TY",
+            "Lee KH",
+            "Kim SB",
+            "Ahn JH",
+            "Lee S",
+            "Ro J"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "29368289",
+          "title": "Liposomal Irinotecan Accumulates in Metastatic Lesions, Crosses the Blood-Tumor Barrier (BTB), and Prolongs Survival in an Experimental Model of Brain Metastases of Triple Negative Breast Cancer.",
+          "journal": "Pharmaceutical research",
+          "year": "2018",
+          "authors": [
+            "Mohammad AS",
+            "Griffith JI",
+            "Adkins CE",
+            "Shah N",
+            "Sechrest E",
+            "Dolan EL",
+            "Terrell-Hall TB",
+            "Hendriks BS",
+            "Lee H",
+            "Lockman PR"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "28443467",
+          "title": "Effect of irinotecan on HMGB1, MMP9 expression, cell cycle, and cell growth in breast cancer (MCF-7) cells.",
+          "journal": "Tumour biology : the journal of the International Society for Oncodevelopmental Biology and Medicine",
+          "year": "2017",
+          "authors": [
+            "Keyvani-Ghamsari S",
+            "Rabbani-Chadegani A",
+            "Sargolzaei J",
+            "Shahhoseini M"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "11574629",
+          "title": "Clinical effect of irinotecan in advanced and metastatic breast cancer patients previously treated with doxorubicin- and docetaxel-containing regimens.",
+          "journal": "Japanese journal of clinical oncology",
+          "year": "2001",
+          "authors": [
+            "Shigeoka Y",
+            "Itoh K",
+            "Igarashi T",
+            "Ishizawa K",
+            "Saeki T",
+            "Fujii H",
+            "Minami H",
+            "Imoto S",
+            "Sasaki Y"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "26881332",
+          "title": "Etirinotecan pegol for the treatment of breast cancer.",
+          "journal": "Expert opinion on pharmacotherapy",
+          "year": "2016",
+          "authors": [
+            "López-Miranda E",
+            "Cortés J"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "39473207",
+          "title": "In vivo, In vitro, and In silico Studies of Umbelliferone and Irinotecan on MDA-MB-231 Breast Cancer Cell Line and Drosophila melanogaster Larvae.",
+          "journal": "Anti-cancer agents in medicinal chemistry",
+          "year": "2025",
+          "authors": [
+            "Tamturk E",
+            "Yalcın S",
+            "Ercan F",
+            "Tuncbilek AS"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "40252631",
+          "title": "Phase 1/2 study of liposomal irinotecan plus S-1 for metastatic pancreatic cancer refractory to gemcitabine-based treatment.",
+          "journal": "European journal of cancer (Oxford, England : 1990)",
+          "year": "2025",
+          "authors": [
+            "Imaoka H",
+            "Ikeda M",
+            "Ozaka M",
+            "Oshima K",
+            "Okano N",
+            "Shimizu S",
+            "Tsumura H",
+            "Komatsu Y",
+            "Yamashita T",
+            "Kataoka S",
+            "Nagano H",
+            "Hisano T",
+            "Sasaki M",
+            "Kobayashi S",
+            "Fukushima T",
+            "Mitsunaga S",
+            "Furukawa T",
+            "Hamauchi S",
+            "Ueno M",
+            "Furuse J"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "24379067",
+          "title": "PEG-coated irinotecan cationic liposomes improve the therapeutic efficacy of breast cancer in animals.",
+          "journal": "European review for medical and pharmacological sciences",
+          "year": "2013",
+          "authors": [
+            "Zhang L",
+            "Cao DY",
+            "Wang J",
+            "Xiang B",
+            "Dun JN",
+            "Fang Y",
+            "Xue GQ"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "37128309",
+          "title": "Facile construction of irinotecan loaded mesoporous nano-formulation with surface-initiated polymerization to improve stimuli-responsive drug delivery for breast cancer therapy.",
+          "journal": "Heliyon",
+          "year": "2023",
+          "authors": [
+            "Nie Z",
+            "Wang D",
+            "Wang S",
+            "Wang L"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "21216589",
+          "title": "The acridone derivative MBLI-87 sensitizes breast cancer resistance protein-expressing xenografts to irinotecan.",
+          "journal": "European journal of cancer (Oxford, England : 1990)",
+          "year": "2011",
+          "authors": [
+            "Arnaud O",
+            "Boumendjel A",
+            "Gèze A",
+            "Honorat M",
+            "Matera EL",
+            "Guitton J",
+            "Stein WD",
+            "Bates SE",
+            "Falson P",
+            "Dumontet C",
+            "Di Pietro A",
+            "Payen L"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "34718178",
+          "title": "A nanotherapeutic strategy to overcome chemoresistance to irinotecan/7-ethyl-10-hydroxy-camptothecin in colorectal cancer.",
+          "journal": "Acta biomaterialia",
+          "year": "2022",
+          "authors": [
+            "Huang Q",
+            "Liu X",
+            "Wang H",
+            "Liu X",
+            "Zhang Q",
+            "Li K",
+            "Chen Y",
+            "Zhu Q",
+            "Shen Y",
+            "Sui M"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "29131533",
+          "title": "A phase I/II pharmacokinetics/pharmacodynamics study of irinotecan combined with S-1 for recurrent/metastatic breast cancer in patients with selected UGT1A1 genotypes (the JBCRG-M01 study).",
+          "journal": "Cancer medicine",
+          "year": "2017",
+          "authors": [
+            "Ishiguro H",
+            "Saji S",
+            "Nomura S",
+            "Tanaka S",
+            "Ueno T",
+            "Onoue M",
+            "Iwata H",
+            "Yamanaka T",
+            "Sasaki Y",
+            "Toi M"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "31196001",
+          "title": "Two open-label, single arm, non-randomized phase II studies of irinotecan for the treatment of metastatic breast cancer in patients with increased copy number of the topoisomerase I gene.",
+          "journal": "BMC cancer",
+          "year": "2019",
+          "authors": [
+            "Kümler I",
+            "Balslev E",
+            "Stenvang J",
+            "Brünner N",
+            "Ejlertsen B",
+            "Jakobsen EH",
+            "Nielsen DL"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "38971512",
+          "title": "Irinotecan-loaded magnetite-silica core-shell systems for colorectal cancer treatment.",
+          "journal": "International journal of pharmaceutics",
+          "year": "2024",
+          "authors": [
+            "Chircov C",
+            "Petcu MC",
+            "Vasile BS",
+            "Purcăreanu B",
+            "Nicoară AI",
+            "Oprea OC",
+            "Popescu RC"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "34651524",
+          "title": "Tackling metastatic triple-negative breast cancer with sacituzumab govitecan.",
+          "journal": "Expert review of anticancer therapy",
+          "year": "2021",
+          "authors": [
+            "Schreiber AR",
+            "Andress M",
+            "Diamond JR"
+          ],
+          "source": "ncbi_pubmed"
+        }
+      ],
+      "source": "pubmed_live"
+    }
+  },
+  "errors": []
+}

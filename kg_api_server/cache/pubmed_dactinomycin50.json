@@ -1,0 +1,615 @@
+{
+  "data": [
+    {
+      "pmid": "32452083",
+      "title": "Dactinomycin in acute myeloid leukemia with NPM1 mutations.",
+      "journal": "European journal of haematology",
+      "year": "2020",
+      "authors": [
+        "Beziat G",
+        "Tavitian S",
+        "Bertoli S",
+        "Huguet F",
+        "Largeaud L",
+        "Luquet I",
+        "Vergez F",
+        "Rieu JB",
+        "Bories P",
+        "Delabesse E",
+        "Récher C"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "1863544",
+      "title": "Dactinomycin potentiation of radiation pneumonitis: a forgotten interaction.",
+      "journal": "Pediatric hematology and oncology",
+      "year": "1991",
+      "authors": [
+        "Cohen IJ",
+        "Loven D",
+        "Schoenfeld T",
+        "Sandbank J",
+        "Kaplinsky C",
+        "Yaniv Y",
+        "Jaber L",
+        "Zaizov R"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "4283937",
+      "title": "Dactinomycin.",
+      "journal": "The Medical letter on drugs and therapeutics",
+      "year": "1965",
+      "authors": [],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "6824271",
+      "title": "Correction: Dactinomycin dose.",
+      "journal": "Annals of internal medicine",
+      "year": "1983",
+      "authors": [
+        "Adams JD",
+        "Wilson JP"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "2998273",
+      "title": "[Importance of dactinomycin in the current therapy of tumors].",
+      "journal": "Antibiotiki i meditsinskaia biotekhnologiia = Antibiotics and medical biotechnology",
+      "year": "1985",
+      "authors": [
+        "Terent'eva TG",
+        "Egorov LV",
+        "Perevodchikova NI"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "62702",
+      "title": "Actinomycins.",
+      "journal": "IARC monographs on the evaluation of the carcinogenic risk of chemicals to man",
+      "year": "1976",
+      "authors": [],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "4289652",
+      "title": "Dactinomycin in Wilms' tumor.",
+      "journal": "JAMA",
+      "year": "1967",
+      "authors": [
+        "Burgert EO Jr",
+        "Glidewell O"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "32366058",
+      "title": "Synergy between Photodynamic Therapy and Dactinomycin Chemotherapy in 2D and 3D Ovarian Cancer Cell Cultures.",
+      "journal": "International journal of molecular sciences",
+      "year": "2020",
+      "authors": [
+        "Hadi LM",
+        "Yaghini E",
+        "MacRobert AJ",
+        "Loizidou M"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "8153053",
+      "title": "Dactinomycin analogues as neurokinin-2 receptor antagonists.",
+      "journal": "Pharmacology & toxicology",
+      "year": "1993",
+      "authors": [
+        "Auberson S",
+        "Mauger AB",
+        "Lundberg JM"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "32141676",
+      "title": "Risk factors for second-line dactinomycin failure after methotrexate treatment for low-risk gestational trophoblastic neoplasia: a retrospective study.",
+      "journal": "BJOG : an international journal of obstetrics and gynaecology",
+      "year": "2020",
+      "authors": [
+        "Hoeijmakers YM",
+        "Sweep F",
+        "Lok C",
+        "Ottevanger PB"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "17140264",
+      "title": "Dactinomycin impairs cellular respiration and reduces accompanying ATP formation.",
+      "journal": "Molecular pharmaceutics",
+      "year": "2006",
+      "authors": [
+        "Tao Z",
+        "Ahmad SS",
+        "Penefsky HS",
+        "Goodisman J",
+        "Souid AK"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "17014653",
+      "title": "Dactinomycin-induced, severe lichenoid eruption in a child.",
+      "journal": "Pediatric dermatology",
+      "year": "2006",
+      "authors": [
+        "Ridola V",
+        "Mahé E",
+        "Fawaz O",
+        "Galmiche L",
+        "Patte C",
+        "Grill J"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "1316711",
+      "title": "Selective inhibition by dactinomycin of NANC sensory bronchoconstriction and [125I]NKA binding due to NK-2 receptor antagonism.",
+      "journal": "Acta physiologica Scandinavica",
+      "year": "1992",
+      "authors": [
+        "Lou YP",
+        "Delay-Goyet P",
+        "Lundberg JM"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "4286164",
+      "title": "Role of dactinomycin in the improved survival of children with Wilms' tumor.",
+      "journal": "JAMA",
+      "year": "1966",
+      "authors": [
+        "Fernbach DJ",
+        "Martyn DT"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "15262143",
+      "title": "Single-agent pulse dactinomycin has only modest activity for methotrexate-resistant gestational trophoblastic neoplasia.",
+      "journal": "Gynecologic oncology",
+      "year": "2004",
+      "authors": [
+        "Chen LM",
+        "Lengyel ER",
+        "Bethan Powell C"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "29629964",
+      "title": "Efficacy and Safety of Second-Line 5-Day Dactinomycin in Case of Methotrexate Failure for Gestational Trophoblastic Neoplasia.",
+      "journal": "International journal of gynecological cancer : official journal of the International Gynecological Cancer Society",
+      "year": "2018",
+      "authors": [
+        "Prouvot C",
+        "Golfier F",
+        "Massardier J",
+        "You B",
+        "Lotz JP",
+        "Patrier S",
+        "Devouassoux M",
+        "Schott AM",
+        "Hajri T",
+        "Bolze PA"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "3410898",
+      "title": "Reversed-phase high-performance liquid chromatography of dactinomycin.",
+      "journal": "Journal of chromatography",
+      "year": "1988",
+      "authors": [
+        "Schneebaum S",
+        "Bies JM",
+        "Briele HA"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "4300087",
+      "title": "[Combined dactinomycin and radiotherapy in the treatment of nephroblastoma of children and its metastases].",
+      "journal": "Annales de radiologie",
+      "year": "1967",
+      "authors": [
+        "Schweisguth O",
+        "Schlienger MJ"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "9776993",
+      "title": "Randomized controlled trial of doxorubicin versus dactinomycin in a multiagent protocol for treatment of dogs with malignant lymphoma.",
+      "journal": "Journal of the American Veterinary Medical Association",
+      "year": "1998",
+      "authors": [
+        "Khanna C",
+        "Lund EM",
+        "Redic KA",
+        "Hayden DW",
+        "Bell FW",
+        "Goulland EL",
+        "Klausner JS"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "4157816",
+      "title": "Actinomycin and nucleic acid function.",
+      "journal": "Progress in nucleic acid research and molecular biology",
+      "year": "1964",
+      "authors": [
+        "Reich E",
+        "Goldberg IH"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "15039909",
+      "title": "Dactinomycin-induced veno-occlusive disease in rats. The hepatoprotective action of amifostine. Evaluation in a light and electron microscope.",
+      "journal": "Folia morphologica",
+      "year": "2004",
+      "authors": [
+        "Borowska H",
+        "Arciszewska E",
+        "Czauderna P",
+        "Sawicki B"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "4298260",
+      "title": "Single versus multiple dose dactinomycin therapy of Wilms's tumor. A controlled co-operative study conducted by the Children's Cancer Study Group A (formerly Acute Leukemia Co-operative Chemotherapy Group A).",
+      "journal": "The New England journal of medicine",
+      "year": "1968",
+      "authors": [
+        "Wolff JA",
+        "Newton WA Jr",
+        "Krivit W",
+        "D'Angio GJ"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "7700187",
+      "title": "Unusual cutaneous toxicity following treatment with dactinomycin: a report of two cases.",
+      "journal": "Medical and pediatric oncology",
+      "year": "1995",
+      "authors": [
+        "Kanwar VS",
+        "Gajjar A",
+        "Ribeiro RC",
+        "Bowman L",
+        "Parham DM",
+        "Jenkins JJ 3rd"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "2563091",
+      "title": "Hepatotoxicity of actinomycin-D.",
+      "journal": "Lancet (London, England)",
+      "year": "1989",
+      "authors": [
+        "Pritchard J",
+        "Raine J",
+        "Wallendszus K"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "21981942",
+      "title": "Spectroscopic studies of dactinomycin and vinorelbine binding to deoxyribonucleic acid and chromatin.",
+      "journal": "Spectrochimica acta. Part A, Molecular and biomolecular spectroscopy",
+      "year": "2011",
+      "authors": [
+        "Rabbani-Chadegani A",
+        "Keyvani-Ghamsari S",
+        "Zarkar N"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "8388076",
+      "title": "Severe acne and hyperandrogenemia following dactinomycin.",
+      "journal": "Medical and pediatric oncology",
+      "year": "1993",
+      "authors": [
+        "Blatt J",
+        "Lee PA"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "4286315",
+      "title": "Evaluation of an antineoplastic agent. Dactinomycin (Cosmegen).",
+      "journal": "JAMA",
+      "year": "1966",
+      "authors": [],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "1004572",
+      "title": "Suppression of murine lupus erythematosus by dactinomycin.",
+      "journal": "Nature",
+      "year": "1976",
+      "authors": [
+        "Gabrielsen AE",
+        "Lubert AS",
+        "Olsen CT"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "2545973",
+      "title": "Alternating methotrexate and dactinomycin in nonmetastatic gestational trophoblastic disease.",
+      "journal": "Journal of surgical oncology",
+      "year": "1989",
+      "authors": [
+        "Rose PG",
+        "Piver MS"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "1723587",
+      "title": "[Mechanism of actinomycin biosynthesis].",
+      "journal": "Antibiotiki i khimioterapiia = Antibiotics and chemoterapy [sic]",
+      "year": "1991",
+      "authors": [
+        "Orlova TI"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "4289203",
+      "title": "Different effects of chloramphenicol, dactinomycin, and streptovitacin A on synthesis of tumor and virion antigens in SV40 virus-infected cells.",
+      "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+      "year": "1966",
+      "authors": [
+        "Sabin AB"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "5450766",
+      "title": "[Dactinomycin inhibition in cytokinin-stimulted protein synthesis in isolated chloroplasts].",
+      "journal": "Tsitologiia",
+      "year": "1970",
+      "authors": [
+        "Kulaeva ON",
+        "Romanko EG"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "4142853",
+      "title": "[Actinomycin D-o].",
+      "journal": "Antibiotiki",
+      "year": "1974",
+      "authors": [
+        "Devan ML",
+        "Orlova TI",
+        "Silaev AB"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "6447568",
+      "title": "Dactinomycin treatment of murine lupus erythematosus. II. Dose and schedule of administration.",
+      "journal": "Clinical immunology and immunopathology",
+      "year": "1980",
+      "authors": [
+        "Gabrielsen AE",
+        "Olsen CT"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "3409169",
+      "title": "Methotrexate-induced resistance to dactinomycin in choriocarcinoma.",
+      "journal": "Cancer",
+      "year": "1988",
+      "authors": [
+        "Goto S",
+        "Okayama Y",
+        "Fan C",
+        "Ueda S",
+        "Saito M",
+        "Furuhashi Y",
+        "Ishizuka T",
+        "Tomoda Y"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "4763309",
+      "title": "Drug entrapment in liposomes.",
+      "journal": "FEBS letters",
+      "year": "1973",
+      "authors": [
+        "Gregoriadis G"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "4702172",
+      "title": "The influence of dactinomycin on compensatory renal hypertrophy.",
+      "journal": "The Journal of surgical research",
+      "year": "1973",
+      "authors": [
+        "Tynberg PL",
+        "Dekernion JB",
+        "Persky L"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "5452813",
+      "title": "Conformation of actinomycin-D.",
+      "journal": "Nature",
+      "year": "1970",
+      "authors": [
+        "Conti F",
+        "De Santis P"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "12710217",
+      "title": "Flow cytometric methods for detection and quantification of apoptosis.",
+      "journal": "Methods in molecular medicine",
+      "year": "2003",
+      "authors": [
+        "Steensma DP",
+        "Timm M",
+        "Witzig TE"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "5142966",
+      "title": "Effect of dactinomycin on phenobarbital-induced ultrastructural changes in rat hepatocytes.",
+      "journal": "Pathologia Europaea",
+      "year": "1971",
+      "authors": [
+        "Garg BD",
+        "Khandekar JD",
+        "Tuchweber B",
+        "Kovacs K"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "5568790",
+      "title": "Effect of dactinomycin on the acute toxicity and brain uptake of morphine.",
+      "journal": "The Journal of pharmacology and experimental therapeutics",
+      "year": "1971",
+      "authors": [
+        "Loh HH",
+        "Shen FH",
+        "Way EL"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "4348682",
+      "title": "[Results of cooperative clinical studies of the antineoplastic antibiotic dactinomycin].",
+      "journal": "Antibiotiki",
+      "year": "1972",
+      "authors": [
+        "Titievskaia VV",
+        "Gorbunova VA",
+        "Akopiants SM",
+        "Budkevich IuV",
+        "Kuchkarev RN"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "5500005",
+      "title": "Aflatoxin round-up.",
+      "journal": "Food and cosmetics toxicology",
+      "year": "1970",
+      "authors": [],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "4961255",
+      "title": "Dactinomycin: relative resistance of green monkey kidney cell cultures to its action.",
+      "journal": "Proceedings of the Society for Experimental Biology and Medicine. Society for Experimental Biology and Medicine (New York, N.Y.)",
+      "year": "1967",
+      "authors": [
+        "Wong KT",
+        "Baron S",
+        "Levy HB",
+        "Ward TG"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "4142574",
+      "title": "The interaction of actinomycin with DNA.",
+      "journal": "Antibiotics and chemotherapy",
+      "year": "1971",
+      "authors": [
+        "Goldberg IH"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "23987072",
+      "title": "[Photo-activity of actinomycins].",
+      "journal": "Biomeditsinskaia khimiia",
+      "year": "2013",
+      "authors": [
+        "Vekshin NL"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "15760322",
+      "title": "Comparison of pulse methotrexate and pulse dactinomycin in the treatment of low-risk gestational trophoblastic neoplasia.",
+      "journal": "The Australian & New Zealand journal of obstetrics & gynaecology",
+      "year": "2005",
+      "authors": [
+        "Gilani MM",
+        "Yarandi F",
+        "Eftekhar Z",
+        "Hanjani P"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "5549187",
+      "title": "Effects of hormones, methotrexate, and dactinomycin on benign trophoblast.",
+      "journal": "American journal of obstetrics and gynecology",
+      "year": "1971",
+      "authors": [
+        "Koide Y",
+        "Aoki T",
+        "Hreshchyshyn MM"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "17931696",
+      "title": "Treatment for low-risk gestational trophoblastic disease: comparison of single-agent methotrexate, dactinomycin and combination regimens.",
+      "journal": "Gynecologic oncology",
+      "year": "2008",
+      "authors": [
+        "Abrão RA",
+        "de Andrade JM",
+        "Tiezzi DG",
+        "Marana HR",
+        "Candido dos Reis FJ",
+        "Clagnan WS"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "4166933",
+      "title": "Wilms' tumor.",
+      "journal": "The Journal of the American Osteopathic Association",
+      "year": "1966",
+      "authors": [
+        "Cohen BL"
+      ],
+      "source": "ncbi_pubmed"
+    }
+  ]
+}

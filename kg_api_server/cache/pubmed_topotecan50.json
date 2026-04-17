@@ -1,0 +1,650 @@
+{
+  "data": [
+    {
+      "pmid": "10080612",
+      "title": "Topotecan versus cyclophosphamide, doxorubicin, and vincristine for the treatment of recurrent small-cell lung cancer.",
+      "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+      "year": "1999",
+      "authors": [
+        "von Pawel J",
+        "Schiller JH",
+        "Shepherd FA",
+        "Fields SZ",
+        "Kleisbauer JP",
+        "Chrysson NG",
+        "Stewart DJ",
+        "Clark PI",
+        "Palmer MC",
+        "Depierre A",
+        "Carmichael J",
+        "Krebs JB",
+        "Ross G",
+        "Lane SR",
+        "Gralla R"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "17135646",
+      "title": "Phase III trial comparing supportive care alone with supportive care with oral topotecan in patients with relapsed small-cell lung cancer.",
+      "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+      "year": "2006",
+      "authors": [
+        "O'Brien ME",
+        "Ciuleanu TE",
+        "Tsekov H",
+        "Shparyk Y",
+        "Cuceviá B",
+        "Juhasz G",
+        "Thatcher N",
+        "Ross GA",
+        "Dane GC",
+        "Crofts T"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "18425923",
+      "title": "Topotecan for ovarian cancer.",
+      "journal": "The Cochrane database of systematic reviews",
+      "year": "2008",
+      "authors": [
+        "Lihua P",
+        "Chen XY",
+        "Wu TX"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "17997795",
+      "title": "Topotecan in cervical cancer.",
+      "journal": "International journal of gynecological cancer : official journal of the International Gynecological Cancer Society",
+      "year": "2007",
+      "authors": [
+        "Ackermann S",
+        "Beckmann MW",
+        "Thiel F",
+        "Bogenrieder T"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "10493279",
+      "title": "Topotecan: a review of its efficacy in small cell lung cancer.",
+      "journal": "Drugs",
+      "year": "1999",
+      "authors": [
+        "Ormrod D",
+        "Spencer CM"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "9806112",
+      "title": "Topotecan. A review of its potential in advanced ovarian cancer.",
+      "journal": "Drugs",
+      "year": "1998",
+      "authors": [
+        "Brogden RN",
+        "Wiseman LR"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "20507804",
+      "title": "Topotecan for the treatment of recurrent and stage IVB carcinoma of the cervix.",
+      "journal": "Health technology assessment (Winchester, England)",
+      "year": "2010",
+      "authors": [
+        "Paton F",
+        "Paulden M",
+        "Saramago P",
+        "Manca A",
+        "Misso K",
+        "Palmer S",
+        "Eastwood A"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "9425957",
+      "title": "Topotecan in combination chemotherapy.",
+      "journal": "Seminars in oncology",
+      "year": "1997",
+      "authors": [
+        "Rowinsky EK",
+        "Kaufmann SH"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "9885371",
+      "title": "Topotecan - A novel topoisomerase I inhibitor: pharmacology and clinical experience.",
+      "journal": "Oncology",
+      "year": "1999",
+      "authors": [
+        "Kollmannsberger C",
+        "Mross K",
+        "Jakob A",
+        "Kanz L",
+        "Bokemeyer C"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "27910741",
+      "title": "Topotecan Liposomes: A Visit from a Molecular to a Therapeutic Platform.",
+      "journal": "Critical reviews in therapeutic drug carrier systems",
+      "year": "2016",
+      "authors": [
+        "Saraf S",
+        "Jain A",
+        "Hurkat P",
+        "Jain SK"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "15616145",
+      "title": "Topotecan in the treatment of recurrent small cell lung cancer: an update.",
+      "journal": "The oncologist",
+      "year": "2004",
+      "authors": [
+        "Ardizzoni A"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "15616148",
+      "title": "Topotecan in the first-line treatment of small cell lung cancer.",
+      "journal": "The oncologist",
+      "year": "2004",
+      "authors": [
+        "Stewart DJ"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "20709456",
+      "title": "Topotecan for relapsed small cell lung cancer: a systematic review and economic evaluation.",
+      "journal": "Cancer treatment reviews",
+      "year": "2011",
+      "authors": [
+        "Hartwell D",
+        "Jones J",
+        "Loveman E",
+        "Harris P",
+        "Clegg A",
+        "Bird A"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "8853931",
+      "title": "Clinical pharmacokinetics of topotecan.",
+      "journal": "Clinical pharmacokinetics",
+      "year": "1996",
+      "authors": [
+        "Herben VM",
+        "ten Bokkel Huinink WW",
+        "Beijnen JH"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "13129494",
+      "title": "Weekly topotecan in the management of ovarian cancer.",
+      "journal": "Gynecologic oncology",
+      "year": "2003",
+      "authors": [
+        "Morris RT"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "9876816",
+      "title": "Topotecan: a new topoisomerase I inhibiting antineoplastic agent.",
+      "journal": "The Annals of pharmacotherapy",
+      "year": "1998",
+      "authors": [
+        "Cersosimo RJ"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "17257092",
+      "title": "Topotecan in the management of cervical cancer.",
+      "journal": "Expert opinion on pharmacotherapy",
+      "year": "2007",
+      "authors": [
+        "Randall-Whitis LM",
+        "Monk BJ"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "25099219",
+      "title": "Ocular pharmacology of topotecan and its activity in retinoblastoma.",
+      "journal": "Retina (Philadelphia, Pa.)",
+      "year": "2014",
+      "authors": [
+        "Schaiquevich P",
+        "Carcaboso AM",
+        "Buitrago E",
+        "Taich P",
+        "Opezzo J",
+        "Bramuglia G",
+        "Chantada GL"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "14755013",
+      "title": "Topotecan dosing guidelines in ovarian cancer: reduction and management of hematologic toxicity.",
+      "journal": "The oncologist",
+      "year": "2004",
+      "authors": [
+        "Armstrong DK"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "32665221",
+      "title": "Is intravitreal topotecan toxic to retinal function?",
+      "journal": "The British journal of ophthalmology",
+      "year": "2021",
+      "authors": [
+        "Nadelmann J",
+        "Francis JH",
+        "Brodie SE",
+        "Muca E",
+        "Abramson DH"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "14755016",
+      "title": "The role of topotecan in the treatment of brain metastases.",
+      "journal": "The oncologist",
+      "year": "2004",
+      "authors": [
+        "Wong ET",
+        "Berkenblit A"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "37664968",
+      "title": "Topotecan clearance based on a single sample and a population pharmacokinetic model: Application to a pediatric high-risk neuroblastoma clinical trial.",
+      "journal": "Pediatric blood & cancer",
+      "year": "2023",
+      "authors": [
+        "Campagne O",
+        "Wu H",
+        "Wu J",
+        "Naranjo A",
+        "Daryani VM",
+        "Gajjar AJ",
+        "Park JR",
+        "Stewart CF"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "20716361",
+      "title": "Systematic Review of topotecan (Hycamtin) in relapsed small cell lung cancer.",
+      "journal": "BMC cancer",
+      "year": "2010",
+      "authors": [
+        "Riemsma R",
+        "Simons JP",
+        "Bashir Z",
+        "Gooch CL",
+        "Kleijnen J"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "23320990",
+      "title": "A pharmacokinetic evaluation of topotecan as a cervical cancer therapy.",
+      "journal": "Expert opinion on drug metabolism & toxicology",
+      "year": "2013",
+      "authors": [
+        "Musa F",
+        "Blank S",
+        "Muggia F"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "19766512",
+      "title": "Review role of topotecan in gynaecological cancers: current indications and perspectives.",
+      "journal": "Critical reviews in oncology/hematology",
+      "year": "2010",
+      "authors": [
+        "Lorusso D",
+        "Pietragalla A",
+        "Mainenti S",
+        "Masciullo V",
+        "Di Vagno G",
+        "Scambia G"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "15301130",
+      "title": "Topotecan-induced bronchiolitis.",
+      "journal": "Southern medical journal",
+      "year": "2004",
+      "authors": [
+        "Edgerton CC",
+        "Gilman M",
+        "Roth BJ"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "33039171",
+      "title": "Topotecan induces hepatocellular injury via ASCT2 mediated oxidative stress.",
+      "journal": "Gastroenterologia y hepatologia",
+      "year": "2021",
+      "authors": [
+        "Zhou G",
+        "Qin M",
+        "Zhang X",
+        "Yang J",
+        "Yu H"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "9918195",
+      "title": "Topotecan: what dose, what schedule, what route?",
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "year": "1999",
+      "authors": [
+        "O'Reilly S"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "41436498",
+      "title": "Loss of ELF2 drives topotecan resistance in retinoblastoma revealed by genome-wide CRISPR-Cas9 screening.",
+      "journal": "Cell death & disease",
+      "year": "2025",
+      "authors": [
+        "Jiang J",
+        "Jiang Z",
+        "Luo Q",
+        "Chen X",
+        "Zhuang J",
+        "Chen J",
+        "Mu Q",
+        "Qiu J",
+        "Li Y",
+        "Chen S",
+        "Zhang P",
+        "Yu K",
+        "Chen S",
+        "Liu GS",
+        "Zhuang J"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "19232038",
+      "title": "Current role and future aspects of topotecan in relapsed ovarian cancer.",
+      "journal": "Current medical research and opinion",
+      "year": "2009",
+      "authors": [
+        "Sehouli J",
+        "Oskay-Ozcelik G"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "11193900",
+      "title": "Topotecan (hycamptin) and topotecan-containing regimens in the treatment of hematologic malignancies.",
+      "journal": "Annals of the New York Academy of Sciences",
+      "year": "2000",
+      "authors": [
+        "Beran M",
+        "Kantarjian HM"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "15385138",
+      "title": "Weekly topotecan for recurrent endometrial cancer: a case series and review of the literature.",
+      "journal": "Gynecologic oncology",
+      "year": "2004",
+      "authors": [
+        "Traina TA",
+        "Sabbatini P",
+        "Aghajanian C",
+        "Dupont J"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "27805723",
+      "title": "From Lead to Drug Utilizing a Mannich Reaction: The Topotecan Story.",
+      "journal": "Archiv der Pharmazie",
+      "year": "2017",
+      "authors": [
+        "Bracher F",
+        "Tremmel T"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "29803659",
+      "title": "Topotecan alleviates ventilator-induced lung injury via NF-κB pathway inhibition.",
+      "journal": "Cytokine",
+      "year": "2018",
+      "authors": [
+        "Wan B",
+        "Xu WJ",
+        "Zhan P",
+        "Jin JJ",
+        "Xi GM",
+        "Chen MZ",
+        "Hu YB",
+        "Zhu SH",
+        "Liu HB",
+        "Wang XX",
+        "Zhang XW",
+        "Lv TF",
+        "Song Y"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "37414139",
+      "title": "Topotecan alleviates acetic acid-induced ulcerative colitis in rats via attenuation of the RORγT transcription factor.",
+      "journal": "Life sciences",
+      "year": "2023",
+      "authors": [
+        "Parihar N",
+        "Bhatt LK"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "15616147",
+      "title": "Emerging role of weekly topotecan in recurrent small cell lung cancer.",
+      "journal": "The oncologist",
+      "year": "2004",
+      "authors": [
+        "Eckardt JR"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "9779878",
+      "title": "Induction of apoptosis by topotecan: implications for the treatment of leukemia.",
+      "journal": "Seminars in hematology",
+      "year": "1998",
+      "authors": [
+        "Seiter K"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "34015399",
+      "title": "Oral delivery of topotecan in polymeric nanoparticles: Lymphatic distribution and pharmacokinetics.",
+      "journal": "Journal of controlled release : official journal of the Controlled Release Society",
+      "year": "2021",
+      "authors": [
+        "Jeong SH",
+        "Jang JH",
+        "Lee YB"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "9425962",
+      "title": "Topotecan in the treatment of gynecologic cancer.",
+      "journal": "Seminars in oncology",
+      "year": "1997",
+      "authors": [
+        "Coleman RL",
+        "Miller DS"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "11598415",
+      "title": "Preliminary results of combined therapy with topotecan and carboplatin in advanced non-small-cell lung cancer.",
+      "journal": "Oncology",
+      "year": "2001",
+      "authors": [
+        "Pujol JL",
+        "von Pawel J",
+        "Tumolo S",
+        "Martoni A",
+        "Hearn S",
+        "Fields SZ",
+        "Ross G"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "12324628",
+      "title": "Update on the role of topotecan in the treatment of recurrent ovarian cancer.",
+      "journal": "The oncologist",
+      "year": "2002",
+      "authors": [
+        "Herzog TJ"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "17595779",
+      "title": "Duration of chemotherapy with topotecan influences survival in recurrent ovarian cancer: a meta-analysis.",
+      "journal": "Anticancer research",
+      "year": "2007",
+      "authors": [
+        "Möbus V",
+        "Kieback DG",
+        "Kaubitzsch SK"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "36975114",
+      "title": "Intravitreal Topotecan 90 µg for Recurrent Solid Retinoblastoma Tumors Is Effective and Not Toxic.",
+      "journal": "Journal of pediatric ophthalmology and strabismus",
+      "year": "2023",
+      "authors": [
+        "Abramson DH",
+        "Francis JH"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "10028504",
+      "title": "Incorporating new modalities into guidelines. Topotecan for myelodysplastic syndromes.",
+      "journal": "Oncology (Williston Park, N.Y.)",
+      "year": "1998",
+      "authors": [
+        "Estey EH"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "17962613",
+      "title": "Recent advances with topotecan in the treatment of lung cancer.",
+      "journal": "The oncologist",
+      "year": "2007",
+      "authors": [
+        "O'Brien M",
+        "Eckardt J",
+        "Ramlau R"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "13129489",
+      "title": "Clinical experience with topotecan in relapsed ovarian cancer.",
+      "journal": "Gynecologic oncology",
+      "year": "2003",
+      "authors": [
+        "Herzog TJ"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "9425960",
+      "title": "Topotecan in advanced colorectal cancer.",
+      "journal": "Seminars in oncology",
+      "year": "1997",
+      "authors": [
+        "Creemers GJ"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "9394364",
+      "title": "Clinical status and optimal use of topotecan.",
+      "journal": "Oncology (Williston Park, N.Y.)",
+      "year": "1997",
+      "authors": [
+        "Takimoto CH",
+        "Arbuck SG"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "12188913",
+      "title": "Pharmacology of topoisomerase I inhibitors irinotecan (CPT-11) and topotecan.",
+      "journal": "Current cancer drug targets",
+      "year": "2002",
+      "authors": [
+        "Mathijssen RH",
+        "Loos WJ",
+        "Verweij J",
+        "Sparreboom A"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "36516952",
+      "title": "Combination therapy with topotecan, paclitaxel, and bevacizumab improves progression-free survival in patients with recurrent high-grade neuroendocrine cervical cancer: a Neuroendocrine Cervical Tumor Registry (NeCTuR) study.",
+      "journal": "American journal of obstetrics and gynecology",
+      "year": "2023",
+      "authors": [
+        "Frumovitz M",
+        "Chisholm GB",
+        "Jhingran A",
+        "Ramalingam P",
+        "Flores-Legarreta A",
+        "Bhosale P",
+        "Gonzales NR",
+        "Hillman RT",
+        "Salvo G"
+      ],
+      "source": "ncbi_pubmed"
+    }
+  ]
+}

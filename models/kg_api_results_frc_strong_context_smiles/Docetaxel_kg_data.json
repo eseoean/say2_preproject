@@ -1,0 +1,1588 @@
+{
+  "drug_id": 1819,
+  "drug_name": "Docetaxel",
+  "category": "Approved",
+  "combined_score": 14.33,
+  "timestamp": "2026-04-15 19:39:37",
+  "data_collected": {
+    "basic_info": {
+      "ok": true,
+      "data": {
+        "drug_id": 1819,
+        "drug_name": "Docetaxel",
+        "target": "Microtubule stabiliser",
+        "pathway": "Mitosis",
+        "predicted_ic50": -4.3071065,
+        "sensitivity_rate": 0.92,
+        "validation_score": 9.45,
+        "safety_score": 6.83,
+        "combined_score": 14.33,
+        "final_rank": 2,
+        "category": "Approved",
+        "clinical_bucket": "Breast cancer current/relevant use",
+        "known_brca": true,
+        "target_expressed": true,
+        "brca_pathway": true,
+        "survival_sig": true,
+        "recommendation_note": "Breast-cancer relevant and ADMET-screened. Suitable as a primary shortlist candidate."
+      }
+    },
+    "side_effects": {
+      "ok": true,
+      "data": [
+        {
+          "event": "ALOPECIA",
+          "count": 17957,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "MADAROSIS",
+          "count": 6852,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "HAIR TEXTURE ABNORMAL",
+          "count": 6130,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "HAIR COLOUR CHANGES",
+          "count": 6011,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "HAIR DISORDER",
+          "count": 5644,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "DIARRHOEA",
+          "count": 5427,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "NAUSEA",
+          "count": 3942,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "EMOTIONAL DISTRESS",
+          "count": 3616,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "NEUTROPENIA",
+          "count": 3521,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "ANXIETY",
+          "count": 3485,
+          "source": "openfda_faers"
+        }
+      ],
+      "source": "openfda_live"
+    },
+    "trials": {
+      "ok": true,
+      "data": [
+        {
+          "nct_id": "NCT01044485",
+          "title": "Lapatinib in Combination With Docetaxel in Patients With HER-2 Positive Advanced or Metastatic Breast Cancer",
+          "phase": "PHASE1, PHASE2",
+          "status": "COMPLETED",
+          "conditions": [
+            "Metastatic Breast Cancer"
+          ],
+          "lead_sponsor": "Centre Georges Francois Leclerc",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT01539876",
+          "title": "Tumour Necrosis Factor Release in Locally Advanced Breast Cancer Patients Receiving Neoadjuvant Docetaxel",
+          "phase": "PHASE1",
+          "status": "WITHDRAWN",
+          "conditions": [
+            "Breast Cancer"
+          ],
+          "lead_sponsor": "London Health Sciences Centre Research Institute OR Lawson Research Institute of St. Joseph's",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT03264547",
+          "title": "A Study to Compare Eribulin Mesylate + Pertuzumab + Trastuzumab With Paclitaxel or Docetaxel + Pertuzumab + Trastuzumab",
+          "phase": "PHASE3",
+          "status": "COMPLETED",
+          "conditions": [
+            "Breast Cancer"
+          ],
+          "lead_sponsor": "Japan Breast Cancer Research Group",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT00286247",
+          "title": "Study to Determine the Efficacy and Safety of Docetaxel and Doxorubicin With INGN 201 in Locally Advanced Breast Cancer",
+          "phase": "PHASE2",
+          "status": "COMPLETED",
+          "conditions": [
+            "Locally Advanced Breast Cancer (LABC)"
+          ],
+          "lead_sponsor": "Introgen Therapeutics",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT01917578",
+          "title": "Study of Breast Cancer Shrinkage Modes After Neoadjuvant Chemotherapy With Whole-mount Serial Sections and Three-dimensional Pathological and MRI Reconstruction",
+          "phase": "PHASE3",
+          "status": "UNKNOWN",
+          "conditions": [
+            "Breast Cancer"
+          ],
+          "lead_sponsor": "Shandong Cancer Hospital and Institute",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT00217815",
+          "title": "Preliminary Study of Mycograb and Docetaxel in Advanced Breast Cancer",
+          "phase": "PHASE1, PHASE2",
+          "status": "COMPLETED",
+          "conditions": [
+            "Cancer of the Breast"
+          ],
+          "lead_sponsor": "NeuTec Pharma",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT02838225",
+          "title": "DA Versus DAC as Postoperative Adjuvant Treatment for Early-stage Breast Cancer",
+          "phase": "PHASE2",
+          "status": "COMPLETED",
+          "conditions": [
+            "Breast Cancer"
+          ],
+          "lead_sponsor": "Peking Union Medical College Hospital",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT00906061",
+          "title": "Biweekly Gemcitabine and Docetaxel as First Line Therapy for Advanced Non-Small Cell Lung Cancer (NSCLC) Patients",
+          "phase": "PHASE2",
+          "status": "UNKNOWN",
+          "conditions": [
+            "Carcinoma, Non-Small-Cell Lung"
+          ],
+          "lead_sponsor": "Hospital Arnau de Vilanova",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT00129896",
+          "title": "Neoadjuvant Chemotherapy With Myocet/Taxotere/Herceptin for HER2 Positive Breast Cancer Patients",
+          "phase": "PHASE1, PHASE2",
+          "status": "COMPLETED",
+          "conditions": [
+            "Breast Cancer"
+          ],
+          "lead_sponsor": "Spanish Breast Cancer Research Group",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT02532400",
+          "title": "Neoadjuvant Aromatase Inhibitor(AI) With Ovarian Suppression Versus Chemotherapy in Premenopausal Breast Cancer Patients",
+          "phase": "PHASE3",
+          "status": "TERMINATED",
+          "conditions": [
+            "Breast Cancer"
+          ],
+          "lead_sponsor": "Ruijin Hospital",
+          "source": "clinicaltrials_gov_v2"
+        }
+      ],
+      "source": "clinicaltrials_live"
+    },
+    "targets": {
+      "ok": true,
+      "data": [
+        {
+          "target": "Microtubule stabiliser",
+          "source": "local_frc_step6_7"
+        }
+      ]
+    },
+    "pathways": {
+      "ok": true,
+      "data": [
+        {
+          "pathway": "Mitosis",
+          "source": "local_frc_step6_7"
+        }
+      ]
+    },
+    "pubmed_general": {
+      "ok": true,
+      "query": "Docetaxel",
+      "data": [
+        {
+          "pmid": "7595719",
+          "title": "Docetaxel.",
+          "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+          "year": "1995",
+          "authors": [
+            "Cortes JE",
+            "Pazdur R"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "35836810",
+          "title": "Docetaxel remodels prostate cancer immune microenvironment and enhances checkpoint inhibitor-based immunotherapy.",
+          "journal": "Theranostics",
+          "year": "2022",
+          "authors": [
+            "Ma Z",
+            "Zhang W",
+            "Dong B",
+            "Xin Z",
+            "Ji Y",
+            "Su R",
+            "Shen K",
+            "Pan J",
+            "Wang Q",
+            "Xue W"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "36861478",
+          "title": "Docetaxel as a Model Compound to Promote HDL (High-Density Lipoprotein) Biogenesis and Reduce Atherosclerosis.",
+          "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+          "year": "2023",
+          "authors": [
+            "Choi HY",
+            "Iatan I",
+            "Ruel I",
+            "Brown L",
+            "Hales L",
+            "Choi S",
+            "Genest J"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "37126985",
+          "title": "The interactions of docetaxel with tumor microenvironment.",
+          "journal": "International immunopharmacology",
+          "year": "2023",
+          "authors": [
+            "Gupta R",
+            "Kadhim MM",
+            "Turki Jalil A",
+            "Qasim Alasheqi M",
+            "Alsaikhan F",
+            "Khalimovna Mukhamedova N",
+            "Alexis Ramírez-Coronel A",
+            "Hassan Jawhar Z",
+            "Ramaiah P",
+            "Najafi M"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "32380503",
+          "title": "Docetaxel Rechallenge in Patients with Metastatic Prostate Cancer: A Comprehensive Review.",
+          "journal": "Oncology research and treatment",
+          "year": "2020",
+          "authors": [
+            "Assi T",
+            "Rassy E",
+            "Farhat F",
+            "Kattan C",
+            "Kattan J"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "35794738",
+          "title": "Docetaxel-induced Flagellate Erythema - Case Report and Brief Review.",
+          "journal": "Current drug safety",
+          "year": "2023",
+          "authors": [
+            "Asma J",
+            "Sarrah K",
+            "Ons C",
+            "Riadh D",
+            "Sihem EA"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "36718745",
+          "title": "Docetaxel-induced Acute Myositis.",
+          "journal": "The Israel Medical Association journal : IMAJ",
+          "year": "2023",
+          "authors": [
+            "Sulkes A",
+            "Reinhorn D",
+            "Cohen T",
+            "Peysakhovich T",
+            "Neiman V",
+            "Brenner B"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "26535615",
+          "title": "Docetaxel for the treatment of bladder cancer.",
+          "journal": "Expert opinion on investigational drugs",
+          "year": "2015",
+          "authors": [
+            "Albany C",
+            "Sonpavde G"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "15047455",
+          "title": "[Docetaxel and ovarian cancer].",
+          "journal": "Bulletin du cancer",
+          "year": "2004",
+          "authors": [
+            "Ray-Coquard I"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "31127324",
+          "title": "[Docetaxel or abiraterone in combination with androgen deprivation therapy for metastatic prostate cancer].",
+          "journal": "Der Urologe. Ausg. A",
+          "year": "2019",
+          "authors": [
+            "Hammerer P",
+            "Manka L"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "31541513",
+          "title": "Definitive alopecia post-docetaxel.",
+          "journal": "The breast journal",
+          "year": "2020",
+          "authors": [
+            "Ben Kridis W",
+            "Khanfir A"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "28467604",
+          "title": "Generic Docetaxel.",
+          "journal": "Journal of clinical pharmacology",
+          "year": "2017",
+          "authors": [
+            "Levêque D",
+            "Becker G"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "33217485",
+          "title": "Mechanisms of docetaxel resistance in prostate cancer: The key role played by miRNAs.",
+          "journal": "Biochimica et biophysica acta. Reviews on cancer",
+          "year": "2021",
+          "authors": [
+            "Rizzo M"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "10776837",
+          "title": "Docetaxel: an update of its use in advanced breast cancer.",
+          "journal": "Drugs",
+          "year": "2000",
+          "authors": [
+            "Figgitt DP",
+            "Wiseman LR"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "30148754",
+          "title": "Docetaxel-Induced Myositis.",
+          "journal": "Journal of clinical rheumatology : practical reports on rheumatic & musculoskeletal diseases",
+          "year": "2020",
+          "authors": [
+            "Thomas J",
+            "Warrier A",
+            "Kachare N"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "14727247",
+          "title": "Docetaxel with concurrent radiotherapy in head and neck cancer.",
+          "journal": "Seminars in oncology",
+          "year": "2003",
+          "authors": [
+            "Nabell L",
+            "Spencer S"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "12108900",
+          "title": "Docetaxel in the treatment of ovarian cancer.",
+          "journal": "Oncology (Williston Park, N.Y.)",
+          "year": "2002",
+          "authors": [
+            "Kavanagh JJ"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "20351071",
+          "title": "Docetaxel-based combination therapy for castration-resistant prostate cancer.",
+          "journal": "Annals of oncology : official journal of the European Society for Medical Oncology",
+          "year": "2010",
+          "authors": [
+            "Galsky MD",
+            "Vogelzang NJ"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "38816723",
+          "title": "Boosting antitumor efficacy using docetaxel-loaded nanoplatforms: from cancer therapy to regenerative medicine approaches.",
+          "journal": "Journal of translational medicine",
+          "year": "2024",
+          "authors": [
+            "Beheshtizadeh N",
+            "Amiri Z",
+            "Tabatabaei SZ",
+            "Seraji AA",
+            "Gharibshahian M",
+            "Nadi A",
+            "Saeinasab M",
+            "Sefat F",
+            "Kolahi Azar H"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "7577097",
+          "title": "Preclinical pharmacology of docetaxel.",
+          "journal": "European journal of cancer (Oxford, England : 1990)",
+          "year": "1995",
+          "authors": [
+            "Bissery MC"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "10092957",
+          "title": "Clinical pharmacokinetics of docetaxel.",
+          "journal": "Clinical pharmacokinetics",
+          "year": "1999",
+          "authors": [
+            "Clarke SJ",
+            "Rivory LP"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "15811618",
+          "title": "Docetaxel for treatment of solid tumours: a systematic review of clinical data.",
+          "journal": "The Lancet. Oncology",
+          "year": "2005",
+          "authors": [
+            "Montero A",
+            "Fossella F",
+            "Hortobagyi G",
+            "Valero V"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "36536346",
+          "title": "Docetaxel suppressed cell proliferation through Smad3/HIF-1α-mediated glycolysis in prostate cancer cells.",
+          "journal": "Cell communication and signaling : CCS",
+          "year": "2022",
+          "authors": [
+            "Peng J",
+            "He Z",
+            "Yuan Y",
+            "Xie J",
+            "Zhou Y",
+            "Guo B",
+            "Guo J"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "16316310",
+          "title": "Docetaxel in ovarian cancer.",
+          "journal": "Expert opinion on pharmacotherapy",
+          "year": "2005",
+          "authors": [
+            "Escobar PF",
+            "Rose PG"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "22818017",
+          "title": "Docetaxel: a review of its use for the first-line treatment of advanced castration-resistant prostate cancer.",
+          "journal": "Drugs",
+          "year": "2012",
+          "authors": [
+            "McKeage K"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "27184379",
+          "title": "Docetaxel Activity in the Era of Life-prolonging Hormonal Therapies for Metastatic Castration-resistant Prostate Cancer.",
+          "journal": "European urology",
+          "year": "2016",
+          "authors": [
+            "Francini E",
+            "Sweeney CJ"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "38029291",
+          "title": "Docetaxel Inhibits Epithelial-Mesenchymal Transition in Human Mammary Cells.",
+          "journal": "Molecular pharmaceutics",
+          "year": "2024",
+          "authors": [
+            "Beerkens SJ",
+            "King JJ",
+            "Irving KL",
+            "Bhatia S",
+            "Thompson EW",
+            "Smith NM",
+            "Iyer KS",
+            "Evans CW"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "35068260",
+          "title": "Docetaxel monotherapy induces necrotic acute pancreatitis.",
+          "journal": "Journal of oncology pharmacy practice : official publication of the International Society of Oncology Pharmacy Practitioners",
+          "year": "2022",
+          "authors": [
+            "Ben Abdallah I",
+            "Berrazega Y",
+            "Rachdi H",
+            "Mejri N",
+            "Neji H",
+            "Daoud N",
+            "Boussen H"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "10810933",
+          "title": "Docetaxel (Taxotere) in combination with anthracyclines in the treatment of breast cancer.",
+          "journal": "Seminars in oncology",
+          "year": "2000",
+          "authors": [
+            "Nabholtz JM",
+            "North S",
+            "Smylie M",
+            "Mackey J",
+            "Au HJ",
+            "Au R",
+            "Morrish D",
+            "Salter E",
+            "Tonkin K"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "40159580",
+          "title": "Neoadjuvant docetaxel, oxaliplatin, and S-1 therapy for patients with large type 3 or type 4 gastric cancer: short-term outcomes of a multicenter, phase II study (OGSG1902).",
+          "journal": "Gastric cancer : official journal of the International Gastric Cancer Association and the Japanese Gastric Cancer Association",
+          "year": "2025",
+          "authors": [
+            "Tanaka R",
+            "Endo S",
+            "Yamaguchi T",
+            "Miyagaki H",
+            "Kawada J",
+            "Omori T",
+            "Takahashi N",
+            "Masuzawa T",
+            "Furukawa H",
+            "Sato Y",
+            "Takeno A",
+            "Shinno N",
+            "Kawabata R",
+            "Katsuyama S",
+            "Higashi S",
+            "Kurokawa Y",
+            "Tsujinaka T",
+            "Shimokawa T",
+            "Satoh T"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "25980322",
+          "title": "Inter-patient variability in docetaxel pharmacokinetics: A review.",
+          "journal": "Cancer treatment reviews",
+          "year": "2015",
+          "authors": [
+            "Nieuweboer AJ",
+            "de Morrée ES",
+            "de Graan AJ",
+            "Sparreboom A",
+            "de Wit R",
+            "Mathijssen RH"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "12045456",
+          "title": "Docetaxel in advanced gastric cancer.",
+          "journal": "Anti-cancer drugs",
+          "year": "2002",
+          "authors": [
+            "Haller DG",
+            "Misset JL"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "31967396",
+          "title": "Synthesis of Taxol and Docetaxel by Using 10-Deacetyl-7-xylosyltaxanes.",
+          "journal": "Chemistry & biodiversity",
+          "year": "2020",
+          "authors": [
+            "Xue B",
+            "Zhao J",
+            "Fan Y",
+            "Chen S",
+            "Li W",
+            "Chen J",
+            "Li Z",
+            "Wang H",
+            "Kong H"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "10933515",
+          "title": "Docetaxel: a review of its use in non-small cell lung cancer.",
+          "journal": "Drugs & aging",
+          "year": "2000",
+          "authors": [
+            "Comer AM",
+            "Goa KL"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "36881975",
+          "title": "Docetaxel plus radiotherapy for head and neck cancer.",
+          "journal": "Oral oncology",
+          "year": "2023",
+          "authors": [
+            "De Felice F"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "32037142",
+          "title": "Docetaxel for Early Prostate Cancer: What Have We Learned?",
+          "journal": "European urology",
+          "year": "2020",
+          "authors": [
+            "Beltran H",
+            "Morris MJ"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "38814342",
+          "title": "Oral docetaxel plus encequidar - a phase 1 clinical trial.",
+          "journal": "Cancer chemotherapy and pharmacology",
+          "year": "2024",
+          "authors": [
+            "Wang D",
+            "Hung N",
+            "Hung T",
+            "Eden K",
+            "Chan WK",
+            "Kwan R",
+            "Qin A",
+            "Chang C",
+            "Duffull S",
+            "Glue P",
+            "Jackson C"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "11340900",
+          "title": "Docetaxel in squamous cell cancer of the head and neck.",
+          "journal": "Anti-cancer drugs",
+          "year": "2001",
+          "authors": [
+            "Posner MR"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "12820771",
+          "title": "Docetaxel (taxotere) in the treatment of prostate cancer.",
+          "journal": "Expert review of anticancer therapy",
+          "year": "2003",
+          "authors": [
+            "Beer TM",
+            "El-Geneidi M",
+            "Eilers KM"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "14661044",
+          "title": "Docetaxel: promising and novel combinations in ovarian cancer.",
+          "journal": "British journal of cancer",
+          "year": "2003",
+          "authors": [
+            "Mäenpää JU"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "12667118",
+          "title": "Docetaxel in non-small cell lung cancer: a review.",
+          "journal": "Expert opinion on pharmacotherapy",
+          "year": "2003",
+          "authors": [
+            "Davies AM",
+            "Lara PN Jr",
+            "Mack PC",
+            "Gandara DR"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "40383703",
+          "title": "Dose-Dense Docetaxel and Radium-223 in Bone-Dominant Metastatic Castration-Resistant Prostate Cancer.",
+          "journal": "Clinical genitourinary cancer",
+          "year": "2025",
+          "authors": [
+            "Connell B",
+            "Hwang C",
+            "Folefac E",
+            "Lawlor C",
+            "Koethe B",
+            "Mathew P"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "14661041",
+          "title": "Docetaxel: an alternative taxane in ovarian cancer.",
+          "journal": "British journal of cancer",
+          "year": "2003",
+          "authors": [
+            "Katsumata N"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "16266195",
+          "title": "Docetaxel in hormone-refractory metastatic prostate cancer.",
+          "journal": "Drugs",
+          "year": "2005",
+          "authors": [
+            "McKeage K",
+            "Keam SJ"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "36822388",
+          "title": "KIF14 mediates cabazitaxel-docetaxel cross-resistance in advanced prostate cancer by promoting AKT phosphorylation.",
+          "journal": "Archives of biochemistry and biophysics",
+          "year": "2023",
+          "authors": [
+            "Liu L",
+            "Li M",
+            "Zhang J",
+            "Xu D",
+            "Guo Y",
+            "Zhang H",
+            "Cang S"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "27105899",
+          "title": "Docetaxel-induced pericardial effusion.",
+          "journal": "Journal of oncology pharmacy practice : official publication of the International Society of Oncology Pharmacy Practitioners",
+          "year": "2017",
+          "authors": [
+            "Dogan SE",
+            "Mizrak D",
+            "Alkan A",
+            "Demirkazik A"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "34021502",
+          "title": "Identification of docetaxel-related biomarkers for prostate cancer.",
+          "journal": "Andrologia",
+          "year": "2021",
+          "authors": [
+            "Peng Y",
+            "Dong S",
+            "Yang Z",
+            "Song Y",
+            "Ding J",
+            "Hou D",
+            "Wang L",
+            "Zhang Z",
+            "Li N",
+            "Wang H"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "29795139",
+          "title": "Docetaxel enhances lysosomal function through TFEB activation.",
+          "journal": "Cell death & disease",
+          "year": "2018",
+          "authors": [
+            "Zhang J",
+            "Wang J",
+            "Wong YK",
+            "Sun X",
+            "Chen Y",
+            "Wang L",
+            "Yang L",
+            "Lu L",
+            "Shen HM",
+            "Huang D"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "23950643",
+          "title": "How nanotechnology can enhance docetaxel therapy.",
+          "journal": "International journal of nanomedicine",
+          "year": "2013",
+          "authors": [
+            "Zhang L",
+            "Zhang N"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "36749250",
+          "title": "Treatment outcomes with radium-223 in docetaxel-naïve versus docetaxel-treated metastatic castration-resistant prostate cancer patients: Real-world evidence from Taiwan.",
+          "journal": "Medicine",
+          "year": "2023",
+          "authors": [
+            "Chiang PC",
+            "Chiang PH",
+            "Chen IA",
+            "Chen YT",
+            "Wang HJ",
+            "Cheng YT",
+            "Kang CH",
+            "Chen CH",
+            "Liu YY",
+            "Su YL",
+            "Chen YH",
+            "Luo HL"
+          ],
+          "source": "ncbi_pubmed"
+        }
+      ],
+      "source": "pubmed_live"
+    },
+    "pubmed_breast_cancer": {
+      "ok": true,
+      "query": "Docetaxel breast cancer",
+      "data": [
+        {
+          "pmid": "12868802",
+          "title": "Neoadjuvant docetaxel in locally advanced breast cancer.",
+          "journal": "Breast cancer research and treatment",
+          "year": "2003",
+          "authors": [
+            "Hutcheon AW",
+            "Heys SD",
+            "Sarkar TK",
+            "Aberdeen Breast Group"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "19236199",
+          "title": "Economic evaluation of docetaxel for breast cancer.",
+          "journal": "Expert opinion on pharmacotherapy",
+          "year": "2009",
+          "authors": [
+            "Lwin Z",
+            "Leighl N"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "16296875",
+          "title": "Docetaxel: a review of its use in metastatic breast cancer.",
+          "journal": "Drugs",
+          "year": "2005",
+          "authors": [
+            "Lyseng-Williamson KA",
+            "Fenton C"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "32572940",
+          "title": "CHCHD2 decreases docetaxel sensitivity in breast cancer via activating MMP2.",
+          "journal": "European review for medical and pharmacological sciences",
+          "year": "2020",
+          "authors": [
+            "Ma L",
+            "Zheng LH",
+            "Zhang DG",
+            "Fan ZM"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "10776837",
+          "title": "Docetaxel: an update of its use in advanced breast cancer.",
+          "journal": "Drugs",
+          "year": "2000",
+          "authors": [
+            "Figgitt DP",
+            "Wiseman LR"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "32270417",
+          "title": "Risk factors for breast cancer-related lymphedema: correlation with docetaxel administration.",
+          "journal": "Breast cancer (Tokyo, Japan)",
+          "year": "2020",
+          "authors": [
+            "Aoishi Y",
+            "Oura S",
+            "Nishiguchi H",
+            "Hirai Y",
+            "Miyasaka M",
+            "Kawaji M",
+            "Shima A",
+            "Nishimura Y"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "11970742",
+          "title": "Primary (neoadjuvant) chemotherapy with docetaxel in breast cancer.",
+          "journal": "Clinical breast cancer",
+          "year": "2001",
+          "authors": [
+            "Gradishar WJ"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "12525757",
+          "title": "Weekly schedule of docetaxel in breast cancer: evaluation of response and toxicity.",
+          "journal": "Breast cancer (Tokyo, Japan)",
+          "year": "2003",
+          "authors": [
+            "Kuroi K",
+            "Bando H",
+            "Saji S",
+            "Toi M"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "11346680",
+          "title": "Nonanthracycline containing docetaxel-based combinations in metastatic breast cancer.",
+          "journal": "The oncologist",
+          "year": "2001",
+          "authors": [
+            "Crown J"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "35667653",
+          "title": "LINC00680 modulates docetaxel resistance in breast cancer via the miR-320b/CDKL5 axis.",
+          "journal": "International journal of immunopathology and pharmacology",
+          "year": "2022",
+          "authors": [
+            "Li J",
+            "Ke J",
+            "Qin CL",
+            "Zhu X"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "34533811",
+          "title": "Docetaxel and bevacizumab with or without trastuzumab as first-line treatment for patients with metastatic breast cancer: a meta-analysis.",
+          "journal": "European review for medical and pharmacological sciences",
+          "year": "2021",
+          "authors": [
+            "Sun ZW",
+            "Lan XY",
+            "Kong FL",
+            "Gao YY",
+            "Li S",
+            "Xi YL"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "21872996",
+          "title": "Docetaxel combined with targeted therapies in metastatic breast cancer.",
+          "journal": "Cancer treatment reviews",
+          "year": "2012",
+          "authors": [
+            "Cortes J",
+            "Roché H"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "10810933",
+          "title": "Docetaxel (Taxotere) in combination with anthracyclines in the treatment of breast cancer.",
+          "journal": "Seminars in oncology",
+          "year": "2000",
+          "authors": [
+            "Nabholtz JM",
+            "North S",
+            "Smylie M",
+            "Mackey J",
+            "Au HJ",
+            "Au R",
+            "Morrish D",
+            "Salter E",
+            "Tonkin K"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "9775340",
+          "title": "Docetaxel: a taxoid for the treatment of metastatic breast cancer.",
+          "journal": "American journal of health-system pharmacy : AJHP : official journal of the American Society of Health-System Pharmacists",
+          "year": "1998",
+          "authors": [
+            "Tankanow RM"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "18803448",
+          "title": "Paclitaxel and docetaxel in the treatment of breast cancer.",
+          "journal": "Expert opinion on pharmacotherapy",
+          "year": "2008",
+          "authors": [
+            "Saloustros E",
+            "Mavroudis D",
+            "Georgoulias V"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "12868800",
+          "title": "Docetaxel-anthracycline combinations in metastatic breast cancer.",
+          "journal": "Breast cancer research and treatment",
+          "year": "2003",
+          "authors": [
+            "Nabholtz JM"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "19072447",
+          "title": "Capecitabine and docetaxel combination for the treatment of breast cancer.",
+          "journal": "Women's health (London, England)",
+          "year": "2008",
+          "authors": [
+            "Morishita M",
+            "Leonard RC"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "37522022",
+          "title": "Meibomian gland changes in breast cancer patients treated with docetaxel-partial results.",
+          "journal": "Romanian journal of ophthalmology",
+          "year": "2023",
+          "authors": [
+            "Stoicescu EA",
+            "Cherecheanu AP"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "32203934",
+          "title": "Regulation of docetaxel chemosensitivity by NR2F6 in breast cancer.",
+          "journal": "Endocrine-related cancer",
+          "year": "2020",
+          "authors": [
+            "Zhang J",
+            "Meng H",
+            "Zhang M",
+            "Zhang C",
+            "Huang M",
+            "Yan C",
+            "Wang Z",
+            "Hou L",
+            "Yang L",
+            "Ling R"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "25494663",
+          "title": "Pertuzumab in combination with trastuzumab and docetaxel for HER2-positive metastatic breast cancer.",
+          "journal": "Expert review of anticancer therapy",
+          "year": "2015",
+          "authors": [
+            "Kawajiri H",
+            "Takashima T",
+            "Kashiwagi S",
+            "Noda S",
+            "Onoda N",
+            "Hirakawa K"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "10344911",
+          "title": "Docetaxel. A pharmacoeconomic review of its use in the treatment of metastatic breast cancer.",
+          "journal": "PharmacoEconomics",
+          "year": "1998",
+          "authors": [
+            "Lamb HM",
+            "Wiseman LR"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "11301373",
+          "title": "Docetaxel (Taxotere) plus trastuzumab (Herceptin) in breast cancer.",
+          "journal": "Seminars in oncology",
+          "year": "2001",
+          "authors": [
+            "Burris HA 3rd"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "10203264",
+          "title": "A review of the efficacy and safety of docetaxel as monotherapy in metastatic breast cancer.",
+          "journal": "Seminars in oncology",
+          "year": "1999",
+          "authors": [
+            "Crown J"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "17309343",
+          "title": "Docetaxel/anthracycline combinations for breast cancer treatment.",
+          "journal": "Expert opinion on pharmacotherapy",
+          "year": "2007",
+          "authors": [
+            "von Minckwitz G"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "32419175",
+          "title": "Delayed docetaxel extravasation in case of breast cancer.",
+          "journal": "The breast journal",
+          "year": "2020",
+          "authors": [
+            "Ben Kridis W",
+            "Khanfir A"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "10426453",
+          "title": "Docetaxel (Taxotere) plus doxorubicin-based combinations: the evidence of activity in breast cancer.",
+          "journal": "Seminars in oncology",
+          "year": "1999",
+          "authors": [
+            "Nabholtz JM"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "36418195",
+          "title": "Optimal exposure to docetaxel in adjuvant chemotherapy for early-stage breast cancer.",
+          "journal": "Journal of clinical pharmacy and therapeutics",
+          "year": "2022",
+          "authors": [
+            "Guo J",
+            "Lin W",
+            "Weng Y",
+            "Chen Y",
+            "Zeng S",
+            "Lin J",
+            "Zheng X",
+            "Li X",
+            "Lin M",
+            "Yu X",
+            "Chen Q"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "38514306",
+          "title": "The Impact of Initial Tumor Response on Survival Outcomes of Patients With HER2-Positive Advanced Breast Cancer Treated With Docetaxel, Trastuzumab, and Pertuzumab: An Exploratory Analysis of the CLEOPATRA Trial.",
+          "journal": "Clinical breast cancer",
+          "year": "2024",
+          "authors": [
+            "Debien V",
+            "Agostinetto E",
+            "Bruzzone M",
+            "Ceppi M",
+            "Martins-Branco D",
+            "Molinelli C",
+            "Jacobs F",
+            "Nader-Marta G",
+            "Lambertini M",
+            "de Azambuja E"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "16086643",
+          "title": "Docetaxel/trastuzumab combination therapy for the treatment of breast cancer.",
+          "journal": "Expert opinion on pharmacotherapy",
+          "year": "2005",
+          "authors": [
+            "Nabholtz JM",
+            "Gligorov J"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "15161988",
+          "title": "Docetaxel and paclitaxel in the treatment of breast cancer: a review of clinical experience.",
+          "journal": "The oncologist",
+          "year": "2004",
+          "authors": [
+            "Crown J",
+            "O'Leary M",
+            "Ooi WS"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "31942016",
+          "title": "BAD sensitizes breast cancer cells to docetaxel with increased mitotic arrest and necroptosis.",
+          "journal": "Scientific reports",
+          "year": "2020",
+          "authors": [
+            "Mann J",
+            "Yang N",
+            "Montpetit R",
+            "Kirschenman R",
+            "Lemieux H",
+            "Goping IS"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "10403474",
+          "title": "Docetaxel and anthracycline polychemotherapy in the treatment of breast cancer.",
+          "journal": "Seminars in oncology",
+          "year": "1999",
+          "authors": [
+            "Nabholtz JM",
+            "Smylie M",
+            "Mackey J",
+            "Au HJ",
+            "Tonkin K",
+            "Au R",
+            "Morrish D",
+            "Salter E"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "8736622",
+          "title": "Docetaxel. A review of its pharmacodynamic and pharmacokinetic properties and therapeutic efficacy in the management of metastatic breast cancer.",
+          "journal": "Drugs",
+          "year": "1996",
+          "authors": [
+            "Fulton B",
+            "Spencer CM"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "9110341",
+          "title": "The international experience with docetaxel in the treatment of breast cancer.",
+          "journal": "Oncology (Williston Park, N.Y.)",
+          "year": "1997",
+          "authors": [
+            "Ravdin PM"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "15550855",
+          "title": "Capecitabine plus docetaxel combination chemotherapy for metastatic breast cancer.",
+          "journal": "Breast cancer (Tokyo, Japan)",
+          "year": "2004",
+          "authors": [
+            "Saeki T",
+            "Takashima S"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "31568001",
+          "title": "Clinical efficacy of combination of pertuzumab, trastuzumab, and docetaxel for treatment of patients with HER2-positive breast cancer.",
+          "journal": "Medicine",
+          "year": "2019",
+          "authors": [
+            "Liu YC",
+            "Ma Y",
+            "An N",
+            "Sun P",
+            "Wang Y",
+            "Sun C"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "32617902",
+          "title": "Disulfiram potentiates docetaxel cytotoxicity in breast cancer cells through enhanced ROS and autophagy.",
+          "journal": "Pharmacological reports : PR",
+          "year": "2020",
+          "authors": [
+            "Swetha KL",
+            "Sharma S",
+            "Chowdhury R",
+            "Roy A"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "16111463",
+          "title": "Docetaxel in the treatment of breast cancer: current experience and future prospects.",
+          "journal": "Expert review of anticancer therapy",
+          "year": "2005",
+          "authors": [
+            "Nabholtz JM",
+            "Gligorov J"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "39825877",
+          "title": "Efficacy and safety of KN026 and docetaxel for HER2-positive breast cancer: a phase II clinical trial.",
+          "journal": "Cancer communications (London, England)",
+          "year": "2025",
+          "authors": [
+            "Ma J",
+            "Wang J",
+            "Xu T",
+            "Ouyang Q",
+            "Wang X",
+            "Wang J",
+            "Gan L",
+            "Ouyang Z",
+            "Lin D",
+            "Sun T",
+            "Shan C",
+            "Yao H",
+            "Zhang B",
+            "Li Z",
+            "Zhuang Z",
+            "Lu Y",
+            "Yang H",
+            "Huang J",
+            "Yang X",
+            "Sun H",
+            "Zhang Q"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "15803364",
+          "title": "Primary docetaxel chemotherapy in patients with breast cancer: impact on response and survival.",
+          "journal": "Breast cancer research and treatment",
+          "year": "2005",
+          "authors": [
+            "Heys SD",
+            "Sarkar T",
+            "Hutcheon AW"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "9110651",
+          "title": "Docetaxel in anthracycline-resistant metastatic breast cancer.",
+          "journal": "Cancer practice",
+          "year": "1997",
+          "authors": [
+            "Hui YF",
+            "Ignoffo RJ"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "25683304",
+          "title": "Balancing activity and tolerability of neoadjuvant paclitaxel- and docetaxel-based chemotherapy for HER2-positive early stage breast cancer: sensitivity analysis of randomized trials.",
+          "journal": "Cancer treatment reviews",
+          "year": "2015",
+          "authors": [
+            "Carbognin L",
+            "Sperduti I",
+            "Nortilli R",
+            "Brunelli M",
+            "Vicentini C",
+            "Pellini F",
+            "Pollini GP",
+            "Giannarelli D",
+            "Tortora G",
+            "Bria E"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "17848810",
+          "title": "Docetaxel weekly with metastatic breast cancer.",
+          "journal": "Onkologie",
+          "year": "2007",
+          "authors": [
+            "Twelves C"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "27997437",
+          "title": "Association between adjuvant docetaxel-based chemotherapy and breast cancer-related lymphedema.",
+          "journal": "Anti-cancer drugs",
+          "year": "2017",
+          "authors": [
+            "Zhu W",
+            "Li D",
+            "Li X",
+            "Ren J",
+            "Chen W",
+            "Gu H",
+            "Shu Y",
+            "Wang D"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "32723991",
+          "title": "Two-weekly docetaxel in treatment of advanced breast cancer: A preliminary study.",
+          "journal": "The Medical journal of Malaysia",
+          "year": "2020",
+          "authors": [
+            "Lee DW",
+            "Kang IH",
+            "Ismail F"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "10426455",
+          "title": "Emerging role of docetaxel (Taxotere) in the adjuvant therapy of breast cancer.",
+          "journal": "Seminars in oncology",
+          "year": "1999",
+          "authors": [
+            "Ravdin PM"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "26337685",
+          "title": "The risk of febrile neutropenia and need for G-CSF primary prophylaxis with the docetaxel and cyclophosphamide regimen in early-stage breast cancer patients: a meta-analysis.",
+          "journal": "Breast cancer research and treatment",
+          "year": "2015",
+          "authors": [
+            "Do T",
+            "Medhekar R",
+            "Bhat R",
+            "Chen H",
+            "Niravath P",
+            "Trivedi MV"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "10426456",
+          "title": "The role of docetaxel (Taxotere) in neoadjuvant chemotherapy of breast cancer.",
+          "journal": "Seminars in oncology",
+          "year": "1999",
+          "authors": [
+            "Costa SD",
+            "von Minckwitz G",
+            "Raab G",
+            "Blohmer JU",
+            "Dresel V",
+            "Eidtmann H",
+            "Hilfrich J",
+            "Jackisch C",
+            "Merkle E",
+            "Gademann G",
+            "Kaufmann M"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "37164696",
+          "title": "CircRNA CircABCB1 Diminishes the Sensitivity of Breast Cancer Cells to Docetaxel by Sponging MiR-153-3p.",
+          "journal": "The Tohoku journal of experimental medicine",
+          "year": "2023",
+          "authors": [
+            "Liu J",
+            "Kong L",
+            "Bian W",
+            "Lin X",
+            "Wei F",
+            "Chu J"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "22270929",
+          "title": "Docetaxel-containing adjuvant chemotherapy in patients with early stage breast cancer. Consistency of effect independent of nodal and biomarker status: a meta-analysis of 14 randomized clinical trials.",
+          "journal": "Breast cancer research and treatment",
+          "year": "2012",
+          "authors": [
+            "Jacquin JP",
+            "Jones S",
+            "Magné N",
+            "Chapelle C",
+            "Ellis P",
+            "Janni W",
+            "Mavroudis D",
+            "Martín M",
+            "Laporte S"
+          ],
+          "source": "ncbi_pubmed"
+        }
+      ],
+      "source": "pubmed_live"
+    }
+  },
+  "errors": []
+}

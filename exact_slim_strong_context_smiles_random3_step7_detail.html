@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>exact slim + strong context + SMILES - random3 Step 7 ADMET 게이트</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; background: #0f172a; color: #e2e8f0; min-height: 100vh; }
+  .header { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); padding: 20px 32px; border-bottom: 1px solid #334155; display: flex; justify-content: space-between; align-items: center; }
+  .header h1 { font-size: 1.3rem; color: #f8fafc; }
+  .header a { color: #38bdf8; text-decoration: none; font-size: 0.85rem; }
+  .flow-nav { display:flex; gap:10px; flex-wrap:wrap; margin: 0 0 16px; }
+  .flow-btn { text-decoration:none; padding:8px 12px; border-radius:999px; border:1px solid #334155; background:#0f172a; color:#cbd5e1; font-size:0.78rem; font-weight:700; }
+  .flow-btn.active { background:#1d4ed8; color:#eff6ff; border-color:#3b82f6; }
+  .container { max-width: 1300px; margin: 0 auto; padding: 24px; }
+  .section { background: #1e293b; border: 1px solid #334155; border-radius: 8px; padding: 20px; margin-bottom: 20px; }
+  .section-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 4px; display: flex; align-items: center; gap: 10px; }
+  .section-sub { font-size: 0.75rem; color: #64748b; margin-bottom: 16px; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.78rem; }
+  th { text-align: left; padding: 8px 10px; background: #0f172a; color: #94a3b8; border-bottom: 2px solid #334155; font-weight: 600; white-space: nowrap; }
+  td { padding: 7px 10px; border-bottom: 1px solid #1e293b80; vertical-align: top; }
+  tr:hover { background: rgba(59,130,246,0.05); }
+  .val-good { color: #4ade80; font-weight: 700; }
+  .val-warn { color: #fbbf24; font-weight: 700; }
+  .val-bad { color: #f87171; font-weight: 700; }
+  .metric-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+  .metric-card { background: #0f172a; border: 1px solid #334155; border-radius: 6px; padding: 12px; text-align: center; }
+  .metric-card .value { font-size: 1.4rem; font-weight: 800; }
+  .metric-card .label { font-size: 0.72rem; color: #64748b; margin-top: 4px; }
+  .cat-current { background: #22c55e20; color: #22c55e; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; font-weight: 600; }
+  .cat-trial { background: #3b82f620; color: #3b82f6; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; font-weight: 600; }
+  .cat-novel { background: #a855f720; color: #a855f7; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; font-weight: 600; }
+  .flag { background: #f8717120; color: #f87171; padding: 1px 6px; border-radius: 3px; font-size: 0.68rem; margin: 1px; display: inline-block; }
+  .highlight { background: rgba(34,197,94,0.08); border: 1px solid #22c55e40; border-radius: 8px; padding: 16px; margin-bottom: 16px; }
+  .rationale { font-size: 0.68rem; color: #94a3b8; margin-top: 2px; line-height: 1.5; }
+  .dedup-note { background: #06b6d415; border: 1px solid #06b6d440; border-radius: 6px; padding: 10px 14px; margin-bottom: 16px; font-size: 0.8rem; color: #06b6d4; }
+  ul { font-size: 0.82rem; line-height: 1.8; padding-left: 20px; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>exact slim + strong context + SMILES - random sample 3-fold Step 7 ADMET 게이트</h1>
+  <a href="exact_slim_strong_context_smiles_random3_detail.html">&larr; random3 상세 페이지로 돌아가기</a>
+</div>
+<div class="container">
+
+  <div class="flow-nav">
+    <a class="flow-btn" href="exact_slim_strong_context_smiles_random3_detail.html#step4">Step 4 모델</a>
+    <a class="flow-btn" href="exact_slim_strong_context_smiles_random3_detail.html#step5">Step 5 앙상블</a>
+    <a class="flow-btn" href="exact_slim_strong_context_smiles_random3_step6_detail.html">Step 6 METABRIC</a>
+    <a class="flow-btn active" href="exact_slim_strong_context_smiles_random3_step7_detail.html">Step 7 ADMET</a>
+    <a class="flow-btn" href="exact_slim_strong_context_smiles_random3_step7plus_detail.html">Step 7+ KG/API</a>
+  </div>
+
+  <div class="dedup-note">
+    <b>random3 post-ADMET summary 적용:</b> 이번 route는 <b>top15가 이미 고유 약물</b>로 구성되어 있어 별도 중복 제거는 없었고, raw ADMET 분류(Approved/Candidate/Caution) 위에 <b>유방암 현재 사용 / 적응증 확장·연구 중 / 유방암 미사용</b> 임상 분류를 추가해 팀원 레포의 제출 형식에 맞게 정리했습니다. Top 5는 <b>Romidepsin, Sepantronium bromide, Staurosporine, SN-38, Docetaxel</b> 입니다.
+  </div>
+
+  <div class="highlight">
+    <div style="color:#4ade80; font-size:1rem; font-weight:700; margin-bottom:12px;">ADMET 안전성 평가 및 유방암 적응증 분류 요약</div>
+    <div class="metric-grid">
+      <div class="metric-card"><div class="value" style="color:#4ade80;">5</div><div class="label">유방암 현재 사용 (FDA 승인)</div></div>
+      <div class="metric-card"><div class="value" style="color:#3b82f6;">6</div><div class="label">유방암 적응증 확장/연구 중</div></div>
+      <div class="metric-card"><div class="value" style="color:#a855f7;">4</div><div class="label">유방암 미사용 (신약 후보물질)</div></div>
+      <div class="metric-card"><div class="value" style="color:#94a3b8;">22</div><div class="label">ADMET 분석 항목</div></div>
+      <div class="metric-card"><div class="value" style="color:#fbbf24;">15</div><div class="label">고유 약물 후보</div></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">유방암 임상 적응증 분류 기준</div>
+    <div class="section-sub">DrugBank · ClinicalTrials.gov · 팀원 레포 Step 7 해석 규칙 기반</div>
+    <table>
+      <thead><tr><th>분류</th><th>정의</th><th>약물 수</th></tr></thead>
+      <tbody>
+        <tr><td><span class="cat-current">유방암 현재 사용</span></td><td>FDA 유방암 적응증 승인 또는 NCCN 가이드라인 포함 표준요법</td><td class="val-good">5</td></tr>
+        <tr><td><span class="cat-trial">적응증 확장/연구 중</span></td><td>유방암 대상 임상시험 진행 중이거나 유도체가 유방암 승인됨</td><td style="color:#3b82f6; font-weight:700;">6</td></tr>
+        <tr><td><span class="cat-novel">유방암 미사용</span></td><td>유방암 적응증 없음, 신약 후보물질 또는 재창출 대상</td><td style="color:#a855f7; font-weight:700;">4</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title">ADMET 분석 커버리지 (22개 항목)</div>
+    <div class="section-sub">TDC ADMET benchmark | random3 Top15 후보 기준 | assay별 실제 매칭 수</div>
+    <table>
+      <thead><tr><th>범주</th><th>분석 항목</th><th>유형</th><th>매칭</th></tr></thead>
+      <tbody>
+        <tr><td>Absorption</td><td>Caco-2 Permeability</td><td>회귀</td><td>4/15</td></tr>
+<tr><td>Absorption</td><td>HIA (Human Intestinal Absorption)</td><td>이진</td><td>0/15</td></tr>
+<tr><td>Absorption</td><td>P-gp Inhibitor</td><td>이진</td><td>2/15</td></tr>
+<tr><td>Absorption</td><td>Oral Bioavailability (F>20%)</td><td>이진</td><td>2/15</td></tr>
+<tr><td>Distribution</td><td>BBB Penetration</td><td>이진</td><td>5/15</td></tr>
+<tr><td>Distribution</td><td>Plasma Protein Binding Rate</td><td>회귀</td><td>3/15</td></tr>
+<tr><td>Distribution</td><td>Volume of Distribution</td><td>회귀</td><td>9/15</td></tr>
+<tr><td>Metabolism</td><td>CYP2C9 Inhibitor</td><td>이진</td><td>4/15</td></tr>
+<tr><td>Metabolism</td><td>CYP2D6 Inhibitor</td><td>이진</td><td>4/15</td></tr>
+<tr><td>Metabolism</td><td>CYP3A4 Inhibitor</td><td>이진</td><td>3/15</td></tr>
+<tr><td>Metabolism</td><td>CYP2C9 Substrate</td><td>이진</td><td>6/15</td></tr>
+<tr><td>Metabolism</td><td>CYP2D6 Substrate</td><td>이진</td><td>6/15</td></tr>
+<tr><td>Metabolism</td><td>CYP3A4 Substrate</td><td>이진</td><td>6/15</td></tr>
+<tr><td>Excretion</td><td>Hepatocyte Clearance</td><td>회귀</td><td>3/15</td></tr>
+<tr><td>Excretion</td><td>Microsome Clearance</td><td>회귀</td><td>2/15</td></tr>
+<tr><td>Excretion</td><td>Half-Life</td><td>회귀</td><td>7/15</td></tr>
+<tr><td style='color:#f87171'>Toxicity</td><td>Ames Mutagenicity</td><td>이진</td><td>1/15</td></tr>
+<tr><td style='color:#f87171'>Toxicity</td><td>DILI (Drug-Induced Liver Injury)</td><td>이진</td><td>6/15</td></tr>
+<tr><td style='color:#f87171'>Toxicity</td><td>hERG Cardiotoxicity</td><td>이진</td><td>0/15</td></tr>
+<tr><td style='color:#f87171'>Toxicity</td><td>Acute Toxicity (LD50)</td><td>회귀</td><td>3/15</td></tr>
+<tr><td>Properties</td><td>Lipophilicity (logD)</td><td>회귀</td><td>2/15</td></tr>
+<tr><td>Properties</td><td>Aqueous Solubility</td><td>회귀</td><td>1/15</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title">최종 약물 후보 15개</div>
+    <div class="section-sub">random3 weighted ensemble → Step 6 validated top15 → Step 7 ADMET → 임상 분류 후 종합 정리</div>
+    <table>
+      <thead>
+        <tr><th>#</th><th>약물</th><th>타겟</th><th>예측 IC50</th><th>안전성</th><th>종합</th><th>통과</th><th>주의</th><th>유방암 분류</th><th>분류 근거</th><th>우려사항</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td><b>Romidepsin</b></td><td>HDAC1, HDAC2, HDAC3, HDAC8</td><td class='val-good'>-4.741</td><td class='val-good'>12.00</td><td class='val-good'>19.00</td><td>2</td><td>0</td><td><span class='cat-trial'>적응증 확장/연구 중</span></td><td><div class='rationale'>FDA 승인: CTCL/PTCL. 유방암 TNBC 임상시험 (NCT02393794, NCT01638533)</div></td><td>-</td></tr>
+<tr><td>2</td><td><b>Sepantronium bromide</b></td><td>BIRC5</td><td class='val-good'>-3.855</td><td class='val-good'>10.00</td><td class='val-good'>16.50</td><td>1</td><td>0</td><td><span class='cat-novel'>유방암 미사용</span></td><td><div class='rationale'>연구용 화합물. Survivin 억제제. 유방암 적응증 없음</div></td><td>-</td></tr>
+<tr><td>3</td><td><b>Staurosporine</b></td><td>Broad spectrum kinase inhibitor</td><td class='val-good'>-2.476</td><td class='val-good'>10.00</td><td class='val-good'>13.50</td><td>1</td><td>0</td><td><span class='cat-novel'>유방암 미사용</span></td><td><div class='rationale'>연구용 천연 화합물. FDA 미승인. 임상시험 없음</div></td><td>-</td></tr>
+<tr><td>4</td><td><b>SN-38</b></td><td>TOP1</td><td class='val-good'>-2.462</td><td class='val-good'>10.00</td><td class='val-good'>13.00</td><td>5</td><td>0</td><td><span class='cat-trial'>적응증 확장/연구 중</span></td><td><div class='rationale'>Sacituzumab govitecan (SN-38 접합체) FDA TNBC 승인. SN-38 자체는 미승인</div></td><td>-</td></tr>
+<tr><td>5</td><td><b>Docetaxel</b></td><td>Microtubule stabiliser</td><td class='val-good'>-3.303</td><td class='val-warn'>6.83</td><td class='val-good'>12.83</td><td>12</td><td>1</td><td><span class='cat-current'>유방암 현재 사용</span></td><td><div class='rationale'>FDA 유방암 적응증 승인 (보조/전이성). NCCN 표준요법</div></td><td><span class='flag'>DILI</span></td></tr>
+<tr><td>6</td><td><b>Bortezomib</b></td><td>Proteasome</td><td class='val-good'>-4.752</td><td class='val-warn'>5.29</td><td class='val-good'>12.79</td><td>7</td><td>1</td><td><span class='cat-trial'>적응증 확장/연구 중</span></td><td><div class='rationale'>FDA 승인: 다발성 골수종. 유방암 임상시험 진행 (NCT00025246 등)</div></td><td><span class='flag'>DILI</span></td></tr>
+<tr><td>7</td><td><b>Dactinomycin</b></td><td>RNA polymerase</td><td class='val-good'>-3.018</td><td class='val-good'>7.00</td><td class='val-good'>12.50</td><td>5</td><td>1</td><td><span class='cat-novel'>유방암 미사용</span></td><td><div class='rationale'>FDA 승인: 윌름스 종양, 융모성 질환. 유방암 적응증 없음</div></td><td><span class='flag'>DILI</span></td></tr>
+<tr><td>8</td><td><b>Vinorelbine</b></td><td>Microtubule destabiliser</td><td class='val-good'>-2.830</td><td class='val-good'>8.00</td><td class='val-good'>12.50</td><td>10</td><td>0</td><td><span class='cat-current'>유방암 현재 사용</span></td><td><div class='rationale'>전이성 유방암 표준요법. NCCN 가이드라인 포함</div></td><td>-</td></tr>
+<tr><td>9</td><td><b>Dinaciclib</b></td><td>CDK1, CDK2, CDK5, CDK9</td><td class='val-good'>-2.191</td><td class='val-good'>10.00</td><td class='val-good'>12.00</td><td>4</td><td>0</td><td><span class='cat-trial'>적응증 확장/연구 중</span></td><td><div class='rationale'>CDK 억제제. 유방암 1/2상 임상시험 진행 (NCT01624441 등)</div></td><td>-</td></tr>
+<tr><td>10</td><td><b>Paclitaxel</b></td><td>Microtubule stabiliser</td><td class='val-good'>-2.837</td><td class='val-warn'>6.83</td><td class='val-good'>11.83</td><td>12</td><td>1</td><td><span class='cat-current'>유방암 현재 사용</span></td><td><div class='rationale'>FDA 유방암 적응증 승인 (보조/전이성). NCCN 표준요법</div></td><td><span class='flag'>DILI</span></td></tr>
+<tr><td>11</td><td><b>Vinblastine</b></td><td>Microtubule destabiliser</td><td class='val-good'>-2.741</td><td class='val-good'>7.83</td><td class='val-good'>11.83</td><td>12</td><td>0</td><td><span class='cat-current'>유방암 현재 사용</span></td><td><div class='rationale'>FDA 유방암 적응증 포함 (호르몬 불응성 유방암)</div></td><td>-</td></tr>
+<tr><td>12</td><td><b>Camptothecin</b></td><td>TOP1</td><td class='val-good'>-0.544</td><td class='val-good'>10.00</td><td class='val-good'>11.00</td><td>5</td><td>0</td><td><span class='cat-novel'>유방암 미사용</span></td><td><div class='rationale'>연구용 천연 화합물. Irinotecan/Topotecan의 모 화합물. 직접 임상 사용 없음</div></td><td>-</td></tr>
+<tr><td>13</td><td><b>Rapamycin</b></td><td>MTORC1</td><td class='val-good'>-2.395</td><td class='val-good'>7.71</td><td class='val-good'>10.21</td><td>7</td><td>0</td><td><span class='cat-trial'>적응증 확장/연구 중</span></td><td><div class='rationale'>유도체 Everolimus FDA HR+/HER2- 유방암 승인. Rapamycin 자체는 면역억제제 승인</div></td><td>-</td></tr>
+<tr><td>14</td><td><b>Luminespib</b></td><td>HSP90</td><td class='val-good'>-1.834</td><td class='val-warn'>5.00</td><td class='val-good'>6.50</td><td>0</td><td>0</td><td><span class='cat-trial'>적응증 확장/연구 중</span></td><td><div class='rationale'>HSP90 억제제. 유방암 2상 임상시험 (HER2+, TNBC 대상)</div></td><td>-</td></tr>
+<tr><td>15</td><td><b>Epirubicin</b></td><td>Anthracycline</td><td class='val-good'>0.093</td><td class='val-bad'>2.83</td><td class='val-good'>3.33</td><td>15</td><td>2</td><td><span class='cat-current'>유방암 현재 사용</span></td><td><div class='rationale'>FDA 유방암 적응증 승인 (보조요법 FEC 레지멘)</div></td><td><span class='flag'>Ames</span><span class='flag'>DILI</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title">주요 ADMET 결과</div>
+    <div class="section-sub">random3 route의 Step 7 raw 결과와 post-ADMET 임상 분류를 함께 해석한 메모입니다.</div>
+    <ul>
+      <li><b>Raw ADMET 분류</b>: Approved 8 / Candidate 6 / Caution 1</li>
+      <li><b>임상 분류 후 요약</b>: 현재 사용 5 / 확장·연구 중 6 / 미사용 4</li>
+      <li><b>가장 강한 최종 후보</b>: Romidepsin, Sepantronium bromide, Staurosporine, SN-38, Docetaxel</li>
+      <li><b>DILI 플래그</b>: Docetaxel, Bortezomib, Dactinomycin, Paclitaxel, Epirubicin 등 세포독성 계열에서 주로 관찰됐습니다.</li>
+      <li><b>가장 보수적으로 봐야 할 후보</b>: Epirubicin은 임상 현실과 일치하는 재발견이지만 Ames/DILI 동시 플래그 때문에 Caution으로 남습니다.</li>
+      <li><b>random split 해석</b>: GroupCV보다 성능이 낙관적이므로, 임상 의미 해석은 현재 화면처럼 Step 6/7 보조 검증과 함께 보는 게 안전합니다.</li>
+    </ul>
+  </div>
+
+</div>
+</body>
+</html>

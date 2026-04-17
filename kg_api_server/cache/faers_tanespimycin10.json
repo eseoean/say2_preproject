@@ -1,0 +1,54 @@
+{
+  "data": [
+    {
+      "event": "DEATH",
+      "count": 14,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "NAUSEA",
+      "count": 4,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "VOMITING",
+      "count": 4,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "ALANINE AMINOTRANSFERASE INCREASED",
+      "count": 3,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "ASPARTATE AMINOTRANSFERASE INCREASED",
+      "count": 3,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "BLOOD ALKALINE PHOSPHATASE INCREASED",
+      "count": 3,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "CARDIAC AMYLOIDOSIS",
+      "count": 3,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "DIARRHOEA",
+      "count": 3,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "DISEASE PROGRESSION",
+      "count": 3,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "RENAL FAILURE ACUTE",
+      "count": 3,
+      "source": "openfda_faers"
+    }
+  ]
+}

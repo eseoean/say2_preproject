@@ -1,0 +1,1770 @@
+{
+  "drug_id": 1084,
+  "drug_name": "Rapamycin",
+  "category": "Approved",
+  "combined_score": 10.21,
+  "timestamp": "2026-04-15 22:02:37",
+  "data_collected": {
+    "basic_info": {
+      "ok": true,
+      "data": {
+        "drug_id": 1084,
+        "drug_name": "Rapamycin",
+        "target": "MTORC1",
+        "pathway": "PI3K/MTOR signaling",
+        "predicted_ic50": 0.77469987,
+        "sensitivity_rate": 1.0,
+        "validation_score": 8.8,
+        "safety_score": 7.71,
+        "combined_score": 10.21,
+        "final_rank": 10,
+        "category": "Approved",
+        "clinical_bucket": "Breast cancer current/relevant use",
+        "known_brca": true,
+        "target_expressed": true,
+        "brca_pathway": true,
+        "survival_sig": true,
+        "recommendation_note": "Breast-cancer relevant and ADMET-screened. Suitable as a primary shortlist candidate."
+      }
+    },
+    "side_effects": {
+      "ok": true,
+      "data": [
+        {
+          "event": "OFF LABEL USE",
+          "count": 67,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "DIARRHOEA",
+          "count": 38,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "DRUG INEFFECTIVE",
+          "count": 38,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "DISEASE PROGRESSION",
+          "count": 34,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "PNEUMONIA",
+          "count": 31,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "PYREXIA",
+          "count": 28,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "TRANSPLANT REJECTION",
+          "count": 28,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "ANAEMIA",
+          "count": 26,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "DRUG INTERACTION",
+          "count": 26,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "MULTIPLE ORGAN DYSFUNCTION SYNDROME",
+          "count": 24,
+          "source": "openfda_faers"
+        }
+      ],
+      "source": "openfda_live"
+    },
+    "trials": {
+      "ok": true,
+      "data": [
+        {
+          "nct_id": "NCT01552434",
+          "title": "Bevacizumab and Temsirolimus Alone or in Combination With Valproic Acid or Cetuximab in Treating Patients With Advanced or Metastatic Malignancy or Other Benign Disease",
+          "phase": "PHASE1",
+          "status": "ACTIVE_NOT_RECRUITING",
+          "conditions": [
+            "Advanced Malignant Neoplasm",
+            "Castleman Disease",
+            "Digestive System Carcinoma",
+            "Erdheim-Chester Disease",
+            "Lip and Oral Cavity Carcinoma",
+            "Lymphangioleiomyomatosis",
+            "Malignant Endocrine Neoplasm",
+            "Malignant Female Reproductive System Neoplasm",
+            "Malignant Male Reproductive System Neoplasm",
+            "Malignant Neoplasm",
+            "Malignant Respiratory Tract Neoplasm",
+            "Malignant Thoracic Neoplasm",
+            "Malignant Urinary System Neoplasm",
+            "Mesothelial Neoplasm",
+            "Metastatic Malignant Neoplasm",
+            "Metastatic Urothelial Carcinoma",
+            "Neurofibromatosis Type 2",
+            "Recurrent Adult Soft Tissue Sarcoma",
+            "Recurrent Breast Carcinoma",
+            "Recurrent Childhood Soft Tissue Sarcoma",
+            "Recurrent Digestive System Carcinoma",
+            "Recurrent Female Reproductive System Carcinoma",
+            "Recurrent Male Reproductive System Carcinoma",
+            "Recurrent Malignant Neoplasm",
+            "Recurrent Pharyngeal Carcinoma",
+            "Recurrent Thyroid Gland Carcinoma",
+            "Refractory Malignant Neoplasm",
+            "Soft Tissue Neoplasm",
+            "Stage III Breast Cancer AJCC v7",
+            "Stage III Pharyngeal Cancer",
+            "Stage IIIA Breast Cancer AJCC v7",
+            "Stage IIIB Breast Cancer AJCC v7",
+            "Stage IIIC Breast Cancer AJCC v7",
+            "Stage IV Breast Cancer AJCC v6 and v7",
+            "Stage IV Pharyngeal Cancer",
+            "Stage IVA Pharyngeal Cancer",
+            "Stage IVB Pharyngeal Cancer",
+            "Stage IVC Pharyngeal Cancer",
+            "Thyroid Gland Neoplasm"
+          ],
+          "lead_sponsor": "M.D. Anderson Cancer Center",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT04022616",
+          "title": "Myeloid-Derived Suppressor Cell Function in Breast Cancer Patients",
+          "phase": "",
+          "status": "RECRUITING",
+          "conditions": [
+            "Breast Cancer"
+          ],
+          "lead_sponsor": "Ohio State University Comprehensive Cancer Center",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT02313051",
+          "title": "Everolimus trIal for Advanced prememopausaL Breast Cancer Patients",
+          "phase": "PHASE2",
+          "status": "UNKNOWN",
+          "conditions": [
+            "Metastatic Breast Cancer"
+          ],
+          "lead_sponsor": "Chinese Academy of Medical Sciences",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT03176238",
+          "title": "Study in Post-menopausal Women With Hormone Receptor Positive, HER2-negative Advanced Breast Cancer",
+          "phase": "PHASE3",
+          "status": "COMPLETED",
+          "conditions": [
+            "Post Menopausal Breast Cancer"
+          ],
+          "lead_sponsor": "Novartis Pharmaceuticals",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT00337376",
+          "title": "A Study of the mTOR Inhibitor Rapamycin (Rapamune, Sirolimus) in Combination With Abraxane in Advanced Solid Cancers",
+          "phase": "PHASE1",
+          "status": "TERMINATED",
+          "conditions": [
+            "Advanced Solid Cancers"
+          ],
+          "lead_sponsor": "Yale University",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT01783756",
+          "title": "Phase 1b/2 Trial Using Lapatinib, Everolimus and Capecitabine for Treatment of HER-2 Positive Breast Cancer With CNS Metastasis",
+          "phase": "PHASE1, PHASE2",
+          "status": "COMPLETED",
+          "conditions": [
+            "Central Nervous System Metastases",
+            "HER2-positive Breast Cancer",
+            "Male Breast Cancer",
+            "Recurrent Breast Cancer",
+            "Stage IV Breast Cancer"
+          ],
+          "lead_sponsor": "Jonsson Comprehensive Cancer Center",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT00954512",
+          "title": "Study of Robatumumab (SCH 717454, MK-7454) in Combination With Different Treatment Regimens in Participants With Advanced Solid Tumors (P04722, MK-7454-004)",
+          "phase": "PHASE1, PHASE2",
+          "status": "TERMINATED",
+          "conditions": [
+            "Neoplasms"
+          ],
+          "lead_sponsor": "Merck Sharp & Dohme LLC",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT02567435",
+          "title": "Combination Chemotherapy With or Without Temsirolimus in Treating Patients With Intermediate Risk Rhabdomyosarcoma",
+          "phase": "PHASE3",
+          "status": "ACTIVE_NOT_RECRUITING",
+          "conditions": [
+            "Alveolar Rhabdomyosarcoma",
+            "Botryoid-Type Embryonal Rhabdomyosarcoma",
+            "Embryonal Rhabdomyosarcoma",
+            "Rhabdomyosarcoma",
+            "Sclerosing Rhabdomyosarcoma",
+            "Spindle Cell Rhabdomyosarcoma"
+          ],
+          "lead_sponsor": "National Cancer Institute (NCI)",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT01430585",
+          "title": "Pre-Operative Study of PF-4691502 With Letrozole Compared To Letrozole Alone In Patients With Early Breast Cancer",
+          "phase": "PHASE2",
+          "status": "TERMINATED",
+          "conditions": [
+            "Early Breast Cancer (Phase 2)",
+            "Advanced Breast Cancer (Phase 1b)"
+          ],
+          "lead_sponsor": "Pfizer",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT00703170",
+          "title": "Phase I Study of DOXIL and Temsirolimus in Resistant Solid Malignancies",
+          "phase": "PHASE1",
+          "status": "COMPLETED",
+          "conditions": [
+            "Resistant Solid Malignancies"
+          ],
+          "lead_sponsor": "Washington University School of Medicine",
+          "source": "clinicaltrials_gov_v2"
+        }
+      ],
+      "source": "clinicaltrials_live"
+    },
+    "targets": {
+      "ok": true,
+      "data": [
+        {
+          "target": "MTORC1",
+          "source": "local_frc_step6_7"
+        }
+      ]
+    },
+    "pathways": {
+      "ok": true,
+      "data": [
+        {
+          "pathway": "PI3K/MTOR signaling",
+          "source": "local_frc_step6_7"
+        }
+      ]
+    },
+    "pubmed_general": {
+      "ok": true,
+      "query": "Rapamycin",
+      "data": [
+        {
+          "pmid": "38310895",
+          "title": "Targeting ageing with rapamycin and its derivatives in humans: a systematic review.",
+          "journal": "The lancet. Healthy longevity",
+          "year": "2024",
+          "authors": [
+            "Lee DJW",
+            "Hodzic Kuerec A",
+            "Maier AB"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "33037985",
+          "title": "Effect of rapamycin on aging and age-related diseases-past and future.",
+          "journal": "GeroScience",
+          "year": "2021",
+          "authors": [
+            "Selvarani R",
+            "Mohammed S",
+            "Richardson A"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "37191826",
+          "title": "Evaluation of off-label rapamycin use to promote healthspan in 333 adults.",
+          "journal": "GeroScience",
+          "year": "2023",
+          "authors": [
+            "Kaeberlein TL",
+            "Green AS",
+            "Haddad G",
+            "Hudson J",
+            "Isman A",
+            "Nyquist A",
+            "Rosen BS",
+            "Suh Y",
+            "Zalzala S",
+            "Zhang X",
+            "Blagosklonny MV",
+            "An JY",
+            "Kaeberlein M"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "36617414",
+          "title": "Why Is Rapamycin Not a Rapalog?",
+          "journal": "Gerontology",
+          "year": "2023",
+          "authors": [
+            "Kuerec AH",
+            "Maier AB"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "35358003",
+          "title": "Cell senescence, rapamycin and hyperfunction theory of aging.",
+          "journal": "Cell cycle (Georgetown, Tex.)",
+          "year": "2022",
+          "authors": [
+            "Blagosklonny MV"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "31454792",
+          "title": "Rapamycin protects aging muscle.",
+          "journal": "Aging",
+          "year": "2019",
+          "authors": [
+            "Tang H",
+            "Shrager JB",
+            "Goldman D"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "31406105",
+          "title": "Fasting and rapamycin: diabetes versus benevolent glucose intolerance.",
+          "journal": "Cell death & disease",
+          "year": "2019",
+          "authors": [
+            "Blagosklonny MV"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "32756013",
+          "title": "Rapamycin for aging stem cells.",
+          "journal": "Aging",
+          "year": "2020",
+          "authors": [
+            "Hambright WS",
+            "Philippon MJ",
+            "Huard J"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "40188830",
+          "title": "Influence of rapamycin on safety and healthspan metrics after one year: PEARL trial results.",
+          "journal": "Aging",
+          "year": "2025",
+          "authors": [
+            "Moel M",
+            "Harinath G",
+            "Lee V",
+            "Nyquist A",
+            "Morgan SL",
+            "Isman A",
+            "Zalzala S"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "10572230",
+          "title": "[Rapamycin and CCI-779].",
+          "journal": "Bulletin du cancer",
+          "year": "1999",
+          "authors": [
+            "Alexandre J",
+            "Raymond E",
+            "Armand JP"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "37057884",
+          "title": "Cancer prevention with rapamycin.",
+          "journal": "Oncotarget",
+          "year": "2023",
+          "authors": [
+            "Blagosklonny MV"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "33821748",
+          "title": "Topical rapamycin in the treatment of facial angiofibromas in tuberous sclerosis: a systematic review based on evidence.",
+          "journal": "The Journal of dermatological treatment",
+          "year": "2022",
+          "authors": [
+            "Cortell Fuster C",
+            "Martínez Gómez MA",
+            "Cercós Lleti AC",
+            "Climente Martí M"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "36696023",
+          "title": "Molecular and therapeutic insights of rapamycin: a multi-faceted drug from Streptomyces hygroscopicus.",
+          "journal": "Molecular biology reports",
+          "year": "2023",
+          "authors": [
+            "Ganesh SK",
+            "Subathra Devi C"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "31178328",
+          "title": "Rapamycin activates mammalian microautophagy.",
+          "journal": "Journal of pharmacological sciences",
+          "year": "2019",
+          "authors": [
+            "Sato M",
+            "Seki T",
+            "Konno A",
+            "Hirai H",
+            "Kurauchi Y",
+            "Hisatsune A",
+            "Katsuki H"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "34089901",
+          "title": "The Role of Rapamycin in Healthspan Extension via the Delay of Organ Aging.",
+          "journal": "Ageing research reviews",
+          "year": "2021",
+          "authors": [
+            "Zhang Y",
+            "Zhang J",
+            "Wang S"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "26916116",
+          "title": "The Enigma of Rapamycin Dosage.",
+          "journal": "Molecular cancer therapeutics",
+          "year": "2016",
+          "authors": [
+            "Mukhopadhyay S",
+            "Frias MA",
+            "Chatterjee A",
+            "Yellen P",
+            "Foster DA"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "31732331",
+          "title": "Mechanistic target of rapamycin (mTOR) signaling in status epilepticus.",
+          "journal": "Epilepsy & behavior : E&B",
+          "year": "2019",
+          "authors": [
+            "Crino PB"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "12603583",
+          "title": "Rapamycin in cardiovascular medicine.",
+          "journal": "Internal medicine journal",
+          "year": "2003",
+          "authors": [
+            "Ruygrok PN",
+            "Muller DW",
+            "Serruys PW"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "17728765",
+          "title": "Rapamycin: something old, something new, sometimes borrowed and now renewed.",
+          "journal": "Clinical pharmacology and therapeutics",
+          "year": "2007",
+          "authors": [
+            "Hartford CM",
+            "Ratain MJ"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "32167485",
+          "title": "Transient and late-life rapamycin for healthspan extension.",
+          "journal": "Aging",
+          "year": "2020",
+          "authors": [
+            "Quarles EK",
+            "Rabinovitch PS"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "16039868",
+          "title": "Rapamycin: an anti-cancer immunosuppressant?",
+          "journal": "Critical reviews in oncology/hematology",
+          "year": "2005",
+          "authors": [
+            "Law BK"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "39225061",
+          "title": "Rapamycin's lifespan effect is modulated by mito-nuclear epistasis in Drosophila.",
+          "journal": "Aging cell",
+          "year": "2024",
+          "authors": [
+            "Ibrahim R",
+            "Bahilo Martinez M",
+            "Dobson AJ"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "18713146",
+          "title": "Rapamycin in islet transplantation: friend or foe?",
+          "journal": "Transplant international : official journal of the European Society for Organ Transplantation",
+          "year": "2009",
+          "authors": [
+            "Berney T",
+            "Secchi A"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "29438097",
+          "title": "Rapamycin for lymphangioleiomyomatosis: optimal timing and optimal dosage.",
+          "journal": "Thorax",
+          "year": "2018",
+          "authors": [
+            "Xu KF",
+            "Tian X",
+            "Yang Y",
+            "Zhang H"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "27191225",
+          "title": "Rapamycin slows down gut aging.",
+          "journal": "Aging",
+          "year": "2016",
+          "authors": [
+            "Gaur U",
+            "Fan X",
+            "Yang M"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "40345576",
+          "title": "Rapamycin exerts neuroprotective effects by inhibiting FKBP12 instead of mTORC1 in the mouse model of Parkinson's disease.",
+          "journal": "Neuropharmacology",
+          "year": "2025",
+          "authors": [
+            "Zhang Z",
+            "Shen Z",
+            "Xie S",
+            "Li J",
+            "Zhang Z",
+            "Zhang S",
+            "Peng B",
+            "Huang Q",
+            "Li M",
+            "Ma S",
+            "Huang Q"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "31586989",
+          "title": "Rapamycin for longevity: opinion article.",
+          "journal": "Aging",
+          "year": "2019",
+          "authors": [
+            "Blagosklonny MV"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "27208895",
+          "title": "Rapamycin: An InhibiTOR of Aging Emerges From the Soil of Easter Island.",
+          "journal": "The journals of gerontology. Series A, Biological sciences and medical sciences",
+          "year": "2016",
+          "authors": [
+            "Arriola Apelo SI",
+            "Lamming DW"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "22170152",
+          "title": "Rapamycin activates autophagy in Hutchinson-Gilford progeria syndrome: implications for normal aging and age-dependent neurodegenerative disorders.",
+          "journal": "Autophagy",
+          "year": "2012",
+          "authors": [
+            "Graziotto JJ",
+            "Cao K",
+            "Collins FS",
+            "Krainc D"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "37717734",
+          "title": "Topical rapamycin and microcystic lymphatic malformations.",
+          "journal": "Journal of the American Academy of Dermatology",
+          "year": "2024",
+          "authors": [
+            "Gu Y",
+            "Sebaratnam DF"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "31895693",
+          "title": "Rapamycin for the aging skin.",
+          "journal": "Aging",
+          "year": "2019",
+          "authors": [
+            "Blagosklonny MV"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "37393367",
+          "title": "Rapamycin prevents lung injury related to acute spinal cord injury in rats.",
+          "journal": "Scientific reports",
+          "year": "2023",
+          "authors": [
+            "Chu R",
+            "Wang N",
+            "Bi Y",
+            "Nan G"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "35973640",
+          "title": "Immunologic and dose dependent effects of rapamycin and its evolving role in chemoprevention.",
+          "journal": "Clinical immunology (Orlando, Fla.)",
+          "year": "2022",
+          "authors": [
+            "O'Shea AE",
+            "Valdera FA",
+            "Ensley D",
+            "Smolinsky TR",
+            "Cindass JL",
+            "Kemp Bohan PM",
+            "Hickerson AT",
+            "Carpenter EL",
+            "McCarthy PM",
+            "Adams AM",
+            "Vreeland TJ",
+            "Clifton GT",
+            "Peoples GE"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "15626356",
+          "title": "[Rapamycin: from the laboratory to the treatment of patients' arteries].",
+          "journal": "Revista espanola de cardiologia",
+          "year": "2003",
+          "authors": [
+            "Fuster V"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "27613310",
+          "title": "An overview of rapamycin: from discovery to future perspectives.",
+          "journal": "Journal of industrial microbiology & biotechnology",
+          "year": "2017",
+          "authors": [
+            "Yoo YJ",
+            "Kim H",
+            "Park SR",
+            "Yoon YJ"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "37222020",
+          "title": "Unbiased evaluation of rapamycin's specificity as an mTOR inhibitor.",
+          "journal": "Aging cell",
+          "year": "2023",
+          "authors": [
+            "Artoni F",
+            "Grützmacher N",
+            "Demetriades C"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "20588302",
+          "title": "Biosynthesis of rapamycin and its regulation: past achievements and recent progress.",
+          "journal": "The Journal of antibiotics",
+          "year": "2010",
+          "authors": [
+            "Park SR",
+            "Yoo YJ",
+            "Ban YH",
+            "Yoon YJ"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "21772323",
+          "title": "Fighting neurodegeneration with rapamycin: mechanistic insights.",
+          "journal": "Nature reviews. Neuroscience",
+          "year": "2011",
+          "authors": [
+            "Bové J",
+            "Martínez-Vicente M",
+            "Vila M"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "37432113",
+          "title": "Unmasking the True Identity of Rapamycin's Minor Conformer.",
+          "journal": "Journal of natural products",
+          "year": "2023",
+          "authors": [
+            "Crull EB",
+            "Jain AN",
+            "Hawkins PCD",
+            "Cleves AE",
+            "Graziani EI",
+            "Williamson RT"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "37048066",
+          "title": "Rapamycin Alleviates Protein Aggregates, Reduces Neuroinflammation, and Rescues Demyelination in Globoid Cell Leukodystrophy.",
+          "journal": "Cells",
+          "year": "2023",
+          "authors": [
+            "Lin DS",
+            "Huang YW",
+            "Lee TH",
+            "Chang L",
+            "Huang ZD",
+            "Wu TY",
+            "Wang TJ",
+            "Ho CS"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "38839644",
+          "title": "Evaluation of off-label rapamycin use on oral health.",
+          "journal": "GeroScience",
+          "year": "2024",
+          "authors": [
+            "Hudson J",
+            "Kaeberlein T",
+            "Mahal A",
+            "Wong N",
+            "Ghorbanifarajzadeh M",
+            "Radella F",
+            "Isman A",
+            "Nyquist A",
+            "Zalzala S",
+            "Haddad G",
+            "Kaeberlein M",
+            "An JY"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "8588237",
+          "title": "Rapamune (Sirolimus, rapamycin): an overview and mechanism of action.",
+          "journal": "Therapeutic drug monitoring",
+          "year": "1995",
+          "authors": [
+            "Sehgal SN"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "40778880",
+          "title": "What is the clinical evidence to support off-label rapamycin therapy in healthy adults?",
+          "journal": "Aging",
+          "year": "2025",
+          "authors": [
+            "Hands JM",
+            "Lustgarten MS",
+            "Frame LA",
+            "Rosen B"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "37376966",
+          "title": "Rapamycin improves social and stereotypic behavior abnormalities induced by pre-mitotic neuronal subset specific Pten deletion.",
+          "journal": "Genes, brain, and behavior",
+          "year": "2023",
+          "authors": [
+            "Narvaiz DA",
+            "Nolan SO",
+            "Smith GD",
+            "Holley AJ",
+            "Reynolds CD",
+            "Blandin KJ",
+            "Nguyen PH",
+            "Tran DLK",
+            "Lugo JN"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "40338175",
+          "title": "Rapamycin reduces mineral density and promotes beneficial vascular remodeling in a murine model of severe medial arterial calcification.",
+          "journal": "American journal of physiology. Heart and circulatory physiology",
+          "year": "2025",
+          "authors": [
+            "Behzadi P",
+            "Wendling AA",
+            "Cuevas RA",
+            "Crane A",
+            "Chu CC",
+            "Moorhead WJ 3rd",
+            "Wong R",
+            "Brown M",
+            "Tamakloe J",
+            "Suresh S",
+            "Salehi P",
+            "Jaffe IZ",
+            "Kuipers AL",
+            "Lukashova L",
+            "Verdelis K",
+            "St Hilaire C"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "17583372",
+          "title": "Sirolimus (rapamycin): from the soil of Easter Island to a bright future.",
+          "journal": "Journal of the American Academy of Dermatology",
+          "year": "2007",
+          "authors": [
+            "Paghdal KV",
+            "Schwartz RA"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "11135052",
+          "title": "Rapamycin in transplantation: a review of the evidence.",
+          "journal": "Kidney international",
+          "year": "2001",
+          "authors": [
+            "Saunders RN",
+            "Metcalfe MS",
+            "Nicholson ML"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "26810941",
+          "title": "New perspectives on mTOR inhibitors (rapamycin, rapalogs and TORKinibs) in transplantation.",
+          "journal": "British journal of clinical pharmacology",
+          "year": "2016",
+          "authors": [
+            "Waldner M",
+            "Fantus D",
+            "Solari M",
+            "Thomson AW"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "35428493",
+          "title": "Rapamycin induces autophagy and apoptosis in Kaposiform hemangioendothelioma primary cells in vitro.",
+          "journal": "Journal of pediatric surgery",
+          "year": "2022",
+          "authors": [
+            "Wang Z",
+            "Han Q",
+            "Wang J",
+            "Yao W",
+            "Wang L",
+            "Li K"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "41888005",
+          "title": "The rapamycin sTORy: 50-year journey from Easter Island to the frontiers of biology and medicine.",
+          "journal": "Trends in biochemical sciences",
+          "year": "2026",
+          "authors": [
+            "Xiao X",
+            "Dokudovskaya S"
+          ],
+          "source": "ncbi_pubmed"
+        }
+      ],
+      "source": "pubmed_live"
+    },
+    "pubmed_breast_cancer": {
+      "ok": true,
+      "query": "Rapamycin breast cancer",
+      "data": [
+        {
+          "pmid": "22149876",
+          "title": "Everolimus in postmenopausal hormone-receptor-positive advanced breast cancer.",
+          "journal": "The New England journal of medicine",
+          "year": "2012",
+          "authors": [
+            "Baselga J",
+            "Campone M",
+            "Piccart M",
+            "Burris HA 3rd",
+            "Rugo HS",
+            "Sahmoud T",
+            "Noguchi S",
+            "Gnant M",
+            "Pritchard KI",
+            "Lebrun F",
+            "Beck JT",
+            "Ito Y",
+            "Yardley D",
+            "Deleu I",
+            "Perez A",
+            "Bachelot T",
+            "Vittori L",
+            "Xu Z",
+            "Mukhopadhyay P",
+            "Lebwohl D",
+            "Hortobagyi GN"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "40897974",
+          "title": "Targeting dormant tumor cells to prevent recurrent breast cancer: a randomized phase 2 trial.",
+          "journal": "Nature medicine",
+          "year": "2025",
+          "authors": [
+            "DeMichele A",
+            "Clark AS",
+            "Shea E",
+            "Bayne LJ",
+            "Sterner CJ",
+            "Rohn K",
+            "Dwyer S",
+            "Pan TC",
+            "Nivar I",
+            "Chen Y",
+            "Wileyto P",
+            "Berry LR",
+            "Deluca S",
+            "Savage J",
+            "Makhlin I",
+            "Pant DK",
+            "Martin H",
+            "Egunsola A",
+            "Mears N",
+            "Goodspeed BL",
+            "Chislock EM",
+            "Graves J",
+            "Wang J",
+            "Shih N",
+            "Belka GK",
+            "Berry D",
+            "Nayak A",
+            "Feldman M",
+            "Chodosh LA"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "12864941",
+          "title": "Mammalian target of rapamycin: a new molecular target for breast cancer.",
+          "journal": "Clinical breast cancer",
+          "year": "2003",
+          "authors": [
+            "Mita MM",
+            "Mita A",
+            "Rowinsky EK"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "29664714",
+          "title": "Randomized Phase II Trial of Fulvestrant Plus Everolimus or Placebo in Postmenopausal Women With Hormone Receptor-Positive, Human Epidermal Growth Factor Receptor 2-Negative Metastatic Breast Cancer Resistant to Aromatase Inhibitor Therapy: Results of PrE0102.",
+          "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+          "year": "2018",
+          "authors": [
+            "Kornblum N",
+            "Zhao F",
+            "Manola J",
+            "Klein P",
+            "Ramaswamy B",
+            "Brufsky A",
+            "Stella PJ",
+            "Burnette B",
+            "Telli M",
+            "Makower DF",
+            "Cheema P",
+            "Truica CI",
+            "Wolff AC",
+            "Soori GS",
+            "Haley B",
+            "Wassenaar TR",
+            "Goldstein LJ",
+            "Miller KD",
+            "Sparano JA"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "23838677",
+          "title": "Role of inhibitors of mammalian target of rapamycin in the treatment of luminal breast cancer.",
+          "journal": "Anti-cancer drugs",
+          "year": "2013",
+          "authors": [
+            "Ciruelos E",
+            "Cortes-Funes H",
+            "Ghanem I",
+            "Manso L",
+            "Arteaga C"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "25231953",
+          "title": "Everolimus plus exemestane for hormone-receptor-positive, human epidermal growth factor receptor-2-negative advanced breast cancer: overall survival results from BOLERO-2†.",
+          "journal": "Annals of oncology : official journal of the European Society for Medical Oncology",
+          "year": "2014",
+          "authors": [
+            "Piccart M",
+            "Hortobagyi GN",
+            "Campone M",
+            "Pritchard KI",
+            "Lebrun F",
+            "Ito Y",
+            "Noguchi S",
+            "Perez A",
+            "Rugo HS",
+            "Deleu I",
+            "Burris HA 3rd",
+            "Provencher L",
+            "Neven P",
+            "Gnant M",
+            "Shtivelband M",
+            "Wu C",
+            "Fan J",
+            "Feng W",
+            "Taran T",
+            "Baselga J"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "24964967",
+          "title": "Targeting the mammalian target of rapamycin pathway with everolimus: implications for the management of metastatic breast cancer.",
+          "journal": "Journal of oncology pharmacy practice : official publication of the International Society of Oncology Pharmacy Practitioners",
+          "year": "2015",
+          "authors": [
+            "Ng VC",
+            "Johnson JJ",
+            "Cuellar S"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "15318929",
+          "title": "New targets for therapy in breast cancer: mammalian target of rapamycin (mTOR) antagonists.",
+          "journal": "Breast cancer research : BCR",
+          "year": "2004",
+          "authors": [
+            "Carraway H",
+            "Hidalgo M"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "23267124",
+          "title": "The Mammalian target of rapamycin inhibitors in breast cancer: current evidence and future directions.",
+          "journal": "Anticancer research",
+          "year": "2013",
+          "authors": [
+            "Malaguti P",
+            "Vari S",
+            "Cognetti F",
+            "Fabi A"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "38290972",
+          "title": "ANXA2 (annexin A2) is crucial to ATG7-mediated autophagy, leading to tumor aggressiveness in triple-negative breast cancer cells.",
+          "journal": "Autophagy",
+          "year": "2024",
+          "authors": [
+            "Koh M",
+            "Lim H",
+            "Jin H",
+            "Kim M",
+            "Hong Y",
+            "Hwang YK",
+            "Woo Y",
+            "Kim ES",
+            "Kim SY",
+            "Kim KM",
+            "Lim HK",
+            "Jung J",
+            "Kang S",
+            "Park B",
+            "Lee HB",
+            "Han W",
+            "Lee MS",
+            "Moon A"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "37199266",
+          "title": "Design of rapamycin and resveratrol coloaded liposomal formulation for breast cancer therapy.",
+          "journal": "Nanomedicine (London, England)",
+          "year": "2023",
+          "authors": [
+            "Dos Reis LR",
+            "Luiz MT",
+            "Sábio RM",
+            "Marena GD",
+            "Di Filippo LD",
+            "Duarte JL",
+            "Souza Fernandes L",
+            "Sousa Araújo VH",
+            "Oliveira Silva VA",
+            "Chorilli M"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "30542717",
+          "title": "Rapamycin enhances the sensitivity of ER‑positive breast cancer cells to tamoxifen by upregulating p73 expression.",
+          "journal": "Oncology reports",
+          "year": "2019",
+          "authors": [
+            "Zhu L",
+            "Li XX",
+            "Shi L",
+            "Wu J",
+            "Qian JY",
+            "Xia TS",
+            "Zhou WB",
+            "Sun X",
+            "Zhou XJ",
+            "Wei JF",
+            "Ding Q"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "37254633",
+          "title": "Exosomes derived from rapamycin-treated 4T1 breast cancer cells induced polarization of macrophages to M1 phenotype.",
+          "journal": "Biotechnology and applied biochemistry",
+          "year": "2023",
+          "authors": [
+            "Ghalavand M",
+            "Moradi-Chaleshtori M",
+            "Dorostkar R",
+            "Mohammadi-Yeganeh S",
+            "Hashemi SM"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "24097108",
+          "title": "New strategies to overcome resistance to mammalian target of rapamycin inhibitors in breast cancer.",
+          "journal": "Current opinion in oncology",
+          "year": "2013",
+          "authors": [
+            "Vicier C",
+            "Dieci MV",
+            "Andre F"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "29439772",
+          "title": "Stomatitis associated with mammalian target of rapamycin inhibition: A review of pathogenesis, prevention, treatment, and clinical implications for oral practice in metastatic breast cancer.",
+          "journal": "Journal of the American Dental Association (1939)",
+          "year": "2018",
+          "authors": [
+            "Chambers MS",
+            "Rugo HS",
+            "Litton JK",
+            "Meiller TF"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "32819718",
+          "title": "Rictor promotes tumor progression of rapamycin-insensitive triple-negative breast cancer cells.",
+          "journal": "Biochemical and biophysical research communications",
+          "year": "2020",
+          "authors": [
+            "Watanabe R",
+            "Miyata M",
+            "Oneyama C"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "36152730",
+          "title": "Histone deacetylase inhibitor panobinostat in combination with rapamycin confers enhanced efficacy against triple-negative breast cancer.",
+          "journal": "Experimental cell research",
+          "year": "2022",
+          "authors": [
+            "Wu K",
+            "Zhang H",
+            "Zhou L",
+            "Chen L",
+            "Mo C",
+            "Xu S",
+            "Lin J",
+            "Kong L",
+            "Chen X"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "36063263",
+          "title": "Comparison of dual mTORC1/2 inhibitor AZD8055 and mTORC1 inhibitor rapamycin on the metabolism of breast cancer cells using proton nuclear magnetic resonance spectroscopy metabolomics.",
+          "journal": "Investigational new drugs",
+          "year": "2022",
+          "authors": [
+            "Ni Z",
+            "Xu S",
+            "Yu Z",
+            "Ye Z",
+            "Li R",
+            "Chen C",
+            "Yang J",
+            "Liu H",
+            "Zhou Z",
+            "Zhang X"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "32810332",
+          "title": "MYC-binding lncRNA EPIC1 promotes AKT-mTORC1 signaling and rapamycin resistance in breast and ovarian cancer.",
+          "journal": "Molecular carcinogenesis",
+          "year": "2020",
+          "authors": [
+            "Wang Y",
+            "Zhang M",
+            "Wang Z",
+            "Guo W",
+            "Yang D"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "37225011",
+          "title": "Combination therapy with PD-1 inhibition plus rapamycin and metformin enhances anti-tumor efficacy in triple negative breast cancer.",
+          "journal": "Experimental cell research",
+          "year": "2023",
+          "authors": [
+            "Tan X",
+            "Li Y",
+            "Hou Z",
+            "Zhang M",
+            "Li L",
+            "Wei J"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "33270630",
+          "title": "The effect of a ketogenic diet and synergy with rapamycin in a mouse model of breast cancer.",
+          "journal": "PloS one",
+          "year": "2020",
+          "authors": [
+            "Zou Y",
+            "Fineberg S",
+            "Pearlman A",
+            "Feinman RD",
+            "Fine EJ"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "36453053",
+          "title": "Everolimus for Estrogen Receptor-negative Breast Cancer Prevention: A Journey Begun?",
+          "journal": "Cancer prevention research (Philadelphia, Pa.)",
+          "year": "2022",
+          "authors": [
+            "Nye L",
+            "Khan SA"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "37002630",
+          "title": "MicroRNA-122 Is More Effective than Rapamycin in Inhibition of Epithelial-mesenchymal Transition and mTOR Signaling Pathway in Triple Negative Breast Cancer.",
+          "journal": "Iranian journal of allergy, asthma, and immunology",
+          "year": "2023",
+          "authors": [
+            "Ghalavand M",
+            "Dorostkar R",
+            "Borna H",
+            "Mohammadi-Yeganeh S",
+            "Hashemi SM"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "16277888",
+          "title": "Potential role of mammalian target of rapamycin inhibitors in breast cancer therapy.",
+          "journal": "Clinical breast cancer",
+          "year": "2005",
+          "authors": [
+            "Meric-Bernstam F",
+            "Esteva FJ"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "33719211",
+          "title": "Cytotoxic effect of targeted biodegradable epothilone B and rapamycin co-loaded nanocarriers on breast cancer cells.",
+          "journal": "Journal of biomedical materials research. Part A",
+          "year": "2021",
+          "authors": [
+            "Zajdel A",
+            "Wilczok A",
+            "Jelonek K",
+            "Kaps A",
+            "Musiał-Kulik M",
+            "Kasperczyk J"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "35038970",
+          "title": "PSAT1 gene as a biomarker for targeting triple negative breast cancer in presence of Rapamycin.",
+          "journal": "Nucleosides, nucleotides & nucleic acids",
+          "year": "2022",
+          "authors": [
+            "Roshanian Bakhsh M",
+            "Peymani M",
+            "Rouhi L",
+            "Ghaedi K"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "32335998",
+          "title": "Linc-ROR promotes the progression of breast cancer and decreases the sensitivity to rapamycin through miR-194-3p targeting MECP2.",
+          "journal": "Molecular oncology",
+          "year": "2020",
+          "authors": [
+            "Zhou Q",
+            "Guo J",
+            "Huang W",
+            "Yu X",
+            "Xu C",
+            "Long X"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "14871980",
+          "title": "Determinants of rapamycin sensitivity in breast cancer cells.",
+          "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+          "year": "2004",
+          "authors": [
+            "Noh WC",
+            "Mondesire WH",
+            "Peng J",
+            "Jian W",
+            "Zhang H",
+            "Dong J",
+            "Mills GB",
+            "Hung MC",
+            "Meric-Bernstam F"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "20876744",
+          "title": "Rapamycin regulates stearoyl CoA desaturase 1 expression in breast cancer.",
+          "journal": "Molecular cancer therapeutics",
+          "year": "2010",
+          "authors": [
+            "Luyimbazi D",
+            "Akcakanat A",
+            "McAuliffe PF",
+            "Zhang L",
+            "Singh G",
+            "Gonzalez-Angulo AM",
+            "Chen H",
+            "Do KA",
+            "Zheng Y",
+            "Hung MC",
+            "Mills GB",
+            "Meric-Bernstam F"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "40742625",
+          "title": "Co-delivery of SN38 and rapamycin albumin bound nanoparticles against breast Cancer.",
+          "journal": "Daru : journal of Faculty of Pharmacy, Tehran University of Medical Sciences",
+          "year": "2025",
+          "authors": [
+            "Jamshidfar S",
+            "Ebrahimi M",
+            "Varshochian R",
+            "Goodarzi N",
+            "Firouzi J",
+            "Rezaei M",
+            "Ostad SN",
+            "Ardakani YH",
+            "Dinarvand R"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "33141044",
+          "title": "Effects of rapamycin and AZD3463 combination on apoptosis, autophagy, and cell cycle for resistance control in breast cancer.",
+          "journal": "Life sciences",
+          "year": "2021",
+          "authors": [
+            "Ozates NP",
+            "Soğutlu F",
+            "Lerminoglu F",
+            "Demir B",
+            "Gunduz C",
+            "Shademan B",
+            "Avci CB"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "15642182",
+          "title": "Determining sensitivity to rapamycin and its analogues in breast cancer patients.",
+          "journal": "Breast cancer research : BCR",
+          "year": "2005",
+          "authors": [
+            "Witton CJ"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "19778445",
+          "title": "The rapamycin-regulated gene expression signature determines prognosis for breast cancer.",
+          "journal": "Molecular cancer",
+          "year": "2009",
+          "authors": [
+            "Akcakanat A",
+            "Zhang L",
+            "Tsavachidis S",
+            "Meric-Bernstam F"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "32861747",
+          "title": "Upregulation of Akt/Raptor signaling is associated with rapamycin resistance of breast cancer cells.",
+          "journal": "Chemico-biological interactions",
+          "year": "2020",
+          "authors": [
+            "Shchegolev Y",
+            "Sorokin D",
+            "Scherbakov A",
+            "Shunaev A",
+            "Andreeva O",
+            "Mikhaevich E",
+            "Gudkova M",
+            "Bure I",
+            "Berstein L",
+            "Nemtsova M",
+            "Krasil'nikov M"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "37787375",
+          "title": "A systems biology approach and in vitro experiment indicated Rapamycin targets key cancer and cell cycle-related genes and miRNAs in triple-negative breast cancer cells.",
+          "journal": "Molecular carcinogenesis",
+          "year": "2023",
+          "authors": [
+            "Tafti A",
+            "Shojaei S",
+            "Zali H",
+            "Karima S",
+            "Mohammadi-Yeganeh S",
+            "Mondanizadeh M"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "12813467",
+          "title": "Phospholipase D confers rapamycin resistance in human breast cancer cells.",
+          "journal": "Oncogene",
+          "year": "2003",
+          "authors": [
+            "Chen Y",
+            "Zheng Y",
+            "Foster DA"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "24637218",
+          "title": "CD44-tropic polymeric nanocarrier for breast cancer targeted rapamycin chemotherapy.",
+          "journal": "Nanomedicine : nanotechnology, biology, and medicine",
+          "year": "2014",
+          "authors": [
+            "Zhao Y",
+            "Zhang T",
+            "Duan S",
+            "Davies NM",
+            "Forrest ML"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "34042422",
+          "title": "Rapamycin as a \"One-Stone-Three-Birds\" Agent for Cooperatively Enhanced Phototherapies Against Metastatic Breast Cancer.",
+          "journal": "ACS applied materials & interfaces",
+          "year": "2021",
+          "authors": [
+            "Liu P",
+            "Peng Y",
+            "Zhou Y",
+            "Shi X",
+            "Li Q",
+            "Ding J",
+            "Gao Y",
+            "Zhou W"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "28257810",
+          "title": "Anti-HER2 immunoliposomes for co-delivery of paclitaxel and rapamycin for breast cancer therapy.",
+          "journal": "European journal of pharmaceutics and biopharmaceutics : official journal of Arbeitsgemeinschaft fur Pharmazeutische Verfahrenstechnik e.V",
+          "year": "2017",
+          "authors": [
+            "Eloy JO",
+            "Petrilli R",
+            "Chesca DL",
+            "Saggioro FP",
+            "Lee RJ",
+            "Marchetti JM"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "31182914",
+          "title": "Feedback Activation of SGK3 and AKT Contributes to Rapamycin Resistance by Reactivating mTORC1/4EBP1 Axis via TSC2 in Breast Cancer.",
+          "journal": "International journal of biological sciences",
+          "year": "2019",
+          "authors": [
+            "Wang H",
+            "Huang F",
+            "Zhang Z",
+            "Wang P",
+            "Luo Y",
+            "Li H",
+            "Li N",
+            "Wang J",
+            "Zhou J",
+            "Wang Y",
+            "Li S"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "32356448",
+          "title": "Investigation of the effects of rapamycin on the mTOR pathway and apoptosis in metastatic and non-metastatic human breast cancer cell lines.",
+          "journal": "Bratislavske lekarske listy",
+          "year": "2020",
+          "authors": [
+            "Ekizceli G",
+            "Uluer ET",
+            "Inan S"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "30154572",
+          "title": "Investigation of Novel Regulation of N-myristoyltransferase by Mammalian Target of Rapamycin in Breast Cancer Cells.",
+          "journal": "Scientific reports",
+          "year": "2018",
+          "authors": [
+            "Jacquier M",
+            "Kuriakose S",
+            "Bhardwaj A",
+            "Zhang Y",
+            "Shrivastav A",
+            "Portet S",
+            "Varma Shrivastav S"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "34360785",
+          "title": "Rapamycin Plus Doxycycline Combination Affects Growth Arrest and Selective Autophagy-Dependent Cell Death in Breast Cancer Cells.",
+          "journal": "International journal of molecular sciences",
+          "year": "2021",
+          "authors": [
+            "Dankó T",
+            "Petővári G",
+            "Sztankovics D",
+            "Moldvai D",
+            "Raffay R",
+            "Lőrincz P",
+            "Visnovitz T",
+            "Zsiros V",
+            "Barna G",
+            "Márk Á",
+            "Krencz I",
+            "Sebestyén A"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "31927993",
+          "title": "Nanotoxicology of an Elastin-like Polypeptide Rapamycin Formulation for Breast Cancer.",
+          "journal": "Biomacromolecules",
+          "year": "2020",
+          "authors": [
+            "Peddi S",
+            "Roberts SK",
+            "MacKay JA"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "21690228",
+          "title": "Combinatorial effects of lapatinib and rapamycin in triple-negative breast cancer cells.",
+          "journal": "Molecular cancer therapeutics",
+          "year": "2011",
+          "authors": [
+            "Liu T",
+            "Yacoub R",
+            "Taliaferro-Smith LD",
+            "Sun SY",
+            "Graham TR",
+            "Dolan R",
+            "Lobo C",
+            "Tighiouart M",
+            "Yang L",
+            "Adams A",
+            "O'Regan RM"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "34813306",
+          "title": "Bisdemethoxycurcumin Promotes Apoptosis and Inhibits the Epithelial-Mesenchymal Transition through the Inhibition of the G-Protein-Coupled Receptor 161/Mammalian Target of Rapamycin Signaling Pathway in Triple Negative Breast Cancer Cells.",
+          "journal": "Journal of agricultural and food chemistry",
+          "year": "2021",
+          "authors": [
+            "Chou CH",
+            "Wang HK",
+            "Lin YC",
+            "Tsai DH",
+            "Lu MT",
+            "Ho CT",
+            "Hseu YC",
+            "Yang HL",
+            "Way TD"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "28639903",
+          "title": "Targeting the mTOR pathway in breast cancer.",
+          "journal": "Tumour biology : the journal of the International Society for Oncodevelopmental Biology and Medicine",
+          "year": "2017",
+          "authors": [
+            "Liu J",
+            "Li HQ",
+            "Zhou FX",
+            "Yu JW",
+            "Sun L",
+            "Han ZH"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "17109887",
+          "title": "Rapamycin inhibits proliferation of estrogen-receptor-positive breast cancer cells.",
+          "journal": "The Journal of surgical research",
+          "year": "2007",
+          "authors": [
+            "Chang SB",
+            "Miron P",
+            "Miron A",
+            "Iglehart JD"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "16985050",
+          "title": "Cyclin D3 is down-regulated by rapamycin in HER-2-overexpressing breast cancer cells.",
+          "journal": "Molecular cancer therapeutics",
+          "year": "2006",
+          "authors": [
+            "García-Morales P",
+            "Hernando E",
+            "Carrasco-García E",
+            "Menéndez-Gutierrez MP",
+            "Saceda M",
+            "Martínez-Lacaci I"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "26036652",
+          "title": "Co-delivery of rapamycin- and piperine-loaded polymeric nanoparticles for breast cancer treatment.",
+          "journal": "Drug delivery",
+          "year": "2016",
+          "authors": [
+            "Katiyar SS",
+            "Muntimadugu E",
+            "Rafeeqi TA",
+            "Domb AJ",
+            "Khan W"
+          ],
+          "source": "ncbi_pubmed"
+        }
+      ],
+      "source": "pubmed_live"
+    }
+  },
+  "errors": []
+}

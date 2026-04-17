@@ -1,0 +1,1459 @@
+{
+  "drug_id": 1811,
+  "drug_name": "Dactinomycin",
+  "category": "Approved",
+  "combined_score": 13.5,
+  "timestamp": "2026-04-15 19:40:00",
+  "data_collected": {
+    "basic_info": {
+      "ok": true,
+      "data": {
+        "drug_id": 1811,
+        "drug_name": "Dactinomycin",
+        "target": "RNA polymerase",
+        "pathway": "Other",
+        "predicted_ic50": -2.999836,
+        "sensitivity_rate": 1.0,
+        "validation_score": 7.85,
+        "safety_score": 7.0,
+        "combined_score": 13.5,
+        "final_rank": 6,
+        "category": "Approved",
+        "clinical_bucket": "Breast cancer current/relevant use",
+        "known_brca": true,
+        "target_expressed": true,
+        "brca_pathway": false,
+        "survival_sig": true,
+        "recommendation_note": "Breast-cancer relevant and ADMET-screened. Suitable as a primary shortlist candidate."
+      }
+    },
+    "side_effects": {
+      "ok": true,
+      "data": [
+        {
+          "event": "OFF LABEL USE",
+          "count": 278,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "FEBRILE NEUTROPENIA",
+          "count": 191,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "PRODUCT USE IN UNAPPROVED INDICATION",
+          "count": 131,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "NEUTROPENIA",
+          "count": 127,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "DRUG INEFFECTIVE",
+          "count": 115,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "VOMITING",
+          "count": 106,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "THROMBOCYTOPENIA",
+          "count": 102,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "DISEASE PROGRESSION",
+          "count": 87,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "PYREXIA",
+          "count": 86,
+          "source": "openfda_faers"
+        },
+        {
+          "event": "ANAEMIA",
+          "count": 85,
+          "source": "openfda_faers"
+        }
+      ],
+      "source": "openfda_live"
+    },
+    "trials": {
+      "ok": true,
+      "data": [
+        {
+          "nct_id": "NCT02567435",
+          "title": "Combination Chemotherapy With or Without Temsirolimus in Treating Patients With Intermediate Risk Rhabdomyosarcoma",
+          "phase": "PHASE3",
+          "status": "ACTIVE_NOT_RECRUITING",
+          "conditions": [
+            "Alveolar Rhabdomyosarcoma",
+            "Botryoid-Type Embryonal Rhabdomyosarcoma",
+            "Embryonal Rhabdomyosarcoma",
+            "Rhabdomyosarcoma",
+            "Sclerosing Rhabdomyosarcoma",
+            "Spindle Cell Rhabdomyosarcoma"
+          ],
+          "lead_sponsor": "National Cancer Institute (NCI)",
+          "source": "clinicaltrials_gov_v2"
+        },
+        {
+          "nct_id": "NCT01535053",
+          "title": "Dactinomycin or Methotrexate in Treating Patients With Low-Risk Gestational Trophoblastic Neoplasia",
+          "phase": "PHASE3",
+          "status": "COMPLETED",
+          "conditions": [
+            "Choriocarcinoma",
+            "FIGO Stage I Gestational Trophoblastic Tumor",
+            "FIGO Stage II Gestational Trophoblastic Tumor",
+            "FIGO Stage III Gestational Trophoblastic Tumor",
+            "Hydatidiform Mole"
+          ],
+          "lead_sponsor": "GOG Foundation",
+          "source": "clinicaltrials_gov_v2"
+        }
+      ],
+      "source": "clinicaltrials_live"
+    },
+    "targets": {
+      "ok": true,
+      "data": [
+        {
+          "target": "RNA polymerase",
+          "source": "local_frc_step6_7"
+        }
+      ]
+    },
+    "pathways": {
+      "ok": true,
+      "data": [
+        {
+          "pathway": "Other",
+          "source": "local_frc_step6_7"
+        }
+      ]
+    },
+    "pubmed_general": {
+      "ok": true,
+      "query": "Dactinomycin",
+      "data": [
+        {
+          "pmid": "32452083",
+          "title": "Dactinomycin in acute myeloid leukemia with NPM1 mutations.",
+          "journal": "European journal of haematology",
+          "year": "2020",
+          "authors": [
+            "Beziat G",
+            "Tavitian S",
+            "Bertoli S",
+            "Huguet F",
+            "Largeaud L",
+            "Luquet I",
+            "Vergez F",
+            "Rieu JB",
+            "Bories P",
+            "Delabesse E",
+            "Récher C"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "1863544",
+          "title": "Dactinomycin potentiation of radiation pneumonitis: a forgotten interaction.",
+          "journal": "Pediatric hematology and oncology",
+          "year": "1991",
+          "authors": [
+            "Cohen IJ",
+            "Loven D",
+            "Schoenfeld T",
+            "Sandbank J",
+            "Kaplinsky C",
+            "Yaniv Y",
+            "Jaber L",
+            "Zaizov R"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "4283937",
+          "title": "Dactinomycin.",
+          "journal": "The Medical letter on drugs and therapeutics",
+          "year": "1965",
+          "authors": [],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "6824271",
+          "title": "Correction: Dactinomycin dose.",
+          "journal": "Annals of internal medicine",
+          "year": "1983",
+          "authors": [
+            "Adams JD",
+            "Wilson JP"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "2998273",
+          "title": "[Importance of dactinomycin in the current therapy of tumors].",
+          "journal": "Antibiotiki i meditsinskaia biotekhnologiia = Antibiotics and medical biotechnology",
+          "year": "1985",
+          "authors": [
+            "Terent'eva TG",
+            "Egorov LV",
+            "Perevodchikova NI"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "62702",
+          "title": "Actinomycins.",
+          "journal": "IARC monographs on the evaluation of the carcinogenic risk of chemicals to man",
+          "year": "1976",
+          "authors": [],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "4289652",
+          "title": "Dactinomycin in Wilms' tumor.",
+          "journal": "JAMA",
+          "year": "1967",
+          "authors": [
+            "Burgert EO Jr",
+            "Glidewell O"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "32366058",
+          "title": "Synergy between Photodynamic Therapy and Dactinomycin Chemotherapy in 2D and 3D Ovarian Cancer Cell Cultures.",
+          "journal": "International journal of molecular sciences",
+          "year": "2020",
+          "authors": [
+            "Hadi LM",
+            "Yaghini E",
+            "MacRobert AJ",
+            "Loizidou M"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "8153053",
+          "title": "Dactinomycin analogues as neurokinin-2 receptor antagonists.",
+          "journal": "Pharmacology & toxicology",
+          "year": "1993",
+          "authors": [
+            "Auberson S",
+            "Mauger AB",
+            "Lundberg JM"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "32141676",
+          "title": "Risk factors for second-line dactinomycin failure after methotrexate treatment for low-risk gestational trophoblastic neoplasia: a retrospective study.",
+          "journal": "BJOG : an international journal of obstetrics and gynaecology",
+          "year": "2020",
+          "authors": [
+            "Hoeijmakers YM",
+            "Sweep F",
+            "Lok C",
+            "Ottevanger PB"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "17140264",
+          "title": "Dactinomycin impairs cellular respiration and reduces accompanying ATP formation.",
+          "journal": "Molecular pharmaceutics",
+          "year": "2006",
+          "authors": [
+            "Tao Z",
+            "Ahmad SS",
+            "Penefsky HS",
+            "Goodisman J",
+            "Souid AK"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "17014653",
+          "title": "Dactinomycin-induced, severe lichenoid eruption in a child.",
+          "journal": "Pediatric dermatology",
+          "year": "2006",
+          "authors": [
+            "Ridola V",
+            "Mahé E",
+            "Fawaz O",
+            "Galmiche L",
+            "Patte C",
+            "Grill J"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "1316711",
+          "title": "Selective inhibition by dactinomycin of NANC sensory bronchoconstriction and [125I]NKA binding due to NK-2 receptor antagonism.",
+          "journal": "Acta physiologica Scandinavica",
+          "year": "1992",
+          "authors": [
+            "Lou YP",
+            "Delay-Goyet P",
+            "Lundberg JM"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "4286164",
+          "title": "Role of dactinomycin in the improved survival of children with Wilms' tumor.",
+          "journal": "JAMA",
+          "year": "1966",
+          "authors": [
+            "Fernbach DJ",
+            "Martyn DT"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "15262143",
+          "title": "Single-agent pulse dactinomycin has only modest activity for methotrexate-resistant gestational trophoblastic neoplasia.",
+          "journal": "Gynecologic oncology",
+          "year": "2004",
+          "authors": [
+            "Chen LM",
+            "Lengyel ER",
+            "Bethan Powell C"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "29629964",
+          "title": "Efficacy and Safety of Second-Line 5-Day Dactinomycin in Case of Methotrexate Failure for Gestational Trophoblastic Neoplasia.",
+          "journal": "International journal of gynecological cancer : official journal of the International Gynecological Cancer Society",
+          "year": "2018",
+          "authors": [
+            "Prouvot C",
+            "Golfier F",
+            "Massardier J",
+            "You B",
+            "Lotz JP",
+            "Patrier S",
+            "Devouassoux M",
+            "Schott AM",
+            "Hajri T",
+            "Bolze PA"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "3410898",
+          "title": "Reversed-phase high-performance liquid chromatography of dactinomycin.",
+          "journal": "Journal of chromatography",
+          "year": "1988",
+          "authors": [
+            "Schneebaum S",
+            "Bies JM",
+            "Briele HA"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "4300087",
+          "title": "[Combined dactinomycin and radiotherapy in the treatment of nephroblastoma of children and its metastases].",
+          "journal": "Annales de radiologie",
+          "year": "1967",
+          "authors": [
+            "Schweisguth O",
+            "Schlienger MJ"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "9776993",
+          "title": "Randomized controlled trial of doxorubicin versus dactinomycin in a multiagent protocol for treatment of dogs with malignant lymphoma.",
+          "journal": "Journal of the American Veterinary Medical Association",
+          "year": "1998",
+          "authors": [
+            "Khanna C",
+            "Lund EM",
+            "Redic KA",
+            "Hayden DW",
+            "Bell FW",
+            "Goulland EL",
+            "Klausner JS"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "4157816",
+          "title": "Actinomycin and nucleic acid function.",
+          "journal": "Progress in nucleic acid research and molecular biology",
+          "year": "1964",
+          "authors": [
+            "Reich E",
+            "Goldberg IH"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "15039909",
+          "title": "Dactinomycin-induced veno-occlusive disease in rats. The hepatoprotective action of amifostine. Evaluation in a light and electron microscope.",
+          "journal": "Folia morphologica",
+          "year": "2004",
+          "authors": [
+            "Borowska H",
+            "Arciszewska E",
+            "Czauderna P",
+            "Sawicki B"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "4298260",
+          "title": "Single versus multiple dose dactinomycin therapy of Wilms's tumor. A controlled co-operative study conducted by the Children's Cancer Study Group A (formerly Acute Leukemia Co-operative Chemotherapy Group A).",
+          "journal": "The New England journal of medicine",
+          "year": "1968",
+          "authors": [
+            "Wolff JA",
+            "Newton WA Jr",
+            "Krivit W",
+            "D'Angio GJ"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "7700187",
+          "title": "Unusual cutaneous toxicity following treatment with dactinomycin: a report of two cases.",
+          "journal": "Medical and pediatric oncology",
+          "year": "1995",
+          "authors": [
+            "Kanwar VS",
+            "Gajjar A",
+            "Ribeiro RC",
+            "Bowman L",
+            "Parham DM",
+            "Jenkins JJ 3rd"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "2563091",
+          "title": "Hepatotoxicity of actinomycin-D.",
+          "journal": "Lancet (London, England)",
+          "year": "1989",
+          "authors": [
+            "Pritchard J",
+            "Raine J",
+            "Wallendszus K"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "21981942",
+          "title": "Spectroscopic studies of dactinomycin and vinorelbine binding to deoxyribonucleic acid and chromatin.",
+          "journal": "Spectrochimica acta. Part A, Molecular and biomolecular spectroscopy",
+          "year": "2011",
+          "authors": [
+            "Rabbani-Chadegani A",
+            "Keyvani-Ghamsari S",
+            "Zarkar N"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "8388076",
+          "title": "Severe acne and hyperandrogenemia following dactinomycin.",
+          "journal": "Medical and pediatric oncology",
+          "year": "1993",
+          "authors": [
+            "Blatt J",
+            "Lee PA"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "4286315",
+          "title": "Evaluation of an antineoplastic agent. Dactinomycin (Cosmegen).",
+          "journal": "JAMA",
+          "year": "1966",
+          "authors": [],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "1004572",
+          "title": "Suppression of murine lupus erythematosus by dactinomycin.",
+          "journal": "Nature",
+          "year": "1976",
+          "authors": [
+            "Gabrielsen AE",
+            "Lubert AS",
+            "Olsen CT"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "2545973",
+          "title": "Alternating methotrexate and dactinomycin in nonmetastatic gestational trophoblastic disease.",
+          "journal": "Journal of surgical oncology",
+          "year": "1989",
+          "authors": [
+            "Rose PG",
+            "Piver MS"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "1723587",
+          "title": "[Mechanism of actinomycin biosynthesis].",
+          "journal": "Antibiotiki i khimioterapiia = Antibiotics and chemoterapy [sic]",
+          "year": "1991",
+          "authors": [
+            "Orlova TI"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "4289203",
+          "title": "Different effects of chloramphenicol, dactinomycin, and streptovitacin A on synthesis of tumor and virion antigens in SV40 virus-infected cells.",
+          "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+          "year": "1966",
+          "authors": [
+            "Sabin AB"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "5450766",
+          "title": "[Dactinomycin inhibition in cytokinin-stimulted protein synthesis in isolated chloroplasts].",
+          "journal": "Tsitologiia",
+          "year": "1970",
+          "authors": [
+            "Kulaeva ON",
+            "Romanko EG"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "4142853",
+          "title": "[Actinomycin D-o].",
+          "journal": "Antibiotiki",
+          "year": "1974",
+          "authors": [
+            "Devan ML",
+            "Orlova TI",
+            "Silaev AB"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "6447568",
+          "title": "Dactinomycin treatment of murine lupus erythematosus. II. Dose and schedule of administration.",
+          "journal": "Clinical immunology and immunopathology",
+          "year": "1980",
+          "authors": [
+            "Gabrielsen AE",
+            "Olsen CT"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "3409169",
+          "title": "Methotrexate-induced resistance to dactinomycin in choriocarcinoma.",
+          "journal": "Cancer",
+          "year": "1988",
+          "authors": [
+            "Goto S",
+            "Okayama Y",
+            "Fan C",
+            "Ueda S",
+            "Saito M",
+            "Furuhashi Y",
+            "Ishizuka T",
+            "Tomoda Y"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "4763309",
+          "title": "Drug entrapment in liposomes.",
+          "journal": "FEBS letters",
+          "year": "1973",
+          "authors": [
+            "Gregoriadis G"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "4702172",
+          "title": "The influence of dactinomycin on compensatory renal hypertrophy.",
+          "journal": "The Journal of surgical research",
+          "year": "1973",
+          "authors": [
+            "Tynberg PL",
+            "Dekernion JB",
+            "Persky L"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "5452813",
+          "title": "Conformation of actinomycin-D.",
+          "journal": "Nature",
+          "year": "1970",
+          "authors": [
+            "Conti F",
+            "De Santis P"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "12710217",
+          "title": "Flow cytometric methods for detection and quantification of apoptosis.",
+          "journal": "Methods in molecular medicine",
+          "year": "2003",
+          "authors": [
+            "Steensma DP",
+            "Timm M",
+            "Witzig TE"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "5142966",
+          "title": "Effect of dactinomycin on phenobarbital-induced ultrastructural changes in rat hepatocytes.",
+          "journal": "Pathologia Europaea",
+          "year": "1971",
+          "authors": [
+            "Garg BD",
+            "Khandekar JD",
+            "Tuchweber B",
+            "Kovacs K"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "5568790",
+          "title": "Effect of dactinomycin on the acute toxicity and brain uptake of morphine.",
+          "journal": "The Journal of pharmacology and experimental therapeutics",
+          "year": "1971",
+          "authors": [
+            "Loh HH",
+            "Shen FH",
+            "Way EL"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "4348682",
+          "title": "[Results of cooperative clinical studies of the antineoplastic antibiotic dactinomycin].",
+          "journal": "Antibiotiki",
+          "year": "1972",
+          "authors": [
+            "Titievskaia VV",
+            "Gorbunova VA",
+            "Akopiants SM",
+            "Budkevich IuV",
+            "Kuchkarev RN"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "5500005",
+          "title": "Aflatoxin round-up.",
+          "journal": "Food and cosmetics toxicology",
+          "year": "1970",
+          "authors": [],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "4961255",
+          "title": "Dactinomycin: relative resistance of green monkey kidney cell cultures to its action.",
+          "journal": "Proceedings of the Society for Experimental Biology and Medicine. Society for Experimental Biology and Medicine (New York, N.Y.)",
+          "year": "1967",
+          "authors": [
+            "Wong KT",
+            "Baron S",
+            "Levy HB",
+            "Ward TG"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "4142574",
+          "title": "The interaction of actinomycin with DNA.",
+          "journal": "Antibiotics and chemotherapy",
+          "year": "1971",
+          "authors": [
+            "Goldberg IH"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "23987072",
+          "title": "[Photo-activity of actinomycins].",
+          "journal": "Biomeditsinskaia khimiia",
+          "year": "2013",
+          "authors": [
+            "Vekshin NL"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "15760322",
+          "title": "Comparison of pulse methotrexate and pulse dactinomycin in the treatment of low-risk gestational trophoblastic neoplasia.",
+          "journal": "The Australian & New Zealand journal of obstetrics & gynaecology",
+          "year": "2005",
+          "authors": [
+            "Gilani MM",
+            "Yarandi F",
+            "Eftekhar Z",
+            "Hanjani P"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "5549187",
+          "title": "Effects of hormones, methotrexate, and dactinomycin on benign trophoblast.",
+          "journal": "American journal of obstetrics and gynecology",
+          "year": "1971",
+          "authors": [
+            "Koide Y",
+            "Aoki T",
+            "Hreshchyshyn MM"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "17931696",
+          "title": "Treatment for low-risk gestational trophoblastic disease: comparison of single-agent methotrexate, dactinomycin and combination regimens.",
+          "journal": "Gynecologic oncology",
+          "year": "2008",
+          "authors": [
+            "Abrão RA",
+            "de Andrade JM",
+            "Tiezzi DG",
+            "Marana HR",
+            "Candido dos Reis FJ",
+            "Clagnan WS"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "4166933",
+          "title": "Wilms' tumor.",
+          "journal": "The Journal of the American Osteopathic Association",
+          "year": "1966",
+          "authors": [
+            "Cohen BL"
+          ],
+          "source": "ncbi_pubmed"
+        }
+      ],
+      "source": "pubmed_live"
+    },
+    "pubmed_breast_cancer": {
+      "ok": true,
+      "query": "Dactinomycin breast cancer",
+      "data": [
+        {
+          "pmid": "19620485",
+          "title": "Radiation dose and breast cancer risk in the childhood cancer survivor study.",
+          "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+          "year": "2009",
+          "authors": [
+            "Inskip PD",
+            "Robison LL",
+            "Stovall M",
+            "Smith SA",
+            "Hammond S",
+            "Mertens AC",
+            "Whitton JA",
+            "Diller L",
+            "Kenney L",
+            "Donaldson SS",
+            "Meadows AT",
+            "Neglia JP"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "4181438",
+          "title": "[Cytostatic antibiotics].",
+          "journal": "Ergebnisse der inneren Medizin und Kinderheilkunde",
+          "year": "1963",
+          "authors": [
+            "Schmidt CG"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "35388653",
+          "title": "Genome-wide expression reveals potential biomarkers in breast cancer bone metastasis.",
+          "journal": "Journal of integrative bioinformatics",
+          "year": "2022",
+          "authors": [
+            "Singh Y",
+            "Subbarao N",
+            "Jaimini A",
+            "Hathaway QA",
+            "Kunovac A",
+            "Erickson B",
+            "Swarup V",
+            "Singh HN"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "4910367",
+          "title": "Inhibition of tumorigenesis.",
+          "journal": "Progress in experimental tumor research",
+          "year": "1969",
+          "authors": [
+            "Van Duuren BL",
+            "Melchionne S"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "11687148",
+          "title": "Systemic therapy for treating locoregional recurrence in women with breast cancer.",
+          "journal": "The Cochrane database of systematic reviews",
+          "year": "2001",
+          "authors": [
+            "Rauschecker H",
+            "Clarke M",
+            "Gatzemeier W",
+            "Recht A"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "40032551",
+          "title": "Structural and Functional Insights into Targeting GCCG Sites in the EGFR Promoter by Two DNA Intercalators to Inhibit Breast Cancer Metastasis.",
+          "journal": "Journal of medicinal chemistry",
+          "year": "2025",
+          "authors": [
+            "Chang CC",
+            "Li HJ",
+            "Satange R",
+            "Lin SM",
+            "Chen TL",
+            "Lin CC",
+            "Neidle S",
+            "Hou MH"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "34402683",
+          "title": "circRNA RPPH1 Facilitates the Aggravation of Breast Cancer Development by Regulating miR-542-3p/ARHGAP1 Pathway.",
+          "journal": "Cancer biotherapy & radiopharmaceuticals",
+          "year": "2022",
+          "authors": [
+            "Qi L",
+            "Sun B",
+            "Yang B",
+            "Lu S"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "37997385",
+          "title": "Actinomycin D synergizes with Doxorubicin in triple-negative breast cancer by inducing P53-dependent cell apoptosis.",
+          "journal": "Carcinogenesis",
+          "year": "2024",
+          "authors": [
+            "Yang H",
+            "Li S",
+            "Li W",
+            "Yang Y",
+            "Zhang Y",
+            "Zhang S",
+            "Hao Y",
+            "Cao W",
+            "Xu F",
+            "Wang H",
+            "Du G",
+            "Wang J"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "28373426",
+          "title": "Actinomycin D Down-regulates SOX2 Expression and Induces Death in Breast Cancer Stem Cells.",
+          "journal": "Anticancer research",
+          "year": "2017",
+          "authors": [
+            "Das T",
+            "Nair RR",
+            "Green R",
+            "Padhee S",
+            "Howell M",
+            "Banerjee J",
+            "Mohapatra SS",
+            "Mohapatra S"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "1622637",
+          "title": "Cytotoxic treatment of metastatic breast cancer. Which drugs and drug combinations to use?",
+          "journal": "Acta oncologica (Stockholm, Sweden)",
+          "year": "1992",
+          "authors": [
+            "Pfeiffer P",
+            "Cold S",
+            "Rose C"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "3841627",
+          "title": "[Chemotherapy of metastasizing breast cancer].",
+          "journal": "Wiener medizinische Wochenschrift (1946)",
+          "year": "1985",
+          "authors": [
+            "Wascher H"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "1070004",
+          "title": "Hormone responsive human breast cancer in long-term tissue culture: effect of insulin.",
+          "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+          "year": "1976",
+          "authors": [
+            "Osborne CK",
+            "Bolan G",
+            "Monaco ME",
+            "Lippman ME"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "15481789",
+          "title": "Augmented release of matrix metalloproteinase-9 by PKC activation in organotypic cultures of human breast cancer and adjacent normal breast tissue and fibroadenoma.",
+          "journal": "The Chinese journal of physiology",
+          "year": "2004",
+          "authors": [
+            "Wu TT",
+            "Tsai JH",
+            "Tsai JH",
+            "Kuo SJ",
+            "Yu SY",
+            "Huang CY",
+            "Hsieh HY",
+            "Hsieh YS",
+            "Liu JY"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "6988916",
+          "title": "Studies on mechanisms of estrogen and antiestrogen action in human breast cancer.",
+          "journal": "Recent results in cancer research. Fortschritte der Krebsforschung. Progres dans les recherches sur le cancer",
+          "year": "1980",
+          "authors": [
+            "Horwitz KB",
+            "McGuire WL"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "30925115",
+          "title": "Carbon nanotube-delivered iC9 suicide gene therapy for killing breast cancer cells in vitro.",
+          "journal": "Nanomedicine (London, England)",
+          "year": "2019",
+          "authors": [
+            "Mohseni-Dargah M",
+            "Akbari-Birgani S",
+            "Madadi Z",
+            "Saghatchi F",
+            "Kaboudin B"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "16495219",
+          "title": "Suppression of Wnt signaling by the green tea compound (-)-epigallocatechin 3-gallate (EGCG) in invasive breast cancer cells. Requirement of the transcriptional repressor HBP1.",
+          "journal": "The Journal of biological chemistry",
+          "year": "2006",
+          "authors": [
+            "Kim J",
+            "Zhang X",
+            "Rieger-Christ KM",
+            "Summerhayes IC",
+            "Wazer DE",
+            "Paulson KE",
+            "Yee AS"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "12771030",
+          "title": "Resveratrol activates adenylyl-cyclase in human breast cancer cells: a novel, estrogen receptor-independent cytostatic mechanism.",
+          "journal": "Carcinogenesis",
+          "year": "2003",
+          "authors": [
+            "El-Mowafy AM",
+            "Alkhalaf M"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "24433040",
+          "title": "Prolactin/Stat5 and androgen R1881 coactivate carboxypeptidase-D gene in breast cancer cells.",
+          "journal": "Molecular endocrinology (Baltimore, Md.)",
+          "year": "2014",
+          "authors": [
+            "Koirala S",
+            "Thomas LN",
+            "Too CK"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "14580325",
+          "title": "MnSOD up-regulates maspin tumor suppressor gene expression in human breast and prostate cancer cells.",
+          "journal": "Antioxidants & redox signaling",
+          "year": "2003",
+          "authors": [
+            "Duan H",
+            "Zhang HJ",
+            "Yang JQ",
+            "Oberley LW",
+            "Futscher BW",
+            "Domann FE"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "18448327",
+          "title": "Enzastaurin renders MCF-7 breast cancer cells sensitive to radiation through reversal of radiation-induced activation of protein kinase C.",
+          "journal": "European journal of cancer (Oxford, England : 1990)",
+          "year": "2008",
+          "authors": [
+            "Jasinski P",
+            "Terai K",
+            "Zwolak P",
+            "Dudek AZ"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "23725182",
+          "title": "Immunostimulating effect of a well-known Thai folkloric remedy in breast cancer patients.",
+          "journal": "Asian Pacific journal of cancer prevention : APJCP",
+          "year": "2013",
+          "authors": [
+            "Thisoda P",
+            "Ketsa-Ard K",
+            "Thongprasert S",
+            "Vongsakul M",
+            "Picha P",
+            "Karbwang J",
+            "Na-Bangchang K"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "9307298",
+          "title": "Growth inhibition of human breast cancer cells by 1,25-dihydroxyvitamin D3 is accompanied by induction of apolipoprotein D expression.",
+          "journal": "Cancer research",
+          "year": "1997",
+          "authors": [
+            "López-Boado YS",
+            "Puente XS",
+            "Alvarez S",
+            "Tolivia J",
+            "Binderup L",
+            "López-Otín C"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "3010982",
+          "title": "Mitoxantrone affects topoisomerase activities in human breast cancer cells.",
+          "journal": "Biochemical and biophysical research communications",
+          "year": "1986",
+          "authors": [
+            "Crespi MD",
+            "Ivanier SE",
+            "Genovese J",
+            "Baldi A"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "19749791",
+          "title": "Repression of SHP-1 expression by p53 leads to trkA tyrosine phosphorylation and suppression of breast cancer cell proliferation.",
+          "journal": "Oncogene",
+          "year": "2009",
+          "authors": [
+            "Montano X"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "24231949",
+          "title": "p53-Based cyclotherapy: exploiting the 'guardian of the genome' to protect normal cells from cytotoxic therapy.",
+          "journal": "British journal of cancer",
+          "year": "2013",
+          "authors": [
+            "Rao B",
+            "Lain S",
+            "Thompson AM"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "24321297",
+          "title": "Regulation of PMP22 mRNA by G3BP1 affects cell proliferation in breast cancer cells.",
+          "journal": "Molecular cancer",
+          "year": "2013",
+          "authors": [
+            "Winslow S",
+            "Leandersson K",
+            "Larsson C"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "22647687",
+          "title": "Transforming growth factor-β1 attenuates junctional adhesion molecule-A and contributes to breast cancer cell invasion.",
+          "journal": "European journal of cancer (Oxford, England : 1990)",
+          "year": "2012",
+          "authors": [
+            "Wang Y",
+            "Lui WY"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "10944450",
+          "title": "WISP-2 as a novel estrogen-responsive gene in human breast cancer cells.",
+          "journal": "Biochemical and biophysical research communications",
+          "year": "2000",
+          "authors": [
+            "Inadera H",
+            "Hashimoto S",
+            "Dong HY",
+            "Suzuki T",
+            "Nagai S",
+            "Yamashita T",
+            "Toyoda N",
+            "Matsushima K"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "2036245",
+          "title": "Levamisole in the treatment of advanced breast cancer. A ten-year follow-up of a randomized study.",
+          "journal": "Acta oncologica (Stockholm, Sweden)",
+          "year": "1991",
+          "authors": [
+            "Klefström P",
+            "Nuortio L"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "322847",
+          "title": "Review of local soft tissue recurrence of breast cancer irradiated with and without actinomycin-D.",
+          "journal": "Cancer",
+          "year": "1977",
+          "authors": [
+            "Olson CE",
+            "Ansfield FJ",
+            "Richards MJ",
+            "Ramirez G",
+            "Davis HL"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "8770893",
+          "title": "Bimodal regulation of epidermal growth factor receptor by estrogen in breast cancer cells.",
+          "journal": "Endocrinology",
+          "year": "1996",
+          "authors": [
+            "Yarden RI",
+            "Lauber AH",
+            "El-Ashry D",
+            "Chrysogelos SA"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "19264808",
+          "title": "Estradiol downregulates miR-21 expression and increases miR-21 target gene expression in MCF-7 breast cancer cells.",
+          "journal": "Nucleic acids research",
+          "year": "2009",
+          "authors": [
+            "Wickramasinghe NS",
+            "Manavalan TT",
+            "Dougherty SM",
+            "Riggs KA",
+            "Li Y",
+            "Klinge CM"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "29614107",
+          "title": "Functional disruption of the Golgi apparatus protein ARF1 sensitizes MDA-MB-231 breast cancer cells to the antitumor drugs Actinomycin D and Vinblastine through ERK and AKT signaling.",
+          "journal": "PloS one",
+          "year": "2018",
+          "authors": [
+            "Luchsinger C",
+            "Aguilar M",
+            "Burgos PV",
+            "Ehrenfeld P",
+            "Mardones GA"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "3045126",
+          "title": "Transcriptional regulation of c-myc oncogene expression by estrogen in hormone-responsive human breast cancer cells.",
+          "journal": "The Journal of biological chemistry",
+          "year": "1988",
+          "authors": [
+            "Dubik D",
+            "Shiu RP"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "11193846",
+          "title": "Downregulation of VPAC1R expression in breast cancer cell lines.",
+          "journal": "Annals of the New York Academy of Sciences",
+          "year": "2000",
+          "authors": [
+            "Madsen B",
+            "Georg B",
+            "Madsen MW",
+            "Fahrenkrug J"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "10597248",
+          "title": "Regulation of BRCA1 by protein degradation.",
+          "journal": "Oncogene",
+          "year": "1999",
+          "authors": [
+            "Blagosklonny MV",
+            "An WG",
+            "Melillo G",
+            "Nguyen P",
+            "Trepel JB",
+            "Neckers LM"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "31137656",
+          "title": "Actinomycin V Inhibits Migration and Invasion via Suppressing Snail/Slug-Mediated Epithelial-Mesenchymal Transition Progression in Human Breast Cancer MDA-MB-231 Cells In Vitro.",
+          "journal": "Marine drugs",
+          "year": "2019",
+          "authors": [
+            "Lin S",
+            "Zhang C",
+            "Liu F",
+            "Ma J",
+            "Jia F",
+            "Han Z",
+            "Xie W",
+            "Li X"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "31305144",
+          "title": "p-Terphenyls and actinomycins from a Streptomyces sp. associated with the larva of mud dauber wasp.",
+          "journal": "Natural product research",
+          "year": "2021",
+          "authors": [
+            "Lu DD",
+            "Ren JW",
+            "Du QQ",
+            "Song YJ",
+            "Lin SQ",
+            "Li X",
+            "Li EW",
+            "Xie WD"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "11786386",
+          "title": "Role of Smad1 and Smad4 proteins in the induction of p21WAF1,Cip1 during bone morphogenetic protein-induced growth arrest in human breast cancer cells.",
+          "journal": "The Journal of endocrinology",
+          "year": "2002",
+          "authors": [
+            "Pouliot F",
+            "Labrie C"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "908274",
+          "title": "Insulin stimulation of fatty acid synthesis in human breast cancer in long term tissue culture.",
+          "journal": "Endocrinology",
+          "year": "1977",
+          "authors": [
+            "Monaco ME",
+            "Lippman ME"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "21634028",
+          "title": "Regulation of β-tubulin isotypes by micro-RNA 100 in MCF7 breast cancer cells.",
+          "journal": "Cytoskeleton (Hoboken, N.J.)",
+          "year": "2011",
+          "authors": [
+            "Lobert S",
+            "Jefferson B",
+            "Morris K"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "11668172",
+          "title": "Early de novo gene expression is required for 15-deoxy-Delta 12,14-prostaglandin J2-induced apoptosis in breast cancer cells.",
+          "journal": "The Journal of biological chemistry",
+          "year": "2001",
+          "authors": [
+            "Clay CE",
+            "Atsumi GI",
+            "High KP",
+            "Chilton FH"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "2790032",
+          "title": "Resistance to hydrogen peroxide associated with altered catalase mRNA stability in MCF7 breast cancer cells.",
+          "journal": "Biochimica et biophysica acta",
+          "year": "1989",
+          "authors": [
+            "Akman SA",
+            "Forrest G",
+            "Chu FF",
+            "Doroshow JH"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "8425178",
+          "title": "Interleukin 6 stimulates the production of immunoreactive endothelin 1 in human breast cancer cells.",
+          "journal": "Cancer research",
+          "year": "1993",
+          "authors": [
+            "Yamashita J",
+            "Ogawa M",
+            "Nomura K",
+            "Matsuo S",
+            "Inada K",
+            "Yamashita S",
+            "Nakashima Y",
+            "Saishoji T",
+            "Takano S",
+            "Fujita S"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "3841047",
+          "title": "[Cytostatic polychemotherapy in the aged].",
+          "journal": "Deutsche medizinische Wochenschrift (1946)",
+          "year": "1985",
+          "authors": [
+            "Wilmanns W",
+            "Binsack T",
+            "Sauer H"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "3343839",
+          "title": "The effect of prior adjuvant chemotherapy on survival in metastatic breast cancer.",
+          "journal": "Journal of surgical oncology",
+          "year": "1988",
+          "authors": [
+            "Ahmann FR",
+            "Jones SE",
+            "Moon TE"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "12036452",
+          "title": "Evaluation of a gemcitabine-doxorubicin-paclitaxel combination schedule through flow cytometry assessment of apoptosis extent induced in human breast cancer cell lines.",
+          "journal": "Japanese journal of cancer research : Gann",
+          "year": "2002",
+          "authors": [
+            "Serrano MJ",
+            "Sánchez-Rovira P",
+            "Algarra I",
+            "Jaén A",
+            "Lozano A",
+            "Gaforio JJ"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "7397943",
+          "title": "Actinomycin D in the treatment of advanced breast cancer.",
+          "journal": "Cancer chemotherapy and pharmacology",
+          "year": "1980",
+          "authors": [
+            "Grimm RA",
+            "Muss HB",
+            "White DR",
+            "Richards F 2nd",
+            "Cooper MR",
+            "Stuart JJ",
+            "Jackson DV",
+            "Barnes PL",
+            "Spurr CL"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "8483562",
+          "title": "MMM (mitomycin/mitoxantrone/methotrexate): an effective new regimen in the treatment of metastatic breast cancer.",
+          "journal": "Oncology",
+          "year": "1993",
+          "authors": [
+            "Smith IE",
+            "Powles TJ"
+          ],
+          "source": "ncbi_pubmed"
+        },
+        {
+          "pmid": "8641545",
+          "title": "Upregulation of cytokeratins 8 and 18 in human breast cancer T47D cells is retinoid-specific and retinoic acid receptor-dependent.",
+          "journal": "Differentiation; research in biological diversity",
+          "year": "1996",
+          "authors": [
+            "Jing Y",
+            "Zhang J",
+            "Waxman S",
+            "Mira-y-Lopez R"
+          ],
+          "source": "ncbi_pubmed"
+        }
+      ],
+      "source": "pubmed_live"
+    }
+  },
+  "errors": []
+}

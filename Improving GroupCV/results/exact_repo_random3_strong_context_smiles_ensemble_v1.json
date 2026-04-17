@@ -1,0 +1,309 @@
+{
+  "split_mode": "random_sample_kfold",
+  "seed": 42,
+  "input_mode": "strong_context_smiles",
+  "folds": 3,
+  "rows": 6366,
+  "selected_models": [
+    "CatBoost",
+    "XGBoost",
+    "LightGBM",
+    "TabNet",
+    "ResidualMLP",
+    "WideDeep"
+  ],
+  "selected_model_meta": {
+    "LightGBM": {
+      "family": "ML",
+      "overall_metrics": {
+        "spearman": 0.8637142057083665,
+        "rmse": 1.135775354873613,
+        "mae": 0.8504825234413147,
+        "pearson": 0.9076406955718994,
+        "r2": 0.8237966299057007,
+        "ndcg@20": 0.9601888435089643
+      },
+      "elapsed_sec": 544.6849842071533,
+      "oof_path": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/results/exact_repo_random3_strong_context_smiles_ml_v1_oof/LightGBM.npy"
+    },
+    "XGBoost": {
+      "family": "ML",
+      "overall_metrics": {
+        "spearman": 0.8646504612804827,
+        "rmse": 1.1346507974591489,
+        "mae": 0.8481606245040894,
+        "pearson": 0.9078395366668701,
+        "r2": 0.8241453766822815,
+        "ndcg@20": 0.9616930792504484
+      },
+      "elapsed_sec": 941.7461190223694,
+      "oof_path": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/results/exact_repo_random3_strong_context_smiles_ml_v1_oof/XGBoost.npy"
+    },
+    "CatBoost": {
+      "family": "ML",
+      "overall_metrics": {
+        "spearman": 0.8706419037606916,
+        "rmse": 1.1082807705301505,
+        "mae": 0.83265620470047,
+        "pearson": 0.9127253293991089,
+        "r2": 0.8322243094444275,
+        "ndcg@20": 0.9639126670536843
+      },
+      "elapsed_sec": 1808.714107990265,
+      "oof_path": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/results/exact_repo_random3_strong_context_smiles_ml_v1_oof/CatBoost.npy"
+    },
+    "WideDeep": {
+      "family": "DL",
+      "overall_metrics": {
+        "rmse": 1.1639421131940009,
+        "mae": 0.8729146122932434,
+        "spearman": 0.8572075065043159,
+        "pearson": 0.9029019474983215,
+        "r2": 0.8149486780166626,
+        "ndcg@20": 0.9531482712384911
+      },
+      "elapsed_sec": 2757.237491130829,
+      "oof_path": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/results/exact_repo_random3_strong_context_smiles_dl_v1_oof/WideDeep.npy"
+    },
+    "ResidualMLP": {
+      "family": "DL",
+      "overall_metrics": {
+        "rmse": 1.1619858107069823,
+        "mae": 0.8692700862884521,
+        "spearman": 0.859928740826382,
+        "pearson": 0.9033596515655518,
+        "r2": 0.8155702352523804,
+        "ndcg@20": 0.9457968132241319
+      },
+      "elapsed_sec": 1603.5883519649506,
+      "oof_path": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/results/exact_repo_random3_strong_context_smiles_dl_v1_oof/ResidualMLP.npy"
+    },
+    "TabNet": {
+      "family": "DL",
+      "overall_metrics": {
+        "rmse": 1.1560277467486437,
+        "mae": 0.8768245577812195,
+        "spearman": 0.8613220890844299,
+        "pearson": 0.9054679870605469,
+        "r2": 0.8174567222595215,
+        "ndcg@20": 0.9539086200350102
+      },
+      "elapsed_sec": 1214.3670918941498,
+      "oof_path": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/results/exact_repo_random3_strong_context_smiles_dl_v1_oof/TabNet.npy"
+    }
+  },
+  "weights": {
+    "CatBoost": 0.1681598850734617,
+    "XGBoost": 0.16700266960457114,
+    "LightGBM": 0.16682183678601925,
+    "TabNet": 0.1663598120950114,
+    "ResidualMLP": 0.16609069423848674,
+    "WideDeep": 0.16556510220244985
+  },
+  "equal_overall_metrics": {
+    "spearman": 0.8720319912373041,
+    "rmse": 1.1016342639923096,
+    "mae": 0.8281287550926208,
+    "pearson": 0.9136472344398499,
+    "r2": 0.8342306281339756,
+    "ndcg@20": 0.9567354511091194
+  },
+  "weighted_overall_metrics": {
+    "spearman": 0.8720463510218356,
+    "rmse": 1.101568341255188,
+    "mae": 0.8280751705169678,
+    "pearson": 0.9136583209037781,
+    "r2": 0.8342505001847147,
+    "ndcg@20": 0.9567949308820762
+  },
+  "equal_fold_metrics": [
+    {
+      "spearman": 0.8847770888428128,
+      "rmse": 1.0986608266830444,
+      "mae": 0.8274394273757935,
+      "pearson": 0.915812075138092,
+      "r2": 0.838657581270392,
+      "ndcg@20": 0.9629376293407944,
+      "fold": 0
+    },
+    {
+      "spearman": 0.853393580863537,
+      "rmse": 1.1091742515563965,
+      "mae": 0.8451391458511353,
+      "pearson": 0.9099406599998474,
+      "r2": 0.8264286186101296,
+      "ndcg@20": 0.9771317653781028,
+      "fold": 1
+    },
+    {
+      "spearman": 0.8772663283705081,
+      "rmse": 1.097028374671936,
+      "mae": 0.8118077516555786,
+      "pearson": 0.9153147339820862,
+      "r2": 0.8370281802977846,
+      "ndcg@20": 0.9743202524920235,
+      "fold": 2
+    }
+  ],
+  "weighted_fold_metrics": [
+    {
+      "spearman": 0.8847922742130822,
+      "rmse": 1.0985758304595947,
+      "mae": 0.8273804783821106,
+      "pearson": 0.915825605392456,
+      "r2": 0.8386825735906763,
+      "ndcg@20": 0.9629376293407944,
+      "fold": 0
+    },
+    {
+      "spearman": 0.8534169293986223,
+      "rmse": 1.109115719795227,
+      "mae": 0.8450812697410583,
+      "pearson": 0.9099522233009338,
+      "r2": 0.8264469347865983,
+      "ndcg@20": 0.9771317653781028,
+      "fold": 1
+    },
+    {
+      "spearman": 0.8772926897413258,
+      "rmse": 1.0969738960266113,
+      "mae": 0.8117635250091553,
+      "pearson": 0.9153242707252502,
+      "r2": 0.837044383064631,
+      "ndcg@20": 0.9750002889852242,
+      "fold": 2
+    }
+  ],
+  "diversity": {
+    "pairwise": [
+      {
+        "pair": "CatBoost vs XGBoost",
+        "prediction_pearson": 0.9895331263542175,
+        "prediction_spearman": 0.9842964064025082,
+        "residual_pearson": 0.9505804777145386,
+        "residual_spearman": 0.939824042292692,
+        "mean_abs_prediction_gap": 0.26776668429374695
+      },
+      {
+        "pair": "CatBoost vs LightGBM",
+        "prediction_pearson": 0.9894154071807861,
+        "prediction_spearman": 0.983071570684913,
+        "residual_pearson": 0.9484671950340271,
+        "residual_spearman": 0.9359560993286985,
+        "mean_abs_prediction_gap": 0.27601099014282227
+      },
+      {
+        "pair": "CatBoost vs TabNet",
+        "prediction_pearson": 0.9829186201095581,
+        "prediction_spearman": 0.9757750597492587,
+        "residual_pearson": 0.9241524338722229,
+        "residual_spearman": 0.9130667102317798,
+        "mean_abs_prediction_gap": 0.3403780460357666
+      },
+      {
+        "pair": "CatBoost vs ResidualMLP",
+        "prediction_pearson": 0.9791861772537231,
+        "prediction_spearman": 0.9700678157619872,
+        "residual_pearson": 0.8995522856712341,
+        "residual_spearman": 0.8850376533609035,
+        "mean_abs_prediction_gap": 0.3774418234825134
+      },
+      {
+        "pair": "CatBoost vs WideDeep",
+        "prediction_pearson": 0.9827343225479126,
+        "prediction_spearman": 0.9730859474125675,
+        "residual_pearson": 0.9244565367698669,
+        "residual_spearman": 0.9103709307100428,
+        "mean_abs_prediction_gap": 0.3331362009048462
+      },
+      {
+        "pair": "XGBoost vs LightGBM",
+        "prediction_pearson": 0.9921157956123352,
+        "prediction_spearman": 0.9871884405202858,
+        "residual_pearson": 0.9629300832748413,
+        "residual_spearman": 0.9527596466267292,
+        "mean_abs_prediction_gap": 0.23511558771133423
+      },
+      {
+        "pair": "XGBoost vs TabNet",
+        "prediction_pearson": 0.9780356884002686,
+        "prediction_spearman": 0.968957060655323,
+        "residual_pearson": 0.900728702545166,
+        "residual_spearman": 0.8920823022660954,
+        "mean_abs_prediction_gap": 0.379928320646286
+      },
+      {
+        "pair": "XGBoost vs ResidualMLP",
+        "prediction_pearson": 0.9729901552200317,
+        "prediction_spearman": 0.961355777371998,
+        "residual_pearson": 0.8736677169799805,
+        "residual_spearman": 0.8608758219000024,
+        "mean_abs_prediction_gap": 0.4202946126461029
+      },
+      {
+        "pair": "XGBoost vs WideDeep",
+        "prediction_pearson": 0.9762774109840393,
+        "prediction_spearman": 0.9652186850060398,
+        "residual_pearson": 0.8943288326263428,
+        "residual_spearman": 0.8824580812597639,
+        "mean_abs_prediction_gap": 0.3809508681297302
+      },
+      {
+        "pair": "LightGBM vs TabNet",
+        "prediction_pearson": 0.9766504168510437,
+        "prediction_spearman": 0.9654679000744796,
+        "residual_pearson": 0.8924535512924194,
+        "residual_spearman": 0.8777824967512063,
+        "mean_abs_prediction_gap": 0.4036637842655182
+      },
+      {
+        "pair": "LightGBM vs ResidualMLP",
+        "prediction_pearson": 0.9709538817405701,
+        "prediction_spearman": 0.9572642168660418,
+        "residual_pearson": 0.8639026880264282,
+        "residual_spearman": 0.8467095740591495,
+        "mean_abs_prediction_gap": 0.44193220138549805
+      },
+      {
+        "pair": "LightGBM vs WideDeep",
+        "prediction_pearson": 0.9749972820281982,
+        "prediction_spearman": 0.961384927889778,
+        "residual_pearson": 0.8866809010505676,
+        "residual_spearman": 0.8691633785297949,
+        "mean_abs_prediction_gap": 0.40262991189956665
+      },
+      {
+        "pair": "TabNet vs ResidualMLP",
+        "prediction_pearson": 0.9847527742385864,
+        "prediction_spearman": 0.9774802412998841,
+        "residual_pearson": 0.926941990852356,
+        "residual_spearman": 0.9162130783906927,
+        "mean_abs_prediction_gap": 0.3497588634490967
+      },
+      {
+        "pair": "TabNet vs WideDeep",
+        "prediction_pearson": 0.9923611879348755,
+        "prediction_spearman": 0.9894611898382915,
+        "residual_pearson": 0.9673634171485901,
+        "residual_spearman": 0.9601536807126168,
+        "mean_abs_prediction_gap": 0.24514682590961456
+      },
+      {
+        "pair": "ResidualMLP vs WideDeep",
+        "prediction_pearson": 0.98292076587677,
+        "prediction_spearman": 0.9741767932142719,
+        "residual_pearson": 0.9201343059539795,
+        "residual_spearman": 0.9069829882954151,
+        "mean_abs_prediction_gap": 0.343891441822052
+      }
+    ],
+    "summary": {
+      "avg_prediction_pearson": 0.9817228674888611,
+      "avg_prediction_spearman": 0.9729501355165086,
+      "avg_residual_pearson": 0.9157560745875041,
+      "avg_residual_spearman": 0.9032957656477054,
+      "avg_mean_abs_prediction_gap": 0.34653641084829967
+    }
+  },
+  "total_elapsed_sec": 8870.338146209717
+}

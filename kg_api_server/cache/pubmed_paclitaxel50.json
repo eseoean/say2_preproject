@@ -1,0 +1,630 @@
+{
+  "data": [
+    {
+      "pmid": "23770008",
+      "title": "nab-Paclitaxel mechanisms of action and delivery.",
+      "journal": "Journal of controlled release : official journal of the Controlled Release Society",
+      "year": "2013",
+      "authors": [
+        "Yardley DA"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "31783552",
+      "title": "Paclitaxel's Mechanistic and Clinical Effects on Breast Cancer.",
+      "journal": "Biomolecules",
+      "year": "2019",
+      "authors": [
+        "Abu Samaan TM",
+        "Samec M",
+        "Liskova A",
+        "Kubatka P",
+        "Büsselberg D"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "31223315",
+      "title": "Progress in research on paclitaxel and tumor immunotherapy.",
+      "journal": "Cellular & molecular biology letters",
+      "year": "2019",
+      "authors": [
+        "Zhu L",
+        "Chen L"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "7903152",
+      "title": "Cytotoxic studies of paclitaxel (Taxol) in human tumour cell lines.",
+      "journal": "British journal of cancer",
+      "year": "1993",
+      "authors": [
+        "Liebmann JE",
+        "Cook JA",
+        "Lipschultz C",
+        "Teague D",
+        "Fisher J",
+        "Mitchell JB"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "39604636",
+      "title": "Post-genomic illumination of paclitaxel biosynthesis.",
+      "journal": "Nature plants",
+      "year": "2024",
+      "authors": [
+        "Fernie AR",
+        "Liu F",
+        "Zhang Y"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "38783804",
+      "title": "[Advances in paclitaxel biosynthesis and transcriptional regulation mechanisms].",
+      "journal": "Sheng wu gong cheng xue bao = Chinese journal of biotechnology",
+      "year": "2024",
+      "authors": [
+        "Sun F",
+        "Dang S",
+        "Zheng D",
+        "Zhang H",
+        "Wang Y",
+        "Li Y",
+        "Wu H"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "7597430",
+      "title": "Paclitaxel pharmacokinetics and pharmacodynamics.",
+      "journal": "Seminars in oncology",
+      "year": "1995",
+      "authors": [
+        "Kearns CM",
+        "Gianni L",
+        "Egorin MJ"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "12036415",
+      "title": "Paclitaxel in cancer therapy.",
+      "journal": "Expert opinion on pharmacotherapy",
+      "year": "2002",
+      "authors": [
+        "Mekhail TM",
+        "Markman M"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "37393700",
+      "title": "Nano delivery system for paclitaxel: Recent advances in cancer theranostics.",
+      "journal": "Colloids and surfaces. B, Biointerfaces",
+      "year": "2023",
+      "authors": [
+        "Ying N",
+        "Liu S",
+        "Zhang M",
+        "Cheng J",
+        "Luo L",
+        "Jiang J",
+        "Shi G",
+        "Wu S",
+        "Ji J",
+        "Su H",
+        "Pan H",
+        "Zeng D"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "7909150",
+      "title": "Paclitaxel (taxol).",
+      "journal": "Pharmacotherapy",
+      "year": "1994",
+      "authors": [
+        "Kohler DR",
+        "Goldspiel BR"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "39009452",
+      "title": "Novel insights into paclitaxel's role on tumor-associated macrophages in enhancing PD-1 blockade in breast cancer treatment.",
+      "journal": "Journal for immunotherapy of cancer",
+      "year": "2024",
+      "authors": [
+        "Choi Y",
+        "Kim SA",
+        "Jung H",
+        "Kim E",
+        "Kim YK",
+        "Kim S",
+        "Kim J",
+        "Lee Y",
+        "Jo MK",
+        "Woo J",
+        "Cho Y",
+        "Lee D",
+        "Choi H",
+        "Jeong C",
+        "Nam GH",
+        "Kwon M",
+        "Kim IS"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "36825714",
+      "title": "Current Perspectives on Paclitaxel: Focus on Its Production, Delivery and Combination Therapy.",
+      "journal": "Mini reviews in medicinal chemistry",
+      "year": "2023",
+      "authors": [
+        "Liu Y",
+        "Zhao F",
+        "Wang Q",
+        "Zhao Q",
+        "Hou G",
+        "Meng Q"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "34128748",
+      "title": "Current opinion on the pharmacogenomics of paclitaxel-induced toxicity.",
+      "journal": "Expert opinion on drug metabolism & toxicology",
+      "year": "2021",
+      "authors": [
+        "Al-Mahayri ZN",
+        "AlAhmad MM",
+        "Ali BR"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "38204196",
+      "title": "Innovative strategies for effective paclitaxel delivery: Recent developments and prospects.",
+      "journal": "Journal of oncology pharmacy practice : official publication of the International Society of Oncology Pharmacy Practitioners",
+      "year": "2024",
+      "authors": [
+        "Wileński S",
+        "Koper A",
+        "Śledzińska P",
+        "Bebyn M",
+        "Koper K"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "10865588",
+      "title": "Paclitaxel.",
+      "journal": "Clinical journal of oncology nursing",
+      "year": "2000",
+      "authors": [
+        "Hoyer KA"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "7865431",
+      "title": "Taxol (paclitaxel): mechanisms of action.",
+      "journal": "Annals of oncology : official journal of the European Society for Medical Oncology",
+      "year": "1994",
+      "authors": [
+        "Horwitz SB"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "20415548",
+      "title": "Pharmacogenomics of paclitaxel.",
+      "journal": "Pharmacogenomics",
+      "year": "2010",
+      "authors": [
+        "Rodríguez-Antona C"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "15301565",
+      "title": "Paclitaxel: as adjuvant or neoadjuvant therapy in early breast cancer.",
+      "journal": "Drugs",
+      "year": "2004",
+      "authors": [
+        "Simpson D",
+        "Plosker GL"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "10861441",
+      "title": "Paclitaxel-induced cell death: where the cell cycle and apoptosis come together.",
+      "journal": "Cancer",
+      "year": "2000",
+      "authors": [
+        "Wang TH",
+        "Wang HS",
+        "Soong YK"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "38551726",
+      "title": "Interplay between paclitaxel, gap junctions, and kinases: unraveling mechanisms of action and resistance in cancer therapy.",
+      "journal": "Molecular biology reports",
+      "year": "2024",
+      "authors": [
+        "Moon DO"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "10190787",
+      "title": "Paclitaxel plus carboplatin in the treatment of ovarian cancer.",
+      "journal": "Seminars in oncology",
+      "year": "1999",
+      "authors": [
+        "Ozols RF"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "26244011",
+      "title": "Albumin-bound paclitaxel in solid tumors: clinical development and future directions.",
+      "journal": "Drug design, development and therapy",
+      "year": "2015",
+      "authors": [
+        "Kundranda MN",
+        "Niu J"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "17877447",
+      "title": "Paclitaxel: a review of adverse toxicities and novel delivery strategies.",
+      "journal": "Expert opinion on drug safety",
+      "year": "2007",
+      "authors": [
+        "Marupudi NI",
+        "Han JE",
+        "Li KW",
+        "Renard VM",
+        "Tyler BM",
+        "Brem H"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "21571619",
+      "title": "Albumin-bound paclitaxel: the benefit of this new formulation in the treatment of various cancers.",
+      "journal": "Journal of chemotherapy (Florence, Italy)",
+      "year": "2011",
+      "authors": [
+        "Montana M",
+        "Ducros C",
+        "Verhaeghe P",
+        "Terme T",
+        "Vanelle P",
+        "Rathelot P"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "7904376",
+      "title": "Overview of paclitaxel (TAXOL).",
+      "journal": "Seminars in oncology nursing",
+      "year": "1993",
+      "authors": [
+        "Martin V"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "16722814",
+      "title": "Albumin-bound paclitaxel: a next-generation taxane.",
+      "journal": "Expert opinion on pharmacotherapy",
+      "year": "2006",
+      "authors": [
+        "Gradishar WJ"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "8706079",
+      "title": "[Paclitaxel (Taxol)].",
+      "journal": "Casopis lekaru ceskych",
+      "year": "1996",
+      "authors": [
+        "Hájek R"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "30439289",
+      "title": "Nanoparticle albumin bound-paclitaxel for treatment of advanced non-small cell lung cancer: an evaluation of the clinical evidence.",
+      "journal": "Expert opinion on pharmacotherapy",
+      "year": "2019",
+      "authors": [
+        "Adrianzen Herrera D",
+        "Ashai N",
+        "Perez-Soler R",
+        "Cheng H"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "22303950",
+      "title": "Advances of paclitaxel formulations based on nanosystem delivery technology.",
+      "journal": "Mini reviews in medicinal chemistry",
+      "year": "2012",
+      "authors": [
+        "Luo C",
+        "Wang Y",
+        "Chen Q",
+        "Han X",
+        "Liu X",
+        "Sun J",
+        "He Z"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "19747129",
+      "title": "Medicinal chemistry of paclitaxel and its analogues.",
+      "journal": "Current medicinal chemistry",
+      "year": "2009",
+      "authors": [
+        "Fu Y",
+        "Li S",
+        "Zu Y",
+        "Yang G",
+        "Yang Z",
+        "Luo M",
+        "Jiang S",
+        "Wink M",
+        "Efferth T"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "9891802",
+      "title": "Tour de paclitaxel: biocatalysis for semisynthesis.",
+      "journal": "Annual review of microbiology",
+      "year": "1998",
+      "authors": [
+        "Patel RN"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "17627452",
+      "title": "Nab-paclitaxel for breast cancer: a new formulation with an improved safety profile and greater efficacy.",
+      "journal": "Expert review of anticancer therapy",
+      "year": "2007",
+      "authors": [
+        "Henderson IC",
+        "Bhatia V"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "9117048",
+      "title": "Paclitaxel (Taxol)--a guide to administration.",
+      "journal": "European journal of cancer care",
+      "year": "1996",
+      "authors": [
+        "Preston NJ"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "17092739",
+      "title": "Pharmacogenetics of paclitaxel metabolism.",
+      "journal": "Critical reviews in oncology/hematology",
+      "year": "2007",
+      "authors": [
+        "Spratlin J",
+        "Sawyer MB"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "40220831",
+      "title": "Protein-based nanocarriers for paclitaxel (PTX) delivery in cancer treatment: A review.",
+      "journal": "International journal of biological macromolecules",
+      "year": "2025",
+      "authors": [
+        "Abbaspour S",
+        "Mohamadzadeh M",
+        "Shojaosadati SA"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "33357719",
+      "title": "Research progress on the source, production, and anti-cancer mechanisms of paclitaxel.",
+      "journal": "Chinese journal of natural medicines",
+      "year": "2020",
+      "authors": [
+        "Yang YH",
+        "Mao JW",
+        "Tan XL"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "36279934",
+      "title": "Towards a mechanistic understanding of axon transport and endocytic changes underlying paclitaxel-induced peripheral neuropathy.",
+      "journal": "Experimental neurology",
+      "year": "2023",
+      "authors": [
+        "Shin GJ"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "8106152",
+      "title": "The taxoids: paclitaxel (Taxol) and docetaxel (Taxotere).",
+      "journal": "Cancer treatment reviews",
+      "year": "1993",
+      "authors": [
+        "Pazdur R",
+        "Kudelka AP",
+        "Kavanagh JJ",
+        "Cohen PR",
+        "Raber MN"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "9110340",
+      "title": "Paclitaxel-based combination chemotherapy for breast cancer.",
+      "journal": "Oncology (Williston Park, N.Y.)",
+      "year": "1997",
+      "authors": [
+        "Hortobagyi GN"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "26536477",
+      "title": "Nab-paclitaxel in patients with metastatic melanoma.",
+      "journal": "Expert review of anticancer therapy",
+      "year": "2015",
+      "authors": [
+        "Leon-Ferre RA",
+        "Markovic SN"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "9427257",
+      "title": "Paclitaxel pharmacology and other tumor types.",
+      "journal": "Seminars in oncology",
+      "year": "1997",
+      "authors": [
+        "Rowinsky EK"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "9571394",
+      "title": "Paclitaxel. An update of its use in the treatment of metastatic breast cancer and ovarian and other gynaecological cancers.",
+      "journal": "Drugs & aging",
+      "year": "1998",
+      "authors": [
+        "Wiseman LR",
+        "Spencer CM"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "7749130",
+      "title": "Current status of paclitaxel in the treatment of breast cancer.",
+      "journal": "Breast cancer research and treatment",
+      "year": "1995",
+      "authors": [
+        "O'Shaughnessy JA",
+        "Cowan KH"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "28061451",
+      "title": "Nanoparticle albumin-bound paclitaxel as neoadjuvant chemotherapy of breast cancer: a systematic review and meta-analysis.",
+      "journal": "Oncotarget",
+      "year": "2017",
+      "authors": [
+        "Zong Y",
+        "Wu J",
+        "Shen K"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "9491787",
+      "title": "Preclinical pharmacokinetics of paclitaxel and docetaxel.",
+      "journal": "Anti-cancer drugs",
+      "year": "1998",
+      "authors": [
+        "Sparreboom A",
+        "van Tellingen O",
+        "Nooijen WJ",
+        "Beijnen JH"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "23978385",
+      "title": "The paradox of paclitaxel neurotoxicity: Mechanisms and unanswered questions.",
+      "journal": "Neuropharmacology",
+      "year": "2014",
+      "authors": [
+        "Gornstein E",
+        "Schwarz TL"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "11098349",
+      "title": "Docetaxel as an alternative to paclitaxel after acute hypersensitivity reactions.",
+      "journal": "The Annals of pharmacotherapy",
+      "year": "2000",
+      "authors": [
+        "Bernstein BJ"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "39307245",
+      "title": "Paclitaxel improves thrombopoiesis in the absence of thrombopoietin receptor (Mpl).",
+      "journal": "Journal of thrombosis and haemostasis : JTH",
+      "year": "2024",
+      "authors": [
+        "Meng P",
+        "Liu W",
+        "Lao J",
+        "Liu X",
+        "Zhang Y",
+        "Sun Y",
+        "Zhou R",
+        "Du C",
+        "Wang J",
+        "Zhao D",
+        "Lin Q",
+        "Zhang Y"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "26179168",
+      "title": "A Review of Paclitaxel and Novel Formulations Including Those Suitable for Use in Dogs.",
+      "journal": "Journal of veterinary internal medicine",
+      "year": "2015",
+      "authors": [
+        "Khanna C",
+        "Rosenberg M",
+        "Vail DM"
+      ],
+      "source": "ncbi_pubmed"
+    },
+    {
+      "pmid": "36974410",
+      "title": "Synthesis and Biological Evaluation of Paclitaxel-aminoguanidine Conjugates for Suppressing Breast Cancer.",
+      "journal": "Current organic synthesis",
+      "year": "2023",
+      "authors": [
+        "Dai Y",
+        "Zhang Y",
+        "Zhang L",
+        "Song Z"
+      ],
+      "source": "ncbi_pubmed"
+    }
+  ]
+}

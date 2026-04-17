@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>random3 Step 4~7+ 상세 대시보드 통합 문서</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; background: #0f172a; color: #e2e8f0; }
+    a { text-decoration: none; }
+    .header {
+      background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+      border-bottom: 1px solid #334155;
+      padding: 28px 32px;
+    }
+    .header h1 { font-size: 1.55rem; color: #f8fafc; margin-bottom: 10px; }
+    .header p { max-width: 980px; color: #cbd5e1; line-height: 1.7; }
+    .header .back-link { display: inline-block; margin-top: 12px; color: #38bdf8; font-size: 0.9rem; }
+    .sticky-nav {
+      position: sticky; top: 0; z-index: 30;
+      background: rgba(15, 23, 42, 0.94);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid #334155;
+    }
+    .sticky-nav .inner {
+      max-width: 1480px; margin: 0 auto; padding: 12px 20px;
+      display: flex; gap: 10px; flex-wrap: wrap;
+    }
+    .sticky-nav a {
+      color: #cbd5e1; background: #111827; border: 1px solid #334155;
+      padding: 8px 12px; border-radius: 999px; font-size: 0.78rem; font-weight: 700;
+    }
+    .container { max-width: 1480px; margin: 0 auto; padding: 22px 18px 40px; }
+    .intro {
+      background: rgba(56, 189, 248, 0.08);
+      border: 1px solid rgba(56, 189, 248, 0.28);
+      border-radius: 12px;
+      padding: 16px 18px;
+      line-height: 1.75;
+      margin-bottom: 18px;
+      color: #dbeafe;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 14px;
+      margin-bottom: 22px;
+    }
+    .page-card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 16px;
+    }
+    .page-kicker { font-size: 0.72rem; color: #7dd3fc; font-weight: 800; letter-spacing: 0.08em; margin-bottom: 8px; }
+    .page-title { font-size: 1rem; font-weight: 800; color: #f8fafc; margin-bottom: 8px; }
+    .page-desc { font-size: 0.82rem; color: #cbd5e1; line-height: 1.65; margin-bottom: 12px; }
+    .page-link { color: #38bdf8; font-size: 0.78rem; font-weight: 700; }
+    .section {
+      background: #111827;
+      border: 1px solid #334155;
+      border-radius: 14px;
+      padding: 18px;
+      margin-bottom: 18px;
+    }
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+    .section-kicker { font-size: 0.72rem; color: #7dd3fc; font-weight: 800; letter-spacing: 0.08em; margin-bottom: 6px; }
+    .section-head h2 { font-size: 1.15rem; color: #f8fafc; margin-bottom: 6px; }
+    .section-head p { font-size: 0.82rem; color: #cbd5e1; line-height: 1.65; max-width: 920px; }
+    .open-link {
+      white-space: nowrap;
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid #334155;
+      color: #38bdf8;
+      font-size: 0.78rem;
+      font-weight: 700;
+      background: #0f172a;
+    }
+    .detail-frame {
+      width: 100%;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      background: #0f172a;
+      min-height: 1200px;
+      display: block;
+    }
+    .footnote {
+      color: #94a3b8;
+      font-size: 0.76rem;
+      line-height: 1.7;
+      margin-top: 10px;
+    }
+    @media (max-width: 860px) {
+      .section-head { flex-direction: column; }
+      .open-link { white-space: normal; }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>random3 Step 4~7+ 상세 대시보드 통합 문서</h1>
+    <p><b>exact slim + strong context + SMILES</b> 입력과 <b>random sample 3-fold</b> 기준으로 만든 각 단계 상세 대시보드를, 요약 없이 한 문서 안에서 그대로 이어서 볼 수 있게 정리한 페이지입니다.</p>
+    <a class="back-link" href="dashboard.html">&larr; 메인 대시보드로 돌아가기</a>
+  </div>
+
+  <div class="sticky-nav">
+    <div class="inner">
+      <a href='#step45'>Step 4 / Step 5 모델 및 앙상블 상세</a>
+<a href='#step6'>Step 6 METABRIC 외부 검증 상세</a>
+<a href='#step7'>Step 7 ADMET / post-ADMET 상세</a>
+<a href='#step7plus'>Step 7+ KG/API 근거 수집 상세</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="intro">
+      <b>이번 버전은 요약 통합본이 아닙니다.</b> Step 4/5, Step 6, Step 7, Step 7+ 각 상세 페이지의 카드, 표, 설명 블록을 그대로 이어서 보도록 만든 상세 통합본입니다.
+      그래서 각 단계에서 이미 만들어둔 세부 항목들을 따로 오가며 볼 필요 없이, 한 페이지에서 아래로 스크롤하면서 전체 흐름을 따라갈 수 있습니다.
+    </div>
+
+    <div class="card-grid">
+      <div class='page-card'><div class='page-kicker'>STEP45</div><div class='page-title'>Step 4 / Step 5 모델 및 앙상블 상세</div><div class='page-desc'>단일 모델 비교, 입력 구성, random sample 3-fold 해석, 앙상블 성능과 diversity까지 포함한 상세 대시보드입니다.</div><a class='page-link' href='#step45'>이 구간으로 이동</a></div>
+<div class='page-card'><div class='page-kicker'>STEP6</div><div class='page-title'>Step 6 METABRIC 외부 검증 상세</div><div class='page-desc'>타깃 발현, BRCA pathway 관련성, survival significance, validated top15까지 포함한 외부 검증 대시보드입니다.</div><a class='page-link' href='#step6'>이 구간으로 이동</a></div>
+<div class='page-card'><div class='page-kicker'>STEP7</div><div class='page-title'>Step 7 ADMET / post-ADMET 상세</div><div class='page-desc'>raw ADMET와 팀원 레포 형식의 임상 분류, ADMET 커버리지, 최종 15개 후보 표까지 포함합니다.</div><a class='page-link' href='#step7'>이 구간으로 이동</a></div>
+<div class='page-card'><div class='page-kicker'>STEP7PLUS</div><div class='page-title'>Step 7+ KG/API 근거 수집 상세</div><div class='page-desc'>ClinicalTrials, PubMed, FAERS, target/pathway 요약과 최종 후보별 설명 가능 근거를 정리한 상세 대시보드입니다.</div><a class='page-link' href='#step7plus'>이 구간으로 이동</a></div>
+    </div>
+
+    
+  <section class="section" id="step45">
+    <div class="section-head">
+      <div>
+        <div class="section-kicker">STEP45</div>
+        <h2>Step 4 / Step 5 모델 및 앙상블 상세</h2>
+        <p>단일 모델 비교, 입력 구성, random sample 3-fold 해석, 앙상블 성능과 diversity까지 포함한 상세 대시보드입니다.</p>
+      </div>
+      <a class="open-link" href="exact_slim_strong_context_smiles_random3_detail.html">단독 페이지 열기</a>
+    </div>
+    <iframe
+      class="detail-frame"
+      data-src="exact_slim_strong_context_smiles_random3_detail.html"
+      src="exact_slim_strong_context_smiles_random3_detail.html"
+      title="Step 4 / Step 5 모델 및 앙상블 상세"
+      loading="lazy"
+    ></iframe>
+  </section>
+
+
+  <section class="section" id="step6">
+    <div class="section-head">
+      <div>
+        <div class="section-kicker">STEP6</div>
+        <h2>Step 6 METABRIC 외부 검증 상세</h2>
+        <p>타깃 발현, BRCA pathway 관련성, survival significance, validated top15까지 포함한 외부 검증 대시보드입니다.</p>
+      </div>
+      <a class="open-link" href="exact_slim_strong_context_smiles_random3_step6_detail.html">단독 페이지 열기</a>
+    </div>
+    <iframe
+      class="detail-frame"
+      data-src="exact_slim_strong_context_smiles_random3_step6_detail.html"
+      src="exact_slim_strong_context_smiles_random3_step6_detail.html"
+      title="Step 6 METABRIC 외부 검증 상세"
+      loading="lazy"
+    ></iframe>
+  </section>
+
+
+  <section class="section" id="step7">
+    <div class="section-head">
+      <div>
+        <div class="section-kicker">STEP7</div>
+        <h2>Step 7 ADMET / post-ADMET 상세</h2>
+        <p>raw ADMET와 팀원 레포 형식의 임상 분류, ADMET 커버리지, 최종 15개 후보 표까지 포함합니다.</p>
+      </div>
+      <a class="open-link" href="exact_slim_strong_context_smiles_random3_step7_detail.html">단독 페이지 열기</a>
+    </div>
+    <iframe
+      class="detail-frame"
+      data-src="exact_slim_strong_context_smiles_random3_step7_detail.html"
+      src="exact_slim_strong_context_smiles_random3_step7_detail.html"
+      title="Step 7 ADMET / post-ADMET 상세"
+      loading="lazy"
+    ></iframe>
+  </section>
+
+
+  <section class="section" id="step7plus">
+    <div class="section-head">
+      <div>
+        <div class="section-kicker">STEP7PLUS</div>
+        <h2>Step 7+ KG/API 근거 수집 상세</h2>
+        <p>ClinicalTrials, PubMed, FAERS, target/pathway 요약과 최종 후보별 설명 가능 근거를 정리한 상세 대시보드입니다.</p>
+      </div>
+      <a class="open-link" href="exact_slim_strong_context_smiles_random3_step7plus_detail.html">단독 페이지 열기</a>
+    </div>
+    <iframe
+      class="detail-frame"
+      data-src="exact_slim_strong_context_smiles_random3_step7plus_detail.html"
+      src="exact_slim_strong_context_smiles_random3_step7plus_detail.html"
+      title="Step 7+ KG/API 근거 수집 상세"
+      loading="lazy"
+    ></iframe>
+  </section>
+
+
+    <div class="footnote">
+      iframe 높이는 문서 로드 후 자동으로 맞춰집니다. 브라우저 폭이 바뀌면 높이도 다시 계산되도록 처리했습니다.
+    </div>
+  </div>
+
+  <script>
+    function resizeFrame(frame) {
+      try {
+        const doc = frame.contentDocument || frame.contentWindow.document;
+        if (!doc) return;
+        const body = doc.body;
+        const html = doc.documentElement;
+        const height = Math.max(
+          body ? body.scrollHeight : 0,
+          html ? html.scrollHeight : 0,
+          body ? body.offsetHeight : 0,
+          html ? html.offsetHeight : 0
+        );
+        if (height > 0) {
+          frame.style.height = (height + 16) + 'px';
+        }
+      } catch (err) {
+        console.warn('iframe resize skipped', err);
+      }
+    }
+
+    function bindFrame(frame) {
+      frame.addEventListener('load', () => resizeFrame(frame));
+      setTimeout(() => resizeFrame(frame), 300);
+      setTimeout(() => resizeFrame(frame), 1200);
+    }
+
+    const frames = Array.from(document.querySelectorAll('.detail-frame'));
+    frames.forEach(bindFrame);
+    window.addEventListener('resize', () => frames.forEach(resizeFrame));
+  </script>
+</body>
+</html>

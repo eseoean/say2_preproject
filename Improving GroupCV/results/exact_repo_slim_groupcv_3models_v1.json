@@ -1,0 +1,129 @@
+{
+  "input_features_path": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match/features_slim_exact_repo.parquet",
+  "input_X_path": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match/X_train_exact_repo_numeric.npy",
+  "input_y_path": "/Users/skku_aws2_18/pre_project/say2_preproject/Improving GroupCV/v3_input_reproduction/exact_repo_match/y_train_exact_repo.npy",
+  "device": "cpu",
+  "n_rows": 6366,
+  "x_shape": [
+    6366,
+    5529
+  ],
+  "n_unique_drugs": 243,
+  "folds": 3,
+  "models": [
+    {
+      "model": "FlatMLP",
+      "spearman_mean": 0.5392907767521441,
+      "spearman_std": 0.012928308502895175,
+      "rmse_mean": 2.2695437668445684,
+      "rmse_std": 0.0847017412474879,
+      "mae_mean": 1.6890441576639812,
+      "mae_std": 0.013043123444440714,
+      "pearson_mean": 0.5685250957806905,
+      "r2_mean": 0.2934520443280538,
+      "elapsed_sec": 28.31449604034424,
+      "fold_metrics": [
+        {
+          "spearman": 0.5249685047689328,
+          "pearson": 0.5674204230308533,
+          "rmse": 2.334974619954161,
+          "mae": 1.6762443780899048,
+          "r2": 0.3037501573562622,
+          "fold": 0
+        },
+        {
+          "spearman": 0.5428056057523925,
+          "pearson": 0.5499422550201416,
+          "rmse": 2.299784575615351,
+          "mae": 1.702317714691162,
+          "r2": 0.27800941467285156,
+          "fold": 1
+        },
+        {
+          "spearman": 0.5500982197351071,
+          "pearson": 0.5882126092910767,
+          "rmse": 2.173872104964194,
+          "mae": 1.6885703802108765,
+          "r2": 0.2985965609550476,
+          "fold": 2
+        }
+      ]
+    },
+    {
+      "model": "FTTransformer",
+      "spearman_mean": 0.5304704075183531,
+      "spearman_std": 0.0308342051193462,
+      "rmse_mean": 2.2327127868168617,
+      "rmse_std": 0.08188383035124225,
+      "mae_mean": 1.6351217031478882,
+      "mae_std": 0.05074201954651521,
+      "pearson_mean": 0.5683069427808126,
+      "r2_mean": 0.3161269426345825,
+      "elapsed_sec": 35.71304988861084,
+      "fold_metrics": [
+        {
+          "spearman": 0.5599228277446929,
+          "pearson": 0.5891510844230652,
+          "rmse": 2.290755547398236,
+          "mae": 1.6346312761306763,
+          "r2": 0.32987117767333984,
+          "fold": 0
+        },
+        {
+          "spearman": 0.498418943800972,
+          "pearson": 0.5468635559082031,
+          "rmse": 2.2683307144669387,
+          "mae": 1.6861071586608887,
+          "r2": 0.29762357473373413,
+          "fold": 1
+        },
+        {
+          "spearman": 0.5330694510093942,
+          "pearson": 0.5689061880111694,
+          "rmse": 2.13905209858541,
+          "mae": 1.5846266746520996,
+          "r2": 0.3208860754966736,
+          "fold": 2
+        }
+      ]
+    },
+    {
+      "model": "CrossAttention",
+      "spearman_mean": 0.5438893697246104,
+      "spearman_std": 0.014802057994024053,
+      "rmse_mean": 2.234421420219134,
+      "rmse_std": 0.10694684182961949,
+      "mae_mean": 1.6477296749750774,
+      "mae_std": 0.04667403655924656,
+      "pearson_mean": 0.570385197798411,
+      "r2_mean": 0.31548309326171875,
+      "elapsed_sec": 32.04092288017273,
+      "fold_metrics": [
+        {
+          "spearman": 0.5293030010475489,
+          "pearson": 0.5590301752090454,
+          "rmse": 2.348648445569073,
+          "mae": 1.7000060081481934,
+          "r2": 0.29557162523269653,
+          "fold": 0
+        },
+        {
+          "spearman": 0.5588980778607249,
+          "pearson": 0.5828481912612915,
+          "rmse": 2.217949843855171,
+          "mae": 1.6329429149627686,
+          "r2": 0.3284773826599121,
+          "fold": 1
+        },
+        {
+          "spearman": 0.5434670302655574,
+          "pearson": 0.5692772269248962,
+          "rmse": 2.1366659712331577,
+          "mae": 1.61024010181427,
+          "r2": 0.3224002718925476,
+          "fold": 2
+        }
+      ]
+    }
+  ]
+}

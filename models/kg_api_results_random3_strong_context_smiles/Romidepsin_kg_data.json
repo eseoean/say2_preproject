@@ -1,0 +1,100 @@
+{
+  "drug_id": 1817,
+  "drug_name": "Romidepsin",
+  "category": "Approved",
+  "combined_score": 19.0,
+  "timestamp": "2026-04-15 22:02:32",
+  "data_collected": {
+    "basic_info": {
+      "ok": true,
+      "data": {
+        "drug_id": 1817,
+        "drug_name": "Romidepsin",
+        "target": "HDAC1, HDAC2, HDAC3, HDAC8",
+        "pathway": "Chromatin histone acetylation",
+        "predicted_ic50": -4.740945,
+        "sensitivity_rate": 1.0,
+        "validation_score": 6.9,
+        "safety_score": 12.0,
+        "combined_score": 19.0,
+        "final_rank": 1,
+        "category": "Approved",
+        "clinical_bucket": "적응증 확장/연구 중",
+        "known_brca": true,
+        "target_expressed": true,
+        "brca_pathway": true,
+        "survival_sig": false,
+        "recommendation_note": "유방암으로 확장 가능성이 있고, 추가 translational 검토 가치가 있습니다."
+      }
+    },
+    "side_effects": {
+      "ok": true,
+      "data": [],
+      "source": "local_fallback"
+    },
+    "trials": {
+      "ok": true,
+      "data": [
+        {
+          "title": "Romidepsin breast cancer related usage signal",
+          "phase": "Known / related evidence",
+          "status": "Review needed",
+          "source": "local_brca_relevance"
+        }
+      ],
+      "source": "local_fallback"
+    },
+    "targets": {
+      "ok": true,
+      "data": [
+        {
+          "target": "HDAC1",
+          "source": "local_frc_step6_7"
+        },
+        {
+          "target": "HDAC2",
+          "source": "local_frc_step6_7"
+        },
+        {
+          "target": "HDAC3",
+          "source": "local_frc_step6_7"
+        },
+        {
+          "target": "HDAC8",
+          "source": "local_frc_step6_7"
+        }
+      ]
+    },
+    "pathways": {
+      "ok": true,
+      "data": [
+        {
+          "pathway": "Chromatin histone acetylation",
+          "source": "local_frc_step6_7"
+        }
+      ]
+    },
+    "pubmed_general": {
+      "ok": true,
+      "query": "Romidepsin",
+      "data": [
+        {
+          "title": "Romidepsin and breast cancer relevance summary",
+          "journal": "Local seed catalog",
+          "year": 2026,
+          "pmid": null,
+          "summary": "유방암으로 확장 가능성이 있고, 추가 translational 검토 가치가 있습니다.",
+          "source": "local_fallback"
+        }
+      ],
+      "source": "local_fallback"
+    },
+    "pubmed_breast_cancer": {
+      "ok": true,
+      "query": "Romidepsin breast cancer",
+      "data": [],
+      "source": "local_fallback"
+    }
+  },
+  "errors": []
+}

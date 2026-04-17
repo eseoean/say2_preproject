@@ -1,0 +1,100 @@
+{
+  "drug_id": 1180,
+  "drug_name": "Dinaciclib",
+  "category": "Candidate",
+  "combined_score": 12.0,
+  "timestamp": "2026-04-15 22:02:36",
+  "data_collected": {
+    "basic_info": {
+      "ok": true,
+      "data": {
+        "drug_id": 1180,
+        "drug_name": "Dinaciclib",
+        "target": "CDK1, CDK2, CDK5, CDK9",
+        "pathway": "Cell cycle",
+        "predicted_ic50": -2.1907222,
+        "sensitivity_rate": 1.0,
+        "validation_score": 8.9,
+        "safety_score": 10.0,
+        "combined_score": 12.0,
+        "final_rank": 9,
+        "category": "Candidate",
+        "clinical_bucket": "적응증 확장/연구 중",
+        "known_brca": true,
+        "target_expressed": true,
+        "brca_pathway": true,
+        "survival_sig": true,
+        "recommendation_note": "유방암으로 확장 가능성이 있고, 추가 translational 검토 가치가 있습니다."
+      }
+    },
+    "side_effects": {
+      "ok": true,
+      "data": [],
+      "source": "local_fallback"
+    },
+    "trials": {
+      "ok": true,
+      "data": [
+        {
+          "title": "Dinaciclib breast cancer related usage signal",
+          "phase": "Known / related evidence",
+          "status": "Review needed",
+          "source": "local_brca_relevance"
+        }
+      ],
+      "source": "local_fallback"
+    },
+    "targets": {
+      "ok": true,
+      "data": [
+        {
+          "target": "CDK1",
+          "source": "local_frc_step6_7"
+        },
+        {
+          "target": "CDK2",
+          "source": "local_frc_step6_7"
+        },
+        {
+          "target": "CDK5",
+          "source": "local_frc_step6_7"
+        },
+        {
+          "target": "CDK9",
+          "source": "local_frc_step6_7"
+        }
+      ]
+    },
+    "pathways": {
+      "ok": true,
+      "data": [
+        {
+          "pathway": "Cell cycle",
+          "source": "local_frc_step6_7"
+        }
+      ]
+    },
+    "pubmed_general": {
+      "ok": true,
+      "query": "Dinaciclib",
+      "data": [
+        {
+          "title": "Dinaciclib and breast cancer relevance summary",
+          "journal": "Local seed catalog",
+          "year": 2026,
+          "pmid": null,
+          "summary": "유방암으로 확장 가능성이 있고, 추가 translational 검토 가치가 있습니다.",
+          "source": "local_fallback"
+        }
+      ],
+      "source": "local_fallback"
+    },
+    "pubmed_breast_cancer": {
+      "ok": true,
+      "query": "Dinaciclib breast cancer",
+      "data": [],
+      "source": "local_fallback"
+    }
+  },
+  "errors": []
+}

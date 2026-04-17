@@ -1,0 +1,20 @@
+{
+  "variant": "x_repacked_blocksvd",
+  "device": "cpu",
+  "n_rows": 7730,
+  "numeric_dim": 20394,
+  "categorical_dim": 0,
+  "auxiliary_dim": 0,
+  "sample_dim_detected": 18320,
+  "sample_dim_used": 18311,
+  "context_summary": {
+    "variant": "x_repacked_blocksvd",
+    "matched_rows": 0,
+    "unmatched_rows": 7730,
+    "match_rate": 0.0,
+    "categorical_columns": [],
+    "auxiliary_columns": [],
+    "numeric_transform_note": "Current numeric X is re-packed by block: sample CRISPR and drug Morgan are compressed with train-fold SVD and row summary statistics; smaller drug/target/LINCS blocks pass through."
+  },
+  "models": []
+}

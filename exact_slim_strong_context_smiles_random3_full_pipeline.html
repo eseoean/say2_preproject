@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>sample 3-fold 통합 문서 - Step 4 to Step 7+ KG/API</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; background: #0f172a; color: #e2e8f0; min-height: 100vh; }
+  .header { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); padding: 24px 32px; border-bottom: 1px solid #334155; }
+  .header h1 { font-size: 1.45rem; color: #f8fafc; margin-bottom: 8px; }
+  .header p { color: #cbd5e1; line-height: 1.7; max-width: 980px; }
+  .header a { color: #38bdf8; text-decoration: none; font-size: 0.9rem; display:inline-block; margin-top:10px; }
+  .sticky-nav { position: sticky; top: 0; z-index: 20; background: rgba(15,23,42,0.92); backdrop-filter: blur(10px); border-bottom: 1px solid #334155; }
+  .sticky-nav .inner { max-width: 1380px; margin: 0 auto; padding: 12px 24px; display: flex; gap: 10px; flex-wrap: wrap; }
+  .sticky-nav a { text-decoration: none; padding: 8px 12px; border-radius: 999px; border: 1px solid #334155; background: #111827; color: #cbd5e1; font-size: 0.78rem; font-weight: 700; }
+  .container { max-width: 1380px; margin: 0 auto; padding: 24px; }
+  .section { background: #1e293b; border: 1px solid #334155; border-radius: 10px; padding: 22px; margin-bottom: 20px; }
+  .section h2 { font-size: 1.18rem; margin-bottom: 6px; }
+  .section .sub { color: #94a3b8; font-size: 0.78rem; line-height: 1.6; margin-bottom: 16px; }
+  .hero-grid, .metric-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+  .hero-card, .metric-card { background: #0f172a; border: 1px solid #334155; border-radius: 8px; padding: 14px; }
+  .hero-card .value, .metric-card .value { font-size: 1.35rem; font-weight: 800; }
+  .hero-card .label, .metric-card .label { font-size: 0.72rem; color: #64748b; margin-top: 5px; }
+  .banner { background: rgba(56,189,248,0.08); border: 1px solid rgba(56,189,248,0.30); border-radius: 10px; padding: 14px 16px; line-height: 1.7; margin-bottom: 18px; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.78rem; }
+  th { text-align: left; padding: 8px 10px; background: #0f172a; color: #94a3b8; border-bottom: 2px solid #334155; font-weight: 600; white-space: nowrap; }
+  td { padding: 7px 10px; border-bottom: 1px solid rgba(51,65,85,0.6); vertical-align: top; }
+  tr:hover { background: rgba(59,130,246,0.05); }
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .callout { background: #0f172a; border: 1px solid #334155; border-radius: 8px; padding: 14px 16px; line-height: 1.7; color: #cbd5e1; }
+  .bucket-current, .bucket-trial, .bucket-novel, .bucket-neutral { padding: 2px 8px; border-radius: 999px; font-size: 0.7rem; font-weight: 700; display: inline-block; }
+  .bucket-current { background: #22c55e20; color: #4ade80; }
+  .bucket-trial { background: #3b82f620; color: #60a5fa; }
+  .bucket-novel { background: #a855f720; color: #c084fc; }
+  .bucket-neutral { background: #64748b20; color: #cbd5e1; }
+  .footnote { margin-top: 12px; color: #94a3b8; font-size: 0.76rem; line-height: 1.6; }
+  @media (max-width: 960px) { .split { grid-template-columns: 1fr; } }
+  @media (max-width: 640px) {
+    .container { padding: 14px; }
+    .section { padding: 16px; }
+    table { display: block; overflow-x: auto; white-space: nowrap; }
+  }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>sample 3-fold 통합 문서 - Step 4 → Step 7+ KG/API</h1>
+  <p><b>exact slim + strong context + SMILES</b> 입력과 <b>random sample 3-fold (seed=42)</b> 기준으로, 모델 비교부터 앙상블, METABRIC, ADMET, KG/API까지 한 흐름으로 이어서 보는 통합 문서입니다.</p>
+  <a href="dashboard.html">&larr; 대시보드로 돌아가기</a>
+</div>
+
+<div class="sticky-nav">
+  <div class="inner">
+    <a href="#overview">Overview</a>
+    <a href="#step4">Step 4 모델</a>
+    <a href="#step5">Step 5 앙상블</a>
+    <a href="#step6">Step 6 METABRIC</a>
+    <a href="#step7">Step 7 ADMET</a>
+    <a href="#step7plus">Step 7+ KG/API</a>
+  </div>
+</div>
+
+<div class="container">
+  <section class="section" id="overview">
+    <h2>Overview</h2>
+    <div class="sub">현재 문서의 모든 수치는 sample 3-fold 기준입니다. 같은 약물이 train/valid에 동시에 등장할 수 있으므로, 이 문서는 ceiling과 interpolation 관점의 요약으로 읽는 것이 맞습니다.</div>
+    <div class="banner">
+      <b>실험 요약:</b> Step 4에서는 <b>CatBoost</b>가 최고 ML, <b>TabNet</b>이 최고 DL이었고, Step 5에서는 <b>CatBoost + XGBoost + LightGBM + TabNet + ResidualMLP + WideDeep</b> 혼합 weighted ensemble이 최고 성능을 냈습니다. 이후 Step 6/7/7+에서 이 경로를 기준으로 외부 검증, ADMET, KG/API 해석을 붙였습니다.
+    </div>
+    <div class="hero-grid">
+      <div class="hero-card"><div class="value">6,366</div><div class="label">Rows</div></div>
+      <div class="hero-card"><div class="value">5,625</div><div class="label">ML Feature Dim</div></div>
+      <div class="hero-card"><div class="value">CatBoost</div><div class="label">Best ML</div></div>
+      <div class="hero-card"><div class="value">0.8706</div><div class="label">Best ML Spearman</div></div>
+      <div class="hero-card"><div class="value">TabNet</div><div class="label">Best DL</div></div>
+      <div class="hero-card"><div class="value">0.8613</div><div class="label">Best DL Spearman</div></div>
+      <div class="hero-card"><div class="value">0.8720</div><div class="label">Best Ensemble Spearman</div></div>
+      <div class="hero-card"><div class="value">1.1016</div><div class="label">Best Ensemble RMSE</div></div>
+    </div>
+  </section>
+
+  <section class="section" id="step4">
+    <h2>Step 4. 단일 모델 비교</h2>
+    <div class="sub">ML 6개, DL 6개를 같은 sample 3-fold 분할에서 비교했습니다.</div>
+    <div class="split">
+      <div>
+        <div class="callout" style="margin-bottom:12px;"><b>ML 요약:</b> CatBoost, XGBoost, LightGBM이 상위권을 형성했고, CatBoost가 최고 ML이었습니다.</div>
+        <table>
+          <thead><tr><th>#</th><th>Model</th><th>Sp</th><th>RMSE</th><th>MAE</th><th>Pearson</th><th>R²</th><th>NDCG@20</th><th>Time</th></tr></thead>
+          <tbody><tr><td>1</td><td><b>CatBoost</b></td><td>0.8706</td><td>1.1083</td><td>0.8327</td><td>0.9127</td><td>0.8322</td><td>0.9639</td><td>30.1m</td></tr>
+<tr><td>2</td><td><b>XGBoost</b></td><td>0.8647</td><td>1.1347</td><td>0.8482</td><td>0.9078</td><td>0.8241</td><td>0.9617</td><td>15.7m</td></tr>
+<tr><td>3</td><td><b>LightGBM</b></td><td>0.8637</td><td>1.1358</td><td>0.8505</td><td>0.9076</td><td>0.8238</td><td>0.9602</td><td>9.1m</td></tr>
+<tr><td>4</td><td><b>LightGBM_DART</b></td><td>0.8605</td><td>1.1910</td><td>0.9227</td><td>0.9054</td><td>0.8062</td><td>0.9530</td><td>5.6m</td></tr>
+<tr><td>5</td><td><b>ExtraTrees</b></td><td>0.8336</td><td>1.3364</td><td>1.0300</td><td>0.8811</td><td>0.7561</td><td>0.9293</td><td>1.4m</td></tr>
+<tr><td>6</td><td><b>RandomForest</b></td><td>0.8312</td><td>1.3954</td><td>1.0830</td><td>0.8795</td><td>0.7340</td><td>0.9406</td><td>60s</td></tr></tbody>
+        </table>
+      </div>
+      <div>
+        <div class="callout" style="margin-bottom:12px;"><b>DL 요약:</b> TabNet, ResidualMLP, WideDeep이 상위권을 형성했고, TabNet이 최고 DL이었습니다.</div>
+        <table>
+          <thead><tr><th>#</th><th>Model</th><th>Sp</th><th>RMSE</th><th>MAE</th><th>Pearson</th><th>R²</th><th>NDCG@20</th><th>Time</th></tr></thead>
+          <tbody><tr><td>1</td><td><b>TabNet</b></td><td>0.8613</td><td>1.1560</td><td>0.8768</td><td>0.9055</td><td>0.8175</td><td>0.9539</td><td>20.2m</td></tr>
+<tr><td>2</td><td><b>ResidualMLP</b></td><td>0.8599</td><td>1.1620</td><td>0.8693</td><td>0.9034</td><td>0.8156</td><td>0.9458</td><td>26.7m</td></tr>
+<tr><td>3</td><td><b>WideDeep</b></td><td>0.8572</td><td>1.1639</td><td>0.8729</td><td>0.9029</td><td>0.8149</td><td>0.9531</td><td>46.0m</td></tr>
+<tr><td>4</td><td><b>FlatMLP</b></td><td>0.8554</td><td>1.1695</td><td>0.8872</td><td>0.9018</td><td>0.8132</td><td>0.9582</td><td>36.1m</td></tr>
+<tr><td>5</td><td><b>CrossAttention</b></td><td>0.8486</td><td>1.2047</td><td>0.8996</td><td>0.8955</td><td>0.8018</td><td>0.9539</td><td>24.0m</td></tr>
+<tr><td>6</td><td><b>FTTransformer</b></td><td>0.8462</td><td>1.2256</td><td>0.9187</td><td>0.8916</td><td>0.7948</td><td>0.9469</td><td>25.8m</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="step5">
+    <h2>Step 5. 혼합 앙상블</h2>
+    <div class="sub">상위 ML/DL을 섞은 6-model weighted ensemble을 최종 sample 3-fold 기준 경로로 사용했습니다.</div>
+    <div class="metric-grid">
+      <div class="metric-card"><div class="value">0.8720</div><div class="label">Weighted Spearman</div></div>
+      <div class="metric-card"><div class="value">1.1016</div><div class="label">Weighted RMSE</div></div>
+      <div class="metric-card"><div class="value">0.8281</div><div class="label">Weighted MAE</div></div>
+      <div class="metric-card"><div class="value">0.9137</div><div class="label">Weighted Pearson</div></div>
+      <div class="metric-card"><div class="value">0.8343</div><div class="label">Weighted R²</div></div>
+      <div class="metric-card"><div class="value">147.8m</div><div class="label">Total Time</div></div>
+    </div>
+    <div class="split" style="margin-top:16px;">
+      <div>
+        <div class="callout" style="margin-bottom:12px;"><b>선택된 base model:</b> CatBoost, XGBoost, LightGBM, TabNet, ResidualMLP, WideDeep</div>
+        <table>
+          <thead><tr><th>Model</th><th>Family</th><th>Weight</th><th>Sp</th><th>RMSE</th><th>Time</th></tr></thead>
+          <tbody><tr><td><b>CatBoost</b></td><td>ML</td><td>0.1682</td><td>0.8706</td><td>1.1083</td><td>30.1m</td></tr>
+<tr><td><b>XGBoost</b></td><td>ML</td><td>0.1670</td><td>0.8647</td><td>1.1347</td><td>15.7m</td></tr>
+<tr><td><b>LightGBM</b></td><td>ML</td><td>0.1668</td><td>0.8637</td><td>1.1358</td><td>9.1m</td></tr>
+<tr><td><b>TabNet</b></td><td>DL</td><td>0.1664</td><td>0.8613</td><td>1.1560</td><td>20.2m</td></tr>
+<tr><td><b>ResidualMLP</b></td><td>DL</td><td>0.1661</td><td>0.8599</td><td>1.1620</td><td>26.7m</td></tr>
+<tr><td><b>WideDeep</b></td><td>DL</td><td>0.1656</td><td>0.8572</td><td>1.1639</td><td>46.0m</td></tr></tbody>
+        </table>
+      </div>
+      <div>
+        <div class="callout">
+          <b>Diversity summary</b><br>
+          avg prediction Pearson: <b>0.9817</b><br>
+          avg prediction Spearman: <b>0.9730</b><br>
+          avg residual Pearson: <b>0.9158</b><br>
+          avg residual Spearman: <b>0.9033</b><br>
+          avg mean abs gap: <b>0.3465</b>
+        </div>
+        <div class="footnote">sample 3-fold에서도 residual correlation은 여전히 높은 편이라, 앙상블은 주로 평균화 이득을 주고 완전히 다른 오류 패턴을 만드는 단계는 아닙니다.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="step6">
+    <h2>Step 6. METABRIC 외부 검증</h2>
+    <div class="sub">sample 3-fold weighted ensemble top30을 기준으로 METABRIC BRCA 외부 검증을 수행했습니다.</div>
+    <div class="metric-grid">
+      <div class="metric-card"><div class="value">29/30</div><div class="label">Target Expressed</div></div>
+      <div class="metric-card"><div class="value">23/30</div><div class="label">BRCA Pathway</div></div>
+      <div class="metric-card"><div class="value">28/30</div><div class="label">Survival Significant</div></div>
+      <div class="metric-card"><div class="value">80.0%</div><div class="label">P@15</div></div>
+      <div class="metric-card"><div class="value">0.8209</div><div class="label">RSF C-index</div></div>
+      <div class="metric-card"><div class="value">0.94</div><div class="label">GraphSAGE P@20</div></div>
+    </div>
+    <div class="callout" style="margin-top:16px;">대표 validated 상위 후보는 <b>Bortezomib</b>, <b>Romidepsin</b>, <b>Sepantronium bromide</b>, <b>Docetaxel</b>, <b>Dactinomycin</b> 입니다.</div>
+    <table style="margin-top:16px;">
+      <thead><tr><th>#</th><th>Drug</th><th>Target</th><th>Pathway</th><th>Pred IC50</th><th>Sensitivity</th><th>Expr</th><th>BRCA Pathway</th><th>Survival</th><th>Validation</th></tr></thead>
+      <tbody><tr><td>1</td><td><b>Bortezomib</b></td><td>Proteasome</td><td>Protein stability and degradation</td><td>-4.752</td><td>100%</td><td>YES</td><td>YES</td><td>YES</td><td>9.45</td></tr>
+<tr><td>2</td><td><b>Romidepsin</b></td><td>HDAC1, HDAC2, HDAC3, HDAC8</td><td>Chromatin histone acetylation</td><td>-4.741</td><td>100%</td><td>YES</td><td>YES</td><td>-</td><td>6.90</td></tr>
+<tr><td>3</td><td><b>Sepantronium bromide</b></td><td>BIRC5</td><td>Apoptosis regulation</td><td>-3.855</td><td>100%</td><td>YES</td><td>YES</td><td>YES</td><td>7.35</td></tr>
+<tr><td>4</td><td><b>Docetaxel</b></td><td>Microtubule stabiliser</td><td>Mitosis</td><td>-3.303</td><td>100%</td><td>YES</td><td>YES</td><td>YES</td><td>9.30</td></tr>
+<tr><td>5</td><td><b>Dactinomycin</b></td><td>RNA polymerase</td><td>Other</td><td>-3.018</td><td>100%</td><td>YES</td><td>-</td><td>YES</td><td>7.75</td></tr>
+<tr><td>6</td><td><b>Paclitaxel</b></td><td>Microtubule stabiliser</td><td>Mitosis</td><td>-2.837</td><td>100%</td><td>YES</td><td>YES</td><td>YES</td><td>9.20</td></tr>
+<tr><td>7</td><td><b>Vinorelbine</b></td><td>Microtubule destabiliser</td><td>Mitosis</td><td>-2.830</td><td>100%</td><td>YES</td><td>YES</td><td>YES</td><td>9.15</td></tr>
+<tr><td>8</td><td><b>Vinblastine</b></td><td>Microtubule destabiliser</td><td>Mitosis</td><td>-2.741</td><td>100%</td><td>YES</td><td>YES</td><td>YES</td><td>9.10</td></tr>
+<tr><td>9</td><td><b>Staurosporine</b></td><td>Broad spectrum kinase inhibitor</td><td>RTK signaling</td><td>-2.476</td><td>100%</td><td>YES</td><td>-</td><td>YES</td><td>7.55</td></tr>
+<tr><td>10</td><td><b>SN-38</b></td><td>TOP1</td><td>DNA replication</td><td>-2.462</td><td>100%</td><td>YES</td><td>YES</td><td>YES</td><td>9.00</td></tr>
+<tr><td>11</td><td><b>Rapamycin</b></td><td>MTORC1</td><td>PI3K/MTOR signaling</td><td>-2.395</td><td>100%</td><td>YES</td><td>YES</td><td>YES</td><td>8.95</td></tr>
+<tr><td>12</td><td><b>Dinaciclib</b></td><td>CDK1, CDK2, CDK5, CDK9</td><td>Cell cycle</td><td>-2.191</td><td>100%</td><td>YES</td><td>YES</td><td>YES</td><td>8.90</td></tr>
+<tr><td>13</td><td><b>Luminespib</b></td><td>HSP90</td><td>Protein stability and degradation</td><td>-1.834</td><td>100%</td><td>YES</td><td>YES</td><td>YES</td><td>8.80</td></tr>
+<tr><td>14</td><td><b>Camptothecin</b></td><td>TOP1</td><td>DNA replication</td><td>-0.544</td><td>100%</td><td>YES</td><td>YES</td><td>YES</td><td>8.65</td></tr>
+<tr><td>15</td><td><b>Epirubicin</b></td><td>Anthracycline</td><td>DNA replication</td><td>0.093</td><td>100%</td><td>YES</td><td>YES</td><td>YES</td><td>8.30</td></tr></tbody>
+    </table>
+  </section>
+
+  <section class="section" id="step7">
+    <h2>Step 7. ADMET 및 post-ADMET 분류</h2>
+    <div class="sub">raw ADMET 결과와 팀원 레포 형식의 post-ADMET 임상 분류를 함께 정리했습니다.</div>
+    <div class="metric-grid">
+      <div class="metric-card"><div class="value">8</div><div class="label">Approved</div></div>
+      <div class="metric-card"><div class="value">6</div><div class="label">Candidate</div></div>
+      <div class="metric-card"><div class="value">1</div><div class="label">Caution</div></div>
+      <div class="metric-card"><div class="value">5</div><div class="label">유방암 현재 사용</div></div>
+      <div class="metric-card"><div class="value">6</div><div class="label">적응증 확장/연구 중</div></div>
+      <div class="metric-card"><div class="value">4</div><div class="label">유방암 미사용</div></div>
+    </div>
+    <div class="callout" style="margin-top:16px;">Top 5 final candidate: <b>Romidepsin, Sepantronium bromide, Staurosporine, SN-38, Docetaxel</b></div>
+    <table style="margin-top:16px;">
+      <thead><tr><th>#</th><th>Drug</th><th>임상 분류</th><th>Target</th><th>Pathway</th><th>Pred IC50</th><th>Validation</th><th>Safety</th><th>Combined</th><th>Flags</th><th>Recommendation</th></tr></thead>
+      <tbody><tr><td>1</td><td><b>Romidepsin</b></td><td><span class='bucket-trial'>적응증 확장/연구 중</span></td><td>HDAC1, HDAC2, HDAC3, HDAC8</td><td>Chromatin histone acetylation</td><td>-4.741</td><td>6.90</td><td>12.00</td><td>19.00</td><td>-</td><td>유방암으로 확장 가능성이 있고, 추가 translational 검토 가치가 있습니다.</td></tr>
+<tr><td>2</td><td><b>Sepantronium bromide</b></td><td><span class='bucket-novel'>유방암 미사용</span></td><td>BIRC5</td><td>Apoptosis regulation</td><td>-3.855</td><td>7.35</td><td>10.00</td><td>16.50</td><td>-</td><td>재창출 관점의 exploratory candidate로 적절합니다.</td></tr>
+<tr><td>3</td><td><b>Staurosporine</b></td><td><span class='bucket-novel'>유방암 미사용</span></td><td>Broad spectrum kinase inhibitor</td><td>RTK signaling</td><td>-2.476</td><td>7.55</td><td>10.00</td><td>13.50</td><td>-</td><td>재창출 관점의 exploratory candidate로 적절합니다.</td></tr>
+<tr><td>4</td><td><b>SN-38</b></td><td><span class='bucket-trial'>적응증 확장/연구 중</span></td><td>TOP1</td><td>DNA replication</td><td>-2.462</td><td>9.00</td><td>10.00</td><td>13.00</td><td>-</td><td>유방암으로 확장 가능성이 있고, 추가 translational 검토 가치가 있습니다.</td></tr>
+<tr><td>5</td><td><b>Docetaxel</b></td><td><span class='bucket-current'>유방암 현재 사용</span></td><td>Microtubule stabiliser</td><td>Mitosis</td><td>-3.303</td><td>9.30</td><td>6.83</td><td>12.83</td><td>[&#x27;DILI (Drug-Induced Liver Injury)(+)&#x27;]</td><td>임상 현실과 일치하는 재발견 후보로, 우선 shortlist에 두기 좋습니다.</td></tr>
+<tr><td>6</td><td><b>Bortezomib</b></td><td><span class='bucket-trial'>적응증 확장/연구 중</span></td><td>Proteasome</td><td>Protein stability and degradation</td><td>-4.752</td><td>9.45</td><td>5.29</td><td>12.79</td><td>[&#x27;DILI (Drug-Induced Liver Injury)(+)&#x27;]</td><td>유방암으로 확장 가능성이 있고, 추가 translational 검토 가치가 있습니다.</td></tr>
+<tr><td>7</td><td><b>Dactinomycin</b></td><td><span class='bucket-novel'>유방암 미사용</span></td><td>RNA polymerase</td><td>Other</td><td>-3.018</td><td>7.75</td><td>7.00</td><td>12.50</td><td>[&#x27;DILI (Drug-Induced Liver Injury)(+)&#x27;]</td><td>재창출 관점의 exploratory candidate로 적절합니다.</td></tr>
+<tr><td>8</td><td><b>Vinorelbine</b></td><td><span class='bucket-current'>유방암 현재 사용</span></td><td>Microtubule destabiliser</td><td>Mitosis</td><td>-2.830</td><td>9.15</td><td>8.00</td><td>12.50</td><td>-</td><td>임상 현실과 일치하는 재발견 후보로, 우선 shortlist에 두기 좋습니다.</td></tr>
+<tr><td>9</td><td><b>Dinaciclib</b></td><td><span class='bucket-trial'>적응증 확장/연구 중</span></td><td>CDK1, CDK2, CDK5, CDK9</td><td>Cell cycle</td><td>-2.191</td><td>8.90</td><td>10.00</td><td>12.00</td><td>-</td><td>유방암으로 확장 가능성이 있고, 추가 translational 검토 가치가 있습니다.</td></tr>
+<tr><td>10</td><td><b>Paclitaxel</b></td><td><span class='bucket-current'>유방암 현재 사용</span></td><td>Microtubule stabiliser</td><td>Mitosis</td><td>-2.837</td><td>9.20</td><td>6.83</td><td>11.83</td><td>[&#x27;DILI (Drug-Induced Liver Injury)(+)&#x27;]</td><td>임상 현실과 일치하는 재발견 후보로, 우선 shortlist에 두기 좋습니다.</td></tr>
+<tr><td>11</td><td><b>Vinblastine</b></td><td><span class='bucket-current'>유방암 현재 사용</span></td><td>Microtubule destabiliser</td><td>Mitosis</td><td>-2.741</td><td>9.10</td><td>7.83</td><td>11.83</td><td>-</td><td>임상 현실과 일치하는 재발견 후보로, 우선 shortlist에 두기 좋습니다.</td></tr>
+<tr><td>12</td><td><b>Camptothecin</b></td><td><span class='bucket-novel'>유방암 미사용</span></td><td>TOP1</td><td>DNA replication</td><td>-0.544</td><td>8.65</td><td>10.00</td><td>11.00</td><td>-</td><td>재창출 관점의 exploratory candidate로 적절합니다.</td></tr>
+<tr><td>13</td><td><b>Rapamycin</b></td><td><span class='bucket-trial'>적응증 확장/연구 중</span></td><td>MTORC1</td><td>PI3K/MTOR signaling</td><td>-2.395</td><td>8.95</td><td>7.71</td><td>10.21</td><td>-</td><td>유방암으로 확장 가능성이 있고, 추가 translational 검토 가치가 있습니다.</td></tr>
+<tr><td>14</td><td><b>Luminespib</b></td><td><span class='bucket-trial'>적응증 확장/연구 중</span></td><td>HSP90</td><td>Protein stability and degradation</td><td>-1.834</td><td>8.80</td><td>5.00</td><td>6.50</td><td>-</td><td>유방암으로 확장 가능성이 있고, 추가 translational 검토 가치가 있습니다.</td></tr>
+<tr><td>15</td><td><b>Epirubicin</b></td><td><span class='bucket-current'>유방암 현재 사용</span></td><td>Anthracycline</td><td>DNA replication</td><td>0.093</td><td>8.30</td><td>2.83</td><td>3.33</td><td>[&#x27;Ames Mutagenicity(+)&#x27;, &#x27;DILI (Drug-Induced Liver Injury)(+)&#x27;]</td><td>임상 현실과 일치하는 재발견 후보로, 우선 shortlist에 두기 좋습니다.</td></tr></tbody>
+    </table>
+  </section>
+
+  <section class="section" id="step7plus">
+    <h2>Step 7+. KG/API 근거 수집</h2>
+    <div class="sub">ClinicalTrials, PubMed, FAERS, target/pathway 근거를 final top15 후보에 대해 수집해 사람이 설명 가능한 후보로 정리했습니다.</div>
+    <div class="metric-grid">
+      <div class="metric-card"><div class="value">15</div><div class="label">KG/API Candidate Count</div></div>
+      <div class="metric-card"><div class="value">Romidepsin</div><div class="label">Top Candidate</div></div>
+      <div class="metric-card"><div class="value">7</div><div class="label">Response Types</div></div>
+      <div class="metric-card"><div class="value">7</div><div class="label">Max API Success Count</div></div>
+    </div>
+    <div class="callout" style="margin-top:16px;">KG/API 요약 상위권 대표 후보는 <b>Romidepsin</b>, <b>Sepantronium bromide</b>, <b>Staurosporine</b>입니다.</div>
+    <table style="margin-top:16px;">
+      <thead><tr><th>Drug</th><th>임상 분류</th><th>Combined</th><th>API Success</th><th>FAERS</th><th>Trials</th><th>Targets</th><th>Pathways</th><th>PubMed</th><th>PubMed BRCA</th></tr></thead>
+      <tbody><tr><td><b>Romidepsin</b></td><td><span class='bucket-trial'>적응증 확장/연구 중</span></td><td>19.00</td><td>7</td><td>0</td><td>1</td><td>4</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td><b>Sepantronium bromide</b></td><td><span class='bucket-novel'>유방암 미사용</span></td><td>16.50</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td><b>Staurosporine</b></td><td><span class='bucket-novel'>유방암 미사용</span></td><td>13.50</td><td>7</td><td>0</td><td>2</td><td>1</td><td>1</td><td>50</td><td>50</td></tr>
+<tr><td><b>SN-38</b></td><td><span class='bucket-trial'>적응증 확장/연구 중</span></td><td>13.00</td><td>7</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td><b>Docetaxel</b></td><td><span class='bucket-current'>유방암 현재 사용</span></td><td>12.83</td><td>7</td><td>10</td><td>10</td><td>1</td><td>1</td><td>50</td><td>50</td></tr>
+<tr><td><b>Bortezomib</b></td><td><span class='bucket-trial'>적응증 확장/연구 중</span></td><td>12.79</td><td>7</td><td>10</td><td>10</td><td>1</td><td>1</td><td>50</td><td>50</td></tr>
+<tr><td><b>Dactinomycin</b></td><td><span class='bucket-novel'>유방암 미사용</span></td><td>12.50</td><td>7</td><td>10</td><td>2</td><td>1</td><td>1</td><td>50</td><td>50</td></tr>
+<tr><td><b>Vinorelbine</b></td><td><span class='bucket-current'>유방암 현재 사용</span></td><td>12.50</td><td>7</td><td>10</td><td>10</td><td>1</td><td>1</td><td>50</td><td>50</td></tr>
+<tr><td><b>Dinaciclib</b></td><td><span class='bucket-trial'>적응증 확장/연구 중</span></td><td>12.00</td><td>7</td><td>0</td><td>1</td><td>4</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td><b>Paclitaxel</b></td><td><span class='bucket-current'>유방암 현재 사용</span></td><td>11.83</td><td>7</td><td>10</td><td>10</td><td>1</td><td>1</td><td>50</td><td>50</td></tr>
+<tr><td><b>Vinblastine</b></td><td><span class='bucket-current'>유방암 현재 사용</span></td><td>11.83</td><td>7</td><td>10</td><td>10</td><td>1</td><td>1</td><td>50</td><td>50</td></tr>
+<tr><td><b>Camptothecin</b></td><td><span class='bucket-novel'>유방암 미사용</span></td><td>11.00</td><td>7</td><td>10</td><td>10</td><td>1</td><td>1</td><td>50</td><td>50</td></tr>
+<tr><td><b>Rapamycin</b></td><td><span class='bucket-trial'>적응증 확장/연구 중</span></td><td>10.21</td><td>7</td><td>10</td><td>10</td><td>1</td><td>1</td><td>50</td><td>50</td></tr>
+<tr><td><b>Luminespib</b></td><td><span class='bucket-trial'>적응증 확장/연구 중</span></td><td>6.50</td><td>7</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td><b>Epirubicin</b></td><td><span class='bucket-current'>유방암 현재 사용</span></td><td>3.33</td><td>7</td><td>10</td><td>10</td><td>1</td><td>1</td><td>50</td><td>50</td></tr></tbody>
+    </table>
+  </section>
+</div>
+</body>
+</html>

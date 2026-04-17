@@ -1,0 +1,54 @@
+{
+  "data": [
+    {
+      "event": "PNEUMONIA",
+      "count": 23,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "THROMBOCYTOPENIA",
+      "count": 20,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "OFF LABEL USE",
+      "count": 19,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "DIARRHOEA",
+      "count": 18,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "SEPSIS",
+      "count": 18,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "FATIGUE",
+      "count": 17,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "PYREXIA",
+      "count": 16,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "ANAEMIA",
+      "count": 14,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "FEBRILE NEUTROPENIA",
+      "count": 13,
+      "source": "openfda_faers"
+    },
+    {
+      "event": "ACUTE KIDNEY INJURY",
+      "count": 11,
+      "source": "openfda_faers"
+    }
+  ]
+}

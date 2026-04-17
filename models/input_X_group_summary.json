@@ -1,0 +1,67 @@
+{
+  "merged_shape_before_numeric": [
+    7730,
+    20399
+  ],
+  "numeric_X_shape": [
+    7730,
+    20394
+  ],
+  "group_counts": {
+    "sample__crispr": 18320,
+    "drug_misc": 11,
+    "drug_morgan": 2048,
+    "lincs_features": 5,
+    "target_features": 10
+  },
+  "group_examples": {
+    "sample__crispr": [
+      "sample__crispr__A1BG",
+      "sample__crispr__A1CF",
+      "sample__crispr__A2M",
+      "sample__crispr__A2ML1",
+      "sample__crispr__A3GALT2"
+    ],
+    "drug_misc": [
+      "drug__has_smiles",
+      "drug_has_valid_smiles",
+      "drug_desc_mol_wt",
+      "drug_desc_logp",
+      "drug_desc_tpsa"
+    ],
+    "drug_morgan": [
+      "drug_morgan_0000",
+      "drug_morgan_0001",
+      "drug_morgan_0002",
+      "drug_morgan_0003",
+      "drug_morgan_0004"
+    ],
+    "lincs_features": [
+      "lincs_cosine",
+      "lincs_pearson",
+      "lincs_spearman",
+      "lincs_reverse_score_top50",
+      "lincs_reverse_score_top100"
+    ],
+    "target_features": [
+      "target_overlap_count",
+      "target_overlap_ratio",
+      "target_overlap_down_count",
+      "target_overlap_down_ratio",
+      "target_expr_mean"
+    ]
+  },
+  "non_numeric_dropped": [
+    "drug__smiles",
+    "drug__canonical_smiles_raw",
+    "drug__drug_name_norm"
+  ],
+  "label_columns": [
+    "label_regression",
+    "label_binary",
+    "label_main",
+    "label_aux",
+    "label_main_type",
+    "label_aux_type"
+  ]
+}

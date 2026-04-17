@@ -1,0 +1,16 @@
+drug_id,mean_pred_ic50,mean_true_ic50,sensitivity_rate,n_samples,target_expressed,brca_pathway,drug_name,target,pathway,survival_sig,survival_p,known_brca,validation_score,final_rank
+1191,-4.751671,-5.1592407,1.0,28,1,1,Bortezomib,Proteasome,Protein stability and degradation,1,0.01,1,9.45,1
+1817,-4.740945,-5.024497,1.0,26,1,1,Romidepsin,"HDAC1, HDAC2, HDAC3, HDAC8",Chromatin histone acetylation,0,0.9337739730175598,1,6.9,2
+1941,-3.8545094,-3.8589985,1.0,28,1,1,Sepantronium bromide,BIRC5,Apoptosis regulation,1,1.2445010819846686e-07,0,7.35,3
+1007,-3.303375,-4.1176643,1.0,29,1,1,Docetaxel,Microtubule stabiliser,Mitosis,1,0.01,1,9.3,4
+1911,-3.017822,-4.040127,1.0,28,1,0,Dactinomycin,RNA polymerase,Other,1,0.01,1,7.75,5
+1080,-2.8374474,-2.779678,1.0,28,1,1,Paclitaxel,Microtubule stabiliser,Mitosis,1,0.01,1,9.2,6
+2048,-2.830103,-2.7805393,1.0,28,1,1,Vinorelbine,Microtubule destabiliser,Mitosis,1,0.01,1,9.15,7
+1004,-2.7405567,-2.7355084,1.0,27,1,1,Vinblastine,Microtubule destabiliser,Mitosis,1,0.01,1,9.1,8
+1034,-2.476121,-2.5313642,1.0,29,1,0,Staurosporine,Broad spectrum kinase inhibitor,RTK signaling,1,0.01,1,7.55,9
+1494,-2.4624267,-2.6124706,1.0,28,1,1,SN-38,TOP1,DNA replication,1,6.331006623497154e-05,1,9.0,10
+1084,-2.3947394,-2.5873635,1.0,28,1,1,Rapamycin,MTORC1,PI3K/MTOR signaling,1,0.01,1,8.95,11
+1180,-2.1907222,-2.3472707,1.0,27,1,1,Dinaciclib,"CDK1, CDK2, CDK5, CDK9",Cell cycle,1,2.2566323399559106e-05,1,8.9,12
+1559,-1.8342931,-2.1197999,1.0,28,1,1,Luminespib,HSP90,Protein stability and degradation,1,0.01,1,8.8,13
+1003,-0.5441507,-0.8017532,1.0,28,1,1,Camptothecin,TOP1,DNA replication,1,6.331006623497154e-05,1,8.65,14
+1511,0.092702374,0.062827714,1.0,28,1,1,Epirubicin,Anthracycline,DNA replication,1,0.01,1,8.3,15
